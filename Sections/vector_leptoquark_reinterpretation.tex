@@ -1,0 +1,37 @@
+\section{\texorpdfstring{Vector Leptoquark Reinterpretation of the BSM H/A $\rightarrow \tau^+\tau^-$ Analysis}{Vector Leptoquark Reinterpretation of the BSM H/A to tau tau Analysis}}
+\label{sec:vector_leptoquark_reinterpretation}
+
+\subsection{Theoretical Motivation}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=2]
+  \begin{feynman}
+    \vertex [label=left:$\bar{q}$] (a1) at (0,0);
+    \vertex [label=left:$q$] (a2) at (0,1);
+    \vertex (b1) at (1,0);
+    \vertex (b2) at (1,1);
+    \vertex [label=right:$U_{1}$] (b3) at (1,0.5);
+    \vertex [label=right:$\tau^-$] (c1) at (2,0);
+    \vertex [label=right:$\tau^+$] (c2) at (2,1);
+
+    \diagram* {
+      (b1) -- [fermion] (a1),
+      (a2) -- [fermion] (b2),
+      (b2) -- [boson] (b1),
+      (c1) -- [fermion] (b1),
+      (b2) -- [fermion] (c2),
+    };
+  \end{feynman}
+\end{tikzpicture}
+\caption{Feynman diagram showing the vector leptoquark t-channel interaction that produces a tau pair from a pair of bottom quarks.}
+\label{fig:leptoquark_feynman}
+\end{figure}
+
+\subsection{Analysis Strategy}
+
+\subsection{Signal Modelling}
+
+\subsection{Results}
+
+\subsection{Future Improvements to Vector Leptoquark Search}

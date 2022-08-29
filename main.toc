@@ -1,0 +1,44 @@
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
+\contentsline {section}{\numberline {2}The Standard Model of Particle Physics}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Quantum Field Theories}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Electroweak Unification}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}The Higgs Mechanism}{4}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Quantum Chromodynamics}{4}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Experimental Evidence for the Standard Model}{4}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}Electron Magnetic Moment}{4}{subsubsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.2}Discovery of Gauge Bosons}{4}{subsubsection.2.5.2}%
+\contentsline {subsubsection}{\numberline {2.5.3}Observation of the Higgs Boson Particle}{4}{subsubsection.2.5.3}%
+\contentsline {section}{\numberline {3}The LHC and CMS Experiment}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}The LHC}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}The CMS Detector}{5}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Event Reconstruction}{5}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Tau Identification}{6}{section.4}%
+\contentsline {section}{\numberline {5}BSM H/A $\rightarrow \tau ^+\tau ^-$ Analysis}{7}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Theoretical Motivation}{7}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Event Selection}{7}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Background Modelling}{8}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Fake Factor Method}{8}{subsection.5.4}%
+\contentsline {subsubsection}{\numberline {5.4.1}Future Improvements to the Fake Factor Method}{8}{subsubsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.5}Signal Modelling}{8}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Optimisation of Analysis}{8}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}Signal Extraction}{8}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}Results}{8}{subsection.5.8}%
+\contentsline {subsubsection}{\numberline {5.8.1}Model-Independent}{8}{subsubsection.5.8.1}%
+\contentsline {subsubsection}{\numberline {5.8.2}Model-Dependent}{8}{subsubsection.5.8.2}%
+\contentsline {section}{\numberline {6}Vector Leptoquark Reinterpretation of the BSM H/A $\rightarrow \tau ^+\tau ^-$ Analysis}{9}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Theoretical Motivation}{9}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Analysis Strategy}{9}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Signal Modelling}{9}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Results}{9}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Future Improvements to Vector Leptoquark Search}{9}{subsection.6.5}%
+\contentsline {section}{\numberline {7}BSM $Z^{*}\rightarrow $ HA $\rightarrow \tau ^+\tau ^-\tau ^+\tau ^-$}{10}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Theoretical Motivation}{10}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Event Selection}{10}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Background Modelling}{13}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Optimisation of Analysis}{13}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Signal Extraction}{13}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}Results}{13}{subsection.7.6}%
+\contentsline {section}{\numberline {8}Conclusion}{14}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Global Interpretations of Results}{14}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Projections to Run-3 and HL-LHC}{14}{subsection.8.2}%

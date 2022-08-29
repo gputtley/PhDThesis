@@ -1,0 +1,382 @@
+\section{\texorpdfstring{BSM $Z^{*}\rightarrow$ HA $\rightarrow \tau^+\tau^-\tau^+\tau^-$}{BSM Z* to HA to tau tau tau tau}}
+\label{sec:H_A_to_4_tau_analysis}
+
+\subsection{Theoretical Motivation}
+
+\begin{figure}
+\begin{tikzpicture}[scale=2]
+  \begin{feynman}
+    \vertex [label=left:$q$] (a1) at (0,-0.25);
+    \vertex [label=left:$\bar{q}$] (a2) at (0,1.25);
+    \vertex (b) at (0.7,0.5);
+    \vertex [label=above:$Z^{*}$] (b1) at (1.05,0.5);    
+    \vertex (c) at (1.4,0.5);
+    \vertex [label=below:$h/H$] (d11) at (1.75,0.15);
+    \vertex [label=above:$A$] (d12) at (1.75,0.85);
+    \vertex (d1) at (2.1,0);
+    \vertex (d2) at (2.1,1);
+    \vertex [label=right:$\tau^+$] (e1) at (2.7,-0.25);
+    \vertex [label=right:$\tau^-$] (e2) at (2.7,0.25);
+    \vertex [label=right:$\tau^+$] (e3) at (2.7,0.75);
+    \vertex [label=right:$\tau^-$] (e4) at (2.7,1.25);
+    \diagram* {
+      (a1) -- [fermion] (b),
+      (a2) -- [fermion] (b),
+      (b) -- [photon] (c),
+      (c) -- [scalar] (d1),
+      (c) -- [scalar] (d2),
+      (d1) -- [fermion] (e1),
+      (e2) -- [fermion] (d1),
+      (d2) -- [fermion] (e3),
+      (e4) -- [fermion] (d2),
+    };
+  \end{feynman}
+\end{tikzpicture}
+\end{figure}
+
+\begin{figure}
+\begin{tikzpicture}[scale=2]
+  \begin{feynman}
+    \vertex (b) at (0,0.5);
+    \vertex [label=above:$Z$] (b1) at (0.55,0.5);    
+    \vertex (c) at (1,0.5);
+    \vertex [label=right:$\tau^{-}$] (d1) at (1.7,0);
+    \vertex [label=right:$\tau^{+}$] (d2) at (1.7,1);
+    \diagram* {
+      (b) -- [photon] (c),
+      (c) -- [fermion] (d1),
+      (d2) -- [fermion] (c),
+    };
+  \end{feynman}
+\end{tikzpicture}
+\end{figure}
+
+\subsection{Event Selection}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|}
+         \hline
+         Channel & Branching Fraction  \\
+         \hline
+         \hline
+         $e \tau_h \tau_h \tau_h$ & 19.4\% \\
+         $\mu \tau_h \tau_h \tau_h$ & 18.9\% \\
+         $\tau_h \tau_h \tau_h \tau_h$ & 17.6\% \\
+         $e \mu \tau_h \tau_h$ & 15.6\% \\
+         $e e \tau_h \tau_h$ & 8.0\% \\
+         $\mu \mu \tau_h \tau_h$ & 7.6\% \\
+         $e e \mu \tau_h$ & 4.3\% \\
+         $e \mu \mu \tau_h$ & 4.2\% \\
+         $e e e \tau_h$ & 1.5\% \\
+         $\mu \mu \mu \tau_h$ & 1.4\% \\
+         $e e e \mu$ & 1.4\% \\
+         $e e \mu \mu$ & 0.6\% \\
+         $e e e \mu$ & 0.4\% \\
+         $e \mu \mu \mu$ & 0.4\% \\
+         $e e e e$ & 0.1\% \\
+         $\mu \mu \mu \mu$ & 0.1\% \\
+         \hline
+    \end{tabular}
+    \caption{}
+\end{table}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|}
+         \hline
+         Channel & Branching Fraction  \\
+         \hline
+         \hline
+$\tau_h^{+}\tau_h^{+}\tau_h^{-}\tau_h^{-}$ & 17.6\% \\
+$\tau_h^{+}\tau_h^{-}\tau_h^{-}e^{+}$ & 9.7\% \\
+$\tau_h^{+}\tau_h^{+}\tau_h^{-}e^{-}$ & 9.7\% \\
+$\mu^{-}\tau_h^{+}\tau_h^{+}\tau_h^{-}$ & 9.5\% \\
+$\mu^{+}\tau_h^{+}\tau_h^{-}\tau_h^{-}$ & 9.5\% \\
+$\tau_h^{+}\tau_h^{-}e^{+}e^{-}$ & 5.3\% \\
+$\mu^{-}\tau_h^{+}\tau_h^{-}e^{+}$ & 5.2\% \\
+$\mu^{+}\tau_h^{+}\tau_h^{-}e^{-}$ & 5.2\% \\
+$\mu^{+}\mu^{-}\tau_h^{+}\tau_h^{-}$ & 5.1\% \\
+$\mu^{-}\tau_h^{+}\tau_h^{+}e^{-}$ & 2.6\% \\
+$\mu^{+}\tau_h^{-}\tau_h^{-}e^{+}$ & 2.6\% \\
+$\mu^{-}\tau_h^{+}e^{+}e^{-}$ & 1.4\% \\
+$\mu^{+}\tau_h^{-}e^{+}e^{-}$ & 1.4\% \\
+$\mu^{+}\mu^{-}\tau_h^{-}e^{+}$ & 1.4\% \\
+$\mu^{+}\mu^{-}\tau_h^{+}e^{-}$ & 1.4\% \\
+$\tau_h^{-}\tau_h^{-}e^{+}e^{+}$ & 1.3\% \\
+$\tau_h^{+}\tau_h^{+}e^{-}e^{-}$ & 1.3\% \\
+$\mu^{-}\mu^{-}\tau_h^{+}\tau_h^{+}$ & 1.3\% \\
+$\mu^{+}\mu^{+}\tau_h^{-}\tau_h^{-}$ & 1.3\% \\
+$\tau_h^{-}e^{+}e^{+}e^{-}$ & 0.7\% \\
+$\tau_h^{+}e^{+}e^{-}e^{-}$ & 0.7\% \\
+$\mu^{-}\tau_h^{-}e^{+}e^{+}$ & 0.7\% \\
+$\mu^{+}\tau_h^{+}e^{-}e^{-}$ & 0.7\% \\
+$\mu^{-}\mu^{-}\tau_h^{+}e^{+}$ & 0.7\% \\
+$\mu^{+}\mu^{+}\tau_h^{-}e^{-}$ & 0.7\% \\
+$\mu^{+}\mu^{-}\mu^{-}\tau_h^{+}$ & 0.7\% \\
+$\mu^{+}\mu^{+}\mu^{-}\tau_h^{-}$ & 0.7\% \\
+$\mu^{+}\mu^{-}e^{+}e^{-}$ & 0.4\% \\
+$\mu^{-}e^{+}e^{+}e^{-}$ & 0.2\% \\
+$\mu^{+}e^{+}e^{-}e^{-}$ & 0.2\% \\
+$\mu^{+}\mu^{-}\mu^{-}e^{+}$ & 0.2\% \\
+$\mu^{+}\mu^{+}\mu^{-}e^{-}$ & 0.2\% \\
+$e^{+}e^{+}e^{-}e^{-}$ & 0.1\% \\
+$\mu^{-}\mu^{-}e^{+}e^{+}$ & 0.1\% \\
+$\mu^{+}\mu^{+}e^{-}e^{-}$ & 0.1\% \\
+$\mu^{+}\mu^{+}\mu^{-}\mu^{-}$ & 0.1\% \\
+         \hline
+    \end{tabular}
+    \caption{}
+\end{table}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|}
+         \hline
+         Channel & Triggers  \\
+         \hline
+         \hline
+         $e \tau_h \tau_h \tau_h$ & EleTau, singleEle, diTau \\
+         $\mu \tau_h \tau_h \tau_h$ & MuonTau, singleMuon, diTau \\
+         $\tau_h \tau_h \tau_h \tau_h$ & diTau \\
+         $e \mu \tau_h \tau_h$ & MuonEle, diTau\\
+         $e e \tau_h \tau_h$ & diEle, diTau \\
+         $\mu \mu \tau_h \tau_h$ & diMuon, diTau \\
+         \hline
+    \end{tabular}
+    \caption{}
+\end{table}
+
+\newpage
+
+\begin{equation}
+\mathcal{L}^{\text{2HDM}}_{\text{yukawa}} = - \sum_{f=u,d,l}\Big(\frac{m_{f}}{\nu}\xi^{f}_{h}\bar{f}fh + \frac{m_{f}}{\nu}\xi^{f}_{H}\bar{f}fH -i\frac{m_{f}}{\nu}\xi^{f}_{A}\bar{f}\gamma_{5}fA\Big) - \Big[\frac{\sqrt{2}V_{ud}}{\nu}\bar{u}(m_{u}\xi^{u}_{A}P_{L} + m_{d}\xi^{d}_{A}P_{R})dH^{+} + \frac{\sqrt{2}m_{l}\xi^{d}_{A}}{\nu}\bar{\nu}_{L}l_{R}H^{+} + h.c.\Big]
+\end{equation}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{p{1.5cm}|x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}}
+         \hline
+          & $g_{h}^{u}$ & $g_{h}^{d}$ & $g_{h}^{l}$ & $g_{H}^{u}$ & $g_{H}^{d}$ & $g_{H}^{l}$ & $g_{A}^{u}$ & $g_{A}^{d}$ & $g_{A}^{l}$ \\
+         \hline
+         \hline
+         Type I & $c_{\alpha}/s_{\beta}$ & $c_{\alpha}/s_{\beta}$ & $c_{\alpha}/s_{\beta}$ & $s_{\alpha}/s_{\beta}$ & $s_{\alpha}/s_{\beta}$ & $s_{\alpha}/s_{\beta}$ & $1/t_{\beta}$ & $-1/t_{\beta}$ & $-1/t_{\beta}$ \\
+         Type II & $c_{\alpha}/s_{\beta}$ & $-s_{\alpha}/c_{\beta}$ & $-s_{\alpha}/c_{\beta}$ & $s_{\alpha}/s_{\beta}$ & $c_{\alpha}/c_{\beta}$ & $c_{\alpha}/c_{\beta}$ & $1/t_{\beta}$ & $t_{\beta}$ & $t_{\beta}$ \\
+         Type X & $c_{\alpha}/s_{\beta}$ & $c_{\alpha}/s_{\beta}$ & $-s_{\alpha}/c_{\beta}$ & $s_{\alpha}/s_{\beta}$ & $s_{\alpha}/s_{\beta}$ & $c_{\alpha}/c_{\beta}$ & $1/t_{\beta}$ & $-1/t_{\beta}$ & $t_{\beta}$ \\
+         Type Y & $c_{\alpha}/s_{\beta}$ & $-s_{\alpha}/c_{\beta}$ & $c_{\alpha}/s_{\beta}$ & $s_{\alpha}/s_{\beta}$ & $c_{\alpha}/c_{\beta}$ & $s_{\alpha}/s_{\beta}$ & $1/t_{\beta}$ & $t_{\beta}$ & $-1/t_{\beta}$ \\
+         \hline
+    \end{tabular}
+    \caption{}
+\end{table}
+
+In the alignment limit, for the normal scenario $h_{SM}=h$, $sin(\beta-\alpha)=1$, $\implies$ $c_{\alpha}/s_{\beta}=1$, $s_{\alpha}/c_{\beta}=-1$, $s_{\alpha}/s_{\beta}=-1/t_{\beta}$, $c_{\alpha}/c_{\beta}=t_{\beta}$.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{p{1.5cm}|x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}}
+         \hline
+          & $g_{h}^{u}$ & $g_{h}^{d}$ & $g_{h}^{l}$ & $g_{H}^{u}$ & $g_{H}^{d}$ & $g_{H}^{l}$ & $g_{A}^{u}$ & $g_{A}^{d}$ & $g_{A}^{l}$ \\
+         \hline
+         \hline
+         Type I & $1$ & $1$ & $1$ & $-1/t_{\beta}$ & $-1/t_{\beta}$ & $-1/t_{\beta}$ & $1/t_{\beta}$ & $-1/t_{\beta}$ & $-1/t_{\beta}$ \\
+         Type II & $1$ & $1$ & $1$ & $-1/t_{\beta}$ & $t_{\beta}$ & $t_{\beta}$ & $1/t_{\beta}$ & $t_{\beta}$ & $t_{\beta}$ \\
+         Type X & $1$ & $1$ & $1$ & $-1/t_{\beta}$ & $-1/t_{\beta}$ & $t_{\beta}$ & $1/t_{\beta}$ & $-1/t_{\beta}$ & $t_{\beta}$ \\
+         Type Y & $1$ & $1$ & $1$ & $-1/t_{\beta}$ & $t_{\beta}$ & $-1/t_{\beta}$ & $1/t_{\beta}$ & $t_{\beta}$ & $-1/t_{\beta}$ \\
+         \hline
+    \end{tabular}
+    \caption{}
+\end{table}
+
+In the alignment limit, for the inverted scenario $h_{SM}=H$, $cos(\beta-\alpha)=1$ $\implies$ $c_{\alpha}/s_{\beta}=1/t_{\beta}$, $s_{\alpha}/c_{\beta}=t_{\beta}$, $s_{\alpha}/s_{\beta}=1$, $c_{\alpha}/c_{\beta}=1$.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{p{1.5cm}|x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}}
+         \hline
+          & $g_{h}^{u}$ & $g_{h}^{d}$ & $g_{h}^{l}$ & $g_{H}^{u}$ & $g_{H}^{d}$ & $g_{H}^{l}$ & $g_{A}^{u}$ & $g_{A}^{d}$ & $g_{A}^{l}$ \\
+         \hline
+         \hline
+         Type I & $1/t_{\beta}$ & $1/t_{\beta}$ & $1/t_{\beta}$ & $1$ & $1$ & $1$ & $1/t_{\beta}$ & $-1/t_{\beta}$ & $-1/t_{\beta}$ \\
+         Type II & $1/t_{\beta}$ & $-t_{\beta}$ & $-t_{\beta}$ & $1$ & $1$ & $1$ & $1/t_{\beta}$ & $t_{\beta}$ & $t_{\beta}$ \\
+         Type X & $1/t_{\beta}$ & $1/t_{\beta}$ & $-t_{\beta}$ & $1$ & $1$ & $1$ & $1/t_{\beta}$ & $-1/t_{\beta}$ & $t_{\beta}$ \\
+         Type Y & $1/t_{\beta}$ & $-t_{\beta}$ & $1/t_{\beta}$ & $1$ & $1$ & $1$ & $1/t_{\beta}$ & $t_{\beta}$ & $-1/t_{\beta}$ \\
+         \hline
+    \end{tabular}
+    \caption{}
+\end{table}
+
+\newpage
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|l|}
+    \hline
+    Trigger & HLT Path  \\
+    \hline
+    SingleElectron & HLT$\_$Ele25$\_$eta2p1$\_$WPTight$\_$Gsf$\_$v\\
+    \hline
+    DoubleElectron & HLT$\_$Ele23$\_$Ele12$\_$CaloIdL$\_$TrackIdL$\_$IsoVL$\_$DZ$\_$v \\
+    \hline
+    TripleElectron & HLT$\_$Ele16$\_$Ele12$\_$Ele8$\_$CaloIdL$\_$TrackIdL \\
+    \hline
+    SingleMuon & HLT$\_$IsoMu24$\_$v \\
+    & OR \\
+    & HLT$\_$IsoTkMu24$\_$v \\
+    \hline
+    DoubleMuon & HLT$\_$Mu17$\_$TrkIsoVVL$\_$Mu8$\_$TrkIsoVVL($\_$DZ)$\_$v \\
+    & OR \\
+    & HLT$\_$Mu17$\_$TrkIsoVVL$\_$TkMu8$\_$TrkIsoVVL($\_$DZ)$\_$v \\
+    \hline
+    TripleMuon & HLT$\_$TripleMu$\_$12$\_$10$\_$5 \\
+    \hline
+    SingleTau & HLT$\_$VLooseIsoPFTau120$\_$Trk50$\_$eta2p1$\_$v \\
+    & OR \\
+    & HLT$\_$VLooseIsoPFTau140$\_$Trk50$\_$eta2p1$\_$v \\
+    \hline
+    DoubleTau & HLT$\_$DoubleMediumIsoPFTau35$\_$Trk1$\_$eta2p1$\_$Reg$\_$v \\
+    \hline
+    Electron Tau Cross & HLT$\_$Ele24$\_$eta2p1$\_$WPLoose$\_$Gsf$\_$LooseIsoPFTau20$\_$SingleL1$\_$v \\
+    \hline
+    Muon Tau Cross & HLT$\_$IsoMu19$\_$eta2p1$\_$LooseIsoPFTau20$\_$SingleL1$\_$v \\
+    \hline
+    \end{tabular}
+    \caption{2016 HLT paths.}
+\end{table}
+
+
+\subsection{Background Modelling}
+
+\begin{table}[]
+\begin{tabular}{|r||ccc|ccc|ccc|}
+\hline
+$m_{A}$ (GeV)      & \multicolumn{3}{c|}{60}                                   & \multicolumn{3}{c|}{100}                                  & \multicolumn{3}{c|}{150}                                  \\ \hline
+$m_{\phi}$ (GeV)   & \multicolumn{1}{c|}{100} & \multicolumn{1}{c|}{200} & 300 & \multicolumn{1}{c|}{100} & \multicolumn{1}{c|}{200} & 300 & \multicolumn{1}{c|}{100} & \multicolumn{1}{c|}{200} & 300 \\ \hline
+Cross Section (pb) & \multicolumn{1}{c|}{0.66}    & \multicolumn{1}{c|}{0.089}    &    0.023 & \multicolumn{1}{c|}{0.29}    & \multicolumn{1}{c|}{0.057}    &  0.035   & \multicolumn{1}{c|}{0.12}    & \multicolumn{1}{c|}{0.035}    & 0.013    \\ \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[]
+\begin{tabular}{|c|c|c|}
+\hline
+$e$ & $\mu$ &  $\tau_{h}$ \\
+\hline
+\hline
+$p_{T} > 15$ GeV & $p_{T} > 15$ GeV & $p_{T} > 20$ GeV \\
+$|\eta| < 2.5$ & $|\eta| < 2.4$ & $|\eta| < 2.3$ \\
+MVA 90\% WP & Medium ID & HPS algorithm \\
+$I_{rel} < 0.15$ & $I_{rel} < 0.15$ & deepTauVSjet VVVLoose WP \\
+& & deepTauVSele VLoose WP \\
+& & deepTauVSmu VLoose WP \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Optimisation of Analysis}
+
+\subsection{Signal Extraction}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|r|c|c|c|c|c|c|c|}
+         \hline
+         Method/ Channel & $\tau_{h}\tau_{h}\tau_{h}\tau_{h}$ & $\mu\tau_{h}\tau_{h}\tau_{h}$ & $e\tau_{h}\tau_{h}\tau_{h}$ & $\mu\mu\tau_{h}\tau_{h}$ & $ee\tau_{h}\tau_{h}$ & $e\mu\tau_{h}\tau_{h}$ \\
+         \hline
+         \hline
+         %Decay Fraction (\%) & 17.6 & 18.9 & 19.4 & 8.0 & 7.6 & 15.5\\
+         Selected by HPS and loose isolation & 0.53 & 0.26 & 0.23 & 0.12 & 0.15 & 0.12 \\
+         Selected by DeepTau and tight isolation & 0.10 & 0.19 & 0.19 & 0.31 & 0.29 & 0.35 \\
+         Selected objects from Higgs decay & 0.88 & 0.90 & 0.89 & 0.93 & 0.91 & 0.91 \\
+         \hline
+    \end{tabular}
+    \caption{}
+\end{table}
+
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|r|c|c|c|c|c|c|c|}
+         \hline
+         Method/ Channel & $\tau_{h}\tau_{h}\tau_{h}\tau_{h}$ & $\mu\tau_{h}\tau_{h}\tau_{h}$ & $e\tau_{h}\tau_{h}\tau_{h}$ & $\mu\mu\tau_{h}\tau_{h}$ & $ee\tau_{h}\tau_{h}$ & $e\mu\tau_{h}\tau_{h}$ \\
+         \hline
+         \hline
+         Minimum single $\Delta R$ & 0.84 & 0.84 & 0.84 & 0.84 & 0.83 & 0.84 \\
+         Minimum summed $\Delta R$ & 0.87 & 0.87 & 0.86 & 0.86 & 0.87 & 0.87 \\
+         Minimum single $\Delta\phi$ & 0.82 & 0.84 & 0.83 & 0.83 & 0.83 & 0.82 \\
+         Minimum summed $\Delta\phi$ & 0.85 & 0.87 & 0.85 & 0.85 & 0.85 & 0.86 \\
+         \hline
+    \end{tabular}
+    \caption{}
+\end{table}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c||c|c|c|c|c|c|}
+         \hline
+         Channel & Triggers & ($m_{\phi}$, $m_{A}$) = (100, 60) &  ($m_{\phi}$, $m_{A}$) = (300, 60) & ($m_{\phi}$, $m_{A}$) = (100, 100) & ($m_{\phi}$ , $m_{A}$) = (300, 100) & ($m_{\phi}$, $m_{A}$) = (100, 150) & ($m_{\phi}$, $m_{A}$) = (300, 150) \\
+         \hline
+         \hline
+         $e \tau_h \tau_h \tau_h$ & $\tau_{h}^{1}\tau_{h}^2$ & 0.38 & 0.51 & 0.48 & 0.61 & 0.54 & 0.68 \\
+    \end{tabular}
+    \caption{}
+\end{table}
+
+\begin{table}
+\centering
+\scalebox{0.8}{
+\begin{tabular}{|c|c|c||lllllllll} 
+\hline
+\multirow{2}{*}{Channel} & \multirow{2}{*}{\hspace{7em}Triggers\hspace{7em}} & $m_{A}$ (GeV)                   & \multicolumn{3}{c|}{60}                                                        & \multicolumn{3}{c|}{100}                                                       & \multicolumn{3}{c|}{150}                                                        \\ 
+\cline{3-12}
+                         &                           & $m_{\phi}$ (GeV) & \multicolumn{1}{c|}{100} & \multicolumn{1}{l|}{200} & \multicolumn{1}{c|}{300} & \multicolumn{1}{c|}{100} & \multicolumn{1}{l|}{200} & \multicolumn{1}{c|}{300} & \multicolumn{1}{c|}{100} & \multicolumn{1}{l|}{200} & \multicolumn{1}{c|}{300}  \\ 
+\hline
+\multicolumn{1}{|l|}{$\tau_{h}\tau_{h}\tau_{h}\tau_{h}$} & \multicolumn{2}{l||}{$\tau_{h}^{1}\tau_{h}^{2}$} & \multicolumn{1}{l|}{0.41} & \multicolumn{1}{l|}{0.5} & \multicolumn{1}{l|}{0.52} & \multicolumn{1}{l|}{0.5} & \multicolumn{1}{l|}{0.6} & \multicolumn{1}{l|}{0.62} & \multicolumn{1}{l|}{0.56} & \multicolumn{1}{l|}{0.65} & \multicolumn{1}{l|}{0.7} \\
+\multicolumn{1}{|l|}{} & \multicolumn{2}{l||}{$\tau_{h}^{1}\tau_{h}^{2}$ or $\tau_{h}^{1}\tau_{h}^{3}$} & \multicolumn{1}{l|}{0.47} & \multicolumn{1}{l|}{0.59} & \multicolumn{1}{l|}{0.64} & \multicolumn{1}{l|}{0.57} & \multicolumn{1}{l|}{0.7} & \multicolumn{1}{l|}{0.73} & \multicolumn{1}{l|}{0.64} & \multicolumn{1}{l|}{0.74} & \multicolumn{1}{l|}{0.79} \\
+\multicolumn{1}{|l|}{} & \multicolumn{2}{l||}{$\tau_{h}^{1}\tau_{h}^{2}$ or $\tau_{h}^{1}\tau_{h}^{3}$ or $\tau_{h}^{1}\tau_{h}^{4}$} & \multicolumn{1}{l|}{0.48} & \multicolumn{1}{l|}{0.62} & \multicolumn{1}{l|}{0.67} & \multicolumn{1}{l|}{0.59} & \multicolumn{1}{l|}{0.72} & \multicolumn{1}{l|}{0.75} & \multicolumn{1}{l|}{0.66} & \multicolumn{1}{l|}{0.76} & \multicolumn{1}{l|}{0.8} \\
+\multicolumn{1}{|l|}{} & \multicolumn{2}{l||}{$\tau_{h}^{1}\tau_{h}^{2}$ or $\tau_{h}^{1}\tau_{h}^{3}$ or $\tau_{h}^{1}\tau_{h}^{4}$ or $\tau_{h}^{2}\tau_{h}^{3}$} & \multicolumn{1}{l|}{0.53} & \multicolumn{1}{l|}{0.67} & \multicolumn{1}{l|}{0.73} & \multicolumn{1}{l|}{0.65} & \multicolumn{1}{l|}{0.78} & \multicolumn{1}{l|}{0.82} & \multicolumn{1}{l|}{0.72} & \multicolumn{1}{l|}{0.82} & \multicolumn{1}{l|}{0.87} \\
+\multicolumn{1}{|l|}{} & \multicolumn{2}{l||}{$\tau_{h}^{1}\tau_{h}^{2}$ or $\tau_{h}^{1}\tau_{h}^{3}$ or $\tau_{h}^{1}\tau_{h}^{4}$ or $\tau_{h}^{2}\tau_{h}^{3}$ or $\tau_{h}^{2}\tau_{h}^{4}$} & \multicolumn{1}{l|}{0.54} & \multicolumn{1}{l|}{0.68} & \multicolumn{1}{l|}{0.75} & \multicolumn{1}{l|}{0.65} & \multicolumn{1}{l|}{0.79} & \multicolumn{1}{l|}{0.83} & \multicolumn{1}{l|}{0.72} & \multicolumn{1}{l|}{0.83} & \multicolumn{1}{l|}{0.88} \\
+\multicolumn{1}{|l|}{} & \multicolumn{2}{l||}{$\tau_{h}^{1}\tau_{h}^{2}$ or $\tau_{h}^{1}\tau_{h}^{3}$ or $\tau_{h}^{1}\tau_{h}^{4}$ or $\tau_{h}^{2}\tau_{h}^{3}$ or $\tau_{h}^{2}\tau_{h}^{4}$ or $\tau_{h}^{3}\tau_{h}^{4}$} & \multicolumn{1}{l|}{0.54} & \multicolumn{1}{l|}{0.69} & \multicolumn{1}{l|}{0.76} & \multicolumn{1}{l|}{0.66} & \multicolumn{1}{l|}{0.79} & \multicolumn{1}{l|}{0.84} & \multicolumn{1}{l|}{0.73} & \multicolumn{1}{l|}{0.84} & \multicolumn{1}{l|}{0.88} \\
+\hline
+\multicolumn{1}{|l|}{$\mu\tau_{h}\tau_{h}\tau_{h}$} & \multicolumn{2}{l||}{$\mu^{1}$} & \multicolumn{1}{l|}{0.64} & \multicolumn{1}{l|}{0.71} & \multicolumn{1}{l|}{0.76} & \multicolumn{1}{l|}{0.69} & \multicolumn{1}{l|}{0.75} & \multicolumn{1}{l|}{0.78} & \multicolumn{1}{l|}{0.7} & \multicolumn{1}{l|}{0.77} & \multicolumn{1}{l|}{0.8} \\
+\multicolumn{1}{|l|}{} & \multicolumn{2}{l||}{$\mu^{1}$ or $\tau_{h}^{2}\tau_{h}^{3}$} & \multicolumn{1}{l|}{0.75} & \multicolumn{1}{l|}{0.85} & \multicolumn{1}{l|}{0.89} & \multicolumn{1}{l|}{0.82} & \multicolumn{1}{l|}{0.88} & \multicolumn{1}{l|}{0.91} & \multicolumn{1}{l|}{0.84} & \multicolumn{1}{l|}{0.9} & \multicolumn{1}{l|}{0.93} \\
+\multicolumn{1}{|l|}{} & \multicolumn{2}{l||}{$\mu^{1}$ or $\tau_{h}^{2}\tau_{h}^{3}$ or $\tau_{h}^{2}\tau_{h}^{4}$} & \multicolumn{1}{l|}{0.76} & \multicolumn{1}{l|}{0.86} & \multicolumn{1}{l|}{0.9} & \multicolumn{1}{l|}{0.83} & \multicolumn{1}{l|}{0.9} & \multicolumn{1}{l|}{0.93} & \multicolumn{1}{l|}{0.86} & \multicolumn{1}{l|}{0.92} & \multicolumn{1}{l|}{0.95} \\
+\multicolumn{1}{|l|}{} & \multicolumn{2}{l||}{$\mu^{1}$ or $\tau_{h}^{2}\tau_{h}^{3}$ or $\tau_{h}^{2}\tau_{h}^{4}$ or $\tau_{h}^{3}\tau_{h}^{4}$} & \multicolumn{1}{l|}{0.76} & \multicolumn{1}{l|}{0.87} & \multicolumn{1}{l|}{0.91} & \multicolumn{1}{l|}{0.84} & \multicolumn{1}{l|}{0.9} & \multicolumn{1}{l|}{0.94} & \multicolumn{1}{l|}{0.87} & \multicolumn{1}{l|}{0.92} & \multicolumn{1}{l|}{0.95} \\
+\multicolumn{1}{|l|}{} & \multicolumn{2}{l||}{$\mu^{1}$ or $\tau_{h}^{2}\tau_{h}^{3}$ or $\tau_{h}^{2}\tau_{h}^{4}$ or $\tau_{h}^{3}\tau_{h}^{4}$ or $\mu^{1}\tau_{h}^{2}$ or $\mu^{1}\tau_{h}^{3}$ or $\mu^{1}\tau_{h}^{4}$} & \multicolumn{1}{l|}{0.82} & \multicolumn{1}{l|}{0.9} & \multicolumn{1}{l|}{0.93} & \multicolumn{1}{l|}{0.87} & \multicolumn{1}{l|}{0.93} & \multicolumn{1}{l|}{0.95} & \multicolumn{1}{l|}{0.91} & \multicolumn{1}{l|}{0.95} & \multicolumn{1}{l|}{0.96} \\
+\multicolumn{1}{|l|}{} & \multicolumn{2}{l||}{$\tau_{h}^{2}\tau_{h}^{3}$ or $\tau_{h}^{2}\tau_{h}^{4}$ or $\tau_{h}^{3}\tau_{h}^{4}$} & \multicolumn{1}{l|}{0.39} & \multicolumn{1}{l|}{0.53} & \multicolumn{1}{l|}{0.58} & \multicolumn{1}{l|}{0.5} & \multicolumn{1}{l|}{0.61} & \multicolumn{1}{l|}{0.68} & \multicolumn{1}{l|}{0.58} & \multicolumn{1}{l|}{0.68} & \multicolumn{1}{l|}{0.74} \\
+\multicolumn{1}{|l|}{} & \multicolumn{2}{l||}{$\mu^{1}\tau_{h}^{2}$ or $\mu^{1}\tau_{h}^{3}$ or $\mu^{1}\tau_{h}^{4}$} & \multicolumn{1}{l|}{0.67} & \multicolumn{1}{l|}{0.73} & \multicolumn{1}{l|}{0.77} & \multicolumn{1}{l|}{0.7} & \multicolumn{1}{l|}{0.77} & \multicolumn{1}{l|}{0.79} & \multicolumn{1}{l|}{0.74} & \multicolumn{1}{l|}{0.79} & \multicolumn{1}{l|}{0.81} \\
+\multicolumn{1}{|l|}{} & \multicolumn{2}{l||}{$\mu^{1}\tau_{h}^{2}$ or $\mu^{1}\tau_{h}^{3}$ or $\mu^{1}\tau_{h}^{4}$ or $\tau_{h}^{2}\tau_{h}^{3}$ or $\tau_{h}^{2}\tau_{h}^{4}$ or $\tau_{h}^{3}\tau_{h}^{4}$} & \multicolumn{1}{l|}{0.78} & \multicolumn{1}{l|}{0.85} & \multicolumn{1}{l|}{0.89} & \multicolumn{1}{l|}{0.83} & \multicolumn{1}{l|}{0.89} & \multicolumn{1}{l|}{0.92} & \multicolumn{1}{l|}{0.88} & \multicolumn{1}{l|}{0.92} & \multicolumn{1}{l|}{0.94} \\
+\hline
+\multicolumn{1}{|l|}{$e\tau_{h}\tau_{h}\tau_{h}$} & \multicolumn{2}{l||}{$e^{1}$} & \multicolumn{1}{l|}{0.41} & \multicolumn{1}{l|}{0.5} & \multicolumn{1}{l|}{0.57} & \multicolumn{1}{l|}{0.46} & \multicolumn{1}{l|}{0.54} & \multicolumn{1}{l|}{0.6} & \multicolumn{1}{l|}{0.49} & \multicolumn{1}{l|}{0.56} & \multicolumn{1}{l|}{0.62} \\
+\multicolumn{1}{|l|}{} & \multicolumn{2}{l||}{$e^{1}$ or $\tau_{h}^{2}\tau_{h}^{3}$} & \multicolumn{1}{l|}{0.6} & \multicolumn{1}{l|}{0.7} & \multicolumn{1}{l|}{0.77} & \multicolumn{1}{l|}{0.67} & \multicolumn{1}{l|}{0.77} & \multicolumn{1}{l|}{0.82} & \multicolumn{1}{l|}{0.74} & \multicolumn{1}{l|}{0.8} & \multicolumn{1}{l|}{0.85} \\
+\multicolumn{1}{|l|}{} & \multicolumn{2}{l||}{$e^{1}$ or $\tau_{h}^{2}\tau_{h}^{3}$ or $\tau_{h}^{2}\tau_{h}^{4}$} & \multicolumn{1}{l|}{0.63} & \multicolumn{1}{l|}{0.72} & \multicolumn{1}{l|}{0.81} & \multicolumn{1}{l|}{0.69} & \multicolumn{1}{l|}{0.8} & \multicolumn{1}{l|}{0.85} & \multicolumn{1}{l|}{0.77} & \multicolumn{1}{l|}{0.83} & \multicolumn{1}{l|}{0.88} \\
+\multicolumn{1}{|l|}{} & \multicolumn{2}{l||}{$e^{1}$ or $\tau_{h}^{2}\tau_{h}^{3}$ or $\tau_{h}^{2}\tau_{h}^{4}$ or $\tau_{h}^{3}\tau_{h}^{4}$} & \multicolumn{1}{l|}{0.64} & \multicolumn{1}{l|}{0.75} & \multicolumn{1}{l|}{0.83} & \multicolumn{1}{l|}{0.71} & \multicolumn{1}{l|}{0.81} & \multicolumn{1}{l|}{0.87} & \multicolumn{1}{l|}{0.78} & \multicolumn{1}{l|}{0.85} & \multicolumn{1}{l|}{0.9} \\
+\multicolumn{1}{|l|}{} & \multicolumn{2}{l||}{$e^{1}$ or $\tau_{h}^{2}\tau_{h}^{3}$ or $\tau_{h}^{2}\tau_{h}^{4}$ or $\tau_{h}^{3}\tau_{h}^{4}$ or $e^{1}\tau_{h}^{2}$ or $e^{1}\tau_{h}^{3}$ or $e^{1}\tau_{h}^{4}$} & \multicolumn{1}{l|}{0.71} & \multicolumn{1}{l|}{0.8} & \multicolumn{1}{l|}{0.86} & \multicolumn{1}{l|}{0.76} & \multicolumn{1}{l|}{0.85} & \multicolumn{1}{l|}{0.89} & \multicolumn{1}{l|}{0.82} & \multicolumn{1}{l|}{0.87} & \multicolumn{1}{l|}{0.91} \\
+\multicolumn{1}{|l|}{} & \multicolumn{2}{l||}{$\tau_{h}^{2}\tau_{h}^{3}$ or $\tau_{h}^{2}\tau_{h}^{4}$ or $\tau_{h}^{3}\tau_{h}^{4}$} & \multicolumn{1}{l|}{0.41} & \multicolumn{1}{l|}{0.48} & \multicolumn{1}{l|}{0.57} & \multicolumn{1}{l|}{0.48} & \multicolumn{1}{l|}{0.6} & \multicolumn{1}{l|}{0.68} & \multicolumn{1}{l|}{0.56} & \multicolumn{1}{l|}{0.66} & \multicolumn{1}{l|}{0.73} \\
+\multicolumn{1}{|l|}{} & \multicolumn{2}{l||}{$e^{1}\tau_{h}^{2}$ or $e^{1}\tau_{h}^{3}$ or $e^{1}\tau_{h}^{4}$} & \multicolumn{1}{l|}{0.49} & \multicolumn{1}{l|}{0.54} & \multicolumn{1}{l|}{0.59} & \multicolumn{1}{l|}{0.5} & \multicolumn{1}{l|}{0.59} & \multicolumn{1}{l|}{0.62} & \multicolumn{1}{l|}{0.54} & \multicolumn{1}{l|}{0.6} & \multicolumn{1}{l|}{0.65} \\
+\multicolumn{1}{|l|}{} & \multicolumn{2}{l||}{$e^{1}\tau_{h}^{2}$ or $e^{1}\tau_{h}^{3}$ or $e^{1}\tau_{h}^{4}$ or $\tau_{h}^{2}\tau_{h}^{3}$ or $\tau_{h}^{2}\tau_{h}^{4}$ or $\tau_{h}^{3}\tau_{h}^{4}$} & \multicolumn{1}{l|}{0.66} & \multicolumn{1}{l|}{0.74} & \multicolumn{1}{l|}{0.8} & \multicolumn{1}{l|}{0.7} & \multicolumn{1}{l|}{0.81} & \multicolumn{1}{l|}{0.86} & \multicolumn{1}{l|}{0.78} & \multicolumn{1}{l|}{0.84} & \multicolumn{1}{l|}{0.89} \\
+\hline
+\multicolumn{1}{|l|}{$e\mu\tau_{h}\tau_{h}$} & \multicolumn{2}{l||}{$e^{1}$ or $\mu^{2}$} & \multicolumn{1}{l|}{0.78} & \multicolumn{1}{l|}{0.86} & \multicolumn{1}{l|}{0.9} & \multicolumn{1}{l|}{0.82} & \multicolumn{1}{l|}{0.86} & \multicolumn{1}{l|}{0.92} & \multicolumn{1}{l|}{0.86} & \multicolumn{1}{l|}{0.91} & \multicolumn{1}{l|}{0.93} \\
+\multicolumn{1}{|l|}{} & \multicolumn{2}{l||}{$e^{1}$ or $\mu^{2}$ or $\tau_{h}^{3}\tau_{h}^{4}$} & \multicolumn{1}{l|}{0.82} & \multicolumn{1}{l|}{0.91} & \multicolumn{1}{l|}{0.94} & \multicolumn{1}{l|}{0.86} & \multicolumn{1}{l|}{0.91} & \multicolumn{1}{l|}{0.95} & \multicolumn{1}{l|}{0.9} & \multicolumn{1}{l|}{0.94} & \multicolumn{1}{l|}{0.96} \\
+\multicolumn{1}{|l|}{} & \multicolumn{2}{l||}{$e^{1}$ or $\mu^{2}$ or $\tau_{h}^{3}\tau_{h}^{4}$ or $e^{1}\mu^{1}$} & \multicolumn{1}{l|}{0.84} & \multicolumn{1}{l|}{0.92} & \multicolumn{1}{l|}{0.94} & \multicolumn{1}{l|}{0.88} & \multicolumn{1}{l|}{0.92} & \multicolumn{1}{l|}{0.96} & \multicolumn{1}{l|}{0.91} & \multicolumn{1}{l|}{0.95} & \multicolumn{1}{l|}{0.97} \\
+\multicolumn{1}{|l|}{} & \multicolumn{2}{l||}{$e^{1}\mu^{1}$} & \multicolumn{1}{l|}{0.62} & \multicolumn{1}{l|}{0.7} & \multicolumn{1}{l|}{0.75} & \multicolumn{1}{l|}{0.66} & \multicolumn{1}{l|}{0.72} & \multicolumn{1}{l|}{0.76} & \multicolumn{1}{l|}{0.69} & \multicolumn{1}{l|}{0.75} & \multicolumn{1}{l|}{0.77} \\
+\multicolumn{1}{|l|}{} & \multicolumn{2}{l||}{$e^{1}\mu^{1}$ or $\tau_{h}^{3}\tau_{h}^{4}$} & \multicolumn{1}{l|}{0.69} & \multicolumn{1}{l|}{0.78} & \multicolumn{1}{l|}{0.83} & \multicolumn{1}{l|}{0.74} & \multicolumn{1}{l|}{0.82} & \multicolumn{1}{l|}{0.86} & \multicolumn{1}{l|}{0.78} & \multicolumn{1}{l|}{0.85} & \multicolumn{1}{l|}{0.88} \\
+\multicolumn{1}{|l|}{} & \multicolumn{2}{l||}{$\tau_{h}^{3}\tau_{h}^{4}$} & \multicolumn{1}{l|}{0.19} & \multicolumn{1}{l|}{0.27} & \multicolumn{1}{l|}{0.31} & \multicolumn{1}{l|}{0.26} & \multicolumn{1}{l|}{0.35} & \multicolumn{1}{l|}{0.4} & \multicolumn{1}{l|}{0.3} & \multicolumn{1}{l|}{0.38} & \multicolumn{1}{l|}{0.45} \\
+\hline
+\multicolumn{1}{|l|}{$ee\tau_{h}\tau_{h}$} & \multicolumn{2}{l||}{$e^{1}$} & \multicolumn{1}{l|}{0.56} & \multicolumn{1}{l|}{0.69} & \multicolumn{1}{l|}{0.77} & \multicolumn{1}{l|}{0.68} & \multicolumn{1}{l|}{0.74} & \multicolumn{1}{l|}{0.78} & \multicolumn{1}{l|}{0.72} & \multicolumn{1}{l|}{0.75} & \multicolumn{1}{l|}{0.8} \\
+\multicolumn{1}{|l|}{} & \multicolumn{2}{l||}{$e^{1}$ or $e^{2}$} & \multicolumn{1}{l|}{0.61} & \multicolumn{1}{l|}{0.73} & \multicolumn{1}{l|}{0.81} & \multicolumn{1}{l|}{0.71} & \multicolumn{1}{l|}{0.79} & \multicolumn{1}{l|}{0.84} & \multicolumn{1}{l|}{0.76} & \multicolumn{1}{l|}{0.81} & \multicolumn{1}{l|}{0.86} \\
+\multicolumn{1}{|l|}{} & \multicolumn{2}{l||}{$e^{1}$ or $e^{2}$ or $\tau_{h}^{3}\tau_{h}^{4}$} & \multicolumn{1}{l|}{0.69} & \multicolumn{1}{l|}{0.8} & \multicolumn{1}{l|}{0.87} & \multicolumn{1}{l|}{0.76} & \multicolumn{1}{l|}{0.86} & \multicolumn{1}{l|}{0.91} & \multicolumn{1}{l|}{0.83} & \multicolumn{1}{l|}{0.89} & \multicolumn{1}{l|}{0.92} \\
+\multicolumn{1}{|l|}{} & \multicolumn{2}{l||}{$e^{1}$ or $e^{2}$ or $\tau_{h}^{3}\tau_{h}^{4}$ or $e^{1}\tau_{h}^{3}$ or $e^{1}\tau_{h}^{4}$ or $e^{2}\tau_{h}^{3}$ or $e^{2}\tau_{h}^{4}$} & \multicolumn{1}{l|}{0.78} & \multicolumn{1}{l|}{0.86} & \multicolumn{1}{l|}{0.9} & \multicolumn{1}{l|}{0.81} & \multicolumn{1}{l|}{0.9} & \multicolumn{1}{l|}{0.93} & \multicolumn{1}{l|}{0.88} & \multicolumn{1}{l|}{0.92} & \multicolumn{1}{l|}{0.94} \\
+\multicolumn{1}{|l|}{} & \multicolumn{2}{l||}{$\tau_{h}^{3}\tau_{h}^{4}$} & \multicolumn{1}{l|}{0.18} & \multicolumn{1}{l|}{0.24} & \multicolumn{1}{l|}{0.28} & \multicolumn{1}{l|}{0.24} & \multicolumn{1}{l|}{0.34} & \multicolumn{1}{l|}{0.37} & \multicolumn{1}{l|}{0.32} & \multicolumn{1}{l|}{0.4} & \multicolumn{1}{l|}{0.45} \\
+\hline
+\multicolumn{1}{|l|}{$\mu\mu\tau_{h}\tau_{h}$} & \multicolumn{2}{l||}{$\mu^{1}$} & \multicolumn{1}{l|}{0.82} & \multicolumn{1}{l|}{0.85} & \multicolumn{1}{l|}{0.9} & \multicolumn{1}{l|}{0.84} & \multicolumn{1}{l|}{0.89} & \multicolumn{1}{l|}{0.91} & \multicolumn{1}{l|}{0.89} & \multicolumn{1}{l|}{0.9} & \multicolumn{1}{l|}{0.91} \\
+\multicolumn{1}{|l|}{} & \multicolumn{2}{l||}{$\mu^{1}$ or $\mu^{2}$} & \multicolumn{1}{l|}{0.85} & \multicolumn{1}{l|}{0.9} & \multicolumn{1}{l|}{0.95} & \multicolumn{1}{l|}{0.87} & \multicolumn{1}{l|}{0.93} & \multicolumn{1}{l|}{0.96} & \multicolumn{1}{l|}{0.93} & \multicolumn{1}{l|}{0.94} & \multicolumn{1}{l|}{0.96} \\
+\multicolumn{1}{|l|}{} & \multicolumn{2}{l||}{$\mu^{1}$ or $\mu^{2}$ or $\tau_{h}^{3}\tau_{h}^{4}$} & \multicolumn{1}{l|}{0.86} & \multicolumn{1}{l|}{0.93} & \multicolumn{1}{l|}{0.96} & \multicolumn{1}{l|}{0.9} & \multicolumn{1}{l|}{0.95} & \multicolumn{1}{l|}{0.98} & \multicolumn{1}{l|}{0.95} & \multicolumn{1}{l|}{0.96} & \multicolumn{1}{l|}{0.98} \\
+\multicolumn{1}{|l|}{} & \multicolumn{2}{l||}{$\mu^{1}$ or $\mu^{2}$ or $\tau_{h}^{3}\tau_{h}^{4}$ or $\mu^{1}\tau_{h}^{3}$ or $\mu^{1}\tau_{h}^{4}$ or $\mu^{2}\tau_{h}^{3}$ or $\mu^{2}\tau_{h}^{4}$} & \multicolumn{1}{l|}{0.9} & \multicolumn{1}{l|}{0.96} & \multicolumn{1}{l|}{0.98} & \multicolumn{1}{l|}{0.94} & \multicolumn{1}{l|}{0.97} & \multicolumn{1}{l|}{0.99} & \multicolumn{1}{l|}{0.97} & \multicolumn{1}{l|}{0.98} & \multicolumn{1}{l|}{0.98} \\
+\multicolumn{1}{|l|}{} & \multicolumn{2}{l||}{$\tau_{h}^{3}\tau_{h}^{4}$} & \multicolumn{1}{l|}{0.21} & \multicolumn{1}{l|}{0.3} & \multicolumn{1}{l|}{0.34} & \multicolumn{1}{l|}{0.26} & \multicolumn{1}{l|}{0.34} & \multicolumn{1}{l|}{0.4} & \multicolumn{1}{l|}{0.29} & \multicolumn{1}{l|}{0.39} & \multicolumn{1}{l|}{0.44} \\
+\hline
+\end{tabular}
+}
+\end{table}
+
+
+\subsection{Results}

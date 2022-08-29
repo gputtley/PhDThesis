@@ -1,0 +1,60 @@
+\documentclass[a4paper, twoside]{article}
+
+%% Language and font encodings
+\usepackage{amsmath}
+\usepackage{titling}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{tikz-feynman}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{graphicx,booktabs,array}
+\usepackage{array,multirow}
+\usepackage{adjustbox}
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=2cm,right=2cm,marginparwidth=1.75cm]{geometry}
+\usepackage{array}
+\newcolumntype{x}[1]{>{\centering\arraybackslash\hspace{0pt}}m{#1}}
+\newcommand{\addpic}{\includegraphics[width=6em]{example-image}}
+\newcolumntype{C}{>{\centering\arraybackslash}m{16em}}
+\setlength\parindent{0pt}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{A Search for New Physics With Tau Leptons at the CMS Experiment}
+\author{George Uttley}
+
+\begin{document}
+\input{title/title.tex}
+
+\tableofcontents
+\newpage
+
+\input{Sections/introduction.tex}
+\newpage
+\input{Sections/standard_model.tex}
+\newpage
+\input{Sections/cms.tex}
+\newpage
+\input{Sections/tau_identification.tex}
+\newpage
+\input{Sections/bsm_H_to_tau_tau_analysis.tex}
+\newpage
+\input{Sections/vector_leptoquark_reinterpretation.tex}
+\newpage
+\input{Sections/H_A_to_4_tau_analysis.tex}
+\newpage
+\input{Sections/conclusion.tex}
+\newpage
+\bibliographystyle{ieeetr}
+\bibliography{bibs/sample}
+
+\end{document}

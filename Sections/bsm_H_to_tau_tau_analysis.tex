@@ -1,0 +1,117 @@
+\section{\texorpdfstring{BSM H/A $\rightarrow \tau^+\tau^-$ Analysis}{BSM H/A to tau tau Analysis}}
+\label{sec:bsm_H_to_tau_tau_analysis}
+
+\subsection{Theoretical Motivation}
+
+\begin{figure}[H]
+\begin{tikzpicture}[scale=2]
+  \begin{feynman}
+    \vertex [label=left:$g$] (a1) at (0,0);
+    \vertex [label=left:$g$] (a2) at (0,1);
+    \vertex (b1) at (1,0);
+    \vertex (b2) at (1,1);
+    \vertex (c) at (1.7,0.5);
+    \vertex (d) at (2.5,0.5);
+    \vertex [label=above:$h/H/A$] (d1) at (2.1,0.5);
+    \vertex [label=right:$\tau^-$] (e) at (3.2,1);
+    \vertex [label=right:$\tau^+$] (f) at (3.2,0);
+
+    \diagram* {
+      (a1) -- [gluon] (b1),
+      (a2) -- [gluon] (b2),
+      (b2) -- [fermion] (b1),
+      (c) -- [fermion] (b2),
+      (b1) -- [fermion] (c),
+      (c) -- [scalar] (d),
+      (d) -- [fermion] (e),
+      (f) -- [fermion] (d),
+    };
+  \end{feynman}
+\end{tikzpicture}
+\caption{}
+\end{figure}
+
+
+\begin{figure}[H]
+\begin{tikzpicture}[scale=2]
+  \begin{feynman}
+    \vertex [label=left:$g$] (a1) at (0,0);
+    \vertex [label=left:$g$] (a2) at (0,1);
+    \vertex (b1) at (1,0);
+    \vertex (b2) at (1,0.5);
+    \vertex (b3) at (1,1);
+    \vertex [label=right:$b$] (c1) at (1.7,-0.5);
+    \vertex [label=right:$h/H/A$] (c2) at (2,0.5);
+    \vertex [label=right:$\bar{b}$] (c3) at (1.7,0.5);
+    \diagram* {
+      (a1) -- [gluon] (b1),
+      (a2) -- [gluon] (b3),
+      (b3) -- [fermion] (b2),
+      (b2) -- [fermion] (b1),
+      (c3) -- [fermion] (b3),
+      (b1) -- [fermion] (c1),
+      (b2) -- [scalar] (c2),
+    };
+  \end{feynman}
+\end{tikzpicture}
+\caption{}
+\end{figure}
+
+\begin{figure}[H]
+\begin{tikzpicture}[scale=2]
+  \begin{feynman}
+    \vertex [label=left:$g$] (a1) at (0,0);
+    \vertex [label=left:$b$] (a2) at (0,1);
+    \vertex (b) at (0.7,0.5);
+    \vertex (c) at (1.4,0.5);
+    \vertex [label=right:$b$] (d1) at (2.1,0);
+    \vertex [label=right:$h/H/A$] (d2) at (2.1,1);
+    \diagram* {
+      (a1) -- [gluon] (b),
+      (a2) -- [fermion] (b),
+      (b) -- [fermion] (c),
+      (c) -- [fermion] (d1),
+      (c) -- [scalar] (d2),
+    };
+  \end{feynman}
+\end{tikzpicture}
+\caption{}
+\end{figure}
+
+\subsection{Event Selection}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{cc}
+         \hline
+         Channel & Branching Fraction  \\
+         \hline
+         \hline
+         $\tau_h \tau_h$ & 42.0\% \\
+         $e \tau_h$ & 23.1\% \\
+         $\mu \tau_h$ & 22.6\% \\
+         $e \mu$ & 6.2\% \\
+         $e e$ & 3.2\% \\
+         $\mu \mu$ & 3.0\% \\
+         \hline
+    \end{tabular}
+    \caption{}
+\end{table}
+
+\subsection{Background Modelling}
+
+\subsection{Fake Factor Method}
+
+\subsubsection{Future Improvements to the Fake Factor Method}
+
+\subsection{Signal Modelling}
+
+\subsection{Optimisation of Analysis}
+
+\subsection{Signal Extraction}
+
+\subsection{Results}
+
+\subsubsection{Model-Independent}
+
+\subsubsection{Model-Dependent}
