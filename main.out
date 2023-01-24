@@ -1,43 +1,15 @@
-\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.2}{The Standard Model of Particle Physics}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Quantum Field Theories}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Electroweak Unification}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.3}{The Higgs Mechanism}{section.2}% 5
-\BOOKMARK [2][-]{subsection.2.4}{Quantum Chromodynamics}{section.2}% 6
-\BOOKMARK [2][-]{subsection.2.5}{Experimental Evidence for the Standard Model}{section.2}% 7
-\BOOKMARK [3][-]{subsubsection.2.5.1}{Electron Magnetic Moment}{subsection.2.5}% 8
-\BOOKMARK [3][-]{subsubsection.2.5.2}{Discovery of Gauge Bosons}{subsection.2.5}% 9
-\BOOKMARK [3][-]{subsubsection.2.5.3}{Observation of the Higgs Boson Particle}{subsection.2.5}% 10
-\BOOKMARK [1][-]{section.3}{The LHC and CMS Experiment}{}% 11
-\BOOKMARK [2][-]{subsection.3.1}{The LHC}{section.3}% 12
-\BOOKMARK [2][-]{subsection.3.2}{The CMS Detector}{section.3}% 13
-\BOOKMARK [2][-]{subsection.3.3}{Event Reconstruction}{section.3}% 14
-\BOOKMARK [1][-]{section.4}{Tau Identification}{}% 15
-\BOOKMARK [1][-]{section.5}{BSM H/A to tau tau Analysis}{}% 16
-\BOOKMARK [2][-]{subsection.5.1}{Theoretical Motivation}{section.5}% 17
-\BOOKMARK [2][-]{subsection.5.2}{Event Selection}{section.5}% 18
-\BOOKMARK [2][-]{subsection.5.3}{Background Modelling}{section.5}% 19
-\BOOKMARK [2][-]{subsection.5.4}{Fake Factor Method}{section.5}% 20
-\BOOKMARK [3][-]{subsubsection.5.4.1}{Future Improvements to the Fake Factor Method}{subsection.5.4}% 21
-\BOOKMARK [2][-]{subsection.5.5}{Signal Modelling}{section.5}% 22
-\BOOKMARK [2][-]{subsection.5.6}{Optimisation of Analysis}{section.5}% 23
-\BOOKMARK [2][-]{subsection.5.7}{Signal Extraction}{section.5}% 24
-\BOOKMARK [2][-]{subsection.5.8}{Results}{section.5}% 25
-\BOOKMARK [3][-]{subsubsection.5.8.1}{Model-Independent}{subsection.5.8}% 26
-\BOOKMARK [3][-]{subsubsection.5.8.2}{Model-Dependent}{subsection.5.8}% 27
-\BOOKMARK [1][-]{section.6}{Vector Leptoquark Reinterpretation of the BSM H/A to tau tau Analysis}{}% 28
-\BOOKMARK [2][-]{subsection.6.1}{Theoretical Motivation}{section.6}% 29
-\BOOKMARK [2][-]{subsection.6.2}{Analysis Strategy}{section.6}% 30
-\BOOKMARK [2][-]{subsection.6.3}{Signal Modelling}{section.6}% 31
-\BOOKMARK [2][-]{subsection.6.4}{Results}{section.6}% 32
-\BOOKMARK [2][-]{subsection.6.5}{Future Improvements to Vector Leptoquark Search}{section.6}% 33
-\BOOKMARK [1][-]{section.7}{BSM Z* to HA to tau tau tau tau}{}% 34
-\BOOKMARK [2][-]{subsection.7.1}{Theoretical Motivation}{section.7}% 35
-\BOOKMARK [2][-]{subsection.7.2}{Event Selection}{section.7}% 36
-\BOOKMARK [2][-]{subsection.7.3}{Background Modelling}{section.7}% 37
-\BOOKMARK [2][-]{subsection.7.4}{Optimisation of Analysis}{section.7}% 38
-\BOOKMARK [2][-]{subsection.7.5}{Signal Extraction}{section.7}% 39
-\BOOKMARK [2][-]{subsection.7.6}{Results}{section.7}% 40
-\BOOKMARK [1][-]{section.8}{Conclusion}{}% 41
-\BOOKMARK [2][-]{subsection.8.1}{Global Interpretations of Results}{section.8}% 42
-\BOOKMARK [2][-]{subsection.8.2}{Projections to Run-3 and HL-LHC}{section.8}% 43
+\BOOKMARK [0][-]{chapter.1}{Search for new physics in tautau final states}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Introduction}{chapter.1}% 2
+\BOOKMARK [2][-]{subsection.1.1.1}{Additional Higgs Bosons}{section.1.1}% 3
+\BOOKMARK [2][-]{subsection.1.1.2}{Vector Leptoquarks}{section.1.1}% 4
+\BOOKMARK [1][-]{section.1.2}{Signal Modelling}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.3}{Event Selection}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.4}{Signal Extraction}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.5}{Background Modelling}{chapter.1}% 8
+\BOOKMARK [2][-]{subsection.1.5.1}{Overview}{section.1.5}% 9
+\BOOKMARK [2][-]{subsection.1.5.2}{Embedding Method}{section.1.5}% 10
+\BOOKMARK [2][-]{subsection.1.5.3}{Fake Factor Method}{section.1.5}% 11
+\BOOKMARK [1][-]{section.1.6}{Corrections}{chapter.1}% 12
+\BOOKMARK [1][-]{section.1.7}{Results}{chapter.1}% 13
+\BOOKMARK [2][-]{subsection.1.7.1}{Model Independent}{section.1.7}% 14
+\BOOKMARK [2][-]{subsection.1.7.2}{Model Dependent}{section.1.7}% 15

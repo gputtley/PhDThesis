@@ -1,0 +1,57 @@
+\chapter{Object Reconstruction}
+\label{sec:tau_identification}
+
+\section{Tracks and vertices}
+
+\section{Particle flow}
+
+The particle-flow (PF) algorithm reconstructs the products of the LHC pp collisions and is described in full in Ref.\cite{PF_CMS}.  It utilises all the information available from the tracker, ECAL, HCAL and muon detectors combined to produce a list of particle candidates. These candidates are either a photon, electron, muon or a neutral or charged hadrons. It begins with defining an event as the data taken per bunch crossing. The PF algorithm then reconstructs the tracks of the particle candidates in order to find the collision vertices. The primary collision vertex is taken to be the one with the largest value of \(p_T^{2}\) summed over all physics objects originated from that vertex. Physics objects are not only defined to include particle candidate tracks, but also missing tracks represented by the negative vectorial sum of all particle candidate tracks. Other pp collisions vertices are referred to as pileup. \\
+
+In reconstructing electron and muons, the energy deposits in the ECAL and the track hits in the muon chamber respectively, working alongside the tracker, provide the basis of electron and muon identification. However, additional requirements are used to drop misidentification rates by ensuring that the electron or muon is isolated from any hadronic activity in the detector, as leptons do not carry colour charge. This is done by defining a relative isolation variable \(I_{rel}^{e(\mu)}\) in the following way
+
+\begin{equation}
+    I_{rel}^{e(\mu)} = \frac{\sum p_{T,i} + \sum E_{T,i}}{p_T^{e(\mu)}}.
+\end{equation}
+
+The sums are over all particles included in a cone of radius \(\Delta R = \sqrt{(\Delta \eta)^2 + (\Delta \phi)^2}\) excluding the electron or muon itself. \(\Delta \eta\) and \(\Delta \phi\) are the angular distance in \(\eta\) and \(\phi\) around the electron or muon direction from the primary vertex. To remove problems with pileup, only charged particles originating from the primary vertex are included. To remove neutral particles from pileup in the cone, the \(p_T\) for neutral particles is estimated by subtracting half of the sum of the \(p_T\) of charged particle in the cone, due to the approximate ratio of charged to neutral hadron production. The cone size selected for electrons is \(\Delta R<0.3\) and the isolation variable is \(I_{\text{rel}}^{e(\mu)} < 0.1\). For muons is cone size is \(\Delta R<0.4\) and the isolation variable is \(I_{\text{rel}}^{e(\mu)} < 0.15\). \\
+
+Jets originating from the hadronisation of b quarks, are identified using the combined secondary vertex b-tagging algorithm. This discriminates between jets originating from b quarks from other jets, utilising track impact parameters and secondary vertex related variables \cite{CMS_btag}. This plays a key part in the analysis, as b-tagging is used for categorisation purposes described in Section \ref{sec:cat_and_sig}. The missing transverse momentum, \(\vec{p}_T^{\hspace{1ex}\text{miss}}\), is also used in categorisation of events and is calculated as the negative vector sum of all PF reconstructed transverse momenta.
+
+\section{Muons}
+\section{Electrons}
+\section{Jets}
+\section{b jets}
+\section{Missing transverse energy}
+\section{Taus}
+
+Also fundamental to this analysis is the identification of tau particles. The tau lepton is measured to have a mean lifetime of \(2.9 \times 10^{-13}\)s. This short lifetimes means that the tau lepton is not directly observable in the CMS detector.  In order to detect these particles, it is important to understand how the tau decays. Due to the heavy nature of the particle, it does not only decay leptonically, but unlike the muon, it can also decay hadronically. A list of prominent decays of the tau lepton are shown in the table below.
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|}
+         \hline
+         Decay Mode & Branching Fraction  \\
+         \hline
+         \hline
+         \textbf{Leptonic Decay (\(e\), \(\mu\))} & \textbf{35.2\%} \\
+         \(e^- \bar{\nu}_e \nu_\tau \) & 17.8\% \\
+         \(\mu^- \bar{\nu}_\mu \nu_\tau \) & 17.4\% \\
+         \hline
+         \textbf{Hadronic Decay (\(\tau_h\))} & \textbf{64.8\%} \\
+         \(h^- \pi^0 \nu_\tau \) & 25.9\% \\
+         \(h^- \nu_\tau\) & 11.5\% \\
+         \(h^- 2\pi^0 \nu_\tau\) & 9.3\% \\
+         \(\pi^- \pi^- \pi^+ \nu_\tau\) & 9.0\% \\
+         \(\pi^- \pi^- \pi^+ \pi^0 \nu_\tau\) & 2.7\% \\
+         other & 6.4\% \\
+         \hline
+    \end{tabular}
+    \caption{Measured branching fractions, that are greater than 2\%, for the tau lepton. h represents a charged hadron either a pion or a kaon.}
+    \label{tab:tau_decay}
+\end{table}
+
+These decays can be split into three groups: the 17.8\% of taus that decay to an electron (e), the 17.4\% that decay into a muon (\(\mu\)) and hadronic tau decays (\(\tau_h\)) that make up the final 64.8\% of tau decays. The leptonic decays of the tau can be accounted for by the identification of electrons and muons as discussed in the previous subsection. The hadron-plus-strips (HPS) algorithm is used to identify hadronic taus \cite{CMS_hps1,CMS_hps2}. This algorithm groups electrons, positrons and photons and names this cluster as a "strip". This is defined to represent the decay products of the \(\pi^0\) meson. The strip size is variable depending on the \(p_T\) of its components. In a jet, the number of strips and charged particles are counted. If the numbers are corresponding to the number of \(\pi^0\) mesons and charged hadrons shown in Table \ref{tab:tau_decay} for hadronic decays, it is concluded that the jet may originate from a tau lepton. \\
+
+To reduce misidentification, the tau lifetime is utilised. The tau lepton is expected to travel a small but identifiable distance before it decays. This distance between the decay vertex and the primary vertex is the variable used. To further reduce misidentification from the hadronisation of quarks or gluons, a similar isolation discriminant is used as for electrons and muons with \(\Delta R < 0.3\). All of these are combined into a multivariate hadronic tau identification algorithm (MVA) given in Ref.\cite{CMS_hps1}. From this reference the working points Tight, Medium and VeryLoose are used.  These refer to the output of the MVA varying the maximum values of the \(p_T\) of the hadronic tau candidate. The same MVA (excluding the HPS algorithm) is also used to reduce misidentification of leptonic tau decays. For \(\tau_h\) identification in this analysis the Tight working point is used. In order to suppress misidentification of leptonic tau decay the Tight (VeryLoose) working point for electrons and Loose (Tight) working points for muons are used in the \(e\tau_h(\mu\tau_h)\) channels. \\
+
+For a final state of two taus, there are six possible final states: \(e\mu\), \(e\tau_h\), \(\mu \tau_h\), \(\tau_h \tau_h\), \(ee\) and  \(\mu \mu\). However, \(ee\) and \(\mu \mu\) are dominated by large backgrounds and have relatively low cross sections, so provide very little sensitivity to this analysis and hence are not included. The other four channels are all utilised.

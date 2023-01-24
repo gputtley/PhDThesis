@@ -1,4 +1,4 @@
-\documentclass[a4paper, twoside]{article}
+\documentclass[a4paper, twoside, 12pt]{report}
 
 %% Language and font encodings
 \usepackage{amsmath}
@@ -14,9 +14,12 @@
 \usepackage{graphicx,booktabs,array}
 \usepackage{array,multirow}
 \usepackage{adjustbox}
+\usepackage{enumerate}
+
 %% Sets page size and margins
-\usepackage[a4paper,top=3cm,bottom=2cm,left=2cm,right=2cm,marginparwidth=1.75cm]{geometry}
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
 \usepackage{array}
+\renewcommand{\baselinestretch}{1.3} 
 \newcolumntype{x}[1]{>{\centering\arraybackslash\hspace{0pt}}m{#1}}
 \newcommand{\addpic}{\includegraphics[width=6em]{example-image}}
 \newcolumntype{C}{>{\centering\arraybackslash}m{16em}}
@@ -28,8 +31,26 @@
 \usepackage{graphicx}
 \usepackage[colorinlistoftodos]{todonotes}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{fancyhdr}
 
-\title{A Search for New Physics With Tau Leptons at the CMS Experiment}
+\pagestyle{fancy}
+\fancyhead{} % clear all header fields
+\fancyhead[LE, RO]{\thepage}
+\fancyhead[LO, RE]{\leftmark}
+\fancyfoot{}
+\renewcommand{\chaptermark}[1]{%
+\markboth{#1}{}}
+
+\newcommand{\tauh}{\tau_{h}}
+\newcommand{\tauhtauh}{\tau_{h}\tau_{h}}
+\newcommand{\mutauh}{\mu_{}\tau_{h}}
+\newcommand{\etauh}{e_{}\tau_{h}}
+\newcommand{\emu}{e_{}\mu_{}}
+\newcommand{\mumu}{\mu_{}\mu_{}}
+\newcommand{\ee}{e_{}e_{}}
+\newcommand{\lag}{\mathcal{L}}
+
+\title{Searches for New Physics With Tau Leptons at the CMS Experiment}
 \author{George Uttley}
 
 \begin{document}
@@ -37,22 +58,22 @@
 
 \tableofcontents
 \newpage
+\listoffigures
+\newpage
+\listoftables
+\newpage
 
-\input{Sections/introduction.tex}
-\newpage
-\input{Sections/standard_model.tex}
-\newpage
-\input{Sections/cms.tex}
-\newpage
-\input{Sections/tau_identification.tex}
-\newpage
+%\input{Sections/standard_model.tex}
+%\newpage
+%\input{Sections/cms.tex}
+%\newpage
+%\input{Sections/object_reconstruction.tex}
+%\newpage
 \input{Sections/bsm_H_to_tau_tau_analysis.tex}
-\newpage
-\input{Sections/vector_leptoquark_reinterpretation.tex}
-\newpage
-\input{Sections/H_A_to_4_tau_analysis.tex}
-\newpage
-\input{Sections/conclusion.tex}
+%\newpage
+%\input{Sections/H_A_to_4_tau_analysis.tex}
+%\newpage
+%\input{Sections/conclusion.tex}
 \newpage
 \bibliographystyle{ieeetr}
 \bibliography{bibs/sample}

@@ -1,17 +1,130 @@
+\chapter{Theory and Motivation}
+
+
 \section{The Standard Model of Particle Physics}
 
-\subsection{Quantum Field Theories}
+\subsection{Fundamental Particles}
 
-\subsection{Electroweak Unification}
+\subsection{Higgs Sector}
 
-\subsection{The Higgs Mechanism}
+\section{Extended Higgs Sector}
 
-\subsection{Quantum Chromodynamics}
+\section{Theoretical Problems and Potential Solutions}
 
-\subsection{Experimental Evidence for the Standard Model}
+\subsection{Hierarchy Problem}
 
-\subsubsection{Electron Magnetic Moment}
+The hierarchy problem can be resolved by adding a symmetry between fermions and bosons that allow cancellations to corrections to the Higgs mass. This theory is known as Supersymmetry. \cite{SUSY_Primer} In its simplest form, the Minimal Supersymmetric Standard Model (MSSM), is a type-II 2 Higgs doublet model (2HDM), the predicts the existence of five Higgs bosons: two scalars (h, H), two charged bosons (\(H^{\pm}\)) and one pseudoscalar (A). At tree level this Higgs sector only depends on two parameters, $m_A$ and $\tan\beta$, where $\tan\beta$ is the ratio of vacuum expectation values.
 
-\subsubsection{Discovery of Gauge Bosons}
+\begin{equation}
+\tan \beta = \frac{\langle H_{u}^{0} \rangle}{\langle H_{d}^{0} \rangle} = \frac{v_{u}}{v_{d}}
+\end{equation}
 
-\subsubsection{Observation of the Higgs Boson Particle}
+The couplings of the neutral Higgs bosons to heavy fermions are different from the Standard Model Higgs couplings. At tree level these differ by the factors shown in the Table \ref{tab:mssm_couplings}.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c || c c c}
+\hline
+  & $b\bar{b}$ & $t\bar{t}$ & $\tau^+ \tau^-$ \\
+\hline
+\hline
+h & $-\sin\alpha / \cos\beta$ & $\cos\alpha / \sin\beta$ & $-\sin\alpha / \cos\beta$\\
+H & $\cos\alpha / \cos\beta$ & $\sin\alpha / \sin\beta$ & $\cos\alpha / \cos\beta$ \\
+A & $\gamma_{5}\tan\beta $ & $\gamma_{5}/\tan\beta$ & $\gamma_{5}\tan\beta$ \\
+\hline
+\end{tabular}
+\caption{MSSM couplings between heavy fermions and MSSM neutral Higgs bosons. $\alpha$ is the angle that diagonalises of the CP-even Higgs squared mass matrix. $\beta$ is the inverse tangent of the ratio of vacuum expectation values and $\gamma_5$ shows a pseudoscalar coupling.}
+\label{tab:mssm_couplings}
+\end{table}
+
+Due to the hierarchy of the top and bottom masses, it is expected that $\tan\beta$ is greater than 1 and therefore the couplings to tau leptons and bottom quarks would be enhanced and the coupling to top quarks would be suppressed.
+
+Eq.(\ref{eqn:dm_f}) and Eq.(\ref{eqn:dm_S}) show that if the mass of the scalar is equivalent to that of the fermion and \(\lambda_f = \lambda_{S}^{2}\), then the Higgs mass corrections cancel. This offers a solution to the hierarchy problem introducing a new symmetry that extends the Standard Model. The symmetry relates fermions and bosons and is known as Supersymmetry. It states that fermions and bosons exist in groups called supermultiplets. Each supermultiplet contains fermion and boson states which are superpartners of one another. On-shell each supermultiplet must have an equivalent number of fermionic and bosonic degrees of freedom. In order for this to also hold off-shell, an auxiliary field is added to balance the number of degrees of freedom. Extending this theory to currently known particles, the simplest set of supermultiplets can be found and are shown in Tables \ref{tab:MSSM_Chiral} and \ref{tab:MSSM_vector}. \\
+
+Two Higgs supermultiplets are needed due to the anomaly cancellation condition, Tr[\(T_{3}^{2}Y\)] = Tr[\(Y^3\)] = 0, where \(Y\) and \(T_3\) are the third components of weak hypercharge and isospin respectively. The Higgs chiral supermultiplet, the higgsino, makes a significant contribution to the trace as it has a weak hypercharge \(Y=+\frac{1}{2}\). This anomaly is solved by introducing another Higgs chiral supermultiplet, with a higgsino of weak hypercharge \(Y=-\frac{1}{2}\), so that the traces cancel. This results in five physical Higgs boson states. 
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c||ccc}
+     \hline
+     Names & Spin \(\frac{1}{2}\) & Spin 1 & \(SU(3)_C, SU(2)_L, U(1)_Y \)\\
+     \hline
+     \hline
+     Gluino, gluon & \(\tilde{g}\) & \(g\) & \((\textbf{8},\textbf{1},0)\) \\
+     Winos, W bosons & \(\tilde{W}^{\pm}\) \(\tilde{W}^{0}\) & \(W^{\pm}\) \(W^0\) & \((\textbf{1},\textbf{3},0)\) \\
+     Bino, B boson & \(\tilde{B}^{0}\) & \(B^0\) & \((\textbf{1},\textbf{1},0)\) \\
+     \hline
+\end{tabular}
+\caption{The Minimal Supersymmetry Standard Model Vector Supermultiplets \cite{SUSY_Primer}.}
+\label{tab:MSSM_vector}
+\end{table}
+
+
+The \(Z^{0}\) and \(\gamma\) states are found by mixing the \(W^0\) and \(B^0\) states after electroweak symmetry breaking in the Standard Model. There corresponding gauginos that are named zino (\(\tilde{Z}^0\)) and photino (\(\tilde{\gamma}\)) are found by the same method from the \(\tilde{W}^0\) and \(\tilde{B}^0\). \\
+
+If Supersymmetry is an unbroken theory, then one would expect to have the superpartners at the same mass as the Standard Model particles. This has not been seen experimentally, therefore Supersymmetry must be a broken theory in the vacuum state. One can define soft supersymmetry breaking through the addition of SUSY violating Lagrangian term \(\mathcal{L}_{\text{soft}}\), where
+
+\begin{equation}
+    \mathcal{L} = \mathcal{L}_{\text{SUSY}} + \mathcal{L}_{\text{soft}}.
+\end{equation}
+
+\(\mathcal{L}_{\text{soft}}\) contains only mass terms and coupling parameters. Defining \(m_{\text{soft}}\) as the largest mass scale involved in the soft Lagrangian, \(m_{\text{soft}}\) also then defines the mass splitting between the Standard Model particles and the sparticles. If the mass splitting becomes significant, the hierarchy problem would be reintroduced as corrections to the Higgs mass would again become large.
+
+The MSSM Higgs sector is CP-conserving at tree level. It contains a light, \(h\), and a heavy, \(H\), CP-even Higgs boson, a CP-odd Higgs boson, \(A\), and two charged Higgs bosons \(H^{\pm}\). The parameters of the sector can all be obtained from three factors: the Z boson mass, \(m_Z\), the CP-odd Higgs mass, \(m_A\), and \(\tan\beta\), where
+
+\begin{equation}
+    \tan \beta = \frac{\langle H_{u}^{0} \rangle}{\langle H_{d}^{0} \rangle} = \frac{v_u}{v_d}.
+\end{equation}
+
+\(\tan \beta\) is the ratio of the vacuum expectation values of the neutral components of the Higgs doublets. The masses of the \(h\), \(H\) and \(H^{\pm}\) Higgs bosons at tree level are calculated to be \cite{mssm_theory}
+
+\begin{subequations}
+\begin{align}
+    m_{\text{h}}^2 = & \frac{1}{2}\Big(m_{\text{A}}^2 + m_{\text{Z}}^2 - \sqrt{(m_{\text{A}}^2 + m_{\text{Z}}^2)^2 - 4 m_{\text{Z}}^2 m_{\text{A}}^2 \cos^2{2\beta}} \Big), \\
+    m_{\text{H}}^2 = & \frac{1}{2}\Big(m_{\text{A}}^2 + m_{\text{Z}}^2 + \sqrt{(m_{\text{A}}^2 + m_{\text{Z}}^2)^2 - 4 m_{\text{Z}}^2 m_{\text{A}}^2 \cos^2{2\beta}} \Big), \\
+    m_{\text{H}^{\pm}}^2 = & m_{\text{A}}^2 + m_{\text{W}}^2.
+\end{align}
+\end{subequations}
+
+All of the tree level couplings can also be expressed in terms of these three parameters but they will not all be stated here. The main couplings of interest for this report are that between the neutral Higgs bosons and heavy fermions. These couplings are the largest of the Higgs sector. The couplings of the three heaviest fermions to the MSSM Higgs sector are shown in the below Table \ref{tab:MSSM_coupling}. \\
+
+Due to the mass hierarchy of the top and bottom quarks, it is expected that \(\tan\beta\) lies in the range
+
+\begin{equation}
+    1 \lesssim \tan\beta \lesssim \frac{m_t}{m_b}.
+\end{equation}
+
+
+\section{Experimental Tensions and Potential Solutions}
+
+\subsection{B Anomalies}
+
+Recent measurements from the LHCb experiment, testing lepton flavour conservation, have found deviations away from the Standard Model. The measurement of $R_{K}$, $R_{K^{*}}$ and $R_{D(^{})}$ have deviations with significances of 3.1, 2.1-2.5 and 3.1 $\sigma$ respectively \cite{Rk,Rkstar,Rd}. These B-anomalies have prompted the idea for a short range lepton flavour violating interaction. This interaction is theorised to be mediated by leptoquarks. In an attempt to fit a model that offers a combined explanation of these results, it was found that a $U_{1}$ vector leptoquark was the only leptoquark that could offer a simultaneous explanation of all anomalous results \cite{leptoquark}. Such a leptoquark would couple to fermions by the Lagrangian shown below.
+
+\begin{equation}
+\lag_{U} = \frac{g_{U}}{\sqrt{2}} U^{\mu} \big[ \beta_{L}^{i\alpha}( \bar{q}_{L}^{i} \gamma_{\mu} l_{L}^{\alpha}) + \beta_{R}^{i\alpha}( \bar{d}_{R}^{i} \gamma_{\mu} e_{R}^{\alpha}) \big] + \text{h.c.}
+\end{equation}
+
+where $g_{U}$ is the coupling scaling parameter and $\beta_{L}$ and $\beta_{R}$ are the left and right-handed mixing matrices
+
+\begin{equation}
+\beta_{L} = 
+\begin{pmatrix}
+0 & 0 & \beta_{L}^{d\tau} \\
+0 & \beta_{L}^{s\mu} & \beta_{L}^{s\tau} \\
+0 & \beta_{L}^{b\mu} & 1
+\end{pmatrix},
+\hspace{1cm}
+\beta_{R} = 
+\begin{pmatrix}
+0 & 0 & 0 \\
+0 & 0 & 0 \\
+0 & 0 & \beta_{R}^{b\tau}
+\end{pmatrix}.
+\end{equation}
+
+The fit to B-anomolies done in Ref. \cite{leptoquark}, found the best fit values for each left-handed mixing matrix parameter based on two scenarios for $\beta^{b\tau}_{R}$, namely $\beta^{b\tau}_{R} = 0$ and $\beta^{b\tau}_{R} = -1$. These represents no and maximal right-handed contributions. The most stringent constraints on these models are imposed by high-$p_{T}$ di-tau tails. At the LHC the most dominant production mode of this final state would be given in Figure \ref{fig:leptoquark_feynman}.
+
+\subsection{g-2 Anomaly}
+
+

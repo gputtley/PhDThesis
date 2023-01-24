@@ -1,9 +1,32 @@
-\section{\texorpdfstring{BSM H/A $\rightarrow \tau^+\tau^-$ Analysis}{BSM H/A to tau tau Analysis}}
+\chapter{\texorpdfstring{Searches for New Physics in $\tau^+\tau^-$ Final States}{Search for new physics in tautau final states}}
 \label{sec:bsm_H_to_tau_tau_analysis}
 
-\subsection{Theoretical Motivation}
+\section{Introduction}
+ 
+The $\tau\tau$ final states are powerful tool to search for new physics at colliders. 
+As the heaviest lepton, they are sensitive to resonant production of new neutral particles where the couplings have mass hierarchy.
+They are also sensitive to non-resonant effects from new physics mediators.
+This chapter will detail the searches for two such areas of new physics: additional Higgs bosons and vector leptoquarks.
+These searches are split up into three sections: 
+\begin{enumerate}[i]
+  \item A model independent search for single narrow spin-0 resonance, $\phi$, produced via gluon fusion (gg$\phi$) or in association with a bottom quark (bb$\phi$). The SM Higgs boson is treated as a background. The quark contents of the gluon fusion loop are set to that of the SM Higgs boson.
+  \item A search for the t-channel exchange of a $U_{1}$ vector leptoquark. Two scenarios are taken, based of the best fit to the b anomalies. These scenarios are detailed in Section~\ref{sec:vlq}.
+  \item A search for the MSSM Higgs sector, in a number of benchmark scenarios. The benchmark scenarios are defined in Section~\ref{sec:additional_higgs_bosons}. The production of SM Higgs boson is also used to constrain the available phase space.
+\end{enumerate}
+
+ 
+\subsection{Additional Higgs Bosons} 
+\label{sec:additional_higgs_bosons} 
+ 
+Extended Higgs sectors, such as that of the MSSM, can be probed by direct searches for the additional bosons and further precise measurements of the Standard Model Higgs boson. 
+This search for an extended Higgs sector is motivated by Type II 2HDMs, such as the MSSM.
+In these models $\tan\beta$ enhances couplings of additional Higgs bosons to b-like quarks and leptons, whilst top-like couplings are suppressed.
+This narrows down the most important production modes of the Higgs boson into two categories: Gluon fusion and production in association with a b quark.
+Examples of these are shown in Figure~\ref{fig:mssm_feynamn}.
 
 \begin{figure}[H]
+\centering
+\begin{subfigure}[b]{0.3\textwidth}
 \begin{tikzpicture}[scale=2]
   \begin{feynman}
     \vertex [label=left:$g$] (a1) at (0,0);
@@ -11,10 +34,7 @@
     \vertex (b1) at (1,0);
     \vertex (b2) at (1,1);
     \vertex (c) at (1.7,0.5);
-    \vertex (d) at (2.5,0.5);
-    \vertex [label=above:$h/H/A$] (d1) at (2.1,0.5);
-    \vertex [label=right:$\tau^-$] (e) at (3.2,1);
-    \vertex [label=right:$\tau^+$] (f) at (3.2,0);
+    \vertex [label=right:$h/H/A$] (d) at (2.7,0.5);
 
     \diagram* {
       (a1) -- [gluon] (b1),
@@ -23,16 +43,14 @@
       (c) -- [fermion] (b2),
       (b1) -- [fermion] (c),
       (c) -- [scalar] (d),
-      (d) -- [fermion] (e),
-      (f) -- [fermion] (d),
     };
   \end{feynman}
 \end{tikzpicture}
 \caption{}
-\end{figure}
+\end{subfigure}
 
 
-\begin{figure}[H]
+\begin{subfigure}[b]{0.3\textwidth}
 \begin{tikzpicture}[scale=2]
   \begin{feynman}
     \vertex [label=left:$g$] (a1) at (0,0);
@@ -40,9 +58,9 @@
     \vertex (b1) at (1,0);
     \vertex (b2) at (1,0.5);
     \vertex (b3) at (1,1);
-    \vertex [label=right:$b$] (c1) at (1.7,-0.5);
+    \vertex [label=right:$b$] (c1) at (2,0);
     \vertex [label=right:$h/H/A$] (c2) at (2,0.5);
-    \vertex [label=right:$\bar{b}$] (c3) at (1.7,0.5);
+    \vertex [label=right:$\bar{b}$] (c3) at (2,1);
     \diagram* {
       (a1) -- [gluon] (b1),
       (a2) -- [gluon] (b3),
@@ -55,9 +73,9 @@
   \end{feynman}
 \end{tikzpicture}
 \caption{}
-\end{figure}
-
-\begin{figure}[H]
+\end{subfigure}
+\hspace{2cm}
+\begin{subfigure}[b]{0.3\textwidth}
 \begin{tikzpicture}[scale=2]
   \begin{feynman}
     \vertex [label=left:$g$] (a1) at (0,0);
@@ -76,13 +94,57 @@
   \end{feynman}
 \end{tikzpicture}
 \caption{}
+\end{subfigure}
+\caption{Diagram (a) shows the production of neutral Higgs bosons from gluon fusion. The dominant loop contributions to this diagrams are from top-only, bottom-only and top-bottom interference. Diagrams (b) and (c) show production in association with b quarks.}
+\label{fig:mssm_feynamn}
 \end{figure}
 
-\subsection{Event Selection}
+With the $\tan\beta$ enhancement, the decays of additional Higgs bosons to tau leptons and bottom quarks are most likely.
+Tau leptons are reconstructed more easily in the CMS detector than bottoms quarks and are much easier to separate from the large QCD multijet background produced from the high energy proton-proton collisions.
+
+\subsection{Vector Leptoquarks}
+\label{sec:vlq}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=2]
+  \begin{feynman}
+    \vertex [label=left:$\bar{q}$] (a1) at (0,0);
+    \vertex [label=left:$q$] (a2) at (0,1);
+    \vertex (b1) at (1,0);
+    \vertex (b2) at (1,1);
+    \vertex [label=right:$U_{1}$] (b3) at (1,0.5);
+    \vertex [label=right:$\tau^-$] (c1) at (2,0);
+    \vertex [label=right:$\tau^+$] (c2) at (2,1);
+
+    \diagram* {
+      (b1) -- [fermion] (a1),
+      (a2) -- [fermion] (b2),
+      (b2) -- [boson] (b1),
+      (c1) -- [fermion] (b1),
+      (b2) -- [fermion] (c2),
+    };
+  \end{feynman}
+\end{tikzpicture}
+\caption{Feynman diagram showing the vector leptoquark t-channel interaction that produces a tau pair from a pair of bottom quarks.}
+\label{fig:leptoquark_feynman}
+\end{figure}
+
+\section{Signal Modelling}
+
+\begin{figure}[!hbtp]
+\centering
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/mssm_signal.pdf}}
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/mssm_signal.pdf}}
+\caption{MSSM signal.}
+\label{fig:mssm_signal}
+\end{figure}
+
+\section{Event Selection}
 
 \begin{table}[h]
     \centering
-    \begin{tabular}{cc}
+    \begin{tabular}{|c|c|}
          \hline
          Channel & Branching Fraction  \\
          \hline
@@ -98,20 +160,86 @@
     \caption{}
 \end{table}
 
-\subsection{Background Modelling}
+\section{Signal Extraction}
+
+\begin{figure}[!hbtp]
+\centering
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/vlq_signal.pdf}}
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/vlq_signal.pdf}}
+\caption{VLQ signal.}
+\label{fig:vlq_signal}
+\end{figure}
+
+\section{Background Modelling}
+\subsection{Overview}
+\subsection{Embedding Method}
+
+\begin{figure}[!hbtp]
+\centering
+    \subfloat[]{\includegraphics[width=1.0\textwidth]{Figures/Embedding_Diagram.pdf}}
+\caption{Embedding.}
+\label{fig:embedding}
+\end{figure}
 
 \subsection{Fake Factor Method}
+\section{Corrections}
+\section{Results}
+\subsection{Model Independent}
 
-\subsubsection{Future Improvements to the Fake Factor Method}
+\begin{figure}[!hbtp]
+\centering
+    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/postfit_lowmass_tt_nobtag_mediumpT.pdf}}
+    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/postfit_lowmass_tt_nobtag_highpT.pdf}} \\
+    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/postfit_lowmass_lt_nobtag_mediumpT.pdf}}
+    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/postfit_lowmass_lt_nobtag_highpT.pdf}} \\
+    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/postfit_lowmass_em_nobtag_mediumpT.pdf}}
+    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/postfit_lowmass_em_nobtag_highpT.pdf}}
+\caption{Low mass postfit.}
+\label{fig:low_mass_postfit}
+\end{figure}
 
-\subsection{Signal Modelling}
+\begin{figure}[!hbtp]
+\centering
+    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/postfit_highmass_tt_nobtag.pdf}}
+    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/postfit_highmass_tt_btag.pdf}} \\
+    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/postfit_highmass_lt_nobtag_tightmT.pdf}}
+    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/postfit_highmass_lt_btag_tightmT.pdf}} \\
+    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/postfit_highmass_em_nobtag_mediumdzeta.pdf}}
+    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/postfit_highmass_em_btag_mediumdzeta.pdf}}
+\caption{High mass postfit.}
+\label{fig:high_mass_postfit}
+\end{figure}
 
-\subsection{Optimisation of Analysis}
+\begin{figure}[!hbtp]
+\centering
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/model_independent_limit_ggH.pdf}}
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/model_independent_limit_bbH.pdf}}
+\caption{Model independent limits.}
+\label{fig:model_independent_limits}
+\end{figure}
 
-\subsection{Signal Extraction}
+\begin{figure}[!hbtp]
+\centering
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/significance_plot_ggH.pdf}}
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/significance_plot_bbH.pdf}}
+\caption{Significance.}
+\label{fig:significance}
+\end{figure}
 
-\subsection{Results}
+\subsection{Model Dependent}
 
-\subsubsection{Model-Independent}
+\begin{figure}[!hbtp]
+\centering
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/vlq_bm_1.pdf}}
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/vlq_bm_2.pdf}}
+\caption{VLQ limits.}
+\label{fig:vlq_limits}
+\end{figure}
 
-\subsubsection{Model-Dependent}
+\begin{figure}[!hbtp]
+\centering
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/model-dependent_limit_mh125.pdf}}
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/model-dependent_limit_mh125EFT.pdf}}
+\caption{MSSM limits.}
+\label{fig:mssm_limits}
+\end{figure}
