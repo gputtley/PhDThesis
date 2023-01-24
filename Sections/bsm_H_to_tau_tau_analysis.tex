@@ -3,25 +3,26 @@
 
 \section{Introduction}
  
-The $\tau\tau$ final states are powerful tool to search for new physics at colliders. 
+The $\tau^+\tau^-$ final states are powerful tool to search for new physics at collider experiments. 
 As the heaviest lepton, they are sensitive to resonant production of new neutral particles where the couplings have mass hierarchy.
-They are also sensitive to non-resonant effects from new physics mediators.
+They are also sensitive to non-resonant effects from new physics mediators. 
 This chapter will detail the searches for two such areas of new physics: additional Higgs bosons and vector leptoquarks.
 These searches are split up into three sections: 
-\begin{enumerate}[i]
+\begin{enumerate}[i)]
   \item A model independent search for single narrow spin-0 resonance, $\phi$, produced via gluon fusion (gg$\phi$) or in association with a bottom quark (bb$\phi$). The SM Higgs boson is treated as a background. The quark contents of the gluon fusion loop are set to that of the SM Higgs boson.
+   \item A search for the MSSM Higgs sector, in a number of benchmark scenarios. The benchmark scenarios are defined in Section~\ref{sec:additional_higgs_bosons}. The production of SM Higgs boson is also used to constrain the available phase space.
   \item A search for the t-channel exchange of a $U_{1}$ vector leptoquark. Two scenarios are taken, based of the best fit to the b anomalies. These scenarios are detailed in Section~\ref{sec:vlq}.
-  \item A search for the MSSM Higgs sector, in a number of benchmark scenarios. The benchmark scenarios are defined in Section~\ref{sec:additional_higgs_bosons}. The production of SM Higgs boson is also used to constrain the available phase space.
 \end{enumerate}
 
+These searches are performed with the full run-2 dataset (138 $fb^{-1}$) collected by the CMS experiment. The search for additional Higgs bosons had previously been performed with data collected in 2016 (39 $fb^{-1}$) and results were consistent with the SM background prediction.
  
 \subsection{Additional Higgs Bosons} 
 \label{sec:additional_higgs_bosons} 
  
 Extended Higgs sectors, such as that of the MSSM, can be probed by direct searches for the additional bosons and further precise measurements of the Standard Model Higgs boson. 
 This search for an extended Higgs sector is motivated by Type II 2HDMs, such as the MSSM.
-In these models $\tan\beta$ enhances couplings of additional Higgs bosons to b-like quarks and leptons, whilst top-like couplings are suppressed.
-This narrows down the most important production modes of the Higgs boson into two categories: Gluon fusion and production in association with a b quark.
+In these models $\tan\beta$ enhances couplings of additional Higgs bosons to bottom-like quarks and leptons, whilst top-like couplings are suppressed.
+This narrows down the most important production modes of the Higgs boson into two categories: Gluon fusion and production in association with a bottom quark.
 Examples of these are shown in Figure~\ref{fig:mssm_feynamn}.
 
 \begin{figure}[H]
@@ -100,10 +101,18 @@ Examples of these are shown in Figure~\ref{fig:mssm_feynamn}.
 \end{figure}
 
 With the $\tan\beta$ enhancement, the decays of additional Higgs bosons to tau leptons and bottom quarks are most likely.
-Tau leptons are reconstructed more easily in the CMS detector than bottoms quarks and are much easier to separate from the large QCD multijet background produced from the high energy proton-proton collisions.
+Tau leptons are identified with a higher purity than bottom quarks a the CMS detector.
+It is also easier to separate $\tau^{+}\tau^{-}$ from the large QCD multijet background produced from the high energy proton-proton collisions.
+This hypothesis was tested with the 2016 dataset and although no deviations were observed, the strongest limits on the MSSM phase space was placed by the $\tau^+\tau^-$ final states.
+
+MSSM Scenarios
 
 \subsection{Vector Leptoquarks}
 \label{sec:vlq}
+
+Best fit matrix elements show large b-tau couplings.
+This allows for t-channel leptoquark exchange, leaving high $p_{T}$ signatures in $\tau^{+}\tau^{-}$ final states.
+An example of this is shown in Figure~\ref{fig:leptoquark_feynman}.
 
 \begin{figure}[H]
 \centering
@@ -130,14 +139,28 @@ Tau leptons are reconstructed more easily in the CMS detector than bottoms quark
 \label{fig:leptoquark_feynman}
 \end{figure}
 
+t-channel production of $\tau^{+}\tau^{-}$ shown to offer strong constraints on allowed leptoquark phase space from a recast of ATLAS analysis.
+In this search the two scenarios discussed in Section~\ref{sec:introduction} are considered.
+The only non negligible parameter for $\tau^{+}\tau^{-}$ final states from the fit in the $m_{U}$-$g_{U}$ phase space is the $\beta_{L}^{s\tau}$ parameter.
+This is set to the best fit value.
+
 \section{Signal Modelling}
 
 \begin{figure}[!hbtp]
 \centering
-    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/mssm_signal.pdf}}
-    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/mssm_signal.pdf}}
-\caption{MSSM signal.}
-\label{fig:mssm_signal}
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/pT_reweighting_plot_tanb10.pdf}}
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/pT_reweighting_plot_tanb30.pdf}}
+\caption{Plots showing the $p_{T}$ density distributions of the A boson, with contributions to the gluon fusion loop displayed individually and summed. These are shown for $\tan\beta$ values of 10 (a) and 30 (b) where $m_{A} = 1600 $ GeV in the MSSM $M_{h}^{125}$ scenario.}
+\label{fig:mssm_sig}
+\end{figure}
+
+
+\begin{figure}[!hbtp]
+\centering
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/vlq_signal_plot_gU1p5.pdf}}
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/vlq_signal_plot_gU2p5.pdf}}
+\caption{VLQ signal.}
+\label{fig:vlq_signal}
 \end{figure}
 
 \section{Event Selection}
@@ -162,29 +185,73 @@ Tau leptons are reconstructed more easily in the CMS detector than bottoms quark
 
 \section{Signal Extraction}
 
+Categorisation
+
+mvis vs mttot
+
+\section{Background Modelling Overview}
+
+Jet fakes and genuine taus.
+
+Explain MC generators.
+
+Overview data driven methods.
+
+Fractions of processes in each channel.
+
+\section{Embedding Method}
+
 \begin{figure}[!hbtp]
 \centering
-    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/vlq_signal.pdf}}
-    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/vlq_signal.pdf}}
-\caption{VLQ signal.}
-\label{fig:vlq_signal}
-\end{figure}
-
-\section{Background Modelling}
-\subsection{Overview}
-\subsection{Embedding Method}
-
-\begin{figure}[!hbtp]
-\centering
-    \subfloat[]{\includegraphics[width=1.0\textwidth]{Figures/Embedding_Diagram.pdf}}
+    \includegraphics[width=0.8\textwidth]{Figures/Embedding_Diagram.pdf}
 \caption{Embedding.}
 \label{fig:embedding}
 \end{figure}
 
-\subsection{Fake Factor Method}
-\section{Corrections}
-\section{Results}
-\subsection{Model Independent}
+Validation plots of it working
+
+\section{Fake Factor Method}
+
+Overview
+
+\subsection{Determination Regions}
+
+\begin{figure}[!hbtp]
+\centering
+    \includegraphics[width=0.8\textwidth]{Figures/ff_diagram.pdf}
+\caption{FF diagram.}
+\label{fig:ff_schematic}
+\end{figure}
+
+\subsection{Parametrisation}
+
+\begin{figure}[!hbtp]
+\centering
+    \includegraphics[width=0.6\textwidth]{Figures/ff_colz_ttbar_lt.pdf}
+\caption{FF colz.}
+\label{fig:ff_colz}
+\end{figure}
+
+fits
+
+\subsection{Corrections}
+
+fits
+
+\subsection{Appilcation Region Fractions}
+
+
+\subsection{Applying Fake Factors}
+
+using leading tau
+subtracting off rest
+w fakes in tt
+
+\section{Uncertainty Model}
+
+bulleted list of uncertainties used in the analysis.
+
+\section{Postfit Plots}
 
 \begin{figure}[!hbtp]
 \centering
@@ -210,6 +277,16 @@ Tau leptons are reconstructed more easily in the CMS detector than bottoms quark
 \label{fig:high_mass_postfit}
 \end{figure}
 
+\section{MC Corrections}
+
+\section{Model Independent Results}
+
+\subsection{Limit Setting}
+
+\begin{equation}
+  q_{\mu} = -2 \ln \Biggl(\frac{\mathcal{L}(\text{data} | \mu, \hat{\theta}_{\mu})}{\mathcal{L}(\text{data} | \hat{\mu}, \hat{\theta}_{\hat{\mu}})}\Biggl), 0 \leq \hat{\mu} \leq \mu,
+\end{equation}
+
 \begin{figure}[!hbtp]
 \centering
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/model_independent_limit_ggH.pdf}}
@@ -220,13 +297,73 @@ Tau leptons are reconstructed more easily in the CMS detector than bottoms quark
 
 \begin{figure}[!hbtp]
 \centering
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/limit_comparison_mssm_ggphi.pdf}}
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/limit_comparison_mssm_bbphi.pdf}}
+\caption{Model independent limits.}
+\label{fig:model_independent_limits_by_channel}
+\end{figure}
+
+\begin{figure}[!hbtp]
+\centering
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/limit_comparison_gg_ATLAS.pdf}}
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/limit_comparison_bb_ATLAS.pdf}}
+\caption{Model independent limits.}
+\label{fig:model_independent_limits_by_channel}
+\end{figure}
+
+\subsection{Significance and Compatibility}
+
+\begin{figure}[!hbtp]
+\centering
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/significance_plot_ggH.pdf}}
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/significance_plot_bbH.pdf}}
 \caption{Significance.}
 \label{fig:significance}
 \end{figure}
 
-\subsection{Model Dependent}
+\begin{figure}[!hbtp]
+\centering
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/ChannelCompatibilityCheck_FitResults_mH100_channel.pdf}}
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/ChannelCompatibilityCheck_FitResults_mH100_cat.pdf}}
+\caption{Low mass compatibility.}
+\label{fig:low_mass_compatibility}
+\end{figure}
+
+\begin{figure}[!hbtp]
+\centering
+    \includegraphics[width=0.5\textwidth]{Figures/ccc_fit_result_mH1200_per-channel.pdf}
+\caption{High mass compatibility.}
+\label{fig:high_mass_compatibility}
+\end{figure}
+
+\subsection{2D Likelihood Scans}
+
+\begin{figure}[!hbtp]
+\centering
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/2d_lkld_60.pdf}}
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/2d_lkld_100.pdf}}
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/2d_lkld_125.pdf}} \\
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/2d_lkld_160.pdf}}
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/2d_lkld_250.pdf}}
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/2d_lkld_500.pdf}} \\
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/2d_lkld_1000.pdf}}
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/2d_lkld_1200.pdf}}
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/2d_lkld_3500.pdf}}
+\caption{2D Likelihood scans.}
+\label{fig:2d_likelihood_scans}
+\end{figure}
+
+\section{Model Dependent Limits}
+
+\subsection{Limit Setting}
+
+\begin{figure}[!hbtp]
+\centering
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/model-dependent_limit_mh125.pdf}}
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/model-dependent_limit_mh125EFT.pdf}}
+\caption{MSSM limits.}
+\label{fig:mssm_limits}
+\end{figure}
 
 \begin{figure}[!hbtp]
 \centering
@@ -236,10 +373,3 @@ Tau leptons are reconstructed more easily in the CMS detector than bottoms quark
 \label{fig:vlq_limits}
 \end{figure}
 
-\begin{figure}[!hbtp]
-\centering
-    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/model-dependent_limit_mh125.pdf}}
-    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/model-dependent_limit_mh125EFT.pdf}}
-\caption{MSSM limits.}
-\label{fig:mssm_limits}
-\end{figure}
