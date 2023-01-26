@@ -1,25 +1,25 @@
 \babel@toc {english}{}
 \contentsline {chapter}{\numberline {1}Searches for New Physics in $\tau ^+\tau ^-$ Final States}{2}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Introduction}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.1}Signal Modelling}{3}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Additional Higgs Bosons}{3}{subsection.1.1.1}%
 \contentsline {subsection}{\numberline {1.1.2}Vector Leptoquarks}{4}{subsection.1.1.2}%
-\contentsline {section}{\numberline {1.2}Signal Modelling}{4}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Event Selection}{4}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Signal Extraction}{4}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Background Modelling Overview}{6}{section.1.5}%
-\contentsline {section}{\numberline {1.6}Embedding Method}{6}{section.1.6}%
-\contentsline {section}{\numberline {1.7}Fake Factor Method}{6}{section.1.7}%
-\contentsline {subsection}{\numberline {1.7.1}Determination Regions}{6}{subsection.1.7.1}%
-\contentsline {subsection}{\numberline {1.7.2}Parametrisation}{6}{subsection.1.7.2}%
-\contentsline {subsection}{\numberline {1.7.3}Corrections}{8}{subsection.1.7.3}%
-\contentsline {subsection}{\numberline {1.7.4}Appilcation Region Fractions}{8}{subsection.1.7.4}%
-\contentsline {subsection}{\numberline {1.7.5}Applying Fake Factors}{8}{subsection.1.7.5}%
-\contentsline {section}{\numberline {1.8}Uncertainty Model}{8}{section.1.8}%
-\contentsline {section}{\numberline {1.9}Postfit Plots}{8}{section.1.9}%
-\contentsline {section}{\numberline {1.10}MC Corrections}{8}{section.1.10}%
-\contentsline {section}{\numberline {1.11}Model Independent Results}{8}{section.1.11}%
-\contentsline {subsection}{\numberline {1.11.1}Limit Setting}{8}{subsection.1.11.1}%
-\contentsline {subsection}{\numberline {1.11.2}Significance and Compatibility}{8}{subsection.1.11.2}%
-\contentsline {subsection}{\numberline {1.11.3}2D Likelihood Scans}{8}{subsection.1.11.3}%
-\contentsline {section}{\numberline {1.12}Model Dependent Limits}{8}{section.1.12}%
-\contentsline {subsection}{\numberline {1.12.1}Limit Setting}{8}{subsection.1.12.1}%
+\contentsline {section}{\numberline {1.2}Event Selection}{5}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Signal Extraction}{6}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Background Modelling Overview}{8}{section.1.4}%
+\contentsline {section}{\numberline {1.5}QCD Estimation in the $e_{}\mu _{}$ Channel}{9}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Embedding Method}{9}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Fake Factor Method}{10}{section.1.7}%
+\contentsline {subsection}{\numberline {1.7.1}Determination Regions}{11}{subsection.1.7.1}%
+\contentsline {subsection}{\numberline {1.7.2}Parametrisation}{13}{subsection.1.7.2}%
+\contentsline {subsection}{\numberline {1.7.3}Corrections}{14}{subsection.1.7.3}%
+\contentsline {subsection}{\numberline {1.7.4}Appilcation Region Fractions}{16}{subsection.1.7.4}%
+\contentsline {subsection}{\numberline {1.7.5}Applying Fake Factors}{16}{subsection.1.7.5}%
+\contentsline {section}{\numberline {1.8}Uncertainty Model}{16}{section.1.8}%
+\contentsline {section}{\numberline {1.9}Postfit Plots}{16}{section.1.9}%
+\contentsline {section}{\numberline {1.10}MC Corrections}{16}{section.1.10}%
+\contentsline {section}{\numberline {1.11}Model Independent Results}{16}{section.1.11}%
+\contentsline {subsection}{\numberline {1.11.1}Limit Setting}{16}{subsection.1.11.1}%
+\contentsline {subsection}{\numberline {1.11.2}Significance and Compatibility}{16}{subsection.1.11.2}%
+\contentsline {subsection}{\numberline {1.11.3}2D Likelihood Scans}{16}{subsection.1.11.3}%
+\contentsline {section}{\numberline {1.12}Model Dependent Limits}{16}{section.1.12}%
+\contentsline {subsection}{\numberline {1.12.1}Limit Setting}{16}{subsection.1.12.1}%

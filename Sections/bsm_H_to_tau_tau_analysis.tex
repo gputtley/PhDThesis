@@ -1,20 +1,21 @@
 \chapter{\texorpdfstring{Searches for New Physics in $\tau^+\tau^-$ Final States}{Search for new physics in tautau final states}}
 \label{sec:bsm_H_to_tau_tau_analysis}
-
-\section{Introduction}
  
-The $\tau^+\tau^-$ final states are powerful tool to search for new physics at collider experiments. 
+The $\tau^+\tau^-$ final states are a powerful tool to search for new physics at collider experiments. 
 As the heaviest lepton, they are sensitive to resonant production of new neutral particles where the couplings have mass hierarchy.
 They are also sensitive to non-resonant effects from new physics mediators. 
 This chapter will detail the searches for two such areas of new physics: additional Higgs bosons and vector leptoquarks.
 These searches are split up into three sections: 
 \begin{enumerate}[i)]
-  \item A model independent search for single narrow spin-0 resonance, $\phi$, produced via gluon fusion (gg$\phi$) or in association with a bottom quark (bb$\phi$). The SM Higgs boson is treated as a background. The quark contents of the gluon fusion loop are set to that of the SM Higgs boson.
+  \item A model independent search for single narrow spin-0 resonance, $\phi$, produced via gluon fusion (gg$\phi$) or in association with a bottom quark (bb$\phi$). The SM Higgs boson is treated as a background. The Yukawa couplings that contribute to the gluon fusion loop are set to SM values.
    \item A search for the MSSM Higgs sector, in a number of benchmark scenarios. The benchmark scenarios are defined in Section~\ref{sec:additional_higgs_bosons}. The production of SM Higgs boson is also used to constrain the available phase space.
   \item A search for the t-channel exchange of a $U_{1}$ vector leptoquark. Two scenarios are taken, based of the best fit to the b anomalies. These scenarios are detailed in Section~\ref{sec:vlq}.
 \end{enumerate}
 
-These searches are performed with the full run-2 dataset (138 $fb^{-1}$) collected by the CMS experiment. The search for additional Higgs bosons had previously been performed with data collected in 2016 (39 $fb^{-1}$) and results were consistent with the SM background prediction.
+These searches are performed with the full run-2 dataset ($138 \sifb$) collected by the CMS experiment. 
+The search for additional Higgs bosons had previously been performed with data collected in 2016 ($39 \sifb$) and results were consistent with the SM background prediction.
+ 
+\section{Signal Modelling} 
  
 \subsection{Additional Higgs Bosons} 
 \label{sec:additional_higgs_bosons} 
@@ -103,9 +104,26 @@ Examples of these are shown in Figure~\ref{fig:mssm_feynamn}.
 With the $\tan\beta$ enhancement, the decays of additional Higgs bosons to tau leptons and bottom quarks are most likely.
 Tau leptons are identified with a higher purity than bottom quarks a the CMS detector.
 It is also easier to separate $\tau^{+}\tau^{-}$ from the large QCD multijet background produced from the high energy proton-proton collisions.
-This hypothesis was tested with the 2016 dataset and although no deviations were observed, the strongest limits on the MSSM phase space was placed by the $\tau^+\tau^-$ final states.
+This hypothesis was tested with the 2016 dataset and although no deviations were observed, the strongest limits on the MSSM phase space was placed by the $\tau^+\tau^-$ final states. \\
 
-MSSM Scenarios
+For this analysis, signal samples over a mass range of 60 GeV to 3.5 TeV are generated.
+This is done using POWHEG to produce the additional Higgs boson and using pythia to decay to tau leptons. \\
+
+\begin{equation}
+\begin{aligned}
+\sigma_{\text{MSSM}} & = \left(\frac{Y_{t,\text{MSSM}}}{Y_{t,\text{2HDM}}}\right)^{2}\sigma^{t}_{\text{2HDM}}(Q_{t}) + \left(\frac{Y_{b,\text{MSSM}}}{Y_{b,\text{2HDM}}}\right)^{2}\sigma^{b}_{\text{2HDM}}(Q_{b}) + \nonumber \\
+& \left(\frac{Y_{t,\text{MSSM}}}{Y_{t,\text{2HDM}}}\frac{Y_{b,\text{MSSM}}}{Y_{b,\text{2HDM}}}\right) \left\{ \sigma^{t+b}_{\text{2HDM}}(Q_{tb}) - \sigma^{t}_{\text{2HDM}}(Q_{tb}) - \sigma^{b}_{\text{2HDM}}(Q_{tb}) \right\} \,,
+\end{aligned}
+\label{eqn:ggh_reweight}
+\end{equation}
+
+\begin{figure}[!hbtp]
+\centering
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/pT_reweighting_plot_tanb10.pdf}}
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/pT_reweighting_plot_tanb30.pdf}}
+\caption{$p_{T}$ density distributions of the A boson, with contributions to the gluon fusion loop displayed individually and summed. These are shown for $\tan\beta$ values of 10 (a) and 30 (b) where $m_{A} = 1600 $ GeV in the MSSM $M_{h}^{125}$ scenario.}
+\label{fig:mssm_sig}
+\end{figure}
 
 \subsection{Vector Leptoquarks}
 \label{sec:vlq}
@@ -144,22 +162,11 @@ In this search the two scenarios discussed in Section~\ref{sec:introduction} are
 The only non negligible parameter for $\tau^{+}\tau^{-}$ final states from the fit in the $m_{U}$-$g_{U}$ phase space is the $\beta_{L}^{s\tau}$ parameter.
 This is set to the best fit value.
 
-\section{Signal Modelling}
-
-\begin{figure}[!hbtp]
-\centering
-    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/pT_reweighting_plot_tanb10.pdf}}
-    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/pT_reweighting_plot_tanb30.pdf}}
-\caption{Plots showing the $p_{T}$ density distributions of the A boson, with contributions to the gluon fusion loop displayed individually and summed. These are shown for $\tan\beta$ values of 10 (a) and 30 (b) where $m_{A} = 1600 $ GeV in the MSSM $M_{h}^{125}$ scenario.}
-\label{fig:mssm_sig}
-\end{figure}
-
-
 \begin{figure}[!hbtp]
 \centering
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/vlq_signal_plot_gU1p5.pdf}}
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/vlq_signal_plot_gU2p5.pdf}}
-\caption{VLQ signal.}
+\caption{The reconstructed $m_{T}^{tot}$ distributions of the t-channel vector leptoquark signal and the interference with Drell-Yan. This is shown in the VLQ BM 1 scenario for a leptoquark of mass 1 TeV for coupling strengths of $g_{U}=1.5$ (a) and $g_{U}=2.5$ (b).}
 \label{fig:vlq_signal}
 \end{figure}
 
@@ -180,59 +187,249 @@ This is set to the best fit value.
          $\mu \mu$ & 3.0\% \\
          \hline
     \end{tabular}
-    \caption{}
+    \caption{Branching fractions of the decays of two tau leptons.}
 \end{table}
 
 \section{Signal Extraction}
 
-Categorisation
+\begin{figure}[!hbtp]
+\centering
+    \includegraphics[width=1.0\textwidth]{Figures/high_mass_categories.pdf}
+\caption{.}
+\label{fig:high_mass_categories}
+\end{figure}
 
-mvis vs mttot
+\begin{figure}[!hbtp]
+\centering
+    \includegraphics[width=1.0\textwidth]{Figures/low_mass_categories.pdf}
+\caption{.}
+\label{fig:high_mass_categories}
+\end{figure}
+
+The variable $D_\zeta$ is defined as
+\begin{equation}
+D_\zeta = p_\zeta^\text{miss} - 0.85 p_\zeta^\text{vis};\qquad
+p_\zeta^\text{miss} = \vec{p}_\text{T}^\text{miss} \cdot \hat{\zeta};\qquad
+p_\zeta^\text{vis} = (\vec{p}_\text{T}^{e} + \vec{p}_\text{T}^{\mu}) \cdot \hat{\zeta}
+\label{eq:Dzeta_def}
+\end{equation}
+where $\vec{p}_\text{T}^{e/\mu)}$ corresponds to the transverse momentum vector of the electron (muon) and $\hat{\zeta}$
+to the bisectional direction between the electron and the muon in the transverse plane~\cite{CDFPzeta}.
+
+In the $\emu$ final state, three sub-categories are defined by
+\begin{itemize}
+\item \texttt{Low-$D_\zeta$}: $-35 \leq D_\zeta [\GeV] < -10$;
+\item \texttt{Medium-$D_\zeta$}: $-10 \leq D_\zeta [\GeV] <  30$;
+\item \texttt{High-$D_\zeta$}: $D_\zeta [\GeV] \geq 30$.
+\end{itemize}
+In this way sub-categories with different signal purities and $\ttbar$ fractions can be exploited during the statistical inference for the signal.
+The expected signal, for all masses tested, is mostly located in the \texttt{Medium-$D_\zeta$} sub-category.
+
+The transverse mass in the $\etauh$ and $\mutauh$ final states is defined as:
+\begin{equation}
+m_{\text{T}}^{e/\mu} = \sqrt{2 \, \pT^{e/\mu} \, E_{T} \, (1-\cos\Delta\phi)}
+\end{equation}
+where $\pT^{e/\mu}$ refers to the $\pT$ of the electron (muon) and $\Delta\phi$ to the azimuthal angle in the transverse plane between the electron/muon and $\vec{p}_\text{T}^\text{miss}$.
+
+The corresponding categories in $\etauh$ and $\mutauh$ channels are defined by
+\begin{itemize}
+\item \texttt{Tight-$m_{\text{T}}$}: $m_{\text{T}}^{e/\mu} [\GeV] < 40$;
+\item \texttt{Loose-$m_{\text{T}}$}: $40 \leq m_{\text{T}}^{e/\mu} [\GeV] < 70$.
+\end{itemize}
+The bulk of the signal events, particularly for low mass hypotheses, lies in the \texttt{Tight-$m_{\text{T}}$} sub-category.
+The \texttt{Loose-$m_{\text{T}}$} category has been added to increase the signal acceptance for mass hypotheses of $m_{A,H} > 700$~\GeV.
+
+\begin{equation}
+m_{T}^{\text{tot}} = \sqrt{m_{T}^{2}(p_{T}^{\tau_{1}},p_{T}^{\tau_{2}}) + m_{T}^{2}(p_{T}^{\tau_{1}},p_{T}^{\tau_{\text{miss}}}) + m_{T}^{2}(p_{T}^{\tau_{2}},p_{T}^{\tau_{\text{miss}}})}
+\end{equation}
 
 \section{Background Modelling Overview}
 
-Jet fakes and genuine taus.
+The analysis considers several backgrounds including Drell-Yan, $\ttbar$, W+jets, QCD, di-boson, single-top, and electroweak W and Z bosons production.
+These are split into a five categories:
+\begin{enumerate}[i)]
+  \item Events containing only genuine tau leptons.
+  \item Events with a jet misidentified as a hadronic tau (jet$\rightarrow \tauh$) in the $\etauh$, $\mutauh$ or $\tauhtauh$ channels.
+  \item Events with jets faking both light leptons (jet$\rightarrow l$) in the $\emu$ channel.
+  \item Events from $\ttbar$ with a prompt light lepton ($e$ or $\mu$ not from a $\tau$ decay) and the other object (if there are not two prompt light lepton) is from a genuine tau leptons.
+  \item Other events. This is a small contribution and hence why it is grouped.
+  \begin{itemize}
+    \item Non $\ttbar$ events with a prompt light lepton ($e$ or $\mu$ not from a $\tau$ decay) and the other object (if there are not two prompt light lepton) is from a genuine tau leptons.
+    \item Events with a light lepton faking a hadronic tau and the other object (if there are not two light leptons faking a hadronic tau) are reconstructed as prompt light lepton or from genuine tau leptons. 
+    \item Events with a jet faking a light lepton and the other object is from genuine tau leptons in the $\etauh$, $\mutauh$ or $\tauhtauh$ channels.
+    \item Events with one jet faking a light lepton and the other object from a prompt light lepton in the $\emu$ channel.
+   \end{itemize}
+\end{enumerate}
 
-Explain MC generators.
+Backgrounds from (i) consists of largely Z/$\gamma^* \rightarrow \tau\tau$ events but there are also smaller contributions from other processes. 
+This background is modelled by a data-simulation hybrid method called the embedding method and this is described in detail in Section~\ref{sec:embedding}.
+Group (ii) is dominated by QCD, W + jets and $\ttbar$ events with a jet$\rightarrow \tauh$ misidentification.
+This is modelled from data by the fake factor method ($\FF$) and is explained in Section~\ref{sec:ff}.
+Group (iii) is modelled from data to describe QCD multijet contribution to the background in the $\emu$ channel.
+The method to obtain this background is described in Section~\ref{sec:qcd}.
+The data driven background estimations for (i), (ii) and (iii) contribute >98\% of all expected background events in the $\tauhtauh$ channel, >90\% in $\etauh$ and $\mutauh$ channels and >50\% in the $\emu$ channel.
+The final groups, (iv) and (v), are modelled with MC.
+The $\ttbar$ process is separated due to its large contribution to the phase space where a b jet is required. \\
 
-Overview data driven methods.
+The \Wjets and \ZLL processes are simulated at leading order (LO) accuracy in the strong coupling \alpS, using the \MGvATNLO 2.2.2 (2.4.2) event generator~\cite{Alwall:2011uj,Alwall:2014hca} for the simulation of the data taken in 2016 (2017--2018). 
+To increase the number of simulated events in regions of high signal purity, supplementary samples are generated with up to four outgoing partons in the hard interaction. 
+For diboson production, \MGvATNLO is used at next-to-LO (NLO) precision in \alpS. 
+In each case, the FxFx~\cite{Frederix:2012ps} (MLM~\cite{Alwall:2007fs})  prescription is used to match the NLO (LO) matrix element calculation with the parton shower model. 
+For \ttbar~\cite{Alioli:2011as} and ($t$-channel) single~\PQt quark production~\cite{Frederix:2012dh}, samples are generated at NLO precision in \alpS using \POWHEG 2.0~\cite{Nason:2004rx,Frixione:2007vw,Alioli:2010xd,Jezo2015aia}. 
+The \POWHEG version 1.0 at NLO precision is used for single~\PQt quark production in association with a \PW boson ($\PQt\PW$ channel)~\cite{Re:2010bp}. 
 
-Fractions of processes in each channel.
+When compared with data, \Wjets, \ZLL, \ttbar, and single~\PQt quark events in the $\PQt\PW$ channel are normalized to their cross sections at next-to-NLO (NNLO) precision in \alpS~\cite{Melnikov:2006kv,Czakon:2011xx,Kidonakis:2013zqa}. 
+Single~\PQt quark ($t$-channel) and diboson events are normalized to their cross sections at NLO precision in \alpS or higher~\cite{Kidonakis:2013zqa,Campbell:2011bn,Gehrmann:2014fva}.
+
+
+
+\section{QCD Estimation in the $\emu$ Channel}
+\label{sec:qcd}
 
 \section{Embedding Method}
+\label{sec:embedding}
 
 \begin{figure}[!hbtp]
 \centering
     \includegraphics[width=0.8\textwidth]{Figures/Embedding_Diagram.pdf}
-\caption{Embedding.}
+\caption{Schematic of the embedding method to model genuine di-tau backgrounds from di-muon events in data.}
 \label{fig:embedding}
 \end{figure}
 
 Validation plots of it working
 
 \section{Fake Factor Method}
+\label{sec:ff}
 
-Overview
+Backgrounds in which a jet fakes a $\tauh$ can be difficult to model using MC due to the poor description of the $\text{jet}\rightarrow\tauh$ fake rate in simulation. 
+In addition, the small probability of a jet being misidentified as a $\tauh$ necessitates the production of high statistics MC samples at a significant computational expense.
+These shortcomings motivate the use of data-driven estimates for these processes. 
+One such procedure is the fake factor ($\FF$) method. \\
+
+The $\FF$ method utilises regions in the data to model the $\text{jet}\rightarrow\tauh$ background. 
+Firstly, the determination regions (DR), which are $\text{jet}\rightarrow\tauh$ enriched control regions orthogonal to the signal region (SR). 
+It is used to calculate $\FF$ by taking the ratio of number of jet fake events that pass the nominal hadronic tau ID requirement ($N(\texttt{Nominal})$), to the number of jet fake events that fail the nominal hadronic tau ID but pass a looser alternative hadronic tau ID requirement ($N(\texttt{Alternative}~\&\&~\texttt{!Nominal})$), as shown in Equation~\ref{eqn:ff}.
+
+\begin{equation}
+\FF = \frac{N(\texttt{Nominal})}{N(\texttt{Alternative}~\&\&~\texttt{!Nominal})}.
+\label{eqn:ff}
+\end{equation}
+
+In the remaining text this numerator and denominator are referred to as the pass and fail regions.
+The derivation of this ratio is done differentially with respect to key parameters that differ in the two regions.
+Once $\FF$ have been derived it is common to calculate corrections in other sideband regions (a region orthogonal to the signal region) and combine $\FF$ measured from different processes.
+Finally, the $\FF$ are applied to the application region (AR). 
+This is defined as the SR but with the criteria that the jet fakes fail the nominal hadronic tau ID but pass the looser alternative tau ID requirement.
+This now models the background from $\text{jet}\rightarrow\tauh$ events in SR. \\
+
+The following Sections~\ref{sec:ff_dr}--\ref{sec:ff_applying} detail the complexities of how this method is applied to this analysis.
+For these searches the nominal hadronc tau ID used is the \texttt{Medium} DeepTau Vs Jets ID working point and the alternative hadronic tau ID used is the \texttt{VVVLoose} DeepTau Vs Jets ID working point.
 
 \subsection{Determination Regions}
+\label{sec:ff_dr}
+
+The fake factors are measured separately in each year of data taking period (2016, 2017, 2018), in each channel containing hadronic taus ($\etauh$, $\mutauh$, $\tauhtauh$) and in enriched regions of dominant processes that contribute $\text{jet}\rightarrow\tauh$ events.
+In the $\etauh$ and $\mutauh$ channels $\FF$ are measured for three processes: QCD, W + Jets and $\ttbar$.
+In the $\tauhtauh$ channel $\FF$ are measured only for the dominant QCD process.
+The QCD process is assumed to produce two jet fakes and so the fake factors is chosen to be calculated from leading $\pT$ hadronic tau candidate only. 
+Section~\ref{sec:ff_applying} discusses how single jet fake events in the $\tauhtauh$ channel are modelled. \\
+
+Each separate measurement region is split into three sideband regions based off two cuts that surround the signal region.
+These regions are named the \texttt{Determination Region} (C), \texttt{Alternative Determination Region} (D) and \texttt{Correction Region} (B) and are schematically shown in Figure~\ref{fig:ff_schematic}. \\
 
 \begin{figure}[!hbtp]
 \centering
-    \includegraphics[width=0.8\textwidth]{Figures/ff_diagram.pdf}
-\caption{FF diagram.}
+    \includegraphics[width=0.8\textwidth]{Figures/ff_diagram_v2.pdf}
+\caption{Schematic of the regions used for fake factor derivation.}
 \label{fig:ff_schematic}
 \end{figure}
 
+Region A is used to measure and fit fake factors.
+Region B is an alternative region used to measure and fit fake factor to account for the difference in fake factors between A and C.
+These alternative fake factors are applied to the fail region in D and corrections are calculated comparing it to the pass region in D.
+The total fake factor per measurement region is calculated as the fake factors derived in region A multiplied by the correction calculated from region B to D. \\
+
+The selection for $x_C$, $x_D$, $y_C$ and $y_A$, as defined in Figure~\ref{fig:ff_schematic}, in each separate measurement region are shown below.
+These are chosen to balance the number of events and the purity of each background in the region.
+
+\begin{enumerate}[i)]
+   \item $\tauhtauh$ QCD \\
+     \indent $y_C$: The $\tauh$ candidates are required to have the opposite sign. \\
+     \indent $y_A$: The $\tauh$ candidates are required to have the same sign. \\
+     \indent $x_C$: The subleading tau passes the \texttt{Medium} DeepTau Vs Jets working point. \\
+     \indent $x_D$: The subleading tau fails the \texttt{VVLoose} DeepTau Vs Jets working point but passes the \texttt{VVVLoose} working point.
+  \item $\etauh$ and $\mutauh$ QCD \\
+    \indent $y_C$: The $e$/$\mu$ and $\tauh$ candidates are required to have the opposite sign. \\
+    \indent $y_A$: The $e$/$\mu$ and $\tauh$ candidates are required to have the same sign and the $e$/$\mu$ to have $\Irel>0.05$. \\
+    \indent $x_C$: The $e$/$\mu$ candidate is required to have $\Irel<0.15$. \\
+    \indent $x_D$: The $e$/$\mu$ candidate is required to have $0.25<\Irel<0.5$.
+  \item $\etauh$ and $\mutauh$ W + Jets \\
+    \indent $y_C$: The $\mT$ between the $e$/$\mu$ and the MET $< 70$ GeV. \\
+    \indent $y_A$: The $\mT$ between the $e$/$\mu$ and the MET $> 70$ GeV and no b jets in the event. \\
+    \indent $x_C$: Data. \\
+    \indent $x_D$: W + Jets MC.
+  \item $\etauh$ and $\mutauh$ $\ttbar$ \\
+    \indent $y_C$: Data. \\
+    \indent $y_A$: MC ($\ttbar$ in B and W + Jets D). \\
+    \indent $x_C$: $\mT < 70$ GeV. \\
+    \indent $x_D$: $\mT > 70$ GeV and no b jets. \\
+\end{enumerate}
+
+
+In the $\mu\tauh$ and $e\tauh$ channels QCD and W + Jets jet fake events are in general the most significant and contribute with approximately equal weights. 
+$\ttbar$ inclusively is small but becomes more significant when searching for events with a b jet. 
+The additional $\Irel>0.05$ requirement in these channels for QCD is to reduce processes producing genuine leptons and the $N_{\text{b-jets}}=0$ requirement for W + Jets is to reduce $\ttbar$ contamination.
+It is not possible to define a DR that is sufficiently pure in $\ttbar$ events to make a reasonable measurement of $\FF^{\ttbar}$ from data.
+Therefore $\FF^{\ttbar}$ are derived from MC. 
+A comparison of the $\FF^{\text{W+jets}}$ measured in data and MC shows only $\sim$ 10--20\% differences in the fake rates in data and MC.  
+This observation coupled with the fact that the $\ttbar$ contribution is small compared to the other processes means that any bias introduced by using $\FF^{\ttbar}$ measured in MC is small compared to the uncertainties on the fake factors, discussed in Section~\ref{sec:uncertainties}. \\
+
+
 \subsection{Parametrisation}
+
+The $\FFi$ take into account dependencies on $N_{\text{jets}}$ via the analysis tailed variable $N_{\text{pre b-jets}}$, the $\pT$ of the $\tauh$ candidate ($\pT^{\tauh}$) and the $\pT$ of the jet matched in $\Delta R$ to the $\tauh$ ($\pT^{\text{jet}}$).
+$N_{\text{pre b-jets}}$ is defined to map the dependence of $\FFi$ on $N_{\text{jets}}$ and describe the categorising variable $N_{\text{b-jets}}$ well.
+It is the number of jets in the event with $|\eta|<2.4$ and $\pT>20$. These are the same $\eta$ and $\pT$ thresholds required for a b-jet.
+They are also calculated separately for the three channels where a jet can fake a hadronic tau, $e\tauh$, $\mu\tauh$ and $\tauh\tauh$.
+The $\FFi$ are then measured separately for the dominant $\text{jet}\rightarrow\tauh$ processes $\text{i}$, which for the $e\tauh$ and $\mu\tauh$ channels includes QCD, W+jets and $t\bar{t}r$, and for the $\tauh\tauh$ channel includes only QCD.
+The $\FFi$ are finally corrected to account for extrapolations from the DR to the SR, and for missing variable dependencies (via non-closure corrections).
+The $\FFi$ measured for the different processes are combined into an overall factor, $\FF$, using
+\begin{equation}
+\FF = \sum_{i}f_{i}\cdot \FFi,
+\end{equation}
+where the factor $f_{i}$ is defined as
+\begin{equation}
+f_{i} = \frac{N_{\text{AR}}^{i}}{\sum\limits_{j}N_{\text{AR}}^{j}},
+\end{equation}
+which is the fraction of events with a $\text{jet}\rightarrow\tauh$ originating from process $i$ over the total number of $\text{jet}\rightarrow\tauh$ events for all processes in the AR.
 
 \begin{figure}[!hbtp]
 \centering
     \includegraphics[width=0.6\textwidth]{Figures/ff_colz_ttbar_lt.pdf}
-\caption{FF colz.}
+\caption{A 2D heat map of the fake factors determined from $t\bar{t}$ MC for the full run-2 dataset in the combined $e\tauh$ and $\mu\tauh$ channels. This is shown with respect to the hadronic tau $\pT$ and the $\pT$ of the jet matched to the hadronic tau. The ratio of jet to hadronic tau $\pT$ categorisation used is shown split by the dashed lines.}
 \label{fig:ff_colz}
 \end{figure}
 
-fits
+\begin{figure}[!hbtp]
+\centering
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ff_fit_jet_pt_low_0jet_pt_1_ff_qcd_tt_2018.pdf}}
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ff_fit_jet_pt_med_0jet_pt_1_ff_qcd_tt_2018.pdf}} 
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ff_fit_jet_pt_high_0jet_pt_1_ff_qcd_tt_2018.pdf}} \\
+\caption{Fake factor fits in $\tauh\tauh$ channel for the QCD $n_{pre b jets}=0$ category with 2018 data. The three jet $\pT$ to hadronic tau $\pT$ categories are shown.}
+\label{fig:tt_ff_fit}
+\end{figure}
+
+\begin{figure}[!hbtp]
+\centering
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ff_fit_jet_pt_low_0jet_pt_2_ff_qcd_mt_2018.pdf}}
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ff_fit_jet_pt_med_0jet_pt_2_ff_qcd_mt_2018.pdf}} 
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ff_fit_jet_pt_high_0jet_pt_2_ff_qcd_mt_2018.pdf}} \\
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ff_fit_jet_pt_low_0jet_pt_2_ff_wjets_mt_2018.pdf}}
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ff_fit_jet_pt_med_0jet_pt_2_ff_wjets_mt_2018.pdf}} 
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ff_fit_jet_pt_high_0jet_pt_2_ff_wjets_mt_2018.pdf}} \\
+\caption{Fake factor fits in $\mu\tauh$ channel for the QCD and W + Jets $n_{pre b jets}=0$ category with 2018 data. The three jet $\pT$ to hadronic tau $\pT$ categories are shown for each process.}
+\label{fig:mt_ff_fit}
+\end{figure}
 
 \subsection{Corrections}
 
@@ -241,7 +438,9 @@ fits
 \subsection{Appilcation Region Fractions}
 
 
+
 \subsection{Applying Fake Factors}
+\label{sec:ff_applying}
 
 using leading tau
 subtracting off rest
