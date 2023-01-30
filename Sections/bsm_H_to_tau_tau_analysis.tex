@@ -106,34 +106,58 @@ Tau leptons are identified with a higher purity than bottom quarks a the CMS det
 It is also easier to separate $\tau^{+}\tau^{-}$ from the large QCD multijet background produced from the high energy proton-proton collisions.
 This hypothesis was tested with the 2016 dataset and although no deviations were observed, the strongest limits on the MSSM phase space was placed by the $\tau^+\tau^-$ final states. \\
 
-For this analysis, signal samples over a mass range of 60 GeV to 3.5 TeV are generated.
-This is done using POWHEG to produce the additional Higgs boson and using pythia to decay to tau leptons. \\
+For this analysis, the production of additional Higgs bosons over a mass range of 60 GeV to 3.5 TeV are generated.
+Gluon fusion is simulated at NLO precision using the 2HDM implementation of POWHEG 2.0.
+The kinematic properties are highly dependent on the contributions to the loop, which vary dependent on the specific signal model.
+To account for the different loop contributions at the NLO plus parton shower prediction, weights based off the $\pT$ spectra are calculated to split the contributions from the t quark only, b quark only, and tb-interference.
+Once individual templates have been determined for each contribution to the loop, the 2HDM samples can be scaled to the correct specific MSSM scenario prediction by the following formula.
 
 \begin{equation}
 \begin{aligned}
-\sigma_{\text{MSSM}} & = \left(\frac{Y_{t,\text{MSSM}}}{Y_{t,\text{2HDM}}}\right)^{2}\sigma^{t}_{\text{2HDM}}(Q_{t}) + \left(\frac{Y_{b,\text{MSSM}}}{Y_{b,\text{2HDM}}}\right)^{2}\sigma^{b}_{\text{2HDM}}(Q_{b}) + \nonumber \\
-& \left(\frac{Y_{t,\text{MSSM}}}{Y_{t,\text{2HDM}}}\frac{Y_{b,\text{MSSM}}}{Y_{b,\text{2HDM}}}\right) \left\{ \sigma^{t+b}_{\text{2HDM}}(Q_{tb}) - \sigma^{t}_{\text{2HDM}}(Q_{tb}) - \sigma^{b}_{\text{2HDM}}(Q_{tb}) \right\} \,,
+\frac{d\sigma_{\text{MSSM}}}{d\pT} & = \left(\frac{Y_{t,\text{MSSM}}}{Y_{t,\text{2HDM}}}\right)^{2}\frac{d\sigma^{t}_{\text{2HDM}}}{d\pT}(Q_{t}) + \left(\frac{Y_{b,\text{MSSM}}}{Y_{b,\text{2HDM}}}\right)^{2}\frac{d\sigma^{b}_{\text{2HDM}}}{d\pT}(Q_{b}) + \nonumber \\
+& \left(\frac{Y_{t,\text{MSSM}}}{Y_{t,\text{2HDM}}}\frac{Y_{b,\text{MSSM}}}{Y_{b,\text{2HDM}}}\right) \left\{ \frac{d\sigma^{t+b}_{\text{2HDM}}}{d\pT}(Q_{tb}) - \frac{d\sigma^{t}_{\text{2HDM}}}{d\pT}(Q_{tb}) - \frac{d\sigma^{b}_{\text{2HDM}}}{d\pT}(Q_{tb}) \right\} \,,
 \end{aligned}
 \label{eqn:ggh_reweight}
-\end{equation}
+\end{equation} 
+
+where $Q_i$ are resummation scales that depend on the mass of the additional Higgs boson.
+Further contributions from any Supersymmetric partners have been checked and account for less than a few percent and so are neglected.
+This is also done separately for the scalar and pseudoscalar additional Higgs bosons, as the $\pT$ distributions can differ.
+The MSSM benchmark scenarios considered are detailed in Ref.~\cite{}.
+The scenarios provide the relative Yukawa couplings (to calculate the cross sections) and branching fractions of the MSSM Higgs bosons.
+An example of the changes to gluon fusion production, in the MSSM $M_{h}^{125}$ scenario with $m_{A} = 1600$ GeV and $\tan\beta$ varying is shown in Figure~\ref{fig:mssm_sig}.
+The distributions peak at a higher $\pT$ for the top quark loop, therefore at smaller $\tan\beta$, where the top quark contribution is dominant, an additional Higgs boson would be more boosted. \\
 
 \begin{figure}[!hbtp]
 \centering
-    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/pT_reweighting_plot_tanb10.pdf}}
-    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/pT_reweighting_plot_tanb30.pdf}}
-\caption{$p_{T}$ density distributions of the A boson, with contributions to the gluon fusion loop displayed individually and summed. These are shown for $\tan\beta$ values of 10 (a) and 30 (b) where $m_{A} = 1600 $ GeV in the MSSM $M_{h}^{125}$ scenario.}
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/pT_reweighting_plot_A10.pdf}}
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/pT_reweighting_plot_A30.pdf}} \\
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/pT_reweighting_plot_H10.pdf}}
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/pT_reweighting_plot_H30.pdf}} \\
+\caption{$p_{T}$ density distributions of the A (top) and H (bottom) boson, with contributions to the gluon fusion loop displayed individually and summed. These are shown for $\tan\beta$ values of 10 (left) and 30 (right) where $m_{A} = 500$ GeV in the MSSM $M_{h}^{125}$ scenario.}
 \label{fig:mssm_sig}
 \end{figure}
+
+Production in association with bottom quarks is simulated at NLO precision using the corresponding POWHEG 2.0 implementation in the four-flavour scheme.
+All additional Higgs boson signal generation is performed using the parton distribution function (PDF) NNPDF3.1.
+Tau lepton decay, parton showering and hadronisation are all modelled with the PYTHIA event generator where the PU profile is matched to data.
+All events generated are passed through a GEANT4-based simulation of the CMS detector and reconstructed in the same way as data. \\
+
+The model dependent search for the MSSM also looks to find differences from the observed SM Higgs boson and the predicted MSSM SM-like Higgs boson.
+In each MSSM benchmark scenario, an uncertainty of $\pm 3$ GeV is given on the prediction for the SM Higgs boson mass.
+This uncertainty is to reflect the contribution from any unknown higher-order corrections.
+The value of the mass is allowed to vary within this window, however the Yukawa couplings are rescaled the observed mass.
 
 \subsection{Vector Leptoquarks}
 \label{sec:vlq}
 
-Best fit matrix elements show large b-tau couplings.
-This allows for t-channel leptoquark exchange, leaving high $p_{T}$ signatures in $\tau^{+}\tau^{-}$ final states.
-An example of this is shown in Figure~\ref{fig:leptoquark_feynman}.
+The best fit in the vector leptoquark phase space to the B anomalies yielded large bottom quark and tau lepton couplings to the $U_1$ particle.
+The possible production modes of a $\tau^+\tau^-$ final state are shown in Figure~\ref{fig:leptoquark_feynman}.
+
 
 \begin{figure}[H]
 \centering
+\begin{subfigure}[b]{0.3\textwidth}
 \begin{tikzpicture}[scale=2]
   \begin{feynman}
     \vertex [label=left:$\bar{q}$] (a1) at (0,0);
@@ -153,22 +177,110 @@ An example of this is shown in Figure~\ref{fig:leptoquark_feynman}.
     };
   \end{feynman}
 \end{tikzpicture}
-\caption{Feynman diagram showing the vector leptoquark t-channel interaction that produces a tau pair from a pair of bottom quarks.}
+\caption{}
+\end{subfigure} \\
+
+\begin{subfigure}[b]{0.3\textwidth}
+\begin{tikzpicture}[scale=2]
+  \begin{feynman}
+    \vertex [label=left:$g$] (a1) at (0,0);
+    \vertex [label=left:$g$] (a2) at (0,1);
+    \vertex (b1) at (0.7,0.5);
+    \vertex (b2) at (1.2,0.5);
+    \vertex (c1) at (1.7,0.1);
+    \vertex (c2) at (1.7,0.9);
+    \vertex [label=$U_{1}$] (c1t) at (1.4,-0.05);
+    \vertex [label=$U_{1}$] (c2t) at (1.4,0.72);
+    \vertex [label=right:$\tau^+$] (d1) at (2.2,1.2);
+    \vertex [label=right:$q$] (d2) at (2.2,0.6);
+    \vertex [label=right:$\tau^-$] (d3) at (2.2,0.4);
+    \vertex [label=right:$\bar{q}$] (d4) at (2.2,-0.2);
+    
+    \diagram* {
+      (a1) -- [gluon] (b1),
+      (a2) -- [gluon] (b1),
+      (b1) -- [gluon] (b2),
+      (b2) -- [scalar] (c1),
+      (b2) -- [scalar] (c2),
+      (d1) -- [fermion] (c2),
+      (c2) -- [fermion] (d2),
+      (c1) -- [fermion] (d3),
+      (d4) -- [fermion] (c1),
+    };
+  \end{feynman}
+\end{tikzpicture}
+\caption{}
+\end{subfigure}
+\hspace{2cm}
+\begin{subfigure}[b]{0.3\textwidth}
+\begin{tikzpicture}[scale=2]
+  \begin{feynman}
+    \vertex [label=left:$g$] (a1) at (0,0);
+    \vertex [label=left:$q$] (a2) at (0,1);
+    \vertex (b1) at (0.7,0.5);
+    \vertex [label=below:$q$] (bt) at (0.95,0.45);
+    \vertex (b2) at (1.2,0.5);
+    \vertex [label=right:$\tau^-$] (c1) at (2,0);
+    \vertex (c2) at (1.7,0.9);
+    \vertex [label=$U_{1}$] (c2t) at (1.4,0.72);
+    \vertex [label=right:$\tau^+$] (d1) at (2.2,1.2);
+    \vertex [label=right:$q$] (d2) at (2.2,0.6);
+
+   
+    \diagram* {
+      (a1) -- [gluon] (b1),
+      (a2) -- [fermion] (b1),
+      (b1) -- [fermion] (b2),
+      (b2) -- [fermion] (c1),
+      (b2) -- [scalar] (c2),
+      (d1) -- [fermion] (c2),
+      (c2) -- [fermion] (d2),
+    };
+  \end{feynman}
+\end{tikzpicture}
+\caption{}
+\end{subfigure}
+
+\caption{Feynman diagrams showing the contribution from $U_1$ vector leptoquarks to the final state with a pair of oppositely charged tau leptons. Diagram (a) shows t-channel, (b) pair and (c) single production of a vector leptoquark.}
 \label{fig:leptoquark_feynman}
 \end{figure}
 
-t-channel production of $\tau^{+}\tau^{-}$ shown to offer strong constraints on allowed leptoquark phase space from a recast of ATLAS analysis.
+Pair and single production of a vector leptoquark is dependent on its strong coupling, which is highly model dependent.
+For large mass, $m_U$, the probability of producing an on-shell $U_1$ singlet or pair is heavily suppressed due to the momentum of the initial partons.
+These production processes are not discussed further in this search.
+Further studies have been used to search for single and pair production at the CMS experiment and no statistically significance derivation was observed. \\
+
+The t-channel process contain two vertices with a $U_1$ vector leptoquark, a quark and a tau lepton, and hence the cross section will scale with $g_{U}^4$.
+From the best fit to B anomalies this vertex will be dominated by the b quark and hence the initial state will be mostly from $b\bar{b}$, with sub-dominant contributions from $b\bar{s}$, $s\bar{b}$ and $s\bar{s}$.
+Although there are no additional b quarks in the final state in the LO process, initial state radiation can lead to additional b quarks in the final state.
 In this search the two scenarios discussed in Section~\ref{sec:introduction} are considered.
 The only non negligible parameter for $\tau^{+}\tau^{-}$ final states from the fit in the $m_{U}$-$g_{U}$ phase space is the $\beta_{L}^{s\tau}$ parameter.
-This is set to the best fit value.
+This is set to the best fit value. \\
+
+The signal process of the $U_1$ t-channel exchange is simulated in the five-flavour scheme (5FS) at LO precision using the \MGvATNLO event generator, v2.6.5.
+Events are generated with one or fewer outgoing partons from the matrix element and the MLM prescription is then used for matching, with a scale set to 40 GeV.
+Negligible dependence of the $U_1$ decay width ($\Lambda$) is observed, for simulation this is chosen to approximately match the value predicted by the B anomaly fit.
+Samples with a mass between 1 and 5 TeV at $g_U = 1$ are generated. \\
+
+The interference between the $U_1$ signal and $Z/\gamma^* \rightarrow \tau\tau$ production was checked.
+A large destructive affect is observed, with the magnitude dependent on $g_{U}$.
+To account for this, separate samples are produced for this interference, generated in the same way as the t-channel exchange.
+The interference samples are then split into two with a di-tau mass split in order to have a sufficient number of events in the high di-tau mass regions.
+The cross section of these interference samples scale with $g_{U}^2$. 
+Examples of the generator level di-tau mass distributions are shown in Figure~\ref{fig:vlq_signal}. \\
 
 \begin{figure}[!hbtp]
 \centering
-    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/vlq_signal_plot_gU1p5.pdf}}
-    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/vlq_signal_plot_gU2p5.pdf}}
-\caption{The reconstructed $m_{T}^{tot}$ distributions of the t-channel vector leptoquark signal and the interference with Drell-Yan. This is shown in the VLQ BM 1 scenario for a leptoquark of mass 1 TeV for coupling strengths of $g_{U}=1.5$ (a) and $g_{U}=2.5$ (b).}
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/vlq_signal_plot_gU3.pdf}}
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/vlq_signal_plot_gU5.pdf}}
+\caption{The generator level $m_{\tau\tau}$ density distributions of the t-channel vector leptoquark signal and the interference with Drell-Yan. This is shown in the VLQ BM 1 scenario for a leptoquark of mass 1 TeV for coupling strengths of $g_{U}=3$ (a) and $g_{U}=5$ (b).}
 \label{fig:vlq_signal}
 \end{figure}
+
+The t-channel signal produces a broad distribution in $m_{\tau\tau}$ due to its non-resonant nature.
+The interference is mostly a destructive effect (except for at small $m_{\tau\tau}$), with the yield becoming less negative at higher $m_{\tau\tau}$.
+The interference peaks negatively between 100 and 200 GeV and in this region the combined yield can be negative.
+Due to the difference in scaling of the two effects, at small $g_{U}$ the interference is more dominant than the signal and hence the yield of the combined result is reduced.
 
 \section{Event Selection}
 
@@ -271,15 +383,15 @@ The data driven background estimations for (i), (ii) and (iii) contribute >98\% 
 The final groups, (iv) and (v), are modelled with MC.
 The $\ttbar$ process is separated due to its large contribution to the phase space where a b jet is required. \\
 
-The \Wjets and \ZLL processes are simulated at leading order (LO) accuracy in the strong coupling \alpS, using the \MGvATNLO 2.2.2 (2.4.2) event generator~\cite{Alwall:2011uj,Alwall:2014hca} for the simulation of the data taken in 2016 (2017--2018). 
+The W + jets and $Z\rightarrow ll$ processes are simulated at leading order (LO) using the \MGvATNLO 2.2.2 (2.4.2) event generator~\cite{Alwall:2011uj,Alwall:2014hca} for the simulation of the data taken in 2016 (2017--2018). 
 To increase the number of simulated events in regions of high signal purity, supplementary samples are generated with up to four outgoing partons in the hard interaction. 
-For diboson production, \MGvATNLO is used at next-to-LO (NLO) precision in \alpS. 
+For diboson production, \MGvATNLO is used at next-to-LO (NLO) precision. 
 In each case, the FxFx~\cite{Frederix:2012ps} (MLM~\cite{Alwall:2007fs})  prescription is used to match the NLO (LO) matrix element calculation with the parton shower model. 
-For \ttbar~\cite{Alioli:2011as} and ($t$-channel) single~\PQt quark production~\cite{Frederix:2012dh}, samples are generated at NLO precision in \alpS using \POWHEG 2.0~\cite{Nason:2004rx,Frixione:2007vw,Alioli:2010xd,Jezo2015aia}. 
-The \POWHEG version 1.0 at NLO precision is used for single~\PQt quark production in association with a \PW boson ($\PQt\PW$ channel)~\cite{Re:2010bp}. 
+For $\ttbar$~\cite{Alioli:2011as} and (t-channel) single top quark production~\cite{Frederix:2012dh}, samples are generated at NLO precision using \POWHEG 2.0~\cite{Nason:2004rx,Frixione:2007vw,Alioli:2010xd,Jezo2015aia}. 
+The \POWHEG version 1.0 at NLO precision is used for single top quark production in association with a W boson (tw channel)~\cite{Re:2010bp}. 
 
-When compared with data, \Wjets, \ZLL, \ttbar, and single~\PQt quark events in the $\PQt\PW$ channel are normalized to their cross sections at next-to-NLO (NNLO) precision in \alpS~\cite{Melnikov:2006kv,Czakon:2011xx,Kidonakis:2013zqa}. 
-Single~\PQt quark ($t$-channel) and diboson events are normalized to their cross sections at NLO precision in \alpS or higher~\cite{Kidonakis:2013zqa,Campbell:2011bn,Gehrmann:2014fva}.
+When compared with data, W + jets, $Z\rightarrow ll$, $\ttbar$, and single top quark events in the tW channel are normalised to their cross sections at next-to-NLO (NNLO) precision~\cite{Melnikov:2006kv,Czakon:2011xx,Kidonakis:2013zqa}. 
+Single top quark (t-channel) and diboson events are normalized to their cross sections at NLO precision or higher~\cite{Kidonakis:2013zqa,Campbell:2011bn,Gehrmann:2014fva}.
 
 
 
@@ -433,10 +545,36 @@ which is the fraction of events with a $\text{jet}\rightarrow\tauh$ originating 
 
 \subsection{Corrections}
 
-fits
+\begin{figure}[!hbtp]
+\centering
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ff_closure_ss_closure_nbjet0_qcd_tt_2018.pdf}} 
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ff_closure_met_0jet_closure_qcd_mt_2018.pdf}}
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ff_closure_met_0jet_closure_wjets_mt_2018.pdf}}
+\caption{DR closures}
+\label{fig:ff_dr}
+\end{figure}
 
-\subsection{Appilcation Region Fractions}
+\begin{figure}[!hbtp]
+\centering
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ff_closure_os_closure_nbjet0_alt_qcd_tt_2018.pdf}} 
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ff_closure_pt_1_nbjets0_dr_to_ar_aiso_closure_qcd_mt_2018.pdf}}
+    \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ff_closure_pt_1_nbjets0_tightmt_dr_to_ar_closure_wjets_mc_mt_2018.pdf}}
+\caption{DR to AR closures.}
+\label{fig:ff_dr_to_ar}
+\end{figure}
 
+
+\subsection{Application Region Fractions}
+
+\begin{figure}[!hbtp]
+\centering
+    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/ff_fraction_tightmt_nbjets0_mt_2018_os_rebinning.pdf}}
+    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/ff_fraction_loosemt_nbjets0_mt_2018_os_rebinning.pdf}} \\
+    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/ff_fraction_tightmt_nbjets1_mt_2018_os_rebinning.pdf}}
+    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/ff_fraction_loosemt_nbjets1_mt_2018_os_rebinning.pdf}} \\
+\caption{Fake factor fractions.}
+\label{fig:mt_ff_frac}
+\end{figure}
 
 
 \subsection{Applying Fake Factors}
