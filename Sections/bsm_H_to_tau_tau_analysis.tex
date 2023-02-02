@@ -284,49 +284,130 @@ Due to the difference in scaling of the two effects, at small $g_{U}$ the interf
 
 \section{Event Selection}
 
-\begin{table}[h]
+The possible decays of two tau leptons and their branching fractions, where the tau decay is grouped into three categories e, $\mu$ and $\tau_h$ as defined in Section~\ref{sec:object_reconstruction}, are shown in Table~\ref{tab:ditau_br}. 
+For this search the four largest branching fraction channels used: $\tauhtauh$, $\etauh$, $\mutauh$ and $e\mu$.
+This accounts for approximately 94\% of di-tau events.
+The two same lepton channels are neglected due to small branching ratio and the dominating $Z\rightarrow ee$ and $Z\rightarrow \mu\mu$ backgrounds. \\
+
+\begin{table}[!hbtp]
     \centering
     \begin{tabular}{|c|c|}
          \hline
          Channel & Branching Fraction  \\
          \hline
          \hline
-         $\tau_h \tau_h$ & 42.0\% \\
-         $e \tau_h$ & 23.1\% \\
-         $\mu \tau_h$ & 22.6\% \\
-         $e \mu$ & 6.2\% \\
+         $\tauhtauh$ & 42.0\% \\
+         $\etauh$ & 23.1\% \\
+         $\mutauh$ & 22.6\% \\
+         $\emu$ & 6.2\% \\
          $e e$ & 3.2\% \\
          $\mu \mu$ & 3.0\% \\
          \hline
     \end{tabular}
     \caption{Branching fractions of the decays of two tau leptons.}
+    \label{tab:ditau_br}
 \end{table}
+
+\subsection{Trigger Requirements}
+
+In the four final state pairs a number of different online trigger requirements are needed.
+In the $\tauhtauh$ channel, two possible triggers are available: the double-$\tauh$ and single-$\tauh$ triggers.
+The single-$\tauh$ trigger has a high $\pT$ threshold at 120 (180) GeV for events recorded in 2016 (2017-2018), whilst the double-$\tauh$ has a $\pT$ threshold at 40 GeV.
+Therefore, the double-$\tauh$ trigger is used individually where the $\tauh$ has $\pT$ is below the single-$\tauh$ threshold and the union of single-$\tauh$ and double-$\tauh$ triggered events are taken above the threshold. \\
+
+In the $\etauh$ and $\mutauh$ channels, there are three possible triggers available: the single-e/$\mu$, single-$\tauh$ and the e/$\mu$-$\tauh$ cross-trigger.
+The cross-trigger is used for events where the light lepton has $\pT$ between the thresholds for the cross-trigger and single-$e/\mu$ shown in Table~\ref{tab:trig_thresholds}.
+The light lepton used in the cross-trigger is required to be in the central barrel of the detector within $|\eta| < 2.1$.
+Above these light lepton $\pT$ thresholds the single-$e/\mu$ trigger is used, where here it is required that the $\tauh$ has $\pT >$ 30 GeV.
+At $\tauh$ $\pT$ above the single-$\tauh$ thresholds, the single-$\tauh$ trigger is used in combination with the single-$e/\mu$ trigger. \\
+
+\begin{table}[hbtp]
+  \centering
+  \begin{tabular}{|c||c|c|c|c|}
+    \hline
+    Year/ Trigger   & $\etauh$ cross-trigger & single-$e$ & $\mutauh$ cross-trigger & single-$\mu$ \\
+    \hline
+    \hline
+    2016 & 23                    & 26         & 20                     & 23           \\
+    2017 & 25                    & 28         & 20                     & 25           \\
+    2018 & 25                    & 33         & 21                     & 25           \\
+    \hline        
+  \end{tabular}
+  \caption{Lower trigger light lepton thesholds $\pT$ in GeV for the $\etauh$ and $\mutauh$ channels.}
+  \label{tab:trig_thresholds}  
+\end{table}
+
+In the $\emu$ channel, there are three possible triggers available: the single-$e$, single-$\mu$ and the e-$\mu$ cross-trigger.
+However, only the cross-trigger is used in this analysis, due to the larger efficiencies of correctly selecting light leptons.
+The e and $\mu$ are required to have $\pT >$ 15 GeV and $|\eta| < 2.4$.
+
+\subsection{Offline Requirements}
+
+All offline selections stated are in addition the object selection discussed in Section~\ref{sec:object_reconstruction}.
+In this analysis, hadronic tau candidates are required to pass the \texttt{Medium} $D_{\text{jet}}^{\text{WP}}$.
+$D_{e}^{\text{WP}}$ and $D_{\mu}^{\text{WP}}$ are dependent on the channel.
+The \texttt{VVLoose}, \texttt{Tight}, \texttt{VVLoose} $D_{e}^{\text{WP}}$ and the \texttt{VLoose}, \texttt{VLoose} and \texttt{Tight} $D_{\mu}^{\text{WP}}$ are used in the $\tauhtauh$, $\etauh$ and $\mutauh$ channels respectively.
+The tighter working point for the same light lepton discrimination as tagged in the event is used to remove light leptons faking hadronic taus from the $Z \rightarrow ll$ process.
+The light lepton isolation requirement is $\Irel^{e/\mu} < 0.15$ except for in the $\emu$ channel where the muon is required to have $\Irel^{\mu} < 0.2$. \\
+
+The selected $\tau$ lepton decay candidates are required to have opposite charge and to be separated by more than $\Delta R$ > 0.5 in all channels except $\emu$ where $\Delta R$ > 0.3.
+In events where the numbers of an object in the event is greater than the required number of objects in the $\tau\tau$ decay channel, the objects are sorted by the maximum $D_{\text{jet}}^{\text{score}}$ if $\tau_h$ or minimum $\Irel$ if a light lepton and the leading objects are chosen.
+In order to maintain orthogonality between channels, events with additional light leptons passing looser selections than the nominal requirements, are rejected from the selection.
+The looser selections help to suppress the $Z \rightarrow ll$ background process further. \\
+
+In the $\etauh$ and $\mutauh$ channels, a cut is placed at 70 GeV on the transverse mass between the light lepton $\pTvec$ and the missing $\pTvec$, where the transverse momentum is defined as,
+\begin{equation}
+m_{\text{T}}(\pTvec^{\hspace{2pt}i},\pTvec^{\hspace{2pt}j}) = \sqrt{2\pT^{i}\pT^{j}(1-\cos\Delta\phi)},
+\end{equation}
+where $\Delta\phi$ to the azimuthal angle between $\pTvec^{\hspace{2pt}i}$ and $\pTvec^{\hspace{2pt}j}$.
+The variable is used to remove W + jets background events, where a jet fakes a hadronic tau and the MET and light lepton from the W decay are aligned and hence the event has a large $m_{T}(\pTvec^{\hspace{2pt}e/\mu},\pTvec^{\hspace{2pt}\text{MET}})$.
+
+In the $\emu$ channel an additional cut is placed on a variable named $D_{\zeta}$, which is defined as,
+\begin{equation}
+D_\zeta = p_\zeta^\text{miss} - 0.85 p_\zeta^\text{vis};\qquad
+p_\zeta^\text{miss} = \pTvec^{\hspace{2pt}\text{miss}} \cdot \hat{\zeta};\qquad
+p_\zeta^\text{vis} = (\pTvec^{\hspace{2pt}e} + \pTvec^{\hspace{2pt}\mu}) \cdot \hat{\zeta}
+\label{eq:Dzeta_def}
+\end{equation}
+where $\pTvec^{\hspace{2pt}e/\mu}$ corresponds to the transverse momentum vector of the electron or muon and $\hat{\zeta}$ to the bisectional direction between the electron and the muon in the transverse plane~\cite{CDFPzeta}.
+A diagram of the inputs is shown Figure~\ref{fig:dzeta_diagram}.
+\begin{figure}[!hbtp]
+\centering
+    \includegraphics[width=1.0\textwidth]{Figures/dzeta_diagram.pdf}
+\caption{Diagram of inputs to the $D_\zeta$ variable.}
+\label{fig:dzeta_diagram}
+\end{figure}
+The linear combination is optimised for genuine di-tau events to peak around $D_{\zeta} = 0$ GeV. 
+It is motivated by the expectation that in di-tau decays from a resonance, the visible and missing (from tau neutrinos) momentums are roughly aligned and of similar magnitudes.
+In W + jets and $\ttbar$ events the directions of the visible and missing products are expected to be more randomly distributed and lead to a non-peaking $D_{\zeta}$.
+Therefore only events with $D_\zeta >$ -35 GeV are considered for signal events.
+No b tagged events with this cut are vetoed and b tagged events with this cut are used for a $\ttbar$ control region and discussed further in Section~\ref{sec:background_modelling}.
 
 \section{Signal Extraction}
 
-\begin{figure}[!hbtp]
-\centering
-    \includegraphics[width=1.0\textwidth]{Figures/high_mass_categories.pdf}
-\caption{.}
-\label{fig:high_mass_categories}
-\end{figure}
+The optimisation of the signal extraction depends on which of the three scenarios, set out at beginning of this section, is searched for.
+The components of the optimisation are named the high mass, low mass and SM Higgs optimisation procedures.
+For the model independent search (i) the high or low mass optimisation procedures are used depending on whether the mass of the resonance is greater or less than 250 GeV.
+The search for the MSSM Higgs sector (ii) uses the high mass or the SM Higgs optimisation procedures depending on whether the reconstructed di-tau mass \cite{} is greater or less than 250 GeV.
+Finally, the search for vector leptoquarks (iii) uses only the high mass optimisation procedure.
+The procedures are discussed in detail below. \\
 
-\begin{figure}[!hbtp]
-\centering
-    \includegraphics[width=1.0\textwidth]{Figures/low_mass_categories.pdf}
-\caption{.}
-\label{fig:high_mass_categories}
-\end{figure}
+The high mass optimisation procedure follows what was done in Ref. \cite{}.
+Firstly each category is split into categories with no b tagged and with one or more b tagged events.
+This firstly helps target the additional Higgs boson production modes gluon fusion and b associated production respectively.
+Secondly, the initial state radiation of a t-channel vector leptoquark signal dominated by initial states of b quarks, can lead to additional b jets in the final state.
+The reduced backgrounds in b tagged events allows for a more sensitive vector leptoquark search in this category. \\
 
-The variable $D_\zeta$ is defined as
-\begin{equation}
-D_\zeta = p_\zeta^\text{miss} - 0.85 p_\zeta^\text{vis};\qquad
-p_\zeta^\text{miss} = \vec{p}_\text{T}^\text{miss} \cdot \hat{\zeta};\qquad
-p_\zeta^\text{vis} = (\vec{p}_\text{T}^{e} + \vec{p}_\text{T}^{\mu}) \cdot \hat{\zeta}
-\label{eq:Dzeta_def}
-\end{equation}
-where $\vec{p}_\text{T}^{e/\mu)}$ corresponds to the transverse momentum vector of the electron (muon) and $\hat{\zeta}$
-to the bisectional direction between the electron and the muon in the transverse plane~\cite{CDFPzeta}.
+The $\etauh$ and $\mutauh$ channels are further subdivided into catego
+
+
+The corresponding categories in $\etauh$ and $\mutauh$ channels are defined by
+\begin{itemize}
+\item \texttt{Tight-$m_{\text{T}}$}: $m_{\text{T}}^{e/\mu} [\GeV] < 40$;
+\item \texttt{Loose-$m_{\text{T}}$}: $40 \leq m_{\text{T}}^{e/\mu} [\GeV] < 70$.
+\end{itemize}
+The bulk of the signal events, particularly for low mass hypotheses, lies in the \texttt{Tight-$m_{\text{T}}$} sub-category.
+The \texttt{Loose-$m_{\text{T}}$} category has been added to increase the signal acceptance for mass hypotheses of $m_{A,H} > 700$~\GeV.
 
 In the $\emu$ final state, three sub-categories are defined by
 \begin{itemize}
@@ -337,25 +418,26 @@ In the $\emu$ final state, three sub-categories are defined by
 In this way sub-categories with different signal purities and $\ttbar$ fractions can be exploited during the statistical inference for the signal.
 The expected signal, for all masses tested, is mostly located in the \texttt{Medium-$D_\zeta$} sub-category.
 
-The transverse mass in the $\etauh$ and $\mutauh$ final states is defined as:
-\begin{equation}
-m_{\text{T}}^{e/\mu} = \sqrt{2 \, \pT^{e/\mu} \, E_{T} \, (1-\cos\Delta\phi)}
-\end{equation}
-where $\pT^{e/\mu}$ refers to the $\pT$ of the electron (muon) and $\Delta\phi$ to the azimuthal angle in the transverse plane between the electron/muon and $\vec{p}_\text{T}^\text{miss}$.
-
-The corresponding categories in $\etauh$ and $\mutauh$ channels are defined by
-\begin{itemize}
-\item \texttt{Tight-$m_{\text{T}}$}: $m_{\text{T}}^{e/\mu} [\GeV] < 40$;
-\item \texttt{Loose-$m_{\text{T}}$}: $40 \leq m_{\text{T}}^{e/\mu} [\GeV] < 70$.
-\end{itemize}
-The bulk of the signal events, particularly for low mass hypotheses, lies in the \texttt{Tight-$m_{\text{T}}$} sub-category.
-The \texttt{Loose-$m_{\text{T}}$} category has been added to increase the signal acceptance for mass hypotheses of $m_{A,H} > 700$~\GeV.
+\begin{figure}[!hbtp]
+\centering
+    \includegraphics[width=1.0\textwidth]{Figures/high_mass_categories.pdf}
+\caption{Overview of the categories used for the extraction of the signal in the high mass optimisation procedure.}
+\label{fig:high_mass_categories}
+\end{figure}
 
 \begin{equation}
-m_{T}^{\text{tot}} = \sqrt{m_{T}^{2}(p_{T}^{\tau_{1}},p_{T}^{\tau_{2}}) + m_{T}^{2}(p_{T}^{\tau_{1}},p_{T}^{\tau_{\text{miss}}}) + m_{T}^{2}(p_{T}^{\tau_{2}},p_{T}^{\tau_{\text{miss}}})}
+m_{T}^\text{tot} = \sqrt{m_{T}(\pTvec^{\hspace{2pt}\tau_1},\pTvec^{\hspace{2pt}\text{miss}})^2 +  m_{T}(\pTvec^{\hspace{2pt}\tau_2},\pTvec^{\hspace{2pt}\text{miss}})^2 + m_{T}(\pTvec^{\hspace{2pt}\tau_1},\pTvec^{\hspace{2pt}\tau_2})^2}
 \end{equation}
+
+\begin{figure}[!hbtp]
+\centering
+    \includegraphics[width=1.0\textwidth]{Figures/low_mass_categories.pdf}
+\caption{Overview of the categories used for the extraction of the signal in the low mass optimisation procedure.}
+\label{fig:low_mass_categories}
+\end{figure}
 
 \section{Background Modelling Overview}
+\label{sec:background_modelling}
 
 The analysis considers several backgrounds including Drell-Yan, $\ttbar$, W+jets, QCD, di-boson, single-top, and electroweak W and Z bosons production.
 These are split into a five categories:
@@ -435,7 +517,7 @@ This is defined as the SR but with the criteria that the jet fakes fail the nomi
 This now models the background from $\text{jet}\rightarrow\tauh$ events in SR. \\
 
 The following Sections~\ref{sec:ff_dr}--\ref{sec:ff_applying} detail the complexities of how this method is applied to this analysis.
-For these searches the nominal hadronc tau ID used is the \texttt{Medium} DeepTau Vs Jets ID working point and the alternative hadronic tau ID used is the \texttt{VVVLoose} DeepTau Vs Jets ID working point.
+For these searches the nominal hadronc tau ID used is the \texttt{Medium} $D_{\text{jet}^{\text{WP}}}$ and the alternative hadronic tau ID used is the \texttt{VVVLoose}  $D_{\text{jet}^{\text{WP}}}$.
 
 \subsection{Determination Regions}
 \label{sec:ff_dr}
@@ -468,8 +550,8 @@ These are chosen to balance the number of events and the purity of each backgrou
    \item $\tauhtauh$ QCD \\
      \indent $y_C$: The $\tauh$ candidates are required to have the opposite sign. \\
      \indent $y_A$: The $\tauh$ candidates are required to have the same sign. \\
-     \indent $x_C$: The subleading tau passes the \texttt{Medium} DeepTau Vs Jets working point. \\
-     \indent $x_D$: The subleading tau fails the \texttt{VVLoose} DeepTau Vs Jets working point but passes the \texttt{VVVLoose} working point.
+     \indent $x_C$: The subleading tau passes the \texttt{Medium} $D_{\text{jet}^{\text{WP}}}$. \\
+     \indent $x_D$: The subleading tau fails the \texttt{VVLoose} $D_{\text{jet}^{\text{WP}}}$ but passes the \texttt{VVVLoose} $D_{\text{jet}^{\text{WP}}}$.
   \item $\etauh$ and $\mutauh$ QCD \\
     \indent $y_C$: The $e$/$\mu$ and $\tauh$ candidates are required to have the opposite sign. \\
     \indent $y_A$: The $e$/$\mu$ and $\tauh$ candidates are required to have the same sign and the $e$/$\mu$ to have $\Irel>0.05$. \\
