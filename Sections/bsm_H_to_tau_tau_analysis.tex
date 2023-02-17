@@ -112,13 +112,11 @@ The kinematic properties are highly dependent on the contributions to the loop, 
 To account for the different loop contributions at the NLO plus parton shower prediction, weights based off the $\pT$ spectra are calculated to split the contributions from the t quark only, b quark only, and tb-interference.
 Once individual templates have been determined for each contribution to the loop, the 2HDM samples can be scaled to the correct specific MSSM scenario prediction by the following formula.
 
-\begin{equation}
-\begin{aligned}
+\begin{align}
 \frac{d\sigma_{\text{MSSM}}}{d\pT} & = \left(\frac{Y_{t,\text{MSSM}}}{Y_{t,\text{2HDM}}}\right)^{2}\frac{d\sigma^{t}_{\text{2HDM}}}{d\pT}(Q_{t}) + \left(\frac{Y_{b,\text{MSSM}}}{Y_{b,\text{2HDM}}}\right)^{2}\frac{d\sigma^{b}_{\text{2HDM}}}{d\pT}(Q_{b}) + \nonumber \\
-& \left(\frac{Y_{t,\text{MSSM}}}{Y_{t,\text{2HDM}}}\frac{Y_{b,\text{MSSM}}}{Y_{b,\text{2HDM}}}\right) \left\{ \frac{d\sigma^{t+b}_{\text{2HDM}}}{d\pT}(Q_{tb}) - \frac{d\sigma^{t}_{\text{2HDM}}}{d\pT}(Q_{tb}) - \frac{d\sigma^{b}_{\text{2HDM}}}{d\pT}(Q_{tb}) \right\} \,,
-\end{aligned}
+& \left(\frac{Y_{t,\text{MSSM}}}{Y_{t,\text{2HDM}}}\frac{Y_{b,\text{MSSM}}}{Y_{b,\text{2HDM}}}\right) \left\{ \frac{d\sigma^{t+b}_{\text{2HDM}}}{d\pT}(Q_{tb}) - \frac{d\sigma^{t}_{\text{2HDM}}}{d\pT}(Q_{tb}) - \frac{d\sigma^{b}_{\text{2HDM}}}{d\pT}(Q_{tb}) \right\}
 \label{eqn:ggh_reweight}
-\end{equation} 
+\end{align}
 
 where $Q_i$ are resummation scales that depend on the mass of the additional Higgs boson.
 Further contributions from any Supersymmetric partners have been checked and account for less than a few percent and so are neglected.
@@ -282,6 +280,7 @@ The interference is mostly a destructive effect (except for at small $m_{\tau\ta
 The interference peaks negatively between 100 and 200 GeV and in this region the combined yield can be negative.
 Due to the difference in scaling of the two effects, at small $g_{U}$ the interference is more dominant than the signal and hence the yield of the combined result is reduced.
 
+\newpage
 \section{Event Selection}
 
 The possible decays of two tau leptons and their branching fractions, where the tau decay is grouped into three categories e, $\mu$ and $\tau_h$ as defined in Section~\ref{sec:object_reconstruction}, are shown in Table~\ref{tab:ditau_br}. 
@@ -358,6 +357,7 @@ The looser selections help to suppress the $Z \rightarrow ll$ background process
 In the $\etauh$ and $\mutauh$ channels, a cut is placed at 70 GeV on the transverse mass between the light lepton $\pTvec$ and the missing $\pTvec$, where the transverse momentum is defined as,
 \begin{equation}
 m_{\text{T}}(\pTvec^{\hspace{2pt}i},\pTvec^{\hspace{2pt}j}) = \sqrt{2\pT^{i}\pT^{j}(1-\cos\Delta\phi)},
+\label{eqn:mt}
 \end{equation}
 where $\Delta\phi$ to the azimuthal angle between $\pTvec^{\hspace{2pt}i}$ and $\pTvec^{\hspace{2pt}j}$.
 The variable is used to remove W + jets background events, where a jet fakes a hadronic tau and the MET and light lepton from the W decay are aligned and hence the event has a large $m_{T}(\pTvec^{\hspace{2pt}e/\mu},\pTvec^{\hspace{2pt}\text{MET}})$.
@@ -367,23 +367,26 @@ In the $\emu$ channel an additional cut is placed on a variable named $D_{\zeta}
 D_\zeta = p_\zeta^\text{miss} - 0.85 p_\zeta^\text{vis};\qquad
 p_\zeta^\text{miss} = \pTvec^{\hspace{2pt}\text{miss}} \cdot \hat{\zeta};\qquad
 p_\zeta^\text{vis} = (\pTvec^{\hspace{2pt}e} + \pTvec^{\hspace{2pt}\mu}) \cdot \hat{\zeta}
-\label{eq:Dzeta_def}
+\label{eqn:Dzeta_def}
 \end{equation}
 where $\pTvec^{\hspace{2pt}e/\mu}$ corresponds to the transverse momentum vector of the electron or muon and $\hat{\zeta}$ to the bisectional direction between the electron and the muon in the transverse plane~\cite{CDFPzeta}.
-A diagram of the inputs is shown Figure~\ref{fig:dzeta_diagram}.
+A diagram of the inputs is shown Figure~\ref{fig:dzeta_diagram}. \\
 \begin{figure}[!hbtp]
 \centering
     \includegraphics[width=1.0\textwidth]{Figures/dzeta_diagram.pdf}
 \caption{Diagram of inputs to the $D_\zeta$ variable.}
 \label{fig:dzeta_diagram}
 \end{figure}
+
 The linear combination is optimised for genuine di-tau events to peak around $D_{\zeta} = 0$ GeV. 
 It is motivated by the expectation that in di-tau decays from a resonance, the visible and missing (from tau neutrinos) momentums are roughly aligned and of similar magnitudes.
 In W + jets and $\ttbar$ events the directions of the visible and missing products are expected to be more randomly distributed and lead to a non-peaking $D_{\zeta}$.
 Therefore only events with $D_\zeta >$ -35 GeV are considered for signal events.
 No b tagged events with this cut are vetoed and b tagged events with this cut are used for a $\ttbar$ control region and discussed further in Section~\ref{sec:background_modelling}.
 
+\newpage
 \section{Signal Extraction}
+\label{sec:sig_ext}
 
 The optimisation of the signal extraction depends on which of the three scenarios, set out at beginning of this section, is searched for.
 The components of the optimisation are named the high mass, low mass and SM Higgs optimisation procedures.
@@ -398,36 +401,51 @@ This firstly helps target the additional Higgs boson production modes gluon fusi
 Secondly, the initial state radiation of a t-channel vector leptoquark signal dominated by initial states of b quarks, can lead to additional b jets in the final state.
 The reduced backgrounds in b tagged events allows for a more sensitive vector leptoquark search in this category. \\
 
-The $\etauh$ and $\mutauh$ channels are further subdivided into catego
-
-
-The corresponding categories in $\etauh$ and $\mutauh$ channels are defined by
+The $\etauh$ and $\mutauh$ channels are further subdivided into categories depending on the transverse mass between the light lepton and missing transverse momentum vectors as defined in Equation~\ref{eqn:mt}.
+The corresponding categories are defined as:
 \begin{itemize}
-\item \texttt{Tight-$m_{\text{T}}$}: $m_{\text{T}}^{e/\mu} [\GeV] < 40$;
-\item \texttt{Loose-$m_{\text{T}}$}: $40 \leq m_{\text{T}}^{e/\mu} [\GeV] < 70$.
+\item \texttt{Tight-$m_{\text{T}}$}: $m_{\text{T}}(\pTvec^{\hspace{2pt}e/\mu},\pTvec^{\hspace{2pt}\text{miss}}) < 40$ GeV;
+\item \texttt{Loose-$m_{\text{T}}$}: $40 \leq m_{\text{T}}(\pTvec^{\hspace{2pt}e/\mu},\pTvec^{\hspace{2pt}\text{miss}}) < 70$ GeV.
 \end{itemize}
-The bulk of the signal events, particularly for low mass hypotheses, lies in the \texttt{Tight-$m_{\text{T}}$} sub-category.
-The \texttt{Loose-$m_{\text{T}}$} category has been added to increase the signal acceptance for mass hypotheses of $m_{A,H} > 700$~\GeV.
+The majority of the signal events fall within the \texttt{Tight-$m_{\text{T}}$} sub-category.
+The \texttt{Loose-$m_{\text{T}}$} category is used improve the signal acceptance for resonant masses of $m_{\phi} > 700$ GeV.\\
 
-In the $\emu$ final state, three sub-categories are defined by
+
+In the $\emu$ channel, is also subdivided into three signal categories based of the cuts on the variable $D_{\zeta}$ as defined in Equation~\ref{eqn:Dzeta_def}.
+The three categories are defined as:
 \begin{itemize}
-\item \texttt{Low-$D_\zeta$}: $-35 \leq D_\zeta [\GeV] < -10$;
-\item \texttt{Medium-$D_\zeta$}: $-10 \leq D_\zeta [\GeV] <  30$;
-\item \texttt{High-$D_\zeta$}: $D_\zeta [\GeV] \geq 30$.
+\item \texttt{Low-$D_\zeta$}: $-35 \leq D_\zeta < -10$ GeV;
+\item \texttt{Medium-$D_\zeta$}: $-10 \leq D_\zeta [\GeV] <  30$ GeV;
+\item \texttt{High-$D_\zeta$}: $D_\zeta [\GeV] \geq 30$ GeV.
 \end{itemize}
-In this way sub-categories with different signal purities and $\ttbar$ fractions can be exploited during the statistical inference for the signal.
-The expected signal, for all masses tested, is mostly located in the \texttt{Medium-$D_\zeta$} sub-category.
+By design, the majority of signal events are located in the \texttt{Medium-$D_\zeta$} sub-category.
+The Low and High-$D_\zeta$ categories are used to catch the tail of the signal distributions.
+A schematic of all high mass optimisation categories are shown in Figure ~\ref{fig:high_mass_categories}. \\
 
 \begin{figure}[!hbtp]
 \centering
-    \includegraphics[width=1.0\textwidth]{Figures/high_mass_categories.pdf}
+    \includegraphics[width=1\textwidth]{Figures/high_mass_categories.pdf}
 \caption{Overview of the categories used for the extraction of the signal in the high mass optimisation procedure.}
 \label{fig:high_mass_categories}
 \end{figure}
 
+Once all category divisions have been applied, events are drawn in histograms based off a discriminating variable.
+The discriminating variable used in this analysis is $m_{T}^{\text{tot}}$ and is defined below.
 \begin{equation}
-m_{T}^\text{tot} = \sqrt{m_{T}(\pTvec^{\hspace{2pt}\tau_1},\pTvec^{\hspace{2pt}\text{miss}})^2 +  m_{T}(\pTvec^{\hspace{2pt}\tau_2},\pTvec^{\hspace{2pt}\text{miss}})^2 + m_{T}(\pTvec^{\hspace{2pt}\tau_1},\pTvec^{\hspace{2pt}\tau_2})^2}
+m_{T}^\text{tot} = \sqrt{m_{T}(\pTvec^{\hspace{2pt}\tau_1},\pTvec^{\hspace{2pt}\text{miss}})^2 +  m_{T}(\pTvec^{\hspace{2pt}\tau_2},\pTvec^{\hspace{2pt}\text{miss}})^2 + m_{T}(\pTvec^{\hspace{2pt}\tau_1},\pTvec^{\hspace{2pt}\tau_2})^2},
+\label{eqn:mt_tot}
 \end{equation}
+where $\tau_1$ and $\tau_2$ refer to the visible products of the two tau leptons decays.
+This variable provides excellent discriminating power between higher mass resonant signals compared to other non-peaking backgrounds whilst still maintaining some separation between signal masses.
+It is also excellent at separating the high mass non-resonant di-tau signatures where a di-tau mass is unphysical for the signal, due to the use of the $\pT$s and in the variable.
+For the t-channel signal with the mediator has high mass, no significant mass separation is expected in any variable.
+
+The low mass optimisation procedure loosely follows the high mass procedure with a few key difference.
+Firstly categories that are only sensitive to high mass signals are dropped.
+This includes the Low-$D_\zeta$ and Loose-$m_{T}$ categories.
+Each no b tag subcategory is further divided into four bins of reconstructed di-tau visible $\pT$ with bin edges: 0,50,100,200 and $\infty$.
+This is not done in the b tag subcategories due to the lack of statistics in this region.
+A schematic of the categories used in the low mass optimisation procedure is shown in Figure~\ref{fig:low_mass_categories}.
 
 \begin{figure}[!hbtp]
 \centering
@@ -436,6 +454,22 @@ m_{T}^\text{tot} = \sqrt{m_{T}(\pTvec^{\hspace{2pt}\tau_1},\pTvec^{\hspace{2pt}\
 \label{fig:low_mass_categories}
 \end{figure}
 
+The final difference with the high mass optimisation procedure is the discriminator used, here the reconstructed di-tau mass is used.
+This helps to separate signal events from the Z boson peak in this region.
+Examples of the signal mass separations in the $\tauhtauh$ channel with the low and high mass discriminators are shown in Figure~\ref{fig:} \\
+
+FIGURES OF DISTRIBUTIONS
+VLQ AND INTERFERENCE
+GGH AND BBH heavy
+GGH AND BBH light \\
+
+Finally the SM Higgs optimisation procedure is taken from the CMS SM $H \rightarrow \tau\tau$ analysis.
+This was previously used for simplified template cross section measurements.
+This uses a neural-network-based (NN) to obtain the most precise estimates from data of the SM Higgs produced via gluon fusion, vector boson fusion or vector boson associated production.
+The NN based analysis introduces 26 categories, 8 of which are optimised to pull the out the Higgs boson signal.
+Although the NN is trained specifically to target events with an SM-like Higgs boson, signal events with differing masses can also enter the NN categories.
+
+\newpage
 \section{Background Modelling Overview}
 \label{sec:background_modelling}
 
@@ -475,13 +509,55 @@ The \POWHEG version 1.0 at NLO precision is used for single top quark production
 When compared with data, W + jets, $Z\rightarrow ll$, $\ttbar$, and single top quark events in the tW channel are normalised to their cross sections at next-to-NLO (NNLO) precision~\cite{Melnikov:2006kv,Czakon:2011xx,Kidonakis:2013zqa}. 
 Single top quark (t-channel) and diboson events are normalized to their cross sections at NLO precision or higher~\cite{Kidonakis:2013zqa,Campbell:2011bn,Gehrmann:2014fva}.
 
-
-
+\newpage
 \section{QCD Estimation in the $\emu$ Channel}
 \label{sec:qcd}
 
+The QCD model in the $\emu$ channel, that attempts to model events where two jets are misidentified as an election muon pair, is taken from data with same sign election muon pair with a transfer factor ($F_{T}$).
+The transfer factor determines differences from the same sign to opposite sign region is calculated from a sideband region with an anti-isolated muon ($0.2 < \Irel^{\mu} < 0.5$).
+$F_{T}$ is initially parameterised by the $\Delta R$ between the election and muon, and the number of jets in the event, however additional dependencies on the electron and muon $\pT$ enter via a correction. \\
+Good agreement is observed in events with no b jets, for the discriminating variables discussed in Section~\ref{sec:sig_ext}, when applying $F_{T}$ onto same sign events compared to opposite sign events where both regions have an anti-isolated muon. 
+However in events with b jets, an additional correction is needed.
+This is determined to be ~0.75 (differs very slightly between data taking years).
+As this correction is large, it is validated by switching the light lepton anti-isolation, so that the election is required to have $0.15 < \Irel^{e} < 0.5$.
+Also events where both light leptons are anti-isolated are looked at.
+The correction for b tagged events is equivalent in all three regions, and a global average of the three is taken for the final correction. \\
+
+To understand the physical reason for the large difference in no b tag and b tag events in same sign and opposite pairs, studies were performed on simulated samples.
+It was observed that the electron muon pair is usually produced from pairs of heavy quarks, $pp\rightarrow b\bar{b}$ ($c\bar{c}$).
+If the two jets are initiated from the heavy quarks there is a large bias towards opposite sign jets due to the opposite signs of the quark anti-quark pair.
+However if one of the heavy quarks is tagged as a b jet, another object has to be the jet initiator (a radiated gluon for example) and there is therefore no charge preference in the pair.
+As $F_{T}$ is originally fit inclusively in numbers of b jets and the 0 bin is dominant, the correction over predicts the opposite sign to same sign ratio and so a large correction is needed as observed.
+
+\newpage
 \section{Embedding Method}
 \label{sec:embedding}
+
+The background for genuine di-$\tau$ lepton pairs is modelled via the embedding method. 
+This is a hybrid method that utilises both data and MC techniques to produce high statistic samples, where the bulk of the event comes from data.
+This minimises both the chance of MC fluctuations and the size of the uncertainties.
+The background is dominated by $Z \rightarrow \tau \tau$ decay however there will be smaller contributions from $t\bar{t}$ and di-boson processes.  \\
+
+The algorithm first selects $\mu\mu$ events from data.
+The selection is chosen to naturally target the pure $Z \rightarrow \mu\mu$ region but still be loose enough to catch events from other processes, so not to introduce a bias on the $Z$ boson mass.
+Events are required to pass the DoubleMuon trigger with minimum requirements on the invariant mass of the two muons ($m_{\mu\mu}$) and the the $\pT$ of the leading and trailing muon.
+Also required at the trigger level is a loose association of the track to the PV and a loose isolation in the tracker.
+Offline objects matched to the trigger muons, are then required to have standard $d_z$ and $\eta$ selections and originate from a global muon-track, as defined in Section~\ref{sec:object_reconstruction}.
+The muon pair are required to have opposite charge and have $m_{\mu\mu} > 20$ GeV.
+The fraction of processes within this selection is tested with MC background samples and a QCD model from same sign muon pairs with an extrapolation factor.
+Approximately 97\% of selected events are expected to come from $Z\rightarrow \mu\mu$ events with smaller contributions from $Z \rightarrow \tau\tau$ ($\tau\rightarrow\mu$), di-boson, $\ttbar$ and QCD.
+The di-boson and $\ttbar$ relative contributions are greater at higher $m_{\mu\mu}$ and in events with tagged b jets whilst the QCD contribution is largest at lower $m_{\mu\mu}$.
+The events selected are biased by detector acceptances. 
+Therefore, corrections on the reconstruction and identification efficiencies are performed in muon $\eta$ and $\pT$ using the "tag-and-probe". \\
+
+Next, all energy deposits in the detector from the selected muons are removed.
+This involves removing the hits on global-muon track in the tracker, hits in the muons systems and clusters in the calorimeters that intercept the muon trajectory.
+Once completed, the selected muons and its kinematic properties are replaced with a tau lepton.
+To account for the difference in mass between the muon and tau, the muons are boosted into the center-of-mass frame of the di-muon system and then this 4-vector is taken for the tau but boosted back into the laboratory frame.
+The event simulation is performed from the PV.
+The tau lepton decay is then simulated with \PYTHIA and separate samples are produced for differ $\tau\tau$ decay channels.
+Only the decay of the tau leptons are then processed through the detector simulation and the remainder of the $\mu\mu$ event is added back.
+A schematic of the process is shown in Figure~\ref{fig:embedding}. \\
 
 \begin{figure}[!hbtp]
 \centering
@@ -490,8 +566,9 @@ Single top quark (t-channel) and diboson events are normalized to their cross se
 \label{fig:embedding}
 \end{figure}
 
-Validation plots of it working
+The embedding method is validated on dedicated samples, where the muons from data are replaced by simulated muons instead of taus.
 
+\newpage
 \section{Fake Factor Method}
 \label{sec:ff}
 
@@ -501,7 +578,7 @@ These shortcomings motivate the use of data-driven estimates for these processes
 One such procedure is the fake factor ($\FF$) method. \\
 
 The $\FF$ method utilises regions in the data to model the $\text{jet}\rightarrow\tauh$ background. 
-Firstly, the determination regions (DR), which are $\text{jet}\rightarrow\tauh$ enriched control regions orthogonal to the signal region (SR). 
+Firstly, the determination regions, which are $\text{jet}\rightarrow\tauh$ enriched control regions orthogonal to the signal region. 
 It is used to calculate $\FF$ by taking the ratio of number of jet fake events that pass the nominal hadronic tau ID requirement ($N(\texttt{Nominal})$), to the number of jet fake events that fail the nominal hadronic tau ID but pass a looser alternative hadronic tau ID requirement ($N(\texttt{Alternative}~\&\&~\texttt{!Nominal})$), as shown in Equation~\ref{eqn:ff}.
 
 \begin{equation}
@@ -550,8 +627,8 @@ These are chosen to balance the number of events and the purity of each backgrou
    \item $\tauhtauh$ QCD \\
      \indent $y_C$: The $\tauh$ candidates are required to have the opposite sign. \\
      \indent $y_A$: The $\tauh$ candidates are required to have the same sign. \\
-     \indent $x_C$: The subleading tau passes the \texttt{Medium} $D_{\text{jet}^{\text{WP}}}$. \\
-     \indent $x_D$: The subleading tau fails the \texttt{VVLoose} $D_{\text{jet}^{\text{WP}}}$ but passes the \texttt{VVVLoose} $D_{\text{jet}^{\text{WP}}}$.
+     \indent $x_C$: The subleading tau passes the \texttt{Medium} $D_{\text{jet}}^{\text{WP}}$. \\
+     \indent $x_D$: The subleading tau fails the \texttt{VVLoose} $D_{\text{jet}}^{\text{WP}}$ but passes the \texttt{VVVLoose} $D_{\text{jet}}^{\text{WP}}$.
   \item $\etauh$ and $\mutauh$ QCD \\
     \indent $y_C$: The $e$/$\mu$ and $\tauh$ candidates are required to have the opposite sign. \\
     \indent $y_A$: The $e$/$\mu$ and $\tauh$ candidates are required to have the same sign and the $e$/$\mu$ to have $\Irel>0.05$. \\
@@ -581,21 +658,13 @@ This observation coupled with the fact that the $\ttbar$ contribution is small c
 
 \subsection{Parametrisation}
 
-The $\FFi$ take into account dependencies on $N_{\text{jets}}$ via the analysis tailed variable $N_{\text{pre b-jets}}$, the $\pT$ of the $\tauh$ candidate ($\pT^{\tauh}$) and the $\pT$ of the jet matched in $\Delta R$ to the $\tauh$ ($\pT^{\text{jet}}$).
+The raw $\FFi$ take into account dependencies on $N_{\text{jets}}$ via the analysis tailed variable $N_{\text{pre b-jets}}$, the $\pT$ of the $\tauh$ candidate ($\pT^{\tauh}$) and the $\pT$ of the jet matched in $\Delta R$ to the $\tauh$ ($\pT^{\text{jet}}$).
 $N_{\text{pre b-jets}}$ is defined to map the dependence of $\FFi$ on $N_{\text{jets}}$ and describe the categorising variable $N_{\text{b-jets}}$ well.
+Although not local to the tau, it helps control other dependencies on the constituents of the event.
 It is the number of jets in the event with $|\eta|<2.4$ and $\pT>20$. These are the same $\eta$ and $\pT$ thresholds required for a b-jet.
-They are also calculated separately for the three channels where a jet can fake a hadronic tau, $e\tauh$, $\mu\tauh$ and $\tauh\tauh$.
-The $\FFi$ are then measured separately for the dominant $\text{jet}\rightarrow\tauh$ processes $\text{i}$, which for the $e\tauh$ and $\mu\tauh$ channels includes QCD, W+jets and $t\bar{t}r$, and for the $\tauh\tauh$ channel includes only QCD.
-The $\FFi$ are finally corrected to account for extrapolations from the DR to the SR, and for missing variable dependencies (via non-closure corrections).
-The $\FFi$ measured for the different processes are combined into an overall factor, $\FF$, using
-\begin{equation}
-\FF = \sum_{i}f_{i}\cdot \FFi,
-\end{equation}
-where the factor $f_{i}$ is defined as
-\begin{equation}
-f_{i} = \frac{N_{\text{AR}}^{i}}{\sum\limits_{j}N_{\text{AR}}^{j}},
-\end{equation}
-which is the fraction of events with a $\text{jet}\rightarrow\tauh$ originating from process $i$ over the total number of $\text{jet}\rightarrow\tauh$ events for all processes in the AR.
+The data is split into two bins of $N_{\text{pre b-jets}}$, equal to 0 and greater than 0.
+It is then further split by the ratio of $\pT^{\text{jet}}$ to $\pT^{\tauh}$.
+An example of the dependence of these two transverse momentums on the fake factor is shown in Figure~\ref{fig:ff_colz}.
 
 \begin{figure}[!hbtp]
 \centering
@@ -604,12 +673,51 @@ which is the fraction of events with a $\text{jet}\rightarrow\tauh$ originating 
 \label{fig:ff_colz}
 \end{figure}
 
+It is motivated by the observation that the fake factor is largest when the $\pT^{\text{jet}}$ and $\pT^{\tauh}$ are closest.
+The physical motivation for this is when they are close, the hadronic tau candidate is likely to be isolated from any other hadronic activity and so more likely to be identified as a tau.
+However, when $\pT^{\text{jet}}$ is larger than $\pT^{\tauh}$, the candidate is likely surrounded by other hadronic activity and so more likely to be a jet fake.
+When $\pT^{\text{jet}}$ is less than $\pT^{\tauh}$, charge pions are likely not close enough to the PV to be clustered into the jet and so the event is more likely to be classified as a jet fake. 
+This will then lead to the fake factor dependence as seen in Figure~\ref{fig:ff_colz}.\\
+
+For all divisions of the phase space, dependence on the $\pT^{\tauh}$ is fit using the superposition of a Landau and a zeroth order polynomial in the low-$\pT$ region.
+The fake factors are seen to rise sharply at high-$\pT$.
+This increase happens in either the bin 140 $<$ $\pT^{\tauh}$ $<$ 200 GeV or $\pT^{\tauh}$ $>$ 200 GeV.
+To map this effect, binned values are taken based off the algorithm shown in Figure~\ref{fig:ff_binning} and the fit is used below the minimum bin.
+
+\begin{figure}[!hbtp]
+  \centering
+  \begin{tikzpicture}[node distance = 8cm, auto]
+    % nodes
+    \node [block] (start) {Fractional Error in $\pT$ (GeV) Bin, $\frac{\Delta N}{N}$.};
+    \node [decision, aspect=2, node distance=5cm, right of = start] (d1) {[140,200)};
+    \node [decision, aspect=2, node distance=3cm, above of = d1] (d2) {[200,$\infty$)};
+    \node [decision, aspect=2, node distance=3cm, below of = d1] (d3) {[200,$\infty$)};
+    \node [block3, aspect=2, node distance=3cm, above of = d2] (n1) {Use bin values in [140,200,$\infty$)};
+    \node [block3, aspect=2, node distance=3cm, below of = d3] (n2) {Use bin values in [200,$\infty$)};
+    \node [block3, aspect=2, node distance=5cm, right of = d2] (n3) {Use bin values in [140,$\infty$)};
+    \node [block3, aspect=2, node distance=5cm, right of = d3] (n4) {Use no bins};
+    % edges
+    \draw [arrow] (start) -- (d1);
+    \draw [arrow] (d1) -- node[anchor=east] {$>0.5$} (d2);
+    \draw [arrow] (d1) -- node[anchor=east] {$<0.5$} (d3);
+    \draw [arrow] (d2) -- node[anchor=east] {$>0.5$} (n1);
+    \draw [arrow] (d2) -- node[anchor=south] {$<0.5$} (n3);
+    \draw [arrow] (d3) -- node[anchor=east] {$>0.5$} (n2);
+    \draw [arrow] (d3) -- node[anchor=south] {$<0.5$} (n4);
+  \end{tikzpicture}
+  \vspace{1cm}
+  \caption{Flow chart of the algorithm used to determine where binned values are taken instead of the fit. The blue box represents the input, the green diamonds represent the decisions and the red boxes represent the outputs.}
+  \label{fig:ff_binning}
+\end{figure}
+
+The Landau and zeroth order polynomial fits are flattened at $\pT^{\tau_h}$ values where there is no significant downwards shift or at the final bin. Fake factor fits with respect to $\pT^{\tau_h}$ are shown in Figures~\ref{fig:tt_ff_fit}-\ref{fig:mt_ff_fit}. The fake factors are highest in the lowest $\pT^{\text{jet}}/\pT^{\tau_h}$ bin and lowest in the highest bin as expected. Otherwise the fake factors fall with $\pT$ in each category until the thresholds used for the high $\pT$ binning algorithm.
+
 \begin{figure}[!hbtp]
 \centering
     \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ff_fit_jet_pt_low_0jet_pt_1_ff_qcd_tt_2018.pdf}}
     \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ff_fit_jet_pt_med_0jet_pt_1_ff_qcd_tt_2018.pdf}} 
     \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ff_fit_jet_pt_high_0jet_pt_1_ff_qcd_tt_2018.pdf}} \\
-\caption{Fake factor fits in $\tauh\tauh$ channel for the QCD $n_{pre b jets}=0$ category with 2018 data. The three jet $\pT$ to hadronic tau $\pT$ categories are shown.}
+\caption{Fake factor fits in $\tauh\tauh$ channel for the QCD $N_{\text{pre b jets}}=0$ category with 2018 data. The three jet $\pT$ to hadronic tau $\pT$ categories are shown.}
 \label{fig:tt_ff_fit}
 \end{figure}
 
@@ -621,32 +729,85 @@ which is the fraction of events with a $\text{jet}\rightarrow\tauh$ originating 
     \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ff_fit_jet_pt_low_0jet_pt_2_ff_wjets_mt_2018.pdf}}
     \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ff_fit_jet_pt_med_0jet_pt_2_ff_wjets_mt_2018.pdf}} 
     \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ff_fit_jet_pt_high_0jet_pt_2_ff_wjets_mt_2018.pdf}} \\
-\caption{Fake factor fits in $\mu\tauh$ channel for the QCD and W + Jets $n_{pre b jets}=0$ category with 2018 data. The three jet $\pT$ to hadronic tau $\pT$ categories are shown for each process.}
+\caption{Fake factor fits in $\mu\tauh$ channel for the QCD and W + Jets $N_{\text{pre b jets}}=0$ category with 2018 data. The three jet $\pT$ to hadronic tau $\pT$ categories are shown for each process.}
 \label{fig:mt_ff_fit}
 \end{figure}
 
 \subsection{Corrections}
+
+In the $\tauhtauh$ channel, the measured $\FF^{\text{QCD}}$ are then corrected to account for non-closures in other variable in the \texttt{Determination Region}. 
+The only significance non-closures are observed for $\MET$ related variables and are largest for events with $N_{\text{pre b-jets}}=0$. 
+Closure corrections are performed for the variable $\Delta R$ in bins of $N_{\text{b-jets}}$.
+In the $\mutauh$ and $\etauh$ channels, the measured $\FF^{\text{QCD}}$ and $\FF^{\text{W+jets}}$ are corrected for non-closures observed in the $\MET$ variables and $\pT^{e/\mu}$ distributions.
+A study was performed to determine the nature of these non-closures and it was found that the cause was due to fake $\MET$ arising from mismeasurement of the energies of particles in a jet. 
+A diagram of this effect is shown in Figure~\ref{fig:fakemet}. \\
+
+\begin{figure}[!hbtp]
+\centering
+   \includegraphics[width=\textwidth]{Figures/fakemet_plot.pdf}
+\caption{Diagram showing how fake $\MET$ arises from mismodelling jet constituents in hadronic tau identification.}
+\label{fig:fakemet}
+\end{figure}
+
+To correct for this effect, the QCD fake factors are corrected as a function of $C_{\text{QCD}}$, where $C_{\text{QCD}}$ is defined as,
+\begin{equation}
+C_{\text{QCD}} = \frac{\MET \cos\Delta\phi(\pTvec^{\text{\hspace{2pt}miss}},\pTvec^{\hspace{2pt}\tauh})}{\pT^{\tauh}}.
+\label{eqn:c_qcd}
+\end{equation}
+where $\Delta\phi(\pTvec^{\hspace{2pt}\text{miss}},\pTvec^{\hspace{2pt}\tauh})$ is the separation in the azimuthal angle between the the missing a $\pTvec^{\text{miss}}$ and $\pTvec^{\tauh}$.
+The numerator quantifies the missing transverse momentum in the direction of the hadronic tau candidate. 
+Once divided by the $\tauh$ $\pT$, $C_{\text{QCD}}$ is a measure of the fraction of missing to visible hadronic tau transverse momentum aligned with the hadronic tau.
+For W + jets and $\ttbar$ the situation is slightly different due to the presence of genuine missing energy from neutrinos.
+In this case, the correction variable is modified to approximately subtract the genuine $\MET$ from the total.
+This approximation assumes the neutrino is back-to-back and balanced with the light lepton (which is exactly true for W bosons produce at rest in the transverse direction). 
+The equation then becomes,
+\begin{equation}
+C_{\text{W}} = \frac{(\MET+\pT^{e/\mu}) \cos\Delta\phi(\pTvec^{\text{\hspace{2pt}miss}}+\pTvec^{\hspace{2pt}e/\mu},\pTvec^{\hspace{2pt}\tauh})}{\pT^{\tauh}}.
+\label{eqn:c_w}
+\end{equation}
+When either correction variable is separated from 0, a larger quantity of fake $E_{T}^{\text{miss}}$ is expected in the event. 
+In these regions a large correction is needed due to the mis-measured jet energy spectrum shifting the hadronic tau candidate isolation and so shifting the tau identification scores. 
+Examples of these closure corrections are shown in Figure~\ref{fig:ff_dr}\\
 
 \begin{figure}[!hbtp]
 \centering
     \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ff_closure_ss_closure_nbjet0_qcd_tt_2018.pdf}} 
     \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ff_closure_met_0jet_closure_qcd_mt_2018.pdf}}
     \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ff_closure_met_0jet_closure_wjets_mt_2018.pdf}}
-\caption{DR closures}
+\caption{Determination region closure correction fits with 2018 data. (a) is the correction parametrised by $\Delta R$ in events with $N_{\text{b jets}}=0$ in the $\tauhtauh$ channel. (b) and (c) show the correction for the $\mutauh$ channel parametrised by the specific correction variables defined in Equation~\ref{eqn:c_qcd} and \ref{eqn:c_w} for QCD and W + jets processes respectively.}
 \label{fig:ff_dr}
 \end{figure}
+
+After the \texttt{Determination Region} is modelled well for all variables of interest, extrapolation corrections from the fake factors derived in B applied to region D are calculated.
+In the $\tauhtauh$ the correction is parameterised by the $p_{T}$ of the leading hadronic tau candidate, in the $\etauh$ and $\mutauh$ channels it is parameterised by the $\pT$ of the light lepton.
+Where statistics allow, these corrections are calculated in the high mass optimisation procedure categories.
+Examples of the extrapolation corrections are shown in Figure~\ref{fig:ff_dr_to_ar}.
+
 
 \begin{figure}[!hbtp]
 \centering
     \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ff_closure_os_closure_nbjet0_alt_qcd_tt_2018.pdf}} 
     \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ff_closure_pt_1_nbjets0_dr_to_ar_aiso_closure_qcd_mt_2018.pdf}}
     \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ff_closure_pt_1_nbjets0_tightmt_dr_to_ar_closure_wjets_mc_mt_2018.pdf}}
-\caption{DR to AR closures.}
+\caption{Determination region to application region closure correction fits with 2018 data. (a) is the correction moving from same sign to opposite sign tau leptons the parameterised by leading $\tauh$ $\pT$ in events with $N_{\text{b-jets}}=0$ in the $\tauhtauh$ channel. (b) and (c) show the correction for the $\mutauh$ channel moving from same sign to opposite sign tau leptons and high $m_{T}$ to low $m_{T}$ both parameterised by the the muon $\pT$ for QCD and W + jets processes respectively.}
 \label{fig:ff_dr_to_ar}
 \end{figure}
 
 
-\subsection{Application Region Fractions}
+\subsection{Applying Fake Factors}
+\label{sec:ff_applying}
+
+In the $\etauh$ and $\mutauh$ channels the $\FFi$ measured for the different processes are combined into an overall factor, $\FF$, using
+\begin{equation}
+\FF = \sum_{i}f_{i}\cdot \FFi,
+\end{equation}
+where the factor $f_{i}$ is defined as
+\begin{equation}
+f_{i} = \frac{N_{\text{AR}}^{i}}{\sum\limits_{j}N_{\text{AR}}^{j}},
+\end{equation}
+which is the fraction of events with a $\text{jet}\rightarrow\tauh$ originating from process $i$ over the total number of $\text{jet}\rightarrow\tauh$ events for all processes in the application region.
+These fraction of events are estimated with MC, with a QCD model which is extrapolated from same sign tau pairs.
+It is observed that W + jets is the dominating process in this region, however there are effect from QCD at low $\mT$ and from $\ttbar$ in the b tagged categories. These fractions are then multiplied to the relevant corrected fake factor and applied to the fail region in C, with any events which are not jets faking hadronic taus subtracted off with MC. \\
 
 \begin{figure}[!hbtp]
 \centering
@@ -654,22 +815,287 @@ which is the fraction of events with a $\text{jet}\rightarrow\tauh$ originating 
     \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/ff_fraction_loosemt_nbjets0_mt_2018_os_rebinning.pdf}} \\
     \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/ff_fraction_tightmt_nbjets1_mt_2018_os_rebinning.pdf}}
     \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/ff_fraction_loosemt_nbjets1_mt_2018_os_rebinning.pdf}} \\
-\caption{Fake factor fractions.}
+\caption{The expected application region fractions of the processes in the $\mutauh$ channel. (a) and (b) show the no b tag Tight-$m_{T}$ and Loose-$m_{T}$ categories and (c) and (d) show the b tag Tight-$m_{T}$ and Loose-$m_{T}$ categories respectively.}
 \label{fig:mt_ff_frac}
 \end{figure}
 
+For the $\tauhtauh$ channel there are two hadronic taus that a jet can fake.
+For this analysis, the fake factors are only applied the leading hadronic tau candidate failing the tau ID in C.
+This models all events where the leading hadronic tau candidate is a jet fake.
+However, this leaves a small fraction of events, where the leading candidate is a genuine tau and the sub-leading candidate is a jet fake.
+This contribution (mostly from W + jets) is added back with MC.
 
-\subsection{Applying Fake Factors}
-\label{sec:ff_applying}
+\newpage
+\section{MC Corrections}
 
-using leading tau
-subtracting off rest
-w fakes in tt
-
+\newpage
 \section{Uncertainty Model}
 
-bulleted list of uncertainties used in the analysis.
+\subsection{Shape uncertainties}
+\label{sec:shape_uncerts}
+The following uncertainties change the shape of the discriminator and so are shifted on an event-by-event basis.
+\begin{itemize}
+\item \textbf{Tau ID efficiency}\\
+Binned uncertainties are applied as a function of $\pT$ in the $\etauh$ and $\mutauh$ channels, and of the tau decay mode in the $\tauhtauh$ channels. 
+These vary between 3-9\%.
+The uncertainty is uncorrelated between variable bins, correlated between decay channels and uncorrelated between years of data taking.
+To account for the different anti-lepton discriminator working points, an uncertainty of 3\% per tau is applied and treated as uncorrelated between the channels.
+For the embedded samples the same uncertainty scheme on the tau ID SF is taken and 50\% are correlated to MC uncertainties and 50\% uncorrelated, because of the shared real data in the measurement.
 
+\item \textbf{Tau Trigger efficiency}\\
+For hadronic taus, uncertainties in the trigger efficiencies differential in the transverse momentum of the hadronic tau leptons are used.
+The uncertainties are obtained from the fitted scale factors used to derive the corrections for the tau trigger efficiencies.
+For the tau legs of the double-tau and lepton+tau cross triggers separate nuisance parameters are implemented for the different reconstructed hadronic decay modes of the tau lepton, 1 prong decays (DM0),
+1 prong decays with additional neutral pions (DM1 and DM2), 3 prong decays (DM10) and three prong decays with additional neutral pions (DM11).
+
+For the single-tau trigger leg due to limited statistics it is not possible to determine scale factors and uncertainties split by decay mode and therefore a single uncertainty common to all decay
+modes is applied.
+
+For the double-tau trigger we further split the hadronic trigger efficiencies in the $\pT$ regions $<$ 100 GeV and $>$ 100 GeV to allow the fit more freedom to adjust the high $\pT$ regions relative to the low $\pT$ regions. The $>$ 100 GeV region represents the region where the trigger if maximally efficient and the scale factor is approximately constant, the fitted scale factors and uncertainties in this region are dominated by the high $\pT$ bins used for the scale factor measurments so it is appropiate that it is decoupled from the $\pT$ regions $<$ 100 GeV region where the scale factors and uncertainties are dominated by the low $\pT$ bins. 
+
+The uncertainties are applied to all processes determined from simulated samples or the embedded samples.
+They are treated as 50 $\%$ correlated between the embedded and the simulated samples and uncorrelated across the channels.
+The uncertainties are treated as uncorrelated across the years, since different reconstruction algorithms and isolation criteria have been implemented at the HLT level, and the uncertainties are mainly statistical in nature.
+
+\item {\bf Lepton trigger efficiency} \\
+The uncertainty on the trigger efficiencies amounts to 2\% per lepton in the $\etauh$, $\mutauh$ and $\emu$ channels.
+They are basically normalization uncertainties but implemented as shape uncertainties as they only touch the events triggered by the corresponding cross trigger or single lepton triggers.
+These uncertainties are uncorrelated between channels as different triggers are used for each channel. The uncertainty is applied to all processes where the yield is estimated from MC and to the embedded samples. The embedded and MC uncertainties are uncorrelated.
+Due to the different trigger selections, the uncertainties on the lepton triggers are treated as uncorrelated between the eras.
+
+\item \textbf{Tau energy scale}\\
+Shape uncertainties are applied that depend on the decay mode of the hadronic taus. The uncertainties range between 0.2 and 1.1 \%. 
+In the embedded samples we have hybrid events where the simulated taus might be mixed with calorimeter deposits remaining from the muon cleaning.
+For this reason, the tau energy scale for embedded samples is treated as 50\% correlated with MC.
+This is done with separate nuisance parameters per decay mode.
+The uncertainties on the tau energy scale are treated as uncorrelated between 2016, 2017, 2018 data according to the current TauPOG recommendation.
+
+\item \textbf{Electron energy scale}\\
+One uncertainty on the electron energy scale and resolution respectively is applied to MC using object specific information provided by the EGamma POG.
+For embedded samples this information is not reliable due to the energy regression run on low level MC quantities which have different conditions in embedded samples. Therefore, an energy scale uncertainty of 0.5 \% for electrons in the barrel region and 1.25 \% for electrons in the endcaps is applied following the previous EGamma recommendations.
+It is treated as uncorrelated to the uncertainties on MC because they are based on different estimation methods and due to the different conditions in the electron modeling.
+These uncertainties are treated as fully correlated between the eras according to the EGamma recommendation~\cite{EGammaRunII}.
+
+\item \textbf{Jet energy scale}\\
+In general, the JetMET POG derives uncertainties on the jet energy scale from 27 (28) sources in 2016 (2017, 2018) and combines them in a single uncertainty with one nuisance parameter.
+
+For this analysis, the sources are grouped according to a reduced scheme drafted by the JetMET group and which is motivated by the affected detector regions and also depending on the correlation between the data taking eras.
+This results in 11 nuisances for a single era, called Absolute, Absolute\_year, HF, HF\_year, BBEC1, BBEC\_year, EC2, EC\_year, RelativeBal, RelativeSample\_year, FlavorQCD.
+All nuisances with the suffix '\_year' are treated as uncorrelated between the years, the remaining ones as correlated.
+For all samples without recoil corrections applied, namely $\ttbar$, di-Boson and single top, the JES shifts are also propagated to the MET (i.e. PuppiMET) and further to
+MET-dependent variables like $m_\mathrm{SV}$, the fitted invariant mass of the di-tau system.
+
+\item \textbf{Jet energy resolution}\\
+An uncertainty on the jet energy resolution retrieved from the provided module~\cite{JetResolution} is applied to MC samples and as for JEC propagated to the MET for all samples without recoil corrections applied.
+According to the JetMET recommendation, this uncertainty is treated as uncorrelated between years.
+
+\item {\bf $l$ to $\tau_\mathrm{h}$ fake energy scale} \\
+Uncertainty shifts are applied to the $p_\mathrm{T}$ of lepton to $\tau_\mathrm{h}$ fakes in MC samples uncorrelated between decay modes.
+The magnitude is 1.0\% for muons in all eras.
+For electrons, more specific values for the uncertainties that depend on the era and detector region are provided by the Tau POG which range between 0.5 and 6.6 \%.
+These uncertainties are uncorrelated between years.
+
+\item {\bf MET unclustered energy uncertainty} \\
+The MET unclustered energy uncertainty is applied to all MC processes that do not have recoil correction applied, namely the $\ttbar$ and VV processes, as recommended by the JetMET POG.
+It is uncorrelated between the eras.
+
+\item {\bf MET recoil correction uncertainties}. \\
+For all MC processes that have recoil correction the hadronic response and its resolution
+are varied within the uncertainties determined during the computation of the recoil corrections.
+The recoil correction uncertainties are uncorrelated between the eras.
+
+\item {\bf MET uncertainties in embedded events} \\
+The uncertainties on the MET correction for embedded events are estimated by varying the clustered and unclustered energy uncertainties in the MC events used to derive the corrections. Statistical uncertainties on the measured correction factors are also taken into account.
+
+\item {\bf Top $p_{T}$ re-weighting} \\
+Uncertainty between no and twice the correction on the re-weighting applied to $\ttbar$ events in all channels. Fully correlated between all eras.
+
+\item {\bf DY $m_{\ell\ell}, p_{T}$ re-weighting} \\
+To derive the uncertainty, a variation is introduced by not applying the correction weights and applying them twice. The one standard deviation uncertainty corresponds then to 10\% of this variation and is applied to $Z\rightarrow ll$ events in all channels. 2017 and 2018 are treated as correlated due to the same MC tune. 2016 is uncorrelated.
+
+
+\item {\bf $t\bar{t}$ contamination in embedding} \\
+Embedded samples replace part of the $t\bar{t}$ background where two genuine taus are involved.
+An uncertainty on this $t\bar{t}$ contamination in the embedded samples is applied.
+This shape uncertainty is created by adding/subtracting 10\% of the genuine tau-pair fraction of the $t\bar{t}$ MC sample to/from the embedded sample.
+This uncertainty is treated as correlated between the channels but uncorrelated between the eras
+due to the different double muon trigger menus for the selected data events.
+
+\item {\bf $\tau_\mathrm{h}$ tracking efficiency in embedding} \\
+An uncertainty on the tracking efficiency of hadronic taus in the embedded samples is propagated fully correlated between the decay channels but uncorrelated between 1 and 3 prong decay modes.
+According to the TauPOG recommendation, it is treated as 50 \% correlated between the eras.
+
+\item {\bf Fake-factor uncertainties} \\
+
+The backgrounds with jets misidentified as $\tauh$ are estimated from data with the fake factor method. There are
+different sources of uncertainty related to this method.
+
+In the $\tauhtauh$ channel the following uncertainties are applied:
+\begin{itemize}
+\item Statistical uncertainties on the measured fake factors - these uncertainties are taken from the uncertainty bands on the fitted functions, split into two independent uncertainties using the procedure outlined in~\cite{CPDecayAnalysis}. 
+Due to the statistical nature of these uncertainties there are separate uncertainties for each $N_{\text{jets}}$/jet $\pT$ bin and the uncertainties are treated as uncorrelated across years.
+\item Statistical uncertainties on the measured closure corrections - these uncertainties are taken from the uncertainty bands on the fitted functions, split into two independent uncertainties using the procedure outlined in~\cite{CPDecayAnalysis}. 
+Due to the statistical nature of these uncertainties there are separate uncertainties for each $N_{\text{jets}}$ bin and the uncertainties are treated as uncorrelated across years.
+\item A systematic uncertainty due to the OS/SS extrapolation corrections
+- this uncertainty is defined by applying the correction twice for the upwards variation and not applying the correction for the downwards variations. 
+\item Systematic uncertainties to account for differences between the fake factors measured for QCD events and non-QCD fake factors, since QCD fake factors are applied also for W+jets and $\ttbar$ events in this channel. The uncertainties are 20 \% for the W+jets contribution and 40 \% for $\ttbar$. 
+\item Systematic uncertainties on all non-closure corrections equal to the size of the corrections are
+applied (applying the closure correction twice for up, or not applying for down).
+\item With the closure tests there is some evidence of non-closures in the sub-leading $\tauh$ $\pT$ and $\MET$ distributions, however additional closure correction are not applied since these don't seem to improve the description of the $m_{T}^{\text{tot}}$ distributions. Therefore, the size of the non-closure in these variables is taken only as an uncertainty.
+\item A systematic uncertainty due to the choice of fit function to describe the fake factors. This is estimated by comparing to fake factors fitted with a first order polynomial set constant above 100 GeV.
+\end{itemize}
+
+In the $\mutauh$ and $\etauh$ channels the following uncertainties are applied:
+\begin{itemize}
+\item Statistical uncertainties on the measured W+jet, QCD, and $\ttbar$ fake factors - these uncertainties are taken from the uncertainty bands on the fitted functions, split into two independent uncertainties using the procedure outlined in~\cite{CPDecayAnalysis}.
+Due to the statistical nature of these uncertainties there are separate uncertainties for each $N_{\text{jets}}$/jet $\pT$ bin and the uncertainties are treated as uncorrelated across years.
+\item Statistical uncertainties on the measured closure corrections - these uncertainties are taken from the uncertainty bands on the fitted functions, split into two independent uncertainties using the procedure outlined in~\cite{CPDecayAnalysis}. 
+Due to the statistical nature of these uncertainties there are separate uncertainties for each $N_{\text{jets}}$ bin and the uncertainties are treated as uncorrelated across years.
+\item For the QCD fake factors a systematic uncertainty due to the OS/SS extrapolation corrections - this uncertainty is defined by applying the corrections twice for the upwards variation and not applying the correction for the downwards variations.
+%This uncertainty is treated as fully correlated across years.
+\item For the QCD fake factors a systematic uncertainty due to the anti-iso $\rightarrow$ iso extrapolation corrections. This uncertainty is defined by comparing the extrapolation from anti-iso $\rightarrow$ iso using two methods. The first method (which is used for the nominal correction) bins the correction as a function of $\Irel$ for the region with $\Irel>0.05$ which is dominated by QCD events, and then uses a linear extrapolation to determine the size of the correction in the $\Irel<0.05$ regions.
+The second method bins the correction as a function of $\Irel$ using the full $\Irel$ range, in this case there is a significant contribution from non-QCD events in the $\Irel<0.05$ region (mainly due to W+jets) which is accounted for by subtracting the non-QCD component using MC.
+\item For the W+jets fake factors a systematic uncertainty due to the high-$\mT$ $\rightarrow$ low-$\mT$ extrapolation correction - this uncertainty is defined by applying the corrections twice for the upwards variation and not applying the correction for the downwards variations. 
+\item For the $\ttbar$ fake factors a systematic uncertainty to account for possible differences between the fake factors in MC and data (as the $\ttbar$ fake factors are measured from MC) - this uncertainty is determined by comparing the fake factors derived for W+jets in data and MC. For the \texttt{b-tag} categories in the lowmass BSM analysis, an additional correction factor is derived as a function of $m_{\tau\tau}$ to account for non-closures when applying the measured fake factors to simulated $\ttbar$ events. We apply an additional shape uncertainty in this case which is defined by applying the corrections twice for the upwards variation and not applying the correction for the downwards variations.
+%This uncertainty is treated as fully correlated across years.
+\item Systematic uncertainties on all non-closure corrections equal to the size of the corrections are applied (applying the closure correction twice for up, or not applying for down).
+\item For the W+jets and QCD fake factors an uncertainty due to the subtraction of events from other processes when deriving the fake factors.
+\item A systematic uncertainty due to the choice of fit function to describe the fake factors. This is estimated by comparing to fake factors fitted with a first order polynomial set constant above 100 GeV.  
+\end{itemize}
+
+\item {\bf Bin-by-bin uncertainties} \\
+Statistical shape uncertainties in the backgrounds due to the use of Monte-Carlo and embedded samples or templates derived from data events with limited number of events are taken into account via the autoMCstats functionality of Combine.
+
+\item \textbf{Theory uncertainties}\\
+
+For the gg$\phi$ process, in particular for low mass hypotheses, the variation of \texttt{hdamp} parameter of the \POWHEG MC generator as well as the $\mu_{R}$/$\mu_{F}$ scale variations are used to determine the uncertainties
+on the $\pT$ spectrum of each contribution at NLO QCD to the Higgs boson production via gluon fusion (top, bottom, top-bottom interference). These are also determine from additional samples produced
+up to the generator level, and applied as event weights dependent on generator level $\pT$ after the parton shower simulation. These uncertainties are included as shape uncertainties as they may affect the shapes of the $m_{T}^{\text{tot}}$ distribution as well as the predicted signal yields.
+
+
+\item \textbf{Embedding Z $\pT$ and mass shape uncertainties}
+
+For the embedded samples we observe some non-closures in the shapes of the $\pT$ and mass distributions for a control samples of $Z\to\mu\mu$ events, where muons in data are replaces by simulated muons. We therefore take these non-closures as an additional shape uncertainty as a function of the Z $\pT$ and mass for our $Z\to\tau\tau$ signal regions.
+
+\end{itemize}
+
+\subsection{Normalization uncertainties}
+The following uncertainties are applied as log normal uncertainties on the yield of the affected processes.
+
+\begin{itemize}
+\item \textbf{Luminosity}\\
+($1.2\,\%$, $2.3\,\%$, $2.5\,\%$) luminosity uncertainty is applied to the (2016, 2017, 2018)~\cite{CMS-PAS-LUM-17-003}\cite{CMS-PAS-LUM-17-004}\cite{CMS-PAS-LUM-18-002} templates which originate from MC simulation.
+This uncertainty is partly correlated between eras according to the current recommendation by lumi experts. The different uncertainty sources and their magnitudes for each year are shown in Table~\ref{tab:lumi_unc}.
+\begin{table}[!h]
+\begin{center}
+\caption{
+    Luminosity uncertainties split by uncertainty source and data-taking period. Values taken from~\cite{LumiTwiki}.
+}
+\label{tab:lumi_unc}
+{\footnotesize
+\begin{tabular}{cccc}
+\hline
+uncertainty source & 2016 & 2017 & 2018 \\
+\hline
+Uncorrelated & 1.0 \, \% & 2.0 \, \% & 1.5 \, \% \\
+Correlated & 0.6 \, \% & 0.9 \, \% & 2.0 \, \% \\
+Correlated (2017, 2018) & 0.0 \, \% & 0.6 \, \% & 0.2 \, \% \\
+\hline
+\end{tabular}
+} % end footnotesize
+\end{center}
+\end{table}
+
+\item {\bf Electron, muon ID efficiency} \\
+The estimated uncertainties on electron and muon scale-factors is 2\%.
+This uncertainty is applied to all processes where the yield is estimated from MC.
+The same 2\% uncertainty is also applied to the embedded events.
+50\% are correlated with the MC uncertainty and 50\% uncorrelated because the measured data efficiencies entering the scale factors are same but efficiency measurements are separate for MC and embedded samples.
+These uncertainties are treated as fully correlated between the years.
+
+\item \textbf{Lepton to tau fake rate}\\
+Uncertainties provided by the TauPOG that depend on the lepton $\eta$ are applied. These are treated as being independent for each of the indicated detector sections. The effect on the shapes
+is negligible and therefore these uncertainties are convered to lnN.
+The uncertainties are statistically dominated and therefore treated as uncrorrelated between eras.
+
+\item {\bf B-tagging efficiency} \\
+The b-tagging scale-factors by the BTV POG are provided with uncertainties depending on the detector region. These are applied per jet to MC simulation using the promotion/demotion method.
+There are dedicated scale factors for the b-tag efficiency and the fake rate which results in two corresponding nuisances. Shape effects are neglected by transforming the uncertainties into a pure
+normalization uncertainties, and these uncertainties are treated as uncorrelated between the years.
+
+\item {\bf Prefiring} \\
+Upper and lower bounds are taken from the efficiency maps provided by the L1 DPG and propagated on all MC samples as shape uncertainty for 2016 and 2017.
+The size of the uncertainty as the weight itself depends on the event topology. In general the uncertainty is at the order of 1\%.
+It is correlated between eras and channels.
+
+\item {\bf Background normalization uncertainty} \\
+\begin{itemize}
+\item
+A 2\% uncertainty is applied to the $Z\rightarrow ll$ process to account for the uncertainty on the Drell-Yan cross section fully correlated between the years.
+\item
+A 5\% uncertainty is applied to the di-boson and single-top processes to account for the uncertainties on the production cross section fully correlated between the years.
+\item
+A 4\% uncertainty is applied to the W$+$jets process to account for the uncertainty on the production cross section fully correlated between the years.
+\item
+A systematic uncertainty on the non-closure correction $r_\text{b-tag}$ in b-tagged categories of
+the $\emu$ final state for the QCD estimate is taken into account as described
+in section~\ref{sec:background_estimation}, uncorrelated across data-taking years.
+%A 2\% uncertainty is applied to the EWKZ process to account for the uncertainty on the production cross section fully correlated between the years. \\
+\item
+%A 6\% uncertainty is applied to the $\ttbar$ process to account for the uncertainties on the production cross sections fully correlated between the years~\cite{ttXsecTWiki}.
+Uncertainty on the MC acceptance extrapolation from the $\ttbar$ control region to the $\ttbar$ in the signal regions is determined. A 1\% uncertainty
+is applied in the control region to account for variations in the variables used to select
+this control region. Extrapolation uncertainties due to different choices of factorisation and renormalisation scale
+are smaller than 1\%, depending on the category.
+
+\item 
+For the embedded samples an additional 4\% uncertainty (2\% per muon = 4\%) fully correlated between the channels is applied to take account of efficiency of the double muon trigger that was used to select input events for the embedding technique.
+The uncertainties are decorrelated between the years due to changes in the trigger setup used for selection of di-muon events between years.
+
+\item In cases where the SM Higgs boson is included as a background the following theoretical uncertainties on the cross sections and branching ratios are included:
+
+The uncertainties on the ggH production cross-section recommended in YR4 are applied. The uncertainties on the cross-section include a 3.9\% uncertainty due to variations of the QCD scales and a 3.2\% uncertainty from PDF+$\alpha_s$ variations.
+
+The uncertainties on the VBF Higgs production cross-section recommended in YR4 are applied which include a 0.4\% uncertainty from variations of QCD scales and a 2.1\% uncertainty from PDF+$\alpha_s$ variations. The uncertainties are fully correlated between years.
+
+The uncertainties on the W(Z)H associated production cross-sections recommended in YR4 are applied which include a 1.9\%(1.6\%) uncertainty from the QCD scale variations and a 1.9\%(1.6\%) uncertainty from PDF+$\alpha_s$ variations. The uncertainties are fully correlated between years.
+
+The recommended uncertainties on the $H\rightarrow\tau\tau$ branching fraction provided in YR4 are applied to all Higgs signal samples (ggH, VBF, and VH). These uncertainties include a 1.7\% uncertainty due to missing higher order corrections, a 0.99\% parametric uncertainty on the quark masses, and a 0.62\% parametric uncertainty on $\alpha_s$.
+
+The $H\rightarrow WW$ contributions are also considered as background, and the corresponding branching ratio uncertainties provided are also taken into account.
+
+\end{itemize}
+
+\item \textbf{Theory uncertainties}\\
+
+For the model-dependent $m_A$ - $\tan\beta$ limits theoretical uncertainties on the MSSM Higgs cross sections are included. This includes the pdf+$\alpha_s$ and scale uncertainties that depend on the benchmark scenario considered, $m_A$, and $\tan\beta$, and are included in the model files~\cite{LHCHXSWGrootfiles}. \\
+
+For the bb$\phi$ signal process, theoretical uncertainties on the signal acceptance in terms of number of b-jets due to the parton shower matching are estimated by varying the \texttt{hdamp} parameter of the \POWHEG MC generator used to create the signal samples by factors of 2 and $\frac{1}{2}$. 
+The additional samples are produced up to the generator level with parton showers with \PYTHIA,
+such that generator level information on final state physics objects becomes available. The uncertainties are determined for $0$ b-jet and $\geq 1$ ($= 1$) b-jet categories,
+for a few exemplary signal mass points, and interpolated to the full range of used signal masses. For the signal acceptance, the yields of varied samples are normalized to the same
+cross-section.
+The QCD scale uncertainty is used to probe the effect of higher-order terms not considered in the NLO calculations. This uncertainty is estimated by varying the renormalization ($\mu_{R}$) and re-factorization ($\mu_{F}$) scales by factors of 2 and $\frac{1}{2}$ independently under the constrain $\frac{1}{2}\le\frac{\mu_{R}}{\mu_{F}}\le 2$. 
+Since varying these scales will probe both the uncertainty on the cross-section as well as the signal acceptance the uncertainty on the cross-section must be factored out. 
+This is done by normalizing each varied QCD scale to the fully-inclusive number of events for the default scale choice. The scale uncertainty is then taken as half the maximum difference in the signal acceptance. 
+The uncertainties due to the QCD scale and \texttt{hdamp} variations are added linearly as recomended by the \POWHEG authors. The resulting uncertainties on the \texttt{b-tag} category signal acceptance range between 1--6 \% depending on the mass point. 
+PDF uncertainties are also included. These uncertainties range between 1--2\% for the \texttt{b-tag} category.
+
+\end{itemize}
+
+\subsection{Uncertainties specific to $e\mu$ channel}
+
+Baskground estimates in the $e\mu$ channel are affected by uncertainties in the $\mathrm{jet}\rightarrow \mathrm{e}(\mu)$ and $\mu \rightarrow \mathrm{e}$ misidentification probabilities as discussed in Section~\ref{sec:background_estimation}. The uncertainty in the $\mu \rightarrow \mathrm{e}$ misidentification probability affects estimation of the $\mathrm{Z}$+jets background with Z boson decaying into a pair of muons and has vanshing impact on estimation of other backgrounds. Uncertainties in the $\mathrm{jet}\rightarrow \mathrm{e}$ and $\mathrm{jet}\rightarrow \mu$ misidentification probabilities affect mainly estimates of the $\mathrm{W/Z}$+jets backgrounds with leptonically decaying W and Z bosons, and to a lesser extent estimates of the $\mathrm{t\bar{t}}$, single-top and di-boson backgrounds. Typically, shape altering effect of these uncertainties is small and they are treated as log-normal uncertainties. Non-negligible shape altering effect is observed only for the $\mathrm{jet}\rightarrow \mathrm{e}$ and $\mu \rightarrow \mathrm{e}$ misidentification probabilities in the background templates corresponding to the $\mathrm{Z}$+jets production followed by $\mathrm{Z}\rightarrow \mathrm{ee}(\mu\mu)$ decays. In these cases shape altering effects are taken into account. 
+
+For the QCD extrapolation method which is used to estimate the QCD multijet background in the $\emu$ final state ten uncertainties are applied.
+This includes uncertainties on the extrapolation factor arising from the three parameters in the fit to the $\Delta R (e\mu)$ dependence, binned in three jet bins.
+These uncertainties are uncorrelated between the eras.
+The tenth uncertainty describes uncertainties in the extrapolation of the correction factors from the anti-isolated to the isolated region and is treated as correlated between the years. These uncertainties have vanishing shape altering effect on the QCD background estimate and treated as log-normal ones.
+
+The QCD background estimate is affected also by uncertainties in the $\mathrm{jet}\rightarrow \mathrm{e}(\mu)$ misidentification probabilities and electron charge flip rate, as these uncertainties have an impact on the non-QCD background estimated from simulation and subtracted from data in the SS side band region to model QCD background shape as described in Section ~\ref{sec:background_estimation}. For all these uncertainties shape altering effect on the QCD background estimate is negligible and uncertainties are treated as log-normal ones.
+Uncertainties in the $\mathrm{jet}\rightarrow \mathrm{e}$ and $\mathrm{jet}\rightarrow \mu$ misidentification probabilities are fully correlated between signal categories of the $e\mu$ channel and the SS sideband region, where shape of the QCD background is derived.
+
+\newpage
 \section{Postfit Plots}
 
 \begin{figure}[!hbtp]
@@ -680,7 +1106,7 @@ bulleted list of uncertainties used in the analysis.
     \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/postfit_lowmass_lt_nobtag_highpT.pdf}} \\
     \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/postfit_lowmass_em_nobtag_mediumpT.pdf}}
     \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/postfit_lowmass_em_nobtag_highpT.pdf}}
-\caption{Low mass postfit.}
+\caption{Distributions of $m_{\tau\tau}$ in the no b tag second highest (left) and highest (right) $\pT$ category for the $\tauhtauh$ (top), the combined $\etauh$ and $\mutauh$ (middle) and the $\emu$ (bottom) channels. The solid histograms show the stacked background predictions after a signal plus background fit to the data. The best fit gluon fusion signal for $m_{\phi}$ = 100 GeV is shown by the red line. Also shown by a blue dashed line on the bottom pad is the ratio of the background predictions for the background only fit to the signal plus background fit }
 \label{fig:low_mass_postfit}
 \end{figure}
 
@@ -692,12 +1118,11 @@ bulleted list of uncertainties used in the analysis.
     \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/postfit_highmass_lt_btag_tightmT.pdf}} \\
     \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/postfit_highmass_em_nobtag_mediumdzeta.pdf}}
     \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/postfit_highmass_em_btag_mediumdzeta.pdf}}
-\caption{High mass postfit.}
+\caption{Distributions of $m_{T}^\text{tot}$ in the $\tauhtauh$ no b tag (a) and b tag (b) categories, the combined $\etauh$ and $\mutauh$ no b tag (c) and b tag (d) Tight-$m_{T}$ categories and the $\emu$ no b tag (e) and b tag (f) Medium-$D_{\zeta}$ categories. The solid histograms show the stacked background predictions after a background only fit to the data. The best fit gluon fusion signal for $m_{\phi}$ = 1.2 TeV is shown by the red line, b associated production and $U_{1}$ signals are also shown for illustrative purposes.}
 \label{fig:high_mass_postfit}
 \end{figure}
 
-\section{MC Corrections}
-
+\newpage
 \section{Model Independent Results}
 
 \subsection{Limit Setting}
@@ -772,9 +1197,13 @@ bulleted list of uncertainties used in the analysis.
 \label{fig:2d_likelihood_scans}
 \end{figure}
 
+\newpage
 \section{Model Dependent Limits}
 
-\subsection{Limit Setting}
+For the hypothesis test the likelihood is
+%\begin{equation}
+%
+%\end{equation}
 
 \begin{figure}[!hbtp]
 \centering
