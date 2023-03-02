@@ -385,8 +385,8 @@ Therefore only events with $D_\zeta >$ -35 GeV are considered for signal events.
 No b tagged events with this cut are vetoed and b tagged events with this cut are used for a $\ttbar$ control region and discussed further in Section~\ref{sec:background_modelling}.
 
 \newpage
-\section{Signal Extraction}
-\label{sec:sig_ext}
+\section{Search Optimisation}
+\label{sec:search_optimisation}
 
 The optimisation of the signal extraction depends on which of the three scenarios, set out at beginning of this section, is searched for.
 The components of the optimisation are named the high mass, low mass and SM Higgs optimisation procedures.
@@ -830,294 +830,161 @@ This contribution (mostly from W + jets) is added back with MC.
 
 \newpage
 \section{Uncertainty Model}
+\label{sec:uncerts}
 
-\subsection{Shape uncertainties}
-\label{sec:shape_uncerts}
-The following uncertainties change the shape of the discriminator and so are shifted on an event-by-event basis.
-\begin{itemize}
-\item \textbf{Tau ID efficiency}\\
-Binned uncertainties are applied as a function of $\pT$ in the $\etauh$ and $\mutauh$ channels, and of the tau decay mode in the $\tauhtauh$ channels. 
-These vary between 3-9\%.
-The uncertainty is uncorrelated between variable bins, correlated between decay channels and uncorrelated between years of data taking.
-To account for the different anti-lepton discriminator working points, an uncertainty of 3\% per tau is applied and treated as uncorrelated between the channels.
-For the embedded samples the same uncertainty scheme on the tau ID SF is taken and 50\% are correlated to MC uncertainties and 50\% uncorrelated, because of the shared real data in the measurement.
+The statistical uncertainties are taken into account by the Barlow-Beeston method, described in Ref.~\cite{}.
+The systematic model is split into uncertainties based on the online and offline reconstruction of objects and the background and signal modelling.
+An uncertainty is correlated across channels when it represents a shift on the reconstruction of an object and decorrelated otherwise.
+It is decorrelated across era of data taking when the shift is derived independently by era.
+The embedded samples use the same uncertainty scheme as MC but 50\% are correlated and 50\% uncorrelated with MC uncertainties, because of the shared real data in the measurement.
 
-\item \textbf{Tau Trigger efficiency}\\
-For hadronic taus, uncertainties in the trigger efficiencies differential in the transverse momentum of the hadronic tau leptons are used.
-The uncertainties are obtained from the fitted scale factors used to derive the corrections for the tau trigger efficiencies.
-For the tau legs of the double-tau and lepton+tau cross triggers separate nuisance parameters are implemented for the different reconstructed hadronic decay modes of the tau lepton, 1 prong decays (DM0),
-1 prong decays with additional neutral pions (DM1 and DM2), 3 prong decays (DM10) and three prong decays with additional neutral pions (DM11).
+\subsubsection{Hadronic Taus}
+Uncertainties on the tau triggers are obtained from the fitted scale factors used to derive the corrections for the tau trigger efficiencies.
+The tau legs of the DoubleTau and lepton+tau cross triggers in different decay mode bins are treated as uncorrelated.
+For the SingleTau trigger leg, due to limited statistics it is not possible to determine scale factors and uncertainties split by decay mode and therefore a single uncertainty common to all decay modes is applied.
+The DoubleTau trigger uncertainties are further split the hadronic trigger efficiencies in the $\pT$ regions $<$ 100 GeV and $>$ 100 GeV to allow the fit more freedom to adjust the high $\pT$ regions relative to the low $\pT$ regions.
+Uncertainties are also applied on the energy scale of the hadronic taus. 
+These uncertainties range between 0.2 and 1.1 \%. 
+Finally, an uncertainty on the ID efficiency is placed as a function of $\pT$ in the $\etauh$ and $\mutauh$ channels, and of the tau decay mode in the $\tauhtauh$ channels. 
+These vary between 3-9\% and is uncorrelated in each variable bin it is derived in.
+To account for the different anti-lepton discriminator working points, an uncertainty of 3\% per tau is applied and treated as uncorrelated between the channels where different $D_{\text{WP}}^{e/\mu}$ are used.
 
-For the single-tau trigger leg due to limited statistics it is not possible to determine scale factors and uncertainties split by decay mode and therefore a single uncertainty common to all decay
-modes is applied.
-
-For the double-tau trigger we further split the hadronic trigger efficiencies in the $\pT$ regions $<$ 100 GeV and $>$ 100 GeV to allow the fit more freedom to adjust the high $\pT$ regions relative to the low $\pT$ regions. The $>$ 100 GeV region represents the region where the trigger if maximally efficient and the scale factor is approximately constant, the fitted scale factors and uncertainties in this region are dominated by the high $\pT$ bins used for the scale factor measurments so it is appropiate that it is decoupled from the $\pT$ regions $<$ 100 GeV region where the scale factors and uncertainties are dominated by the low $\pT$ bins. 
-
-The uncertainties are applied to all processes determined from simulated samples or the embedded samples.
-They are treated as 50 $\%$ correlated between the embedded and the simulated samples and uncorrelated across the channels.
-The uncertainties are treated as uncorrelated across the years, since different reconstruction algorithms and isolation criteria have been implemented at the HLT level, and the uncertainties are mainly statistical in nature.
-
-\item {\bf Lepton trigger efficiency} \\
+\subsubsection{Light leptons}
 The uncertainty on the trigger efficiencies amounts to 2\% per lepton in the $\etauh$, $\mutauh$ and $\emu$ channels.
-They are basically normalization uncertainties but implemented as shape uncertainties as they only touch the events triggered by the corresponding cross trigger or single lepton triggers.
-These uncertainties are uncorrelated between channels as different triggers are used for each channel. The uncertainty is applied to all processes where the yield is estimated from MC and to the embedded samples. The embedded and MC uncertainties are uncorrelated.
-Due to the different trigger selections, the uncertainties on the lepton triggers are treated as uncorrelated between the eras.
+They are basically normalisation uncertainties but implemented as shape uncertainties as they only touch the events triggered by the corresponding cross trigger or single lepton triggers.
+Uncertainties are also placed on the electron energy scale based off the calibration of ECAL crystals.
+This information is not reliable for embedding samples and so uncertainties of 0.5-1.25\% are placed here. 
+The energy scale variations are negligible and so not included.
+Another 2\% uncertainty is placed on the ID of any electron or muon in the event.
 
-\item \textbf{Tau energy scale}\\
-Shape uncertainties are applied that depend on the decay mode of the hadronic taus. The uncertainties range between 0.2 and 1.1 \%. 
-In the embedded samples we have hybrid events where the simulated taus might be mixed with calorimeter deposits remaining from the muon cleaning.
-For this reason, the tau energy scale for embedded samples is treated as 50\% correlated with MC.
-This is done with separate nuisance parameters per decay mode.
-The uncertainties on the tau energy scale are treated as uncorrelated between 2016, 2017, 2018 data according to the current TauPOG recommendation.
+\subsubsection{Jets}
+Jet energy scale and resolution uncertainties arise from a number of sources. 
+These include limited statistical measurements used for calibration, energy measurement changes due to detector ageing, and bias corrections to address differences between simulation and data. 
+Uncertainty ranges are from sub-percent to \order(10\%).
+Uncertainties are also placed on the tagging of b jets, which vary from 0--3\%.
 
-\item \textbf{Electron energy scale}\\
-One uncertainty on the electron energy scale and resolution respectively is applied to MC using object specific information provided by the EGamma POG.
-For embedded samples this information is not reliable due to the energy regression run on low level MC quantities which have different conditions in embedded samples. Therefore, an energy scale uncertainty of 0.5 \% for electrons in the barrel region and 1.25 \% for electrons in the endcaps is applied following the previous EGamma recommendations.
-It is treated as uncorrelated to the uncertainties on MC because they are based on different estimation methods and due to the different conditions in the electron modeling.
-These uncertainties are treated as fully correlated between the eras according to the EGamma recommendation~\cite{EGammaRunII}.
+\subsubsection{Leptons misidentified as hadronic taus}
+Uncertainty shifts are applied for the energy scale of leptons faking hadronic taus parametrised by the $\pT$ of the $l \rightarrow\tauh$ fake.
+The magnitude is 1.0\% for muons in all eras and for electrons the uncertainties vary between 0.5 and 6.6 \%.
 
-\item \textbf{Jet energy scale}\\
-In general, the JetMET POG derives uncertainties on the jet energy scale from 27 (28) sources in 2016 (2017, 2018) and combines them in a single uncertainty with one nuisance parameter.
+\subsubsection{Jets misidentified as hadronic taus}
+The backgrounds with jets misidentified as $\tauh$ are estimated from data with the fake factor method. 
+There are different sources of uncertainty related to this method.
+The first uncertainties come from subtracting off other background processes with MC to form the determination region. 
+The subtraction is shifted up and down by 10\% to determine new weights.
+Next, statistical uncertainties on all of the fake factor method fits are accounted for, where the binned values are uncorrelated with the rest of the fit.
+An uncertainty is also placed on the choice of fit function, the shifts are estimated by comparing the fits to a 1st order polynomial fit set to constant above 100 GeV.
+The final systematic variation are then on the extrapolation corrections by applying the corrections twice and not at all.
+The size of each systematic uncertainty varies from 0--10\%, whilst the statistical element from the fits can be larger in the tails of the distributions.
 
-For this analysis, the sources are grouped according to a reduced scheme drafted by the JetMET group and which is motivated by the affected detector regions and also depending on the correlation between the data taking eras.
-This results in 11 nuisances for a single era, called Absolute, Absolute\_year, HF, HF\_year, BBEC1, BBEC\_year, EC2, EC\_year, RelativeBal, RelativeSample\_year, FlavorQCD.
-All nuisances with the suffix '\_year' are treated as uncorrelated between the years, the remaining ones as correlated.
-For all samples without recoil corrections applied, namely $\ttbar$, di-Boson and single top, the JES shifts are also propagated to the MET (i.e. PuppiMET) and further to
-MET-dependent variables like $m_\mathrm{SV}$, the fitted invariant mass of the di-tau system.
+\subsubsection{MET}
+The MET uncertainties is different dependent on process.
+For all processes that are not $\ttbar$ and diboson, the hadronic recoil response and its resolution are varied within the uncertainties determined during the computation of the recoil corrections.
+For $\ttbar$ and diboson an uncertainty is derived on the energy carried by an unclustered particle \cite{}.
+These uncertainties vary between 0--10\%.
 
-\item \textbf{Jet energy resolution}\\
-An uncertainty on the jet energy resolution retrieved from the provided module~\cite{JetResolution} is applied to MC samples and as for JEC propagated to the MET for all samples without recoil corrections applied.
-According to the JetMET recommendation, this uncertainty is treated as uncorrelated between years.
+\subsubsection{Background process specific uncertainties}
+Uncertainties on the $\ttbar$ $\pT$ and DY $m_{ll}$-$\pT$ reweighting is placed by the applying the correction twice and not at all.
+An additional uncertainty is placed to cover the $\ttbar$ contamination in embedding, where the removed $t\bar{t}$ genuine tau pair is shifted up and down by 10\%.
+Some non-closures are observed in embedded $Z\to\mu\mu$ control samples. 
+Therefore, these non-closures are taken as an additional shape uncertainty as a function of the Z $\pT$ and $m_{\tau\tau}$.
 
-\item {\bf $l$ to $\tau_\mathrm{h}$ fake energy scale} \\
-Uncertainty shifts are applied to the $p_\mathrm{T}$ of lepton to $\tau_\mathrm{h}$ fakes in MC samples uncorrelated between decay modes.
-The magnitude is 1.0\% for muons in all eras.
-For electrons, more specific values for the uncertainties that depend on the era and detector region are provided by the Tau POG which range between 0.5 and 6.6 \%.
-These uncertainties are uncorrelated between years.
-
-\item {\bf MET unclustered energy uncertainty} \\
-The MET unclustered energy uncertainty is applied to all MC processes that do not have recoil correction applied, namely the $\ttbar$ and VV processes, as recommended by the JetMET POG.
-It is uncorrelated between the eras.
-
-\item {\bf MET recoil correction uncertainties}. \\
-For all MC processes that have recoil correction the hadronic response and its resolution
-are varied within the uncertainties determined during the computation of the recoil corrections.
-The recoil correction uncertainties are uncorrelated between the eras.
-
-\item {\bf MET uncertainties in embedded events} \\
-The uncertainties on the MET correction for embedded events are estimated by varying the clustered and unclustered energy uncertainties in the MC events used to derive the corrections. Statistical uncertainties on the measured correction factors are also taken into account.
-
-\item {\bf Top $p_{T}$ re-weighting} \\
-Uncertainty between no and twice the correction on the re-weighting applied to $\ttbar$ events in all channels. Fully correlated between all eras.
-
-\item {\bf DY $m_{\ell\ell}, p_{T}$ re-weighting} \\
-To derive the uncertainty, a variation is introduced by not applying the correction weights and applying them twice. The one standard deviation uncertainty corresponds then to 10\% of this variation and is applied to $Z\rightarrow ll$ events in all channels. 2017 and 2018 are treated as correlated due to the same MC tune. 2016 is uncorrelated.
-
-
-\item {\bf $t\bar{t}$ contamination in embedding} \\
-Embedded samples replace part of the $t\bar{t}$ background where two genuine taus are involved.
-An uncertainty on this $t\bar{t}$ contamination in the embedded samples is applied.
-This shape uncertainty is created by adding/subtracting 10\% of the genuine tau-pair fraction of the $t\bar{t}$ MC sample to/from the embedded sample.
-This uncertainty is treated as correlated between the channels but uncorrelated between the eras
-due to the different double muon trigger menus for the selected data events.
-
-\item {\bf $\tau_\mathrm{h}$ tracking efficiency in embedding} \\
-An uncertainty on the tracking efficiency of hadronic taus in the embedded samples is propagated fully correlated between the decay channels but uncorrelated between 1 and 3 prong decay modes.
-According to the TauPOG recommendation, it is treated as 50 \% correlated between the eras.
-
-\item {\bf Fake-factor uncertainties} \\
-
-The backgrounds with jets misidentified as $\tauh$ are estimated from data with the fake factor method. There are
-different sources of uncertainty related to this method.
-
-In the $\tauhtauh$ channel the following uncertainties are applied:
-\begin{itemize}
-\item Statistical uncertainties on the measured fake factors - these uncertainties are taken from the uncertainty bands on the fitted functions, split into two independent uncertainties using the procedure outlined in~\cite{CPDecayAnalysis}. 
-Due to the statistical nature of these uncertainties there are separate uncertainties for each $N_{\text{jets}}$/jet $\pT$ bin and the uncertainties are treated as uncorrelated across years.
-\item Statistical uncertainties on the measured closure corrections - these uncertainties are taken from the uncertainty bands on the fitted functions, split into two independent uncertainties using the procedure outlined in~\cite{CPDecayAnalysis}. 
-Due to the statistical nature of these uncertainties there are separate uncertainties for each $N_{\text{jets}}$ bin and the uncertainties are treated as uncorrelated across years.
-\item A systematic uncertainty due to the OS/SS extrapolation corrections
-- this uncertainty is defined by applying the correction twice for the upwards variation and not applying the correction for the downwards variations. 
-\item Systematic uncertainties to account for differences between the fake factors measured for QCD events and non-QCD fake factors, since QCD fake factors are applied also for W+jets and $\ttbar$ events in this channel. The uncertainties are 20 \% for the W+jets contribution and 40 \% for $\ttbar$. 
-\item Systematic uncertainties on all non-closure corrections equal to the size of the corrections are
-applied (applying the closure correction twice for up, or not applying for down).
-\item With the closure tests there is some evidence of non-closures in the sub-leading $\tauh$ $\pT$ and $\MET$ distributions, however additional closure correction are not applied since these don't seem to improve the description of the $m_{T}^{\text{tot}}$ distributions. Therefore, the size of the non-closure in these variables is taken only as an uncertainty.
-\item A systematic uncertainty due to the choice of fit function to describe the fake factors. This is estimated by comparing to fake factors fitted with a first order polynomial set constant above 100 GeV.
-\end{itemize}
-
-In the $\mutauh$ and $\etauh$ channels the following uncertainties are applied:
-\begin{itemize}
-\item Statistical uncertainties on the measured W+jet, QCD, and $\ttbar$ fake factors - these uncertainties are taken from the uncertainty bands on the fitted functions, split into two independent uncertainties using the procedure outlined in~\cite{CPDecayAnalysis}.
-Due to the statistical nature of these uncertainties there are separate uncertainties for each $N_{\text{jets}}$/jet $\pT$ bin and the uncertainties are treated as uncorrelated across years.
-\item Statistical uncertainties on the measured closure corrections - these uncertainties are taken from the uncertainty bands on the fitted functions, split into two independent uncertainties using the procedure outlined in~\cite{CPDecayAnalysis}. 
-Due to the statistical nature of these uncertainties there are separate uncertainties for each $N_{\text{jets}}$ bin and the uncertainties are treated as uncorrelated across years.
-\item For the QCD fake factors a systematic uncertainty due to the OS/SS extrapolation corrections - this uncertainty is defined by applying the corrections twice for the upwards variation and not applying the correction for the downwards variations.
-%This uncertainty is treated as fully correlated across years.
-\item For the QCD fake factors a systematic uncertainty due to the anti-iso $\rightarrow$ iso extrapolation corrections. This uncertainty is defined by comparing the extrapolation from anti-iso $\rightarrow$ iso using two methods. The first method (which is used for the nominal correction) bins the correction as a function of $\Irel$ for the region with $\Irel>0.05$ which is dominated by QCD events, and then uses a linear extrapolation to determine the size of the correction in the $\Irel<0.05$ regions.
-The second method bins the correction as a function of $\Irel$ using the full $\Irel$ range, in this case there is a significant contribution from non-QCD events in the $\Irel<0.05$ region (mainly due to W+jets) which is accounted for by subtracting the non-QCD component using MC.
-\item For the W+jets fake factors a systematic uncertainty due to the high-$\mT$ $\rightarrow$ low-$\mT$ extrapolation correction - this uncertainty is defined by applying the corrections twice for the upwards variation and not applying the correction for the downwards variations. 
-\item For the $\ttbar$ fake factors a systematic uncertainty to account for possible differences between the fake factors in MC and data (as the $\ttbar$ fake factors are measured from MC) - this uncertainty is determined by comparing the fake factors derived for W+jets in data and MC. For the \texttt{b-tag} categories in the lowmass BSM analysis, an additional correction factor is derived as a function of $m_{\tau\tau}$ to account for non-closures when applying the measured fake factors to simulated $\ttbar$ events. We apply an additional shape uncertainty in this case which is defined by applying the corrections twice for the upwards variation and not applying the correction for the downwards variations.
-%This uncertainty is treated as fully correlated across years.
-\item Systematic uncertainties on all non-closure corrections equal to the size of the corrections are applied (applying the closure correction twice for up, or not applying for down).
-\item For the W+jets and QCD fake factors an uncertainty due to the subtraction of events from other processes when deriving the fake factors.
-\item A systematic uncertainty due to the choice of fit function to describe the fake factors. This is estimated by comparing to fake factors fitted with a first order polynomial set constant above 100 GeV.  
-\end{itemize}
-
-\item {\bf Bin-by-bin uncertainties} \\
-Statistical shape uncertainties in the backgrounds due to the use of Monte-Carlo and embedded samples or templates derived from data events with limited number of events are taken into account via the autoMCstats functionality of Combine.
-
-\item \textbf{Theory uncertainties}\\
-
+\subsubsection{Signal process specific uncertainties}
 For the gg$\phi$ process, in particular for low mass hypotheses, the variation of \texttt{hdamp} parameter of the \POWHEG MC generator as well as the $\mu_{R}$/$\mu_{F}$ scale variations are used to determine the uncertainties
 on the $\pT$ spectrum of each contribution at NLO QCD to the Higgs boson production via gluon fusion (top, bottom, top-bottom interference). These are also determine from additional samples produced
 up to the generator level, and applied as event weights dependent on generator level $\pT$ after the parton shower simulation. These uncertainties are included as shape uncertainties as they may affect the shapes of the $m_{T}^{\text{tot}}$ distribution as well as the predicted signal yields.
 
+\subsubsection{Luminosity}
+($1.2\,\%$, $2.3\,\%$, $2.5\,\%$) normalisation luminosity uncertainty is applied to the (2016, 2017, 2018) templates which originate from MC simulation.
 
-\item \textbf{Embedding Z $\pT$ and mass shape uncertainties}
-
-For the embedded samples we observe some non-closures in the shapes of the $\pT$ and mass distributions for a control samples of $Z\to\mu\mu$ events, where muons in data are replaces by simulated muons. We therefore take these non-closures as an additional shape uncertainty as a function of the Z $\pT$ and mass for our $Z\to\tau\tau$ signal regions.
-
-\end{itemize}
-
-\subsection{Normalization uncertainties}
-The following uncertainties are applied as log normal uncertainties on the yield of the affected processes.
-
-\begin{itemize}
-\item \textbf{Luminosity}\\
-($1.2\,\%$, $2.3\,\%$, $2.5\,\%$) luminosity uncertainty is applied to the (2016, 2017, 2018)~\cite{CMS-PAS-LUM-17-003}\cite{CMS-PAS-LUM-17-004}\cite{CMS-PAS-LUM-18-002} templates which originate from MC simulation.
-This uncertainty is partly correlated between eras according to the current recommendation by lumi experts. The different uncertainty sources and their magnitudes for each year are shown in Table~\ref{tab:lumi_unc}.
-\begin{table}[!h]
-\begin{center}
-\caption{
-    Luminosity uncertainties split by uncertainty source and data-taking period. Values taken from~\cite{LumiTwiki}.
-}
-\label{tab:lumi_unc}
-{\footnotesize
-\begin{tabular}{cccc}
-\hline
-uncertainty source & 2016 & 2017 & 2018 \\
-\hline
-Uncorrelated & 1.0 \, \% & 2.0 \, \% & 1.5 \, \% \\
-Correlated & 0.6 \, \% & 0.9 \, \% & 2.0 \, \% \\
-Correlated (2017, 2018) & 0.0 \, \% & 0.6 \, \% & 0.2 \, \% \\
-\hline
-\end{tabular}
-} % end footnotesize
-\end{center}
-\end{table}
-
-\item {\bf Electron, muon ID efficiency} \\
-The estimated uncertainties on electron and muon scale-factors is 2\%.
-This uncertainty is applied to all processes where the yield is estimated from MC.
-The same 2\% uncertainty is also applied to the embedded events.
-50\% are correlated with the MC uncertainty and 50\% uncorrelated because the measured data efficiencies entering the scale factors are same but efficiency measurements are separate for MC and embedded samples.
-These uncertainties are treated as fully correlated between the years.
-
-\item \textbf{Lepton to tau fake rate}\\
-Uncertainties provided by the TauPOG that depend on the lepton $\eta$ are applied. These are treated as being independent for each of the indicated detector sections. The effect on the shapes
-is negligible and therefore these uncertainties are convered to lnN.
-The uncertainties are statistically dominated and therefore treated as uncrorrelated between eras.
-
-\item {\bf B-tagging efficiency} \\
-The b-tagging scale-factors by the BTV POG are provided with uncertainties depending on the detector region. These are applied per jet to MC simulation using the promotion/demotion method.
-There are dedicated scale factors for the b-tag efficiency and the fake rate which results in two corresponding nuisances. Shape effects are neglected by transforming the uncertainties into a pure
-normalization uncertainties, and these uncertainties are treated as uncorrelated between the years.
-
-\item {\bf Prefiring} \\
+\subsubsection{Prefiring}
 Upper and lower bounds are taken from the efficiency maps provided by the L1 DPG and propagated on all MC samples as shape uncertainty for 2016 and 2017.
 The size of the uncertainty as the weight itself depends on the event topology. In general the uncertainty is at the order of 1\%.
-It is correlated between eras and channels.
 
-\item {\bf Background normalization uncertainty} \\
-\begin{itemize}
-\item
-A 2\% uncertainty is applied to the $Z\rightarrow ll$ process to account for the uncertainty on the Drell-Yan cross section fully correlated between the years.
-\item
-A 5\% uncertainty is applied to the di-boson and single-top processes to account for the uncertainties on the production cross section fully correlated between the years.
-\item
-A 4\% uncertainty is applied to the W$+$jets process to account for the uncertainty on the production cross section fully correlated between the years.
-\item
-A systematic uncertainty on the non-closure correction $r_\text{b-tag}$ in b-tagged categories of
-the $\emu$ final state for the QCD estimate is taken into account as described
-in section~\ref{sec:background_estimation}, uncorrelated across data-taking years.
-%A 2\% uncertainty is applied to the EWKZ process to account for the uncertainty on the production cross section fully correlated between the years. \\
-\item
-%A 6\% uncertainty is applied to the $\ttbar$ process to account for the uncertainties on the production cross sections fully correlated between the years~\cite{ttXsecTWiki}.
-Uncertainty on the MC acceptance extrapolation from the $\ttbar$ control region to the $\ttbar$ in the signal regions is determined. A 1\% uncertainty
-is applied in the control region to account for variations in the variables used to select
-this control region. Extrapolation uncertainties due to different choices of factorisation and renormalisation scale
-are smaller than 1\%, depending on the category.
+\newpage
+\section{Signal Extraction}
+\label{sec:sig_ext}
 
-\item 
-For the embedded samples an additional 4\% uncertainty (2\% per muon = 4\%) fully correlated between the channels is applied to take account of efficiency of the double muon trigger that was used to select input events for the embedding technique.
-The uncertainties are decorrelated between the years due to changes in the trigger setup used for selection of di-muon events between years.
+A simultaneous binned maximum likelihood fit over all analysis categories is used to extract the results.
+The likelihood take the form,
+\begin{equation}
+\mathcal{L}(\text{data}\mid\mu,\theta) = \prod_i \text{Poisson} \Big(n_{i} \mid \sum_{j}\sum_{k} g_{j}(\mu_k) \cdot s_{ij}(\theta) + \sum_{l} b_{il}(\theta)\Big) \cdot p(\hat{\theta} \mid \theta),
+\end{equation}
 
-\item In cases where the SM Higgs boson is included as a background the following theoretical uncertainties on the cross sections and branching ratios are included:
+where $i$ loops through all histogram bins and analysis categories.
+$j$ and $k$ loop over all signal and background processes of the hypothesis being fit.
+$n_i$, $s_i$ and $b_i$ are the data observed, signal and background expectation respectively in each bin.
+$\theta$ represents the set of nuissance parameters (corresponding to the systematic uncertainties as detailed in Section~\ref{sec:uncerts}) that parametrise the signal and background modelling.
+$\mu_{j}$ is a rate parameter that scales the signal expectation and can be dependent on the individual signal sample.
+This parameter allows for scaling of signal samples to the signal hypothesis.
+The form of the Poisson probabilities are,
+\begin{equation}
+\text{Poisson} (n \mid x) = \frac{x^{n}e^{-x}}{n!}.
+\end{equation}
+Finally, $p(\hat{\theta} \mid \theta)$ represents the probability density function (pdf) of each nuissance parameter ($\theta$) with respect to the initial value of the parameter ($\hat{\theta}$). \\
 
-The uncertainties on the ggH production cross-section recommended in YR4 are applied. The uncertainties on the cross-section include a 3.9\% uncertainty due to variations of the QCD scales and a 3.2\% uncertainty from PDF+$\alpha_s$ variations.
+These come in two forms, the first is for uncertainties that only affect the normalisation of the process and are modelled by log-normal pdfs. 
+The second is for uncertainties that affect the shape of the distribution, these are assigned Gaussian pdfs.
+The $\pm1\sigma$ shifts for each shape variations are derived and vertical morphing \cite{} is used to interpolate and extrapolate within and outside the shifts.
+Both pdfs are depend on the mean ($\mu$) and standard deviations ($\sigma$) and the functional forms are shown in Table~\ref{tab:pdfs}. \\
 
-The uncertainties on the VBF Higgs production cross-section recommended in YR4 are applied which include a 0.4\% uncertainty from variations of QCD scales and a 2.1\% uncertainty from PDF+$\alpha_s$ variations. The uncertainties are fully correlated between years.
+\begin{table}[!hbtp]
+    \centering
+    \begin{tabular}{|c|c|}
+         \hline
+         Gaussian & Log-normal  \\
+         \hline
+         \hline
+          & \\
+         $f(x) = \frac{1}{\sqrt{2\pi\sigma^{2}}} \exp\Big({-\frac{(x - \mu)^2}{2\sigma^2}}\Big)$ & $f(x) = \frac{1}{x} \frac{1}{\sqrt{2\pi\sigma^{2}}} \exp\Big({-\frac{(\ln x - \mu)^2}{2\sigma^2}}\Big)$ \\
+          & \\
+         \hline
+    \end{tabular}
+    \caption{pdfs used for nuissance parameters.}
+    \label{tab:pdfs}
+\end{table}
 
-The uncertainties on the W(Z)H associated production cross-sections recommended in YR4 are applied which include a 1.9\%(1.6\%) uncertainty from the QCD scale variations and a 1.9\%(1.6\%) uncertainty from PDF+$\alpha_s$ variations. The uncertainties are fully correlated between years.
+The following subsections discuss the results of many such fits.
+The key fits to understand the results are the background-only fit and the signal-plus-background fits.
+The background-only fit is performed with $\mu_{j}$ frozen to 0.
+For all signal-plus-background fits, the fit is done with respect to a single mass hypothesis, however within this mass hypothesis can be a number of signal processes.
+The model independent resonance search has $gg\phi$ and $bb\phi$ signal modes and so two rate parameters $\mu_{gg\phi}$ and $\mu_{bb\phi}$ are needed.
+When the samples are scaled to the cross section times branching ratio ($\sigma \times B (\phi\rightarrow\tau\tau)$) of 1 pb, $\mu_{gg\phi}$ and $\mu_{bb\phi}$ represent the $\sigma \times B (\phi\rightarrow\tau\tau)$ with units of pb.
+Also used in the following subsections, is a signal-plus-background channel/category compatibility fit.
+In this fit the signal processes and rate parameters are further split in each channel or category.
+This is used to determine the compatibility of the results in different decay channels and analysis categories. \\
 
-The recommended uncertainties on the $H\rightarrow\tau\tau$ branching fraction provided in YR4 are applied to all Higgs signal samples (ggH, VBF, and VH). These uncertainties include a 1.7\% uncertainty due to missing higher order corrections, a 0.99\% parametric uncertainty on the quark masses, and a 0.62\% parametric uncertainty on $\alpha_s$.
+The vector leptoquark search has two signal modes; the t-channel interaction and the interference with Drell-Yan and so two rate parameters $\mu_{\text{t-channel}}$ and $\mu_{\text{interference}}$.
+However this differs from the 
 
-The $H\rightarrow WW$ contributions are also considered as background, and the corresponding branching ratio uncertainties provided are also taken into account.
 
-\end{itemize}
-
-\item \textbf{Theory uncertainties}\\
-
-For the model-dependent $m_A$ - $\tan\beta$ limits theoretical uncertainties on the MSSM Higgs cross sections are included. This includes the pdf+$\alpha_s$ and scale uncertainties that depend on the benchmark scenario considered, $m_A$, and $\tan\beta$, and are included in the model files~\cite{LHCHXSWGrootfiles}. \\
-
-For the bb$\phi$ signal process, theoretical uncertainties on the signal acceptance in terms of number of b-jets due to the parton shower matching are estimated by varying the \texttt{hdamp} parameter of the \POWHEG MC generator used to create the signal samples by factors of 2 and $\frac{1}{2}$. 
-The additional samples are produced up to the generator level with parton showers with \PYTHIA,
-such that generator level information on final state physics objects becomes available. The uncertainties are determined for $0$ b-jet and $\geq 1$ ($= 1$) b-jet categories,
-for a few exemplary signal mass points, and interpolated to the full range of used signal masses. For the signal acceptance, the yields of varied samples are normalized to the same
-cross-section.
-The QCD scale uncertainty is used to probe the effect of higher-order terms not considered in the NLO calculations. This uncertainty is estimated by varying the renormalization ($\mu_{R}$) and re-factorization ($\mu_{F}$) scales by factors of 2 and $\frac{1}{2}$ independently under the constrain $\frac{1}{2}\le\frac{\mu_{R}}{\mu_{F}}\le 2$. 
-Since varying these scales will probe both the uncertainty on the cross-section as well as the signal acceptance the uncertainty on the cross-section must be factored out. 
-This is done by normalizing each varied QCD scale to the fully-inclusive number of events for the default scale choice. The scale uncertainty is then taken as half the maximum difference in the signal acceptance. 
-The uncertainties due to the QCD scale and \texttt{hdamp} variations are added linearly as recomended by the \POWHEG authors. The resulting uncertainties on the \texttt{b-tag} category signal acceptance range between 1--6 \% depending on the mass point. 
-PDF uncertainties are also included. These uncertainties range between 1--2\% for the \texttt{b-tag} category.
-
-\end{itemize}
-
-\subsection{Uncertainties specific to $e\mu$ channel}
-
-Baskground estimates in the $e\mu$ channel are affected by uncertainties in the $\mathrm{jet}\rightarrow \mathrm{e}(\mu)$ and $\mu \rightarrow \mathrm{e}$ misidentification probabilities as discussed in Section~\ref{sec:background_estimation}. The uncertainty in the $\mu \rightarrow \mathrm{e}$ misidentification probability affects estimation of the $\mathrm{Z}$+jets background with Z boson decaying into a pair of muons and has vanshing impact on estimation of other backgrounds. Uncertainties in the $\mathrm{jet}\rightarrow \mathrm{e}$ and $\mathrm{jet}\rightarrow \mu$ misidentification probabilities affect mainly estimates of the $\mathrm{W/Z}$+jets backgrounds with leptonically decaying W and Z bosons, and to a lesser extent estimates of the $\mathrm{t\bar{t}}$, single-top and di-boson backgrounds. Typically, shape altering effect of these uncertainties is small and they are treated as log-normal uncertainties. Non-negligible shape altering effect is observed only for the $\mathrm{jet}\rightarrow \mathrm{e}$ and $\mu \rightarrow \mathrm{e}$ misidentification probabilities in the background templates corresponding to the $\mathrm{Z}$+jets production followed by $\mathrm{Z}\rightarrow \mathrm{ee}(\mu\mu)$ decays. In these cases shape altering effects are taken into account. 
-
-For the QCD extrapolation method which is used to estimate the QCD multijet background in the $\emu$ final state ten uncertainties are applied.
-This includes uncertainties on the extrapolation factor arising from the three parameters in the fit to the $\Delta R (e\mu)$ dependence, binned in three jet bins.
-These uncertainties are uncorrelated between the eras.
-The tenth uncertainty describes uncertainties in the extrapolation of the correction factors from the anti-isolated to the isolated region and is treated as correlated between the years. These uncertainties have vanishing shape altering effect on the QCD background estimate and treated as log-normal ones.
-
-The QCD background estimate is affected also by uncertainties in the $\mathrm{jet}\rightarrow \mathrm{e}(\mu)$ misidentification probabilities and electron charge flip rate, as these uncertainties have an impact on the non-QCD background estimated from simulation and subtracted from data in the SS side band region to model QCD background shape as described in Section ~\ref{sec:background_estimation}. For all these uncertainties shape altering effect on the QCD background estimate is negligible and uncertainties are treated as log-normal ones.
-Uncertainties in the $\mathrm{jet}\rightarrow \mathrm{e}$ and $\mathrm{jet}\rightarrow \mu$ misidentification probabilities are fully correlated between signal categories of the $e\mu$ channel and the SS sideband region, where shape of the QCD background is derived.
 
 \newpage
 \section{Postfit Plots}
 
+Figure~\ref{fig:low_mass_postfit} and \ref{fig:high_mass_postfit} shows the unblinded distributions in the most sensitive analysis categories.
+For simplicity, the $\etauh$ and $\mutauh$ channels have been combined.
+
 \begin{figure}[!hbtp]
 \centering
-    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/postfit_lowmass_tt_nobtag_mediumpT.pdf}}
-    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/postfit_lowmass_tt_nobtag_highpT.pdf}} \\
-    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/postfit_lowmass_lt_nobtag_mediumpT.pdf}}
-    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/postfit_lowmass_lt_nobtag_highpT.pdf}} \\
-    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/postfit_lowmass_em_nobtag_mediumpT.pdf}}
-    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/postfit_lowmass_em_nobtag_highpT.pdf}}
+    \subfloat[]{\includegraphics[width=0.4\textwidth]{Figures/postfit_lowmass_tt_nobtag_mediumpT-cropped.pdf}}
+    \subfloat[]{\includegraphics[width=0.4\textwidth]{Figures/postfit_lowmass_tt_nobtag_highpT-cropped.pdf}} \\
+    \subfloat[]{\includegraphics[width=0.4\textwidth]{Figures/postfit_lowmass_lt_nobtag_mediumpT-cropped.pdf}}
+    \subfloat[]{\includegraphics[width=0.4\textwidth]{Figures/postfit_lowmass_lt_nobtag_highpT-cropped.pdf}} \\
+    \subfloat[]{\includegraphics[width=0.4\textwidth]{Figures/postfit_lowmass_em_nobtag_mediumpT-cropped.pdf}}
+    \subfloat[]{\includegraphics[width=0.4\textwidth]{Figures/postfit_lowmass_em_nobtag_highpT-cropped.pdf}}
 \caption{Distributions of $m_{\tau\tau}$ in the no b tag second highest (left) and highest (right) $\pT$ category for the $\tauhtauh$ (top), the combined $\etauh$ and $\mutauh$ (middle) and the $\emu$ (bottom) channels. The solid histograms show the stacked background predictions after a signal plus background fit to the data. The best fit gluon fusion signal for $m_{\phi}$ = 100 GeV is shown by the red line. Also shown by a blue dashed line on the bottom pad is the ratio of the background predictions for the background only fit to the signal plus background fit }
 \label{fig:low_mass_postfit}
 \end{figure}
 
 \begin{figure}[!hbtp]
 \centering
-    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/postfit_highmass_tt_nobtag.pdf}}
-    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/postfit_highmass_tt_btag.pdf}} \\
-    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/postfit_highmass_lt_nobtag_tightmT.pdf}}
-    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/postfit_highmass_lt_btag_tightmT.pdf}} \\
-    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/postfit_highmass_em_nobtag_mediumdzeta.pdf}}
-    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/postfit_highmass_em_btag_mediumdzeta.pdf}}
+    \subfloat[]{\includegraphics[width=0.42\textwidth]{Figures/postfit_highmass_tt_nobtag-cropped.pdf}}
+    \subfloat[]{\includegraphics[width=0.42\textwidth]{Figures/postfit_highmass_tt_btag-cropped.pdf}} \\
+    \subfloat[]{\includegraphics[width=0.42\textwidth]{Figures/postfit_highmass_lt_nobtag_tightmT-cropped.pdf}}
+    \subfloat[]{\includegraphics[width=0.42\textwidth]{Figures/postfit_highmass_lt_btag_tightmT-cropped.pdf}} \\
+    \subfloat[]{\includegraphics[width=0.42\textwidth]{Figures/postfit_highmass_em_nobtag_mediumdzeta-cropped.pdf}}
+    \subfloat[]{\includegraphics[width=0.42\textwidth]{Figures/postfit_highmass_em_btag_mediumdzeta-cropped.pdf}}
 \caption{Distributions of $m_{T}^\text{tot}$ in the $\tauhtauh$ no b tag (a) and b tag (b) categories, the combined $\etauh$ and $\mutauh$ no b tag (c) and b tag (d) Tight-$m_{T}$ categories and the $\emu$ no b tag (e) and b tag (f) Medium-$D_{\zeta}$ categories. The solid histograms show the stacked background predictions after a background only fit to the data. The best fit gluon fusion signal for $m_{\phi}$ = 1.2 TeV is shown by the red line, b associated production and $U_{1}$ signals are also shown for illustrative purposes.}
 \label{fig:high_mass_postfit}
 \end{figure}
@@ -1135,7 +1002,7 @@ Uncertainties in the $\mathrm{jet}\rightarrow \mathrm{e}$ and $\mathrm{jet}\righ
 \centering
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/model_independent_limit_ggH.pdf}}
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/model_independent_limit_bbH.pdf}}
-\caption{Model independent limits.}
+\caption{Expected (dashed line) and observed (solid line and dots) 95\% CL upper limits on the product of the cross sections and branching fraction for the decay into $\tau$ leptons for (left) gg$\phi$ and (right) bb$\phi$ production in a mass range of 60 $\leq m_{\phi} \leq$ 3500 GeV.  The dark green and bright yellow bands indicate the central 68\% and 95\% intervals for the expected exclusion limit.}
 \label{fig:model_independent_limits}
 \end{figure}
 
@@ -1143,7 +1010,7 @@ Uncertainties in the $\mathrm{jet}\rightarrow \mathrm{e}$ and $\mathrm{jet}\righ
 \centering
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/limit_comparison_mssm_ggphi.pdf}}
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/limit_comparison_mssm_bbphi.pdf}}
-\caption{Model independent limits.}
+\caption{Comparison of the expected 95\% CL upper limits on the product of the cross sections and branching fraction for the decay into $\tau$ leptons for (left) gg$\phi$ and (right) bb$\phi$ production, split by the $\tau\tau$ decay products fit individually.}
 \label{fig:model_independent_limits_by_channel}
 \end{figure}
 
@@ -1151,7 +1018,7 @@ Uncertainties in the $\mathrm{jet}\rightarrow \mathrm{e}$ and $\mathrm{jet}\righ
 \centering
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/limit_comparison_gg_ATLAS.pdf}}
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/limit_comparison_bb_ATLAS.pdf}}
-\caption{Model independent limits.}
+\caption{Comparison of the expected 95\% CL upper limits on the product of the cross sections and branching fraction for the decay into $\tau$ leptons for (left) gg$\phi$ and (right) bb$\phi$ production, split by the CMS result detailed in this thesis and the ATLAS result from Ref.~\cite{ATLAS:2020zms}.}
 \label{fig:model_independent_limits_by_channel}
 \end{figure}
 
@@ -1161,7 +1028,7 @@ Uncertainties in the $\mathrm{jet}\rightarrow \mathrm{e}$ and $\mathrm{jet}\righ
 \centering
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/significance_plot_ggH.pdf}}
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/significance_plot_bbH.pdf}}
-\caption{Significance.}
+\caption{Local $p$-value and significance of a gg$\phi$ (left) and bb$\phi$ (right) signal as a function of $m_{\phi}$.}
 \label{fig:significance}
 \end{figure}
 
@@ -1169,14 +1036,14 @@ Uncertainties in the $\mathrm{jet}\rightarrow \mathrm{e}$ and $\mathrm{jet}\righ
 \centering
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/ChannelCompatibilityCheck_FitResults_mH100_channel.pdf}}
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/ChannelCompatibilityCheck_FitResults_mH100_cat.pdf}}
-\caption{Low mass compatibility.}
+\caption{Compatibility plots of the low mass excess split into analysis channels (a) and categories (b). In each case the fitted signal strength is decoupled in the bin shown on the plot.}
 \label{fig:low_mass_compatibility}
 \end{figure}
 
 \begin{figure}[!hbtp]
 \centering
     \includegraphics[width=0.5\textwidth]{Figures/ccc_fit_result_mH1200_per-channel.pdf}
-\caption{High mass compatibility.}
+\caption{ompatibility plots of the high mass excess split by analysis channels. In each case the fitted signal strength is decoupled in each channel.}
 \label{fig:high_mass_compatibility}
 \end{figure}
 
@@ -1193,7 +1060,7 @@ Uncertainties in the $\mathrm{jet}\rightarrow \mathrm{e}$ and $\mathrm{jet}\righ
     \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/2d_lkld_1000.pdf}}
     \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/2d_lkld_1200.pdf}}
     \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/2d_lkld_3500.pdf}}
-\caption{2D Likelihood scans.}
+\caption{Maximum likelihood scans, including 68\% and 95\% CL contours obtained from the signal likelihood for the model-independent search. The scans are shown for selected values of $m_{\phi}$ between 60 GeV and 3.5 TeV.}
 \label{fig:2d_likelihood_scans}
 \end{figure}
 
@@ -1209,7 +1076,8 @@ For the hypothesis test the likelihood is
 \centering
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/model-dependent_limit_mh125.pdf}}
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/model-dependent_limit_mh125EFT.pdf}}
-\caption{MSSM limits.}
+\caption{Expected and observed 95\% \CL exclusion contours in the MSSM (a) $m_{h}^{125}$ and (b) $m_{h,EFT}^{125}$ scenarios. The exclusion limit only on background expectation is shown as a dashed black line, the dark and bright grey bands show the 68\% and 95\% intervals of the expected exclusion and the observed exclusion contour is shown by the blue area. The parameter space where \mh deviates by more then ${\pm}3\GeV$ from the observed SM Higgs boson mass it shown by a red hatched area.
+}
 \label{fig:mssm_limits}
 \end{figure}
 
@@ -1217,7 +1085,8 @@ For the hypothesis test the likelihood is
 \centering
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/vlq_bm_1.pdf}}
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/vlq_bm_2.pdf}}
-\caption{VLQ limits.}
+\caption{Expected and observed 95\% \CL upper limits on \gU in the VLQ BM (a) 1 and (b) 2 scenarios, in a mass range of $1<\mU<5\TeV$.  The exclusion limit only on background expectation is shown as a dashed black line, the dark and bright grey bands show the 68\% and 95\% intervals of the expected exclusion and the observed exclusion contour is shown by the blue area. The 95\% confidence interval for the preferred region from the global fit presented in Ref.~\cite{Cornella:2021sby} is also shown by the green shaded area.
+}
 \label{fig:vlq_limits}
 \end{figure}
 
