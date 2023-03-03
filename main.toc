@@ -28,9 +28,9 @@
 \contentsline {subsubsection}{Luminosity}{34}{section*.29}%
 \contentsline {subsubsection}{Prefiring}{34}{section*.30}%
 \contentsline {section}{\numberline {1.10}Signal Extraction}{35}{section.1.10}%
-\contentsline {section}{\numberline {1.11}Postfit Plots}{37}{section.1.11}%
-\contentsline {section}{\numberline {1.12}Model Independent Results}{40}{section.1.12}%
-\contentsline {subsection}{\numberline {1.12.1}Limit Setting}{40}{subsection.1.12.1}%
-\contentsline {subsection}{\numberline {1.12.2}Significance and Compatibility}{40}{subsection.1.12.2}%
-\contentsline {subsection}{\numberline {1.12.3}2D Likelihood Scans}{40}{subsection.1.12.3}%
-\contentsline {section}{\numberline {1.13}Model Dependent Limits}{43}{section.1.13}%
+\contentsline {section}{\numberline {1.11}Postfit Plots}{38}{section.1.11}%
+\contentsline {section}{\numberline {1.12}Model Independent Results}{41}{section.1.12}%
+\contentsline {subsection}{\numberline {1.12.1}Limits}{41}{subsection.1.12.1}%
+\contentsline {subsection}{\numberline {1.12.2}Significance and Compatibility}{41}{subsection.1.12.2}%
+\contentsline {subsection}{\numberline {1.12.3}2D Likelihood Scans}{41}{subsection.1.12.3}%
+\contentsline {section}{\numberline {1.13}Model Dependent Limits}{44}{section.1.13}%

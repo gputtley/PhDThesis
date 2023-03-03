@@ -115,7 +115,7 @@ Once individual templates have been determined for each contribution to the loop
 \begin{align}
 \frac{d\sigma_{\text{MSSM}}}{d\pT} & = \left(\frac{Y_{t,\text{MSSM}}}{Y_{t,\text{2HDM}}}\right)^{2}\frac{d\sigma^{t}_{\text{2HDM}}}{d\pT}(Q_{t}) + \left(\frac{Y_{b,\text{MSSM}}}{Y_{b,\text{2HDM}}}\right)^{2}\frac{d\sigma^{b}_{\text{2HDM}}}{d\pT}(Q_{b}) + \nonumber \\
 & \left(\frac{Y_{t,\text{MSSM}}}{Y_{t,\text{2HDM}}}\frac{Y_{b,\text{MSSM}}}{Y_{b,\text{2HDM}}}\right) \left\{ \frac{d\sigma^{t+b}_{\text{2HDM}}}{d\pT}(Q_{tb}) - \frac{d\sigma^{t}_{\text{2HDM}}}{d\pT}(Q_{tb}) - \frac{d\sigma^{b}_{\text{2HDM}}}{d\pT}(Q_{tb}) \right\}
-\label{eqn:ggh_reweight}
+\label{eqn:mssm_xs}
 \end{align}
 
 where $Q_i$ are resummation scales that depend on the mass of the additional Higgs boson.
@@ -908,20 +908,20 @@ The size of the uncertainty as the weight itself depends on the event topology. 
 A simultaneous binned maximum likelihood fit over all analysis categories is used to extract the results.
 The likelihood take the form,
 \begin{equation}
-\mathcal{L}(\text{data}\mid\mu,\theta) = \prod_i \text{Poisson} \Big(n_{i} \mid \sum_{j}\sum_{k} g_{j}(\mu_k) \cdot s_{ij}(\theta) + \sum_{l} b_{il}(\theta)\Big) \cdot p(\hat{\theta} \mid \theta),
+\mathcal{L}(\text{data}\mid\mu,\theta) = \prod_{i}^{N_{i}} \text{Poisson} \Big(n_{i} \mid \sum_{j}^{N_{j}} g_{j}(\mu_{ij}) \cdot s_{ij}(\theta) + \sum_{k}^{N_{k}} b_{ik}(\theta)\Big) \cdot p(\hat{\theta} \mid \theta),
+\label{eqn:likelihood}
 \end{equation}
 
 where $i$ loops through all histogram bins and analysis categories.
 $j$ and $k$ loop over all signal and background processes of the hypothesis being fit.
 $n_i$, $s_i$ and $b_i$ are the data observed, signal and background expectation respectively in each bin.
-$\theta$ represents the set of nuissance parameters (corresponding to the systematic uncertainties as detailed in Section~\ref{sec:uncerts}) that parametrise the signal and background modelling.
-$\mu_{j}$ is a rate parameter that scales the signal expectation and can be dependent on the individual signal sample.
-This parameter allows for scaling of signal samples to the signal hypothesis.
+$\theta$ represents the set of nuisance parameters (corresponding to the systematic uncertainties as detailed in Section~\ref{sec:uncerts}) that parametrise the signal and background modelling.
+$\mu$ are rate parameters and $g(\mu)$ are scaling functions that scale to a signal to a signal hypothesis.
 The form of the Poisson probabilities are,
 \begin{equation}
 \text{Poisson} (n \mid x) = \frac{x^{n}e^{-x}}{n!}.
 \end{equation}
-Finally, $p(\hat{\theta} \mid \theta)$ represents the probability density function (pdf) of each nuissance parameter ($\theta$) with respect to the initial value of the parameter ($\hat{\theta}$). \\
+Finally, $p(\hat{\theta} \mid \theta)$ represents the probability density function (pdf) of each nuisance parameter ($\theta$) with respect to the initial value of the parameter ($\hat{\theta}$). \\
 
 These come in two forms, the first is for uncertainties that only affect the normalisation of the process and are modelled by log-normal pdfs. 
 The second is for uncertainties that affect the shape of the distribution, these are assigned Gaussian pdfs.
@@ -940,51 +940,106 @@ Both pdfs are depend on the mean ($\mu$) and standard deviations ($\sigma$) and 
           & \\
          \hline
     \end{tabular}
-    \caption{pdfs used for nuissance parameters.}
+    \caption{pdfs used for nuisance parameters.}
     \label{tab:pdfs}
 \end{table}
 
 The following subsections discuss the results of many such fits.
 The key fits to understand the results are the background-only fit and the signal-plus-background fits.
-The background-only fit is performed with $\mu_{j}$ frozen to 0.
+It is important to mention here that the SM Higgs boson processes are treated as a background.
+The background-only fit is performed with $N_j$ (number of signal processes) set to 0.
 For all signal-plus-background fits, the fit is done with respect to a single mass hypothesis, however within this mass hypothesis can be a number of signal processes.
-The model independent resonance search has $gg\phi$ and $bb\phi$ signal modes and so two rate parameters $\mu_{gg\phi}$ and $\mu_{bb\phi}$ are needed.
-When the samples are scaled to the cross section times branching ratio ($\sigma \times B (\phi\rightarrow\tau\tau)$) of 1 pb, $\mu_{gg\phi}$ and $\mu_{bb\phi}$ represent the $\sigma \times B (\phi\rightarrow\tau\tau)$ with units of pb.
+The model independent resonance search has separate $gg\phi$ and $bb\phi$ signal modes and so two rate parameters $\mu_{gg\phi}$ and $\mu_{bb\phi}$ are needed.
+When the samples are originally scaled to the cross section times branching ratio ($\sigma \times B (\phi\rightarrow\tau\tau)$) of 1 pb and $g(\mu)=\mu$ for both processes, $\mu_{gg\phi}$ and $\mu_{bb\phi}$ represent the $\sigma \times B (\phi\rightarrow\tau\tau)$ with units of pb.
 Also used in the following subsections, is a signal-plus-background channel/category compatibility fit.
-In this fit the signal processes and rate parameters are further split in each channel or category.
-This is used to determine the compatibility of the results in different decay channels and analysis categories. \\
+In this fit the signal processes and rate parameters are further split in each channel or category utilising index $i$ in Eq.~\ref{eqn:likelihood}.
+This is used to determine the compatibility of the results in different decay channels and analysis categories.
+To avoid negative signal strengths, $\mu$ will only be taken to be positive. \\
 
-The vector leptoquark search has two signal modes; the t-channel interaction and the interference with Drell-Yan and so two rate parameters $\mu_{\text{t-channel}}$ and $\mu_{\text{interference}}$.
-However this differs from the 
+The vector leptoquark search has two signal modes; the t-channel interaction and the interference with Drell-Yan however as this is a model dependent interpretation of these results both these rate parameters scale together.
+The scaling functions differ between the two processes with $g_{\text{t-channel}}(\mu) = \mu^4$ and $g_{\text{interference}}(\mu) = \mu^2$ to mimic how the cross sections of each process scales.
+When the initial samples are scaled to cross section at $g_{U}=1$, $\mu$ corresponds to the coupling $g_{U}$. \\
 
+For the MSSM interpretation of the results, there are three Higgs bosons to consider in the signal model (h, H and A) produced via both gluon fusion and in association with b quarks.
+The gluon fusion samples are also split into the separate loop contributors, so the kinematic properties can be properly scaled to MSSM prediction, as described in Section~\ref{sec:additional_higgs_bosons}.
+The SM-like Higgs boson is considered in the MSSM signal model to monitor differences in the observed Higgs boson prediction between the MSSM and the SM.
+In each benchmark scenario chosen, the signal prediction depends only on $m_{A}$ and $\tan\beta$ and the scaling to cross section is shown in Eq.~\ref{eqn:mssm_xs}.
+As the potential scaling functions for MSSM interpretations are not necessarily smooth one-to-one mappings, the likelihood is tested for individual points on the $m_{A}$-$\tan\beta$ parameter space.
+At each point, the MSSM Higgs bosons are scaled to the theory predicted cross section times branching ratio.
+To test the MSSM hypothesis over the SM hypothesis, the single rate parameter $\mu$ is used and only allowed to take values of 1 (MSSM) and 0 (SM) with $g(\mu)=\mu$.
+As the SM Higgs boson is added to the background modelling and the MSSM prediction of the observed Higgs boson is added to the signal model when $\mu=1$, the SM Higgs boson prediction must then be subtracted from the signal model. \\
 
+The confidence intervals in the best fit results are given by the $-2\Delta\ln\mathcal{L}$, where $\Delta\ln\mathcal{L}$ is the difference between $\ln\mathcal{L}$ of the best fit model and the test value of $\mu$. 
+The 68\% and 95\% confidence regions with two degrees of freedom (as in the model independent resonant search) are determined by $-2\Delta\ln\mathcal{L} = 2.28$ and $5.99$ respectively. \\
 
+Upper limits are placed using the modified frequentest approach \cite{} with profile likelihood ratio used for the test statistic defined below.
+\begin{equation}
+  q_{\mu} = -2 \ln \Biggl(\frac{\mathcal{L}(\text{data} | \mu, \hat{\theta}_{\mu})}{\mathcal{L}(\text{data} | \hat{\mu}, \hat{\theta}_{\hat{\mu}})}\Biggl), 0 \leq \hat{\mu} \leq \mu,
+\end{equation}
+where $\hat{\mu}$ and $\hat{\theta}_{\hat{\mu}}$ are the best fit values of $\mu$ and $\theta$. $\hat{\theta}_{\mu}$ are the values of $\theta$ that is maximised by the likelihood for a tested value of $\mu$.
+The bounds on $\hat{\mu}$ are to ensure a positive signal strength with a one-sided confidence interval.
+The probability of $q_{\mu} \geq q_{\mu}^{\text{obs}}$ is,
+\begin{equation}
+\text{CL}(\mu) = \int^{\infty}_{q_{\mu}^{\text{obs}}} f(q_{\mu} \mid \mu, \theta_{\mu}^{\text{obs}}),
+\end{equation}
+where $f(q_{\mu} \mid \mu, \theta_{\mu}^{\text{obs}})$ is the pdf of $q_\mu$.
+$\text{CL}_{b}$ and $\text{CL}_{s+b}$ are then defined by the relevant background-only and signal-plus-background fits.
+$\text{CL}_s$ is defined as the ratio of $\text{CL}_{s+b}$ and $\text{CL}_{b}$ and then upper limits are placed at the confidence level of $1-\text{CL}_{s}$.
+The $f(q_{\mu} \mid \mu, \theta_{\mu}^{\text{obs}})$ are determined using the asymptotic approximation \cite{} and results are cross-checked and deemed consistent with toy MC datasets. \\
+
+If a deviation from the background expectation is observed, the size of the deviation is quantified by a significance.
+To begin quantifying the excess, a $p$-value is determined, $\mu$ is replaced with 0 in the test statistic, to test rejection of the background-only hypothesis in favour of the signal-plus-background hypothesis.
+The $p$-value, $p_0$ is then,
+\begin{equation}
+p_{0} = \int^{\infty}_{q_{0}^{\text{obs}}} f(q_{0} \mid 0, \theta_{\mu}^{\text{obs}}).
+\end{equation}
+$p_{0}$ is uniformly distributed between 0 and 1 for the background-only hypothesis and so the probability and significance of rejecting the background-only hypothesis can be found. \\
+ 
 \newpage
 \section{Postfit Plots}
 
-Figure~\ref{fig:low_mass_postfit} and \ref{fig:high_mass_postfit} shows the unblinded distributions in the most sensitive analysis categories.
+Figures~\ref{fig:low_mass_postfit} and \ref{fig:high_mass_postfit} show the unblinded distributions in the most sensitive analysis categories.
 For simplicity, the $\etauh$ and $\mutauh$ channels have been combined.
+Figure~\ref{fig:low_mass_postfit} shows the distributions of the $m_{\tau\tau}$ discriminator in the no b tag low mass optimisation categories. 
+A signal-plus-background fit for a model independent gluon fusion resonant mass hypothesis of 100 GeV is shown and the changes in the background modelling when using a background-only fit is displayed in the ratio.
+Figure~\ref{fig:high_mass_postfit} shows the distributions of the $m_{T}^{\text{tot}}$ discriminator in the high mass optimisation categories.
+A background-only fit is shown for the stacked background and best fit signal hypotheses for the model independent resonances gg$\phi$ and bb$\phi$ 1.2 TeV and VLQ (BM 1) 1 TeV mass points from separate signal-plus-background fits are displayed. \\
+
+In the low mass optimisation categories, a small excess of events is observed on the Z boson peak in the no b tag categories and reasonable agreement is observed in the b tag categories.
+The excess of events are distributed in $m_{\tau\tau}$ between 80 and 120 GeV.
+A signal-plus-background hypothesis is best fit with a 100 GeV gg$\phi$ with a cross section times branching ratio of 5.8 pb. 
+In this same fit the bb$\phi$ process is constrained by the b tag categories to give a signal yield of 0.
+A background-only fit is also performed on the data, it is observed that this can only partly explain the differences observed between background and data.
+Even after a background-only fit there is still an small excess of data events over the Z boson peak. \\
+
+In the high mass optimisation categories, another small excess is observed in high $m_{T}^{\text{tot}}$ bins, particularly in the most sensitive no b tag categories.
+This excess is best fit by a model independent gluon fusion resonant mass at 1.2 TeV with a cross section times branching ratio of 3.1 fb.
+There are no considerable differences observed in background modelling between signal-plus-background and background-only fits.
+This is as the uncertainties in these bins are more statistically dominated and the majority of the systematic uncertainties are constrained in the bulk of the distribution.
+Good agreement is observed in the rest of the distribution.
+There is a very small deviation in the b tag categories, but as this can also be explained by a gg$\phi$ signal, the bb$\phi$ signal is heavily constrained and so largely does not contribute to the signal-plus-background fit of the excess.
+Similar to the bb$\phi$ signal, the VLQ BM 1 signal is constrained by the results in the no b tag categories, leading to a non-zero best fit signal strength, but cannot explain the excess in the no b tag categories. \\
 
 \begin{figure}[!hbtp]
 \centering
-    \subfloat[]{\includegraphics[width=0.4\textwidth]{Figures/postfit_lowmass_tt_nobtag_mediumpT-cropped.pdf}}
+    \subfloat[]{\includegraphics[width=0.4\textwidth]{Figures/postfit_lowmass_tt_nobtag_mediumpT.pdf}}
     \subfloat[]{\includegraphics[width=0.4\textwidth]{Figures/postfit_lowmass_tt_nobtag_highpT-cropped.pdf}} \\
-    \subfloat[]{\includegraphics[width=0.4\textwidth]{Figures/postfit_lowmass_lt_nobtag_mediumpT-cropped.pdf}}
-    \subfloat[]{\includegraphics[width=0.4\textwidth]{Figures/postfit_lowmass_lt_nobtag_highpT-cropped.pdf}} \\
-    \subfloat[]{\includegraphics[width=0.4\textwidth]{Figures/postfit_lowmass_em_nobtag_mediumpT-cropped.pdf}}
-    \subfloat[]{\includegraphics[width=0.4\textwidth]{Figures/postfit_lowmass_em_nobtag_highpT-cropped.pdf}}
+    \subfloat[]{\includegraphics[width=0.4\textwidth]{Figures/postfit_lowmass_lt_nobtag_mediumpT.pdf}}
+    \subfloat[]{\includegraphics[width=0.4\textwidth]{Figures/postfit_lowmass_lt_nobtag_highpT.pdf}} \\
+    \subfloat[]{\includegraphics[width=0.4\textwidth]{Figures/postfit_lowmass_em_nobtag_mediumpT.pdf}}
+    \subfloat[]{\includegraphics[width=0.4\textwidth]{Figures/postfit_lowmass_em_nobtag_highpT.pdf}}
 \caption{Distributions of $m_{\tau\tau}$ in the no b tag second highest (left) and highest (right) $\pT$ category for the $\tauhtauh$ (top), the combined $\etauh$ and $\mutauh$ (middle) and the $\emu$ (bottom) channels. The solid histograms show the stacked background predictions after a signal plus background fit to the data. The best fit gluon fusion signal for $m_{\phi}$ = 100 GeV is shown by the red line. Also shown by a blue dashed line on the bottom pad is the ratio of the background predictions for the background only fit to the signal plus background fit }
 \label{fig:low_mass_postfit}
 \end{figure}
 
 \begin{figure}[!hbtp]
 \centering
-    \subfloat[]{\includegraphics[width=0.42\textwidth]{Figures/postfit_highmass_tt_nobtag-cropped.pdf}}
-    \subfloat[]{\includegraphics[width=0.42\textwidth]{Figures/postfit_highmass_tt_btag-cropped.pdf}} \\
-    \subfloat[]{\includegraphics[width=0.42\textwidth]{Figures/postfit_highmass_lt_nobtag_tightmT-cropped.pdf}}
-    \subfloat[]{\includegraphics[width=0.42\textwidth]{Figures/postfit_highmass_lt_btag_tightmT-cropped.pdf}} \\
-    \subfloat[]{\includegraphics[width=0.42\textwidth]{Figures/postfit_highmass_em_nobtag_mediumdzeta-cropped.pdf}}
-    \subfloat[]{\includegraphics[width=0.42\textwidth]{Figures/postfit_highmass_em_btag_mediumdzeta-cropped.pdf}}
+    \subfloat[]{\includegraphics[width=0.42\textwidth]{Figures/postfit_highmass_tt_nobtag.pdf}}
+    \subfloat[]{\includegraphics[width=0.42\textwidth]{Figures/postfit_highmass_tt_btag.pdf}} \\
+    \subfloat[]{\includegraphics[width=0.42\textwidth]{Figures/postfit_highmass_lt_nobtag_tightmT.pdf}}
+    \subfloat[]{\includegraphics[width=0.42\textwidth]{Figures/postfit_highmass_lt_btag_tightmT.pdf}} \\
+    \subfloat[]{\includegraphics[width=0.42\textwidth]{Figures/postfit_highmass_em_nobtag_mediumdzeta.pdf}}
+    \subfloat[]{\includegraphics[width=0.42\textwidth]{Figures/postfit_highmass_em_btag_mediumdzeta.pdf}}
 \caption{Distributions of $m_{T}^\text{tot}$ in the $\tauhtauh$ no b tag (a) and b tag (b) categories, the combined $\etauh$ and $\mutauh$ no b tag (c) and b tag (d) Tight-$m_{T}$ categories and the $\emu$ no b tag (e) and b tag (f) Medium-$D_{\zeta}$ categories. The solid histograms show the stacked background predictions after a background only fit to the data. The best fit gluon fusion signal for $m_{\phi}$ = 1.2 TeV is shown by the red line, b associated production and $U_{1}$ signals are also shown for illustrative purposes.}
 \label{fig:high_mass_postfit}
 \end{figure}
@@ -992,19 +1047,24 @@ For simplicity, the $\etauh$ and $\mutauh$ channels have been combined.
 \newpage
 \section{Model Independent Results}
 
-\subsection{Limit Setting}
+\subsection{Limits}
 
-\begin{equation}
-  q_{\mu} = -2 \ln \Biggl(\frac{\mathcal{L}(\text{data} | \mu, \hat{\theta}_{\mu})}{\mathcal{L}(\text{data} | \hat{\mu}, \hat{\theta}_{\hat{\mu}})}\Biggl), 0 \leq \hat{\mu} \leq \mu,
-\end{equation}
+95\% CL limits are set on the assumption of absence of a signal for the search for a gg$\phi$ or bb$\phi$ resonance and shown in Figure~\ref{fig:model_independent_limits}.
+In each case, the other process is allowed to float freely in the fit.
+The excesses observed in the postfit distributions act to weaken the observed limit compared to the expected limit at 100 GeV and 1.2 TeV, as more data was observed than expected.
+For gg$\phi$ production the expected limits flatten under 100 GeV, due to difficulty of separating signal from the Z boson at this mass.
+Both sets of limits vary from $\mathcal{O}(10\text{ pb})$ at 60 GeV to $0.3$ fb at 3.5 TeV.
 
 \begin{figure}[!hbtp]
 \centering
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/model_independent_limit_ggH.pdf}}
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/model_independent_limit_bbH.pdf}}
-\caption{Expected (dashed line) and observed (solid line and dots) 95\% CL upper limits on the product of the cross sections and branching fraction for the decay into $\tau$ leptons for (left) gg$\phi$ and (right) bb$\phi$ production in a mass range of 60 $\leq m_{\phi} \leq$ 3500 GeV.  The dark green and bright yellow bands indicate the central 68\% and 95\% intervals for the expected exclusion limit.}
+\caption{Expected (dashed line) and observed (solid line and dots) 95\% CL upper limits on the product of the cross sections and branching fraction for the decay into $\tau$ leptons for (a) gg$\phi$ and (b) bb$\phi$ production in a mass range of 60 $\leq m_{\phi} \leq$ 3500 GeV.  The dark green and bright yellow bands indicate the central 68\% and 95\% intervals for the expected exclusion limit.}
 \label{fig:model_independent_limits}
 \end{figure}
+
+95\% expected limits are drawn on the fit to each decay channel separately.
+This gives a measure of the sensitivity of each tau decay channel.
 
 \begin{figure}[!hbtp]
 \centering
@@ -1043,7 +1103,7 @@ For simplicity, the $\etauh$ and $\mutauh$ channels have been combined.
 \begin{figure}[!hbtp]
 \centering
     \includegraphics[width=0.5\textwidth]{Figures/ccc_fit_result_mH1200_per-channel.pdf}
-\caption{ompatibility plots of the high mass excess split by analysis channels. In each case the fitted signal strength is decoupled in each channel.}
+\caption{Compatibility plots of the high mass excess split by analysis channels. In each case the fitted signal strength is decoupled in each channel.}
 \label{fig:high_mass_compatibility}
 \end{figure}
 
