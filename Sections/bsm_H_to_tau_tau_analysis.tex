@@ -951,10 +951,11 @@ The background-only fit is performed with $N_j$ (number of signal processes) set
 For all signal-plus-background fits, the fit is done with respect to a single mass hypothesis, however within this mass hypothesis can be a number of signal processes.
 The model independent resonance search has separate $gg\phi$ and $bb\phi$ signal modes and so two rate parameters $\mu_{gg\phi}$ and $\mu_{bb\phi}$ are needed.
 When the samples are originally scaled to the cross section times branching ratio ($\sigma \times B (\phi\rightarrow\tau\tau)$) of 1 pb and $g(\mu)=\mu$ for both processes, $\mu_{gg\phi}$ and $\mu_{bb\phi}$ represent the $\sigma \times B (\phi\rightarrow\tau\tau)$ with units of pb.
+To avoid negative signal strengths, $\mu$ will only be taken to be positive.
 Also used in the following subsections, is a signal-plus-background channel/category compatibility fit.
 In this fit the signal processes and rate parameters are further split in each channel or category utilising index $i$ in Eq.~\ref{eqn:likelihood}.
 This is used to determine the compatibility of the results in different decay channels and analysis categories.
-To avoid negative signal strengths, $\mu$ will only be taken to be positive. \\
+In this case, $\mu$ is allowed to take negative values to help fully understand the fits to data in each channel or category. \\
 
 The vector leptoquark search has two signal modes; the t-channel interaction and the interference with Drell-Yan however as this is a model dependent interpretation of these results both these rate parameters scale together.
 The scaling functions differ between the two processes with $g_{\text{t-channel}}(\mu) = \mu^4$ and $g_{\text{interference}}(\mu) = \mu^2$ to mimic how the cross sections of each process scales.
@@ -1063,8 +1064,13 @@ Both sets of limits vary from $\mathcal{O}(10\text{ pb})$ at 60 GeV to $0.3$ fb 
 \label{fig:model_independent_limits}
 \end{figure}
 
-95\% expected limits are drawn on the fit to each decay channel separately.
-This gives a measure of the sensitivity of each tau decay channel.
+95\% expected limits are drawn on the fit to each di-tau decay channel individually and are shown in Figure~\ref{fig:model_independent_limits_by_channel}.
+This gives a measure of the sensitivity of each channel.
+In the high mass optimisation categories, the combined limit is heavily dominated by the $\tauhtauh$ channel.
+This is mostly driven purely by branching fraction, as all channels in this mass range have similar signal separation ability.
+In the high mass optimisation categories,  the combined limit is more a contribution of all channels. 
+In the $\tauhtauh$ channel in this region, the QCD multijet background is the largest fraction of any non $Z\rightarrow\tau\tau$ backgrounds in all channels and so the limit for this channel is weakened and the other channels contribute to the combined limit more.
+The high DoubleTau trigger $\pT$ thresholds (chosen because of the QCD multijet background) also lowers the signal acceptance in the $\tauhtauh$ channel.
 
 \begin{figure}[!hbtp]
 \centering
@@ -1074,15 +1080,30 @@ This gives a measure of the sensitivity of each tau decay channel.
 \label{fig:model_independent_limits_by_channel}
 \end{figure}
 
+A comparison of the limits are also made with the ATLAS experiment and in particular the results presented in Ref.~\cite{ATLAS:2020zms}.
+This ATLAS search looks for the same signal but over a smaller mass range, from 200 GeV to 2.5 TeV.
+Plots showing the comparison of the expected and observed limits for gg$\phi$ and bb$\phi$ are shown in Figure~\ref{fig:model_independent_limits_ATLAS}.
+The expected limits from the CMS and ATLAS results are roughly compatible over the shared mass range, except at high mass where the extra statistics from the $Z\rightarrow \tau\tau$ samples compared to MC allow for lower background uncertainties and hence a stronger limit.
+The ATLAS result observed no excess of events compatible with gg$\phi$ signal at 1.2 TeV, in fact a small deficit was observed.
+Also, ATLAS observed local excesses at 400 GeV of 2.2$\sigma$ for gg$\phi$ and 2.7$\sigma$ for bb$\phi$.
+None of these excesses are consistent between the ATLAS and CMS results.
+The ATLAS search does not stretch to the mass of the low mass CMS excess and so cannot be used a cross-check for this.
+
 \begin{figure}[!hbtp]
 \centering
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/limit_comparison_gg_ATLAS.pdf}}
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/limit_comparison_bb_ATLAS.pdf}}
 \caption{Comparison of the expected 95\% CL upper limits on the product of the cross sections and branching fraction for the decay into $\tau$ leptons for (left) gg$\phi$ and (right) bb$\phi$ production, split by the CMS result detailed in this thesis and the ATLAS result from Ref.~\cite{ATLAS:2020zms}.}
-\label{fig:model_independent_limits_by_channel}
+\label{fig:model_independent_limits_ATLAS}
 \end{figure}
 
 \subsection{Significance and Compatibility}
+
+The $p$-values and significances at each model independent signal hypothesis are calculated as described in Section~\ref{sec:sig_ext} and shown in Figure~\ref{fig:significance}.
+Identical to the model independent limits, the gg$\phi$ or bb$\phi$ process is allowed to float freely if not the parameter of interest.
+The excesses for the gg$\phi$ process peak at 100 GeV and 1.2 TeV and quantify to a local (global) significance of 3.1$\sigma$ (2.7$\sigma$) and 2.8$\sigma$ (2.2$\sigma$).
+There are also excesses at neighbouring mass points (particularly at high mass), however this is consistent with the mass resolution of the fitted templates for the central values.
+No deviations beyond 2$\sigma$ are observed for bb$\phi$ production.
 
 \begin{figure}[!hbtp]
 \centering
@@ -1091,6 +1112,15 @@ This gives a measure of the sensitivity of each tau decay channel.
 \caption{Local $p$-value and significance of a gg$\phi$ (left) and bb$\phi$ (right) signal as a function of $m_{\phi}$.}
 \label{fig:significance}
 \end{figure}
+
+As many different decay channels and categories are used to extract these significances, the signal strength is studied in each channel and category.
+This is done via compatibility fits as described in Section~\ref{sec:sig_ext}, where the signal strength parameter in each channel/category is decoupled.
+No statistically significant differences are observed in the best fit signal strength in any decay channel or category fit and $p$-values between each channel or category fit are always above 0.05.
+Figure~\ref{fig:low_mass_compatibility} shows the results of the compatibility fits in the low mass optimisation categories split by di-tau decay channels and $\pT$ bins fit and Figure~\ref{fig:high_mass_compatibility} shows the compatibility fits in the high mass optimisation categories split by di-tau decay channels.
+The low mass signal strengths are no more dominant in any $\pT$ region than another.
+In both low and high mass cases, the signal strengths are consistent across di-tau decay channels.
+There is a small shift in the high mass $\emu$ categories to a negative signal strength, these categories have little to no sensitivity to this signal in comparison to others and a small deficit is observed in data, resulting in fits for a negative signal strength with a large uncertainty. 
+
 
 \begin{figure}[!hbtp]
 \centering
@@ -1108,6 +1138,15 @@ This gives a measure of the sensitivity of each tau decay channel.
 \end{figure}
 
 \subsection{2D Likelihood Scans}
+
+As the model independent search looks for 2 signal modes at each mass point, the results for both processes happening simultaneously are studied.
+This is done in the form of 2D likelihood scans.
+The best fit cross section times branching fractions of each process and the 95\% and 68\% confidence intervals are shown for a number of different mass scenarios in Figure~\ref{fig:2d_likelihood_scans}.
+The SM prediction in all plots is at (0,0).
+These results highlight how the excesses at 100 GeV and 1.2 TeV are dominated in the phase space in which gg$\phi$ and not bb$\phi$ signals are allowed.
+In the 60 GeV example, there are smaller deviations in both gg$\phi$ and bb$\phi$ and so the SM background is over 2$\sigma$ away.
+Otherwise, signal strengths are completely compatible with the background expectation.
+
 
 \begin{figure}[!hbtp]
 \centering
@@ -1127,25 +1166,52 @@ This gives a measure of the sensitivity of each tau decay channel.
 \newpage
 \section{Model Dependent Limits}
 
-For the hypothesis test the likelihood is
-%\begin{equation}
-%
-%\end{equation}
+The exclusion contours for two benchmark scenarios of the MSSM, $M_{h}^{125}$ and $M_{h,EFT}^{125}$, are presented in Figure~\ref{fig:mssm_limits}. 
+The red hatched regions denote areas where $m_{h}$ is inconsistent with the observed SM Higgs boson mass within a ${\pm}3$ GeV boundary. 
+For low values of $\tan\beta$, higher values of the additional SUSY particle masses, denoted as $m_{\text{SUSY}}$, are needed to explain a mass of approximately $125$ GeV for the Higgs boson. 
+In the $M_{h}^{125}$ scenario, $m_{\text{SUSY}}$ is fixed, and the predicted value of $m_{h}$ is below $122$ GeV. 
+In contrast, the $M_{h,EFT}^{125}$ scenario adjusts $m_{\text{SUSY}}$ to satisfy the required value of $m_{h}$ for each point in ($m_{A}$, $\tan\beta$) individually, accounting for the logarithmic corrections associated with the large values of $m_{\text{SUSY}}$ using an effective field theory approach. 
+The red hatched region in Figure~\ref{fig:mssm_limits} (b) indicates that the required values of $m_{\text{SUSY}}$ exceed the GUT scale at very low values of $m_{A}$ in this scenario. 
+The Higgs boson masses, mixing angle $\alpha$, and effective Yukawa couplings were calculated using \textsc{FeynHiggs}, and branching fractions for the decay into tau leptons and other final states were obtained from a combination of the \textsc{FeynHiggs} and \textsc{HDECAY}, following the prescriptions in Refs.\cite{LHCHiggsCrossSectionWorkingGroup:2013rie,deFlorian:2016spz,Denner:2011mq}, for the scenarios described in Ref.\cite{Bagnaschi:2791954}. \\
+
+For the $M_{h,EFT}^{125}$ scenario, the sensitivity sharply drops at $m_{A}=2m_{t}$ due to a drop in the branching fractions for the decay of A and H into tau leptons, when the A and H decays into two on-shell top quarks becomes kinematically accessible. 
+Both scenarios are excluded at 95\% CL for $\mA\lesssim350$ GeV. 
+For $\mA\lesssim250$ GeV, most of the ggH/A events do not enter the no b tag categories due to the $m_{\tau\tau}>250$ GeV requirement. 
+In this parameter space, the sensitivity to the MSSM is driven by the measurements of the observed Higgs boson, even though H and A still contribute to the categories here. 
+The sensitivity to the H and A enters mainly via the bb$\phi$ signal in the b tag categories, especially for increasing values of $\tan\beta$. \\
+
+Other MSSM scenarios are tested and detailed in \cite{}.
+One scenario of note is the $M_{H}^{125}$ scenario, which is the equivalent scenario to the $M_{h}^{125}$ but with the observed Higgs boson being the heavier CP-even Higgs boson.
+Despite the local excess at a resonant mass of 100 GeV, this scenario is entirely excluded by the search. 
+This is mostly due to the sensitivity of the b tag categories to b associated production.
+The local excess observed at 1.2 TeV is hard to rectify within these MSSM benchmark scenarios.
+The lack of any excess in the b tag categories strictly constrains the b associated production cross section times branching fraction.
+It is not possible within these scenarios to predict the excess of gluon fusion events within the constraints placed on b associated production.
 
 \begin{figure}[!hbtp]
 \centering
-    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/model-dependent_limit_mh125.pdf}}
-    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/model-dependent_limit_mh125EFT.pdf}}
-\caption{Expected and observed 95\% \CL exclusion contours in the MSSM (a) $m_{h}^{125}$ and (b) $m_{h,EFT}^{125}$ scenarios. The exclusion limit only on background expectation is shown as a dashed black line, the dark and bright grey bands show the 68\% and 95\% intervals of the expected exclusion and the observed exclusion contour is shown by the blue area. The parameter space where \mh deviates by more then ${\pm}3\GeV$ from the observed SM Higgs boson mass it shown by a red hatched area.
+    \subfloat[]{\includegraphics[width=0.65\textwidth]{Figures/model-dependent_limit_mh125.pdf}} \\
+    \subfloat[]{\includegraphics[width=0.65\textwidth]{Figures/model-dependent_limit_mh125EFT.pdf}}
+\caption{Expected and observed 95\% CL exclusion contours in the MSSM $M_{h}^{125}$ (a) and $M_{h,EFT}^{125}$ (b) scenarios. The exclusion limit only on background expectation is shown as a dashed black line, the dark and bright grey bands show the 68\% and 95\% intervals of the expected exclusion and the observed exclusion contour is shown by the blue area. The parameter space where \mh deviates by more then ${\pm}3$ GeV from the observed SM Higgs boson mass it shown by a red hatched area.
 }
 \label{fig:mssm_limits}
 \end{figure}
 
+Upper limits of 95\% confidence level for VLQ BM 1 and 2 are shown Figure~\ref{fig:vlq_limits}. 
+These are drawn with respect to the leptoquark mass ($m_{U}$) and coupling ($g_{U}$).
+The limit on $g_{U}$ decreases as $m_{U}$ increases, with values of $g_U$ ranging from 1.3 to 5.2 in VLQ BM 1 and 0.8 to 3.2 in VLQ BM 2. 
+VLQ BM 2 has stronger exclusion limits than VLQ BM 1 due to additional right-handed couplings of the leptoquark with a bottom quark and a tau lepton.
+The observed limits fall within the central 95\% intervals of the expected limits when no signal is present. 
+The expected limits are also within the 95\% confidence interval of the best fit results reported by Ref.\cite{Cornella:2021sby}, indicating that the search is capable of detecting a part of the parameter space that can explain the anomalies observed in b physics. \\
+
+Similarly to the MSSM scenarios, the local excess at 1.2 TeV is not consistent with a VLQ BM 1 or 2 vector leptoquark.
+Again this is due to lack of signal in the b tag categories, where the reduction in backgrounds makes the t-channel signal with initial state radiation the dominant search option.
+
 \begin{figure}[!hbtp]
 \centering
-    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/vlq_bm_1.pdf}}
-    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/vlq_bm_2.pdf}}
-\caption{Expected and observed 95\% \CL upper limits on \gU in the VLQ BM (a) 1 and (b) 2 scenarios, in a mass range of $1<\mU<5\TeV$.  The exclusion limit only on background expectation is shown as a dashed black line, the dark and bright grey bands show the 68\% and 95\% intervals of the expected exclusion and the observed exclusion contour is shown by the blue area. The 95\% confidence interval for the preferred region from the global fit presented in Ref.~\cite{Cornella:2021sby} is also shown by the green shaded area.
+    \subfloat[]{\includegraphics[width=0.65\textwidth]{Figures/vlq_bm_1.pdf}} \\
+    \subfloat[]{\includegraphics[width=0.65\textwidth]{Figures/vlq_bm_2.pdf}}
+\caption{Expected and observed 95\% CL upper limits on \gU in the VLQ BM 1 (a) and 2 (b) scenarios, in a mass range of $1<m_{U}<5$ TeV.  The exclusion limit only on background expectation is shown as a dashed black line, the dark and bright grey bands show the 68\% and 95\% intervals of the expected exclusion and the observed exclusion contour is shown by the blue area. The 95\% confidence interval for the preferred region from the global fit presented in Ref.~\cite{Cornella:2021sby} is also shown by the green shaded area.
 }
 \label{fig:vlq_limits}
 \end{figure}
