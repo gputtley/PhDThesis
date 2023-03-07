@@ -8,12 +8,12 @@ This chapter will detail the searches for two such areas of new physics: additio
 These searches are split up into three sections: 
 \begin{enumerate}[i)]
   \item A model independent search for single narrow spin-0 resonance, $\phi$, produced via gluon fusion (gg$\phi$) or in association with a bottom quark (bb$\phi$). The SM Higgs boson is treated as a background. The Yukawa couplings that contribute to the gluon fusion loop are set to SM values.
-   \item A search for the MSSM Higgs sector, in a number of benchmark scenarios. The benchmark scenarios are defined in Section~\ref{sec:additional_higgs_bosons}. The production of SM Higgs boson is also used to constrain the available phase space.
+   \item A search for the MSSM Higgs sector, in a number of benchmark scenarios. The benchmark scenarios are defined in Ref.~\cite{} and the $M_{h}^{125}$ and $M_{h,\text{ EFT}}^{125}$ are shown in this chapter. The production of the observed Higgs boson particle at 125 GeV is also used to constrain the available phase space.
   \item A search for the t-channel exchange of a $U_{1}$ vector leptoquark. Two scenarios are taken, based of the best fit to the b anomalies. These scenarios are detailed in Section~\ref{sec:vlq}.
 \end{enumerate}
 
 These searches are performed with the full run-2 dataset ($138 \sifb$) collected by the CMS experiment. 
-The search for additional Higgs bosons had previously been performed with data collected in 2016 ($39 \sifb$) and results were consistent with the SM background prediction.
+The search for additional Higgs bosons had previously been performed with data collected in 2016 ($39 \sifb$) and results were consistent with the SM background prediction \cite{}.
  
 \section{Signal Modelling} 
  
@@ -23,8 +23,8 @@ The search for additional Higgs bosons had previously been performed with data c
 Extended Higgs sectors, such as that of the MSSM, can be probed by direct searches for the additional bosons and further precise measurements of the Standard Model Higgs boson. 
 This search for an extended Higgs sector is motivated by Type II 2HDMs, such as the MSSM.
 In these models $\tan\beta$ enhances couplings of additional Higgs bosons to bottom-like quarks and leptons, whilst top-like couplings are suppressed.
-This narrows down the most important production modes of the Higgs boson into two categories: Gluon fusion and production in association with a bottom quark.
-Examples of these are shown in Figure~\ref{fig:mssm_feynamn}.
+This splits dominant production modes of the Higgs boson into two categories: Gluon fusion and production in association with a bottom quark.
+Examples of the Feynman diagrams for such processes are shown in Figure~\ref{fig:mssm_feynamn}.
 
 \begin{figure}[H]
 \centering
@@ -102,19 +102,19 @@ Examples of these are shown in Figure~\ref{fig:mssm_feynamn}.
 \end{figure}
 
 With the $\tan\beta$ enhancement, the decays of additional Higgs bosons to tau leptons and bottom quarks are most likely.
-Tau leptons are identified with a higher purity than bottom quarks a the CMS detector.
+Tau leptons are identified with a higher purity than bottom quarks at the CMS detector.
 It is also easier to separate $\tau^{+}\tau^{-}$ from the large QCD multijet background produced from the high energy proton-proton collisions.
 This hypothesis was tested with the 2016 dataset and although no deviations were observed, the strongest limits on the MSSM phase space was placed by the $\tau^+\tau^-$ final states. \\
 
-For this analysis, the production of additional Higgs bosons over a mass range of 60 GeV to 3.5 TeV are generated.
-Gluon fusion is simulated at NLO precision using the 2HDM implementation of POWHEG 2.0.
+For this analysis, signal templates for the production of additional Higgs bosons over a mass range of 60 GeV to 3.5 TeV are generated.
+Gluon fusion is simulated at NLO precision using the 2HDM implementation of \POWHEG 2.0.
 The kinematic properties are highly dependent on the contributions to the loop, which vary dependent on the specific signal model.
 To account for the different loop contributions at the NLO plus parton shower prediction, weights based off the $\pT$ spectra are calculated to split the contributions from the t quark only, b quark only, and tb-interference.
 Once individual templates have been determined for each contribution to the loop, the 2HDM samples can be scaled to the correct specific MSSM scenario prediction by the following formula.
 
 \begin{align}
 \frac{d\sigma_{\text{MSSM}}}{d\pT} & = \left(\frac{Y_{t,\text{MSSM}}}{Y_{t,\text{2HDM}}}\right)^{2}\frac{d\sigma^{t}_{\text{2HDM}}}{d\pT}(Q_{t}) + \left(\frac{Y_{b,\text{MSSM}}}{Y_{b,\text{2HDM}}}\right)^{2}\frac{d\sigma^{b}_{\text{2HDM}}}{d\pT}(Q_{b}) + \nonumber \\
-& \left(\frac{Y_{t,\text{MSSM}}}{Y_{t,\text{2HDM}}}\frac{Y_{b,\text{MSSM}}}{Y_{b,\text{2HDM}}}\right) \left\{ \frac{d\sigma^{t+b}_{\text{2HDM}}}{d\pT}(Q_{tb}) - \frac{d\sigma^{t}_{\text{2HDM}}}{d\pT}(Q_{tb}) - \frac{d\sigma^{b}_{\text{2HDM}}}{d\pT}(Q_{tb}) \right\}
+& \left(\frac{Y_{t,\text{MSSM}}}{Y_{t,\text{2HDM}}}\frac{Y_{b,\text{MSSM}}}{Y_{b,\text{2HDM}}}\right) \left\{ \frac{d\sigma^{t+b}_{\text{2HDM}}}{d\pT}(Q_{tb}) - \frac{d\sigma^{t}_{\text{2HDM}}}{d\pT}(Q_{tb}) - \frac{d\sigma^{b}_{\text{2HDM}}}{d\pT}(Q_{tb}) \right\} 
 \label{eqn:mssm_xs}
 \end{align}
 
@@ -136,10 +136,10 @@ The distributions peak at a higher $\pT$ for the top quark loop, therefore at sm
 \label{fig:mssm_sig}
 \end{figure}
 
-Production in association with bottom quarks is simulated at NLO precision using the corresponding POWHEG 2.0 implementation in the four-flavour scheme.
+Production in association with bottom quarks is simulated at NLO precision using the corresponding \POWHEG 2.0 implementation in the four-flavour scheme.
 All additional Higgs boson signal generation is performed using the parton distribution function (PDF) NNPDF3.1.
-Tau lepton decay, parton showering and hadronisation are all modelled with the PYTHIA event generator where the PU profile is matched to data.
-All events generated are passed through a GEANT4-based simulation of the CMS detector and reconstructed in the same way as data. \\
+Tau lepton decay, parton showering and hadronisation are all modelled with the \PYTHIA event generator where the PU profile is matched to data.
+All events generated are passed through a \texttt{GEANT4}-based simulation of the CMS detector and reconstructed in the same way as data. \\
 
 The model dependent search for the MSSM also looks to find differences from the observed SM Higgs boson and the predicted MSSM SM-like Higgs boson.
 In each MSSM benchmark scenario, an uncertainty of $\pm 3$ GeV is given on the prediction for the SM Higgs boson mass.
@@ -280,7 +280,6 @@ The interference is mostly a destructive effect (except for at small $m_{\tau\ta
 The interference peaks negatively between 100 and 200 GeV and in this region the combined yield can be negative.
 Due to the difference in scaling of the two effects, at small $g_{U}$ the interference is more dominant than the signal and hence the yield of the combined result is reduced.
 
-\newpage
 \section{Event Selection}
 
 The possible decays of two tau leptons and their branching fractions, where the tau decay is grouped into three categories e, $\mu$ and $\tau_h$ as defined in Section~\ref{sec:object_reconstruction}, are shown in Table~\ref{tab:ditau_br}. 
@@ -384,7 +383,6 @@ In W + jets and $\ttbar$ events the directions of the visible and missing produc
 Therefore only events with $D_\zeta >$ -35 GeV are considered for signal events.
 No b tagged events with this cut are vetoed and b tagged events with this cut are used for a $\ttbar$ control region and discussed further in Section~\ref{sec:background_modelling}.
 
-\newpage
 \section{Search Optimisation}
 \label{sec:search_optimisation}
 
@@ -455,21 +453,16 @@ A schematic of the categories used in the low mass optimisation procedure is sho
 \end{figure}
 
 The final difference with the high mass optimisation procedure is the discriminator used, here the reconstructed di-tau mass is used.
-This helps to separate signal events from the Z boson peak in this region.
-Examples of the signal mass separations in the $\tauhtauh$ channel with the low and high mass discriminators are shown in Figure~\ref{fig:} \\
+Due to more than one neutrino in the event, it is not possible to fully reconstruct the di-tau mass.
+To resolve this issue a likelihood-based method named SVFit algorithm is used \cite{}.
+This helps to separate signal events from the Z boson peak in this region. \\
 
-FIGURES OF DISTRIBUTIONS
-VLQ AND INTERFERENCE
-GGH AND BBH heavy
-GGH AND BBH light \\
-
-Finally the SM Higgs optimisation procedure is taken from the CMS SM $H \rightarrow \tau\tau$ analysis.
+Finally the SM Higgs optimisation procedure is taken from the CMS SM $H \rightarrow \tau\tau$ analysis detailed in Ref.~\cite{}.
 This was previously used for simplified template cross section measurements.
 This uses a neural-network-based (NN) to obtain the most precise estimates from data of the SM Higgs produced via gluon fusion, vector boson fusion or vector boson associated production.
-The NN based analysis introduces 26 categories, 8 of which are optimised to pull the out the Higgs boson signal.
+The NN based analysis introduces 26 categories, 8 of which are optimised to pull out the Higgs boson signal.
 Although the NN is trained specifically to target events with an SM-like Higgs boson, signal events with differing masses can also enter the NN categories.
 
-\newpage
 \section{Background Modelling Overview}
 \label{sec:background_modelling}
 
@@ -485,6 +478,7 @@ These are split into a five categories:
     \item Non $\ttbar$ events with a prompt light lepton ($e$ or $\mu$ not from a $\tau$ decay) and the other object (if there are not two prompt light lepton) is from a genuine tau leptons.
     \item Events with a light lepton faking a hadronic tau and the other object (if there are not two light leptons faking a hadronic tau) are reconstructed as prompt light lepton or from genuine tau leptons. 
     \item Events with a jet faking a light lepton and the other object is from genuine tau leptons in the $\etauh$, $\mutauh$ or $\tauhtauh$ channels.
+    \item Events with a muon faking an electron in the $\emu$ channel.
     \item Events with one jet faking a light lepton and the other object from a prompt light lepton in the $\emu$ channel.
    \end{itemize}
 \end{enumerate}
@@ -509,7 +503,6 @@ The \POWHEG version 1.0 at NLO precision is used for single top quark production
 When compared with data, W + jets, $Z\rightarrow ll$, $\ttbar$, and single top quark events in the tW channel are normalised to their cross sections at next-to-NLO (NNLO) precision~\cite{Melnikov:2006kv,Czakon:2011xx,Kidonakis:2013zqa}. 
 Single top quark (t-channel) and diboson events are normalized to their cross sections at NLO precision or higher~\cite{Kidonakis:2013zqa,Campbell:2011bn,Gehrmann:2014fva}.
 
-\newpage
 \section{QCD Estimation in the $\emu$ Channel}
 \label{sec:qcd}
 
@@ -529,7 +522,6 @@ If the two jets are initiated from the heavy quarks there is a large bias toward
 However if one of the heavy quarks is tagged as a b jet, another object has to be the jet initiator (a radiated gluon for example) and there is therefore no charge preference in the pair.
 As $F_{T}$ is originally fit inclusively in numbers of b jets and the 0 bin is dominant, the correction over predicts the opposite sign to same sign ratio and so a large correction is needed as observed.
 
-\newpage
 \section{Embedding Method}
 \label{sec:embedding}
 
@@ -561,14 +553,14 @@ A schematic of the process is shown in Figure~\ref{fig:embedding}. \\
 
 \begin{figure}[!hbtp]
 \centering
-    \includegraphics[width=0.8\textwidth]{Figures/Embedding_Diagram.pdf}
+    \includegraphics[width=0.9\textwidth]{Figures/Embedding_Diagram.pdf}
 \caption{Schematic of the embedding method to model genuine di-tau backgrounds from di-muon events in data.}
 \label{fig:embedding}
 \end{figure}
 
 The embedding method is validated on dedicated samples, where the muons from data are replaced by simulated muons instead of taus.
+Plots of the agreement from these dedicated samples with data are shown in Figure~\ref{}.
 
-\newpage
 \section{Fake Factor Method}
 \label{sec:ff}
 
@@ -769,6 +761,11 @@ When either correction variable is separated from 0, a larger quantity of fake $
 In these regions a large correction is needed due to the mis-measured jet energy spectrum shifting the hadronic tau candidate isolation and so shifting the tau identification scores. 
 Examples of these closure corrections are shown in Figure~\ref{fig:ff_dr}\\
 
+After the \texttt{Determination Region} is modelled well for all variables of interest, extrapolation corrections from the fake factors derived in B applied to region D are calculated.
+In the $\tauhtauh$ the correction is parameterised by the $p_{T}$ of the leading hadronic tau candidate, in the $\etauh$ and $\mutauh$ channels it is parameterised by the $\pT$ of the light lepton.
+Where statistics allow, these corrections are calculated in the high mass optimisation procedure categories.
+Examples of the extrapolation corrections are shown in Figure~\ref{fig:ff_dr_to_ar}.
+
 \begin{figure}[!hbtp]
 \centering
     \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ff_closure_ss_closure_nbjet0_qcd_tt_2018.pdf}} 
@@ -778,12 +775,6 @@ Examples of these closure corrections are shown in Figure~\ref{fig:ff_dr}\\
 \label{fig:ff_dr}
 \end{figure}
 
-After the \texttt{Determination Region} is modelled well for all variables of interest, extrapolation corrections from the fake factors derived in B applied to region D are calculated.
-In the $\tauhtauh$ the correction is parameterised by the $p_{T}$ of the leading hadronic tau candidate, in the $\etauh$ and $\mutauh$ channels it is parameterised by the $\pT$ of the light lepton.
-Where statistics allow, these corrections are calculated in the high mass optimisation procedure categories.
-Examples of the extrapolation corrections are shown in Figure~\ref{fig:ff_dr_to_ar}.
-
-
 \begin{figure}[!hbtp]
 \centering
     \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ff_closure_os_closure_nbjet0_alt_qcd_tt_2018.pdf}} 
@@ -792,7 +783,6 @@ Examples of the extrapolation corrections are shown in Figure~\ref{fig:ff_dr_to_
 \caption{Determination region to application region closure correction fits with 2018 data. (a) is the correction moving from same sign to opposite sign tau leptons the parameterised by leading $\tauh$ $\pT$ in events with $N_{\text{b-jets}}=0$ in the $\tauhtauh$ channel. (b) and (c) show the correction for the $\mutauh$ channel moving from same sign to opposite sign tau leptons and high $m_{T}$ to low $m_{T}$ both parameterised by the the muon $\pT$ for QCD and W + jets processes respectively.}
 \label{fig:ff_dr_to_ar}
 \end{figure}
-
 
 \subsection{Applying Fake Factors}
 \label{sec:ff_applying}
@@ -825,10 +815,43 @@ This models all events where the leading hadronic tau candidate is a jet fake.
 However, this leaves a small fraction of events, where the leading candidate is a genuine tau and the sub-leading candidate is a jet fake.
 This contribution (mostly from W + jets) is added back with MC.
 
-\newpage
 \section{MC Corrections}
 
-\newpage
+The corrections apply both to simulated and embedding samples as the tau decay is simulated, however they are derived separately. 
+For electrons and muons, corrections are applied to triggers, tracking efficiencies, and the identification and isolation requirements.
+Using the `tag-and-probe' method, they are obtained in bins of $p_T$ and $\eta$ of the corresponding lepton, with $Z\rightarrow ee$ and $Z\rightarrow\mu\mu$ events. 
+These corrections are generally no more than a few percent. 
+The electron energy scale is adjusted to the scale measured in data using the Z boson mass peak in $Z\rightarrow ee$ events. \\
+
+Similarly, corrections are derived for the efficiency of triggering and identification efficiency of $\tauh$ candidates. 
+In the $\etauh$ and $\mutauh$ channels, trigger efficiency corrections are obtained from the ratio of fits to data versus simulated samples, for the trigger efficiency as a function of $p_{T}$. 
+For the $\tauhtauh$ channel, this is instead done using the binned values of the $\tauh$ decay modes.
+The identification efficiency corrections are derived as a function of the $p_T$ of the $\tauh$ candidate. 
+Corrections to the energy scale of the $\tauh$ candidates and of electrons misidentified as $\tauh$ candidates are obtained from likelihood scans of discriminating observables, such as the reconstructed $\tauh$ candidate mass. 
+For muons misidentified as $\tauh$ candidates, the energy scale correction is negligible. \\
+
+The correction of the missing transverse energy's magnitude and resolution in the embedding samples is needed to account for the incomplete removal of energy deposits from muons replaced by simulated tau decays during the embedding procedure. 
+These corrections are derived by comparing $p_{T}^{\text{miss}}$ in embedded events to fully simulated events. \\
+
+In fully simulated events, a specific trigger inefficiency caused by a shift in the timing of the inputs of the ECAL L1 trigger in the region at $\abs{\eta}>2.0$ during the 2016 and 2017 data taking.
+This effect is named prefiring.
+This resulted in a loss of efficiency for events containing an electron or jet with $p_T$ larger than ${\approx}50$ or ${\approx}100)$ GeV respectively, in the region of $2.5<\abs{\eta}<3.0$. 
+Corresponding corrections are derived from data and applied to the simulation. \\
+
+Corrections on the energy of jets are calculated in bins of the jet $p_T$ and $\eta$.
+These range from subpercent levels in the central part of the detector to a few percent in the forward region. 
+The energy resolution of the simulated jets is also tuned to match that of the data. 
+A correction is applied to the missing transverse momentum, based on differences in the estimated hadronic recoil between data and simulation. 
+A MC to data correction for a b jet to pass the selection criteria is also determined. 
+This corrections can adjust the number of b jets in a simulated event. \\
+
+Any differences from simulated events to data, where an electron or muon is reconstructed as a hadronic tau, are corrected from the pure $Z\rightarrow ee$ and $Z\rightarrow\mu\mu$ regions. 
+Similarly, a correction is applied to account for residual differences in the $\mu\rightarrow e$ misidentification rate between data and simulation. \\
+
+Further MC to data corrections are applied to the dilepton mass and $p_{T}$ spectra in simulated $Z\rightarrow ll$ events. 
+These are derived from $Z\rightarrow\mu\mu$ events.
+Additionally, all simulated $\ttbar$ events are weighted to match the top quark $p_{T}t$ distribution observed in data.
+
 \section{Uncertainty Model}
 \label{sec:uncerts}
 
@@ -877,6 +900,14 @@ An uncertainty is also placed on the choice of fit function, the shifts are esti
 The final systematic variation are then on the extrapolation corrections by applying the corrections twice and not at all.
 The size of each systematic uncertainty varies from 0--10\%, whilst the statistical element from the fits can be larger in the tails of the distributions.
 
+\subsubsection{Jets misidentified as light leptons}
+Background with jets misidentified as electrons or muons from QCD are only considered in the $\emu$ channel and modelled from data.
+Uncertainties are placed based on the statistical uncertainties in the determination region which are 2--4\% and the extrapolation to the signal region that are $\mathcal{O}(10\%)$.
+
+\subsubsection{Muons misidentified as electrons}
+Background with muons misidentified as electrons are only considered in the $\emu$ channel.
+These events are modelled from MC and any generator matched muon identified as an electron are given a 15\%--45\% uncertainty, that is derived from the initial corrections.
+
 \subsubsection{MET}
 The MET uncertainties is different dependent on process.
 For all processes that are not $\ttbar$ and diboson, the hadronic recoil response and its resolution are varied within the uncertainties determined during the computation of the recoil corrections.
@@ -888,6 +919,8 @@ Uncertainties on the $\ttbar$ $\pT$ and DY $m_{ll}$-$\pT$ reweighting is placed 
 An additional uncertainty is placed to cover the $\ttbar$ contamination in embedding, where the removed $t\bar{t}$ genuine tau pair is shifted up and down by 10\%.
 Some non-closures are observed in embedded $Z\to\mu\mu$ control samples. 
 Therefore, these non-closures are taken as an additional shape uncertainty as a function of the Z $\pT$ and $m_{\tau\tau}$.
+Uncertainties on the normalisation background processes with sizes 4\% for $Z\rightarrow ll$ and W + jets production~\cite{Melnikov:2006kv}, 6\% for 
+$\ttbar$ production~\cite{Czakon:2011xx,Kidonakis:2013zqa}, and 5\% for diboson and single t quark production~\cite{Kidonakis:2013zqa,Campbell:2011bn,Gehrmann:2014fva}.
 
 \subsubsection{Signal process specific uncertainties}
 For the gg$\phi$ process, in particular for low mass hypotheses, the variation of \texttt{hdamp} parameter of the \POWHEG MC generator as well as the $\mu_{R}$/$\mu_{F}$ scale variations are used to determine the uncertainties
@@ -901,7 +934,6 @@ up to the generator level, and applied as event weights dependent on generator l
 Upper and lower bounds are taken from the efficiency maps provided by the L1 DPG and propagated on all MC samples as shape uncertainty for 2016 and 2017.
 The size of the uncertainty as the weight itself depends on the event topology. In general the uncertainty is at the order of 1\%.
 
-\newpage
 \section{Signal Extraction}
 \label{sec:sig_ext}
 
@@ -995,8 +1027,7 @@ The $p$-value, $p_0$ is then,
 p_{0} = \int^{\infty}_{q_{0}^{\text{obs}}} f(q_{0} \mid 0, \theta_{\mu}^{\text{obs}}).
 \end{equation}
 $p_{0}$ is uniformly distributed between 0 and 1 for the background-only hypothesis and so the probability and significance of rejecting the background-only hypothesis can be found. \\
- 
-\newpage
+
 \section{Postfit Plots}
 
 Figures~\ref{fig:low_mass_postfit} and \ref{fig:high_mass_postfit} show the unblinded distributions in the most sensitive analysis categories.
@@ -1045,7 +1076,6 @@ Similar to the bb$\phi$ signal, the VLQ BM 1 signal is constrained by the result
 \label{fig:high_mass_postfit}
 \end{figure}
 
-\newpage
 \section{Model Independent Results}
 
 \subsection{Limits}
@@ -1058,8 +1088,8 @@ Both sets of limits vary from $\mathcal{O}(10\text{ pb})$ at 60 GeV to $0.3$ fb 
 
 \begin{figure}[!hbtp]
 \centering
-    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/model_independent_limit_ggH.pdf}}
-    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/model_independent_limit_bbH.pdf}}
+    \subfloat[]{\includegraphics[width=0.65\textwidth]{Figures/model_independent_limit_ggH.pdf}} \\
+    \subfloat[]{\includegraphics[width=0.65\textwidth]{Figures/model_independent_limit_bbH.pdf}}
 \caption{Expected (dashed line) and observed (solid line and dots) 95\% CL upper limits on the product of the cross sections and branching fraction for the decay into $\tau$ leptons for (a) gg$\phi$ and (b) bb$\phi$ production in a mass range of 60 $\leq m_{\phi} \leq$ 3500 GeV.  The dark green and bright yellow bands indicate the central 68\% and 95\% intervals for the expected exclusion limit.}
 \label{fig:model_independent_limits}
 \end{figure}
@@ -1070,7 +1100,7 @@ In the high mass optimisation categories, the combined limit is heavily dominate
 This is mostly driven purely by branching fraction, as all channels in this mass range have similar signal separation ability.
 In the high mass optimisation categories,  the combined limit is more a contribution of all channels. 
 In the $\tauhtauh$ channel in this region, the QCD multijet background is the largest fraction of any non $Z\rightarrow\tau\tau$ backgrounds in all channels and so the limit for this channel is weakened and the other channels contribute to the combined limit more.
-The high DoubleTau trigger $\pT$ thresholds (chosen because of the QCD multijet background) also lowers the signal acceptance in the $\tauhtauh$ channel.
+The high DoubleTau trigger $\pT$ thresholds (chosen because of the QCD multijet background) also lowers the signal acceptance in the $\tauhtauh$ channel. \\
 
 \begin{figure}[!hbtp]
 \centering
@@ -1163,7 +1193,6 @@ Otherwise, signal strengths are completely compatible with the background expect
 \label{fig:2d_likelihood_scans}
 \end{figure}
 
-\newpage
 \section{Model Dependent Limits}
 
 The exclusion contours for two benchmark scenarios of the MSSM, $M_{h}^{125}$ and $M_{h,EFT}^{125}$, are presented in Figure~\ref{fig:mssm_limits}. 
@@ -1186,7 +1215,7 @@ Despite the local excess at a resonant mass of 100 GeV, this scenario is entirel
 This is mostly due to the sensitivity of the b tag categories to b associated production.
 The local excess observed at 1.2 TeV is hard to rectify within these MSSM benchmark scenarios.
 The lack of any excess in the b tag categories strictly constrains the b associated production cross section times branching fraction.
-It is not possible within these scenarios to predict the excess of gluon fusion events within the constraints placed on b associated production.
+It is not possible within these scenarios to predict the excess of gluon fusion events within the constraints placed on b associated production. \\
 
 \begin{figure}[!hbtp]
 \centering
@@ -1202,7 +1231,8 @@ These are drawn with respect to the leptoquark mass ($m_{U}$) and coupling ($g_{
 The limit on $g_{U}$ decreases as $m_{U}$ increases, with values of $g_U$ ranging from 1.3 to 5.2 in VLQ BM 1 and 0.8 to 3.2 in VLQ BM 2. 
 VLQ BM 2 has stronger exclusion limits than VLQ BM 1 due to additional right-handed couplings of the leptoquark with a bottom quark and a tau lepton.
 The observed limits fall within the central 95\% intervals of the expected limits when no signal is present. 
-The expected limits are also within the 95\% confidence interval of the best fit results reported by Ref.\cite{Cornella:2021sby}, indicating that the search is capable of detecting a part of the parameter space that can explain the anomalies observed in b physics. \\
+The expected limits are also within the 95\% confidence interval of the best fit results reported by Ref.\cite{Cornella:2021sby} and described in Section~\ref{sec:}.
+This indicates that the search is capable of detecting a part of the parameter space that can explain the anomalies observed in b physics and since no significant was observed for this search, new constraints are placed on the vector leptoquark phase space. \\
 
 Similarly to the MSSM scenarios, the local excess at 1.2 TeV is not consistent with a VLQ BM 1 or 2 vector leptoquark.
 Again this is due to lack of signal in the b tag categories, where the reduction in backgrounds makes the t-channel signal with initial state radiation the dominant search option.
