@@ -8,12 +8,12 @@ This chapter will detail the searches for two such areas of new physics: additio
 These searches are split up into three sections: 
 \begin{enumerate}[i)]
   \item A model independent search for single narrow spin-0 resonance, $\phi$, produced via gluon fusion (gg$\phi$) or in association with a bottom quark (bb$\phi$). The SM Higgs boson is treated as a background. The Yukawa couplings that contribute to the gluon fusion loop are set to SM values.
-   \item A search for the MSSM Higgs sector, in a number of benchmark scenarios. The benchmark scenarios are defined in Ref.~\cite{} and the $M_{h}^{125}$ and $M_{h,\text{ EFT}}^{125}$ are shown in this chapter. The production of the observed Higgs boson particle at 125 GeV is also used to constrain the available phase space.
+   \item A search for the MSSM Higgs sector, in a number of benchmark scenarios. The benchmark scenarios were proposed in Refs.~\cite{Bahl:2018zmf,Bahl:2020kwe,Bahl:2019ago} and summarised in Ref.~\cite{Bagnaschi:2791954}. The $M_{h}^{125}$ and $M_{h,\text{ EFT}}^{125}$ scenarios are shown in this chapter. The production of the observed Higgs boson particle at 125 GeV is also used to constrain the available phase space.
   \item A search for the t-channel exchange of a $U_{1}$ vector leptoquark. Two scenarios are taken, based of the best fit to the b anomalies. These scenarios are detailed in Section~\ref{sec:vlq}.
 \end{enumerate}
 
 These searches are performed with the full run-2 dataset ($138 \sifb$) collected by the CMS experiment. 
-The search for additional Higgs bosons had previously been performed with data collected in 2016 ($39 \sifb$) and results were consistent with the SM background prediction \cite{}.
+The search for additional Higgs bosons had previously been performed with data collected in 2016 ($39 \sifb$) and results were consistent with the SM background prediction \cite{CMS_MSSM_Tau_2018}.
  
 \section{Signal Modelling} 
  
@@ -121,8 +121,7 @@ Once individual templates have been determined for each contribution to the loop
 where $Q_i$ are resummation scales that depend on the mass of the additional Higgs boson.
 Further contributions from any Supersymmetric partners have been checked and account for less than a few percent and so are neglected.
 This is also done separately for the scalar and pseudoscalar additional Higgs bosons, as the $\pT$ distributions can differ.
-The MSSM benchmark scenarios considered are detailed in Ref.~\cite{}.
-The scenarios provide the relative Yukawa couplings (to calculate the cross sections) and branching fractions of the MSSM Higgs bosons.
+The benchmark scenarios provide the relative Yukawa couplings (to calculate the cross sections) and branching fractions of the MSSM Higgs bosons.
 An example of the changes to gluon fusion production, in the MSSM $M_{h}^{125}$ scenario with $m_{A} = 1600$ GeV and $\tan\beta$ varying is shown in Figure~\ref{fig:mssm_sig}.
 The distributions peak at a higher $\pT$ for the top quark loop, therefore at smaller $\tan\beta$, where the top quark contribution is dominant, an additional Higgs boson would be more boosted. \\
 
@@ -368,7 +367,7 @@ p_\zeta^\text{miss} = \pTvec^{\hspace{2pt}\text{miss}} \cdot \hat{\zeta};\qquad
 p_\zeta^\text{vis} = (\pTvec^{\hspace{2pt}e} + \pTvec^{\hspace{2pt}\mu}) \cdot \hat{\zeta}
 \label{eqn:Dzeta_def}
 \end{equation}
-where $\pTvec^{\hspace{2pt}e/\mu}$ corresponds to the transverse momentum vector of the electron or muon and $\hat{\zeta}$ to the bisectional direction between the electron and the muon in the transverse plane~\cite{CDFPzeta}.
+where $\pTvec^{\hspace{2pt}e/\mu}$ corresponds to the transverse momentum vector of the electron or muon and $\hat{\zeta}$ to the bisectional direction between the electron and the muon in the transverse plane.
 A diagram of the inputs is shown Figure~\ref{fig:dzeta_diagram}. \\
 \begin{figure}[!hbtp]
 \centering
@@ -389,11 +388,11 @@ No b tagged events with this cut are vetoed and b tagged events with this cut ar
 The optimisation of the signal extraction depends on which of the three scenarios, set out at beginning of this section, is searched for.
 The components of the optimisation are named the high mass, low mass and SM Higgs optimisation procedures.
 For the model independent search (i) the high or low mass optimisation procedures are used depending on whether the mass of the resonance is greater or less than 250 GeV.
-The search for the MSSM Higgs sector (ii) uses the high mass or the SM Higgs optimisation procedures depending on whether the reconstructed di-tau mass \cite{} is greater or less than 250 GeV.
+The search for the MSSM Higgs sector (ii) uses the high mass or the SM Higgs optimisation procedures depending on whether the reconstructed di-tau mass \cite{Bianchini:2014vza} is greater or less than 250 GeV.
 Finally, the search for vector leptoquarks (iii) uses only the high mass optimisation procedure.
 The procedures are discussed in detail below. \\
 
-The high mass optimisation procedure follows what was done in Ref. \cite{}.
+The high mass optimisation procedure follows what was done in Ref. \cite{CMS_MSSM_Tau_2018}.
 Firstly each category is split into categories with no b tagged and with one or more b tagged events.
 This firstly helps target the additional Higgs boson production modes gluon fusion and b associated production respectively.
 Secondly, the initial state radiation of a t-channel vector leptoquark signal dominated by initial states of b quarks, can lead to additional b jets in the final state.
@@ -454,10 +453,10 @@ A schematic of the categories used in the low mass optimisation procedure is sho
 
 The final difference with the high mass optimisation procedure is the discriminator used, here the reconstructed di-tau mass is used.
 Due to more than one neutrino in the event, it is not possible to fully reconstruct the di-tau mass.
-To resolve this issue a likelihood-based method named SVFit algorithm is used \cite{}.
+To resolve this issue a likelihood-based method named SVFit algorithm is used \cite{Bianchini:2014vza}.
 This helps to separate signal events from the Z boson peak in this region. \\
 
-Finally the SM Higgs optimisation procedure is taken from the CMS SM $H \rightarrow \tau\tau$ analysis detailed in Ref.~\cite{}.
+Finally the SM Higgs optimisation procedure is taken from the CMS SM $H \rightarrow \tau\tau$ analysis detailed in Ref.~\cite{CMS:2022kdi}.
 This was previously used for simplified template cross section measurements.
 This uses a neural-network-based (NN) to obtain the most precise estimates from data of the SM Higgs produced via gluon fusion, vector boson fusion or vector boson associated production.
 The NN based analysis introduces 26 categories, 8 of which are optimised to pull out the Higgs boson signal.
@@ -493,15 +492,11 @@ The data driven background estimations for (i), (ii) and (iii) contribute >98\% 
 The final groups, (iv) and (v), are modelled with MC.
 The $\ttbar$ process is separated due to its large contribution to the phase space where a b jet is required. \\
 
-The W + jets and $Z\rightarrow ll$ processes are simulated at leading order (LO) using the \MGvATNLO 2.2.2 (2.4.2) event generator~\cite{Alwall:2011uj,Alwall:2014hca} for the simulation of the data taken in 2016 (2017--2018). 
-To increase the number of simulated events in regions of high signal purity, supplementary samples are generated with up to four outgoing partons in the hard interaction. 
-For diboson production, \MGvATNLO is used at next-to-LO (NLO) precision. 
-In each case, the FxFx~\cite{Frederix:2012ps} (MLM~\cite{Alwall:2007fs})  prescription is used to match the NLO (LO) matrix element calculation with the parton shower model. 
-For $\ttbar$~\cite{Alioli:2011as} and (t-channel) single top quark production~\cite{Frederix:2012dh}, samples are generated at NLO precision using \POWHEG 2.0~\cite{Nason:2004rx,Frixione:2007vw,Alioli:2010xd,Jezo2015aia}. 
-The \POWHEG version 1.0 at NLO precision is used for single top quark production in association with a W boson (tw channel)~\cite{Re:2010bp}. 
-
-When compared with data, W + jets, $Z\rightarrow ll$, $\ttbar$, and single top quark events in the tW channel are normalised to their cross sections at next-to-NLO (NNLO) precision~\cite{Melnikov:2006kv,Czakon:2011xx,Kidonakis:2013zqa}. 
-Single top quark (t-channel) and diboson events are normalized to their cross sections at NLO precision or higher~\cite{Kidonakis:2013zqa,Campbell:2011bn,Gehrmann:2014fva}.
+In 2016 (2017--2018), the W + jets and $Z\rightarrow ll$ processes are simulated using the \MGvATNLO 2.2.2 (2.4.2) event generator at leading order (LO). 
+Supplementary samples are generated with up to four outgoing partons in the hard interaction to increase the number of simulated events in regions of high signal purity. 
+For diboson production, \MGvATNLO is used at next-to-LO (NLO) precision, and the FxFx~\cite{Frederix:2012ps} (MLM~\cite{Alwall:2007fs}) prescription is used to match the NLO (LO) matrix element calculation with the parton shower model. 
+Samples for $\ttbar$\cite{Alioli:2011as} and (t-channel) single top quark production\cite{Frederix:2012dh} are generated at NLO precision using \POWHEG 2.0~\cite{Nason:2004rx,Frixione:2007vw,Alioli:2010xd,Jezo:2015aia}, and for single top quark production in association with a W boson (tW channel)\cite{Re:2010bp}, \POWHEG version 1.0 at NLO precision is used. 
+When compared with data, W + jets, $Z\rightarrow ll$, $\ttbar$, and single top quark events in the tW channel are normalized to their cross sections at next-to-next-to-LO (NNLO) precision\cite{Melnikov:2006kv,Czakon2011xx,Kidonakis:2013zqa}, while single top quark (t-channel) and diboson events are normalized to their cross sections at NLO precision or higher~\cite{Kidonakis:2013zqa,Campbell:2011bn,Gehrmann:2014fva}.
 
 \section{QCD Estimation in the $\emu$ Channel}
 \label{sec:qcd}
@@ -559,7 +554,14 @@ A schematic of the process is shown in Figure~\ref{fig:embedding}. \\
 \end{figure}
 
 The embedding method is validated on dedicated samples, where the muons from data are replaced by simulated muons instead of taus.
-Plots of the agreement from these dedicated samples with data are shown in Figure~\ref{}.
+A plot of the agreement from these dedicated samples with data is shown in Figure~\ref{fig:emb_validation}.
+
+\begin{figure}[!hbtp]
+\centering
+    \includegraphics[width=0.7\textwidth]{Figures/embedding_validation.pdf}
+\caption{Closure plot showing the di-muon mass on the dedicated embedding validation samples.}
+\label{fig:emb_validation}
+\end{figure}
 
 \section{Fake Factor Method}
 \label{sec:ff}
@@ -586,7 +588,7 @@ This is defined as the SR but with the criteria that the jet fakes fail the nomi
 This now models the background from $\text{jet}\rightarrow\tauh$ events in SR. \\
 
 The following Sections~\ref{sec:ff_dr}--\ref{sec:ff_applying} detail the complexities of how this method is applied to this analysis.
-For these searches the nominal hadronc tau ID used is the \texttt{Medium} $D_{\text{jet}^{\text{WP}}}$ and the alternative hadronic tau ID used is the \texttt{VVVLoose}  $D_{\text{jet}^{\text{WP}}}$.
+For these searches the nominal hadronc tau ID used is the \texttt{Medium} $D_{\text{jet}}^{\text{WP}}$ and the alternative hadronic tau ID used is the \texttt{VVVLoose}  $D_{\text{jet}}^{\text{WP}}$.
 
 \subsection{Determination Regions}
 \label{sec:ff_dr}
@@ -833,9 +835,9 @@ For muons misidentified as $\tauh$ candidates, the energy scale correction is ne
 The correction of the missing transverse energy's magnitude and resolution in the embedding samples is needed to account for the incomplete removal of energy deposits from muons replaced by simulated tau decays during the embedding procedure. 
 These corrections are derived by comparing $p_{T}^{\text{miss}}$ in embedded events to fully simulated events. \\
 
-In fully simulated events, a specific trigger inefficiency caused by a shift in the timing of the inputs of the ECAL L1 trigger in the region at $\abs{\eta}>2.0$ during the 2016 and 2017 data taking.
+In fully simulated events, a specific trigger inefficiency caused by a shift in the timing of the inputs of the ECAL L1 trigger in the region at $|\eta|>2.0$ during the 2016 and 2017 data taking.
 This effect is named prefiring.
-This resulted in a loss of efficiency for events containing an electron or jet with $p_T$ larger than ${\approx}50$ or ${\approx}100)$ GeV respectively, in the region of $2.5<\abs{\eta}<3.0$. 
+This resulted in a loss of efficiency for events containing an electron or jet with $p_T$ larger than ${\approx}50$ or ${\approx}100)$ GeV respectively, in the region of $2.5<|\eta|<3.0$. 
 Corresponding corrections are derived from data and applied to the simulation. \\
 
 Corrections on the energy of jets are calculated in bins of the jet $p_T$ and $\eta$.
@@ -855,7 +857,7 @@ Additionally, all simulated $\ttbar$ events are weighted to match the top quark 
 \section{Uncertainty Model}
 \label{sec:uncerts}
 
-The statistical uncertainties are taken into account by the Barlow-Beeston method, described in Ref.~\cite{}.
+The statistical uncertainties are taken into account by the Barlow-Beeston method, described in Ref.~\cite{Barlow:1993dm,Conway:2011in}.
 The systematic model is split into uncertainties based on the online and offline reconstruction of objects and the background and signal modelling.
 An uncertainty is correlated across channels when it represents a shift on the reconstruction of an object and decorrelated otherwise.
 It is decorrelated across era of data taking when the shift is derived independently by era.
@@ -883,7 +885,7 @@ Another 2\% uncertainty is placed on the ID of any electron or muon in the event
 \subsubsection{Jets}
 Jet energy scale and resolution uncertainties arise from a number of sources. 
 These include limited statistical measurements used for calibration, energy measurement changes due to detector ageing, and bias corrections to address differences between simulation and data. 
-Uncertainty ranges are from sub-percent to \order(10\%).
+Uncertainty ranges are from sub-percent to $\mathcal{O}(10\%)$.
 Uncertainties are also placed on the tagging of b jets, which vary from 0--3\%.
 
 \subsubsection{Leptons misidentified as hadronic taus}
@@ -911,7 +913,7 @@ These events are modelled from MC and any generator matched muon identified as a
 \subsubsection{MET}
 The MET uncertainties is different dependent on process.
 For all processes that are not $\ttbar$ and diboson, the hadronic recoil response and its resolution are varied within the uncertainties determined during the computation of the recoil corrections.
-For $\ttbar$ and diboson an uncertainty is derived on the energy carried by an unclustered particle \cite{}.
+For $\ttbar$ and diboson an uncertainty is derived on the energy carried by an unclustered particle \cite{Sirunyan:2019kia}.
 These uncertainties vary between 0--10\%.
 
 \subsubsection{Background process specific uncertainties}
@@ -957,7 +959,7 @@ Finally, $p(\hat{\theta} \mid \theta)$ represents the probability density functi
 
 These come in two forms, the first is for uncertainties that only affect the normalisation of the process and are modelled by log-normal pdfs. 
 The second is for uncertainties that affect the shape of the distribution, these are assigned Gaussian pdfs.
-The $\pm1\sigma$ shifts for each shape variations are derived and vertical morphing \cite{} is used to interpolate and extrapolate within and outside the shifts.
+The $\pm1\sigma$ shifts for each shape variations are derived and vertical morphing \cite{Conway:2011in} is used to interpolate and extrapolate within and outside the shifts.
 Both pdfs are depend on the mean ($\mu$) and standard deviations ($\sigma$) and the functional forms are shown in Table~\ref{tab:pdfs}. \\
 
 \begin{table}[!hbtp]
@@ -1005,7 +1007,7 @@ As the SM Higgs boson is added to the background modelling and the MSSM predicti
 The confidence intervals in the best fit results are given by the $-2\Delta\ln\mathcal{L}$, where $\Delta\ln\mathcal{L}$ is the difference between $\ln\mathcal{L}$ of the best fit model and the test value of $\mu$. 
 The 68\% and 95\% confidence regions with two degrees of freedom (as in the model independent resonant search) are determined by $-2\Delta\ln\mathcal{L} = 2.28$ and $5.99$ respectively. \\
 
-Upper limits are placed using the modified frequentest approach \cite{} with profile likelihood ratio used for the test statistic defined below.
+Upper limits are placed using the modified frequentest approach \cite{Junk:1999kv,Read:2002hq} with profile likelihood ratio used for the test statistic defined below.
 \begin{equation}
   q_{\mu} = -2 \ln \Biggl(\frac{\mathcal{L}(\text{data} | \mu, \hat{\theta}_{\mu})}{\mathcal{L}(\text{data} | \hat{\mu}, \hat{\theta}_{\hat{\mu}})}\Biggl), 0 \leq \hat{\mu} \leq \mu,
 \end{equation}
@@ -1018,7 +1020,7 @@ The probability of $q_{\mu} \geq q_{\mu}^{\text{obs}}$ is,
 where $f(q_{\mu} \mid \mu, \theta_{\mu}^{\text{obs}})$ is the pdf of $q_\mu$.
 $\text{CL}_{b}$ and $\text{CL}_{s+b}$ are then defined by the relevant background-only and signal-plus-background fits.
 $\text{CL}_s$ is defined as the ratio of $\text{CL}_{s+b}$ and $\text{CL}_{b}$ and then upper limits are placed at the confidence level of $1-\text{CL}_{s}$.
-The $f(q_{\mu} \mid \mu, \theta_{\mu}^{\text{obs}})$ are determined using the asymptotic approximation \cite{} and results are cross-checked and deemed consistent with toy MC datasets. \\
+The $f(q_{\mu} \mid \mu, \theta_{\mu}^{\text{obs}})$ are determined using the asymptotic approximation \cite{Cowan:2010js} and results are cross-checked and deemed consistent with toy MC datasets. \\
 
 If a deviation from the background expectation is observed, the size of the deviation is quantified by a significance.
 To begin quantifying the excess, a $p$-value is determined, $\mu$ is replaced with 0 in the test statistic, to test rejection of the background-only hypothesis in favour of the signal-plus-background hypothesis.
@@ -1204,12 +1206,12 @@ The red hatched region in Figure~\ref{fig:mssm_limits} (b) indicates that the re
 The Higgs boson masses, mixing angle $\alpha$, and effective Yukawa couplings were calculated using \textsc{FeynHiggs}, and branching fractions for the decay into tau leptons and other final states were obtained from a combination of the \textsc{FeynHiggs} and \textsc{HDECAY}, following the prescriptions in Refs.\cite{LHCHiggsCrossSectionWorkingGroup:2013rie,deFlorian:2016spz,Denner:2011mq}, for the scenarios described in Ref.\cite{Bagnaschi:2791954}. \\
 
 For the $M_{h,EFT}^{125}$ scenario, the sensitivity sharply drops at $m_{A}=2m_{t}$ due to a drop in the branching fractions for the decay of A and H into tau leptons, when the A and H decays into two on-shell top quarks becomes kinematically accessible. 
-Both scenarios are excluded at 95\% CL for $\mA\lesssim350$ GeV. 
-For $\mA\lesssim250$ GeV, most of the ggH/A events do not enter the no b tag categories due to the $m_{\tau\tau}>250$ GeV requirement. 
+Both scenarios are excluded at 95\% CL for $m_{A}\lesssim350$ GeV. 
+For $m_{A}\lesssim250$ GeV, most of the ggH/A events do not enter the no b tag categories due to the $m_{\tau\tau}>250$ GeV requirement. 
 In this parameter space, the sensitivity to the MSSM is driven by the measurements of the observed Higgs boson, even though H and A still contribute to the categories here. 
 The sensitivity to the H and A enters mainly via the bb$\phi$ signal in the b tag categories, especially for increasing values of $\tan\beta$. \\
 
-Other MSSM scenarios are tested and detailed in \cite{}.
+Other MSSM scenarios are tested and detailed in \cite{CMS:2022rbd}.
 One scenario of note is the $M_{H}^{125}$ scenario, which is the equivalent scenario to the $M_{h}^{125}$ but with the observed Higgs boson being the heavier CP-even Higgs boson.
 Despite the local excess at a resonant mass of 100 GeV, this scenario is entirely excluded by the search. 
 This is mostly due to the sensitivity of the b tag categories to b associated production.
@@ -1221,7 +1223,7 @@ It is not possible within these scenarios to predict the excess of gluon fusion 
 \centering
     \subfloat[]{\includegraphics[width=0.65\textwidth]{Figures/model-dependent_limit_mh125.pdf}} \\
     \subfloat[]{\includegraphics[width=0.65\textwidth]{Figures/model-dependent_limit_mh125EFT.pdf}}
-\caption{Expected and observed 95\% CL exclusion contours in the MSSM $M_{h}^{125}$ (a) and $M_{h,EFT}^{125}$ (b) scenarios. The exclusion limit only on background expectation is shown as a dashed black line, the dark and bright grey bands show the 68\% and 95\% intervals of the expected exclusion and the observed exclusion contour is shown by the blue area. The parameter space where \mh deviates by more then ${\pm}3$ GeV from the observed SM Higgs boson mass it shown by a red hatched area.
+\caption{Expected and observed 95\% CL exclusion contours in the MSSM $M_{h}^{125}$ (a) and $M_{h,EFT}^{125}$ (b) scenarios. The exclusion limit only on background expectation is shown as a dashed black line, the dark and bright grey bands show the 68\% and 95\% intervals of the expected exclusion and the observed exclusion contour is shown by the blue area. The parameter space where $m_{h}$ deviates by more then $\pm$3  GeV from the observed SM Higgs boson mass it shown by a red hatched area.
 }
 \label{fig:mssm_limits}
 \end{figure}
@@ -1241,7 +1243,7 @@ Again this is due to lack of signal in the b tag categories, where the reduction
 \centering
     \subfloat[]{\includegraphics[width=0.65\textwidth]{Figures/vlq_bm_1.pdf}} \\
     \subfloat[]{\includegraphics[width=0.65\textwidth]{Figures/vlq_bm_2.pdf}}
-\caption{Expected and observed 95\% CL upper limits on \gU in the VLQ BM 1 (a) and 2 (b) scenarios, in a mass range of $1<m_{U}<5$ TeV.  The exclusion limit only on background expectation is shown as a dashed black line, the dark and bright grey bands show the 68\% and 95\% intervals of the expected exclusion and the observed exclusion contour is shown by the blue area. The 95\% confidence interval for the preferred region from the global fit presented in Ref.~\cite{Cornella:2021sby} is also shown by the green shaded area.
+\caption{Expected and observed 95\% CL upper limits on $g_U$ in the VLQ BM 1 (a) and 2 (b) scenarios, in a mass range of $1<m_{U}<5$ TeV.  The exclusion limit only on background expectation is shown as a dashed black line, the dark and bright grey bands show the 68\% and 95\% intervals of the expected exclusion and the observed exclusion contour is shown by the blue area. The 95\% confidence interval for the preferred region from the global fit presented in Ref.~\cite{Cornella:2021sby} is also shown by the green shaded area.
 }
 \label{fig:vlq_limits}
 \end{figure}

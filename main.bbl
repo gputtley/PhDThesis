@@ -1,0 +1,173 @@
+\begin{thebibliography}{10}
+
+\bibitem{Bahl:2018zmf}
+E.~Bagnaschi, H.~Bahl, E.~Fuchs, T.~Hahn, S.~Heinemeyer, S.~Liebler, S.~Patel,
+  P.~Slavich, T.~Stefaniak, C.~E.~M. Wagner, and G.~Weiglein, ``{MSSM Higgs}
+  boson searches at the {LHC}: Benchmark scenarios for {Run 2} and beyond,''
+  {\em Eur. Phys. J. C}, vol.~79, p.~617, 2019.
+
+\bibitem{Bahl:2020kwe}
+H.~Bahl, P.~Bechtle, S.~Heinemeyer, S.~Liebler, T.~Stefaniak, and G.~Weiglein,
+  ``{HL-LHC and ILC} sensitivities in the hunt for heavy {Higgs} bosons,'' {\em
+  Eur. Phys. J. C}, vol.~80, p.~916, 2020.
+
+\bibitem{Bahl:2019ago}
+H.~Bahl, S.~Liebler, and T.~Stefaniak, ``{MSSM Higgs} benchmark scenarios for
+  {Run 2} and beyond: the low {$\tan\beta$} region,'' {\em Eur. Phys. J. C},
+  vol.~79, p.~279, 2019.
+
+\bibitem{Bagnaschi:2791954}
+E.~A. Bagnaschi, S.~Heinemeyer, S.~Liebler, P.~Slavich, and M.~Spira,
+  ``Benchmark scenarios for {MSSM Higgs} boson searches at the {LHC},'' Tech.
+  Rep. LHCHWG-2021-001, CERN, 2021.
+
+\bibitem{CMS_MSSM_Tau_2018}
+{CMS Collaboration}, ``{Search for additional neutral MSSM Higgs bosons in the
+  $\tau\tau$ final state in proton-proton collisions at $\sqrt{s}=$ 13 TeV},''
+  {\em JHEP}, vol.~09, p.~007, 2018.
+
+\bibitem{Bianchini:2014vza}
+L.~Bianchini, J.~Conway, E.~K. Friis, and C.~Veelken, ``Reconstruction of the
+  {Higgs} mass in {$H\to\tau\tau$} events by dynamical likelihood techniques,''
+  {\em J. Phys. Conf. Ser.}, vol.~513, p.~022035, 2014.
+
+\bibitem{CMS:2022kdi}
+``Measurements of {Higgs} boson production in the decay channel with a pair of
+  $\tau$ leptons in proton-proton collisions at $\sqrt{s}$ = 13 {TeV}.''
+  Submitted to \textit{Eur. Phys. J. C}, 2022.
+
+\bibitem{Alwall:2011uj}
+J.~Alwall, M.~Herquet, F.~Maltoni, O.~Mattelaer, and T.~Stelzer, ``{MadGraph
+  5}: Going beyond,'' {\em JHEP}, vol.~06, p.~128, 2011.
+
+\bibitem{Alwall:2014hca}
+J.~Alwall, R.~Frederix, S.~Frixione, V.~Hirschi, F.~Maltoni, O.~Mattelaer,
+  H.~S. Shao, T.~Stelzer, P.~Torrielli, and M.~Zaro, ``The automated
+  computation of tree-level and next-to-leading order differential cross
+  sections, and their matching to parton shower simulations,'' {\em JHEP},
+  vol.~07, p.~079, 2014.
+
+\bibitem{Frederix:2012ps}
+R.~Frederix and S.~Frixione, ``Merging meets matching in {MC@NLO},'' {\em
+  JHEP}, vol.~12, p.~061, 2012.
+
+\bibitem{Alwall:2007fs}
+J.~Alwall, S.~H{\"o}che, F.~Krauss, N.~Lavesson, L.~L{\"o}nnblad, F.~Maltoni,
+  M.~L. Mangano, M.~Moretti, C.~G. Papadopoulos, F.~Piccinini, S.~Schumann,
+  M.~Treccani, J.~Winter, and M.~Worek, ``Comparative study of various
+  algorithms for the merging of parton showers and matrix elements in hadronic
+  collisions,'' {\em Eur. Phys. J. C}, vol.~53, p.~473, 2008.
+
+\bibitem{Alioli:2011as}
+S.~Alioli, S.-O. Moch, and P.~Uwer, ``Hadronic top-quark pair-production with
+  one jet and parton showering,'' {\em JHEP}, vol.~01, p.~137, 2012.
+
+\bibitem{Frederix:2012dh}
+R.~Frederix, E.~Re, and P.~Torrielli, ``Single-top $t$-channel hadroproduction
+  in the four-flavour scheme with {POWHEG} and {aMC@NLO},'' {\em JHEP},
+  vol.~09, p.~130, 2012.
+
+\bibitem{Nason:2004rx}
+P.~Nason, ``A new method for combining {NLO QCD} with shower {Monte} {Carlo}
+  algorithms,'' {\em JHEP}, vol.~11, p.~040, 2004.
+
+\bibitem{Frixione:2007vw}
+S.~Frixione, P.~Nason, and C.~Oleari, ``Matching {NLO QCD} computations with
+  parton shower simulations: the {POWHEG} method,'' {\em JHEP}, vol.~11,
+  p.~070, 2007.
+
+\bibitem{Alioli:2010xd}
+S.~Alioli, P.~Nason, C.~Oleari, and E.~Re, ``A general framework for
+  implementing {NLO} calculations in shower {Monte Carlo} programs: the {POWHEG
+  BOX},'' {\em JHEP}, vol.~06, p.~043, 2010.
+
+\bibitem{Jezo:2015aia}
+T.~Je{\v{z}}o and P.~Nason, ``On the treatment of resonances in next-to-leading
+  order calculations matched to a parton shower,'' {\em JHEP}, vol.~12, p.~065,
+  2015.
+
+\bibitem{Re:2010bp}
+E.~Re, ``Single-top {Wt}-channel production matched with parton showers using
+  the {POWHEG} method,'' {\em Eur. Phys. J. C}, vol.~71, p.~1547, 2011.
+
+\bibitem{Melnikov:2006kv}
+K.~Melnikov and F.~Petriello, ``Electroweak gauge boson production at hadron
+  colliders through {$\mathcal{O}(\alpha_\text{s}^{2})$},'' {\em Phys. Rev. D},
+  vol.~74, p.~114017, 2006.
+
+\bibitem{Czakon:2011xx}
+M.~Czakon and A.~Mitov, ``{Top++: A} program for the calculation of the
+  top-pair cross-section at hadron colliders,'' {\em Comput. Phys. Commun.},
+  vol.~185, p.~2930, 2014.
+
+\bibitem{Kidonakis:2013zqa}
+N.~Kidonakis, ``Top quark production,'' in {\em {Helmholtz International Summer
+  School on Physics of Heavy Quarks and Hadrons}}, p.~139, 2014.
+
+\bibitem{Campbell:2011bn}
+J.~M. Campbell, R.~K. Ellis, and C.~Williams, ``Vector boson pair production at
+  the {LHC},'' {\em JHEP}, vol.~07, p.~018, 2011.
+
+\bibitem{Gehrmann:2014fva}
+T.~Gehrmann, M.~Grazzini, S.~Kallweit, P.~Maierh{\"o}fer, A.~von Manteuffel,
+  S.~Pozzorini, D.~Rathlev, and L.~Tancredi, ``{$W^{+} W^{-}$} production at
+  hadron colliders in next to next to leading order {QCD},'' {\em Phys. Rev.
+  Lett.}, vol.~113, p.~212001, 2014.
+
+\bibitem{Barlow:1993dm}
+R.~J. Barlow and C.~Beeston, ``Fitting using finite {Monte Carlo} samples,''
+  {\em Comput. Phys. Commun.}, vol.~77, p.~219, 1993.
+
+\bibitem{Conway:2011in}
+J.~S. Conway, ``Incorporating nuisance parameters in likelihoods for
+  multisource spectra,'' in {\em {PHYSTAT 2011}}, p.~115, 2011.
+
+\bibitem{Sirunyan:2019kia}
+A.~M. Sirunyan {\em et~al.}, ``Performance of missing transverse momentum
+  reconstruction in proton-proton collisions at {$\sqrt{s} = 13$\,TeV} using
+  the {CMS} detector,'' {\em JINST}, vol.~14, p.~P07004, 2019.
+
+\bibitem{Junk:1999kv}
+T.~Junk, ``Confidence level computation for combining searches with small
+  statistics,'' {\em Nucl. Instrum. Meth. A}, vol.~434, p.~435, 1999.
+
+\bibitem{Read:2002hq}
+A.~L. Read, ``Presentation of search results: {The CL}$_{\text{s}}$
+  technique,'' {\em J. Phys. G}, vol.~28, p.~2693, 2002.
+
+\bibitem{Cowan:2010js}
+G.~Cowan, K.~Cranmer, E.~Gross, and O.~Vitells, ``Asymptotic formulae for
+  likelihood-based tests of new physics,'' {\em Eur. Phys. J. C}, vol.~71,
+  p.~1554, 2011.
+\newblock [Erratum: \DOI{10.1140/epjc/s10052-013-2501-z}].
+
+\bibitem{ATLAS:2020zms}
+G.~Aad {\em et~al.}, ``Search for heavy {Higgs} bosons decaying into two tau
+  leptons with the {ATLAS} detector using pp collisions at {$\sqrt{s}=13$
+  TeV},'' {\em Phys. Rev. Lett.}, vol.~125, p.~051801, 2020.
+
+\bibitem{LHCHiggsCrossSectionWorkingGroup:2013rie}
+{LHC Higgs Cross Section Working Group}, ``{Handbook of LHC Higgs} cross
+  sections: 3. {Higgs} properties,'' Tech. Rep. CERN-2013-004, 2013.
+
+\bibitem{deFlorian:2016spz}
+{LHC Higgs Cross Section Working Group}, ``Handbook of {LHC Higgs} cross
+  sections: 4. deciphering the nature of the {Higgs} sector,'' Tech. Rep.
+  CERN-2017-002-M, 2016.
+
+\bibitem{Denner:2011mq}
+A.~Denner, S.~Heinemeyer, I.~Puljak, D.~Rebuzzi, and M.~Spira, ``Standard model
+  {Higgs}-boson branching ratios with uncertainties,'' {\em Eur. Phys. J. C},
+  vol.~71, p.~1753, 2011.
+
+\bibitem{CMS:2022rbd}
+``{Searches for additional Higgs bosons and vector leptoquarks in $\tau\tau$
+  final states in proton-proton collisions at $\sqrt{s}=13~\mathrm{TeV}$},''
+  2022.
+
+\bibitem{Cornella:2021sby}
+C.~Cornella, D.~A. Faroughy, J.~Fuentes-Martin, G.~Isidori, and M.~Neubert,
+  ``Reading the footprints of the {B}-meson flavor anomalies,'' {\em JHEP},
+  vol.~08, p.~050, 2021.
+
+\end{thebibliography}
