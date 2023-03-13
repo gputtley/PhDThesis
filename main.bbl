@@ -26,46 +26,9 @@ E.~A. Bagnaschi, S.~Heinemeyer, S.~Liebler, P.~Slavich, and M.~Spira,
   $\tau\tau$ final state in proton-proton collisions at $\sqrt{s}=$ 13 TeV},''
   {\em JHEP}, vol.~09, p.~007, 2018.
 
-\bibitem{Bianchini:2014vza}
-L.~Bianchini, J.~Conway, E.~K. Friis, and C.~Veelken, ``Reconstruction of the
-  {Higgs} mass in {$H\to\tau\tau$} events by dynamical likelihood techniques,''
-  {\em J. Phys. Conf. Ser.}, vol.~513, p.~022035, 2014.
-
-\bibitem{CMS:2022kdi}
-``Measurements of {Higgs} boson production in the decay channel with a pair of
-  $\tau$ leptons in proton-proton collisions at $\sqrt{s}$ = 13 {TeV}.''
-  Submitted to \textit{Eur. Phys. J. C}, 2022.
-
-\bibitem{Alwall:2011uj}
-J.~Alwall, M.~Herquet, F.~Maltoni, O.~Mattelaer, and T.~Stelzer, ``{MadGraph
-  5}: Going beyond,'' {\em JHEP}, vol.~06, p.~128, 2011.
-
-\bibitem{Alwall:2014hca}
-J.~Alwall, R.~Frederix, S.~Frixione, V.~Hirschi, F.~Maltoni, O.~Mattelaer,
-  H.~S. Shao, T.~Stelzer, P.~Torrielli, and M.~Zaro, ``The automated
-  computation of tree-level and next-to-leading order differential cross
-  sections, and their matching to parton shower simulations,'' {\em JHEP},
-  vol.~07, p.~079, 2014.
-
-\bibitem{Frederix:2012ps}
-R.~Frederix and S.~Frixione, ``Merging meets matching in {MC@NLO},'' {\em
-  JHEP}, vol.~12, p.~061, 2012.
-
-\bibitem{Alwall:2007fs}
-J.~Alwall, S.~H{\"o}che, F.~Krauss, N.~Lavesson, L.~L{\"o}nnblad, F.~Maltoni,
-  M.~L. Mangano, M.~Moretti, C.~G. Papadopoulos, F.~Piccinini, S.~Schumann,
-  M.~Treccani, J.~Winter, and M.~Worek, ``Comparative study of various
-  algorithms for the merging of parton showers and matrix elements in hadronic
-  collisions,'' {\em Eur. Phys. J. C}, vol.~53, p.~473, 2008.
-
-\bibitem{Alioli:2011as}
-S.~Alioli, S.-O. Moch, and P.~Uwer, ``Hadronic top-quark pair-production with
-  one jet and parton showering,'' {\em JHEP}, vol.~01, p.~137, 2012.
-
-\bibitem{Frederix:2012dh}
-R.~Frederix, E.~Re, and P.~Torrielli, ``Single-top $t$-channel hadroproduction
-  in the four-flavour scheme with {POWHEG} and {aMC@NLO},'' {\em JHEP},
-  vol.~09, p.~130, 2012.
+\bibitem{Khachatryan:2015tra}
+V.~Khachatryan {\em et~al.}, ``Search for neutral {MSSM Higgs} bosons decaying
+  into a pair of bottom quarks,'' {\em JHEP}, vol.~11, p.~071, 2015.
 
 \bibitem{Nason:2004rx}
 P.~Nason, ``A new method for combining {NLO QCD} with shower {Monte} {Carlo}
@@ -85,6 +48,67 @@ S.~Alioli, P.~Nason, C.~Oleari, and E.~Re, ``A general framework for
 T.~Je{\v{z}}o and P.~Nason, ``On the treatment of resonances in next-to-leading
   order calculations matched to a parton shower,'' {\em JHEP}, vol.~12, p.~065,
   2015.
+
+\bibitem{Ball:2014uwa}
+R.~D. Ball {\em et~al.}, ``Parton distributions for the {LHC} {Run} {II},''
+  {\em JHEP}, vol.~04, p.~040, 2015.
+
+\bibitem{Ball:2017nwa}
+R.~D. Ball {\em et~al.}, ``Parton distributions from high-precision collider
+  data,'' {\em Eur. Phys. J. C}, vol.~77, p.~663, 2017.
+
+\bibitem{Sirunyan:2019dfx}
+A.~M. Sirunyan {\em et~al.}, ``Extraction and validation of a new set of {CMS
+  PYTHIA8} tunes from underlying-event measurements,'' {\em Eur. Phys. J. C},
+  vol.~80, p.~4, 2020.
+
+\bibitem{Sjostrand:2014zea}
+T.~Sj{\"o}strand, S.~Ask, J.~R. Christiansen, R.~Corke, N.~Desai, P.~Ilten,
+  S.~Mrenna, S.~Prestel, C.~O. Rasmussen, and P.~Z. Skands, ``An introduction
+  to {PYTHIA 8.2},'' {\em Comput. Phys. Commun.}, vol.~191, p.~159, 2015.
+
+\bibitem{Agostinelli:2002hh}
+S.~Agostinelli {\em et~al.}, ``{{\textsc{Geant4}}\xspace}---a simulation
+  toolkit,'' {\em Nucl. Instrum. Meth. A}, vol.~506, p.~250, 2003.
+
+\bibitem{CMS:2022zks}
+{CMS Collaboration}, ``{The search for a third-generation leptoquark coupling
+  to a $\tau$ lepton and a b quark through single, pair and nonresonant
+  production at $\sqrt{s}=13~\mathrm{TeV}$},'' 2022.
+
+\bibitem{Alwall:2011uj}
+J.~Alwall, M.~Herquet, F.~Maltoni, O.~Mattelaer, and T.~Stelzer, ``{MadGraph
+  5}: Going beyond,'' {\em JHEP}, vol.~06, p.~128, 2011.
+
+\bibitem{Frederix:2012ps}
+R.~Frederix and S.~Frixione, ``Merging meets matching in {MC@NLO},'' {\em
+  JHEP}, vol.~12, p.~061, 2012.
+
+\bibitem{Bianchini:2014vza}
+L.~Bianchini, J.~Conway, E.~K. Friis, and C.~Veelken, ``Reconstruction of the
+  {Higgs} mass in {$H\to\tau\tau$} events by dynamical likelihood techniques,''
+  {\em J. Phys. Conf. Ser.}, vol.~513, p.~022035, 2014.
+
+\bibitem{CMS:2022kdi}
+{CMS Collaboration}, ``Measurements of {Higgs} boson production in the decay
+  channel with a pair of $\tau$ leptons in proton-proton collisions at
+  $\sqrt{s}$ = 13 {TeV}.'' Submitted to \textit{Eur. Phys. J. C}, 2022.
+
+\bibitem{Alwall:2007fs}
+J.~Alwall, S.~H{\"o}che, F.~Krauss, N.~Lavesson, L.~L{\"o}nnblad, F.~Maltoni,
+  M.~L. Mangano, M.~Moretti, C.~G. Papadopoulos, F.~Piccinini, S.~Schumann,
+  M.~Treccani, J.~Winter, and M.~Worek, ``Comparative study of various
+  algorithms for the merging of parton showers and matrix elements in hadronic
+  collisions,'' {\em Eur. Phys. J. C}, vol.~53, p.~473, 2008.
+
+\bibitem{Alioli:2011as}
+S.~Alioli, S.-O. Moch, and P.~Uwer, ``Hadronic top-quark pair-production with
+  one jet and parton showering,'' {\em JHEP}, vol.~01, p.~137, 2012.
+
+\bibitem{Frederix:2012dh}
+R.~Frederix, E.~Re, and P.~Torrielli, ``Single-top $t$-channel hadroproduction
+  in the four-flavour scheme with {POWHEG} and {aMC@NLO},'' {\em JHEP},
+  vol.~09, p.~130, 2012.
 
 \bibitem{Re:2010bp}
 E.~Re, ``Single-top {Wt}-channel production matched with parton showers using
@@ -161,9 +185,9 @@ A.~Denner, S.~Heinemeyer, I.~Puljak, D.~Rebuzzi, and M.~Spira, ``Standard model
   vol.~71, p.~1753, 2011.
 
 \bibitem{CMS:2022rbd}
-``{Searches for additional Higgs bosons and vector leptoquarks in $\tau\tau$
-  final states in proton-proton collisions at $\sqrt{s}=13~\mathrm{TeV}$},''
-  2022.
+{CMS Collaboration}, ``{Searches for additional Higgs bosons and vector
+  leptoquarks in $\tau\tau$ final states in proton-proton collisions at
+  $\sqrt{s}=13~\mathrm{TeV}$},'' 2022.
 
 \bibitem{Cornella:2021sby}
 C.~Cornella, D.~A. Faroughy, J.~Fuentes-Martin, G.~Isidori, and M.~Neubert,
