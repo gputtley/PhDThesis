@@ -1,8 +1,40 @@
 \chapter{\texorpdfstring{Search for New Physics in $\tau^+\tau^-\tau^+\tau^-$ Final States}{Search for new physics in tautautautau final states}}
 \label{sec:H_A_to_4_tau_analysis}
 
+Enhancement from $\tan\beta$ to up or down-like quark couplings to additional Higgs bosons are essential for the majority of searches for extended Higgs sectors, including in the analysis detailed in Chapter~\ref{sec:bsm_H_to_tau_tau_analysis}.
+However, in some 2HDMs it can be the case that both up and down-like couplings to additional Higgs bosons are suppressed and this parameter space is left relatively untouched by "MSSM-like" searches.
+In particular, type X 2HDMs where only lepton couplings are enhanced by $\tan\beta$, allow for new physics loop contributions to SM measurements through couplings between leptons and additional Higgs bosons.
+This is particularly interesting in the context of the g-2 anomaly \cite{} with reasoning explained in Section~\ref{}.
+This chapter will detail a search for such an extended Higgs sector, that looks for a production mode not suppressed at high $\tan\beta$, through the process $Z^{*}\rightarrow \phi A \rightarrow 4\tau$.
+This search is split up into two sections:
 
-\begin{figure}
+\begin{enumerate}[i)]
+  \item A model independent search for the $Z^{*}\rightarrow \phi A \rightarrow 4\tau$ process. Both additional particles are required to have narrow width and no assumptions are made on the production cross-section via an off-shell Z boson or the branching fraction of $phi$ and A decaying to a pair of tau leptons.
+   \item A search for the type X 2HDM, motivated by the phase space for possible explanations to the g-2 anomaly. The $m_{A}$-$\tan\beta$ phase space for scenarios of $m_\phi$ in the alignment limit is scanned, as well as checks outside of this limit on the $\cos(\beta-\alpha)$-$\tan\beta$ for specific scenarios of both $m_\phi$ and $m_A$.
+\end{enumerate}
+
+These searches are performed with the full run-2 dataset ($138 \sifb$) collected by the CMS experiment. 
+
+\section{Signal Modelling}
+
+Any additional Higgs boson produced in the type X 2HDM at high $\tan\beta$ will predominantly decay to tau leptons.
+To probe the type X 2HDM at high $\tan\beta$, a production process that is not suppressed is required.
+Ref.~\cite{} discusses that the following production modes of two additional Higgs bosons are dominant to produce any of these new particles at high $\tan\beta$:
+\begin{enumerate}[i)]
+  \item $pp \rightarrow Z^{*} \rightarrow \phi A \rightarrow (\tau^{-}\tau^{+})(\tau^{-}\tau^{+})$
+  \item $pp \rightarrow Z^{*} \rightarrow H^{+}H^{-} \rightarrow (\tau^{-}\nu)(\tau^{+}\nu)$
+  \item $pp \rightarrow W^{\pm *} \rightarrow H^{\pm}A \rightarrow (\tau^{\pm}\nu)(\tau^{-}\tau^{+})$
+  \item $pp \rightarrow W^{\pm *} \rightarrow H^{\pm}\phi \rightarrow (\tau^{\pm}\nu)(\tau^{-}\tau^{+})$
+\end{enumerate}
+As the production cross sections are of the similar magnitudes, the search sensitivities depend on the separation of the signals from background.
+In general, the more objects you can select in the final state, the smaller the background contributions.
+This is certainly true in tau enriched final states, where backgrounds can be dominated jets misidentified as hadronic taus and so every extra tau selected reduces this background.
+In particular, (ii) has the production cross sections \cite{} far smaller than the observed limit for gluon fusion production of a single resonance shown in Figure~\ref{fig:model_independent_limits}(a) and it is not possible to use tau decay product and MET alignment to separate the background, so does seem not a viable search option with the run-2 CMS dataset.
+The increased background from fewer object selections and looser charge sum selection on (iii) and (iv), makes (i) the golden search channel for a type X 2HDM. 
+A Feynman diagram for this process is shown in Figure~\ref{fig:4tau_feynamn}. \\
+
+\begin{figure}[H]
+\centering
 \begin{tikzpicture}[scale=2]
   \begin{feynman}
     \vertex [label=left:$q$] (a1) at (0,-0.25);
@@ -14,13 +46,13 @@
     \vertex [label=above:$A$] (d12) at (1.75,0.85);
     \vertex (d1) at (2.1,0);
     \vertex (d2) at (2.1,1);
-    \vertex [label=right:$\tau^+$] (e1) at (2.7,-0.25);
-    \vertex [label=right:$\tau^-$] (e2) at (2.7,0.25);
-    \vertex [label=right:$\tau^+$] (e3) at (2.7,0.75);
-    \vertex [label=right:$\tau^-$] (e4) at (2.7,1.25);
+    \vertex [label=right:$\tau^-$] (e1) at (2.7,-0.25);
+    \vertex [label=right:$\tau^+$] (e2) at (2.7,0.25);
+    \vertex [label=right:$\tau^-$] (e3) at (2.7,0.75);
+    \vertex [label=right:$\tau^+$] (e4) at (2.7,1.25);
     \diagram* {
       (a1) -- [fermion] (b),
-      (a2) -- [fermion] (b),
+      (b) -- [fermion] (a2),
       (b) -- [photon] (c),
       (c) -- [scalar] (d1),
       (c) -- [scalar] (d2),
@@ -31,25 +63,17 @@
     };
   \end{feynman}
 \end{tikzpicture}
+\vspace*{10mm}
+\caption{Diagram of production of two additional neutral Higgs bosons from an off-shell Z boson and their decays to tau leptons.}
+\label{fig:4tau_feynamn}
 \end{figure}
 
-\begin{figure}
-\begin{tikzpicture}[scale=2]
-  \begin{feynman}
-    \vertex (b) at (0,0.5);
-    \vertex [label=above:$Z$] (b1) at (0.55,0.5);    
-    \vertex (c) at (1,0.5);
-    \vertex [label=right:$\tau^{-}$] (d1) at (1.7,0);
-    \vertex [label=right:$\tau^{+}$] (d2) at (1.7,1);
-    \diagram* {
-      (b) -- [photon] (c),
-      (c) -- [fermion] (d1),
-      (d2) -- [fermion] (c),
-    };
-  \end{feynman}
-\end{tikzpicture}
-\end{figure}
+SIGNAL GENERATION \\
 
+BRANCHING FRACTIONS \\
+
+
+\section{Event Selection}
 
 \begin{table}[h]
     \centering
@@ -70,7 +94,6 @@
          $\mu \mu \mu \tau_h$ & 1.4\% \\
          $e e e \mu$ & 1.4\% \\
          $e e \mu \mu$ & 0.6\% \\
-         $e e e \mu$ & 0.4\% \\
          $e \mu \mu \mu$ & 0.4\% \\
          $e e e e$ & 0.1\% \\
          $\mu \mu \mu \mu$ & 0.1\% \\
@@ -80,117 +103,6 @@
 \end{table}
 
 
-\begin{equation}
-\mathcal{L}^{\text{2HDM}}_{\text{yukawa}} = - \sum_{f=u,d,l}\Big(\frac{m_{f}}{\nu}\xi^{f}_{h}\bar{f}fh + \frac{m_{f}}{\nu}\xi^{f}_{H}\bar{f}fH -i\frac{m_{f}}{\nu}\xi^{f}_{A}\bar{f}\gamma_{5}fA\Big) - \Big[\frac{\sqrt{2}V_{ud}}{\nu}\bar{u}(m_{u}\xi^{u}_{A}P_{L} + m_{d}\xi^{d}_{A}P_{R})dH^{+} + \frac{\sqrt{2}m_{l}\xi^{d}_{A}}{\nu}\bar{\nu}_{L}l_{R}H^{+} + h.c.\Big]
-\end{equation}
-
-\begin{table}[H]
-    \centering
-    \begin{tabular}{p{1.5cm}|x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}}
-         \hline
-          & $g_{h}^{u}$ & $g_{h}^{d}$ & $g_{h}^{l}$ & $g_{H}^{u}$ & $g_{H}^{d}$ & $g_{H}^{l}$ & $g_{A}^{u}$ & $g_{A}^{d}$ & $g_{A}^{l}$ \\
-         \hline
-         \hline
-         Type I & $c_{\alpha}/s_{\beta}$ & $c_{\alpha}/s_{\beta}$ & $c_{\alpha}/s_{\beta}$ & $s_{\alpha}/s_{\beta}$ & $s_{\alpha}/s_{\beta}$ & $s_{\alpha}/s_{\beta}$ & $1/t_{\beta}$ & $-1/t_{\beta}$ & $-1/t_{\beta}$ \\
-         Type II & $c_{\alpha}/s_{\beta}$ & $-s_{\alpha}/c_{\beta}$ & $-s_{\alpha}/c_{\beta}$ & $s_{\alpha}/s_{\beta}$ & $c_{\alpha}/c_{\beta}$ & $c_{\alpha}/c_{\beta}$ & $1/t_{\beta}$ & $t_{\beta}$ & $t_{\beta}$ \\
-         Type X & $c_{\alpha}/s_{\beta}$ & $c_{\alpha}/s_{\beta}$ & $-s_{\alpha}/c_{\beta}$ & $s_{\alpha}/s_{\beta}$ & $s_{\alpha}/s_{\beta}$ & $c_{\alpha}/c_{\beta}$ & $1/t_{\beta}$ & $-1/t_{\beta}$ & $t_{\beta}$ \\
-         Type Y & $c_{\alpha}/s_{\beta}$ & $-s_{\alpha}/c_{\beta}$ & $c_{\alpha}/s_{\beta}$ & $s_{\alpha}/s_{\beta}$ & $c_{\alpha}/c_{\beta}$ & $s_{\alpha}/s_{\beta}$ & $1/t_{\beta}$ & $t_{\beta}$ & $-1/t_{\beta}$ \\
-         \hline
-    \end{tabular}
-    \caption{}
-\end{table}
-
-In the alignment limit, for the normal scenario $h_{SM}=h$, $sin(\beta-\alpha)=1$, $\implies$ $c_{\alpha}/s_{\beta}=1$, $s_{\alpha}/c_{\beta}=-1$, $s_{\alpha}/s_{\beta}=-1/t_{\beta}$, $c_{\alpha}/c_{\beta}=t_{\beta}$.
-
-\begin{table}[H]
-    \centering
-    \begin{tabular}{p{1.5cm}|x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}}
-         \hline
-          & $g_{h}^{u}$ & $g_{h}^{d}$ & $g_{h}^{l}$ & $g_{H}^{u}$ & $g_{H}^{d}$ & $g_{H}^{l}$ & $g_{A}^{u}$ & $g_{A}^{d}$ & $g_{A}^{l}$ \\
-         \hline
-         \hline
-         Type I & $1$ & $1$ & $1$ & $-1/t_{\beta}$ & $-1/t_{\beta}$ & $-1/t_{\beta}$ & $1/t_{\beta}$ & $-1/t_{\beta}$ & $-1/t_{\beta}$ \\
-         Type II & $1$ & $1$ & $1$ & $-1/t_{\beta}$ & $t_{\beta}$ & $t_{\beta}$ & $1/t_{\beta}$ & $t_{\beta}$ & $t_{\beta}$ \\
-         Type X & $1$ & $1$ & $1$ & $-1/t_{\beta}$ & $-1/t_{\beta}$ & $t_{\beta}$ & $1/t_{\beta}$ & $-1/t_{\beta}$ & $t_{\beta}$ \\
-         Type Y & $1$ & $1$ & $1$ & $-1/t_{\beta}$ & $t_{\beta}$ & $-1/t_{\beta}$ & $1/t_{\beta}$ & $t_{\beta}$ & $-1/t_{\beta}$ \\
-         \hline
-    \end{tabular}
-    \caption{}
-\end{table}
-
-In the alignment limit, for the inverted scenario $h_{SM}=H$, $cos(\beta-\alpha)=1$ $\implies$ $c_{\alpha}/s_{\beta}=1/t_{\beta}$, $s_{\alpha}/c_{\beta}=t_{\beta}$, $s_{\alpha}/s_{\beta}=1$, $c_{\alpha}/c_{\beta}=1$.
-
-\begin{table}[H]
-    \centering
-    \begin{tabular}{p{1.5cm}|x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}}
-         \hline
-          & $g_{h}^{u}$ & $g_{h}^{d}$ & $g_{h}^{l}$ & $g_{H}^{u}$ & $g_{H}^{d}$ & $g_{H}^{l}$ & $g_{A}^{u}$ & $g_{A}^{d}$ & $g_{A}^{l}$ \\
-         \hline
-         \hline
-         Type I & $1/t_{\beta}$ & $1/t_{\beta}$ & $1/t_{\beta}$ & $1$ & $1$ & $1$ & $1/t_{\beta}$ & $-1/t_{\beta}$ & $-1/t_{\beta}$ \\
-         Type II & $1/t_{\beta}$ & $-t_{\beta}$ & $-t_{\beta}$ & $1$ & $1$ & $1$ & $1/t_{\beta}$ & $t_{\beta}$ & $t_{\beta}$ \\
-         Type X & $1/t_{\beta}$ & $1/t_{\beta}$ & $-t_{\beta}$ & $1$ & $1$ & $1$ & $1/t_{\beta}$ & $-1/t_{\beta}$ & $t_{\beta}$ \\
-         Type Y & $1/t_{\beta}$ & $-t_{\beta}$ & $1/t_{\beta}$ & $1$ & $1$ & $1$ & $1/t_{\beta}$ & $t_{\beta}$ & $-1/t_{\beta}$ \\
-         \hline
-    \end{tabular}
-    \caption{}
-\end{table}
-
-\begin{table}[h]
-    \centering
-    \begin{tabular}{|c|l|}
-    \hline
-    Trigger & HLT Path  \\
-    \hline
-    SingleElectron & HLT$\_$Ele25$\_$eta2p1$\_$WPTight$\_$Gsf$\_$v\\
-    \hline
-    DoubleElectron & HLT$\_$Ele23$\_$Ele12$\_$CaloIdL$\_$TrackIdL$\_$IsoVL$\_$DZ$\_$v \\
-    \hline
-    TripleElectron & HLT$\_$Ele16$\_$Ele12$\_$Ele8$\_$CaloIdL$\_$TrackIdL \\
-    \hline
-    SingleMuon & HLT$\_$IsoMu24$\_$v \\
-    & OR \\
-    & HLT$\_$IsoTkMu24$\_$v \\
-    \hline
-    DoubleMuon & HLT$\_$Mu17$\_$TrkIsoVVL$\_$Mu8$\_$TrkIsoVVL($\_$DZ)$\_$v \\
-    & OR \\
-    & HLT$\_$Mu17$\_$TrkIsoVVL$\_$TkMu8$\_$TrkIsoVVL($\_$DZ)$\_$v \\
-    \hline
-    TripleMuon & HLT$\_$TripleMu$\_$12$\_$10$\_$5 \\
-    \hline
-    SingleTau & HLT$\_$VLooseIsoPFTau120$\_$Trk50$\_$eta2p1$\_$v \\
-    & OR \\
-    & HLT$\_$VLooseIsoPFTau140$\_$Trk50$\_$eta2p1$\_$v \\
-    \hline
-    DoubleTau & HLT$\_$DoubleMediumIsoPFTau35$\_$Trk1$\_$eta2p1$\_$Reg$\_$v \\
-    \hline
-    Electron Tau Cross & HLT$\_$Ele24$\_$eta2p1$\_$WPLoose$\_$Gsf$\_$LooseIsoPFTau20$\_$SingleL1$\_$v \\
-    \hline
-    Muon Tau Cross & HLT$\_$IsoMu19$\_$eta2p1$\_$LooseIsoPFTau20$\_$SingleL1$\_$v \\
-    \hline
-    \end{tabular}
-    \caption{2016 HLT paths.}
-\end{table}
-
-\begin{table}[]
-\begin{tabular}{|c|c|c|}
-\hline
-$e$ & $\mu$ &  $\tau_{h}$ \\
-\hline
-\hline
-$p_{T} > 15$ GeV & $p_{T} > 15$ GeV & $p_{T} > 20$ GeV \\
-$|\eta| < 2.5$ & $|\eta| < 2.4$ & $|\eta| < 2.3$ \\
-MVA 90\% WP & Medium ID & HPS algorithm \\
-$d_{xy} < 0.045$ cm & $d_{xy} < 0.045$ cm & deepTauVSjet Loose WP \\
-$d_{z} < 0.2$ cm & $d_{z} < 0.2$ cm & deepTauVSele VVLoose WP \\
-$I_{rel} < 0.15$ & $I_{rel} < 0.15$ & deepTauVSmu VLoose WP \\
-\hline
-\end{tabular}
-\end{table}
-
-\section{Introduction}
-\section{Signal Modelling}
-\section{Event Selection}
 \section{Signal Extraction}
 \section{Background Modelling}
 \subsection{Overview}

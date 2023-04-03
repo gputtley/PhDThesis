@@ -1,5 +1,14 @@
 \begin{thebibliography}{10}
 
+\bibitem{Bartosik:2847538}
+H.~Bartosik and G.~Rumolo, ``{Performance of the LHC injector chain after the
+  upgrade and potential development},'' tech. rep., 2022.
+\newblock Contribution to Snowmass 2021.
+
+\bibitem{CMS_Setup}
+{CMS Collaboration}, ``{The CMS Experiment at the CERN LHC},'' {\em JINST},
+  vol.~3, p.~S08004, 2008.
+
 \bibitem{Bahl:2018zmf}
 E.~Bagnaschi, H.~Bahl, E.~Fuchs, T.~Hahn, S.~Heinemeyer, S.~Liebler, S.~Patel,
   P.~Slavich, T.~Stefaniak, C.~E.~M. Wagner, and G.~Weiglein, ``{MSSM Higgs}

@@ -1,6 +1,5 @@
 \chapter{Theory and Motivation}
 
-
 \section{The Standard Model of Particle Physics}
 
 \subsection{Fundamental Particles}
@@ -14,6 +13,26 @@
 \subsection{Hierarchy Problem}
 
 The hierarchy problem can be resolved by adding a symmetry between fermions and bosons that allow cancellations to corrections to the Higgs mass. This theory is known as Supersymmetry. \cite{SUSY_Primer} In its simplest form, the Minimal Supersymmetric Standard Model (MSSM), is a type-II 2 Higgs doublet model (2HDM), the predicts the existence of five Higgs bosons: two scalars (h, H), two charged bosons (\(H^{\pm}\)) and one pseudoscalar (A). At tree level this Higgs sector only depends on two parameters, $m_A$ and $\tan\beta$, where $\tan\beta$ is the ratio of vacuum expectation values.
+
+\begin{equation}
+\mathcal{L}^{\text{2HDM}}_{\text{yukawa}} = - \sum_{f=u,d,l}\Big(\frac{m_{f}}{\nu}\xi^{f}_{h}\bar{f}fh + \frac{m_{f}}{\nu}\xi^{f}_{H}\bar{f}fH -i\frac{m_{f}}{\nu}\xi^{f}_{A}\bar{f}\gamma_{5}fA\Big) - \Big[\frac{\sqrt{2}V_{ud}}{\nu}\bar{u}(m_{u}\xi^{u}_{A}P_{L} + m_{d}\xi^{d}_{A}P_{R})dH^{+} + \frac{\sqrt{2}m_{l}\xi^{d}_{A}}{\nu}\bar{\nu}_{L}l_{R}H^{+} + h.c.\Big]
+\end{equation}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{p{1.5cm}|x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}}
+         \hline
+          & $g_{h}^{u}$ & $g_{h}^{d}$ & $g_{h}^{l}$ & $g_{H}^{u}$ & $g_{H}^{d}$ & $g_{H}^{l}$ & $g_{A}^{u}$ & $g_{A}^{d}$ & $g_{A}^{l}$ \\
+         \hline
+         \hline
+         Type I & $c_{\alpha}/s_{\beta}$ & $c_{\alpha}/s_{\beta}$ & $c_{\alpha}/s_{\beta}$ & $s_{\alpha}/s_{\beta}$ & $s_{\alpha}/s_{\beta}$ & $s_{\alpha}/s_{\beta}$ & $1/t_{\beta}$ & $-1/t_{\beta}$ & $-1/t_{\beta}$ \\
+         Type II & $c_{\alpha}/s_{\beta}$ & $-s_{\alpha}/c_{\beta}$ & $-s_{\alpha}/c_{\beta}$ & $s_{\alpha}/s_{\beta}$ & $c_{\alpha}/c_{\beta}$ & $c_{\alpha}/c_{\beta}$ & $1/t_{\beta}$ & $t_{\beta}$ & $t_{\beta}$ \\
+         Type X & $c_{\alpha}/s_{\beta}$ & $c_{\alpha}/s_{\beta}$ & $-s_{\alpha}/c_{\beta}$ & $s_{\alpha}/s_{\beta}$ & $s_{\alpha}/s_{\beta}$ & $c_{\alpha}/c_{\beta}$ & $1/t_{\beta}$ & $-1/t_{\beta}$ & $t_{\beta}$ \\
+         Type Y & $c_{\alpha}/s_{\beta}$ & $-s_{\alpha}/c_{\beta}$ & $c_{\alpha}/s_{\beta}$ & $s_{\alpha}/s_{\beta}$ & $c_{\alpha}/c_{\beta}$ & $s_{\alpha}/s_{\beta}$ & $1/t_{\beta}$ & $t_{\beta}$ & $-1/t_{\beta}$ \\
+         \hline
+    \end{tabular}
+    \caption{}
+\end{table}
 
 \begin{equation}
 \tan \beta = \frac{\langle H_{u}^{0} \rangle}{\langle H_{d}^{0} \rangle} = \frac{v_{u}}{v_{d}}
@@ -127,4 +146,38 @@ The fit to B-anomolies done in Ref. \cite{leptoquark}, found the best fit values
 
 \subsection{g-2 Anomaly}
 
+In the alignment limit, for the normal scenario $h_{SM}=h$, $sin(\beta-\alpha)=1$, $\implies$ $c_{\alpha}/s_{\beta}=1$, $s_{\alpha}/c_{\beta}=-1$, $s_{\alpha}/s_{\beta}=-1/t_{\beta}$, $c_{\alpha}/c_{\beta}=t_{\beta}$.
 
+\begin{table}[H]
+    \centering
+    \begin{tabular}{p{1.5cm}|x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}}
+         \hline
+          & $g_{h}^{u}$ & $g_{h}^{d}$ & $g_{h}^{l}$ & $g_{H}^{u}$ & $g_{H}^{d}$ & $g_{H}^{l}$ & $g_{A}^{u}$ & $g_{A}^{d}$ & $g_{A}^{l}$ \\
+         \hline
+         \hline
+         Type I & $1$ & $1$ & $1$ & $-1/t_{\beta}$ & $-1/t_{\beta}$ & $-1/t_{\beta}$ & $1/t_{\beta}$ & $-1/t_{\beta}$ & $-1/t_{\beta}$ \\
+         Type II & $1$ & $1$ & $1$ & $-1/t_{\beta}$ & $t_{\beta}$ & $t_{\beta}$ & $1/t_{\beta}$ & $t_{\beta}$ & $t_{\beta}$ \\
+         Type X & $1$ & $1$ & $1$ & $-1/t_{\beta}$ & $-1/t_{\beta}$ & $t_{\beta}$ & $1/t_{\beta}$ & $-1/t_{\beta}$ & $t_{\beta}$ \\
+         Type Y & $1$ & $1$ & $1$ & $-1/t_{\beta}$ & $t_{\beta}$ & $-1/t_{\beta}$ & $1/t_{\beta}$ & $t_{\beta}$ & $-1/t_{\beta}$ \\
+         \hline
+    \end{tabular}
+    \caption{}
+\end{table}
+
+In the alignment limit, for the inverted scenario $h_{SM}=H$, $cos(\beta-\alpha)=1$ $\implies$ $c_{\alpha}/s_{\beta}=1/t_{\beta}$, $s_{\alpha}/c_{\beta}=t_{\beta}$, $s_{\alpha}/s_{\beta}=1$, $c_{\alpha}/c_{\beta}=1$.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{p{1.5cm}|x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}}
+         \hline
+          & $g_{h}^{u}$ & $g_{h}^{d}$ & $g_{h}^{l}$ & $g_{H}^{u}$ & $g_{H}^{d}$ & $g_{H}^{l}$ & $g_{A}^{u}$ & $g_{A}^{d}$ & $g_{A}^{l}$ \\
+         \hline
+         \hline
+         Type I & $1/t_{\beta}$ & $1/t_{\beta}$ & $1/t_{\beta}$ & $1$ & $1$ & $1$ & $1/t_{\beta}$ & $-1/t_{\beta}$ & $-1/t_{\beta}$ \\
+         Type II & $1/t_{\beta}$ & $-t_{\beta}$ & $-t_{\beta}$ & $1$ & $1$ & $1$ & $1/t_{\beta}$ & $t_{\beta}$ & $t_{\beta}$ \\
+         Type X & $1/t_{\beta}$ & $1/t_{\beta}$ & $-t_{\beta}$ & $1$ & $1$ & $1$ & $1/t_{\beta}$ & $-1/t_{\beta}$ & $t_{\beta}$ \\
+         Type Y & $1/t_{\beta}$ & $-t_{\beta}$ & $1/t_{\beta}$ & $1$ & $1$ & $1$ & $1/t_{\beta}$ & $t_{\beta}$ & $-1/t_{\beta}$ \\
+         \hline
+    \end{tabular}
+    \caption{}
+\end{table}
