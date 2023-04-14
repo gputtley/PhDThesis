@@ -1,6 +1,6 @@
 \BOOKMARK [0][-]{chapter.1}{Theory and Motivation}{}% 1
 \BOOKMARK [1][-]{section.1.1}{The Standard Model of Particle Physics}{chapter.1}% 2
-\BOOKMARK [2][-]{subsection.1.1.1}{Fundamental Particles}{section.1.1}% 3
+\BOOKMARK [2][-]{subsection.1.1.1}{Fundamental Particles and Interactions}{section.1.1}% 3
 \BOOKMARK [2][-]{subsection.1.1.2}{Higgs Sector}{section.1.1}% 4
 \BOOKMARK [1][-]{section.1.2}{Extended Higgs Sector}{chapter.1}% 5
 \BOOKMARK [1][-]{section.1.3}{Theoretical Problems and Potential Solutions}{chapter.1}% 6
@@ -53,12 +53,23 @@
 \BOOKMARK [0][-]{chapter.5}{Search for new physics in tautautautau final states}{}% 53
 \BOOKMARK [1][-]{section.5.1}{Signal Modelling}{chapter.5}% 54
 \BOOKMARK [1][-]{section.5.2}{Event Selection}{chapter.5}% 55
-\BOOKMARK [1][-]{section.5.3}{Signal Extraction}{chapter.5}% 56
-\BOOKMARK [1][-]{section.5.4}{Background Modelling}{chapter.5}% 57
-\BOOKMARK [2][-]{subsection.5.4.1}{Overview}{section.5.4}% 58
-\BOOKMARK [2][-]{subsection.5.4.2}{Machine Learning Fake Factor Method}{section.5.4}% 59
-\BOOKMARK [1][-]{section.5.5}{Corrections}{chapter.5}% 60
-\BOOKMARK [1][-]{section.5.6}{Results}{chapter.5}% 61
-\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 62
-\BOOKMARK [1][-]{section.6.1}{Global Interpretations of Results}{chapter.6}% 63
-\BOOKMARK [1][-]{section.6.2}{Projections to Run-3 and HL-LHC}{chapter.6}% 64
+\BOOKMARK [2][-]{subsection.5.2.1}{Trigger Requirements}{section.5.2}% 56
+\BOOKMARK [2][-]{subsection.5.2.2}{Offline Requirements}{section.5.2}% 57
+\BOOKMARK [1][-]{section.5.3}{Search Optimisation}{chapter.5}% 58
+\BOOKMARK [1][-]{section.5.4}{Background Modelling Overview}{chapter.5}% 59
+\BOOKMARK [1][-]{section.5.5}{ZZ Modelling}{chapter.5}% 60
+\BOOKMARK [1][-]{section.5.6}{Machine Learning Fake Factor Method}{chapter.5}% 61
+\BOOKMARK [2][-]{subsection.5.6.1}{BDT Reweighter}{section.5.6}% 62
+\BOOKMARK [2][-]{subsection.5.6.2}{Fitting Regions}{section.5.6}% 63
+\BOOKMARK [2][-]{subsection.5.6.3}{Machine Learning Subtraction Method}{section.5.6}% 64
+\BOOKMARK [2][-]{subsection.5.6.4}{Fitting}{section.5.6}% 65
+\BOOKMARK [2][-]{subsection.5.6.5}{Applying Fake Factors}{section.5.6}% 66
+\BOOKMARK [1][-]{section.5.7}{MC Corrections}{chapter.5}% 67
+\BOOKMARK [1][-]{section.5.8}{Uncertainty Model}{chapter.5}% 68
+\BOOKMARK [1][-]{section.5.9}{Signal Extraction}{chapter.5}% 69
+\BOOKMARK [2][-]{subsection.5.9.1}{Postfit Plots}{section.5.9}% 70
+\BOOKMARK [1][-]{section.5.10}{Model Independent Results}{chapter.5}% 71
+\BOOKMARK [1][-]{section.5.11}{Model Dependent Limits}{chapter.5}% 72
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 73
+\BOOKMARK [1][-]{section.6.1}{Global Interpretations of Results}{chapter.6}% 74
+\BOOKMARK [1][-]{section.6.2}{Outlook}{chapter.6}% 75

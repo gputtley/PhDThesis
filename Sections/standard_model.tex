@@ -1,38 +1,210 @@
 \chapter{Theory and Motivation}
 
+The Standard Model (SM) of particle physics is our current best theory to describe the fundamental particles and their interactions.
+The SM describes the strong force, as well as unifying the weak and electromagnetic forces.
+The latter is partly done through the Brout-Englert-Higgs (BEH) mechanism for spontaneous symmetry breaking, that allows many fundamental particles to obtain masses.
+It also predicts a new scalar boson, named the Higgs boson.
+In 2012, the ATLAS \cite{ATLAS_Higgs_Discovery} and CMS collaboration \cite{CMS_Higgs_Discovery} discovered a Higgs boson-like particle when colliding protons at high energy at the Large Hadron Collider (LHC) and further measurements of this particle's properties have been consistent with such a particle.
+This discovery experimentally completed the SM particle constituents. \\
+
+However, the SM is not without theoretical problems and experimental tensions.
+Firstly, the hierarchy problem describes the issue of lightness of the observed Higgs boson mass and the "unnatural" balancing of inputs needed to explain the theorised loop corrections to the predicted mass. 
+These are orders of magnitude larger than then observed mass.
+A solution to this problem is Supersymmetry, but no experimental evidence for this theory has yet been found that separates it from the Standard Model. 
+Secondly, results from the LHCb experiment \cite{} and the g−2 experiment \cite{} have shown deviations from the SM predictions.
+Although not the statistical significance for a discovery, they offer intriguing hints at potential Beyond SM (BSM) physics.
+BSM particles, produced from extended Higgs sectors or otherwise, have been theorised to explain these deviations .
+This chapter will explain the SM and the Higgs sector theory, as well as detailing the BSM extensions that can help resolve the theoretical tensions and experimental tensions.
+
 \section{The Standard Model of Particle Physics}
 
-\subsection{Fundamental Particles}
+\subsection{Fundamental Particles and Interactions}
+
+The SM is a set of fundamental particles, as shown in Figure~\ref{fig:sm_diagram}, and rules that govern the interactions between particles.
+The interactions between these particles are able to model the strong, weak and electromagnetic force, unifying the later two into one electroweak interaction.
+The SM consists of 6 quarks, 3 charged leptons and 3 neutrinos, which are named fermions. 
+Each of these particles contain an anti-partner with opposite quantum numbers but the same mass.
+
+The SM is a renormalisable quantum field theory that is built on the principle of local gauge invariance.
+The SU(3) $\otimes$ SU(2) $\otimes$ U(1) is the gauge symmetry group of the SM.
+This means that the Lagrangian, that governs the particles interactions, is invariant under such a transformation.
+
+\begin{figure}[!hbtp]
+\centering
+    \includegraphics[width=\textwidth]{Figures/SM_diagram.pdf}
+\caption{}
+\label{fig:sm_diagram}
+\end{figure}
 
 \subsection{Higgs Sector}
 
+\begin{equation}
+	\Phi = 
+	\begin{pmatrix} 
+		\phi^{+} \\
+		\phi^{0} \\
+	\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+	\mathcal{L} = (\partial_{\mu}\phi)^{\dagger} (\partial^{\mu}\phi) - V(\phi)
+\end{equation}
+
+\begin{equation}
+V(\phi) = \mu^2 \phi^{\dagger} \phi + \lambda (\phi^{\dagger} \phi)^2
+\end{equation}
+
+Has minima at
+\begin{equation}
+\phi^{\dagger} \phi = -\frac{\mu^2}{2\lambda}
+\end{equation}
+
+Need massless photon
+\begin{equation}
+\braket{0|\phi|0} = \frac{1}{\sqrt{2}}
+	\begin{pmatrix} 
+		0 \\
+		\nu \\
+	\end{pmatrix}
+\end{equation}
+
+Break symmetry
+
+\begin{equation}
+\phi = \frac{1}{\sqrt{2}}
+	\begin{pmatrix} 
+		0 \\
+		\nu + h(x)\\
+	\end{pmatrix}
+\end{equation}
+
+To make the mass term gauge invariant
+
+\begin{equation}
+\partial_{\mu} \rightarrow D_{\mu} = \partial_{\mu} + \frac{i g_{W}}{2} \vec{\sigma} \cdot \vec{W}_{\mu} + \frac{ig^{'}Y}{2} B_{\mu}
+\end{equation}
+
+\begin{equation}
+D_{\mu}\phi =  \frac{1}{\sqrt{2}}
+	\begin{pmatrix} 
+		0 \\
+		\nu + h(x)\\
+	\end{pmatrix}
+\end{equation}
+
 \section{Extended Higgs Sector}
+
+There is no theoretical limitation to only have one Higgs doublet in the theory.
+Therefore, a natural extension to the SM Higgs sector is the two Higgs doublet model (2HDM).
+
+\begin{equation}
+\begin{aligned}
+\mathcal{L}^{\text{2HDM}}_{\text{yukawa}} &= - \sum_{f=u,d,l}\Big(\frac{m_{f}}{\nu}g^{f}_{h}\bar{f}fh + \frac{m_{f}}{\nu}g^{f}_{H}\bar{f}fH -i\frac{m_{f}}{\nu}g^{f}_{A}\bar{f}\gamma_{5}fA\Big)  \\ 
+&- \Big[\frac{\sqrt{2}V_{ud}}{\nu}\bar{u}(m_{u}g^{u}_{A}P_{L} + m_{d}g^{d}_{A}P_{R})dH^{+} + \frac{\sqrt{2}m_{l}g^{d}_{A}}{\nu}\bar{\nu}_{L}l_{R}H^{+} + h.c.\Big]
+\end{aligned}
+\end{equation}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|x{1.0cm}|x{2.0cm}x{2.0cm}x{2.0cm}x{2.0cm}|}
+    		\hline
+    	 	& Type I & Type II & Type X & Type Y \\
+    	 	\hline
+    	 	\hline
+    	 	$u$ & $\Phi_2$ & $\Phi_2$  & $\Phi_2$  & $\Phi_2$  \\ 
+    	 	$d$ & $\Phi_2$ & $\Phi_1$ & $\Phi_2$ & $\Phi_1$ \\
+    	 	$l$ & $\Phi_2$ & $\Phi_1$   & $\Phi_1$    & $\Phi_2$ \\
+        \hline
+    \end{tabular}
+    \caption{}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|x{1.0cm}|x{2.0cm}x{2.0cm}x{2.0cm}x{2.0cm}|}
+    		\hline
+    	 	& Type I & Type II & Type X & Type Y \\
+    	 	\hline
+    	 	\hline
+    	 	$g_{h}^{u}$ & $c_{\alpha}/s_{\beta}$ & $c_{\alpha}/s_{\beta}$  & $c_{\alpha}/s_{\beta}$  & $c_{\alpha}/s_{\beta}$  \\ 
+    	 	$g_{h}^{d}$ & $c_{\alpha}/s_{\beta}$ & $-s_{\alpha}/c_{\beta}$ & $c_{\alpha}/s_{\beta}$  & $-s_{\alpha}/c_{\beta}$ \\
+    	 	$g_{h}^{l}$ & $c_{\alpha}/s_{\beta}$ & $-s_{\alpha}/c_{\beta}$ & $-s_{\alpha}/c_{\beta}$ & $c_{\alpha}/s_{\beta}$  \\
+    	 	\hline
+    	 	$g_{H}^{u}$ & $s_{\alpha}/s_{\beta}$ & $s_{\alpha}/s_{\beta}$ & $s_{\alpha}/s_{\beta}$ & $s_{\alpha}/s_{\beta}$ \\
+    	 	$g_{H}^{d}$ & $s_{\alpha}/s_{\beta}$ & $c_{\alpha}/c_{\beta}$ & $s_{\alpha}/s_{\beta}$ & $c_{\alpha}/c_{\beta}$ \\
+    	 	$g_{H}^{l}$ & $s_{\alpha}/s_{\beta}$ & $c_{\alpha}/c_{\beta}$ & $c_{\alpha}/c_{\beta}$ & $s_{\alpha}/s_{\beta}$ \\
+    	 	\hline
+    	 	$g_{A}^{u}$ & $1/t_{\beta}$ & $1/t_{\beta}$ & $1/t_{\beta}$  & $1/t_{\beta}$ \\
+    	 	$g_{A}^{d}$ & $1/t_{\beta}$ & $t_{\beta}$   & $-1/t_{\beta}$ & $t_{\beta}$ \\
+    	 	$g_{A}^{l}$ & $1/t_{\beta}$ & $t_{\beta}$   & $t_{\beta}$    & $-1/t_{\beta}$ \\
+        \hline
+    \end{tabular}
+    \caption{}
+\end{table}
 
 \section{Theoretical Problems and Potential Solutions}
 
 \subsection{Hierarchy Problem}
 
-The hierarchy problem can be resolved by adding a symmetry between fermions and bosons that allow cancellations to corrections to the Higgs mass. This theory is known as Supersymmetry. \cite{SUSY_Primer} In its simplest form, the Minimal Supersymmetric Standard Model (MSSM), is a type-II 2 Higgs doublet model (2HDM), the predicts the existence of five Higgs bosons: two scalars (h, H), two charged bosons (\(H^{\pm}\)) and one pseudoscalar (A). At tree level this Higgs sector only depends on two parameters, $m_A$ and $\tan\beta$, where $\tan\beta$ is the ratio of vacuum expectation values.
-
-\begin{equation}
-\mathcal{L}^{\text{2HDM}}_{\text{yukawa}} = - \sum_{f=u,d,l}\Big(\frac{m_{f}}{\nu}\xi^{f}_{h}\bar{f}fh + \frac{m_{f}}{\nu}\xi^{f}_{H}\bar{f}fH -i\frac{m_{f}}{\nu}\xi^{f}_{A}\bar{f}\gamma_{5}fA\Big) - \Big[\frac{\sqrt{2}V_{ud}}{\nu}\bar{u}(m_{u}\xi^{u}_{A}P_{L} + m_{d}\xi^{d}_{A}P_{R})dH^{+} + \frac{\sqrt{2}m_{l}\xi^{d}_{A}}{\nu}\bar{\nu}_{L}l_{R}H^{+} + h.c.\Big]
-\end{equation}
-
-\begin{table}[H]
+\begin{figure}[H]
+\centering
+    \begin{subfigure}[b]{0.4\textwidth}
     \centering
-    \begin{tabular}{p{1.5cm}|x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}}
-         \hline
-          & $g_{h}^{u}$ & $g_{h}^{d}$ & $g_{h}^{l}$ & $g_{H}^{u}$ & $g_{H}^{d}$ & $g_{H}^{l}$ & $g_{A}^{u}$ & $g_{A}^{d}$ & $g_{A}^{l}$ \\
-         \hline
-         \hline
-         Type I & $c_{\alpha}/s_{\beta}$ & $c_{\alpha}/s_{\beta}$ & $c_{\alpha}/s_{\beta}$ & $s_{\alpha}/s_{\beta}$ & $s_{\alpha}/s_{\beta}$ & $s_{\alpha}/s_{\beta}$ & $1/t_{\beta}$ & $-1/t_{\beta}$ & $-1/t_{\beta}$ \\
-         Type II & $c_{\alpha}/s_{\beta}$ & $-s_{\alpha}/c_{\beta}$ & $-s_{\alpha}/c_{\beta}$ & $s_{\alpha}/s_{\beta}$ & $c_{\alpha}/c_{\beta}$ & $c_{\alpha}/c_{\beta}$ & $1/t_{\beta}$ & $t_{\beta}$ & $t_{\beta}$ \\
-         Type X & $c_{\alpha}/s_{\beta}$ & $c_{\alpha}/s_{\beta}$ & $-s_{\alpha}/c_{\beta}$ & $s_{\alpha}/s_{\beta}$ & $s_{\alpha}/s_{\beta}$ & $c_{\alpha}/c_{\beta}$ & $1/t_{\beta}$ & $-1/t_{\beta}$ & $t_{\beta}$ \\
-         Type Y & $c_{\alpha}/s_{\beta}$ & $-s_{\alpha}/c_{\beta}$ & $c_{\alpha}/s_{\beta}$ & $s_{\alpha}/s_{\beta}$ & $c_{\alpha}/c_{\beta}$ & $s_{\alpha}/s_{\beta}$ & $1/t_{\beta}$ & $t_{\beta}$ & $-1/t_{\beta}$ \\
-         \hline
-    \end{tabular}
+    \scalebox{0.8}{
+    \begin{tikzpicture}
+    \begin{feynman}
+    \vertex (a) {\(H\)};
+    \vertex [right = 1.5cm of a] (b);
+    \vertex [right = 1cm of b] (dummy);
+    \vertex [right = 1cm of dummy] (c);
+    \vertex [above = 1cm of dummy] (e);
+    \vertex [below = 1cm of dummy] (f);
+    \vertex [right = 1.5cm of c] (d) {\(H\)};
+    \diagram* {
+    (a) -- [scalar] (b),
+    (b) -- [out=90, in=180] (e),
+    (e) -- [out=0, in=90, edge label=\(f\)] (c),
+    (b) -- [out=-90, in=180] (f),
+    (f) -- [out=0, in=-90] (c),
+    (c) -- [scalar] (d)
+    };
+    \end{feynman}
+    \end{tikzpicture}
+    }
     \caption{}
-\end{table}
+    \label{fig:corr_fermion}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.4\textwidth}
+    \centering
+    \scalebox{0.8}{
+    \begin{tikzpicture}
+    \begin{feynman}
+    \vertex (a) {\(H\)};
+    \vertex [right = 2cm of a] (b);
+    \vertex [right = 2cm of b] (c) {\(H\)};
+    \vertex [above = 1cm of b] (dummy);
+    \vertex [left = 1cm of dummy] (d);
+    \vertex [above = 1cm of dummy] (e);
+    \vertex [right = 1cm of dummy] (f);
+    \diagram* {
+    (a) -- [scalar] (b),
+    (b) -- [scalar, out=180, in=-90] (d),
+    (d) -- [scalar, out=90, in=-180] (e),
+    (e) -- [scalar, out=0, in=90, edge label=S] (f),
+    (f) -- [scalar, out=-90, in=0] (b),
+    (b) -- [scalar] (c)
+    };
+    \end{feynman}
+    \end{tikzpicture}
+    }
+    \caption{}
+    \label{fig:corr_scalar}
+    \end{subfigure}
+    \caption{One-loop corrections to the Higgs mass by a fermion f (a) and a scalar S (b).}
+    \label{fig:Higgs_One_Loop_Corrections}
+\end{figure}
+
+The hierarchy problem can be resolved by adding a symmetry between fermions and bosons that allow cancellations to corrections to the Higgs mass. This theory is known as Supersymmetry. \cite{SUSY_Primer} In its simplest form, the Minimal Supersymmetric Standard Model (MSSM), is a type-II 2 Higgs doublet model (2HDM), the predicts the existence of five Higgs bosons: two scalars (h, H), two charged bosons (\(H^{\pm}\)) and one pseudoscalar (A). At tree level this Higgs sector only depends on two parameters, $m_A$ and $\tan\beta$, where $\tan\beta$ is the ratio of vacuum expectation values.
 
 \begin{equation}
 \tan \beta = \frac{\langle H_{u}^{0} \rangle}{\langle H_{d}^{0} \rangle} = \frac{v_{u}}{v_{d}}
@@ -40,21 +212,6 @@ The hierarchy problem can be resolved by adding a symmetry between fermions and 
 
 The couplings of the neutral Higgs bosons to heavy fermions are different from the Standard Model Higgs couplings. At tree level these differ by the factors shown in the Table \ref{tab:mssm_couplings}.
 
-\begin{table}[H]
-\centering
-\begin{tabular}{c || c c c}
-\hline
-  & $b\bar{b}$ & $t\bar{t}$ & $\tau^+ \tau^-$ \\
-\hline
-\hline
-h & $-\sin\alpha / \cos\beta$ & $\cos\alpha / \sin\beta$ & $-\sin\alpha / \cos\beta$\\
-H & $\cos\alpha / \cos\beta$ & $\sin\alpha / \sin\beta$ & $\cos\alpha / \cos\beta$ \\
-A & $\gamma_{5}\tan\beta $ & $\gamma_{5}/\tan\beta$ & $\gamma_{5}\tan\beta$ \\
-\hline
-\end{tabular}
-\caption{MSSM couplings between heavy fermions and MSSM neutral Higgs bosons. $\alpha$ is the angle that diagonalises of the CP-even Higgs squared mass matrix. $\beta$ is the inverse tangent of the ratio of vacuum expectation values and $\gamma_5$ shows a pseudoscalar coupling.}
-\label{tab:mssm_couplings}
-\end{table}
 
 Due to the hierarchy of the top and bottom masses, it is expected that $\tan\beta$ is greater than 1 and therefore the couplings to tau leptons and bottom quarks would be enhanced and the coupling to top quarks would be suppressed.
 
@@ -148,36 +305,20 @@ The fit to B-anomolies done in Ref. \cite{leptoquark}, found the best fit values
 
 In the alignment limit, for the normal scenario $h_{SM}=h$, $sin(\beta-\alpha)=1$, $\implies$ $c_{\alpha}/s_{\beta}=1$, $s_{\alpha}/c_{\beta}=-1$, $s_{\alpha}/s_{\beta}=-1/t_{\beta}$, $c_{\alpha}/c_{\beta}=t_{\beta}$.
 
-\begin{table}[H]
-    \centering
-    \begin{tabular}{p{1.5cm}|x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}}
-         \hline
-          & $g_{h}^{u}$ & $g_{h}^{d}$ & $g_{h}^{l}$ & $g_{H}^{u}$ & $g_{H}^{d}$ & $g_{H}^{l}$ & $g_{A}^{u}$ & $g_{A}^{d}$ & $g_{A}^{l}$ \\
-         \hline
-         \hline
-         Type I & $1$ & $1$ & $1$ & $-1/t_{\beta}$ & $-1/t_{\beta}$ & $-1/t_{\beta}$ & $1/t_{\beta}$ & $-1/t_{\beta}$ & $-1/t_{\beta}$ \\
-         Type II & $1$ & $1$ & $1$ & $-1/t_{\beta}$ & $t_{\beta}$ & $t_{\beta}$ & $1/t_{\beta}$ & $t_{\beta}$ & $t_{\beta}$ \\
-         Type X & $1$ & $1$ & $1$ & $-1/t_{\beta}$ & $-1/t_{\beta}$ & $t_{\beta}$ & $1/t_{\beta}$ & $-1/t_{\beta}$ & $t_{\beta}$ \\
-         Type Y & $1$ & $1$ & $1$ & $-1/t_{\beta}$ & $t_{\beta}$ & $-1/t_{\beta}$ & $1/t_{\beta}$ & $t_{\beta}$ & $-1/t_{\beta}$ \\
-         \hline
-    \end{tabular}
-    \caption{}
-\end{table}
-
 In the alignment limit, for the inverted scenario $h_{SM}=H$, $cos(\beta-\alpha)=1$ $\implies$ $c_{\alpha}/s_{\beta}=1/t_{\beta}$, $s_{\alpha}/c_{\beta}=t_{\beta}$, $s_{\alpha}/s_{\beta}=1$, $c_{\alpha}/c_{\beta}=1$.
 
+
 \begin{table}[H]
     \centering
-    \begin{tabular}{p{1.5cm}|x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}x{1.2cm}}
+    \begin{tabular}{p{1.5cm}|x{2.2cm}x{2.2cm}x{2.2cm}x{2.2cm}}
          \hline
-          & $g_{h}^{u}$ & $g_{h}^{d}$ & $g_{h}^{l}$ & $g_{H}^{u}$ & $g_{H}^{d}$ & $g_{H}^{l}$ & $g_{A}^{u}$ & $g_{A}^{d}$ & $g_{A}^{l}$ \\
+         Scenario & $\tan\beta$ & $m_{A}$ (GeV) & $m_{\phi}$ (GeV) & $m_{H^{\pm}}$ (GeV) \\
          \hline
          \hline
-         Type I & $1/t_{\beta}$ & $1/t_{\beta}$ & $1/t_{\beta}$ & $1$ & $1$ & $1$ & $1/t_{\beta}$ & $-1/t_{\beta}$ & $-1/t_{\beta}$ \\
-         Type II & $1/t_{\beta}$ & $-t_{\beta}$ & $-t_{\beta}$ & $1$ & $1$ & $1$ & $1/t_{\beta}$ & $t_{\beta}$ & $t_{\beta}$ \\
-         Type X & $1/t_{\beta}$ & $1/t_{\beta}$ & $-t_{\beta}$ & $1$ & $1$ & $1$ & $1/t_{\beta}$ & $-1/t_{\beta}$ & $t_{\beta}$ \\
-         Type Y & $1/t_{\beta}$ & $-t_{\beta}$ & $1/t_{\beta}$ & $1$ & $1$ & $1$ & $1/t_{\beta}$ & $t_{\beta}$ & $-1/t_{\beta}$ \\
+         Normal & $\geq 90$ & [62.5,145] & [130,245] & [95,285] \\
+         Inverted & $\geq 120$ & [70,105] & [100,120] & [95,185] \\
          \hline
     \end{tabular}
     \caption{}
+    \label{tab:gm2region}
 \end{table}

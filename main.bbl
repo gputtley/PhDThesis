@@ -9,6 +9,55 @@ H.~Bartosik and G.~Rumolo, ``{Performance of the LHC injector chain after the
 {CMS Collaboration}, ``{The CMS Experiment at the CERN LHC},'' {\em JINST},
   vol.~3, p.~S08004, 2008.
 
+\bibitem{ATLAS:2020zms}
+G.~Aad {\em et~al.}, ``Search for heavy {Higgs} bosons decaying into two tau
+  leptons with the {ATLAS} detector using pp collisions at {$\sqrt{s}=13$
+  TeV},'' {\em Phys. Rev. Lett.}, vol.~125, p.~051801, 2020.
+
+\bibitem{Cornella:2021sby}
+C.~Cornella, D.~A. Faroughy, J.~Fuentes-Martin, G.~Isidori, and M.~Neubert,
+  ``Reading the footprints of the {B}-meson flavor anomalies,'' {\em JHEP},
+  vol.~08, p.~050, 2021.
+
+\bibitem{SUSY_Primer}
+S.~P. Martin, ``{A Supersymmetry Primer},'' {\em Advanced Series on Directions
+  in High Energy Physics}, p.~1–98, Jul 1998.
+
+\bibitem{ATLAS_Higgs_Discovery}
+{ATLAS Collaboration}, ``{Observation of a new particle in the search for the
+  Standard Model Higgs boson with the ATLAS detector at the LHC},'' {\em Phys.
+  Lett. B}, vol.~716, pp.~1--29, 2012.
+
+\bibitem{CMS_Higgs_Discovery}
+{CMS Collaboration}, ``{Observation of a New Boson at a Mass of 125 GeV with
+  the CMS Experiment at the LHC},'' {\em Phys. Lett. B}, vol.~716, pp.~30--61,
+  2012.
+
+\bibitem{mssm_theory}
+A.~Djouadi, L.~Maiani, A.~Polosa, J.~Quevillon, and V.~Riquer, ``{Fully
+  covering the MSSM Higgs sector at the LHC},'' {\em JHEP}, vol.~06, p.~168,
+  2015.
+
+\bibitem{PF_CMS}
+{CMS Collaboration}, ``{Particle-flow reconstruction and global event
+  description with the CMS detector},'' {\em JINST}, vol.~12, no.~10,
+  p.~P10003, 2017.
+
+\bibitem{CMS_btag}
+{CMS Collaboration}, ``{Identification of heavy-flavour jets with the CMS
+  detector in pp collisions at 13 TeV},'' {\em JINST}, vol.~13, no.~05,
+  p.~P05011, 2018.
+
+\bibitem{CMS_hps1}
+{CMS Collaboration}, ``{Reconstruction and identification of $\tau$ lepton
+  decays to hadrons and $\nu_\tau$ at CMS},'' {\em JINST}, vol.~11, no.~01,
+  p.~P01019, 2016.
+
+\bibitem{CMS_hps2}
+{CMS Collaboration}, ``{Performance of reconstruction and identification of tau
+  leptons in their decays to hadrons and tau neutrino in LHC Run-2},'' Tech.
+  Rep. CMS-PAS-TAU-16-002, CERN, Geneva, 2016.
+
 \bibitem{Bahl:2018zmf}
 E.~Bagnaschi, H.~Bahl, E.~Fuchs, T.~Hahn, S.~Heinemeyer, S.~Liebler, S.~Patel,
   P.~Slavich, T.~Stefaniak, C.~E.~M. Wagner, and G.~Weiglein, ``{MSSM Higgs}
@@ -174,11 +223,6 @@ G.~Cowan, K.~Cranmer, E.~Gross, and O.~Vitells, ``Asymptotic formulae for
   p.~1554, 2011.
 \newblock [Erratum: \DOI{10.1140/epjc/s10052-013-2501-z}].
 
-\bibitem{ATLAS:2020zms}
-G.~Aad {\em et~al.}, ``Search for heavy {Higgs} bosons decaying into two tau
-  leptons with the {ATLAS} detector using pp collisions at {$\sqrt{s}=13$
-  TeV},'' {\em Phys. Rev. Lett.}, vol.~125, p.~051801, 2020.
-
 \bibitem{LHCHiggsCrossSectionWorkingGroup:2013rie}
 {LHC Higgs Cross Section Working Group}, ``{Handbook of LHC Higgs} cross
   sections: 3. {Higgs} properties,'' Tech. Rep. CERN-2013-004, 2013.
@@ -197,10 +241,5 @@ A.~Denner, S.~Heinemeyer, I.~Puljak, D.~Rebuzzi, and M.~Spira, ``Standard model
 {CMS Collaboration}, ``{Searches for additional Higgs bosons and vector
   leptoquarks in $\tau\tau$ final states in proton-proton collisions at
   $\sqrt{s}=13~\mathrm{TeV}$},'' 2022.
-
-\bibitem{Cornella:2021sby}
-C.~Cornella, D.~A. Faroughy, J.~Fuentes-Martin, G.~Isidori, and M.~Neubert,
-  ``Reading the footprints of the {B}-meson flavor anomalies,'' {\em JHEP},
-  vol.~08, p.~050, 2021.
 
 \end{thebibliography}
