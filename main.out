@@ -61,15 +61,15 @@
 \BOOKMARK [1][-]{section.5.6}{Machine Learning Fake Factor Method}{chapter.5}% 61
 \BOOKMARK [2][-]{subsection.5.6.1}{BDT Reweighter}{section.5.6}% 62
 \BOOKMARK [2][-]{subsection.5.6.2}{Fitting Regions}{section.5.6}% 63
-\BOOKMARK [2][-]{subsection.5.6.3}{Machine Learning Subtraction Method}{section.5.6}% 64
-\BOOKMARK [2][-]{subsection.5.6.4}{Fitting}{section.5.6}% 65
-\BOOKMARK [2][-]{subsection.5.6.5}{Applying Fake Factors}{section.5.6}% 66
-\BOOKMARK [1][-]{section.5.7}{MC Corrections}{chapter.5}% 67
-\BOOKMARK [1][-]{section.5.8}{Uncertainty Model}{chapter.5}% 68
-\BOOKMARK [1][-]{section.5.9}{Signal Extraction}{chapter.5}% 69
-\BOOKMARK [2][-]{subsection.5.9.1}{Postfit Plots}{section.5.9}% 70
-\BOOKMARK [1][-]{section.5.10}{Model Independent Results}{chapter.5}% 71
-\BOOKMARK [1][-]{section.5.11}{Model Dependent Limits}{chapter.5}% 72
+\BOOKMARK [2][-]{subsection.5.6.3}{Variables Used}{section.5.6}% 64
+\BOOKMARK [2][-]{subsection.5.6.4}{Machine Learning Subtraction Method}{section.5.6}% 65
+\BOOKMARK [2][-]{subsection.5.6.5}{Fitting}{section.5.6}% 66
+\BOOKMARK [2][-]{subsection.5.6.6}{Applying Fake Factors}{section.5.6}% 67
+\BOOKMARK [1][-]{section.5.7}{Uncertainty Model}{chapter.5}% 68
+\BOOKMARK [1][-]{section.5.8}{Signal Extraction}{chapter.5}% 69
+\BOOKMARK [2][-]{subsection.5.8.1}{Postfit Plots}{section.5.8}% 70
+\BOOKMARK [1][-]{section.5.9}{Model Independent Results}{chapter.5}% 71
+\BOOKMARK [1][-]{section.5.10}{Model Dependent Limits}{chapter.5}% 72
 \BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 73
 \BOOKMARK [1][-]{section.6.1}{Global Interpretations of Results}{chapter.6}% 74
 \BOOKMARK [1][-]{section.6.2}{Outlook}{chapter.6}% 75
