@@ -3,9 +3,29 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: ieeetr.bst
 Database file #1: bibs/sample.bib
-Repeated entry---line 3680 of file bibs/sample.bib
- : @inproceedings{Conway:2011in
- :                             ,
+Repeated entry---line 3908 of file bibs/sample.bib
+ : @article{Englert:1964et
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3919 of file bibs/sample.bib
+ : @article{Higgs:1964ia
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3929 of file bibs/sample.bib
+ : @article{Higgs:1964pj
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3940 of file bibs/sample.bib
+ : @article{Higgs:1966ev
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3950 of file bibs/sample.bib
+ : @article{Guralnik:1964eu
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3961 of file bibs/sample.bib
+ : @article{Kibble:1967sv
+ :                       ,
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "Rk"
 Warning--I didn't find a database entry for "Rkstar"
@@ -28,45 +48,45 @@ Warning--empty journal in CMS:2022zks
 Warning--empty institution in LHCHiggsCrossSectionWorkingGroup:2013rie
 Warning--empty institution in deFlorian:2016spz
 Warning--empty journal in CMS:2022rbd
-You've used 58 entries,
+You've used 73 entries,
             1876 wiz_defined-function locations,
-            851 strings with 13795 characters,
-and the built_in function-call counts, 14047 in all, are:
-= -- 1372
-> -- 586
+            940 strings with 16159 characters,
+and the built_in function-call counts, 18101 in all, are:
+= -- 1819
+> -- 689
 < -- 5
-+ -- 222
-- -- 164
-* -- 860
-:= -- 2013
-add.period$ -- 60
-call.type$ -- 58
-change.case$ -- 59
++ -- 263
+- -- 190
+* -- 1052
+:= -- 2527
+add.period$ -- 76
+call.type$ -- 73
+change.case$ -- 74
 chr.to.int$ -- 0
-cite$ -- 64
-duplicate$ -- 895
-empty$ -- 1212
-format.name$ -- 164
-if$ -- 3531
+cite$ -- 79
+duplicate$ -- 1176
+empty$ -- 1571
+format.name$ -- 190
+if$ -- 4601
 int.to.chr$ -- 0
-int.to.str$ -- 58
-missing$ -- 51
-newline$ -- 179
-num.names$ -- 58
-pop$ -- 175
+int.to.str$ -- 73
+missing$ -- 66
+newline$ -- 225
+num.names$ -- 73
+pop$ -- 219
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 652
+skip$ -- 897
 stack$ -- 0
-substring$ -- 417
-swap$ -- 438
+substring$ -- 611
+swap$ -- 599
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 6
-while$ -- 111
-width$ -- 60
-write$ -- 571
-(There was 1 error message)
+while$ -- 145
+width$ -- 75
+write$ -- 721
+(There were 6 error messages)

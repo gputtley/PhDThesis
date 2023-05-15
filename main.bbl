@@ -19,10 +19,6 @@ C.~Cornella, D.~A. Faroughy, J.~Fuentes-Martin, G.~Isidori, and M.~Neubert,
   ``Reading the footprints of the {B}-meson flavor anomalies,'' {\em JHEP},
   vol.~08, p.~050, 2021.
 
-\bibitem{SUSY_Primer}
-S.~P. Martin, ``{A Supersymmetry Primer},'' {\em Advanced Series on Directions
-  in High Energy Physics}, p.~1–98, Jul 1998.
-
 \bibitem{ATLAS_Higgs_Discovery}
 {ATLAS Collaboration}, ``{Observation of a new particle in the search for the
   Standard Model Higgs boson with the ATLAS detector at the LHC},'' {\em Phys.
@@ -32,6 +28,83 @@ S.~P. Martin, ``{A Supersymmetry Primer},'' {\em Advanced Series on Directions
 {CMS Collaboration}, ``{Observation of a New Boson at a Mass of 125 GeV with
   the CMS Experiment at the LHC},'' {\em Phys. Lett. B}, vol.~716, pp.~30--61,
   2012.
+
+\bibitem{LHCb:2021trn}
+R.~Aaij {\em et~al.}, ``{Test of lepton universality in beauty-quark decays},''
+  {\em Nature Phys.}, vol.~18, no.~3, pp.~277--282, 2022.
+
+\bibitem{Kowalewski:2013mna}
+B.~Kowalewski, ``{Evidence for an excess of $B \to D^{(*)} \tau \nu$ decays},''
+  {\em J. Phys. Conf. Ser.}, vol.~455, p.~012039, 2013.
+
+\bibitem{BaBar:2013mob}
+J.~P. Lees {\em et~al.}, ``Measurement of an excess of {$\bar{\mathrm{B}} \to
+  \mathrm{D}^{(*)}\tau^- \bar{\nu}_\tau$} decays and implications for charged
+  higgs bosons,'' {\em Phys. Rev. D}, vol.~88, p.~072012, 2013.
+
+\bibitem{Belle:2015qfa}
+M.~Huschle {\em et~al.}, ``{Measurement of the branching ratio of $\bar{B} \to
+  D^{(\ast)} \tau^- \bar{\nu}_\tau$ relative to $\bar{B} \to D^{(\ast)} \ell^-
+  \bar{\nu}_\ell$ decays with hadronic tagging at Belle},'' {\em Phys. Rev. D},
+  vol.~92, no.~7, p.~072014, 2015.
+
+\bibitem{LHCb:2015gmp}
+R.~Aaij {\em et~al.}, ``{Measurement of the ratio of branching fractions
+  $\mathcal{B}(\bar{\mathrm{B}}^0 \to
+  \mathrm{D}^{*+}\tau^{-}\bar{\nu}_{\tau})/\mathcal{B}(\bar{\mathrm{B}}^0 \to
+  \mathrm{D}^{*+}\mu^{-}\bar{\nu}_{\mu})$},'' {\em Phys. Rev. Lett.}, vol.~115,
+  p.~111803, 2015.
+\newblock [Erratum: \DOI{10.1103/PhysRevLett.115.159901}].
+
+\bibitem{Belle:2016dyj}
+S.~Hirose {\em et~al.}, ``Measurement of the $\tau$ lepton polarization and
+  {$R(\mathrm{D}^*)$} in the decay {$\bar{\mathrm{B}} \to \mathrm{D}^* \tau^-
+  \bar{\nu}_\tau$},'' {\em Phys. Rev. Lett.}, vol.~118, p.~211801, 2017.
+
+\bibitem{LHCb:2017rln}
+R.~Aaij {\em et~al.}, ``{Test of Lepton Flavor Universality by the measurement
+  of the $B^0 \to D^{*-} \tau^+ \nu_{\tau}$ branching fraction using
+  three-prong $\tau$ decays},'' {\em Phys. Rev. D}, vol.~97, no.~7, p.~072013,
+  2018.
+
+\bibitem{LHCb:2017smo}
+R.~Aaij {\em et~al.}, ``Measurement of the ratio of the {$\mathrm{B}^0 \to
+  \mathrm{D}^{*-} \tau^+ \nu_{\tau}$ and $\mathrm{B}^0 \to \mathrm{D}^{*-}
+  \mu^+ \nu_{\mu}$} branching fractions using three-prong $\tau$-lepton
+  decays,'' {\em Phys. Rev. Lett.}, vol.~120, p.~171802, 2018.
+
+\bibitem{Muong-2:2021ojo}
+B.~Abi {\em et~al.}, ``{Measurement of the Positive Muon Anomalous Magnetic
+  Moment to 0.46 ppm},'' {\em Phys. Rev. Lett.}, vol.~126, no.~14, p.~141801,
+  2021.
+
+\bibitem{Englert:1964et}
+F.~Englert and R.~Brout, ``Broken symmetry and the mass of gauge vector
+  mesons,'' {\em Phys. Rev. Lett.}, p.~321, 1964.
+
+\bibitem{Higgs:1964ia}
+P.~W. Higgs, ``Broken symmetries, massless particles and gauge fields,'' {\em
+  Phys. Lett.}, p.~132, 1964.
+
+\bibitem{Higgs:1964pj}
+P.~W. Higgs, ``Broken symmetries and the masses of gauge bosons,'' {\em Phys.
+  Rev. Lett.}, p.~508, 1964.
+
+\bibitem{Higgs:1966ev}
+P.~W. Higgs, ``Spontaneous symmetry breakdown without massless bosons,'' {\em
+  Phys. Rev.}, p.~1156, 1966.
+
+\bibitem{Guralnik:1964eu}
+G.~S. Guralnik, C.~R. Hagen, and T.~W.~B. Kibble, ``Global conservation laws
+  and massless particles,'' {\em Phys. Rev. Lett.}, p.~585, 1964.
+
+\bibitem{Kibble:1967sv}
+T.~W.~B. Kibble, ``Symmetry breaking in non-{A}belian gauge theories,'' {\em
+  Phys. Rev.}, p.~1554, 1967.
+
+\bibitem{SUSY_Primer}
+S.~P. Martin, ``{A Supersymmetry Primer},'' {\em Advanced Series on Directions
+  in High Energy Physics}, p.~1–98, Jul 1998.
 
 \bibitem{mssm_theory}
 A.~Djouadi, L.~Maiani, A.~Polosa, J.~Quevillon, and V.~Riquer, ``{Fully
@@ -219,8 +292,8 @@ R.~J. Barlow and C.~Beeston, ``Fitting using finite {Monte Carlo} samples,''
   {\em Comput. Phys. Commun.}, vol.~77, p.~219, 1993.
 
 \bibitem{Conway:2011in}
-J.~S. Conway, ``Incorporating nuisance parameters in likelihoods for
-  multisource spectra,'' in {\em {PHYSTAT 2011}}, p.~115, 2011.
+J.~S. Conway, ``{Incorporating Nuisance Parameters in Likelihoods for
+  Multisource Spectra},'' in {\em {PHYSTAT 2011}}, pp.~115--120, 2011.
 
 \bibitem{Sirunyan:2019kia}
 A.~M. Sirunyan {\em et~al.}, ``Performance of missing transverse momentum

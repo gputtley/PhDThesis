@@ -1,92 +1,92 @@
 \babel@toc {english}{}
-\contentsline {chapter}{\numberline {1}Theory and Motivation}{15}{chapter.1}%
-\contentsline {section}{\numberline {1.1}The Standard Model of Particle Physics}{16}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Fundamental Particles and Interactions}{16}{subsection.1.1.1}%
+\contentsline {chapter}{\numberline {1}Theory and Motivation}{14}{chapter.1}%
+\contentsline {section}{\numberline {1.1}The Standard Model of Particle Physics}{15}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Fundamental Particles and Interactions}{15}{subsection.1.1.1}%
 \contentsline {subsection}{\numberline {1.1.2}Higgs Sector}{17}{subsection.1.1.2}%
-\contentsline {section}{\numberline {1.2}Extended Higgs Sector}{17}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Theoretical Problems and Potential Solutions}{18}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Hierarchy Problem}{18}{subsection.1.3.1}%
-\contentsline {section}{\numberline {1.4}Experimental Tensions and Potential Solutions}{21}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}B Anomalies}{21}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}g-2 Anomaly}{22}{subsection.1.4.2}%
-\contentsline {chapter}{\numberline {2}The LHC and CMS Experiment}{23}{chapter.2}%
-\contentsline {section}{\numberline {2.1}The LHC}{23}{section.2.1}%
-\contentsline {section}{\numberline {2.2}The CMS Detector}{24}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Tracker}{24}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Electromagnetic calorimeter}{24}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Hadron calorimeter}{24}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Muon system}{24}{subsection.2.2.4}%
-\contentsline {subsection}{\numberline {2.2.5}Triggering}{24}{subsection.2.2.5}%
-\contentsline {chapter}{\numberline {3}Object Reconstruction}{25}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Tracks and vertices}{25}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Particle flow}{25}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Muons}{26}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Electrons}{28}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Jets}{29}{section.3.5}%
-\contentsline {section}{\numberline {3.6}b jets}{30}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Missing transverse energy}{30}{section.3.7}%
-\contentsline {section}{\numberline {3.8}Taus}{30}{section.3.8}%
-\contentsline {chapter}{\numberline {4}Searches for New Physics in $\tau ^+\tau ^-$ Final States}{34}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Signal Modelling}{35}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Additional Higgs Bosons}{35}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Vector Leptoquarks}{38}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Event Selection}{40}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Trigger Requirements}{41}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Offline Requirements}{42}{subsection.4.2.2}%
-\contentsline {section}{\numberline {4.3}Search Optimisation}{43}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Background Modelling Overview}{47}{section.4.4}%
-\contentsline {section}{\numberline {4.5}QCD Estimation in the $e_{}\mu _{}$ Channel}{48}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Embedding Method}{49}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Fake Factor Method}{51}{section.4.7}%
-\contentsline {subsection}{\numberline {4.7.1}Determination Regions}{52}{subsection.4.7.1}%
-\contentsline {subsection}{\numberline {4.7.2}Parametrisation}{54}{subsection.4.7.2}%
-\contentsline {subsection}{\numberline {4.7.3}Corrections}{58}{subsection.4.7.3}%
-\contentsline {subsection}{\numberline {4.7.4}Applying Fake Factors}{60}{subsection.4.7.4}%
-\contentsline {section}{\numberline {4.8}MC Corrections}{62}{section.4.8}%
-\contentsline {section}{\numberline {4.9}Uncertainty Model}{63}{section.4.9}%
-\contentsline {subsubsection}{Hadronic Taus}{64}{section*.34}%
-\contentsline {subsubsection}{Light leptons}{64}{section*.35}%
-\contentsline {subsubsection}{Jets}{64}{section*.36}%
-\contentsline {subsubsection}{Leptons misidentified as hadronic taus}{65}{section*.37}%
-\contentsline {subsubsection}{Jets misidentified as hadronic taus}{65}{section*.38}%
-\contentsline {subsubsection}{Jets misidentified as light leptons}{65}{section*.39}%
-\contentsline {subsubsection}{Muons misidentified as electrons}{65}{section*.40}%
-\contentsline {subsubsection}{MET}{65}{section*.41}%
-\contentsline {subsubsection}{Background process specific uncertainties}{66}{section*.42}%
-\contentsline {subsubsection}{Signal process specific uncertainties}{66}{section*.43}%
-\contentsline {subsubsection}{Luminosity}{66}{section*.44}%
-\contentsline {subsubsection}{Prefiring}{66}{section*.45}%
-\contentsline {section}{\numberline {4.10}Signal Extraction}{67}{section.4.10}%
-\contentsline {section}{\numberline {4.11}Postfit Plots}{70}{section.4.11}%
-\contentsline {section}{\numberline {4.12}Model Independent Results}{71}{section.4.12}%
-\contentsline {subsection}{\numberline {4.12.1}Limits}{71}{subsection.4.12.1}%
-\contentsline {subsection}{\numberline {4.12.2}Significance and Compatibility}{76}{subsection.4.12.2}%
-\contentsline {subsection}{\numberline {4.12.3}2D Likelihood Scans}{78}{subsection.4.12.3}%
-\contentsline {section}{\numberline {4.13}Model Dependent Limits}{78}{section.4.13}%
-\contentsline {chapter}{\numberline {5}Search for New Physics in $\tau ^+\tau ^-\tau ^+\tau ^-$ Final States}{83}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Signal Modelling}{84}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Event Selection}{86}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Trigger Requirements}{88}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Offline Requirements}{89}{subsection.5.2.2}%
-\contentsline {section}{\numberline {5.3}Search Optimisation}{90}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Background Modelling Overview}{91}{section.5.4}%
-\contentsline {section}{\numberline {5.5}ZZ Modelling}{92}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Machine Learning Fake Factor Method}{92}{section.5.6}%
-\contentsline {subsection}{\numberline {5.6.1}BDT Reweighter}{93}{subsection.5.6.1}%
-\contentsline {subsection}{\numberline {5.6.2}Fitting Regions}{94}{subsection.5.6.2}%
-\contentsline {subsection}{\numberline {5.6.3}Variables Used}{95}{subsection.5.6.3}%
-\contentsline {subsection}{\numberline {5.6.4}Machine Learning Subtraction Method}{96}{subsection.5.6.4}%
-\contentsline {subsection}{\numberline {5.6.5}Fitting}{97}{subsection.5.6.5}%
-\contentsline {subsection}{\numberline {5.6.6}Applying Fake Factors}{101}{subsection.5.6.6}%
-\contentsline {section}{\numberline {5.7}Uncertainty Model}{102}{section.5.7}%
-\contentsline {subsubsection}{Hadronic Taus}{102}{section*.70}%
-\contentsline {subsubsection}{Jets misidentified as hadronic taus}{103}{section*.71}%
-\contentsline {subsubsection}{Background process specific uncertainties}{103}{section*.72}%
-\contentsline {subsubsection}{Signal process specific uncertainties}{103}{section*.73}%
-\contentsline {section}{\numberline {5.8}Signal Extraction}{103}{section.5.8}%
-\contentsline {subsection}{\numberline {5.8.1}Postfit Plots}{103}{subsection.5.8.1}%
-\contentsline {section}{\numberline {5.9}Model Independent Results}{103}{section.5.9}%
-\contentsline {section}{\numberline {5.10}Model Dependent Limits}{103}{section.5.10}%
-\contentsline {chapter}{\numberline {6}Conclusion}{104}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Global Interpretations of Results}{104}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Outlook}{104}{section.6.2}%
+\contentsline {section}{\numberline {1.2}Extended Higgs Sector}{19}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Theoretical Problems and Potential Solutions}{21}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Hierarchy Problem}{21}{subsection.1.3.1}%
+\contentsline {section}{\numberline {1.4}Experimental Tensions and Potential Solutions}{23}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}B Anomalies}{23}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}g-2 Anomaly}{24}{subsection.1.4.2}%
+\contentsline {chapter}{\numberline {2}The LHC and CMS Experiment}{25}{chapter.2}%
+\contentsline {section}{\numberline {2.1}The LHC}{25}{section.2.1}%
+\contentsline {section}{\numberline {2.2}The CMS Detector}{26}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Tracker}{26}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Electromagnetic calorimeter}{26}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Hadron calorimeter}{26}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Muon system}{26}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Triggering}{26}{subsection.2.2.5}%
+\contentsline {chapter}{\numberline {3}Object Reconstruction}{27}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Tracks and vertices}{27}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Particle flow}{27}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Muons}{28}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Electrons}{30}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Jets}{31}{section.3.5}%
+\contentsline {section}{\numberline {3.6}b jets}{32}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Missing transverse energy}{32}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Taus}{32}{section.3.8}%
+\contentsline {chapter}{\numberline {4}Searches for New Physics in $\tau ^+\tau ^-$ Final States}{36}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Signal Modelling}{37}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Additional Higgs Bosons}{37}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Vector Leptoquarks}{40}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Event Selection}{42}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Trigger Requirements}{43}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Offline Requirements}{44}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Search Optimisation}{45}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Background Modelling Overview}{49}{section.4.4}%
+\contentsline {section}{\numberline {4.5}QCD Estimation in the $e_{}\mu _{}$ Channel}{50}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Embedding Method}{51}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Fake Factor Method}{53}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Determination Regions}{54}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Parametrisation}{56}{subsection.4.7.2}%
+\contentsline {subsection}{\numberline {4.7.3}Corrections}{60}{subsection.4.7.3}%
+\contentsline {subsection}{\numberline {4.7.4}Applying Fake Factors}{62}{subsection.4.7.4}%
+\contentsline {section}{\numberline {4.8}MC Corrections}{64}{section.4.8}%
+\contentsline {section}{\numberline {4.9}Uncertainty Model}{65}{section.4.9}%
+\contentsline {subsubsection}{Hadronic Taus}{66}{section*.33}%
+\contentsline {subsubsection}{Light leptons}{66}{section*.34}%
+\contentsline {subsubsection}{Jets}{66}{section*.35}%
+\contentsline {subsubsection}{Leptons misidentified as hadronic taus}{67}{section*.36}%
+\contentsline {subsubsection}{Jets misidentified as hadronic taus}{67}{section*.37}%
+\contentsline {subsubsection}{Jets misidentified as light leptons}{67}{section*.38}%
+\contentsline {subsubsection}{Muons misidentified as electrons}{67}{section*.39}%
+\contentsline {subsubsection}{MET}{67}{section*.40}%
+\contentsline {subsubsection}{Background process specific uncertainties}{68}{section*.41}%
+\contentsline {subsubsection}{Signal process specific uncertainties}{68}{section*.42}%
+\contentsline {subsubsection}{Luminosity}{68}{section*.43}%
+\contentsline {subsubsection}{Prefiring}{68}{section*.44}%
+\contentsline {section}{\numberline {4.10}Signal Extraction}{69}{section.4.10}%
+\contentsline {section}{\numberline {4.11}Postfit Plots}{72}{section.4.11}%
+\contentsline {section}{\numberline {4.12}Model Independent Results}{73}{section.4.12}%
+\contentsline {subsection}{\numberline {4.12.1}Limits}{73}{subsection.4.12.1}%
+\contentsline {subsection}{\numberline {4.12.2}Significance and Compatibility}{78}{subsection.4.12.2}%
+\contentsline {subsection}{\numberline {4.12.3}2D Likelihood Scans}{80}{subsection.4.12.3}%
+\contentsline {section}{\numberline {4.13}Model Dependent Limits}{80}{section.4.13}%
+\contentsline {chapter}{\numberline {5}Search for New Physics in $\tau ^+\tau ^-\tau ^+\tau ^-$ Final States}{85}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Signal Modelling}{86}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Event Selection}{88}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Trigger Requirements}{90}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Offline Requirements}{91}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}Search Optimisation}{92}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Background Modelling Overview}{93}{section.5.4}%
+\contentsline {section}{\numberline {5.5}ZZ Modelling}{94}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Machine Learning Fake Factor Method}{94}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}BDT Reweighter}{95}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.2}Fitting Regions}{96}{subsection.5.6.2}%
+\contentsline {subsection}{\numberline {5.6.3}Variables Used}{97}{subsection.5.6.3}%
+\contentsline {subsection}{\numberline {5.6.4}Machine Learning Subtraction Method}{98}{subsection.5.6.4}%
+\contentsline {subsection}{\numberline {5.6.5}Fitting}{99}{subsection.5.6.5}%
+\contentsline {subsection}{\numberline {5.6.6}Applying Fake Factors}{103}{subsection.5.6.6}%
+\contentsline {section}{\numberline {5.7}Uncertainty Model}{104}{section.5.7}%
+\contentsline {subsubsection}{Hadronic Taus}{104}{section*.69}%
+\contentsline {subsubsection}{Jets misidentified as hadronic taus}{105}{section*.70}%
+\contentsline {subsubsection}{Background process specific uncertainties}{105}{section*.71}%
+\contentsline {subsubsection}{Signal process specific uncertainties}{105}{section*.72}%
+\contentsline {section}{\numberline {5.8}Signal Extraction}{105}{section.5.8}%
+\contentsline {subsection}{\numberline {5.8.1}Postfit Plots}{105}{subsection.5.8.1}%
+\contentsline {section}{\numberline {5.9}Model Independent Results}{105}{section.5.9}%
+\contentsline {section}{\numberline {5.10}Model Dependent Limits}{105}{section.5.10}%
+\contentsline {chapter}{\numberline {6}Conclusion}{106}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Global Interpretations of Results}{106}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Outlook}{106}{section.6.2}%
