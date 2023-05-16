@@ -48,45 +48,45 @@ Warning--empty journal in CMS:2022zks
 Warning--empty institution in LHCHiggsCrossSectionWorkingGroup:2013rie
 Warning--empty institution in deFlorian:2016spz
 Warning--empty journal in CMS:2022rbd
-You've used 73 entries,
+You've used 77 entries,
             1876 wiz_defined-function locations,
-            940 strings with 16159 characters,
-and the built_in function-call counts, 18101 in all, are:
-= -- 1819
-> -- 689
+            967 strings with 16700 characters,
+and the built_in function-call counts, 19207 in all, are:
+= -- 1944
+> -- 713
 < -- 5
-+ -- 263
-- -- 190
-* -- 1052
-:= -- 2527
-add.period$ -- 76
-call.type$ -- 73
-change.case$ -- 74
++ -- 273
+- -- 196
+* -- 1113
+:= -- 2671
+add.period$ -- 81
+call.type$ -- 77
+change.case$ -- 78
 chr.to.int$ -- 0
-cite$ -- 79
-duplicate$ -- 1176
-empty$ -- 1571
-format.name$ -- 190
-if$ -- 4601
+cite$ -- 83
+duplicate$ -- 1244
+empty$ -- 1673
+format.name$ -- 196
+if$ -- 4886
 int.to.chr$ -- 0
-int.to.str$ -- 73
-missing$ -- 66
-newline$ -- 225
-num.names$ -- 73
-pop$ -- 219
+int.to.str$ -- 77
+missing$ -- 70
+newline$ -- 238
+num.names$ -- 77
+pop$ -- 228
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 897
+skip$ -- 953
 stack$ -- 0
-substring$ -- 611
-swap$ -- 599
+substring$ -- 685
+swap$ -- 635
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 6
-while$ -- 145
-width$ -- 75
-write$ -- 721
+while$ -- 157
+width$ -- 79
+write$ -- 763
 (There were 6 error messages)

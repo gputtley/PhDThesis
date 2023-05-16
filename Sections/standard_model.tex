@@ -56,8 +56,8 @@ By invoking gauge invariance of the Dirac Lagrangian under such a transformation
 
 \begin{align}
 \begin{split}
-\mathcal{L}_{\text{Electroweak}} = &\bar{\psi}_{L}\Big(\partial_{\mu} + \frac{i}{2} g \boldsymbol{W}_{\mu} \cdot \boldsymbol{\sigma} + g^{\prime} Y B_{\mu}  \Big) \psi_L \\
-& + \bar{\psi}_{R}\Big(\partial_{\mu} + + g^{\prime} Y B_{\mu}  \Big) \psi_R - \frac{1}{4} \boldsymbol{W}_{\mu\nu} \cdot \boldsymbol{W}^{\mu\nu} - \frac{1}{4}B_{\mu\nu}B^{\mu\nu}
+\mathcal{L}_{\text{Electroweak}} &= \bar{\psi}_{L}\Big(\partial_{\mu} + \frac{i}{2} g \boldsymbol{W}_{\mu} \cdot \boldsymbol{\sigma} + g^{\prime} Y B_{\mu}  \Big) \psi_L \\
+&+ \bar{\psi}_{R}\Big(\partial_{\mu} + + g^{\prime} Y B_{\mu}  \Big) \psi_R - \frac{1}{4} \boldsymbol{W}_{\mu\nu} \cdot \boldsymbol{W}^{\mu\nu} - \frac{1}{4}B_{\mu\nu}B^{\mu\nu},
 \end{split}
 \end{align}
 
@@ -170,7 +170,14 @@ The transformation to the photon and Z fields as parametrised in Eq.~\ref{eqn:ro
 \tan\theta_W = \frac{g^{\prime}}{g}.
 \end{equation}
 
-A similar situation arises for quarks and charged leptons
+A mass term for the Higgs boson also arises from the potential of the BEH mechanism with $m_h = \sqrt{-2\mu^2}$. 
+The same mechanism can also be used to add mass terms for quarks and charged leptons.
+Gauge invariant couplings to the Higgs bosons and fermion mass terms can be generated from the BEH mechanism applied to a Lagrangian term of the form,
+
+\begin{equation}
+\bar{\psi}_{L}\Phi\psi_{R} + \bar{\psi}_{R}\Phi\psi_{L}.
+\end{equation}
+
 
 \section{Extended Higgs Sector}
 
@@ -235,11 +242,22 @@ These relative couplings are shown in Tab.~\ref{tab:2hdm_couplings}.
     \label{tab:2hdm_couplings}
 \end{table}
 
+In the alignment limit, for the normal scenario $h_{SM}=h$, $sin(\beta-\alpha)=1$, $\implies$ $c_{\alpha}/s_{\beta}=1$, $s_{\alpha}/c_{\beta}=-1$, $s_{\alpha}/s_{\beta}=-1/t_{\beta}$, $c_{\alpha}/c_{\beta}=t_{\beta}$.
+
+In the alignment limit, for the inverted scenario $h_{SM}=H$, $cos(\beta-\alpha)=1$ $\implies$ $c_{\alpha}/s_{\beta}=1/t_{\beta}$, $s_{\alpha}/c_{\beta}=t_{\beta}$, $s_{\alpha}/s_{\beta}=1$, $c_{\alpha}/c_{\beta}=1$.
 
 
 \section{Theoretical Problems and Potential Solutions}
 
 \subsection{Hierarchy Problem}
+
+The current best measurement for the SM Higgs boson’s mass from the CMS experiemnt is 125.38 $\pm$ 0.14 GeV~\cite{CMS:2020xrn}.
+The lightness is a concern when considering "naturalness" and physics beyond the SM. 
+The Higgs boson has loop corrections to calculations of its mass. 
+Known heavy fermions already provide significant contributions (orders of magnitude greater than the observed mass) to the Higgs boson’s calculated mass. 
+On top of this, treating the SM as an effective field theory, new physics would be expected in the unexplored regions between the weak scale and the Planck scale
+But if a new fermion were to be found, $f$, or a heavy scalar, $S$, in such a range, the Higgs boson would be subject to even greater changes in its predicted mass. 
+The Feynman diagrams for the mass corrections for a fermion and a scalar are shown in Fig.~\ref{fig:Higgs_One_Loop_Corrections}.
 
 \begin{figure}[H]
 \centering
@@ -299,50 +317,51 @@ These relative couplings are shown in Tab.~\ref{tab:2hdm_couplings}.
     \label{fig:Higgs_One_Loop_Corrections}
 \end{figure}
 
-The hierarchy problem can be resolved by adding a symmetry between fermions and bosons that allow cancellations to corrections to the Higgs mass. 
-This theory is known as Supersymmetry~\cite{SUSY_Primer}. 
-In its simplest form, the Minimal Supersymmetric Standard Model (MSSM), is a type-II 2 Higgs doublet model (2HDM), where the Higgs sector at tree level only depends on two parameters, $m_A$ and $\tan\beta$.
+Figure \ref{fig:corr_fermion} shows a diagrammatic representation of the fermionic correction to the Higgs boson's mass. 
+The Lagrangian term for the coupling of the Higgs field to fermions is \(-\lambda_f H \bar{f} f\). 
+Hence, it can be determined that the correction to the mass is
 
-Due to the hierarchy of the top and bottom masses, it is expected that $\tan\beta$ is greater than 1 and therefore the couplings to tau leptons and bottom quarks would be enhanced and the coupling to top quarks would be suppressed.
+\begin{equation}
+    \Delta m_{\text{H}}^{2} =  -\frac{\lambda_f}{16\pi^2}\Big[\Lambda_{UV}^{2} -2m_{f}^{2} \ln\Big(\frac{\Lambda_{UV}}{m_f}\Big) \Big] + ... ,
+    \label{eqn:dm_f}
+\end{equation}
 
-Eq.(\ref{eqn:dm_f}) and Eq.(\ref{eqn:dm_S}) show that if the mass of the scalar is equivalent to that of the fermion and \(\lambda_f = \lambda_{S}^{2}\), then the Higgs mass corrections cancel. This offers a solution to the hierarchy problem introducing a new symmetry that extends the Standard Model. The symmetry relates fermions and bosons and is known as Supersymmetry. It states that fermions and bosons exist in groups called supermultiplets. Each supermultiplet contains fermion and boson states which are superpartners of one another. On-shell each supermultiplet must have an equivalent number of fermionic and bosonic degrees of freedom. In order for this to also hold off-shell, an auxiliary field is added to balance the number of degrees of freedom. Extending this theory to currently known particles, the simplest set of supermultiplets can be found and are shown in Tables \ref{tab:MSSM_Chiral} and \ref{tab:MSSM_vector}. \\
+where \(\Lambda_{UV}\) is the ultraviolet momentum cut off \cite{SUSY_Primer}.
+ Beyond this, our effective field theory would be expected to break down and new physics to be found. \\
 
-Two Higgs supermultiplets are needed due to the anomaly cancellation condition, Tr[\(T_{3}^{2}Y\)] = Tr[\(Y^3\)] = 0, where \(Y\) and \(T_3\) are the third components of weak hypercharge and isospin respectively. The Higgs chiral supermultiplet, the higgsino, makes a significant contribution to the trace as it has a weak hypercharge \(Y=+\frac{1}{2}\). This anomaly is solved by introducing another Higgs chiral supermultiplet, with a higgsino of weak hypercharge \(Y=-\frac{1}{2}\), so that the traces cancel. This results in five physical Higgs boson states. 
+Figure \ref{fig:corr_scalar} illustrates a correction to the Higgs mass by a scalar particle. The coupling of a scalar to the Higgs field is represented by the Lagrangian term \(-\lambda_S |H|^2 |S|^2\). The Higgs mass correction for such a term is derived to be
 
-The \(Z^{0}\) and \(\gamma\) states are found by mixing the \(W^0\) and \(B^0\) states after electroweak symmetry breaking in the Standard Model. There corresponding gauginos that are named zino (\(\tilde{Z}^0\)) and photino (\(\tilde{\gamma}\)) are found by the same method from the \(\tilde{W}^0\) and \(\tilde{B}^0\). \\
+\begin{equation}
+    \Delta m_{\text{H}}^{2} =  \frac{\lambda_{S}^{2}}{16\pi^2}\Big[\Lambda_{UV}^{2} -2m_{S}^{2} \ln\Big(\frac{\Lambda_{UV}}{m_S}\Big) \Big] + ... .
+    \label{eqn:dm_S}
+\end{equation}
 
-If Supersymmetry is an unbroken theory, then one would expect to have the superpartners at the same mass as the Standard Model particles. This has not been seen experimentally, therefore Supersymmetry must be a broken theory in the vacuum state. One can define soft supersymmetry breaking through the addition of SUSY violating Lagrangian term \(\mathcal{L}_{\text{soft}}\), where
+Eq.\ref{eqn:dm_f} and Eq.\ref{eqn:dm_S} show that if the mass of the scalar is equivalent to that of the fermion and $\lambda_f = \lambda_{S}^{2}$, then the Higgs mass corrections cancel. 
+This offers a solution to the hierarchy problem introducing a new symmetry that extends the Standard Model. 
+The symmetry relates fermions and bosons and is known as Supersymmetry. 
+It states that fermions and bosons exist in groups called supermultiplets. 
+Each supermultiplet contains fermion and boson states which are superpartners of one another. 
+On-shell each supermultiplet must have an equivalent number of fermionic and bosonic degrees of freedom. 
+In order for this to also hold off-shell, an auxiliary field is added to balance the number of degrees of freedom. 
+
+If Supersymmetry is an unbroken theory, then one would expect to have the superpartners at the same mass as the Standard Model particles. 
+This has not been seen experimentally, therefore Supersymmetry must be a broken theory in the vacuum state. 
+Soft supersymmetry breaking can be introduced through the addition of SUSY violating Lagrangian term $\mathcal{L}_{\text{soft}}$, where
 
 \begin{equation}
     \mathcal{L} = \mathcal{L}_{\text{SUSY}} + \mathcal{L}_{\text{soft}}.
 \end{equation}
 
-\(\mathcal{L}_{\text{soft}}\) contains only mass terms and coupling parameters. Defining \(m_{\text{soft}}\) as the largest mass scale involved in the soft Lagrangian, \(m_{\text{soft}}\) also then defines the mass splitting between the Standard Model particles and the sparticles. If the mass splitting becomes significant, the hierarchy problem would be reintroduced as corrections to the Higgs mass would again become large.
+$\mathcal{L}_{\text{soft}}$ contains only mass terms and coupling parameters. 
+Defining $m_{\text{soft}}$ as the largest mass scale involved in the soft Lagrangian, $m_{\text{soft}}$ also then defines the mass splitting between the SM and supersymmetric particles. 
+If the mass splitting becomes significant, the hierarchy problem would be reintroduced as corrections to the Higgs mass would again become large.
 
-The MSSM Higgs sector is CP-conserving at tree level. It contains a light, \(h\), and a heavy, \(H\), CP-even Higgs boson, a CP-odd Higgs boson, \(A\), and two charged Higgs bosons \(H^{\pm}\). The parameters of the sector can all be obtained from three factors: the Z boson mass, \(m_Z\), the CP-odd Higgs mass, \(m_A\), and \(\tan\beta\), where
-
-\begin{equation}
-    \tan \beta = \frac{\langle H_{u}^{0} \rangle}{\langle H_{d}^{0} \rangle} = \frac{v_u}{v_d}.
-\end{equation}
-
-\(\tan \beta\) is the ratio of the vacuum expectation values of the neutral components of the Higgs doublets. The masses of the \(h\), \(H\) and \(H^{\pm}\) Higgs bosons at tree level are calculated to be \cite{mssm_theory}
-
-\begin{subequations}
-\begin{align}
-    m_{\text{h}}^2 = & \frac{1}{2}\Big(m_{\text{A}}^2 + m_{\text{Z}}^2 - \sqrt{(m_{\text{A}}^2 + m_{\text{Z}}^2)^2 - 4 m_{\text{Z}}^2 m_{\text{A}}^2 \cos^2{2\beta}} \Big), \\
-    m_{\text{H}}^2 = & \frac{1}{2}\Big(m_{\text{A}}^2 + m_{\text{Z}}^2 + \sqrt{(m_{\text{A}}^2 + m_{\text{Z}}^2)^2 - 4 m_{\text{Z}}^2 m_{\text{A}}^2 \cos^2{2\beta}} \Big), \\
-    m_{\text{H}^{\pm}}^2 = & m_{\text{A}}^2 + m_{\text{W}}^2.
-\end{align}
-\end{subequations}
-
-All of the tree level couplings can also be expressed in terms of these three parameters but they will not all be stated here. The main couplings of interest for this report are that between the neutral Higgs bosons and heavy fermions. These couplings are the largest of the Higgs sector. The couplings of the three heaviest fermions to the MSSM Higgs sector are shown in the below Table \ref{tab:MSSM_coupling}. \\
-
-Due to the mass hierarchy of the top and bottom quarks, it is expected that \(\tan\beta\) lies in the range
-
-\begin{equation}
-    1 \lesssim \tan\beta \lesssim \frac{m_t}{m_b}.
-\end{equation}
-
+The Minimal Supersymmetric Standard Model (MSSM) is simplest implementation of Supersymmetry.
+It introduces sets of new particles named squarks, sleptons, gauginos and Higgsinos as superpartners to quarks, leptons, gauge bosons and the Higgs bosons.
+Also added are neutralinos and charginos that are combined of gauginos and Higgsinos.
+Additional contributions to the particle content comes from the Higgs sector.
+The Higgs sector of the MSSM is required to be extended to two Higgs doublets in order to maintain the gauge symmetries and to cancel quantum mechanical inconsistencies~\cite{}.
+In particular a type II 2HDM is needed to ensure natural Yukawa couplings, minimal flavour violation and tree-level mass relations, that all cannot be achieved with a different extended Higgs sector.
 
 \section{Experimental Tensions and Potential Solutions}
 
@@ -376,10 +395,156 @@ The fit to B-anomolies done in Ref. \cite{leptoquark}, found the best fit values
 
 \subsection{g-2 Anomaly}
 
-In the alignment limit, for the normal scenario $h_{SM}=h$, $sin(\beta-\alpha)=1$, $\implies$ $c_{\alpha}/s_{\beta}=1$, $s_{\alpha}/c_{\beta}=-1$, $s_{\alpha}/s_{\beta}=-1/t_{\beta}$, $c_{\alpha}/c_{\beta}=t_{\beta}$.
+The measurement of the muon anomalous magnetic moment from the Fermilab National Accelerator Laboratory (FNAL) Muon g-2 experiment~\cite{Muong-2:2021ojo}, combined with earlier results from the Brookhaven National Laboratory (BNL) E821 measurement \cite{Muong-2:2006rrc}, finds the difference of $a_\mu$ between experiment and SM prediction to be,
 
-In the alignment limit, for the inverted scenario $h_{SM}=H$, $cos(\beta-\alpha)=1$ $\implies$ $c_{\alpha}/s_{\beta}=1/t_{\beta}$, $s_{\alpha}/c_{\beta}=t_{\beta}$, $s_{\alpha}/s_{\beta}=1$, $c_{\alpha}/c_{\beta}=1$.
+\begin{equation}
+\Delta a_{\mu}^{\text{obs}} = a_{\mu}^{\text{exp}} - a_{\mu}^{\text{SM}} = (251 \pm 59) \times 10^{-11},
+\end{equation}
 
+where $a_{\mu}=(g-2)_{\mu}/2$. 
+This is a 4.2 $\sigma$ deviation away from the SM expectation.
+One potential solution to this deviation is a 2HDM.
+This contributes in two ways to $\Delta a_{\mu}$, one-loop and two-loop Bar-Zee contributions \cite{Ilisie:2015tra,Barr:1990vd}, that can be mediated by any of the additional Higgs bosons. \\
+
+\begin{figure}[h]
+  \centering
+  \begin{subfigure}[b]{0.4\textwidth}
+  \scalebox{1.15}{
+  \begin{tikzpicture}
+    \begin{feynman}
+    \vertex [label=left:$\mu$] (c1) at (0,0);
+    \vertex (c2) at (1,0);
+    \vertex (c3) at (2,0);
+    \vertex (c4) at (3,0);
+    \vertex [label=right:$\mu$] (c5) at (4,0);
+    \vertex [label=above:$\gamma$](t3) at (2,1);
+    \vertex [label=below:$\phi/A$](b3) at (2,-1);
+    \diagram* {
+    (c1) -- [fermion] (c2),
+    (c2) -- [fermion] (c3),
+    (c3) -- [fermion] (c4),
+    (c4) -- [fermion] (c5),
+    (c2) -- [scalar, out=-90, in=180] (b3),
+    (b3) -- [scalar, out=0, in=-90] (c4),
+    (c3) -- [photon] (t3),
+    };
+    \end{feynman}
+   \end{tikzpicture}
+  }
+  \caption{}
+  \end{subfigure}
+   \centering
+  \begin{subfigure}[b]{0.4\textwidth}
+  \scalebox{1.15}{
+  \begin{tikzpicture}
+    \begin{feynman}
+    \vertex [label=left:$\mu$] (c1) at (0,0);
+    \vertex (c2) at (1,0);
+    \vertex [label=below:$\nu_{\mu}$] (c3) at (2,0);
+    \vertex (c4) at (3,0);
+    \vertex [label=right:$\mu$] (c5) at (4,0);
+    \vertex (t13) at (2,1.6);
+    \vertex [label=above:$\gamma$](t23) at (2,2.6);
+    \vertex [label=left:$H^{\pm}$] (l1) at (1.5,0.8);
+    \vertex [label=right:$H^{\pm}$] (l1) at (2.5,0.8);
+    \diagram* {
+    (c1) -- [fermion] (c2),
+    (c2) -- [fermion] (c4),
+    (c4) -- [fermion] (c5),
+    (c2) -- [scalar] (t13),
+    (c4) -- [scalar] (t13),
+    (t13) -- [photon] (t23),
+    };
+    \end{feynman}
+   \end{tikzpicture}
+  }
+  \caption{}
+  \end{subfigure}
+  \caption{Examples of one-loop Bar-Zee feynman diagrams for the contribution from $\phi$ and A in (a) and $H^{\pm}$ in (b).}
+\end{figure}
+
+
+\begin{figure}[h]
+  \centering
+  \begin{subfigure}[b]{0.4\textwidth}
+  \scalebox{1.15}{
+  \begin{tikzpicture}
+    \begin{feynman}
+    \vertex [label=left:$\mu$] (b1) at (0,0);
+    \vertex (b2) at (1,0);
+    \vertex [label=below:$\mu$] (b3) at (2,0);
+    \vertex (b4) at (3,0);
+    \vertex [label=right:$\mu$] (b5) at (4,0);
+    \vertex (bm1) at (1.5,1);
+    \vertex (bm2) at (2.5,1);
+    \vertex (tm1) at (2,1.87);
+    \vertex [label=above:$\gamma$] (t1) at (2,2.87);
+    \vertex [label=left:$\phi/A$] (l1) at (1.25,0.5);
+    \vertex [label=right:$\gamma$] (l2) at (2.75,0.5);
+    \vertex [label=right:$f$] (l3) at (2.5,1.75);
+    \diagram* {
+    (c1) -- [fermion] (c2),
+    (c2) -- [fermion] (c4),
+    (c4) -- [fermion] (c5),
+    (c2) -- [scalar] (bm1),
+    (c4) -- [boson] (bm2),
+    (tm1) -- [fermion, out=0, in=60] (bm2),
+    (bm2) -- [fermion, out=-120, in=-60] (bm1),
+    (bm1) -- [fermion, out=120, in=180] (tm1),
+    (tm1) -- [photon] (t1),
+    };
+    \end{feynman}
+   \end{tikzpicture}
+  }
+  \caption{}
+  \end{subfigure}
+   \centering
+  \begin{subfigure}[b]{0.4\textwidth}
+  \scalebox{1.15}{
+  \begin{tikzpicture}
+    \begin{feynman}
+    \vertex [label=left:$\mu$] (b1) at (0,0);
+    \vertex (b2) at (1,0);
+    \vertex [label=below:$\nu_{\mu}$] (b3) at (2,0);
+    \vertex (b4) at (3,0);
+    \vertex [label=right:$\mu$] (b5) at (4,0);
+    \vertex (bm1) at (1.5,1);
+    \vertex (bm2) at (2.5,1);
+    \vertex (tm1) at (2,1.87);
+    \vertex [label=above:$\gamma$] (t1) at (2,2.87);
+    \vertex [label=left:$H^{\pm}$] (l1) at (1.25,0.5);
+    \vertex [label=right:$W^{\pm}$] (l2) at (2.75,0.5);
+    \vertex [label=right:$t/b$] (l3) at (2.5,1.75);
+    \vertex [label=left:$t/b$] (l3) at (1.5,1.75);
+    \vertex [label=below:$b/t$] (l3) at (2,0.8);
+    \diagram* {
+    (c1) -- [fermion] (c2),
+    (c2) -- [fermion] (c4),
+    (c4) -- [fermion] (c5),
+    (c2) -- [scalar] (bm1),
+    (c4) -- [photon] (bm2),
+    (tm1) -- [fermion, out=0, in=60] (bm2),
+    (bm2) -- [fermion, out=-120, in=-60] (bm1),
+    (bm1) -- [fermion, out=120, in=180] (tm1),
+    (tm1) -- [photon] (t1),
+    };
+    \end{feynman}
+   \end{tikzpicture}
+  }
+  \caption{}
+  \end{subfigure}
+  \caption{Examples of two-loop Bar-Zee feynman diagrams for the contribution from $\phi$ and A in (a) and $H^{\pm}$ in (b). Note that other fundamental particles can also contribute to the loop.}
+\end{figure}
+
+The one-loop contribution to $\Delta a_{\mu}$ is positive for $\phi$ and negative from $A$ and $H^{\pm}$, however the more significant contribution comes from two-loop Bar-Zee diagrams with heavy fermions in the loop which gives a positive shift to $\Delta a_{\mu}$.
+In order to fulfil the requirements for the anomaly, an enhanced couplings between additional Higgs bosons to muons is needed.
+This gives two options: a type II or a type X 2HDM, both at large values of $\tan\beta$.
+The type II 2HDM, that also offers enhanced couplings to down-like quarks, is heavily constrained by LEP, Tevatron and LHC searches and an available region of phase space to explain the anomaly is not easily found.
+However, the type X 2HDM, with only lepton coupling enhancements at high $\tan\beta$, is relatively unconstrained due to suppressed quark initiated production modes of additional Higgs bosons. \\
+
+Ref.~\cite{Jueid:2021avn} puts an upper limit on the $m_{A} \lesssim 200$ GeV, that is also required for an explanation of $\Delta a_{\mu}^{\text{obs}}$.
+Further constraints are placed on the phase space from theoretical stabilities, electroweak precision measurements and collider bounds.
+The final available phase space for a type X 2HDM in the alignment scenario to explain the g-2 anomaly is shown in Tab.~\ref{tab:gm2region}.
 
 \begin{table}[H]
     \centering
@@ -392,6 +557,6 @@ In the alignment limit, for the inverted scenario $h_{SM}=H$, $cos(\beta-\alpha)
          Inverted & $\geq 120$ & [70,105] & [100,120] & [95,185] \\
          \hline
     \end{tabular}
-    \caption{Regions of interest for g-2 anomaly with respect to the type X 2HDM in the normal and inverted alignment scenarios.}
+    \caption{Regions of interest for g-2 anomaly with respect to the type X 2HDM in the normal and inverted alignment scenarios as suggested in Ref.~\cite{Jueid:2021avn}.}
     \label{tab:gm2region}
 \end{table}

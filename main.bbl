@@ -102,6 +102,10 @@ G.~S. Guralnik, C.~R. Hagen, and T.~W.~B. Kibble, ``Global conservation laws
 T.~W.~B. Kibble, ``Symmetry breaking in non-{A}belian gauge theories,'' {\em
   Phys. Rev.}, p.~1554, 1967.
 
+\bibitem{Goldstone:1961eq}
+J.~Goldstone, ``{Field Theories with Superconductor Solutions},'' {\em Nuovo
+  Cim.}, vol.~19, pp.~154--164, 1961.
+
 \bibitem{SUSY_Primer}
 S.~P. Martin, ``{A Supersymmetry Primer},'' {\em Advanced Series on Directions
   in High Energy Physics}, p.~1–98, Jul 1998.
@@ -110,6 +114,19 @@ S.~P. Martin, ``{A Supersymmetry Primer},'' {\em Advanced Series on Directions
 A.~Djouadi, L.~Maiani, A.~Polosa, J.~Quevillon, and V.~Riquer, ``{Fully
   covering the MSSM Higgs sector at the LHC},'' {\em JHEP}, vol.~06, p.~168,
   2015.
+
+\bibitem{Muong-2:2006rrc}
+G.~W. Bennett {\em et~al.}, ``{Final Report of the Muon E821 Anomalous Magnetic
+  Moment Measurement at BNL},'' {\em Phys. Rev. D}, vol.~73, p.~072003, 2006.
+
+\bibitem{Ilisie:2015tra}
+V.~Ilisie, ``{New Barr-Zee contributions to $\mathbf{(g-2)_\mu}$ in
+  two-Higgs-doublet models},'' {\em JHEP}, vol.~04, p.~077, 2015.
+
+\bibitem{Barr:1990vd}
+S.~M. Barr and A.~Zee, ``{Electric Dipole Moment of the Electron and of the
+  Neutron},'' {\em Phys. Rev. Lett.}, vol.~65, pp.~21--24, 1990.
+\newblock [Erratum: Phys.Rev.Lett. 65, 2920 (1990)].
 
 \bibitem{Cacciari:2008gp}
 M.~Cacciari, G.~P. Salam, and G.~Soyez, ``The anti-$k_t$ jet clustering
