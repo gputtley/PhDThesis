@@ -4,12 +4,12 @@
 Enhancement from $\tan\beta$ to up or down-like quark couplings to additional Higgs bosons are essential for the majority of searches for extended Higgs sectors, including in the analysis detailed in Chapter~\ref{sec:bsm_H_to_tau_tau_analysis}.
 However, in some 2HDMs it can be the case that both up and down-like couplings to additional Higgs bosons are suppressed and this parameter space is left relatively untouched by "MSSM-like" searches.
 In particular, type X 2HDMs where only lepton couplings are enhanced by $\tan\beta$, allow for new physics loop contributions to SM measurements through couplings between leptons and additional Higgs bosons.
-This is particularly interesting in the context of the g-2 anomaly \cite{} with reasoning explained in Section~\ref{}.
+This is particularly interesting in the context of the g-2 anomaly \cite{} with reasoning explained in Section~\ref{sec:gm2_anomaly}.
 This chapter will detail a search for such an extended Higgs sector, that looks for a production mode not suppressed at high $\tan\beta$, through the process $Z^{*}\rightarrow \phi A \rightarrow 4\tau$.
 This search is split up into two sections:
 
 \begin{enumerate}[i)]
-  \item A model independent search for the $Z^{*}\rightarrow \phi A \rightarrow 4\tau$ process. Both additional particles are required to have narrow width and no assumptions are made on the production cross-section via an off-shell Z boson or the branching fraction of $phi$ and A decaying to a pair of tau leptons.
+  \item A model independent search for the $Z^{*}\rightarrow \phi A \rightarrow 4\tau$ process. Both additional particles are required to have narrow width and no assumptions are made on the production cross-section via an off-shell Z boson or the branching fraction of $\phi$ and A decaying to a pair of tau leptons.
    \item A search for the type X 2HDM, motivated by the phase space for possible explanations to the g-2 anomaly. The $m_{A}$-$\tan\beta$ phase space for scenarios of $m_\phi$ in the alignment limit is scanned, as well as checks outside of this limit on the $\cos(\beta-\alpha)$-$\tan\beta$ for specific scenarios of both $m_\phi$ and $m_A$.
 \end{enumerate}
 
@@ -73,18 +73,18 @@ These mass ranges are motivated from the results in Table~\ref{tab:gm2region}.
 The samples are simulated in the five-flavour scheme (5FS) at NLO precision using the \MGvATNLO v2.6.5 event generator~\cite{Alwall:2011uj}.
 Generation is performed using the parton distribution function (PDF) NNPDF3.1~\cite{Ball:2014uwa,Ball:2017nwa}, where $\tau$ lepton decay, parton showering and hadronisation are all modelled with the \PYTHIA event generator with the PU profile matched to data~\cite{Sirunyan:2019dfx,Sjostrand:2014zea}.
 The events are then passed through the \texttt{GEANT4}-based \cite{Agostinelli:2002hh} simulation of the CMS detector and reconstructed in the same way as data.
-Generator level distributions of di-$\tau$ mass distributions from the decay of $\phi$ and A are shown in Figure~\ref{}.\\
+Generator level distributions of di-$\tau$ mass distributions from the decay of $\phi$ and A are shown in Figure~\ref{fig:4tau_gen_dist}.\\
 
 \begin{figure}[!hbtp]
 \centering
     \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/mA_dist.pdf}}
     \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/mphi_dist.pdf}} 
 \caption{Generator level distributions of the visible mass densities for A (a) and $\phi$ (b) for the signal process.}
-\label{fig:4tau_br_1d}
+\label{fig:4tau_gen_dist}
 \end{figure}
 
 The cross sections in the alignment scenarios are also determined with this procedure and vary from 10 fb (highest $m_{A}$ and $m_{\phi}$ scenario) to 650 fb (lowest $m_{A}$ and $m_{\phi}$ scenario), as shown in Figure~\ref{fig:4tau_xs}.
-These are independent of $\tan\beta$, however, out of the alignment scenarios the cross sections for H scales with $\sin^{2}(\beta-\alpha)$ and h scales with $\cos^{2}(\beta-\alpha)$.
+These are independent of $\tan\beta$, however, out of the alignment scenarios the cross sections for H scales with $\sin^{2}(\beta-\alpha)$ and h scales with $\cos^{2}(\beta-\alpha)$. \\
 
 \begin{figure}[!hbtp]
 \centering
@@ -260,11 +260,22 @@ All corrections described in Section~\ref{sec:ditau_corrections} are applied to 
 \label{sec:zz_modelling}
 
 The di-Z background shapes are modelled using MC.
-The cross-sections for this analysis are scaled to CHECK WHAT IS WRITTEN IN HTOZZ ANALYSIS.
+The cross-sections for this analysis are scaled to high order precisions than the signal generation using k factors.
+For quark initiated di-Z production, \POWHEG~\cite{} is used to determine NNLO/NLO QCD and EW corrections as a function of $m_{ZZ}$, which takes an average value of $\approx 1.2$.
+Gluon initiated di-Z production corrections from LO to NNLO is derived with HNNLO v2~\cite{}, again as a function of $m_{ZZ}$.
+This gives a much larger correction, equal to $\approx 2$.
 The modelling is validation using a $\mu\mu\mu\mu$ final state and good agreement is observed between data and simulation.
-Plots of this are shown in Figures~\ref{}. \\
+Identical object selection is applied as stated in Section~\ref{sec:object_reconstruction}, except to ensure better statistics within the channel, the $I_{\text{rel}}^{\mu}$ cut is loosened to 0.35.
+The charges of the $\mu$ candidates are similarly required to sum to one and no vetos on the number of b jets in the event is applied.
+Plots of this are shown in Figures~\ref{fig:4tau_mmmm}. \\
 
-mmmm FIGURES \\
+\begin{figure}[!hbtp]
+\centering
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/mt_tot_signal_mmmm_inclusive_all.pdf}}
+    \subfloat[]{\includegraphics[width=0.49\textwidth]{Figures/mvis_1234_signal_mmmm_inclusive_all.pdf}} 
+\caption{Distributions in the $\mu\mu\mu\mu$ channel are shown for the variables total transverse mass, $m_{T}^{\text{tot}}$, (a) and the total mass, $m_{\mu\mu\mu\mu}$ (b). The solid histograms show the stacked background predictions.}
+\label{fig:4tau_mmmm}
+\end{figure}
 
 
 \section{Machine Learning Fake Factor Method}
@@ -399,7 +410,7 @@ An uncertainty is placed on the performance of this algorithm with respect to hi
 This is calculated by drawing each variable used for the method into a histogram with binning chosen to ensure a sensible number of events in each bin.
 An uncertainty is then derived from the difference in prediction between the histogram and BDT subtraction. \\
 
-To validate this method, example histograms with this uncertainty are shown for the $\mu\tauh\tauh\tauh$ pass region in Figures~\ref{fig:ff_sub_ttt}, comparing the BDT subtraction method and histogram subtraction method for a few of the fitted variables. \\
+To validate this method, example histograms with this uncertainty are shown for the $\mu\tauh\tauh\tauh$ pass region in Figures~\ref{fig:4tau_ff_subtraction}, comparing the BDT subtraction method and histogram subtraction method for a few of the fitted variables. \\
 
 \begin{figure}[!hbtp]
 \centering
@@ -471,7 +482,7 @@ $R_{1} +R_{2} - R_{12}$      & 1                            & 1                 
 \end{table}
 
 This logic is extended to all channels with one exception.
-The $\tau_h \tau_h \tau_h \tau_h$ channel application region would have overlap with the $\tau_h \tau_h \tau_h$ using this common method, therefore the formula is adjusted to avoid this region.
+The $\tau_h \tau_h \tau_h \tau_h$ channel application region would have overlap with the $\tau_h \tau_h \tau_h$ signal region using this common method, therefore the formula is adjusted to avoid this region.
 If the overlapped regions are removed from the equation, the scale of the triple and quadruple regions needed to be adjusted to account for this.
 The caveat to this is that events where there are only one jet $\rightarrow \tauh$ candidate are not accounted for.
 As the majority of the background events in this channel comes from QCD with many jet $\rightarrow \tauh$ candidates, this contribution is deemed negligible.
@@ -490,37 +501,157 @@ R_1 + R_2 + R_3 - R_{12} - R_{13} - R_{23} + R_{234}
 
 \item $\tauh\tauh\tauh\tauh$
 \begin{align}
+\begin{split}
 &R_{12} + R_{13} + R_{14} + R_{23} + R_{24} + R_{34} \\
 &- 2(R_{123} + R_{124} + R_{134} + R_{234}) + 3R_{1234}
+\end{split}
 \end{align}
 \end{enumerate}
  
 \section{Uncertainty Model}
 
-The uncertainty model follows what was done in Section~\ref{sec:uncerts} for the following uncertainties:
-\begin{enumerate}[i)]
-	\item Statistical uncertainties
-	\item Light leptons
-	\item Jets 
-	\item Leptons misidentified as hadronic taus
-	\item MET
-	\item Luminosity
-	\item Prefiring
-\end{enumerate}
+The uncertainty model follows the schemes detailed in Section~\ref{sec:uncerts} for the statistical uncertainties and systematic uncertainties for light leptons, jets, leptons misidentified as hadronic taus, MET, luminosity and prefiring.
 Updates and additions to the previous uncertainty model are shown below. \\
 
 \subsubsection{Hadronic Taus}
-An update the $\tauh$ ID uncertainty is made BLAH BLAH BLAH.
+An improvement is made to the $\tauh$ ID uncertainty correlation scheme applied to simulated events.
+The fit used to derive scale factors for the $\tauh$ MC events consists of both statistical and systematic uncertainties.
+In the previous search, the ID uncertainties where correlated across decay mode and era despite the statistical components of each fit begin orthogonal.
+Therefore for this search the uncertainty scheme contains correlated and decorrelated part across decay and era.
 The double-$\tauh$ trigger uncertainties remain unchanged. \\
 
 \subsubsection{Jets misidentified as hadronic taus}
+The backgrounds with jets misidentified as $\tauh$ are estimated from data with the ML fake factor method. 
+There are different sources of uncertainty related to this method. 
+All uncertainties are uncorrelated across decay channels, except in the $\tauh\tauh\tauh\tauh$ and $\tauh\tauh\tauh$ where the same fit is used, so uncertainties are correlated. \\
+
+The initial uncertainties come from removal of the non jet$\rightarrow\tauh$ backgrounds from the fitting region and this is split into two types.
+Firstly, an uncertainty is placed on the non-closure of the BDT subtraction method, this is done by comparing the distributions in each variable fit using standard histogram subtraction with the BDT subtraction method, and the largest shift is taken for each event. This is done separately in the pass and fail $\tauh$ ID regions.
+The second uncertainty to do with purify the fitting region is motivated by any MC mismodelling of the non jet$\rightarrow\tauh$ objects predicted.
+This is shifted up and down by 10\%, to represent any MC mismodelling , and the BDT subtraction method and the reweighting is repeated with the differing datasets. \\
+
+The second source of uncertainties comes from the BDT reweighter fit.
+In a similar way to the subtraction method, an uncertainty is placed on the non closure of the fit, comparing reweighted events in the fail $\tauh$ ID region to the pass $\tauh$ ID region.
+Further uncertainties are placed on the assumption of the variables used to separate the signal region from the fitting region.
+The assumption is that the fake factors would be identical no matter what combination of these variables are used.
+Therefore, the uncertainties are placed by taking the largest shift when changing these variables whilst getting the output to the fit.
+These are decorrelated in each combination of the separating variables.
 
 \subsubsection{Background process specific uncertainties}
+Specific uncertainties are placed on the di-Z simulated events due to application of k factors.
+Due to the size of the differences between NNLO and lower order predictions for the cross sections, an uncertainty is placed on the size of these yields utilising the k factors derived.
 
 \subsubsection{Signal process specific uncertainties}
+PDF, $\alpha_s$ and $\mu_{R}$/$\mu_{F}$ scale variations are applied on an event-by-event basis to the signal samples.
+The normalisation of these uncertainties are approximately 6\%, 1\% and 2\% respectively.
 
 \section{Signal Extraction}
 
+The statistical interpretation of the results is done as described in Section~\ref{sec:sig_ext}, but with different signal scaling functions, $g$, and parameters of interest, $\mu$.
+The two interpretation of the analysis, as stated at the beginning of chapter, have different parameters of interest and scaling functions. \\
+
+Firstly, the model independent search uses a linear scaling function, $g(\mu)=(\mu)$, and a parameter of interest that represents the cross section of the $Z^{*}\rightarrow \phi A$ multiplied by the branching fractions of $\phi\rightarrow\tau\tau$ and $A\rightarrow\tau\tau$.
+Secondly, the interpretation in the type X 2HDM model is done by testing each point in the parameter space, whether that ia $m_{A}$-$\tan\beta$ for the alignment scenario or $\cos(\beta-\alpha)$-$\tan\beta$ for scenarios of the remaining parameters. 
+This is done by scaling the samples to the predicted cross sections times branching ratios at that point in the parameter space, and defining a single rate parameter that can only take the values 1 (type X 2HDM) and 0 (SM) with $g(\mu)=\mu$.
+
 \subsection{Postfit Plots}
+
+Tab.~\ref{tab:sig_integrals} shows the unblinded event yields in each analysis category, alongside the number of bins fit, the background prediction and uncertainties split in statistical and systematic contributions after a background-only fit and a signal yield prediction.
+Fig.~\ref{fig:4tau_postfit} show the unblinded distributions in channels where more than one bin is fit.
+SIGNAL HYPOTHESIS PLOT \\
+
+DISCUSS RESULTS \\
+
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}{|l||c|c|c|c|}
+\hline
+  Category & $N_{\text{bins}}$ & Total Background & Data Observed & $(m_{A},m_{\phi}) = (160,300)$ GeV \\ \hline \hline
+ & & & & \\
+ $\tau_{h}\tau_{h}\tau_{h}\tau_{h}$ & 1 & $10.9$ $\pm$ $3.5$ (stat) $^{+1.9}_{-2.0}$ (syst) & $-$ & $26.1$\\
+ & & & & \\
+ $\tau_{h}\tau_{h}\tau_{h}$ & 17 & $4790.0$ $\pm$ $85.7$ (stat) $^{+1417.2}_{-1416.0}$ (syst) & $-$ & $94.5$\\
+ & & & & \\
+ $e\tau_{h}\tau_{h}\tau_{h}$ & 1 & $21.6$ $\pm$ $4.2$ (stat) $^{+8.6}_{-8.6}$ (syst) & $-$ & $26.8$\\
+ & & & & \\
+ $\mu\tau_{h}\tau_{h}\tau_{h}$ & 1 & $22.0$ $\pm$ $3.5$ (stat) $^{+3.3}_{-3.4}$ (syst) & $-$ & $30.7$\\
+ & & & & \\
+ $ee\tau_{h}\tau_{h}$ Opposite Sign Leptons & 11 & $243.1$ $\pm$ $11.1$ (stat) $^{+41.7}_{-49.7}$ (syst) & $265$ & $7.0$\\
+ & & & & \\
+ $ee\tau_{h}\tau_{h}$ Same Sign Leptons & 1 & $3.6$ $\pm$ $1.1$ (stat) $^{+0.5}_{-0.5}$ (syst) & $-$ & $3.7$\\
+ & & & & \\
+ $\mu\mu\tau_{h}\tau_{h}$ Opposite Sign Leptons & 14 & $369.0$ $\pm$ $13.6$ (stat) $^{+52.6}_{-93.5}$ (syst) & $413$ & $9.4$\\
+ & & & & \\
+ $\mu\mu\tau_{h}\tau_{h}$ Same Sign Leptons & 1 & $4.8$ $\pm$ $1.7$ (stat) $^{+0.8}_{-1.0}$ (syst) & $-$ & $4.6$\\
+ & & & & \\
+ $e\mu\tau_{h}\tau_{h}$ Opposite Sign Leptons & 5 & $29.4$ $\pm$ $2.6$ (stat) $^{+1.3}_{-3.6}$ (syst) & $-$ & $16.9$\\
+ & & & & \\
+ $e\mu\tau_{h}\tau_{h}$ Same Sign Leptons & 3 & $9.7$ $\pm$ $1.4$ (stat) $^{+3.1}_{-3.3}$ (syst) & $-$ & $8.5$\\
+ & & & & \\
+\hline
+\end{tabular}
+}
+\label{tab:sig_integrals}
+\caption{Table of background, data and signal integrals, for the $m_{\phi}=100$ GeV and $m_{A}=$100 GeV scenario, in all analysis categories after a background only fit to the data. The background uncertainties are separated into their statistical and systematic and shown along side the background integral. The number of bins used in the fit are also shown.}
+\end{table}
+
+\begin{figure}[!hbtp]
+\centering
+    \subfloat[]{\includegraphics[width=0.4\textwidth]{Figures/mt_tot_signal_eett_z_control_nobtag_all.pdf}}
+    \subfloat[]{\includegraphics[width=0.4\textwidth]{Figures/mt_tot_signal_mmtt_z_control_nobtag_all.pdf}} \\
+    \subfloat[]{\includegraphics[width=0.4\textwidth]{Figures/mt_tot_signal_emtt_z_control_nobtag_all.pdf}}
+    \subfloat[]{\includegraphics[width=0.4\textwidth]{Figures/mt_tot_signal_emtt_2l2t_sig_nobtag_all.pdf}} \\
+    \subfloat[]{\includegraphics[width=0.4\textwidth]{Figures/mt_tot_signal_ttt_inclusive_all.pdf}}
+\caption{Distributions of $m_{T}^\text{tot}$ in the $ee\tauhtauh$ OS Leptons (a) and $\mu\mu\tauhtauh$ OS Leptons (b), $e\mu\tauhtauh$ OS Leptons (c), $e\mu\tauhtauh$ SS Leptons (d) and $\tauh\tauh\tauh$ channel and categories. The solid histograms show the stacked background predictions after a background only fit to the data. The $m_{\phi}=100$ GeV and $m_{A}=100$ GeV signal is also shown for illustrative purposes.}
+\label{fig:4tau_postfit}
+\end{figure}
+
+\begin{figure}[!hbtp]
+\centering
+    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/soversplusb_plot_phi100A100.pdf}}
+    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/soversplusb_plot_phi300A160.pdf}} 
+\caption{Distributions of events with respect to the $\log_{10}(S/(S+B))$ of all analysis category bins fit for two signal scenarios: $m_{\phi}=100$ GeV and $m_{A}=100$ GeV and $m_{\phi}=160$ GeV and $m_{A}=160$ GeV. The solid histograms show the stacked background predictions after a background only fit to the data. The signal model considered is displayed with a solid line. }
+\label{fig:4tau_soversplusb}
+\end{figure}
+
 \section{Model Independent Results}
+
+\begin{figure}[!hbtp]
+\centering
+    \includegraphics[width=0.9\textwidth]{Figures/model_independent_limit_all.pdf}
+\caption{Expected (dashed line) and observed (solid line and dots) 95\% CL upper limits on the product of the cross sections and branching fractions for the decay of both additional Higgs bosons into $\tau$ leptons. Different $m_{A}$ hypotheses are scaled by different orders of magnitudes (written on plot) in order to make mass points distinguishable. The dark green and bright yellow bands indicate the central 68\% and 95\% intervals for the expected exclusion limit.}
+\label{fig:4tau_mi}
+\end{figure}
+
+\begin{figure}[!hbtp]
+\centering
+    \includegraphics[width=0.6\textwidth]{Figures/limit_comparison_4tau.pdf}
+\caption{Comparison of the expected 95\% CL upper limits on the product of the cross sections and branching fractions for the decay into $\tau$ leptons, split by the $\tau\tau\tau\tau$ decay products fit individually.}
+\label{fig:4tau_limit_comparison}
+\end{figure}
+
+\begin{figure}[!hbtp]
+\centering
+    \includegraphics[width=0.6\textwidth]{Figures/ChannelCompatibilityCheck_FitResults_mphi100mA100_channel.pdf}
+\caption{Compatibility plots for the $m_{A}=100$ GeV and $m_{\phi}=100$ GeV mass scenario in analysis decay channels. In each case the fitted signal strength is decoupled in the bin shown on the plot.}
+\label{fig:4tau_ccc}
+\end{figure}
+
 \section{Model Dependent Limits}
+
+\begin{figure}[!hbtp]
+\centering
+    \subfloat[]{\includegraphics[width=0.65\textwidth]{Figures/md_mphi100.pdf}} \\
+    \subfloat[]{\includegraphics[width=0.65\textwidth]{Figures/md_mphi200.pdf}} 
+\caption{Expected and observed 95\% CL exclusion contours on the $m_{A}$-$\tan\beta$ phase space in the type X 2HDM alignment scenario for $m_{\phi}$ scenarios of 100 GeV (a) and 200 GeV (b). The exclusion limit only on background expectation is shown as a dashed black line, the dark and bright grey bands show the 68\% and 95\% intervals of the expected exclusion and the observed exclusion contour is shown by the blue area.}
+\label{fig:4tau_md}
+\end{figure}
+
+\begin{figure}[!hbtp]
+\centering
+    \subfloat[]{\includegraphics[width=0.65\textwidth]{Figures/csbma_phi200A100.pdf}} \\
+    \subfloat[]{\includegraphics[width=0.65\textwidth]{Figures/csbma_phi200A160.pdf}} 
+\caption{Expected and observed 95\% CL exclusion contours on the $\cos(\beta-\alpha)$-$\tan\beta$ phase space in the type X 2HDM alignment scenario with $m_{\phi}$ equal to 200 GeV and $m_{A}$ scenarios of 100 GeV (a) and 160 GeV (b). The exclusion limit only on background expectation is shown as a dashed black line, the dark and bright grey bands show the 68\% and 95\% intervals of the expected exclusion and the observed exclusion contour is shown by the blue area.}
+\label{fig:4tau_cosbma}
+\end{figure}
