@@ -1,5 +1,19 @@
 \begin{thebibliography}{10}
 
+\bibitem{CMS_MSSM_Tau_2018}
+{CMS Collaboration}, ``{Search for additional neutral MSSM Higgs bosons in the
+  $\tau\tau$ final state in proton-proton collisions at $\sqrt{s}=$ 13 TeV},''
+  {\em JHEP}, vol.~09, p.~007, 2018.
+
+\bibitem{CMS:2022rbd}
+{CMS Collaboration}, ``{Searches for additional Higgs bosons and vector
+  leptoquarks in $\tau\tau$ final states in proton-proton collisions at
+  $\sqrt{s}=13~\mathrm{TeV}$},'' 2022.
+
+\bibitem{sm_diagram}
+D.~Galbraith and C.~Burgard,
+  ``https://texample.net/tikz/examples/model-physics/,'' May 2023.
+
 \bibitem{Bartosik:2847538}
 H.~Bartosik and G.~Rumolo, ``{Performance of the LHC injector chain after the
   upgrade and potential development},'' tech. rep., 2022.
@@ -8,6 +22,9 @@ H.~Bartosik and G.~Rumolo, ``{Performance of the LHC injector chain after the
 \bibitem{CMS_Setup}
 {CMS Collaboration}, ``{The CMS Experiment at the CERN LHC},'' {\em JINST},
   vol.~3, p.~S08004, 2008.
+
+\bibitem{Tapper:2013yva}
+``{CMS Technical Design Report for the Level-1 Trigger Upgrade},'' 6 2013.
 
 \bibitem{ATLAS:2020zms}
 G.~Aad {\em et~al.}, ``Search for heavy {Higgs} bosons decaying into two tau
@@ -221,11 +238,6 @@ E.~A. Bagnaschi, S.~Heinemeyer, S.~Liebler, P.~Slavich, and M.~Spira,
   ``Benchmark scenarios for {MSSM Higgs} boson searches at the {LHC},'' Tech.
   Rep. LHCHWG-2021-001, CERN, 2021.
 
-\bibitem{CMS_MSSM_Tau_2018}
-{CMS Collaboration}, ``{Search for additional neutral MSSM Higgs bosons in the
-  $\tau\tau$ final state in proton-proton collisions at $\sqrt{s}=$ 13 TeV},''
-  {\em JHEP}, vol.~09, p.~007, 2018.
-
 \bibitem{Khachatryan:2015tra}
 V.~Khachatryan {\em et~al.}, ``Search for neutral {MSSM Higgs} bosons decaying
   into a pair of bottom quarks,'' {\em JHEP}, vol.~11, p.~071, 2015.
@@ -378,11 +390,6 @@ G.~Cowan, K.~Cranmer, E.~Gross, and O.~Vitells, ``Asymptotic formulae for
 A.~Denner, S.~Heinemeyer, I.~Puljak, D.~Rebuzzi, and M.~Spira, ``Standard model
   {Higgs}-boson branching ratios with uncertainties,'' {\em Eur. Phys. J. C},
   vol.~71, p.~1753, 2011.
-
-\bibitem{CMS:2022rbd}
-{CMS Collaboration}, ``{Searches for additional Higgs bosons and vector
-  leptoquarks in $\tau\tau$ final states in proton-proton collisions at
-  $\sqrt{s}=13~\mathrm{TeV}$},'' 2022.
 
 \bibitem{Krause:2018wmo}
 M.~Krause, M.~M\"uhlleitner, and M.~Spira, ``{2HDECAY \textemdash{}A program

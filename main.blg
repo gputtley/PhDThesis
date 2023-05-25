@@ -3,30 +3,32 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: ieeetr.bst
 Database file #1: bibs/sample.bib
-Repeated entry---line 3908 of file bibs/sample.bib
+Repeated entry---line 3917 of file bibs/sample.bib
  : @article{Englert:1964et
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3919 of file bibs/sample.bib
+Repeated entry---line 3928 of file bibs/sample.bib
  : @article{Higgs:1964ia
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3929 of file bibs/sample.bib
+Repeated entry---line 3938 of file bibs/sample.bib
  : @article{Higgs:1964pj
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3940 of file bibs/sample.bib
+Repeated entry---line 3949 of file bibs/sample.bib
  : @article{Higgs:1966ev
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3950 of file bibs/sample.bib
+Repeated entry---line 3959 of file bibs/sample.bib
  : @article{Guralnik:1964eu
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3961 of file bibs/sample.bib
+Repeated entry---line 3970 of file bibs/sample.bib
  : @article{Kibble:1967sv
  :                       ,
 I'm skipping whatever remains of this entry
+Warning--entry type for "sm_diagram" isn't style-file defined
+--line 4105 of file bibs/sample.bib
 Warning--I didn't find a database entry for "Rk"
 Warning--I didn't find a database entry for "Rkstar"
 Warning--I didn't find a database entry for "Rd"
@@ -42,7 +44,10 @@ Warning--I didn't find a database entry for "BTVPOG_2018"
 Warning--I didn't find a database entry for "CMS-PAS-JME-18-001"
 Warning--I didn't find a database entry for "Tau14001"
 Warning--I didn't find a database entry for "TauPOG"
+Warning--empty journal in CMS:2022rbd
 Warning--empty institution in Bartosik:2847538
+Warning--empty author in Tapper:2013yva
+Warning--empty journal in Tapper:2013yva
 Warning--empty author in Evans:2008zzb
 Warning--empty author in 203828
 Warning--empty journal in 203828
@@ -52,37 +57,36 @@ Warning--empty institution in CMS-DP-2019-033
 Warning--empty journal in CMS:2022zks
 Warning--empty institution in LHCHiggsCrossSectionWorkingGroup:2013rie
 Warning--empty institution in deFlorian:2016spz
-Warning--empty journal in CMS:2022rbd
-You've used 85 entries,
+You've used 87 entries,
             1876 wiz_defined-function locations,
-            1009 strings with 17492 characters,
-and the built_in function-call counts, 21064 in all, are:
-= -- 2151
-> -- 743
+            1017 strings with 17701 characters,
+and the built_in function-call counts, 21317 in all, are:
+= -- 2171
+> -- 752
 < -- 5
-+ -- 287
-- -- 202
-* -- 1199
-:= -- 2884
-add.period$ -- 89
-call.type$ -- 85
-change.case$ -- 86
++ -- 291
+- -- 204
+* -- 1218
+:= -- 2917
+add.period$ -- 91
+call.type$ -- 87
+change.case$ -- 88
 chr.to.int$ -- 0
-cite$ -- 96
-duplicate$ -- 1386
-empty$ -- 1847
-format.name$ -- 202
-if$ -- 5384
+cite$ -- 100
+duplicate$ -- 1398
+empty$ -- 1880
+format.name$ -- 204
+if$ -- 5445
 int.to.chr$ -- 0
-int.to.str$ -- 85
-missing$ -- 78
-newline$ -- 262
-num.names$ -- 82
-pop$ -- 259
+int.to.str$ -- 87
+missing$ -- 79
+newline$ -- 268
+num.names$ -- 83
+pop$ -- 272
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1076
+skip$ -- 1083
 stack$ -- 0
 substring$ -- 757
 swap$ -- 713
@@ -90,8 +94,8 @@ text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 11
-while$ -- 168
-width$ -- 87
-write$ -- 834
+warning$ -- 13
+while$ -- 169
+width$ -- 89
+write$ -- 847
 (There were 6 error messages)

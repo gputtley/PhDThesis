@@ -17,6 +17,15 @@
 \usepackage{enumerate}
 \usepackage{xspace}
 \usepackage{braket}
+\usepackage{ragged2e}
+\usepackage{changepage}
+\usepackage{acronym}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{fancyhdr}
 
 %% Sets page size and margins
 \captionsetup[figure]{skip=0pt}
@@ -27,14 +36,6 @@
 \newcommand{\addpic}{\includegraphics[width=6em]{example-image}}
 \newcolumntype{C}{>{\centering\arraybackslash}m{16em}}
 \setlength\parindent{0pt}
-
-%% Useful packages
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{graphicx}
-\usepackage[colorinlistoftodos]{todonotes}
-\usepackage[colorlinks=true, allcolors=blue]{hyperref}
-\usepackage{fancyhdr}
 
 \pagestyle{fancy}
 \fancyhead{} % clear all header fields
@@ -90,6 +91,7 @@ minimum height=4em]
 \author{George Uttley}
 
 \begin{document}
+
 \input{title/title.tex}
 
 \tableofcontents
@@ -113,5 +115,7 @@ minimum height=4em]
 \newpage
 \bibliographystyle{ieeetr}
 \bibliography{bibs/sample}
+\newpage
+\input{Sections/acronyms.tex}
 
 \end{document}
