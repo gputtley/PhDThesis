@@ -19,6 +19,11 @@ H.~Bartosik and G.~Rumolo, ``{Performance of the LHC injector chain after the
   upgrade and potential development},'' tech. rep., 2022.
 \newblock Contribution to Snowmass 2021.
 
+\bibitem{}
+{ATLAS Collaboration}, ``{Search for heavy Higgs bosons decaying into two tau
+  leptons with the ATLAS detector using $pp$ collisions at $\sqrt{s}=13$
+  TeV},'' {\em Phys. Rev. Lett.}, vol.~125, no.~5, p.~051801, 2020.
+
 \bibitem{CMS_Setup}
 {CMS Collaboration}, ``{The CMS Experiment at the CERN LHC},'' {\em JINST},
   vol.~3, p.~S08004, 2008.
@@ -100,6 +105,40 @@ B.~Abi {\em et~al.}, ``{Measurement of the Positive Muon Anomalous Magnetic
   Moment to 0.46 ppm},'' {\em Phys. Rev. Lett.}, vol.~126, no.~14, p.~141801,
   2021.
 
+\bibitem{LHCb:2022zom}
+``{Measurement of lepton universality parameters in $B^+\to K^+\ell^+\ell^-$
+  and $B^0\to K^{*0}\ell^+\ell^-$ decays},'' 12 2022.
+
+\bibitem{Gross:1973id}
+D.~J. Gross and F.~Wilczek, ``{Ultraviolet Behavior of Nonabelian Gauge
+  Theories},'' {\em Phys. Rev. Lett.}, vol.~30, pp.~1343--1346, 1973.
+
+\bibitem{Politzer:1973fx}
+H.~D. Politzer, ``{Reliable Perturbative Results for Strong Interactions?},''
+  {\em Phys. Rev. Lett.}, vol.~30, pp.~1346--1349, 1973.
+
+\bibitem{Glashow:1961tr}
+S.~L. Glashow, ``{Partial Symmetries of Weak Interactions},'' {\em Nucl.
+  Phys.}, vol.~22, pp.~579--588, 1961.
+
+\bibitem{Weinberg:1967tq}
+S.~Weinberg, ``{A Model of Leptons},'' {\em Phys. Rev. Lett.}, vol.~19,
+  pp.~1264--1266, 1967.
+
+\bibitem{Salam:1968rm}
+A.~Salam, ``{Weak and Electromagnetic Interactions},'' {\em Conf. Proc. C},
+  vol.~680519, pp.~367--377, 1968.
+
+\bibitem{UA1:1983crd}
+G.~Arnison {\em et~al.}, ``{Experimental Observation of Isolated Large
+  Transverse Energy Electrons with Associated Missing Energy at $\sqrt{s}= 540$
+  GeV},'' {\em Phys. Lett. B}, vol.~122, pp.~103--116, 1983.
+
+\bibitem{UA2:1983tsx}
+M.~Banner {\em et~al.}, ``{Observation of Single Isolated Electrons of High
+  Transverse Momentum in Events with Missing Transverse Energy at the CERN
+  anti-p p Collider},'' {\em Phys. Lett. B}, vol.~122, pp.~476--485, 1983.
+
 \bibitem{Englert:1964et}
 F.~Englert and R.~Brout, ``Broken symmetry and the mass of gauge vector
   mesons,'' {\em Phys. Rev. Lett.}, p.~321, 1964.
@@ -136,6 +175,15 @@ A.~M. Sirunyan {\em et~al.}, ``{A measurement of the Higgs boson mass in the
 S.~P. Martin, ``{A Supersymmetry Primer},'' {\em Advanced Series on Directions
   in High Energy Physics}, p.~1–98, Jul 1998.
 
+\bibitem{Diaz:2017lit}
+B.~Diaz, M.~Schmaltz, and Y.-M. Zhong, ``The leptoquark
+  hunter\textquoteright{}s guide: Pair production,'' {\em JHEP}, vol.~10,
+  p.~097, 2017.
+
+\bibitem{Schmaltz:2018nls}
+M.~Schmaltz and Y.-M. Zhong, ``The leptoquark hunter\textquoteright{}s guide:
+  Large coupling,'' {\em JHEP}, vol.~01, p.~132, 2019.
+
 \bibitem{Muong-2:2006rrc}
 G.~W. Bennett {\em et~al.}, ``{Final Report of the Muon E821 Anomalous Magnetic
   Moment Measurement at BNL},'' {\em Phys. Rev. D}, vol.~73, p.~072003, 2006.
@@ -166,6 +214,9 @@ G.~Aad {\em et~al.}, ``{The ATLAS Experiment at the CERN Large Hadron
 \bibitem{LHCb:2008vvz}
 A.~A. Alves, Jr. {\em et~al.}, ``{The LHCb Detector at the LHC},'' {\em JINST},
   vol.~3, p.~S08005, 2008.
+
+\bibitem{lumi}
+``{CMS Luminosity Public Results},'' May 2023.
 
 \bibitem{Malberti:2014pda}
 M.~Malberti, ``{Operation and performance of the CMS tracker},'' {\em PoS},

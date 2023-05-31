@@ -5,17 +5,21 @@ The \ac{SM} of particle physics is our current best theory to describe the funda
 The \ac{SM} describes the strong force, as well as unifying the weak and electromagnetic forces.
 The latter is partly done through the \ac{BEH} mechanism for spontaneous symmetry breaking, that allows many fundamental particles to obtain masses.
 It also predicts a new scalar boson, named the Higgs boson.
-In 2012, the ATLAS \cite{ATLAS_Higgs_Discovery} and CMS collaboration \cite{CMS_Higgs_Discovery} discovered a Higgs boson-like particle when colliding protons at high energy at the \ac{LHC} and further measurements of this particle's properties have been consistent with such a particle.
-This discovery experimentally completed the SM particle constituents. \\
+In 2012, the ATLAS \cite{ATLAS_Higgs_Discovery} and CMS collaboration \cite{CMS_Higgs_Discovery} discovered a Higgs boson-like particle when colliding protons at high energy at the \ac{LHC} and further measurements of the particle's properties have been consistent with the \ac{SM} prediction.
+This discovery experimentally completed the \ac{SM} particle constituents. \\
 
 However, the \ac{SM} is not without theoretical problems and experimental tensions.
 Firstly, the hierarchy problem describes the issue of lightness of the observed Higgs boson mass and the "unnatural" balancing of inputs needed to explain the theorised loop corrections to the predicted mass. 
 These are orders of magnitude larger than then observed mass.
-A solution to this problem is supersymmetry, but no experimental evidence for this theory has yet been found that separates it from the SM. 
-Secondly, results from the LHCb experiment \cite{LHCb:2021trn,Kowalewski:2013mna,BaBar:2013mob,Belle:2015qfa,LHCb:2015gmp,Belle:2016dyj,LHCb:2017rln,LHCb:2017smo} and the g−2 experiment \cite{Muong-2:2021ojo} have shown deviations from the SM predictions.
+A solution to this problem is \ac{SUSY}, but no experimental evidence for this theory has yet been found that separates it from the \ac{SM}. 
+Secondly, results from B physics \cite{LHCb:2021trn,Kowalewski:2013mna,BaBar:2013mob,Belle:2015qfa,LHCb:2015gmp,Belle:2016dyj,LHCb:2017rln,LHCb:2017smo} and the g−2 experiment \cite{Muong-2:2021ojo} have shown deviations from the SM predictions.
 Although not the statistical significance for a discovery, they offer intriguing hints at potential \ac{BSM} physics.
-\ac{BSM} particles, produced from extended Higgs sectors or otherwise, have been theorised to explain these deviations .
-This chapter will explain the \ac{SM} and the Higgs sector theory, as well as detailing the \ac{BSM} extensions that can help resolve the theoretical tensions and experimental tensions.
+\ac{BSM} particles, produced from extended Higgs sectors or otherwise, have been theorised to explain these deviations.
+This chapter will explain the \ac{SM} and the Higgs sector theory, as well as detailing the \ac{BSM} extensions that can help resolve the theoretical problems and experimental tensions. \\
+
+One caveat to the B physics results presented in this thesis, is the exclusion of the updated $\text{R}_{\text{K}}$ and $\text{R}_{\text{K}^{*}}$ measurements from the LHCb collaboration~\cite{LHCb:2022zom}.
+This is due to the interpretation of the B anomalies, described in this chapter and used in Chapter~\ref{sec:bsm_H_to_tau_tau_analysis}, being concluded prior to the release of Ref.~\cite{LHCb:2022zom}.
+The phenomenological affect of Ref.~\cite{LHCb:2022zom}, on the best fit of new physics to the B anomalies, is yet to be fully determined.
 
 \section{The Standard Model of Particle Physics}
 
@@ -23,15 +27,15 @@ This chapter will explain the \ac{SM} and the Higgs sector theory, as well as de
 
 The \ac{SM} is a set of fundamental particles, as shown in Figure~\ref{fig:sm_diagram}, and rules that govern the interactions between particles.
 The interactions between these particles are able to model the strong, weak and electromagnetic force, unifying the later two into one electroweak interaction.
-The \ac{SM} consists of 6 quarks, 3 charged leptons and 3 neutrinos, which are grouped in fermions because of their shared half integer spin. 
-Each of these particles contain an anti-partner with opposite quantum numbers but the same mass.
-The \ac{SM} also consists of a number of bosons (integer spin) that describe the fundamental forces of nature: the strong, weak, and electromagnetic forces. 
+The \ac{SM} consists of 6 quarks, 3 charged leptons and 3 neutrinos, which are grouped into fermions because of their shared half integer spin. 
+Each of these particles has an anti-partner with opposite quantum numbers but the same mass.
+The \ac{SM} also consists of a number of bosons with integer spin, that describe the fundamental forces of nature: the strong, weak, and electromagnetic forces. 
 The gluon is the mediator of the strong force, the W and Z bosons mediate the weak force, and the photon mediates the electromagnetic force. \\
 
 \begin{figure}[!hbtp]
 \centering
     \includegraphics[width=0.99\textwidth]{Figures/SM_diagram.pdf}
-\caption{Diagram of the fundamental particles the constitute the \ac{SM}. Also displayed are the fermion generation shown in Roman numerals, the particles measured mass, charge, spin and colours available for the strong interaction. This is taken and adjusted from Ref.~\cite{sm_diagram}}
+\caption{Diagram of the fundamental particles the constitute the SM. Also displayed are the fermion generation shown in Roman numerals, the particles measured mass, charge, spin and colours available for the strong interaction. This is taken and adjusted from Ref.~\cite{sm_diagram}}
 \label{fig:sm_diagram}
 \end{figure}
 
@@ -40,9 +44,10 @@ The SU(3)$_{\text{C}}$ $\otimes$ SU(2)$_{\text{L}}$ $\otimes$ U(1)$_{\text{Y}}$ 
 This means that the Lagrangian, that governs the particles interactions, is invariant under such a transformation. 
 SU(2)$_{\text{L}}$ $\otimes$ U(1)$_{\text{Y}}$ is the symmetry of the electroweak unification and SU(3)$_{\text{C}}$ is the symmetry of the theory for strong force, name \ac{QCD}. \\
 
-SOME STUFF ABOUT QCD HERE \\
-ALSO MAYBE SOME STUFF ABOUT WHY SU(2)L AND NOT JUST SU(2) \\
-
+The quantum number associated with the \ac{QCD} SU(3)$_\text{C}$ symmetry is the colour charge C.
+Quarks and gluons carry a colour charge and so interact with the strong force.
+One characteristic feature of \ac{QCD} is confinement, which requires neutral colour charges and so quarks must be observed in a bound state, named hadrons.
+Another key property is asymptotic freedom, which weakens the interaction strength at higher energy or very short distances \cite{Gross:1973id,Politzer:1973fx}. \\
 
 Electroweak unification was initially proposed by Glashow~\cite{Glashow:1961tr}, Weinberg~\cite{Weinberg:1967tq} and Salam~\cite{Salam:1968rm} to combine the theories for the weak and electromagnetic forces into one.
 It is built on the premise of the Dirac equation.
@@ -52,7 +57,8 @@ The Dirac Lagrangian for a massless field, $\psi$, is shown below.
 \mathcal{L}_{\text{Dirac}} = i\bar{\psi}\gamma^{\mu} \partial_{\mu} \psi
 \end{equation}
 
-The SU(2)$_{\text{L}}$ transformation operates on the weak isospin, $I$, only for the left handed spinors and the U(1)$_{\text{Y}}$ transformation operates on the weak hypercharge, $Y=2(Q-I_{3})$, where Q is the charge of the fundamental particles and $I_3$ is the third component of the weak ispospin.
+The SU(2)$_{\text{L}}$ transformation operates on the weak isospin, $I$, only for the left-handed spinors and the U(1)$_{\text{Y}}$ transformation operates on the weak hypercharge, $Y=2(Q-I_{3})$, where Q is the charge of the fundamental particles and $I_3$ is the third component of the weak ispospin.
+The reason for the distinction of the SU(2) symmetry to act only on left-handed spinors is from the observed chirality of fermions under the weak interaction.
 By invoking gauge invariance of the Dirac Lagrangian under such a transformation, four associated gauge fields are present, $\boldsymbol{W}_{\mu} = (W^{1}_{\mu},W^{2}_{\mu},W^{3}_{\mu})$ and $B_{\mu}$.
 
 \begin{align}
@@ -62,7 +68,7 @@ By invoking gauge invariance of the Dirac Lagrangian under such a transformation
 \end{split}
 \end{align}
 
-where the partial derivatives have been replaced with the covariant derivative and the added field tensors $\hat{\boldsymbol{W}}_{\mu\nu}$ and $\hat{B}_{\mu\nu}$ that are defined as,
+where the partial derivatives have been replaced with the covariant derivative and the added field tensors $\boldsymbol{W}_{\mu\nu}$ and $B_{\mu\nu}$ are defined as,
 
 \begin{equation}
 \boldsymbol{W}_{\mu\nu} = \partial_{\mu} \boldsymbol{W}_{\nu} - \partial_{\nu} \boldsymbol{W}_{\mu} - ig[\boldsymbol{W}_{\mu},\boldsymbol{W}_{\nu}]
@@ -72,7 +78,7 @@ where the partial derivatives have been replaced with the covariant derivative a
 B_{\mu\nu} = \partial_{\mu} B_{\nu} - \partial_{\mu} B_{\mu}.
 \end{equation}
 
-These fields can be rotated in physical fields for the photon, Z and W boson with the following transformations,
+These fields can be rotated into the physical fields for the photon, Z and W boson with the following transformations,
 
 \begin{align}
 \begin{split}
@@ -89,16 +95,16 @@ where $\theta_w$ represents the weak mixing angle and is defined such that
 \sin\theta_w = \frac{g^{\prime}}{\sqrt{g^2 + g^{\prime 2}}}, \hspace{1cm} \cos\theta_w = \frac{g}{\sqrt{g^2 + g^{\prime 2}}}.
 \end{equation}
 
-The W$^{\pm}$ and Z bosons were discovered by the UA1 and UA2 collaborations in 1983, which confirmed the predictions made by electroweak unification.
-However, the W$^{\pm}$ and Z bosons were measured to have a non-zero mass and Lagrangian mass terms of the form $\frac{1}{2}m_{Z}^2 Z_{\mu} Z^{\mu}$ or $m_{W}^2 W_{\mu}^{-}W^{+\mu}$ cannot be included as they are not invariant under the SU(2)$_{\text{L}}$ $\otimes$ U(1)$_{\text{Y}}$ gauge symmetry.
-The same issue also exist in massive fermions, as the fermion mass terms left- and right-handed chiral states, $m\bar{\psi}\psi = m(\bar{\psi}_R \psi_L + \bar{\psi}_L \psi_R)$,  transform differently and therefore does not remain invariant under the gauge transformation.
-To resolve this, the Brout-Englert-Higgs (BEH) mechanism for spontaneous symmetry breaking was theorised.
+The W and Z bosons were discovered by the UA1 and UA2 collaborations in 1983 \cite{UA1:1983crd,UA2:1983tsx}, which confirmed the predictions made by electroweak unification.
+However, the W and Z bosons were measured to have a non-zero mass and Lagrangian mass terms of the form $\frac{1}{2}m_{Z}^2 Z_{\mu} Z^{\mu}$ or $m_{W}^2 W_{\mu}^{-}W^{+\mu}$ cannot be included as they are not invariant under the SU(2)$_{\text{L}}$ $\otimes$ U(1)$_{\text{Y}}$ gauge symmetry.
+The same issue also existw in massive fermions, as the fermion mass term's left- and right-handed chiral states, $m\bar{\psi}\psi = m(\bar{\psi}_R \psi_L + \bar{\psi}_L \psi_R)$,  transform differently and therefore does not remain invariant under the gauge transformation.
+To resolve this, the \ac{BEH} mechanism for spontaneous symmetry breaking was theorised.
 
 \subsection{Higgs Sector}
 
-The BEH mechanism was proposed in the 1960s by Englert and Brout~\cite{Englert:1964et}, Higgs~\cite{Higgs:1964ia,Higgs:1964pj,Higgs:1966ev} and Guralnik, Hagen and Kibble~\cite{Guralnik:1964eu,Kibble:1967sv}.
+The \ac{BEH} mechanism was proposed in the 1960s by Englert and Brout~\cite{Englert:1964et}, Higgs~\cite{Higgs:1964ia,Higgs:1964pj,Higgs:1966ev} and Guralnik, Hagen and Kibble~\cite{Guralnik:1964eu,Kibble:1967sv}.
 It works on the principles of spontaneous symmetry breaking of the SU(2)$_{\text{L}}$ $\otimes$ U(1)$_{\text{Y}}$ gauge symmetry.
-It does this by introducing a gauge invariant field that has a non-zero vacuum expectation value (VEV).
+It does this by introducing a gauge invariant field that has a non-zero \ac{VEV}.
 The formalism of this is shown below, starting from a complex scalar doublet, $\Phi$. 
 
 \begin{equation}
@@ -113,7 +119,7 @@ where $\phi^{+}$ and $\phi^{0}$ are complex functions.
 The Lagrangian and the potential, chosen to fulfil the conditions stated above, then takes the form,
 
 \begin{equation}
-	\mathcal{L} = (\partial_{\mu}\Phi)^{\dagger} (\partial^{\mu}\Phi) - V(\Phi)
+	\mathcal{L}_{\text{Complex Scalar}} = (\partial_{\mu}\Phi)^{\dagger} (\partial^{\mu}\Phi) - V(\Phi)
 \end{equation}
 
 with,
@@ -123,14 +129,14 @@ V(\phi) = \mu^2 \Phi^{\dagger} \Phi + \lambda (\Phi^{\dagger} \Phi)^2,
 \end{equation}
 
 where $\mu^2$ and $\lambda$ are two real parameters, $\lambda$ is required to be positive for the vacuum to be stable.
-If $\mu^2$ is negative, $\Phi$ will have a non-zero VEV and the field will be able to spontaneously breaking the gauge symmetry.
+If $\mu^2$ is negative, $\Phi$ will have a non-zero \ac{VEV} and the field will be able to spontaneously break the gauge symmetry.
 In the vacuum state, the field must satisfy the criteria,
 
 \begin{equation}
 \Phi^{\dagger} \Phi = -\frac{\mu^2}{2\lambda}.
 \end{equation}
 
-This potential fulfils the criteria of a non-zero VEV as $\Phi$ must be non-zero. 
+This potential fulfils the criteria of a non-zero \ac{VEV} as $\Phi$ must be non-zero. 
 Choosing a gauge, to remove the massless scalar bosons predicted by Goldstone's theorem~\cite{Goldstone:1961eq}, by taking $\phi^+$ to be zero and $\phi$ to be real.
 The ground state of $\Phi$ is found as,
 
@@ -142,7 +148,7 @@ The ground state of $\Phi$ is found as,
 	\end{pmatrix},
 \end{equation}
 
-where $\nu^2 = \mu^2 / \lambda$, where $\nu$ is the non-zero VEV.
+where $\nu^2 = \mu^2 / \lambda$ and $\nu$ is the non-zero \ac{VEV}.
 The complex doublet can then be written as an expansion around the minimum of the potential,
 
 \begin{equation}
@@ -153,39 +159,58 @@ The complex doublet can then be written as an expansion around the minimum of th
 	\end{pmatrix}
 \end{equation}
 
-Applying the covariant derivative for the electroweak gauge symmetry to produce a kinematic term for the field, $\Phi$, yields
+Applying the covariant derivative for the electroweak gauge symmetry to produce the Lagrangian for the field, $\Phi$, yields
 
 \begin{align}
 \begin{split}
-(D_{\mu}\Phi)^{\dagger} (D^{\mu}\Phi) &= \frac{1}{2}(\partial_{\mu}h)(\partial^{\mu}h) + \frac{1}{8} g^{2} (W_{\mu}^{1} + i W_{\mu}^{2})(W^{1\mu} - i W^{2\mu})(\nu + h)^2 \\
-&+ \frac{1}{8} (g W_{\mu}^{3} - g' B_{\mu})(g W^{3\mu} - g' B^{\mu})(\nu + h)^2.
+\mathcal{L}_{\text{Higgs}} &= \frac{1}{2}(\partial_{\mu}h)(\partial^{\mu}h) + \frac{1}{8} g^{2} (W_{\mu}^{1} + i W_{\mu}^{2})(W^{1\mu} - i W^{2\mu})(\nu + h)^2 \\
+&+ \frac{1}{8} (g W_{\mu}^{3} - g' B_{\mu})(g W^{3\mu} - g' B^{\mu})(\nu + h)^2  \\
+&+ \mu^2 (\nu + \Ph)^2 + \lambda (\nu + h)^4.
 \end{split}
 \end{align}
 
-The Lagrangian incorporating this term, gives mass terms for $W_{\mu}^{1}$ and $W_{\mu}^{2}$ and hence the mass of the W boson is $m_W = \frac{1}{2}g\nu$.
+Mass terms for $W_{\mu}^{1}$ and $W_{\mu}^{2}$ are now present and hence the mass of the W boson is $m_W = \frac{1}{2}g\nu$.
 Once again the remaining states need to be rotated to give the photon and the Z boson fields.
-Setting up the non-diagonal mass matrix for the fields $W_{\mu}^{3}$ and $B_{\mu}$ and calculating the eigenvalues to find the diagonal basis, masses of two fields are found, one equal to 0 and the other equal to $\frac{1}{2} \nu \sqrt{g^2 + g^{\prime 2}}$ which represent the photon and Z boson mass respectively.
+Setting up the non-diagonal mass matrix for the fields $W_{\mu}^{3}$ and $B_{\mu}$, and calculating the eigenvalues to find the diagonal basis, masses of two fields are found, one equal to 0 and the other equal to $\frac{1}{2} \nu \sqrt{g^2 + g^{\prime 2}}$ which represent the photon and Z boson mass respectively.
 The transformation to the photon and Z fields as parametrised in Eq.~\ref{eqn:rotations} utilises,
 
 \begin{equation}
 \tan\theta_W = \frac{g^{\prime}}{g}.
 \end{equation}
 
-A mass term for the Higgs boson also arises from the potential of the BEH mechanism with $m_h = \sqrt{-2\mu^2}$. 
+A mass term for the Higgs boson also arises from the potential of the \ac{BEH} mechanism with $m_{\Ph} = \sqrt{-2\mu^2}$. 
 The same mechanism can also be used to add mass terms for quarks and charged leptons.
-Gauge invariant couplings to the Higgs bosons and fermion mass terms can be generated from the BEH mechanism applied to a Lagrangian term of the form,
+Gauge invariant couplings to the Higgs bosons and fermion mass terms can be generated from the \ac{BEH} mechanism applied to a Lagrangian term of the form,
 
 \begin{equation}
-\bar{\psi}_{L}\Phi\psi_{R} + \bar{\psi}_{R}\Phi\psi_{L}.
+\mathcal{L}_{\text{Yukawa}} = \lambda_f (\bar{\psi}_{L}\Phi\psi_{R} + \bar{\psi}_{R}\Phi\psi_{L}).
 \end{equation}
 
+Upon spontaneous symmetry breaking, $\lambda_{f}$ becomes proportional to the mass of the fermion, and hence the couplings are stronger between heavier fermions and the Higgs field.
 
 \section{Extended Higgs Sector}
 
-There is no theoretical limitation to only have one Higgs doublet in the theory.
-Therefore, a natural extension to the SM Higgs sector is the two Higgs doublet model (2HDM).
-2HDMs predict 5 Higgs bosons; 1 lighter and 1 heavier scalar ($h$ and $H$), 1 pseudoscalar ($A$) and 2 charged particles ($H^\pm$).
+There is no theoretical limitation to have only one Higgs doublet in the theory.
+Therefore, a natural extension to the \ac{SM} Higgs sector is the \ac{2HDM}.
 The Lagrangian for such a theory is shown below.
+
+\begin{equation}
+\mathcal{L}_{\text{2HDM}} = (D_\mu \Phi_1)^{\dagger} (D_\mu \Phi_1) + (D_\mu \Phi_2)^{\dagger} (D_\mu \Phi_2) - V_{\text{2HDM}}(\Phi_1 ,\Phi_2)
+\end{equation}
+
+where,
+
+\begin{align}
+\begin{split}
+V_{\text{2HDM}} &= m_{11}^{2}|\Phi_{1}|^2 + m_{22}^{2}|\Phi_{2}|^2 + (m_{12}^{2}\Phi_{1}^{\dagger}\Phi_{2} + \text{h.c.}) \\
+&+ \frac{\lambda_1}{2}|\Phi_{1}|^4 + \frac{\lambda_2}{2}|\Phi_{2}|^4 + \lambda_3 |\Phi_{1}|^2 |\Phi_{2}|^2 + \lambda_4  |\Phi_{1}^{\dagger} \Phi_{2}| \\
+&+ \frac{1}{2}\Big[ \lambda_5 (\Phi_{1}^{\dagger} \Phi_{2})^{2} + \lambda_6 |\Phi_{1}|^{2} \Phi_{1}^{\dagger} \Phi_{2} +  \lambda_7 |\Phi_{2}|^{2} \Phi_{1}^{\dagger} \Phi_{2} + \text{h.c.} \Big],
+\end{split}
+\end{align}
+
+where $m_{ij}$ represents the terms in the mass matrix and $\lambda_i$ parametrises the self couplings of the Higgs sector. 
+After the \ac{BEH} mechanism is applied, \ac{2HDM}s predict 5 Higgs bosons; 1 lighter and 1 heavier \ac{CP}-even (\Ph and \PH), 1 \ac{CP}-odd (\PA) and 2 charged particles (\PHc).
+The Lagrangian for the Yukawa interactions with the Higgs bosons in such a theory are,
 
 \begin{equation}
 \begin{aligned}
@@ -194,11 +219,11 @@ The Lagrangian for such a theory is shown below.
 \end{aligned}
 \end{equation}
 
-where $u$, $d$ and $l$ represent up-like quarks, down-like quarks and charged leptons.
-$m_{f}$ are the fermion masses, $\nu$ is the vacuum expectation value of the SM Higgs doublet, $g$ are the couplings (relative to the SM couplings) of fermion fields, f, to Higgs fields, $h$, $H$, $A$ and $H^+$.
-NEED TO WRITE ABOUT THE OTHER PARAMETERS I DON'T CARE ABOUT ALSO.
+where $u$, $d$, $l$ and $\nu$ represent up-like quark, down-like quark, charged lepton and neutrino fields, where the subscript $L$ and $R$ are the left- and right-handed projection performed via the projection operators, $P$.
+$m_{f}$ are the fermion masses, $\nu$ is the vacuum expectation value of the \ac{SM} Higgs doublet, and $g$ are the couplings (relative to the \ac{SM} couplings) of fermion fields to Higgs fields, $h$, $H$, $A$ and $H^{+}$.
 There are four main types of 2HDM that are dependent on which Higgs doublet couples to which group of fermions, named type I, II, X (lepton-specific) and Y (flipped).
-The couplings of the fermion groups to the Higgs doublets are shown in Tab.~\ref{tab:2hdm_doublets}, by convention $\Phi_2$ is chosen to couple to up-like quarks.
+The couplings of the fermion groups to the Higgs doublets are shown in Tab.~\ref{tab:2hdm_doublets}. 
+By convention $\Phi_2$ is chosen to couple to up-like quarks.
 
 \begin{table}[H]
     \centering
@@ -216,7 +241,7 @@ The couplings of the fermion groups to the Higgs doublets are shown in Tab.~\ref
     \label{tab:2hdm_doublets}
 \end{table}
 
-The type of 2HDM determines the formulae for the couplings, $g$, that are functions on two parameters: the CP-even ($\alpha$) and CP-odd mixing angles ($\beta$).
+The type of \ac{2HDM} determines the formulae for the couplings, $g$, that are functions on two parameters: the \ac{CP}-even ($\alpha$) and \ac{CP}-odd ($\beta$) mixing angles of the mass matrices.
 These relative couplings are shown in Tab.~\ref{tab:2hdm_couplings}.
 
 \begin{table}[H]
@@ -243,20 +268,34 @@ These relative couplings are shown in Tab.~\ref{tab:2hdm_couplings}.
     \label{tab:2hdm_couplings}
 \end{table}
 
-In the alignment limit, for the normal scenario $h_{SM}=h$, $sin(\beta-\alpha)=1$, $\implies$ $c_{\alpha}/s_{\beta}=1$, $s_{\alpha}/c_{\beta}=-1$, $s_{\alpha}/s_{\beta}=-1/t_{\beta}$, $c_{\alpha}/c_{\beta}=t_{\beta}$.
+To match the observed Higgs boson measurements to a \ac{CP}-even boson predicted by a \ac{2HDM}, a linear combination of these two states are taken.
 
-In the alignment limit, for the inverted scenario $h_{SM}=H$, $cos(\beta-\alpha)=1$ $\implies$ $c_{\alpha}/s_{\beta}=1/t_{\beta}$, $s_{\alpha}/c_{\beta}=t_{\beta}$, $s_{\alpha}/s_{\beta}=1$, $c_{\alpha}/c_{\beta}=1$.
+\begin{equation}
+h_{\text{obs}} = \sin(\beta-\alpha) h + \cos(\beta-\alpha) H
+\end{equation}
 
+Assuming a non-degeneracy of the observed Higgs boson mass, two possible alignment limits are acquired: the normal scenario where $\Ph_{\text{obs}}=\Ph$ and $\cos(\beta-\alpha)=0$ and the inverted scenario where $\Ph_{\text{obs}}=\PH$ and $\sin(\beta-\alpha)=0$.
+In the normal scenario the values of the coupling ratios from Tab.~\ref{tab:2hdm_couplings} are: $\cos\alpha/\sin\beta=1$, $\sin\alpha/\cos\beta=-1$, $\sin\alpha/\sin\beta=-1/\tan\beta$ and $\cos\alpha/\cos\beta=\tan\beta$. 
+Whilst in the inverted scenario the ratios become: $\cos\alpha/\sin\beta=1/\tan\beta$, $\sin\alpha/\cos\beta=\tan\beta$, $\sin\alpha/\sin\beta=1$ and $\cos\alpha/\cos\beta=1$. \\
+
+In the physical basis the \ac{2HDM} depends on the following parameters:
+
+\begin{equation}
+m_{\Ph}, m_{\PH}, m_{\PA}, m_{\PHc}, \tan\beta, \cos(\beta-\alpha), m_{12}^{2}, \lambda_{6}, \lambda_{7}
+\end{equation}
+
+It is common to require a $\mathbb{Z}_2$ symmetry to a 2HDM in order to maintain naturalness and avoid quadratic divergences, as well as suppressing flavour changing neutral currents.
+In this case the basis of parameters is shrunk, as $\lambda_6 = \lambda_7 = 0$.
 
 \section{Theoretical Problems and Potential Solutions}
 
 \subsection{Hierarchy Problem}
 
-The current best measurement for the SM Higgs boson’s mass from the CMS experiemnt is 125.38 $\pm$ 0.14 GeV~\cite{CMS:2020xrn}.
-The lightness is a concern when considering "naturalness" and physics beyond the SM. 
+The current best measurement for the \ac{SM} Higgs boson’s mass from the \ac{CMS} experiment is 125.38 $\pm$ 0.14 GeV~\cite{CMS:2020xrn}.
+The lightness is a concern when considering "naturalness" and physics beyond the \ac{SM}. 
 The Higgs boson has loop corrections to calculations of its mass. 
 Known heavy fermions already provide significant contributions (orders of magnitude greater than the observed mass) to the Higgs boson’s calculated mass. 
-On top of this, treating the SM as an effective field theory, new physics would be expected in the unexplored regions between the weak scale and the Planck scale
+On top of this, treating the \ac{SM} as an effective field theory, new physics would be expected in the unexplored regions between the weak scale and the Planck scale
 But if a new fermion were to be found, $f$, or a heavy scalar, $S$, in such a range, the Higgs boson would be subject to even greater changes in its predicted mass. 
 The Feynman diagrams for the mass corrections for a fermion and a scalar are shown in Fig.~\ref{fig:Higgs_One_Loop_Corrections}.
 
@@ -267,13 +306,13 @@ The Feynman diagrams for the mass corrections for a fermion and a scalar are sho
     \scalebox{0.8}{
     \begin{tikzpicture}
     \begin{feynman}
-    \vertex (a) {\(H\)};
+    \vertex (a) {\(h\)};
     \vertex [right = 1.5cm of a] (b);
     \vertex [right = 1cm of b] (dummy);
     \vertex [right = 1cm of dummy] (c);
     \vertex [above = 1cm of dummy] (e);
     \vertex [below = 1cm of dummy] (f);
-    \vertex [right = 1.5cm of c] (d) {\(H\)};
+    \vertex [right = 1.5cm of c] (d) {\(h\)};
     \diagram* {
     (a) -- [scalar] (b),
     (b) -- [out=90, in=180] (e),
@@ -293,9 +332,9 @@ The Feynman diagrams for the mass corrections for a fermion and a scalar are sho
     \scalebox{0.8}{
     \begin{tikzpicture}
     \begin{feynman}
-    \vertex (a) {\(H\)};
+    \vertex (a) {\(h\)};
     \vertex [right = 2cm of a] (b);
-    \vertex [right = 2cm of b] (c) {\(H\)};
+    \vertex [right = 2cm of b] (c) {\(h\)};
     \vertex [above = 1cm of b] (dummy);
     \vertex [left = 1cm of dummy] (d);
     \vertex [above = 1cm of dummy] (e);
@@ -314,73 +353,82 @@ The Feynman diagrams for the mass corrections for a fermion and a scalar are sho
     \caption{}
     \label{fig:corr_scalar}
     \end{subfigure}
-    \caption{One-loop corrections to the Higgs mass by a fermion f (a) and a scalar S (b).}
+    \caption{One-loop corrections to the Higgs boson's mass by a fermion $f$ (a) and a scalar $S$ (b).}
     \label{fig:Higgs_One_Loop_Corrections}
 \end{figure}
 
-Figure \ref{fig:corr_fermion} shows a diagrammatic representation of the fermionic correction to the Higgs boson's mass. 
-The Lagrangian term for the coupling of the Higgs field to fermions is \(-\lambda_f H \bar{f} f\). 
-Hence, it can be determined that the correction to the mass is
+Fig.~\ref{fig:corr_fermion} shows a representation of the fermionic correction to the Higgs boson's mass. 
+The Lagrangian term for the coupling of the Higgs field to fermions is $-\lambda_f h \bar{f} f$. 
+Hence, it can be determined that the correction to the mass is,
 
 \begin{equation}
-    \Delta m_{\text{H}}^{2} =  -\frac{\lambda_f}{16\pi^2}\Big[\Lambda_{UV}^{2} -2m_{f}^{2} \ln\Big(\frac{\Lambda_{UV}}{m_f}\Big) \Big] + ... ,
-    \label{eqn:dm_f}
+\Delta m_{\text{h}}^{2} =  -\frac{\lambda_f}{16\pi^2}\Big[\Lambda_{UV}^{2} -2m_{f}^{2} \ln\Big(\frac{\Lambda_{UV}}{m_f}\Big) \Big] + ... ,
+\label{eqn:dm_f}
 \end{equation}
 
 where \(\Lambda_{UV}\) is the ultraviolet momentum cut off \cite{SUSY_Primer}.
- Beyond this, our effective field theory would be expected to break down and new physics to be found. \\
+Beyond this, our effective field theory would be expected to break down and for new physics to be found. \\
 
-Figure \ref{fig:corr_scalar} illustrates a correction to the Higgs mass by a scalar particle. The coupling of a scalar to the Higgs field is represented by the Lagrangian term \(-\lambda_S |H|^2 |S|^2\). The Higgs mass correction for such a term is derived to be
+Fig.~\ref{fig:corr_scalar} illustrates a correction to the Higgs mass by a scalar particle. 
+The coupling of a scalar to the Higgs field is represented by the Lagrangian term $-\lambda_S |h|^2 |S|^2$. 
+The Higgs boson's mass correction for such a term is derived to be,
 
 \begin{equation}
-    \Delta m_{\text{H}}^{2} =  \frac{\lambda_{S}^{2}}{16\pi^2}\Big[\Lambda_{UV}^{2} -2m_{S}^{2} \ln\Big(\frac{\Lambda_{UV}}{m_S}\Big) \Big] + ... .
+    \Delta m_{\text{h}}^{2} =  \frac{\lambda_{S}^{2}}{16\pi^2}\Big[\Lambda_{UV}^{2} -2m_{S}^{2} \ln\Big(\frac{\Lambda_{UV}}{m_S}\Big) \Big] + ... .
     \label{eqn:dm_S}
 \end{equation}
 
-Eq.\ref{eqn:dm_f} and Eq.\ref{eqn:dm_S} show that if the mass of the scalar is equivalent to that of the fermion and $\lambda_f = \lambda_{S}^{2}$, then the Higgs mass corrections cancel. 
-This offers a solution to the hierarchy problem introducing a new symmetry that extends the Standard Model. 
-The symmetry relates fermions and bosons and is known as supersymmetry. 
+Eq.\ref{eqn:dm_f} and Eq.\ref{eqn:dm_S} show that if the mass of the scalar is equivalent to that of the fermion and $\lambda_f = \lambda_{S}^{2}$, then the Higgs boson's mass corrections cancel. 
+This offers a solution to the hierarchy problem, by introducing a new symmetry that extends the \ac{SM}. 
+The symmetry relates fermions and bosons and is known as \ac{SUSY}. 
 It states that fermions and bosons exist in groups called supermultiplets. 
 Each supermultiplet contains fermion and boson states which are superpartners of one another. 
 On-shell each supermultiplet must have an equivalent number of fermionic and bosonic degrees of freedom. 
-In order for this to also hold off-shell, an auxiliary field is added to balance the number of degrees of freedom. 
+In order for this to also hold off-shell, an auxiliary field is added to balance the number of degrees of freedom. \\
 
-If supersymmetry is an unbroken theory, then one would expect to have the superpartners at the same mass as the Standard Model particles. 
-This has not been seen experimentally, therefore supersymmetry must be a broken theory in the vacuum state. 
-Soft supersymmetry breaking can be introduced through the addition of SUSY violating Lagrangian term $\mathcal{L}_{\text{soft}}$, where
+If \ac{SUSY} is an unbroken theory, then it would be expected for the superpartners to have the same mass as the \ac{SM} particles. 
+This has not been seen experimentally, therefore \ac{SUSY} must be a broken theory in the vacuum state. 
+Soft \ac{SUSY} breaking can be introduced through the addition of \ac{SUSY} violating Lagrangian term $\mathcal{L}_{\text{soft}}$, where
 
 \begin{equation}
     \mathcal{L} = \mathcal{L}_{\text{SUSY}} + \mathcal{L}_{\text{soft}}.
 \end{equation}
 
 $\mathcal{L}_{\text{soft}}$ contains only mass terms and coupling parameters. 
-Defining $m_{\text{soft}}$ as the largest mass scale involved in the soft Lagrangian, $m_{\text{soft}}$ also then defines the mass splitting between the SM and supersymmetric particles. 
-If the mass splitting becomes significant, the hierarchy problem would be reintroduced as corrections to the Higgs mass would again become large.
+Defining $m_{\text{soft}}$ as the largest mass scale involved in the soft Lagrangian, $m_{\text{soft}}$ also then defines the mass splitting between the \ac{SM} and supersymmetric particles. 
+If the mass splitting becomes significant, the hierarchy problem would be reintroduced as corrections to the Higgs boson's mass would again become large. \\
 
-The Minimal Supersymmetric Standard Model (MSSM) is simplest implementation of supersymmetry.
+The \ac{MSSM} is the simplest implementation of \ac{SUSY}.
 It introduces sets of new particles named squarks, sleptons, gauginos and Higgsinos as superpartners to quarks, leptons, gauge bosons and the Higgs bosons.
-Also added are neutralinos and charginos that are combined of gauginos and Higgsinos.
+Also added are neutralinos and charginos that are combinations of gauginos and Higgsinos.
 Additional contributions to the particle content comes from the Higgs sector.
-The Higgs sector of the MSSM is required to be extended to two Higgs doublets in order to maintain the gauge symmetries and to cancel quantum mechanical inconsistencies~\cite{}.
-In particular a type II 2HDM is needed to ensure natural Yukawa couplings, minimal flavour violation and tree-level mass relations, that all cannot be achieved with a different extended Higgs sector.
+The Higgs sector of the \ac{MSSM} is required to be extended to two Higgs doublets in order to maintain the gauge symmetries and to cancel quantum mechanical inconsistencies~\cite{SUSY_Primer}.
+In particular a type II \ac{2HDM} is needed to ensure natural Yukawa couplings, minimal flavour violation and tree-level mass relations, that all cannot be achieved with a different extended Higgs sector~\cite{SUSY_Primer}.
+At tree-level, the \ac{MSSM} Higgs sector is only dependent on $m_{\PA}$ and $\tan\beta$.
+At high-order accuracies, benchmark scenarios are needed to set the remaining free parameters.
 
 \section{Experimental Tensions and Potential Solutions}
 
 \subsection{B Anomalies}
 \label{sec:b_anomalies}
 
-Recent measurements from the LHCb experiment, testing lepton flavour conservation, have found deviations away from the Standard Model. The measurement of $R_{K}$, $R_{K^{*}}$ and $R_{D(^{})}$ have deviations with significances of 3.1, 2.1-2.5 and 3.1 $\sigma$ respectively \cite{Rk,Rkstar,Rd}. These B-anomalies have prompted the idea for a short range lepton flavour violating interaction. This interaction is theorised to be mediated by leptoquarks. In an attempt to fit a model that offers a combined explanation of these results, it was found that a $U_{1}$ vector leptoquark was the only leptoquark that could offer a simultaneous explanation of all anomalous results \cite{leptoquark}. Such a leptoquark would couple to fermions by the Lagrangian shown below. \\
+Measurements from the B physics experiments such as LHCb~\cite{LHCb:2021trn,LHCb:2015gmp,LHCb:2017rln,LHCb:2017smo}, BaBar~\cite{Kowalewski:2013mna,BaBar:2013mob} and Belle~\cite{Belle:2015qfa,Belle:2016dyj}, testing lepton flavour conservation, have found deviations away from the \ac{SM} expectation of lepton universality.
+The differences are observed in both neutral current ($b\rightarrow sl^{+}l^{-}$) and charged current ($b\rightarrow c\tau\nu$) transitions.
+These B anomalies have prompted the idea for a short range lepton flavour violating interaction.
+This interaction is theorised to be mediated by a new "leptoquark" particle~\cite{Diaz:2017lit,Schmaltz:2018nls}.
+In an attempt to fit a model that offers a combined explanation of these results, it was found that a $U_{1}$ vector leptoquark was the only leptoquark that could offer a simultaneous explanation of all anomalous results~\cite{Cornella:2021sby}. 
+Such a leptoquark would couple to fermions by the Lagrangian shown below.
 
 \begin{equation}
 \lag_{U} = \frac{g_{U}}{\sqrt{2}} U^{\mu} \big[ \beta_{L}^{i\alpha}( \bar{q}_{L}^{i} \gamma_{\mu} l_{L}^{\alpha}) + \beta_{R}^{i\alpha}( \bar{d}_{R}^{i} \gamma_{\mu} e_{R}^{\alpha}) \big] + \text{h.c.}
 \end{equation}
 
-where $g_{U}$ is the coupling scaling parameter and $\beta_{L}$ and $\beta_{R}$ are the left and right-handed mixing matrices
+where $g_{U}$ is the coupling scaling parameter and $\beta_{L}$ and $\beta_{R}$ are the left and right-handed mixing matrices,
 
 \begin{equation}
 \beta_{L} = 
 \begin{pmatrix}
-0 & 0 & \beta_{L}^{d\tau} \\
+0 & 0 & 0 \\
 0 & \beta_{L}^{s\mu} & \beta_{L}^{s\tau} \\
 0 & \beta_{L}^{b\mu} & 1
 \end{pmatrix},
@@ -393,12 +441,41 @@ where $g_{U}$ is the coupling scaling parameter and $\beta_{L}$ and $\beta_{R}$ 
 \end{pmatrix}.
 \end{equation}
 
-The fit to B-anomolies done in Ref. \cite{leptoquark}, found the best fit values for each left-handed mixing matrix parameter based on two scenarios for $\beta^{b\tau}_{R}$, namely $\beta^{b\tau}_{R} = 0$ and $\beta^{b\tau}_{R} = -1$. These represents no and maximal right-handed contributions. The most stringent constraints on these models are imposed by high-$p_{T}$ di-tau tails. At the LHC the most dominant production mode of this final state would be given in Figure \ref{fig:leptoquark_feynman}.
+The coupling $g_{U}$ is defined such that $\beta_{L}^{b\tau}=1$, and the negligible matrix elements for the fit are set to 0.
+The fit to B anomolies performed in Ref.~\cite{Cornella:2021sby}, found the best fit values for each left-handed mixing matrix parameter based on two scenarios for $\beta^{b\tau}_{R}$, namely $\beta^{b\tau}_{R} = 0$ and $\beta^{b\tau}_{R} = -1$.
+These represents no and maximal right-handed contributions. 
+The best fit results to the matrix parameters are shown in Tab.~\ref{tab:vlq_bestfit}.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+Scenario & $\beta^{b\mu}_{L}$ & $\beta^{s\tau}_{L}$ & $\beta^{s\mu}_{L}$ \\
+\hline
+\hline
+$\beta^{b\tau}_{R}=0$ & $-0.15^{+0.13}_{-0.11}$ & $0.19^{+0.06}_{-0.09}$ & $0.014^{+0.01}_{-0.01}$ \\
+$\beta^{b\tau}_{R}=-1$ & $-0.14^{+0.12}_{-0.11}$ & $0.19^{+0.05}_{-0.08}$ & $0.03^{+0.01}_{-0.02}$ \\
+\hline
+\end{tabular}
+\caption{Best fit values and uncertainties for mixing matrix parameters as given in Ref.~\cite{Cornella:2021sby}.}
+\label{tab:vlq_bestfit}
+\end{table}
+
+The fit also provides a 1$\sigma$ and 2$\sigma$ bound on allowed values for the ratio of the vector leptoquark mass $m_{U}$, to the coupling constant $g_{U}$, and these are,
+
+\begin{align}
+\begin{split}
+\beta^{b\tau}_{R}=0, \hspace{0.2cm} 1\sigma&: 0.70 < g_{U}/m_{U} \text{ (1/TeV)} < 1.09, \\
+\beta^{b\tau}_{R}=0, \hspace{0.2cm} 2\sigma&: 0.57 < g_{U}/m_{U} \text{ (1/TeV)} < 1.38, \\
+\beta^{b\tau}_{R}=-1, \hspace{0.2cm} 1\sigma&: 0.49 < g_{U}/m_{U} \text{ (1/TeV)} < 0.67, \\
+\beta^{b\tau}_{R}=-1, \hspace{0.2cm} 2\sigma&: 0.39 < g_{U}/m_{U} \text{ (1/TeV)} < 1.25.
+\end{split}
+\end{align}
 
 \subsection{g-2 Anomaly}
 \label{sec:gm2_anomaly}
 
-The measurement of the muon anomalous magnetic moment from the Fermilab National Accelerator Laboratory (FNAL) Muon g-2 experiment~\cite{Muong-2:2021ojo}, combined with earlier results from the Brookhaven National Laboratory (BNL) E821 measurement \cite{Muong-2:2006rrc}, finds the difference of $a_\mu$ between experiment and SM prediction to be,
+The measurement of the muon anomalous magnetic moment from the Fermilab National Accelerator Laboratory (FNAL) muon g-2 experiment~\cite{Muong-2:2021ojo}, combined with earlier results from the Brookhaven National Laboratory (BNL) E821 measurement \cite{Muong-2:2006rrc}, finds the difference of $a_\mu$ between experiment and SM prediction to be,
 
 \begin{equation}
 \Delta a_{\mu}^{\text{obs}} = a_{\mu}^{\text{exp}} - a_{\mu}^{\text{SM}} = (251 \pm 59) \times 10^{-11},

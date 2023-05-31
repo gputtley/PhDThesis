@@ -26,6 +26,17 @@
 \usepackage[colorinlistoftodos]{todonotes}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 \usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{cite}
+\usepackage{upgreek}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=red,
+  citecolor=green,
+}
 
 %% Sets page size and margins
 \captionsetup[figure]{skip=0pt}
@@ -71,6 +82,14 @@
 \newcommand{\MCATNLO} {\textsc{mc@nlo}\xspace}
 \newcommand{\MGvATNLO}{\MADGRAPH{}5\_a\MCATNLO}
 \newcommand{\PYTHIA} {{\textsc{Pythia}}\xspace}
+\newcommand{\Ph} {{\ensuremath{\text{h}}}\xspace}
+\newcommand{\PH} {{\ensuremath{\text{H}}}\xspace}
+\newcommand{\PA} {{\ensuremath{\text{A}}}\xspace}
+\newcommand{\PHc} {{\ensuremath{\text{H}^{\pm}}}\xspace}
+\newcommand{\Pu} {{\ensuremath{\text{u}}}\xspace}
+\newcommand{\Pd} {{\ensuremath{\text{d}}}\xspace}
+\newcommand{\Pl} {{\ensuremath{\text{l}}}\xspace}
+\newcommand{\Pf} {{\ensuremath{\text{f}}}\xspace}
 
 % Define block styles
 \usetikzlibrary{shapes.geometric, arrows}
@@ -113,7 +132,8 @@ minimum height=4em]
 \newpage
 \input{Sections/conclusion.tex}
 \newpage
-\bibliographystyle{ieeetr}
+%\bibliographystyle{ieeetr}
+\bibliographystyle{ieee}
 \bibliography{bibs/sample}
 \newpage
 \input{Sections/acronyms.tex}

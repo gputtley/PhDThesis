@@ -1,19 +1,20 @@
 \babel@toc {english}{}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {1.1}{\ignorespaces Table showing which Higgs doublet different fermion groups different types of 2HDMs couple to. By convention the $u$ quark is chosen to couple to $\Phi _2$.\relax }}{25}{table.caption.21}%
-\contentsline {table}{\numberline {1.2}{\ignorespaces Table showing the couplings of fermion groups to additional neutral Higgs bosons in different types of 2HDMs. These are dependent on the mixing angles $\alpha $ and $\beta $. $t_{x}$, $s_{x}$ and $c_{x}$ represent $\qopname \relax o{tan}x$, $\qopname \relax o{sin}x$ and $\qopname \relax o{cos}x$ respectively.\relax }}{25}{table.caption.22}%
-\contentsline {table}{\numberline {1.3}{\ignorespaces Regions of interest for g-2 anomaly with respect to the type X 2HDM in the normal and inverted alignment scenarios as suggested in Ref.~\cite {Jueid:2021avn}.\relax }}{30}{table.caption.26}%
+\contentsline {table}{\numberline {1.1}{\ignorespaces Table showing which Higgs doublet different fermion groups different types of 2HDMs couple to. By convention the $u$ quark is chosen to couple to $\Phi _2$.\relax }}{26}{table.caption.15}%
+\contentsline {table}{\numberline {1.2}{\ignorespaces Table showing the couplings of fermion groups to additional neutral Higgs bosons in different types of 2HDMs. These are dependent on the mixing angles $\alpha $ and $\beta $. $t_{x}$, $s_{x}$ and $c_{x}$ represent $\qopname \relax o{tan}x$, $\qopname \relax o{sin}x$ and $\qopname \relax o{cos}x$ respectively.\relax }}{26}{table.caption.16}%
+\contentsline {table}{\numberline {1.3}{\ignorespaces Best fit values and uncertainties for mixing matrix parameters as given in Ref.~\cite {Cornella:2021sby}.\relax }}{30}{table.caption.19}%
+\contentsline {table}{\numberline {1.4}{\ignorespaces Regions of interest for g-2 anomaly with respect to the type X 2HDM in the normal and inverted alignment scenarios as suggested in Ref.~\cite {Jueid:2021avn}.\relax }}{32}{table.caption.22}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Electron effective areas used for the $\rho $-corrected isolation computation. \relax }}{47}{table.caption.49}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Measured branching fractions, that are greater than 2\%, for the tau lepton. h represents a charged hadron either a pion or a kaon.\relax }}{49}{table.caption.50}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Electron effective areas used for the $\rho $-corrected isolation computation. \relax }}{50}{table.caption.58}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Measured branching fractions, that are greater than 2\%, for the tau lepton. h represents a charged hadron either a pion or a kaon.\relax }}{52}{table.caption.59}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Branching fractions of the decays of two $\tau $ leptons.\relax }}{59}{table.caption.56}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Lower trigger light lepton thesholds $p_{T}$ in GeV for the $e_{}\tau _{h}$ and $\mu _{}\tau _{h}$ channels.\relax }}{59}{table.caption.57}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces pdfs used for nuisance parameters.\relax }}{85}{table.caption.84}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Branching fractions of the decays of two $\tau $ leptons.\relax }}{63}{table.caption.65}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Lower trigger light lepton thesholds $p_{T}$ in GeV for the $e_{}\tau _{h}$ and $\mu _{}\tau _{h}$ channels.\relax }}{63}{table.caption.66}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces pdfs used for nuisance parameters.\relax }}{89}{table.caption.93}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Branching fractions of four $\tau $ leptons, where e and $\mu $ represent the leptonic decay of the $\tau $ and $\tau _{h}$ represent the hadronic decay of the $\tau $.\relax }}{106}{table.caption.101}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces Vetoes set on the number of leptons for each channel.\relax }}{107}{table.caption.102}%
-\contentsline {table}{\numberline {5.3}{\ignorespaces Regions modelled by the fake factor method when using the leading $\tau _{h}$ ($\tau _{h}^1$), the sub-leading $\tau _{h}$ ($\tau _{h}^2$) and both, to model the jet $\rightarrow \tau _{h}$ background and whether that specific object is a genuine $\tau $ lepton ($\tau $) or a jet ($j$). Also shown is a combination of three regions to fully model all possible combinations. \relax }}{120}{table.caption.108}%
-\contentsline {table}{\numberline {5.4}{\ignorespaces Table of background, data and signal integrals, for the $m_{\phi }=100$ GeV and $m_{A}=$100 GeV scenario, in all analysis categories after a background only fit to the data. The background uncertainties are separated into their statistical and systematic and shown along side the background integral. The number of bins used in the fit are also shown.\relax }}{125}{table.caption.113}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Branching fractions of four $\tau $ leptons, where e and $\mu $ represent the leptonic decay of the $\tau $ and $\tau _{h}$ represent the hadronic decay of the $\tau $.\relax }}{110}{table.caption.110}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Vetoes set on the number of leptons for each channel.\relax }}{111}{table.caption.111}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Regions modelled by the fake factor method when using the leading $\tau _{h}$ ($\tau _{h}^1$), the sub-leading $\tau _{h}$ ($\tau _{h}^2$) and both, to model the jet $\rightarrow \tau _{h}$ background and whether that specific object is a genuine $\tau $ lepton ($\tau $) or a jet ($j$). Also shown is a combination of three regions to fully model all possible combinations. \relax }}{124}{table.caption.117}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces Table of background, data and signal integrals, for the $m_{\phi }=100$ GeV and $m_{A}=$100 GeV scenario, in all analysis categories after a background only fit to the data. The background uncertainties are separated into their statistical and systematic and shown along side the background integral. The number of bins used in the fit are also shown.\relax }}{129}{table.caption.122}%
 \addvspace {10\p@ }

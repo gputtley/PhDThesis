@@ -1,6 +1,9 @@
 \chapter{Object Reconstruction}
 \label{sec:object_reconstruction}
 
+This chapter will overview the methods used to reconstruct the objects in each event, that are critical for the searches described in Chapters~\ref{sec:bsm_H_to_tau_tau_analysis} and~\ref{sec:H_A_to_4_tau_analysis}.
+The topics discussed here are the reconstruction of tracks and vertices, the particle flow algorithm, the calculation of the \ac{MET}, the measurements of jets and the tagging of their flavours, and the identification of electrons, muons, and tau leptons.
+
 \section{Tracks and vertices}
 
 The reconstructed vertex with the largest value of summed physics-object $\pT^{2}$ is taken to be the primary pp interaction vertex. 
@@ -258,7 +261,7 @@ The deepTauv2p1 is a DNN-based algorithm that allows to define three quantities 
 
 \begin{figure}[!hbtp]
 \centering
-    \includegraphics[width=\textwidth]{Figures/deeptau.png}
-\caption{}
+    \includegraphics[width=\textwidth]{Figures/deeptau.pdf}
+\caption{The architecture of the DeepTau neural network.}
 \label{fig:4tau_ccc}
 \end{figure}
