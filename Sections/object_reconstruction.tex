@@ -290,9 +290,51 @@ The architecture of algorithm is shown in Fig.~\ref{fig:deeptau}. \\
 \begin{figure}[!hbtp]
 \centering
     \includegraphics[width=\textwidth]{Figures/deeptau.pdf}
-\caption{The architecture of the \texttt{DeepTau} neural network~\cite{CMS:2022prd}. The architecture comprises three sets of input variables: inner cells, outer cells, and high-level features. These sets are processed separately through subnetworks and their outputs are concatenated. Five fully connected layers process the concatenated output to calculate the probabilities for a candidate to be a hadronic tau, electron, muon, or jet. The high-level input subnetwork consists of three fully connected layers, taking 47 inputs and yielding 57 outputs. Complex subnetworks process the features of inner and outer cells separately, with fully connected layers followed by concatenation and additional fully connected layers. Convolutional layers progressively reduce the grid size for both inner and outer cells. For inner cells, there are 5 convolutional layers, while for outer cells, there are 10 convolutional layers. The number of trainable parameters (TP) for the different subnetworks are also provided.}
+\caption{The architecture of the \texttt{DeepTau} neural network. The architecture comprises three sets of input variables: inner cells, outer cells, and high-level features. These sets are processed separately through subnetworks and their outputs are concatenated. Five fully connected layers process the concatenated output to calculate the probabilities for a candidate to be a hadronic tau, electron, muon, or jet. The high-level input subnetwork consists of three fully connected layers, taking 47 inputs and yielding 57 outputs. Complex subnetworks process the features of inner and outer cells separately, with fully connected layers followed by concatenation and additional fully connected layers. Convolutional layers progressively reduce the grid size for both inner and outer cells. For inner cells, there are 5 convolutional layers, while for outer cells, there are 10 convolutional layers. The number of trainable parameters (TP) for the different subnetworks are also provided~\cite{CMS:2022prd}.}
 \label{fig:deeptau}
 \end{figure}
 
 The \texttt{DeepTau} \ac{DNN} is trained using a large dataset, incorporating examples of hadronic tau decays and background processes of electrons, muons and jets. 
 The output of the \ac{DNN} is 4 scores, that represent the probability that the object is a hadronic tau ($y_\tau$), an electon ($y_e$), a muon ($y_\mu$) or a jet ($y_{\text{jet}}$).
+From these raw scores, additional scores are calculated for the probability that an object is a hadronic tau rather than an electron, muon or jet.
+These are defined as,
+
+\begin{equation}
+D_{i}^{\text{score}} = \frac{y_\tau}{y_i + y_{\tau}}, \hspace{1cm} i \in (e,\mu,\text{jet}).
+\end{equation}
+
+From this, \ac{WP}s are defined to match specific efficiencies of hadronic tau identification with respect to each of the other 3 objects, named $D_{e}^{\text{WP}}$, $D_{\mu}^{\text{WP}}$ and $D_{\text{jet}}^{\text{WP}}$.
+The target efficiencies for different \ac{WP} are shown in Tab.~\ref{tab:deeptau_eff}. \\
+
+\begin{table}[!hbtp]
+\begin{adjustwidth}{-1cm}{-1cm}
+\centering
+\begin{tabular}{|c|cccccccc|}
+\hline
+WP                     & VVTight & VTight & Tight  & Medium & Loose  & VLoose  & VVLoose & VVVLoose \\
+\hline 
+\hline
+$D_{e}^{\text{WP}}$    & 60\%    & 70\%   & 80\%   & 90\%   & 95\%   & 98\%    & 99\%    & 99.5\%   \\
+$D_{\mu}^{\text{WP}}$  & -       & -      & 99.5\% & 99.8\% & 99.9\% & 99.95\% & -       & -        \\
+$D_{\tau}^{\text{WP}}$ & 40\%    & 50\%   & 60\%   & 70\%   & 80\%   & 90\%    & 95\%    & 98\%     \\
+\hline
+\end{tabular}
+\caption{Target efficiencies of the \texttt{DeepTau} working points with respect to electrons, muons and jets.}
+\label{tab:deeptau_eff}
+\end{adjustwidth}
+\end{table}
+
+Due to the lack of muons misidentified as hadronic taus, high efficiencies can be required for $D_{\mu}^{\text{WP}}$.
+This is also the reason for why the target efficiencies for $D_{e}^{\text{WP}}$ are higher than for $D_{\text{jet}}^{\text{WP}}$, where the large challenge jets misidentified as hadronic taus is present.
+The misidentification probabilities for the different hadronic tau efficiencies are shown in Fig.~\ref{fig:deeptau_misid}.
+Also shown in these plots, is the performance comparison to an older \ac{MVA} algorithm for electrons and jets, as well as a cut based algorithm for muons, both described in Ref.~\cite{CMS:2018jrd}.
+Significant improvements with respect to the previous algorithm is observed, which has a results in a significant improvement in analyses utilising tau leptons at the CMS experiment.
+
+\begin{figure}[!hbtp]
+\centering
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/deeptau_misid_electron.pdf}}
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/deeptau_misid_muon.pdf}} \\
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/deeptau_misid_jet.pdf}}
+\caption{Efficiency comparisons of electrons (a), muons (b) and jets (c) passing the \texttt{DeepTau} identification discriminators versus hadronic tau efficiency. (a) uses $Z\rightarrow ee$, (b) uses $Z\rightarrow \mu\mu$ and (c) uses W+jets MC, with only objects with $\pT<100$ GeV used. Working points are indicated by full circles and previous algorithms described in Ref.~\cite{CMS:2018jrd} are shown in blue triangles and green squares~\cite{CMS:2022prd}.}
+\label{fig:deeptau_misid}
+\end{figure}

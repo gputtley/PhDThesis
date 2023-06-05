@@ -8,13 +8,14 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {3.1}{\ignorespaces Electron effective areas used for the $\rho $-corrected isolation computation. \relax }}{52}{table.caption.59}%
 \contentsline {table}{\numberline {3.2}{\ignorespaces Measured branching fractions for the tau lepton. h represents a charged hadron either a pion or a kaon~\cite {ParticleDataGroup:2022pth}.\relax }}{54}{table.caption.60}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Target efficiencies of the \texttt {DeepTau} working points with respect to electrons, muons and jets.\relax }}{58}{table.caption.69}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Branching fractions of the decays of two $\tau $ leptons.\relax }}{65}{table.caption.72}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Lower trigger light lepton thesholds $p_{T}$ in GeV for the $e_{}\tau _{h}$ and $\mu _{}\tau _{h}$ channels.\relax }}{65}{table.caption.73}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces pdfs used for nuisance parameters.\relax }}{91}{table.caption.100}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Branching fractions of the decays of two $\tau $ leptons.\relax }}{67}{table.caption.75}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Lower trigger light lepton thesholds $p_{T}$ in GeV for the $e_{}\tau _{h}$ and $\mu _{}\tau _{h}$ channels.\relax }}{67}{table.caption.76}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces pdfs used for nuisance parameters.\relax }}{93}{table.caption.103}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Branching fractions of four $\tau $ leptons, where e and $\mu $ represent the leptonic decay of the $\tau $ and $\tau _{h}$ represent the hadronic decay of the $\tau $.\relax }}{112}{table.caption.117}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces Vetoes set on the number of leptons for each channel.\relax }}{113}{table.caption.118}%
-\contentsline {table}{\numberline {5.3}{\ignorespaces Regions modelled by the fake factor method when using the leading $\tau _{h}$ ($\tau _{h}^1$), the sub-leading $\tau _{h}$ ($\tau _{h}^2$) and both, to model the jet $\rightarrow \tau _{h}$ background and whether that specific object is a genuine $\tau $ lepton ($\tau $) or a jet ($j$). Also shown is a combination of three regions to fully model all possible combinations. \relax }}{126}{table.caption.124}%
-\contentsline {table}{\numberline {5.4}{\ignorespaces Table of background, data and signal integrals, for the $m_{\phi }=100$ GeV and $m_{A}=$100 GeV scenario, in all analysis categories after a background only fit to the data. The background uncertainties are separated into their statistical and systematic and shown along side the background integral. The number of bins used in the fit are also shown.\relax }}{131}{table.caption.129}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Branching fractions of four $\tau $ leptons, where e and $\mu $ represent the leptonic decay of the $\tau $ and $\tau _{h}$ represent the hadronic decay of the $\tau $.\relax }}{114}{table.caption.120}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Vetoes set on the number of leptons for each channel.\relax }}{115}{table.caption.121}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Regions modelled by the fake factor method when using the leading $\tau _{h}$ ($\tau _{h}^1$), the sub-leading $\tau _{h}$ ($\tau _{h}^2$) and both, to model the jet $\rightarrow \tau _{h}$ background and whether that specific object is a genuine $\tau $ lepton ($\tau $) or a jet ($j$). Also shown is a combination of three regions to fully model all possible combinations. \relax }}{128}{table.caption.127}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces Table of background, data and signal integrals, for the $m_{\phi }=100$ GeV and $m_{A}=$100 GeV scenario, in all analysis categories after a background only fit to the data. The background uncertainties are separated into their statistical and systematic and shown along side the background integral. The number of bins used in the fit are also shown.\relax }}{133}{table.caption.132}%
 \addvspace {10\p@ }
