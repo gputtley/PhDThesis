@@ -6,10 +6,12 @@ The topics discussed here are the reconstruction of tracks and vertices, the par
 
 \section{Tracks and vertices}
 
-The reconstructed vertex with the largest value of summed physics-object $\pT^{2}$ is taken to be the primary pp interaction vertex. 
+The reconstructed vertex with the largest value of summed physics-object $\pT^{2}$ is taken to be the primary proton-proton interaction vertex. 
 The physics objects for this purpose are the jets, clustered using the jet finding algorithm~\cite{Cacciari:2008gp,Cacciari:2011ma}, as described below, with the tracks assigned to the vertex as inputs, and the
 associated missing transverse momentum, taken as the negative vector sum of the $\pT$ of those jets.
 Any other collision vertices in the event are associated with additional soft inelastic pp collisions called \emph{pileup}.
+
+
 
 \section{Particle flow}
 
@@ -65,6 +67,14 @@ where $P_{T}(\text{charged})$ corresponds to the $P_{T}$ of all charged hadronic
 to the transverse energy of all photon and neutral hadron candidates, and $\Delta \beta$ is the energy estimate of neutral particles due to pileup, which is taken to be 0.5.
 Furthermore $E_{\text{T}}(\text{PU})$ corresponds to the transverse momentum of all charged hadronic candidates from pileup.
 The muon isolation used is $I_{rel}<0.15$.
+
+\begin{figure}[!hbtp]
+\centering
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/muon_res_loweta.png}}
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/muon_res_higheta.png}} \\
+\caption{The $\pT$ resolution for muon identification using the muon system (black), the inner tracker (blue), and the full system (red). This is shown for the pseduorapidity regions $0 < \eta < 0.8$ (a) and  $1.2 < \eta < 2.4$ (b)}
+\label{fig:muon_eff}
+\end{figure}
 
 \section{Electrons}
 
@@ -179,7 +189,14 @@ These corrections entail the propagation of the JECs to the MET as
 
 \section{Taus}
 
-Also fundamental to this analysis is the identification of tau particles. The tau lepton is measured to have a mean lifetime of \(2.9 \times 10^{-13}\)s. This short lifetimes means that the tau lepton is not directly observable in the CMS detector.  In order to detect these particles, it is important to understand how the tau decays. Due to the heavy nature of the particle, it does not only decay leptonically, but unlike the muon, it can also decay hadronically. A list of prominent decays of the tau lepton are shown in the table below.
+Fundamental to this thesis is the identification of tau particles.
+The tau lepton is measured to have a mean lifetime of \(2.9 \times 10^{-13}\)s. 
+This short lifetimes means that the tau lepton is not directly observable in the \ac{CMS} detector.  
+In order to detect these particles, it is important to understand how the tau decays. 
+Due to the heavy nature of the particle, it does not only decay leptonically, but unlike the muon, it can also decay hadronically.
+A list of prominent decays of the tau lepton are shown in the Tab.~\ref{tab:tau_decay}.
+These decays can be split into three groups: the 17.8\% of taus that decay to an electron ($e$), the 17.4\% that decay into a muon ($\mu$), and hadronic tau decays ($\tauh$) that make up the final 64.8\% of tau decays. 
+The leptonic decays of the tau can be accounted for by the identification of electrons and muons as discussed in the previous subsection.  \\
 
 \begin{table}[h]
     \centering
@@ -188,80 +205,94 @@ Also fundamental to this analysis is the identification of tau particles. The ta
          Decay Mode & Branching Fraction  \\
          \hline
          \hline
-         \textbf{Leptonic Decay (\(e\), \(\mu\))} & \textbf{35.2\%} \\
-         \(e^- \bar{\nu}_e \nu_\tau \) & 17.8\% \\
-         \(\mu^- \bar{\nu}_\mu \nu_\tau \) & 17.4\% \\
+         \textbf{Leptonic Decay ($e$, $\mu$)} & \textbf{35.2\%} \\
+         $e^- \bar{\nu}_e \nu_\tau $ & 17.8\% \\
+         $\mu^- \bar{\nu}_\mu \nu_\tau $ & 17.4\% \\
          \hline
-         \textbf{Hadronic Decay (\(\tau_h\))} & \textbf{64.8\%} \\
-         \(h^- \pi^0 \nu_\tau \) & 25.9\% \\
-         \(h^- \nu_\tau\) & 11.5\% \\
-         \(h^- 2\pi^0 \nu_\tau\) & 9.3\% \\
-         \(\pi^- \pi^- \pi^+ \nu_\tau\) & 9.0\% \\
-         \(\pi^- \pi^- \pi^+ \pi^0 \nu_\tau\) & 2.7\% \\
-         other & 6.4\% \\
+         \textbf{Hadronic Decay ($\tauh$)} & \textbf{64.8\%} \\
+         $h^- \pi^0 \nu_\tau $ & 25.9\% \\
+         $h^- \nu_\tau$ & 11.5\% \\
+         $h^- h^+ h^+ \nu_\tau$ & 9.8\% \\
+         $h^- 2\pi^0 \nu_\tau$ & 9.3\% \\
+         $h^- h^+ h^- \pi^0 \nu_\tau$ & 4.8\% \\
+         other & 3.2\% \\
          \hline
     \end{tabular}
-    \caption{Measured branching fractions, that are greater than 2\%, for the tau lepton. h represents a charged hadron either a pion or a kaon.}
+    \caption{Measured branching fractions for the tau lepton. h represents a charged hadron either a pion or a kaon~\cite{ParticleDataGroup:2022pth}.}
     \label{tab:tau_decay}
 \end{table}
 
-These decays can be split into three groups: the 17.8\% of taus that decay to an electron (e), the 17.4\% that decay into a muon (\(\mu\)) and hadronic tau decays (\(\tau_h\)) that make up the final 64.8\% of tau decays. The leptonic decays of the tau can be accounted for by the identification of electrons and muons as discussed in the previous subsection. The hadron-plus-strips (HPS) algorithm is used to identify hadronic taus \cite{CMS_hps1,CMS_hps2}. This algorithm groups electrons, positrons and photons and names this cluster as a "strip". This is defined to represent the decay products of the \(\pi^0\) meson. The strip size is variable depending on the \(p_T\) of its components. In a jet, the number of strips and charged particles are counted. If the numbers are corresponding to the number of \(\pi^0\) mesons and charged hadrons shown in Table \ref{tab:tau_decay} for hadronic decays, it is concluded that the jet may originate from a tau lepton. \\
+A two step process is used to identify hadronic taus.
+The \ac{HPS} algorithm is used to initially identify hadronic taus based on jets produced by the anti-$k_{\text{T}}$ algorithm with a distance parameter of $\Delta R = 0.4$. 
+To capture the energy deposits left by $\pi^0$ candidates in the ECAL, the photon and electron constituents of the jet responsible for seeding the tau reconstruction are assembled into strips. 
+All electrons or photons used are required to have $p_{\text{T}} > 0.5$ GeV.
+The initial iteration of the \ac{HPS} algorithm used a fixed strip size of $\Delta \eta \times \Delta \phi$ equal to $0.05 \times 0.20$.
+However, this technique was updated to a dynamical strip size to account for the multiple scatterings of $e^+ e^-$ products from a $pi^0$ decay, falling outside of the fixed window.
+A reliance of the hadronic tau $\pT$ spectrum of the required strip size was observed and so the following iterative algorithm was proposed to resolve this issue.
 
-Hadronic tau decays are reconstructed using the \texttt{hadrons plus strips} (HPS) algorithm~\cite{Tau14001,Sirunyan:2018pgf}, which uses particle flow candidates to reconstruct and identify hadronic tau decays.
-In the reconstruction step, particle-flow charged and neutral particles are grouped into combinations compatible with specific hadronic tau decay modes, and the 4-momentum
-of the candidates is computed. In the identification step, discriminators that separate hadronic taus from quark and gluon jets and from electrons and muons are evaluated. 
-Taus in the hadrons plus strips algorithm are seeded by jets clustered with the anti-$k_{\text{T}}$ algorithm with a distance parameter $\Delta R = 0.4$. 
+\begin{enumerate}[i)]
+\item The highest $\pT$ electron or photon (not previously grouped into a strip) is used to initiate a new strip.
+\item The second highest $\pT$ electron or photon deposition within,
+\begin{equation}
+  \Delta \eta = f(\pT^{e/\gamma}) + f(\pT^{\text{strip}}), \hspace{1cm} \Delta \phi = g(\pT^{e/\gamma}) + g(\pT^{\text{strip}})
+\end{equation}
+of the strip is then combined with the strip.
+These functions are determined from a fit to hadronic tau MC, so that 95\% of electrons and photons are contained in a single strip.
+These fits are shown in Fig.~\ref{fig:hps} and correspond to,
+\begin{equation}
+f(\pT) = 0.20 \pT^{-0.66}, \hspace{1cm} g(\pT) = 0.35 \pT^{-0.71}
+\end{equation}
+where the $\pT$ is in units of GeV.
+These functions have lower and upper caps of 0.05 to 0.3 for $\Delta\phi$ and 0.05 to 0.15 for $\Delta\eta$.
+\item Recalculate the strip position using a weight average of the average $\pT$ of all the electron and photon strip constituents.
+\begin{equation}
+\eta_{\text{strip}} = \frac{1}{\pT^{\text{strip}}} \sum \pT^{e/\gamma} \eta_{e/\gamma}, \hspace{1cm} \phi_{\text{strip}} = \frac{1}{\pT^{\text{strip}}} \sum \pT^{e/\gamma} \phi_{e/\gamma}
+\end{equation}
+\item Repeat steps ii and iii until no other electron or photon candidate fulfilling condition ii is found.
+\end{enumerate}
 
-To reconstruct the energy deposits $\pi^0$ candidates leave in the ECAL, photon and electron constituents of the jet that seeds the $\tau$ reconstruction are clustered into strips.
-The e or $\gamma$ with highest $p_{\text{T}}$ that is not yet included in a strip is used to build a new strip. 
-The $\eta$ and $\phi$ of this candidate determine the initial position of the strip, the next highest $p_{\text{T}}$ e or $\gamma$  within an $\eta \times \phi$ window centred on the strip location is added to the strip and the position is recomputed as the energy-weighted average of the electron/photon constituents in the strip.
-This procedure is repeated until there are no more electrons or photons with $p_{\text{T}} > 0.5$~GeV  within the strip window. The $\Delta \eta$ and $\Delta \phi$ of the strip are varied based on the $p_{\text{T}}$ or $E_{\text{T}}$ to be added to the strip and on the energy the strip already has, as
+\begin{figure}[!hbtp]
+\centering
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/hps_f.png}}
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/hps_g.png}} \\
+\caption{The distance between the hadronic tau and electron or photon $\eta$ (a) and $\phi$ (b) with respect the the electron or photon $\pT$. The binned values (points) and the fitted functions $f$ and $g$ (red line), that encapsulates 95\% of all electron and photons are shown in both cases~\cite{Sirunyan:2018pgf}.}
+\label{fig:hps}
+\end{figure}
 
-\begin{equation}\label{eqn:dynamicstrip}
-\begin{split}
-&\Delta \eta  = f(p_{\text{T}}^{e/\gamma}) + f(p_{\text{T}}^{\text{strip}})\\
-&\Delta \phi  = g(p_{\text{T}}^{e/\gamma}) + g(p_{\text{T}}^{\text{strip}}),\\
-\end{split}
+Charged hadrons (prongs) are also required to have $\pT > 0.5$ GeV and originate from the \ac{PV}, with a loose transverse impact parameter of $d_{xy} < 0.1$ cm
+Further constraints are placed on the reconstructed masses of the specific resonances produced by a hadronic tau decay, if produced by the decay.
+In particular, the visible mass positions and widths of the grouped charged hadrons and strips are optimised to match the $\rho$ (770 MeV) and $a_1$ (1260 MeV) decays.
+This is performed to maximise the fraction of hadronic tau efficiency to the probability of misidentification from jets.
+The visible decay products of each decay shown in Tab~\ref{tab:tau_decay} are reconstructed by:
+
+\begin{enumerate}[i)]
+\item $h^- \pi^0$: One charged hadron candidate and no strips.
+\item $h^-$: One charged hadron candidate and one strip with mass $ 0.3 < m_{\tau} < 1.3 \sqrt{p_{\text{T}}/100}$ GeV. The mass is required to be between 1.3 and 4.2 GeV.
+\item $\pi^- \pi^- \pi^+$: Three charged hadron candidates with mass $0.8 < m_{\tau} < 1.5$ GeV. The tracks are required to originate within $\Delta z<0.4$ cm of the same vertex.
+\item $h^- 2\pi^0$: One charged hadron candidate and two strips. The $\tau_{h}$ mass should be $0.4 < m_{\tau} < 1.2\sqrt{p_{\text{T}}/100}$~GeV. The mass is required to be between 1.2 and 4.0 GeV.
+\item $\pi^- \pi^- \pi^+ \pi^0$: Three charged hadron candidates and one strip.
+\end{enumerate}
+
+The remaining hadronic decays of the tau leptons are not included in this thesis.
+The \ac{DM} of the hadronic tau that is reconstructed by a \ac{HPS} is quantified by the following formula relating the number of charged hadron candidates $N_C$ and the number of strips $N_N$.
+
+\begin{equation}
+\text{DM} = 5(N_{C} - 1) + N_{N}
 \end{equation}
 
-where $p_{\text{T}}^{e/\gamma}$ is the transverse momentum of the candidate to be added to the strip 
-and $p_{\text{T}}^{\text{strip}}$ is the transverse momentum of the strip before merging a new candidate in.
-In addition, the strip size is bounded as $0.05 < \Delta\eta < 0.15$, $0.05 \Delta\phi < 0.3$.
-
-The functions $f(p_{\text{T}})$ and $g(p_{\text{T}})$ are defined as
-
-\begin{equation}\label{eqn:dynamicstripfg}
-\begin{split}
-&f(p_{\text{T}}) = 0.2\cdot p_{\text{T}}^{-0.66}\\
-&g(p_{\text{T}}) = 0.35\cdot p_{\text{T}}^{-0.71}.\\
-\end{split}
-\end{equation}
-
-If the $\Sigma p_{\text{T}}$ of the strip is at least 2.5~GeV, it is considered as a $\pi^0$ candidate.
- To reconstruct hadronic taus, charged particles and strips are combined into different signatures which are
-compatible with a certain decay mode if the set of requirements listed below is satisfied. If a candidate satisfies more than one of the hypotheses, the one that maximises the $p_{\text{T}}$ is retained.
-
-The decay modes (with decayModeFindingNewDMs) considered for reconstructing taus are:
-\begin{itemize}
-\item \textbf{One prong, 0 $\pi^0$ :} One charged particle, no strips.
-\item \textbf{One prong, 1 $\pi^0$ :} One charged particle + one strip with mass $ 0.3 < m_{\tau} < 1.3 \sqrt{p_{\text{T}}/100}$~GeV. The mass window upper limit is constrained to lie between 1.3 and 4.2 GeV.
-\item \textbf{One prong, 2 $\pi^0$ :} One charged particle + two strips. The $\tau_{h}$ mass should be $0.4 < m_{\tau} < 1.2\sqrt{p_{\text{T}}/100}$~GeV. The upper limit on the mass window is constrained to lie between 1.2 and 4.0~GeV.
-\item \textbf{Two prong, 0 $\pi^0$ :} Two charged particle + no strips.
-\item \textbf{Two prong, 1 $\pi^0$ :} Two charged particle + one strips.
-\item \textbf{Two prong, 2 $\pi^0$ :} Two charged particle + two strips.
-\item \textbf{Three prong, 0 $\pi^0$: } Three charged particles with mass $0.8 < m_{\tau} < 1.5$~GeV. The tracks are required to originate within $\Delta z<0.4$~cm of the same vertex.
-\item \textbf{Three prong, 1 $\pi^0$: } Three charged particles + one strip.
-\end{itemize}
-
-Requiring the reconstructed $\tau_{h}$ to be isolated reduces the
-jet$\rightarrow\tau_{h}$ fake rate. Both a cut-based discriminator and  MVA-based
-ones are available, in this analysis we make use of the deepTau discriminator~\cite{CMS-DP-2019-033}.
-
-The deepTauv2p1 is a DNN-based algorithm that allows to define three quantities for discrimination of tau vs jets, tau vs electrons and tau vs muons~\cite{TauPOG}, where the anti-lepton discriminators provide reduction in $e\rightarrow\tau_h$ and $\mu\rightarrow\tau_h$ fake rates. 
+The second step of the identification, comes from a multiclass \ac{DNN}-based algorithm named \texttt{DeepTau}, that seeks to discriminate hadronic tau decays from electron, muons, and most importantly quark or gluon jets, that can be misidentified as hadronic tau decays~\cite{CMS:2022prd}.
+It uses a \ac{DNN} architecture that consists of multiple interconnected layers of nodes, that attempts to learn whether the input object is an hadronic tau decay, an electron, a muon or a jet. 
+The algorithm takes inputs from reconstructed particles surrounding the \ac{HPS} hadronic tau candidate, including information about energies, momenta, and spatial positions. 
+Convolutional layers are used to efficiently process these inputs by dividing them into smaller regions in $\eta$-$\phi$ space, which allows the algorithm to extract local patterns and features. 
+It also incorporates high-level features of the hadronic tau candidate calculated from the \ac{HPS} algorithm, such as the four-momentum, charge, \ac{DM}, isolation variables used in previous \ac{MVA}~\cite{CMS:2018jrd}, impact parameters, $\eta$ and $\phi$ strip information, as well as event level information such as variables related to the $\ac{PU}$.
+The architecture of algorithm is shown in Fig.~\ref{fig:deeptau}. \\
 
 \begin{figure}[!hbtp]
 \centering
     \includegraphics[width=\textwidth]{Figures/deeptau.pdf}
-\caption{The architecture of the DeepTau neural network.}
-\label{fig:4tau_ccc}
+\caption{The architecture of the \texttt{DeepTau} neural network~\cite{CMS:2022prd}. The architecture comprises three sets of input variables: inner cells, outer cells, and high-level features. These sets are processed separately through subnetworks and their outputs are concatenated. Five fully connected layers process the concatenated output to calculate the probabilities for a candidate to be a hadronic tau, electron, muon, or jet. The high-level input subnetwork consists of three fully connected layers, taking 47 inputs and yielding 57 outputs. Complex subnetworks process the features of inner and outer cells separately, with fully connected layers followed by concatenation and additional fully connected layers. Convolutional layers progressively reduce the grid size for both inner and outer cells. For inner cells, there are 5 convolutional layers, while for outer cells, there are 10 convolutional layers. The number of trainable parameters (TP) for the different subnetworks are also provided.}
+\label{fig:deeptau}
 \end{figure}
+
+The \texttt{DeepTau} \ac{DNN} is trained using a large dataset, incorporating examples of hadronic tau decays and background processes of electrons, muons and jets. 
+The output of the \ac{DNN} is 4 scores, that represent the probability that the object is a hadronic tau ($y_\tau$), an electon ($y_e$), a muon ($y_\mu$) or a jet ($y_{\text{jet}}$).

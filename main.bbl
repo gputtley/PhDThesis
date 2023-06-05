@@ -19,10 +19,8 @@ H.~Bartosik and G.~Rumolo, ``{Performance of the LHC injector chain after the
   upgrade and potential development},'' tech. rep., 2022.
 \newblock Contribution to Snowmass 2021.
 
-\bibitem{}
-{ATLAS Collaboration}, ``{Search for heavy Higgs bosons decaying into two tau
-  leptons with the ATLAS detector using $pp$ collisions at $\sqrt{s}=13$
-  TeV},'' {\em Phys. Rev. Lett.}, vol.~125, no.~5, p.~051801, 2020.
+\bibitem{lumi}
+``{CMS Luminosity Public Results},'' May 2023.
 
 \bibitem{CMS_Setup}
 {CMS Collaboration}, ``{The CMS Experiment at the CERN LHC},'' {\em JINST},
@@ -30,6 +28,15 @@ H.~Bartosik and G.~Rumolo, ``{Performance of the LHC injector chain after the
 
 \bibitem{Tapper:2013yva}
 ``{CMS Technical Design Report for the Level-1 Trigger Upgrade},'' 6 2013.
+
+\bibitem{Sirunyan:2018pgf}
+A.~M. Sirunyan {\em et~al.}, ``Performance of reconstruction and identification
+  of {$\tau$} leptons decaying to hadrons and {$\nu_\tau$} in pp collisions at
+  {$\sqrt{s}=$ 13 TeV},'' {\em JINST}, vol.~13, p.~P10005, 2018.
+
+\bibitem{CMS:2022prd}
+A.~Tumasyan {\em et~al.}, ``Identification of hadronic tau lepton decays using
+  a deep neural network,'' {\em JINST}, vol.~17, p.~P07023, 2022.
 
 \bibitem{ATLAS:2020zms}
 G.~Aad {\em et~al.}, ``Search for heavy {Higgs} bosons decaying into two tau
@@ -45,6 +52,10 @@ C.~Cornella, D.~A. Faroughy, J.~Fuentes-Martin, G.~Isidori, and M.~Neubert,
 A.~Jueid, J.~Kim, S.~Lee, and J.~Song, ``{Type-X two-Higgs-doublet model in
   light of the muon g-2: Confronting Higgs boson and collider data},'' {\em
   Phys. Rev. D}, vol.~104, no.~9, p.~095008, 2021.
+
+\bibitem{ParticleDataGroup:2022pth}
+R.~L. Workman {\em et~al.}, ``{Review of Particle Physics},'' {\em PTEP},
+  vol.~2022, p.~083C01, 2022.
 
 \bibitem{ATLAS_Higgs_Discovery}
 {ATLAS Collaboration}, ``{Observation of a new particle in the search for the
@@ -215,9 +226,6 @@ G.~Aad {\em et~al.}, ``{The ATLAS Experiment at the CERN Large Hadron
 A.~A. Alves, Jr. {\em et~al.}, ``{The LHCb Detector at the LHC},'' {\em JINST},
   vol.~3, p.~S08005, 2008.
 
-\bibitem{lumi}
-``{CMS Luminosity Public Results},'' May 2023.
-
 \bibitem{Malberti:2014pda}
 M.~Malberti, ``{Operation and performance of the CMS tracker},'' {\em PoS},
   vol.~TIPP2014, p.~347, 2014.
@@ -248,25 +256,11 @@ M.~Cacciari, G.~P. Salam, and G.~Soyez, ``{FastJet} user manual,'' {\em Eur.
   detector in pp collisions at 13 TeV},'' {\em JINST}, vol.~13, no.~05,
   p.~P05011, 2018.
 
-\bibitem{CMS_hps1}
-{CMS Collaboration}, ``{Reconstruction and identification of $\tau$ lepton
-  decays to hadrons and $\nu_\tau$ at CMS},'' {\em JINST}, vol.~11, no.~01,
-  p.~P01019, 2016.
-
-\bibitem{CMS_hps2}
-{CMS Collaboration}, ``{Performance of reconstruction and identification of tau
-  leptons in their decays to hadrons and tau neutrino in LHC Run-2},'' Tech.
-  Rep. CMS-PAS-TAU-16-002, CERN, Geneva, 2016.
-
-\bibitem{Sirunyan:2018pgf}
-A.~M. Sirunyan {\em et~al.}, ``Performance of reconstruction and identification
-  of {$\tau$} leptons decaying to hadrons and {$\nu_\tau$} in pp collisions at
-  {$\sqrt{s}=$ 13 TeV},'' {\em JINST}, vol.~13, p.~P10005, 2018.
-
-\bibitem{CMS-DP-2019-033}
-{CMS Collaboration}, ``Performance of the {DeepTau} algorithm for the
-  discrimination of taus against jets, electron, and muons,'' CMS Detector
-  Performance Note CMS-DP-2019-033, 2019.
+\bibitem{CMS:2018jrd}
+A.~M. Sirunyan {\em et~al.}, ``{Performance of reconstruction and
+  identification of $\tau$ leptons decaying to hadrons and $\nu_\tau$ in pp
+  collisions at $\sqrt{s}=$ 13 TeV},'' {\em JINST}, vol.~13, no.~10, p.~P10005,
+  2018.
 
 \bibitem{Bahl:2018zmf}
 E.~Bagnaschi, H.~Bahl, E.~Fuchs, T.~Hahn, S.~Heinemeyer, S.~Liebler, S.~Patel,
@@ -441,6 +435,11 @@ G.~Cowan, K.~Cranmer, E.~Gross, and O.~Vitells, ``Asymptotic formulae for
 A.~Denner, S.~Heinemeyer, I.~Puljak, D.~Rebuzzi, and M.~Spira, ``Standard model
   {Higgs}-boson branching ratios with uncertainties,'' {\em Eur. Phys. J. C},
   vol.~71, p.~1753, 2011.
+
+\bibitem{}
+{ATLAS Collaboration}, ``{Search for heavy Higgs bosons decaying into two tau
+  leptons with the ATLAS detector using $pp$ collisions at $\sqrt{s}=13$
+  TeV},'' {\em Phys. Rev. Lett.}, vol.~125, no.~5, p.~051801, 2020.
 
 \bibitem{Krause:2018wmo}
 M.~Krause, M.~M\"uhlleitner, and M.~Spira, ``{2HDECAY \textemdash{}A program
