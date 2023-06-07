@@ -20,8 +20,8 @@
 \contentsline {chapter}{\numberline {3}Object Reconstruction}{47}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Tracks and vertices}{47}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Particle flow}{47}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Muons}{49}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Electrons}{50}{section.3.4}%
+\contentsline {section}{\numberline {3.3}Muons}{48}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Electrons}{49}{section.3.4}%
 \contentsline {section}{\numberline {3.5}Jets}{52}{section.3.5}%
 \contentsline {section}{\numberline {3.6}b jets}{53}{section.3.6}%
 \contentsline {section}{\numberline {3.7}Missing transverse energy}{53}{section.3.7}%
@@ -37,25 +37,25 @@
 \contentsline {section}{\numberline {4.4}Background Modelling Overview}{73}{section.4.4}%
 \contentsline {section}{\numberline {4.5}QCD Estimation in the $e_{}\mu _{}$ Channel}{74}{section.4.5}%
 \contentsline {section}{\numberline {4.6}Embedding Method}{75}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Fake Factor Method}{77}{section.4.7}%
+\contentsline {section}{\numberline {4.7}Fake Factor Method}{76}{section.4.7}%
 \contentsline {subsection}{\numberline {4.7.1}Determination Regions}{78}{subsection.4.7.1}%
 \contentsline {subsection}{\numberline {4.7.2}Parametrisation}{80}{subsection.4.7.2}%
 \contentsline {subsection}{\numberline {4.7.3}Corrections}{84}{subsection.4.7.3}%
 \contentsline {subsection}{\numberline {4.7.4}Applying Fake Factors}{86}{subsection.4.7.4}%
 \contentsline {section}{\numberline {4.8}MC Corrections}{88}{section.4.8}%
 \contentsline {section}{\numberline {4.9}Uncertainty Model}{89}{section.4.9}%
-\contentsline {subsubsection}{Hadronic Taus}{90}{section*.91}%
-\contentsline {subsubsection}{Light leptons}{90}{section*.92}%
-\contentsline {subsubsection}{Jets}{90}{section*.93}%
-\contentsline {subsubsection}{Leptons misidentified as hadronic taus}{91}{section*.94}%
-\contentsline {subsubsection}{Jets misidentified as hadronic taus}{91}{section*.95}%
-\contentsline {subsubsection}{Jets misidentified as light leptons}{91}{section*.96}%
-\contentsline {subsubsection}{Muons misidentified as electrons}{91}{section*.97}%
-\contentsline {subsubsection}{MET}{91}{section*.98}%
-\contentsline {subsubsection}{Background process specific uncertainties}{92}{section*.99}%
-\contentsline {subsubsection}{Signal process specific uncertainties}{92}{section*.100}%
-\contentsline {subsubsection}{Luminosity}{92}{section*.101}%
-\contentsline {subsubsection}{Prefiring}{92}{section*.102}%
+\contentsline {subsubsection}{Hadronic Taus}{90}{section*.99}%
+\contentsline {subsubsection}{Light leptons}{90}{section*.100}%
+\contentsline {subsubsection}{Jets}{90}{section*.101}%
+\contentsline {subsubsection}{Leptons misidentified as hadronic taus}{91}{section*.102}%
+\contentsline {subsubsection}{Jets misidentified as hadronic taus}{91}{section*.103}%
+\contentsline {subsubsection}{Jets misidentified as light leptons}{91}{section*.104}%
+\contentsline {subsubsection}{Muons misidentified as electrons}{91}{section*.105}%
+\contentsline {subsubsection}{MET}{91}{section*.106}%
+\contentsline {subsubsection}{Background process specific uncertainties}{92}{section*.107}%
+\contentsline {subsubsection}{Signal process specific uncertainties}{92}{section*.108}%
+\contentsline {subsubsection}{Luminosity}{92}{section*.109}%
+\contentsline {subsubsection}{Prefiring}{92}{section*.110}%
 \contentsline {section}{\numberline {4.10}Signal Extraction}{93}{section.4.10}%
 \contentsline {section}{\numberline {4.11}Postfit Plots}{96}{section.4.11}%
 \contentsline {section}{\numberline {4.12}Model Independent Results}{97}{section.4.12}%
@@ -79,10 +79,10 @@
 \contentsline {subsection}{\numberline {5.6.5}Fitting}{124}{subsection.5.6.5}%
 \contentsline {subsection}{\numberline {5.6.6}Applying Fake Factors}{128}{subsection.5.6.6}%
 \contentsline {section}{\numberline {5.7}Uncertainty Model}{129}{section.5.7}%
-\contentsline {subsubsection}{Hadronic Taus}{129}{section*.128}%
-\contentsline {subsubsection}{Jets misidentified as hadronic taus}{129}{section*.129}%
-\contentsline {subsubsection}{Background process specific uncertainties}{130}{section*.130}%
-\contentsline {subsubsection}{Signal process specific uncertainties}{130}{section*.131}%
+\contentsline {subsubsection}{Hadronic Taus}{129}{section*.139}%
+\contentsline {subsubsection}{Jets misidentified as hadronic taus}{129}{section*.140}%
+\contentsline {subsubsection}{Background process specific uncertainties}{130}{section*.142}%
+\contentsline {subsubsection}{Signal process specific uncertainties}{130}{section*.143}%
 \contentsline {section}{\numberline {5.8}Signal Extraction}{131}{section.5.8}%
 \contentsline {subsection}{\numberline {5.8.1}Postfit Plots}{131}{subsection.5.8.1}%
 \contentsline {section}{\numberline {5.9}Model Independent Results}{131}{section.5.9}%

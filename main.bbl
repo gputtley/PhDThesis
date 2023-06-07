@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
 
 \bibitem{CMS_MSSM_Tau_2018}
 {CMS Collaboration}, ``{Search for additional neutral MSSM Higgs bosons in the
@@ -37,6 +37,12 @@ A.~M. Sirunyan {\em et~al.}, ``Performance of reconstruction and identification
 \bibitem{CMS:2022prd}
 A.~Tumasyan {\em et~al.}, ``Identification of hadronic tau lepton decays using
   a deep neural network,'' {\em JINST}, vol.~17, p.~P07023, 2022.
+
+\bibitem{CMS:2018jrd}
+A.~M. Sirunyan {\em et~al.}, ``{Performance of reconstruction and
+  identification of $\tau$ leptons decaying to hadrons and $\nu_\tau$ in pp
+  collisions at $\sqrt{s}=$ 13 TeV},'' {\em JINST}, vol.~13, no.~10, p.~P10005,
+  2018.
 
 \bibitem{ATLAS:2020zms}
 G.~Aad {\em et~al.}, ``Search for heavy {Higgs} bosons decaying into two tau
@@ -251,17 +257,6 @@ M.~Cacciari, G.~P. Salam, and G.~Soyez, ``{FastJet} user manual,'' {\em Eur.
   description with the CMS detector},'' {\em JINST}, vol.~12, no.~10,
   p.~P10003, 2017.
 
-\bibitem{CMS_btag}
-{CMS Collaboration}, ``{Identification of heavy-flavour jets with the CMS
-  detector in pp collisions at 13 TeV},'' {\em JINST}, vol.~13, no.~05,
-  p.~P05011, 2018.
-
-\bibitem{CMS:2018jrd}
-A.~M. Sirunyan {\em et~al.}, ``{Performance of reconstruction and
-  identification of $\tau$ leptons decaying to hadrons and $\nu_\tau$ in pp
-  collisions at $\sqrt{s}=$ 13 TeV},'' {\em JINST}, vol.~13, no.~10, p.~P10005,
-  2018.
-
 \bibitem{Bahl:2018zmf}
 E.~Bagnaschi, H.~Bahl, E.~Fuchs, T.~Hahn, S.~Heinemeyer, S.~Liebler, S.~Patel,
   P.~Slavich, T.~Stefaniak, C.~E.~M. Wagner, and G.~Weiglein, ``{MSSM Higgs}
@@ -436,19 +431,29 @@ A.~Denner, S.~Heinemeyer, I.~Puljak, D.~Rebuzzi, and M.~Spira, ``Standard model
   {Higgs}-boson branching ratios with uncertainties,'' {\em Eur. Phys. J. C},
   vol.~71, p.~1753, 2011.
 
-\bibitem{}
-{ATLAS Collaboration}, ``{Search for heavy Higgs bosons decaying into two tau
-  leptons with the ATLAS detector using $pp$ collisions at $\sqrt{s}=13$
-  TeV},'' {\em Phys. Rev. Lett.}, vol.~125, no.~5, p.~051801, 2020.
-
 \bibitem{Krause:2018wmo}
 M.~Krause, M.~M\"uhlleitner, and M.~Spira, ``{2HDECAY \textemdash{}A program
   for the calculation of electroweak one-loop corrections to Higgs decays in
   the Two-Higgs-Doublet Model including state-of-the-art QCD corrections},''
   {\em Comput. Phys. Commun.}, vol.~246, p.~106852, 2020.
 
+\bibitem{PhysRevLett.98.222002}
+S.~Catani and M.~Grazzini, ``Next-to-next-to-leading-order subtraction
+  formalism in hadron collisions and its application to higgs-boson production
+  at the large hadron collider,'' {\em Phys. Rev. Lett.}, vol.~98, p.~222002,
+  May 2007.
+
 \bibitem{Rogozhnikov:2016bdp}
 A.~Rogozhnikov, ``{Reweighting with Boosted Decision Trees},'' {\em J. Phys.
   Conf. Ser.}, vol.~762, no.~1, p.~012036, 2016.
+
+\bibitem{16e7f618-c06b-3d10-8705-1086b218d827}
+F.~J. Massey, ``The kolmogorov-smirnov test for goodness of fit,'' {\em Journal
+  of the American Statistical Association}, vol.~46, no.~253, pp.~68--78, 1951.
+
+\bibitem{}
+{ATLAS Collaboration}, ``{Search for heavy Higgs bosons decaying into two tau
+  leptons with the ATLAS detector using $pp$ collisions at $\sqrt{s}=13$
+  TeV},'' {\em Phys. Rev. Lett.}, vol.~125, no.~5, p.~051801, 2020.
 
 \end{thebibliography}
