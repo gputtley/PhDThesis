@@ -16,6 +16,7 @@ This search is split up into two sections:
 These searches are performed with the full run-2 dataset ($138 \sifb$) collected by the \ac{CMS} experiment. 
 
 \section{Signal Modelling}
+\label{sec:4tau_signal_modelling}
 
 Any additional Higgs boson produced in the type X \ac{2HDM} at high $\tan\beta$ will predominantly decay to tau leptons.
 To probe the type X \ac{2HDM} at high $\tan\beta$, a production process that is not suppressed is required.
@@ -29,8 +30,8 @@ Reference~\cite{Jueid:2021avn} discusses that the following production modes of 
 As the production cross sections are of the similar magnitudes, the search sensitivities depend on the separation of the signals from background.
 In general, the more objects you can select in the final state, the smaller the background contributions.
 This is certainly true in tau enriched final states, where backgrounds can be dominated jets misidentified as hadronic taus and so every extra tau selected reduces this background.
-In particular, (ii) has the production cross sections~\cite{Jueid:2021avn} far smaller than the observed limit for gluon fusion production of a single resonance shown in Figure~\ref{fig:model_independent_limits}(a) and it is not possible to use tau decay product and MET alignment to separate the background, so does seem not a viable search option with the run-2 CMS dataset.
-The increased background from fewer object selections and looser charge sum selection on (iii) and (iv), makes (i) the golden search channel for a type X 2HDM. 
+In particular, (ii) has the production cross sections~\cite{Jueid:2021avn} far smaller than the observed limit for gluon fusion production of a single resonance shown in Figure~\ref{fig:model_independent_limits}(a) and it is not possible to use tau decay product and \ac{MET} alignment to separate the background, so does seem not a viable search option with the run-2 \ac{CMS} dataset.
+The increased background from fewer object selections and looser charge sum selection on (iii) and (iv), makes (i) the golden search channel for a type X \ac{2HDM}. 
 A Feynman diagram for this process is shown in Figure~\ref{fig:4tau_feynamn}. \\
 
 \begin{figure}[H]
@@ -71,8 +72,8 @@ A Feynman diagram for this process is shown in Figure~\ref{fig:4tau_feynamn}. \\
 Signal templates for the production of this process with a mass grid for $\phi$ and A between 100 to 300 and 60 to 160 GeV respectively are generated.
 These mass ranges are motivated from the results in Table~\ref{tab:gm2region}.
 The samples are simulated in the five \ac{FS} at \ac{NLO} precision using the \MGvATNLO v2.6.5 event generator~\cite{Alwall:2011uj}.
-Generation is performed using the parton distribution function NNPDF3.1~\cite{Ball:2014uwa,Ball:2017nwa}, where $\tau$ lepton decay, parton showering and hadronisation are all modelled with the \PYTHIA event generator with the PU profile matched to data~\cite{Sirunyan:2019dfx,Sjostrand:2014zea}.
-The events are then passed through the \texttt{GEANT4}-based \cite{Agostinelli:2002hh} simulation of the CMS detector and reconstructed in the same way as data.
+Generation is performed using the parton distribution function NNPDF3.1~\cite{Ball:2014uwa,Ball:2017nwa}, where the $\tau$ lepton decay, parton showering and hadronisation are all modelled with the \PYTHIA event generator with the \ac{PU} profile matched to data~\cite{Sirunyan:2019dfx,Sjostrand:2014zea}.
+The events are then passed through the \texttt{GEANT4}-based \cite{Agostinelli:2002hh} simulation of the \ac{CMS} detector and reconstructed in the same way as data.
 Generator level distributions of di-$\tau$ mass distributions from the decay of $\phi$ and A are shown in Figure~\ref{fig:4tau_gen_dist}.\\
 
 \begin{figure}[!hbtp]
@@ -96,7 +97,7 @@ These are independent of $\tan\beta$, however, out of the alignment scenarios th
 The branching fractions of $\phi$ and A to pairs of $\tau$ leptons is dependent on both $tan\beta$ and $\beta-\alpha$.
 For this analysis, the branching fractions are calculated using \texttt{2HDECAY} \cite{Krause:2018wmo}.
 In the alignment scenarios, the $A\rightarrow\tau\tau$ branching fractions are approximately 1 above $\tan\beta \approx 2$, where below they sharply drop off and other processes such as $A\rightarrow b\bar{b}$ become dominant.
-This is also true for $\phi\rightarrow\tau\tau$ branching fractions, except in the case where $m_\phi$ is greater than $m_A$ by more than $m_Z$ and so the $\phi\rightarrow ZA$ decay becomes kinematically feasible and can dominate at high $\tan\beta$.
+This is also true for $\phi\rightarrow\tau\tau$ branching fractions, except in the case where $m_\phi$ is greater than $m_A$ by more than $m_Z$, and so the $\phi\rightarrow ZA$ decay becomes kinematically feasible and can dominate at high $\tan\beta$.
 Examples of this are shown in Figure~\ref{fig:4tau_br_1d}.
 Out of the alignment scenario, the branching fractions of $\phi$ to tau leptons becomes smaller as the magnitude of the coupling of additional neutral Higgs bosons to taus is reduced, whilst the $A$ branching fractions, like the couplings, are left unchanged.
 An example of the $\phi$ branching fractions out of the alignment scenario is shown in Figure~\ref{fig:4tau_br_2d}.
@@ -556,73 +557,70 @@ This is done by scaling the samples to the predicted cross sections times branch
 
 \subsection{Postfit Plots}
 
-Table~\ref{tab:sig_integrals} shows the event yields in each analysis category, alongside the number of bins fit, the background prediction and uncertainties split in statistical and systematic contributions after a background-only fit and a signal yield prediction.
-Figure~\ref{fig:4tau_postfit} show the unblinded distributions in channels where more than one bin is fit.
-SIGNAL HYPOTHESIS PLOT \\
+Figure~\ref{fig:4tau_postfit} shows the unblinded distributions of the $m_{T}^{\text{tot}}$ discriminator, after a background-only fit to data, in every bin used in the fit.
+For visualisation, categories with similar event numbers in each bin are displayed on the same plot.
+A stacked background of events is shown, separated into three groups: events with 1 or more jet$\rightarrow\tauh$, events where all $\tauh$ candidates are reconstructed correctly, and the remaining events where only light leptons are misidentified as $\tauh$ and not jets.
+An example signal hypothesis is also shown for a mass hypothesis of $m_A = 160$ GeV and $m_{\phi} = 200$ GeV scaled to 0.01 pb, which is approximately three times smaller than the predicted cross section for this process. \\
 
-DISCUSS RESULTS \\
+There are no upward deviations of the number of events observed, that would be consistent with any mass hypotheses for the signal model searched for.
+The combined results are consistent with a background-only fit to data.
+Within this combined fit, individual bins and categories such as the $\emu\tauhtauh$ \texttt{SS Leptons}, have small deficits of events observed in comparison to events expected.
+The background prediction yield in this category from the $\FF$ method is checked with a comparison to \ac{MC} for the non-\ac{QCD} prediction.
+The background estimations are compatible when the estimation of the fraction of \ac{QCD} events from the charge inverted region is taken in account, further validating the $\FF$ background prediction in this category.
 
-\begin{table}[h]
-\centering
-\resizebox{\textwidth}{!}{
-\begin{tabular}{|l||c|c|c|c|}
-\hline
-  Category & $N_{\text{bins}}$ & Total Background & Data Observed & $(m_{A},m_{\phi}) = (160,300)$ GeV \\ \hline \hline
- & & & & \\
- $\tau_{h}\tau_{h}\tau_{h}\tau_{h}$ & 1 & $10.9$ $\pm$ $3.5$ (stat) $^{+1.9}_{-2.0}$ (syst) & $-$ & $26.1$\\
- & & & & \\
- $\tau_{h}\tau_{h}\tau_{h}$ & 17 & $4790.0$ $\pm$ $85.7$ (stat) $^{+1417.2}_{-1416.0}$ (syst) & $-$ & $94.5$\\
- & & & & \\
- $e\tau_{h}\tau_{h}\tau_{h}$ & 1 & $21.6$ $\pm$ $4.2$ (stat) $^{+8.6}_{-8.6}$ (syst) & $-$ & $26.8$\\
- & & & & \\
- $\mu\tau_{h}\tau_{h}\tau_{h}$ & 1 & $22.0$ $\pm$ $3.5$ (stat) $^{+3.3}_{-3.4}$ (syst) & $-$ & $30.7$\\
- & & & & \\
- $ee\tau_{h}\tau_{h}$ Opposite Sign Leptons & 11 & $243.1$ $\pm$ $11.1$ (stat) $^{+41.7}_{-49.7}$ (syst) & $265$ & $7.0$\\
- & & & & \\
- $ee\tau_{h}\tau_{h}$ Same Sign Leptons & 1 & $3.6$ $\pm$ $1.1$ (stat) $^{+0.5}_{-0.5}$ (syst) & $-$ & $3.7$\\
- & & & & \\
- $\mu\mu\tau_{h}\tau_{h}$ Opposite Sign Leptons & 14 & $369.0$ $\pm$ $13.6$ (stat) $^{+52.6}_{-93.5}$ (syst) & $413$ & $9.4$\\
- & & & & \\
- $\mu\mu\tau_{h}\tau_{h}$ Same Sign Leptons & 1 & $4.8$ $\pm$ $1.7$ (stat) $^{+0.8}_{-1.0}$ (syst) & $-$ & $4.6$\\
- & & & & \\
- $e\mu\tau_{h}\tau_{h}$ Opposite Sign Leptons & 5 & $29.4$ $\pm$ $2.6$ (stat) $^{+1.3}_{-3.6}$ (syst) & $-$ & $16.9$\\
- & & & & \\
- $e\mu\tau_{h}\tau_{h}$ Same Sign Leptons & 3 & $9.7$ $\pm$ $1.4$ (stat) $^{+3.1}_{-3.3}$ (syst) & $-$ & $8.5$\\
- & & & & \\
-\hline
-\end{tabular}
-}
-\label{tab:sig_integrals}
-\caption{Table of background, data and signal integrals, for the $m_{\phi}=100$ GeV and $m_{A}=$100 GeV scenario, in all analysis categories after a background only fit to the data. The background uncertainties are separated into their statistical and systematic and shown along side the background integral. The number of bins used in the fit are also shown.}
-\end{table}
 
 \begin{figure}[!hbtp]
 \centering
-    \subfloat[]{\includegraphics[width=0.4\textwidth]{Figures/mt_tot_signal_eett_z_control_nobtag_all.pdf}}
-    \subfloat[]{\includegraphics[width=0.4\textwidth]{Figures/mt_tot_signal_mmtt_z_control_nobtag_all.pdf}} \\
-    \subfloat[]{\includegraphics[width=0.4\textwidth]{Figures/mt_tot_signal_emtt_z_control_nobtag_all.pdf}}
-    \subfloat[]{\includegraphics[width=0.4\textwidth]{Figures/mt_tot_signal_emtt_2l2t_sig_nobtag_all.pdf}} \\
-    \subfloat[]{\includegraphics[width=0.4\textwidth]{Figures/mt_tot_signal_ttt_inclusive_all.pdf}}
-\caption{Distributions of $m_{T}^\text{tot}$ in the $ee\tauhtauh$ OS Leptons (a) and $\mu\mu\tauhtauh$ OS Leptons (b), $e\mu\tauhtauh$ OS Leptons (c), $e\mu\tauhtauh$ SS Leptons (d) and $\tauh\tauh\tauh$ channel and categories. The solid histograms show the stacked background predictions after a background only fit to the data. The $m_{\phi}=100$ GeV and $m_{A}=100$ GeV signal is also shown for illustrative purposes.}
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/postfit_plots_combined_postfit_high_stat.pdf}}
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/postfit_plots_combined_postfit_med_stat.pdf}} \\
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/postfit_plots_combined_postfit_low_stat.pdf}}
+\caption{Distributions of $m_{T}^\text{tot}$ in the high (a), medium (b) and low (c) statistic categories. As the bin sizes vary drastically between channels, the bin sizes are kept constant and the bin intervals are shown on x axis. The high statistic categories consistent of only the $\tauh\tauh\tauh$ channel, the medium statistic categories include the $ee\tauhtauh$ and $\mu\mu\tauhtauh$ \texttt{OS Leptons} categories, and the low statistic categories show the $e\tauh\tauh\tauh$, $\mu\tauh\tauh\tauh$, $\tauh\tauh\tauh\tauh$,  $ee\tauhtauh$ \texttt{SS Leptons}, $\mu\mu\tauhtauh$ \texttt{SS Leptons}, $e\mu\tauhtauh$ \texttt{SS Leptons} and $e\mu\tauhtauh$ \texttt{OS Leptons} channels and categories. The solid histograms show the stacked background predictions after a background-only fit to the data. The $m_{\phi}=200$ GeV and $m_{A}=160$ GeV signal scaled to 0.01 pb is also shown by a blue line for illustrative purposes.}
 \label{fig:4tau_postfit}
 \end{figure}
 
-\begin{figure}[!hbtp]
-\centering
-    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/soversplusb_plot_phi100A100.pdf}}
-    \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/soversplusb_plot_phi300A160.pdf}} 
-\caption{Distributions of events with respect to the $\log_{10}(S/(S+B))$ of all analysis category bins fit for two signal scenarios: $m_{\phi}=100$ GeV and $m_{A}=100$ GeV and $m_{\phi}=160$ GeV and $m_{A}=160$ GeV. The solid histograms show the stacked background predictions after a background only fit to the data. The signal model considered is displayed with a solid line. }
-\label{fig:4tau_soversplusb}
-\end{figure}
 
 \section{Model Independent Results}
 
+\subsection{Limits}
+
+95\% \ac{CL} are set on the cross section for two additional neutral Higgs bosons produced via an off-shell Z boson multiplied by the branching fraction of each additional boson decaying to $\tau$ lepton pairs, and are shown in Figure~\ref{fig:4tau_mi}.
+In order to show this for all 72 mass hypotheses, the limit on higher masses of the $\PA$ boson are scaled to larger negative powers of 10, as indicated on the plot.
+The observed limit falls between the lower 1 and 2$\sigma$ bands of the expected result.
+This is consistent with the distributions observed in Figure~\ref{fig:4tau_postfit}, as the small deficits in sensitive channels lead to a strengthening of the limit.
+The observed limit in comparison to the expected limit is relatively consistent across the signal mass range.
+This is because of the degeneracy of the signal hypothesis in the sensitive category bins fit.
+Therefore, the strongest constraints on different mass hypotheses mostly arise from the same bins.
+The observed limits vary from 2.0 pb at the lowest mass hypothesis of $m_A = 60$ GeV and $m_{\phi} = 100$ GeV, to 0.14 pb at the highest mass hypothesis of $m_A = 160$ GeV and $m_{\phi} = 300$ GeV.
+It is worth noting that each of the observed limits are well below the predicted cross sections calculated and shown in Figure~\ref{fig:4tau_xs}, indicating excellent sensitivity to the type X \ac{2HDM} in the alignment scenario. \\
+
+Figure~\ref{fig:4tau_limit_comparison} shows the effect of individual decay channels, by showing the expected 95\% \ac{CL} limit on fits to each decay channel separately for an $m_{A} = 100$ GeV scenario.
+It is observed from this, that the dominant search channels, across the whole $m_{\phi}$ range, are the $\tauh\tauh\tauh\tauh$, $\mu\tauh\tauh\tauh$ and $e\mu\tauh\tauh$.
+The $\tauh\tauh\tauh$ channel can significantly contribute to the combined limit at higher values of $m_{\phi}$, as the distribution of events in $m_{T}^{\text{tot}}$ peaks higher and so can be more easily separated from the jet$\rightarrow\tauh$ backgrounds.
+The remaining channels contribute less to the combined limit, as for $e\tauh\tauh\tauh$ more electrons and jets misidentified as $\tauh$ candidates are present due to worse rejection power for the processes that contribute, and for the $ee\tauh\tauh$ and $\mu\mu\tauh\tauh$ channels the low branching fractions from four $\tau$ leptons and difficult background separation where the light leptons have opposite charge, make it difficult to get high signal over background acceptance.
+
 \begin{figure}[!hbtp]
 \centering
-    \includegraphics[width=0.9\textwidth]{Figures/model_independent_limit_all.pdf}
+    \includegraphics[width=0.8\textwidth]{Figures/model_independent_limit_all.pdf}
 \caption{Expected (dashed line) and observed (solid line and dots) 95\% CL upper limits on the product of the cross sections and branching fractions for the decay of both additional Higgs bosons into $\tau$ leptons. Different $m_{A}$ hypotheses are scaled by different orders of magnitudes (written on plot) in order to make mass points distinguishable. The dark green and bright yellow bands indicate the central 68\% and 95\% intervals for the expected exclusion limit.}
 \label{fig:4tau_mi}
 \end{figure}
+
+\subsection{Compatibility}
+
+Similarly to in Section~\ref{sec:sig_and_compat}, the compatibility of the best fit signal cross section multiplied by branching fraction in each decay channel are determined, and these are shown in Figure~\ref{fig:4tau_ccc} for a mass hypothesis of $m_{\phi}=m_{A}=100$ GeV for this search.
+For this fit the signal strength in each channel is allowed to go negative, although unphysical, to show the data effects in each channel.
+The best fit signal strength of the combined fit is between 1 and 2$\sigma$ below zero.
+Four categories fit a signal strength slightly below zero, but the combined fit is mostly dominated by the downward fluctuations of the $e\mu\tauh\tauh$ channel.
+The results in each channel are consistent with the zero value within 2$\sigma$.
+These conclusions are consistent across any mass hypotheses, again due to the degenerate nature of the signal shapes in the fitted bins.
+
+\section{Model Dependent Limits}
+
+The 95\% \ac{CL} exclusion contours, for the type X \ac{2HDM} alignment scenario in the $m_A$-$\tan\beta$ phase space, are shown in Figure~\ref{fig:4tau_md} for two $m_{\phi}$ scenarios of 100 and 200 GeV.
+These exclusion limits are \say{top-down} limits as the cross sections are unchanged in $\tan\beta$ and the branching fractions to $\tau$ leptons are enhanced as $\tan\beta$ increases.
+The cross section and branching ratios are calculated as described in Section~\ref{sec:4tau_signal_modelling}.
+In all cases, as previous observed for the model independent interpretation, the observed limit lies between the downwards 1 and 2$\sigma$ expected bands. \\
+
 
 \begin{figure}[!hbtp]
 \centering
@@ -634,11 +632,22 @@ DISCUSS RESULTS \\
 \begin{figure}[!hbtp]
 \centering
     \includegraphics[width=0.6\textwidth]{Figures/ChannelCompatibilityCheck_FitResults_mphi100mA100_channel.pdf}
-\caption{Compatibility plots for the $m_{A}=100$ GeV and $m_{\phi}=100$ GeV mass scenario in analysis decay channels. In each case the fitted signal strength is decoupled in the bin shown on the plot.}
+\caption{Compatibility plots for the $m_{A}=100$ GeV and $m_{\phi}=100$ GeV mass scenario in analysis decay channels. In each case the fitted signal strength is decoupled in the bin shown on the plot. The combined best fit value and its 1$sigma$ variation are shown by the blue line and band respectively. The black dashed line indicates a signal strength of zero.}
 \label{fig:4tau_ccc}
 \end{figure}
 
-\section{Model Dependent Limits}
+The $m_{\phi} = 100$ GeV scenario has a moderately flat observed $\tan\beta$ limit between 1.2-1.5, across the $m_{A}$ range.
+The very slight weakening of the limit at high values of $m_{A}$ values is because the $A\rightarrow Zh$ decay becomes more kinematically feasible and so the $A\rightarrow\tau\tau$ branching fraction has to compete with this process.
+The $A\rightarrow Zh$ decay will become dominant if $m_{A}$ is raised much beyond the 160 GeV threshold set in this analysis.
+The $m_{\phi} = 200$ GeV scenario's observed limit is weaker at lower values of $m_{A}$, ranging $\tan\beta$ values of 10 to 1.6 between $m_{A} = 60$ and 125 GeV.
+This weakening at lower values of $m_{A}$ happens as the $\PH\rightarrow Z\PA$ decay becomes more kinematically feasible in this region and so competes with $\PH\rightarrow\tau\tau$ for the branching fraction.
+This was not present in the $m_{\phi}=100$ GeV scenario as the $\phi$ boson is not heavy enough.
+The limit then flattens for the remainder of the $m_{A}$ phase space shown, as the $\PH\rightarrow Z\PA$ and $A\rightarrow Zh$ decays only minimally hinder the $\tau\tau$ branching fractions of $\phi$ and $\PA$. \\
+
+Although not shown here, the limits for intermediate $\phi$ masses see similar trends at low $m_{A}$, where the further the $\phi$ and $\PA$ masses are separated the weaker the limit, within this mass range.
+At higher values of $m_\phi$ than 200 GeV, it becomes difficult to find stable theories across the $m_{A}$ range. 
+This is because if the $m_\phi$ and $m_{A}$ are too separated, the values of $\lambda_i$ as shown in Equation~\ref{eqn:lag_2hdm}, can become non-perturbative~\cite{Jueid:2021avn}.
+Within the $m_{A}$ allowed regions for this region, the limits follow the same trend as seen at lower values of $m_{\phi}$. \\
 
 \begin{figure}[!hbtp]
 \centering
@@ -647,6 +656,16 @@ DISCUSS RESULTS \\
 \caption{Expected and observed 95\% CL exclusion contours on the $m_{A}$-$\tan\beta$ phase space in the type X 2HDM alignment scenario for $m_{\phi}$ scenarios of 100 GeV (a) and 200 GeV (b). The exclusion limit only on background expectation is shown as a dashed black line, the dark and bright grey bands show the 68\% and 95\% intervals of the expected exclusion and the observed exclusion contour is shown by the blue area.}
 \label{fig:4tau_md}
 \end{figure}
+
+95\% \ac{CL} limits are also set outside of the alignment scenario.
+This is done by varying relevant alignment parameter, $\cos(\beta-\alpha)$ or $\sin(\beta-\alpha)$ depending on $m_\phi$, with respect to $\tan\beta$ for the individual mass hypothesis.
+Two of these are shown in Figure~\ref{fig:4tau_cosbma} for the mass scenario of $m_{\phi} = 200$ GeV and $m_{A} = 100$ GeV, as well as $m_{\phi} = 200$ GeV and $m_{A} = 160$.
+The observed limit lies in the equivalent place compared to the expected as seen in all limit setting for this analysis.
+The alignment limit at these mass points are equivalent to the limit set at $\cos(\beta-\alpha) = 0$.
+The shapes of the limits represent the region where the loss of cross section out of the alignment scenario and the loss of cross section and branching ratios out of the alignment scenario and at lower $\tan\beta$, is too large that the theory cannot be excluded.
+The shapes are symmetric in $\cos(\beta-\alpha)$ as no sign dependence is measurable from this process.
+The widening and narrowing of the limit band in $\tan\beta$ is due to shape of the branching fractions of $\phi$, as shown in Figure~\ref{fig:4tau_br_2d}.
+The widest constraint from this search on $|\cos(\beta-\alpha)|$ is at approximately 0.5 at a $\tan\beta$ around 20.
 
 \begin{figure}[!hbtp]
 \centering

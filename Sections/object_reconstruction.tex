@@ -6,35 +6,63 @@ The topics discussed here are the reconstruction of tracks and vertices, the par
 
 \section{Tracks and vertices}
 
-The reconstructed vertex with the largest value of summed physics-object $\pT^{2}$ is taken to be the primary proton-proton interaction vertex. 
-The physics objects for this purpose are the jets, clustered using the jet finding algorithm~\cite{Cacciari:2008gp,Cacciari:2011ma}, as described below, with the tracks assigned to the vertex as inputs, and the
-associated missing transverse momentum, taken as the negative vector sum of the $\pT$ of those jets.
-Any other collision vertices in the event are associated with additional soft inelastic pp collisions called \emph{pileup}.
+The \ac{CTF} algorithm~\cite{CMS:2014pgm} is employed by \ac{CMS} to reconstruct particle tracks. 
+This algorithm consists of four steps to estimate trajectory parameters and uncertainties. 
+Initially, track seeds are formed using hits in the first few layers of the tracker. 
+These seeds provide initial estimates of the trajectory. 
+Next, the track seeds are extrapolated using a Kalman filter~\cite{Fruhwirth:1987fm}, searching for additional hits along the expected trajectory in successive detector layers. 
+The trajectory parameters are continuously updated as hits are added to the track candidate. 
+The extrapolation process continues until the final detector layer is reached. \\
+
+Afterwards, a Kalman filter and smoother are used to fit the final trajectory iteratively. 
+Spurious hits are identified and removed after each iteration until no more spurious hits are found. 
+This fitting process provides the most accurate estimates of the trajectory parameters. 
+Subsequently, tracks must pass a set of quality criteria, and any failing tracks are discarded. \\
+
+The \ac{CTF} algorithm performs six iterations, gradually reconstructing more challenging tracks and recovering missed tracks from previous iterations. 
+Associated hits are removed after each iteration, reducing combinatorial complexity and facilitating the search for complicated tracks in later iterations. 
+Tracking efficiencies for muons and pions with transverse momentum ($\pT$) greater than 500 MeV have been measured to be over 99.3\% and 98.5\%, respectively~\cite{CMS:2010mua}. \\
+
+Once all tracks are reconstructed, the positions of interaction vertices, including the primary vertex and additional vertices from \ac{PU}, are determined. 
+Vertex reconstruction begins by selecting tracks consistent with being promptly produced near the beamspot. 
+Tracks are then clustered based on the z coordinate of their closest approach to the beamspot, using a deterministic annealing algorithm~\cite{Rose:1998dzq}. 
+Candidate vertices are retained if at least two of their associated tracks are incompatible with other vertices. 
+The candidate vertices are fitted using an adaptive vertex fitter~\cite{Fruhwirth:2007hz} to determine the best estimate of their three dimensional positions. 
+The primary interaction vertex is determined as the vertex with the highest summed physics-object $\pT$, where physics objects are jets clustered from tracks associated with the candidate vertex using the anti-$k_T$ algorithm~\cite{Fruhwirth:2007hz}.
+The efficiency of vertex reconstruction has been measured, with values exceeding 98.7\% for vertices containing at least two tracks and exceeding 99.9\% for vertices with four or more tracks~\cite{CMS:2010mua}. 
 
 \section{Particle flow}
 
-The \ac{PF} algorithm reconstructs the products of the \ac{LHC} proton proton collisions and is described in full in Reference\cite{PF_CMS}.  
-It utilises all the information available from the tracker, \ac{ECAL}, \ac{HCAL} and muon detectors combined to produce a list of particle candidates. 
-These candidates are either a photon, electron, muon or a neutral or charged hadrons.
-It begins with defining an event as the data taken per bunch crossing. 
-The \ac{PF} algorithm then reconstructs the tracks of the particle candidates in order to find the collision vertices. 
-The \ac{PV} of the collision is taken to be the one with the largest value of $p_T^{2}$ summed over all physics objects originated from that vertex. 
-Physics objects are not only defined to include particle candidate tracks, but also missing tracks represented by the negative vectorial sum of all particle candidate tracks. \\
+The \ac{PF} algorithm~\cite{PF_CMS,CMS:2010byl,CMS:2010eua} is used for the reconstruction of stable particles in an event, such as electrons, photons, muons, and hadrons. 
+This algorithm combines information from all the sub-detectors of \ac{CMS} to achieve accurate measurements of particle energies, directions, and types. 
+The output of the algorithm is a list of particles, which can then be used to construct higher-level objects like jets, hadronically decaying taus, and the \ac{MET}.\\
 
-In reconstructing electron and muons, the energy deposits in the \ac{ECAL} and the track hits in the muon chamber respectively, working alongside the tracker, provide the basis of electron and muon identification. 
-However, additional requirements are used to drop misidentification rates by ensuring that the electron or muon is isolated from any hadronic activity in the detector, as leptons do not carry colour charge. 
-This is done by defining a relative isolation variable $\Irel^{e(\mu)}$ in the following way
+The \ac{PF} algorithm begins with information about the tracking and calorimeter clustering.
+The tracking information includes the high resolution momentum and direction of charged hadrons calculated by an iterative-tracking strategy~\ref{Adam:934067}, that is not achievable with the calorimeters.
+The calorimeter clustering is crucial for measuring the energies and directions of neutral particles, distinguishing energy deposits from neutral and charged hadrons, and identifying bremsstrahlung photons originating from electrons.
+Clusters are 
+Clustering is performed separately in each sub-detector component except for the \ac{HF} sub-detector. \\
 
-\begin{equation}
-    I_{rel}^{e\mu} = \frac{\sum p_{T,i} + \sum E_{T,i}}{p_T^{e\mu}}.
-\end{equation}
+Clustering starts with \say{cluster seeds} consisting of cells with local energy maxima above a certain threshold. 
+Neighbouring cells are aggregated into \say{topological clusters} if their energies are above the expected noise levels. 
+Each topological cluster gives rise to one or more \say{particle flow clusters}. 
+The energy of each cell can be shared among multiple particle flow clusters based on the cell-cluster distance. \\
 
-The sums are over all particles included in a cone of radius $\Delta R = \sqrt{(\Delta \eta)^2 + (\Delta \phi)^2}$ excluding the electron or muon itself. 
-$\Delta \eta$ and $\Delta \phi$ are the angular distance in $\eta$ and $\phi$ around the electron or muon direction from the \ac{PV}. 
-To remove problems with \ac{PU}, only charged particles originating from the primary vertex are included. 
-To remove neutral particles from pileup in the cone, the $\pT$ for neutral particles is estimated by subtracting half of the sum of the $\pT$ of charged particle in the cone, due to the approximate ratio of charged to neutral hadron production. 
-The cone size selected for electrons is $\Delta R<0.3$ and the isolation variable is $\Irel^{e(\mu)} < 0.1$. 
-For muons is cone size is $\Delta R<0.4$ and the isolation variable is $\Irel^{e(\mu)} < 0.15$. \\
+To establish links between elements, a distance parameter is defined to quantify the quality of the link. 
+Tracks are extrapolated to different detector layers, and if the extrapolated position is within the cluster boundaries, a link is made between the track and the cluster. 
+Tangents to the tracks are also extrapolated to the \ac{ECAL}, and if within a cluster, they are linked as potential bremsstrahlung photons. 
+Links between calorimeter clusters are established if the position of the more granular cluster is within the boundaries of the less granular calorimeter. 
+The linking distance parameter is defined as the distance between the extrapolated position and the cluster center. \\
+
+The \ac{PF} algorithm then combines directly or indirectly linked elements into blocks, typically containing 1-3 elements. 
+From each block, particles are identified through a series of tests. 
+A global muon is identified if a track is linked to a muon system track and their momenta are compatible. 
+\ac{PF} electrons are identified by refitting candidate tracks using a \ac{GSF} and evaluating their compatibility with \ac{ECAL} clusters using multivariate discriminants. 
+Remaining tracks lead to \ac{PF} charged hadrons, and their momenta are determined by track fits, with adjustments made by matching the calorimetric energy. 
+Excess energy not consistent with track momenta is attributed to overlapping photons and neutral hadrons. \\
+
+Lastly, any remaining \ac{ECAL} and \ac{HCAL} deposits are used to identify \ac{PF} photons and \ac{PF} neutral hadrons, respectively. 
+This comprehensive process of reconstruction and identification ensures precise measurements of stable particles within the \ac{CMS} detector.
 
 \section{Muons}
 
@@ -169,18 +197,52 @@ raw $p_{t} < 50$ and $2.65 < |\eta| < 3.139$.
 
 \section{b jets}
 
-For determining whether a jet is initiated by a b quark, the \texttt{DeepJet} algorithm~\cite{DeepFlavour} is used.  
-Jets with $p_{\text{T}} > 20$ and $|\eta| < 2.4 (2.5)$ in 2016 (2017 and 2018) are consideredb-tagged if their discriminator value is larger than 0.3093, 0.3033 or 0.2770 in the 2016, 2017 or 2018 analysis, respectively.
+For determining whether a jet is initiated by a b quark, the \texttt{DeepJet} algorithm~\cite{CMS:2017wtu,Bols:2020bkb} is used.  
+This heavy-flavour jet identifier, uses properties of the jet to distinguish jets originating from b quarks, c quarks, the remainder of the lighter quarks grouped, and gluons.
+Core to the b tagging in this algorithm is the reconstruction of a \ac{SV} due to the lifetime of b quarks, allowing for displaced tracks.
+The \texttt{DeepJet} \ac{DNN} uses a combination of high-level variables such as the \ac{SV}, as well as utilising low-level variable of jet constituents to separate between initiators.
+The \ac{DNN} uses a mixture of convolutional and dense layers to perform this categorisation. \\
+
+For b jet selection, jets are required to have $\pT > 20$ GeV and $|\eta| <$ 2.4 (2.5) in 2016 (2017 and 2018), and are considered b tagged if their discriminator value is larger than some threshold that represents a mis-identification rate of 1\%.
+This corresponds to a b tagging efficiency around 80\%.
+
+\begin{figure}[!hbtp]
+\centering
+    \subfloat[]{\includegraphics[width=0.8\textwidth]{Figures/deepjet.pdf}}
+\caption{Mis-identification probability 2$\sigma$ bands against efficiency for b tagging using the \texttt{DeepJet} algorithm, for AK4jets with $\pT> 30$ GeV AND $|\eta|$<2.5 utilising MC with parameters from the 2017 era of data taking. Two bands are displayed, one for the identification of a b quark rather than light quarks and gluons (blue) and one for the identification of a b quark rather than a c quark (red)~\cite{deepjet}.}
+\label{fig:deeptau_misid}
+\end{figure}
 
 \section{Missing transverse energy}
 
-The missing transverse energy in the event is reconstructed using the PUPPI algorithm~\cite{CMS-PAS-JME-18-001}, which is more robust towards pileup compared to PF MET, which tends to increase for Run 2 analyses. 
-This algorithm is an extension of the PFCHS algorithm and assigns weights to PF candidates
-based on the probability that they come from pileup or the primary vertex. Type-I corrections
-are applied to correct the MET estimated in this way for over- or underestimation due to inefficiencies in the detector.
-These corrections entail the propagation of the JECs to the MET as
-\begin{equation}\label{eqn:met_t1corr} \vec{E}_{\text{T}}^{\text{miss,corr}} = \vec{E}_{\text{T}}^{\text{miss}} - \Sigma_{\text{jets}}(\vec{p}_{\text{T}}^{\text{corr}} - \vec{p}_{\text{T}}). \end{equation}
+The \ac{MET} is used as a feature to understand particles passing through the \ac{CMS}, such as neutrinos in the \ac{SM}, and weakly interacting particles from hypothetical \ac{BSM} extensions.
+This information cannot be pulled from the detector itself but instead the absence of detection can be used to infer the presence of such an object
+The \ac{MET} is nominally calculated as the negative vector sum of all transverse momenta of the \ac{PF} candidates in the collision event,
 
+\begin{equation}
+\vec{E}_{T}^{\text{miss}} = - \sum_{i} \vec{p}_{T}^{\hspace{4pt}i}.
+\end{equation}
+
+However, this raw \ac{PF}\ac{MET} is inaccurate due to the $\pT$ thresholds of the calorimeters, the non-linearity of the calorimeter response and due to reconstruction inefficiencies~\cite{CMS:2016ljj}.
+This is fixed with jet energy corrections, determined for jets with $\pT$> 15 GeV and less than 90\% for their energies deposited in the \ac{ECAL} for each of the problems mentioned, and then the corrected \ac{MET} is calculated by,
+
+\begin{equation}
+\vec{E}_{T}^{\text{miss,corr}} = \vec{E}_{T}^{\text{miss}} - \sum_{\text{jets}} (\vec{p}_{T,\text{jet}}^{\text{\hspace{4pt}corr}} - \vec{p}_{T,\text{jet}}^{\text{\hspace{4pt}raw}}),
+\end{equation}
+
+where \say{corr} and \say{raw} are the corrected and uncorrected values of the jet momenta, respectively. \\
+
+Further corrections are required to account for \ac{PU} effects, and the \texttt{PUPPI} algorithm is used for this purpose~\cite{CMS:2020ebo}.
+The algorithm is designed to address the impact of \ac{PU} on observables involving clustered hadrons, such as jets, missing transverse momentum, and lepton isolation. 
+It achieves this by combining information about the local particle distribution, event \ac{PU} properties, and tracking data. 
+\texttt{PUPPI} operates at the level of individual particle candidates, before any clustering is performed. 
+It assigns a weight to each particle, ranging from 0 to 1, based on the information from surrounding particles. 
+A weight of 1 is given to particles believed to originate from the \ac{PV}. 
+These per-particle weights are then used to rescale the four-momenta of the particles, effectively correcting for the impact of \ac{PU} and so altering the raw calculation of the \ac{MET} to,
+
+\begin{equation}
+\vec{E}_{T}^{\text{miss}} = - \sum_{i} w_{i} \cdot \vec{p}_{T}^{\hspace{4pt}i}.
+\end{equation}
 
 \section{Taus}
 

@@ -29,6 +29,9 @@ H.~Bartosik and G.~Rumolo, ``{Performance of the LHC injector chain after the
 \bibitem{Tapper:2013yva}
 ``{CMS Technical Design Report for the Level-1 Trigger Upgrade},'' 6 2013.
 
+\bibitem{deepjet}
+C.~Collaboration, ``Cms public twiki,'' May 2023.
+
 \bibitem{Sirunyan:2018pgf}
 A.~M. Sirunyan {\em et~al.}, ``Performance of reconstruction and identification
   of {$\tau$} leptons decaying to hadrons and {$\nu_\tau$} in pp collisions at
@@ -244,18 +247,60 @@ S.~Chatrchyan {\em et~al.}, ``{Energy Calibration and Resolution of the CMS
   Electromagnetic Calorimeter in $pp$ Collisions at $\sqrt{s} = 7$ TeV},'' {\em
   JINST}, vol.~8, p.~P09009, 2013.
 
-\bibitem{Cacciari:2008gp}
-M.~Cacciari, G.~P. Salam, and G.~Soyez, ``The anti-$k_t$ jet clustering
-  algorithm,'' {\em JHEP}, vol.~04, p.~063, 2008.
+\bibitem{CMS:2014pgm}
+S.~Chatrchyan {\em et~al.}, ``{Description and performance of track and
+  primary-vertex reconstruction with the CMS tracker},'' {\em JINST}, vol.~9,
+  no.~10, p.~P10009, 2014.
 
-\bibitem{Cacciari:2011ma}
-M.~Cacciari, G.~P. Salam, and G.~Soyez, ``{FastJet} user manual,'' {\em Eur.
-  Phys. J. C}, vol.~72, p.~1896, 2012.
+\bibitem{Fruhwirth:1987fm}
+R.~Fruhwirth, ``{Application of Kalman filtering to track and vertex
+  fitting},'' {\em Nucl. Instrum. Meth. A}, vol.~262, pp.~444--450, 1987.
+
+\bibitem{CMS:2010mua}
+``{Measurement of Tracking Efficiency},'' 2010.
+
+\bibitem{Rose:1998dzq}
+K.~Rose, ``{Deterministic annealing for clustering, compression,
+  classification, regression, and related optimization problems},'' {\em IEEE
+  Proc.}, vol.~86, no.~11, pp.~2210--2239, 1998.
+
+\bibitem{Fruhwirth:2007hz}
+R.~Fruhwirth, W.~Waltenberger, and P.~Vanlaer, ``{Adaptive vertex fitting},''
+  {\em J. Phys. G}, vol.~34, p.~N343, 2007.
 
 \bibitem{PF_CMS}
 {CMS Collaboration}, ``{Particle-flow reconstruction and global event
   description with the CMS detector},'' {\em JINST}, vol.~12, no.~10,
   p.~P10003, 2017.
+
+\bibitem{CMS:2010byl}
+``{Commissioning of the Particle-flow Event Reconstruction with the first LHC
+  collisions recorded in the CMS detector},'' 2010.
+
+\bibitem{CMS:2010eua}
+``{Commissioning of the Particle-Flow reconstruction in Minimum-Bias and Jet
+  Events from pp Collisions at 7 TeV},'' 7 2010.
+
+\bibitem{Cacciari:2011ma}
+M.~Cacciari, G.~P. Salam, and G.~Soyez, ``{FastJet} user manual,'' {\em Eur.
+  Phys. J. C}, vol.~72, p.~1896, 2012.
+
+\bibitem{CMS:2017wtu}
+A.~M. Sirunyan {\em et~al.}, ``{Identification of heavy-flavour jets with the
+  CMS detector in pp collisions at 13 TeV},'' {\em JINST}, vol.~13, no.~05,
+  p.~P05011, 2018.
+
+\bibitem{Bols:2020bkb}
+E.~Bols, J.~Kieseler, M.~Verzetti, M.~Stoye, and A.~Stakia, ``Jet flavour
+  classification using {DeepJet},'' {\em JINST}, vol.~15, p.~P12012, 2020.
+
+\bibitem{CMS:2016ljj}
+``{Performance of missing energy reconstruction in 13 TeV pp collision data
+  using the CMS detector},'' 2016.
+
+\bibitem{CMS:2020ebo}
+A.~M. Sirunyan {\em et~al.}, ``{Pileup mitigation at CMS in 13 TeV data},''
+  {\em JINST}, vol.~15, no.~09, p.~P09018, 2020.
 
 \bibitem{Bahl:2018zmf}
 E.~Bagnaschi, H.~Bahl, E.~Fuchs, T.~Hahn, S.~Heinemeyer, S.~Liebler, S.~Patel,
@@ -451,9 +496,9 @@ A.~Rogozhnikov, ``{Reweighting with Boosted Decision Trees},'' {\em J. Phys.
 F.~J. Massey, ``The kolmogorov-smirnov test for goodness of fit,'' {\em Journal
   of the American Statistical Association}, vol.~46, no.~253, pp.~68--78, 1951.
 
-\bibitem{}
-{ATLAS Collaboration}, ``{Search for heavy Higgs bosons decaying into two tau
-  leptons with the ATLAS detector using $pp$ collisions at $\sqrt{s}=13$
-  TeV},'' {\em Phys. Rev. Lett.}, vol.~125, no.~5, p.~051801, 2020.
+\bibitem{Bahl:2022igd}
+H.~Bahl, T.~Biek\"otter, S.~Heinemeyer, C.~Li, S.~Paasch, G.~Weiglein, and
+  J.~Wittbrodt, ``{HiggsTools: BSM scalar phenomenology with new versions of
+  HiggsBounds and HiggsSignals},'' 10 2022.
 
 \end{thebibliography}
