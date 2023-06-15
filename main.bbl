@@ -281,6 +281,30 @@ R.~Fruhwirth, W.~Waltenberger, and P.~Vanlaer, ``{Adaptive vertex fitting},''
 ``{Commissioning of the Particle-Flow reconstruction in Minimum-Bias and Jet
   Events from pp Collisions at 7 TeV},'' 7 2010.
 
+\bibitem{Adam:934067}
+W.~Adam, B.~Mangano, T.~Speer, and T.~Todorov, ``{Track Reconstruction in the
+  CMS tracker},'' tech. rep., CERN, Geneva, 2006.
+
+\bibitem{CMS:2012nsv}
+S.~Chatrchyan {\em et~al.}, ``{Performance of CMS Muon Reconstruction in $pp$
+  Collision Events at $\sqrt{s}=7$ TeV},'' {\em JINST}, vol.~7, p.~P10002,
+  2012.
+
+\bibitem{CMS:2018rym}
+A.~M. Sirunyan {\em et~al.}, ``{Performance of the CMS muon detector and muon
+  reconstruction with proton-proton collisions at $\sqrt{s}=$ 13 TeV},'' {\em
+  JINST}, vol.~13, no.~06, p.~P06015, 2018.
+
+\bibitem{CMS:2015xaf}
+V.~Khachatryan {\em et~al.}, ``{Performance of Electron Reconstruction and
+  Selection with the CMS Detector in Proton-Proton Collisions at
+  \ensuremath{\sqrt{}}s = 8 TeV},'' {\em JINST}, vol.~10, no.~06, p.~P06005,
+  2015.
+
+\bibitem{CMS:2009fdy}
+S.~Chatrchyan {\em et~al.}, ``{Performance of CMS Muon Reconstruction in
+  Cosmic-Ray Events},'' {\em JINST}, vol.~5, p.~T03022, 2010.
+
 \bibitem{Cacciari:2011ma}
 M.~Cacciari, G.~P. Salam, and G.~Soyez, ``{FastJet} user manual,'' {\em Eur.
   Phys. J. C}, vol.~72, p.~1896, 2012.

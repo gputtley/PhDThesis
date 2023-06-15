@@ -33,133 +33,181 @@ The efficiency of vertex reconstruction has been measured, with values exceeding
 
 \section{Particle flow}
 
-The \ac{PF} algorithm~\cite{PF_CMS,CMS:2010byl,CMS:2010eua} is used for the reconstruction of stable particles in an event, such as electrons, photons, muons, and hadrons. 
-This algorithm combines information from all the sub-detectors of \ac{CMS} to achieve accurate measurements of particle energies, directions, and types. 
-The output of the algorithm is a list of particles, which can then be used to construct higher-level objects like jets, hadronically decaying taus, and the \ac{MET}.\\
+The \ac{PF} algorithm~\cite{PF_CMS,CMS:2010byl,CMS:2010eua} is used for the reconstruction of long lived particles in an event, such as electrons, photons, muons, and hadrons. 
+All the sub-detectors of \ac{CMS} are used to achieve accurate identification and measurements of particle energies and directions. 
+The final output of the algorithm is a list of particles and their four vectors, that can then be used to construct more complicated objects such as jets, hadronically decaying taus, and the \ac{MET}.\\
 
-The \ac{PF} algorithm begins with information about the tracking and calorimeter clustering.
-The tracking information includes the high resolution momentum and direction of charged hadrons calculated by an iterative-tracking strategy~\ref{Adam:934067}, that is not achievable with the calorimeters.
-The calorimeter clustering is crucial for measuring the energies and directions of neutral particles, distinguishing energy deposits from neutral and charged hadrons, and identifying bremsstrahlung photons originating from electrons.
-Clusters are 
-Clustering is performed separately in each sub-detector component except for the \ac{HF} sub-detector. \\
+The tracking and calorimeter clustering information are the initial inputs to the \ac{PF} algorithm.
+The tracking information includes the high resolution momentum and direction of charged hadrons calculated by an iterative-tracking strategy~\cite{Adam:934067}, that is not achievable with the calorimeters.
+The calorimeter clustering is used to achieve multiple objectives, including detecting and measuring the energy and direction of neutral particles, separating neutral particles from charged hadrons, reconstructing electrons and Bremsstrahlung photons, and aiding in the energy measurement of charged hadrons with inaccurate track parameters. 
+The clustering algorithm involves identifying \say{cluster seeds}, growing \say{topological clusters}, and generating \say{particle flow clusters} based on energy thresholds and cell-cluster distances in each sub-detector, except for the \ac{HF}, where each cell forms a cluster, and it explained in more detail below. \\
 
-Clustering starts with \say{cluster seeds} consisting of cells with local energy maxima above a certain threshold. 
-Neighbouring cells are aggregated into \say{topological clusters} if their energies are above the expected noise levels. 
-Each topological cluster gives rise to one or more \say{particle flow clusters}. 
-The energy of each cell can be shared among multiple particle flow clusters based on the cell-cluster distance. \\
+The clustering algorithm used in the calorimeters can be split into three stages. 
+Firstly, \say{cluster seeds} are identified as local maxima of energy in calorimeter cells above a specified threshold. 
+Secondly, \say{topological clusters} are formed by combining cells that have at least one side in common with an existing cluster cell and exceed a given energy threshold. 
+These thresholds corresponding to the electronics noise are 80 MeV in the \ac{ECAL} barrel, 300 MeV in the \ac{ECAL} end caps and 800 MeV in the \ac{HCAL}. 
+The number of seeds dictates how many \say{particle flow clusters} are formed from a topological cluster.
+Utilising the granularity of the calorimeter, an iterative process is employed to determine cluster energies and positions by distributing the energy of each cell among all particle flow clusters based on the distance between the cell and the cluster. \\
 
-To establish links between elements, a distance parameter is defined to quantify the quality of the link. 
-Tracks are extrapolated to different detector layers, and if the extrapolated position is within the cluster boundaries, a link is made between the track and the cluster. 
-Tangents to the tracks are also extrapolated to the \ac{ECAL}, and if within a cluster, they are linked as potential bremsstrahlung photons. 
-Links between calorimeter clusters are established if the position of the more granular cluster is within the boundaries of the less granular calorimeter. 
-The linking distance parameter is defined as the distance between the extrapolated position and the cluster center. \\
+Muon reconstruction involves the matching of tracks from the inner tracker to tracks in the muon system~\cite{CMS:2012nsv,CMS:2018rym}.
+Initially, tracks are independently reconstructed in each system. 
+Standalone muon tracks are reconstructed in the muon system using seed groups of \ac{CSC} or \ac{DT} segments. 
+These seeds provide an initial trajectory estimate, which is extended using a \ac{KF} to incorporate hits from \ac{DT}, \ac{CSC}, and \ac{RPC} sub-detectors. 
+In the tracker muon reconstruction, tracks in the inner tracker with $\pT$ greater than 0.5 GeV and total momentum greater than 5 GeV are extrapolated to the muon system. 
+A track qualifies as a tracker muon if it is matched to at least one muon segment based on their positions in a local x-y coordinate frame. 
+The global muon reconstruction starts with standalone muon tracks and matches them to tracks in the inner detector. 
+If a match is found, a combined fit using the \ac{KF} is performed with hits from both systems. \\
 
-The \ac{PF} algorithm then combines directly or indirectly linked elements into blocks, typically containing 1-3 elements. 
-From each block, particles are identified through a series of tests. 
-A global muon is identified if a track is linked to a muon system track and their momenta are compatible. 
-\ac{PF} electrons are identified by refitting candidate tracks using a \ac{GSF} and evaluating their compatibility with \ac{ECAL} clusters using multivariate discriminants. 
-Remaining tracks lead to \ac{PF} charged hadrons, and their momenta are determined by track fits, with adjustments made by matching the calorimetric energy. 
-Excess energy not consistent with track momenta is attributed to overlapping photons and neutral hadrons. \\
+Electrons reconstruction initially works by finding matching tracks with \ac{ECAL} energy clusters~\cite{CMS:2015xaf}.
+The path of electrons towards the \ac{ECAL} involves traversing a considerable amount of material, which constitutes the tracker. 
+The thickness of this material varies depending on the $\eta$ region, ranging from approximately 0.4 to 2 radiation lengths~\cite{CMS:2015xaf}. 
+Within this material, electrons emit bremsstrahlung photons, resulting in a significant energy loss. 
+At regions with maximal material thickness, electrons lose an average of 86\% of their energy, predominantly spreading out in the $\phi$ direction due to magnetic field induced bending~\cite{CMS:2015xaf}. 
+To accurately measure the initial electron energy, the energy from all emitted photons is measured through the \ac{SC} algorithms. 
+These algorithms initiate clustering with seed crystals, expand the clusters based on energy thresholds, and merge them into the \ac{SC}. \\
 
-Lastly, any remaining \ac{ECAL} and \ac{HCAL} deposits are used to identify \ac{PF} photons and \ac{PF} neutral hadrons, respectively. 
-This comprehensive process of reconstruction and identification ensures precise measurements of stable particles within the \ac{CMS} detector.
+For reconstructing electron tracks, the standard \ac{CTF} algorithm is not suitable due to the substantial radiative losses in the tracker material. 
+These losses lead to reduced hit collection efficiency and inaccurate trajectory parameter estimation. 
+To address this, a dedicated tracking procedure is employed, which identifies seeds consisting of two or three hits in the tracker using two complementary methods: \ac{ECAL}-based seeding and tracker-based seeding. 
+\ac{ECAL}-based seeding uses SC energy and position to estimate the trajectory, while tracker-based seeding starts with tracks reconstructed using the \ac{CTF} algorithm.
+The selected seeds are then extrapolated and smoothed the \ac{GSF} instead of the \ac{KF}. 
+The \ac{GSF}, with a Gaussian mixture to model bremsstrahlung energy loss, provides a more accurate estimation of the trajectory parameters. \\
+
+\ac{PF} elements are connected by a link algorithm that evaluates the quality of the connection between each pair of elements by defining a distance.
+Elements linked directly or indirectly form \say{blocks} that serve as inputs for the particle reconstruction and identification algorithm. 
+The granularity of the \ac{CMS} sub-detectors ensures that blocks typically contain one to three elements, allowing the algorithm to perform independently of event complexity. 
+The link between a charged-particle track and a calorimeter cluster is established by extrapolating the track to different depths in the \ac{ECAL} and \ac{HCAL}, and the track is linked to a cluster if the extrapolated position lies within the cluster boundaries. 
+Similarly, links between calorimeter clusters are established based on their positions in the more granular calorimeter. 
+A link between a charged particle track in the tracker and a muon track in the muon system is established through a global fit, with the link distance determined by the $\chi^2$ value of the fit. \\
+
+The \ac{PF} algorithm operates on each block by following a specific set of steps. 
+Initially, global muons within the block are converted into \say{\ac{PF} muons} if their combined momentum aligns with that determined solely from the tracker. 
+Afterwards, electron reconstruction and identification take place, where tracks are pre-identified as potential electrons based on their characteristics. 
+Identified electrons become \say{\ac{PF} electrons}, and their corresponding tracks and \ac{ECAL} clusters are removed. \\
+
+Next, tighter quality criteria are applied to the remaining tracks, ensuring that the measured $\pT$ uncertainty is smaller than the expected calorimetric energy resolution for charged hadrons. 
+Some tracks are rejected based on these criteria, but the energy from genuine tracks is still used in the reconstruction process. 
+The remaining elements in the block can give rise to charged hadrons, photons, neutral hadrons, or additional muons. \\
+
+To detect neutral particles, tracks are linked to \ac{ECAL} and \ac{HCAL} clusters by comparing momenta and energy measurements. 
+Multiple tracks can be linked to the same \ac{HCAL} cluster, while the closest cluster is retained when a track is linked to multiple \ac{HCAL} clusters. 
+Similar considerations apply to \ac{ECAL} clusters, where ordering based on distance is used to preserve appropriate links. \\
+
+In cases where the calibrated calorimetric energy is significantly lower than the total track momentum, a search is conducted for additional muons and fake tracks. 
+Tracks are progressively removed based on $\pT$ uncertainty until a certain threshold is reached. 
+The impact of this procedure on the overall track selection is minimal. \\
+
+Finally, the remaining tracks in the block are identified as \say{\ac{PF} charged hadrons}, with momentum derived directly from the track measurements. 
+If the calibrated energy of linked \ac{ECAL} and \ac{HCAL} clusters exceeds the associated charged particle momentum significantly, \say{\ac{PF} photons} and possibly \say{\ac{PF} neutral hadrons} are created. 
+The precedence is given to photons over neutral hadrons due to their higher contribution in jet energy. 
+Unclassified \ac{ECAL} and \ac{HCAL} clusters give rise to \say{\ac{PF} photons} and \say{\ac{PF} neutral hadrons} using the calibration procedure applied to \ac{HCAL} clusters.
 
 \section{Muons}
 
-Muons are required to be reconstructed as muon by the particle flow reconstruction. They additionally must pass \textit{Medium muon} requirements~\cite{cmsMediumMuon}, 
-as recommended by the Muon POG. These requirements are:
-\begin{itemize}
-\item The muon is reconstructed by the \textit{tracker} or \textit{global} muon reconstruction algorithm.
-\item The impact parameters $d_{xy}$ and $d_{z}$ between the muon track ('best track') 
-and the primary vertex are restricted as $d_{xy}<0.045$~cm and $d_{z}<0.2$~cm to ensure the muon is associated with the primary vertex
-\item At least 80\% of the tracker hits have to be valid
-\end{itemize}
-In addition, either of the following two sets of criteria must be satisfied:
-\begin{itemize}
-\item The muon is reconstructed by the \textit{global} muon reconstruction algorithm.
-\item The $\chi^2$/ndof of the global track fit is smaller than 3
-\item The $\chi^2$ of the tracker-standalone position match is smaller than 12
-\item The $\chi^2$ of the track kink finder is less than 20
-\item The muon segment compatibility is $>$ 0.303
-\end{itemize}
-\textit{or}:
-\begin{itemize}
-\item The muon segment compatibility is $>$ 0.451 
-\end{itemize}
+Three muon identification techniques are described by the \ac{PF} algorithm; tracker, global and \ac{PF} muons.
+Tracker muons and global muons differ in their requirements for muon segments. 
+Subsequently, tracker muon reconstruction efficiency if larger than global reconstruction efficiency, when dealing with muons with a momentum below 5 GeV. 
+This is because many low momentum muons are likely to reach only up to the first muon station. 
+However, global muon reconstruction enhances momentum resolution for muons with a $\pT$ exceeding 200 GeV, whilst below this the inner tracker information is dominant to the resolution, as shown in Figure~\ref{fig:muon_eff}. \\
 
-\textbf{Isolation}~\\
-To reduce the contamination from muons originating from heavy-flavoured quark decays in jets or decays in flight, selected muons are required to be isolated. The isolation is based on photon and neutral/charged hadron particle flow candidates within a cone size of $\Delta R<0.4$ of the selected muon. A relative combined isolation variable is defined as:
-
-\begin{equation}
-\label{eqn:reliso}
-I_{rel}^{\mu} = \frac{\Sigma P_{T}(\text{charged}) + \mathrm{max}(\Sigma E_{T}(\text{neutral}) + \Sigma E_{\text{T}}(\text{photon}) - \Delta\beta \Sigma E_{\text{T}}(\text{PU}),0)}{P_{\text{T}}^{\mu}},
-\end{equation}
-
-where $P_{T}(\text{charged})$ corresponds to the $P_{T}$ of all charged hadronic candidates from primary vertex, $E_{T}(\text{photon, neutral})$ 
-to the transverse energy of all photon and neutral hadron candidates, and $\Delta \beta$ is the energy estimate of neutral particles due to pileup, which is taken to be 0.5.
-Furthermore $E_{\text{T}}(\text{PU})$ corresponds to the transverse momentum of all charged hadronic candidates from pileup.
-The muon isolation used is $I_{rel}<0.15$.
-
-\begin{figure}[!hbtp]
+\begin{figure}[t]
 \centering
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/muon_res_loweta.png}}
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/muon_res_higheta.png}} \\
-\caption{The $\pT$ resolution for muon identification using the muon system (black), the inner tracker (blue), and the full system (red). This is shown for the pseduorapidity regions $0 < \eta < 0.8$ (a) and  $1.2 < \eta < 2.4$ (b)}
+\caption{The $\pT$ resolution for muon identification using the muon system (black), the inner tracker (blue), and the full system (red). This is shown for the pseduorapidity regions $0 < \eta < 0.8$ (a) and  $1.2 < \eta < 2.4$ (b).}
 \label{fig:muon_eff}
 \end{figure}
 
+The \texttt{Medium} muon identification~\cite{CMS:2018rym} is used for the analyses described in subsequent chapters.
+The requirements for this identification are:
+\begin{enumerate}[i)]
+\item The muon is reconstructed by the tracker or global muon reconstruction algorithm.
+\item The impact parameters, $d_{xy}$ and $d_{z}$, defined as the distance in the xy and z plane of the closest approach to the \ac{PV}, between the muon track and the primary vertex are restricted as $d_{xy}<0.045$ cm and $d_{z}<0.2$ cm to ensure the muon is associated with the primary vertex.
+\item At least 80\% of the tracker hits have to be valid.
+\end{enumerate}
+
+In addition, either of the following two sets of criteria must be satisfied:
+
+\begin{enumerate}[i)]
+\item The muon is reconstructed by the global muon reconstruction algorithm.
+\item The $\chi^2$ divided by the number of degrees of freedom of the global track fit is smaller than 3.
+\item The $\chi^2$ of the tracker standalone position match~\cite{CMS:2009fdy} is smaller than 12.
+\item The $\chi^2$ of the track kink finder~\cite{CMS:2018rym} is less than 20.
+\item The muon segment compatibility is $>$ 0.303.
+\end{enumerate}
+
+or,
+
+\begin{enumerate}[i)]
+\item The muon segment compatibility is $>$ 0.451 
+\end{enumerate}
+
+The efficiency of the \texttt{Medium} muon identification is approximately 90\%, with a misidentification probability of approximately 0.1\%. \\
+
+To reduce the contamination from muons originating from heavy-flavoured quark decays, muons are required to be isolated from hadronic activity in the detector. 
+The isolation is based on the $\pT$ of the photon ($\gamma$), neutral ($\text{h}^0$) and charged hadron ($\text{h}^{\pm}$ if originating from the \ac{PV} and $\text{h}^{\pm}, \text{PU}$ if not originating from \ac{PV}) \ac{PF} candidates within a cone size of $\Delta R<0.4$ of the selected muon ($\mu$). 
+A relative combined isolation variable is defined as:
+
+\begin{equation}
+\label{eqn:reliso}
+\Irel = \frac{1}{\pT^{\mu}} \Big( \sum \pT^{\text{h}^{\pm}} + \text{max}\Big( 0, \sum \pT^{\text{h}^0} + \sum \pT^{\gamma} - \Delta \beta \sum \pT^{\text{h}^{\pm}, \text{PU}} \Big) \Big),
+\end{equation}
+
+where the sums loop through all objects with the cone and $\Delta \beta$ is the energy estimate of neutral particles due to pileup, which is taken to be 0.5.
+This represents an estimated fraction of transverse momenta between the other contributions within the cone that originate from the interaction at the \ac{PV}, and the muon itself.
+The muon isolation can then be used to separate muons, with a low value of $\Irel$, from other hadronic objects, at higher values of $\Irel$
+The muon isolation cut used in the following chapters is optimised for muon identification from a tau leptons decay, and this is determined to be at 0.15.
+
 \section{Electrons}
 
-In addition, electrons are required to pass an identification variable based on a \ac{BDT} discriminator which uses track quality, shower shapes and kinematic quantities as input.
-The following variables are used as input to the BDT:  ~\cite{cmsElectron}
-\begin{itemize}
-\item Cluster shape variables $\sigma_{i\eta,i\eta}$ and $\sigma_{i\phi,i\phi}$, with $i\eta$ and $i\phi$ the integer
-label of the $\eta$ and $\phi$ calorimeter cell. The circularity =  $1 -\frac{E1\times5}{E5\times5}$, with
-$E1\times5$ and $E5\times5$ the energies in a $1\times5$ and a $5\times5$ grid around the super cluster seed,
-respectively. Shape variable R9 = $\frac{E3\times3}{E_{SC}}$, with $E3\times3$ the energy in a $3\times3$ grid
-of cells around the super cluster seed and $E_{SC}$ the raw energy of the super cluster.
-\item The number of valid hits in the track fit, the $\chi^2$ of the track fit and the $\chi^2$ of the GSFTrack fit
-\item The number of GSFtrack hits, the number of expected missing inner hits and the result of the conversion vertex fit
-\item The distance $\Delta \eta$ and $\Delta \phi$ between the reconstructed super cluster and the associated track at the position of the primary vertex, and the distance in $\eta$ between the super cluster and the track at the calorimeter surface.
-\item H/E, the ratio of the hadronic energy over the electromagnetic energy in the super cluster and E/P, the ratio of the super cluster energy over the momentum of the track associated with the electron 
-\item The ratio of the energy of the electron cluster and the momentum of the associated track, evaluated at the electron cluster,
- and $1/E_e - 1/P_e$, with $E_e$ the energy of the electron candidate and $P_e$ its momentum.
-\end{itemize}
-The BDT was trained on a $Z/\gamma^{*}$ Monte Carlo sample generated with
-\texttt{MadGraph 5}, in 3 $\eta$ bins for electrons with $p_{\text{T}}>10$ GeV.
-This analysis uses the version of the ID BDT without the isolation included in
-the training, instead using an additional cut on the electron isolation. This
-was shown to give similar performance to the version of the ID including the
-isolation and makes defining side-band regions used for estimation of
-backgrounds simpler.
+In addition to the \ac{PF} algorithm to reconstruct electrons, they are required to pass an identification variable based on a \ac{BDT} discriminator to distinguish genuine electrons from backgrounds like misidentified jets, electrons from photon conversions, and electrons produced in heavy-flavour decays~\cite{CMS:2015xaf}.
+The following variables are used as input to the \ac{BDT}:
 
-The electron are additionally required to pass the 90\% efficiency working point. Finally electrons are also subject to the same impact parameter requirements as the
-muons: the impact parameters $d_{xy}$ and $d_{z}$ between the electron track 
-and the primary vertex are restricted as $d_{xy}<0.045$~cm and $d_{z}<0.2$~cm to
-ensure the electron is associated with the primary vertex.
+\begin{enumerate}[i)]
+\item Shower shape variables.
+\item The fraction of energy deposited in the \ac{HCAL}.
+\item The fraction of energy lost through bremsstrahlung.
+\item Track quality variables.
+\item The variable $1/E_{\text{SC}} - 1/p$, where $E_{SC}$ is the \ac{SC} energy and $p$ is the momentum of the track at the point of closest approach to the vertex.
+\item Variables comparing the geometrical matching between the track and the \ac{SC}.
+\end{enumerate}
 
-The isolation used is based on photon and neutral/charged hadron particle flow
-candidates within a cone size of $\Delta R<0.3$ of the selected electron but
-used a different method to estimate the neutral particles due to pileup, namely
-the rho--effective-area method. The pileup in this method is estimated as
-$PU=\rho\cdot\text{EA}$, where $\rho$ is the event-specific average pile-up
-energy density per unit area in the $\phi$-$\eta$ plane and the EA is the
-effective area specific to the given type of isolation. The rho--effective-area
-subtracted relative combined isolation variable is defined as:
+The \ac{BDT} was trained on a $Z/\gamma^{*}$ \ac{MC} sample generated with \MADGRAPH, in 3 $\eta$ bins for electrons with $\pT>10$ GeV.
+The performance of the \ac{BDT} on 
+This thesis uses the version of the identification \ac{BDT} without the isolation included in the training, instead using an additional cut on the electron isolation. 
+This allows for easily accessible sideband regions (orthogonal regions to the signal) used for estimation of background estimation. \\
+
+\begin{figure}[t]
+\centering
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/electron_id_barrel.png}}
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/electron_id_endcap.png}} \\
+\caption{Performance of the electron BDT using $Z\rightarrow ee$ enriched events from data (dots), background-enriched events from data (triangles), and $Z\rightarrow ee$ MC events (purple solid histogram). This is shown for the performance in the barrel (a) and the endcaps (b) for a BDT that does not utilise trigger information during training~\cite{CMS:2015xaf}.}
+\label{fig:muon_eff}
+\end{figure}
+
+The electron are required to pass the 90\% efficiency working point of the \ac{BDT}, which corresponds to a misidentification probability of 2\%~\cite{CMS:2015xaf}. 
+Finally electrons are also subject to the same impact parameter requirements as the muons: the impact parameters $d_{xy}$ and $d_{z}$ between the electron track and the primary vertex are restricted as $d_{xy}<0.045$ cm and $d_{z}<0.2$ cm to ensure the electron is associated with the primary vertex. \\
+
+Similarly to muons, an isolation variable is used to further separate electrons from other backgrounds.
+Different to for muons, the isolation used is based on photon, neutral and charged hadron \ac{PF} candidates within a smaller cone size of $\Delta R<0.3$ of the selected electron.
+A different method to estimate the neutral particles due to \ac{PU} is used, namely the rho-effective-area method. 
+The pileup in this method is estimated as $PU=\rho\cdot A_{\text{eff}}$, where $\rho$ is the event-specific average pile-up energy density per unit area in the $\phi$-$\eta$ plane and the $A_{\text{eff}}$ is the effective area specific to the given type of isolation. 
+The rho-effective-area subtracted relative combined isolation variable is defined as
+
 \begin{equation}
-\label{eqn:electron_reliso_rho} 
-I_{\text{rel}}^{e} = \frac{\Sigma
-    P_{T}(\text{charged}) + \mathrm{max}(\Sigma E_{T}(\text{neutral}) + \Sigma
-E_{T}(\text{photon}) - \rho\cdot\text{EA},0)}{P_{T}^{e}}, \end{equation} where
-the $\text{EA}$ is measured in bins of $\eta$ as listed in Table
-\ref{tab:EleEA}. The electron isolation used is $I_{rel}<0.15$. 
+\label{eqn:electron_reliso_rho}
+\Irel = \frac{1}{\pT^{e}} \Big( \sum \pT^{\text{h}^{\pm}} + \text{max}\Big( 0, \sum \pT^{\text{h}^0} + \sum \pT^{\gamma} - \rho A_{\text{eff}} \Big) \Big),
+\end{equation}
+
+where $A_{\text{eff}}$ is measured in bins of $\eta$ as listed in Table~\ref{tab:EleEA}.
+The optimal isolation cut to reduce backgrounds in from decay of a $\tau$ lepton to an electron is found to be 0.15 and so this is used in subsequent chapters.
 
 \begin{table}[htb]
 \begin{center}
-{\footnotesize
 \begin{tabular}{|c|c|}
 \hline
-$\eta$ range & EA \\
+$\eta$ range & $A_{\text{eff}}$ \\
+\hline
 \hline
 0.0$\leq\eta<$1.0   &  0.1440 \\
 1.0$\leq\eta<$1.479 &  0.1562 \\
@@ -170,7 +218,6 @@ $\eta$ range & EA \\
 2.4$\leq\eta<$5.0   &  0.1654 \\
 \hline
 \end{tabular}
-} % end footnotesize
 \end{center}
 \caption{
  Electron effective areas used for the $\rho$-corrected isolation computation.
