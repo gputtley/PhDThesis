@@ -1,528 +1,746 @@
-\begin{thebibliography}{100}
+
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{100}
 
 \bibitem{CMS_MSSM_Tau_2018}
-{CMS Collaboration}, ``{Search for additional neutral MSSM Higgs bosons in the
-  $\tau\tau$ final state in proton-proton collisions at $\sqrt{s}=$ 13 TeV},''
-  {\em JHEP}, vol.~09, p.~007, 2018.
+{CMS Collaboration}, \emph{{Search for additional neutral MSSM Higgs bosons in
+  the $\tau\tau$ final state in proton-proton collisions at $\sqrt{s}=$ 13
+  TeV}}, \href{https://doi.org/10.1007/JHEP09(2018)007}{\emph{JHEP} {\bfseries
+  09} (2018) 007} [\href{https://arxiv.org/abs/1803.06553}{{\ttfamily
+  1803.06553}}].
 
 \bibitem{CMS:2022rbd}
-{CMS Collaboration}, ``{Searches for additional Higgs bosons and vector
+{CMS Collaboration}, \emph{{Searches for additional Higgs bosons and vector
   leptoquarks in $\tau\tau$ final states in proton-proton collisions at
-  $\sqrt{s}=13~\mathrm{TeV}$},'' 2022.
+  $\sqrt{s}=13~\mathrm{TeV}$}}, .
 
 \bibitem{sm_diagram}
 D.~Galbraith and C.~Burgard,
-  ``https://texample.net/tikz/examples/model-physics/,'' May 2023.
+  \emph{https://texample.net/tikz/examples/model-physics/},  May, 2023.
 
 \bibitem{Bartosik:2847538}
-H.~Bartosik and G.~Rumolo, ``{Performance of the LHC injector chain after the
-  upgrade and potential development},'' tech. rep., 2022.
-\newblock Contribution to Snowmass 2021.
+H.~Bartosik and G.~Rumolo, \emph{{Performance of the LHC injector chain after
+  the upgrade and potential development}},  tech. rep., 2022.
 
 \bibitem{lumi}
-``{CMS Luminosity Public Results},'' May 2023.
+\emph{{CMS Luminosity Public Results}},  May, 2023.
 
 \bibitem{CMS_Setup}
-{CMS Collaboration}, ``{The CMS Experiment at the CERN LHC},'' {\em JINST},
-  vol.~3, p.~S08004, 2008.
+{CMS Collaboration}, \emph{{The CMS Experiment at the CERN LHC}},
+  \href{https://doi.org/10.1088/1748-0221/3/08/S08004}{\emph{JINST} {\bfseries
+  3} (2008) S08004}.
 
 \bibitem{Tapper:2013yva}
-``{CMS Technical Design Report for the Level-1 Trigger Upgrade},'' 6 2013.
-
-\bibitem{deepjet}
-C.~Collaboration, ``Cms public twiki,'' May 2023.
-
-\bibitem{Sirunyan:2018pgf}
-A.~M. Sirunyan {\em et~al.}, ``Performance of reconstruction and identification
-  of {$\tau$} leptons decaying to hadrons and {$\nu_\tau$} in pp collisions at
-  {$\sqrt{s}=$ 13 TeV},'' {\em JINST}, vol.~13, p.~P10005, 2018.
-
-\bibitem{CMS:2022prd}
-A.~Tumasyan {\em et~al.}, ``Identification of hadronic tau lepton decays using
-  a deep neural network,'' {\em JINST}, vol.~17, p.~P07023, 2022.
-
-\bibitem{CMS:2018jrd}
-A.~M. Sirunyan {\em et~al.}, ``{Performance of reconstruction and
-  identification of $\tau$ leptons decaying to hadrons and $\nu_\tau$ in pp
-  collisions at $\sqrt{s}=$ 13 TeV},'' {\em JINST}, vol.~13, no.~10, p.~P10005,
-  2018.
-
-\bibitem{ATLAS:2020zms}
-G.~Aad {\em et~al.}, ``Search for heavy {Higgs} bosons decaying into two tau
-  leptons with the {ATLAS} detector using pp collisions at {$\sqrt{s}=13$
-  TeV},'' {\em Phys. Rev. Lett.}, vol.~125, p.~051801, 2020.
-
-\bibitem{Cornella:2021sby}
-C.~Cornella, D.~A. Faroughy, J.~Fuentes-Martin, G.~Isidori, and M.~Neubert,
-  ``Reading the footprints of the {B}-meson flavor anomalies,'' {\em JHEP},
-  vol.~08, p.~050, 2021.
-
-\bibitem{Jueid:2021avn}
-A.~Jueid, J.~Kim, S.~Lee, and J.~Song, ``{Type-X two-Higgs-doublet model in
-  light of the muon g-2: Confronting Higgs boson and collider data},'' {\em
-  Phys. Rev. D}, vol.~104, no.~9, p.~095008, 2021.
-
-\bibitem{ParticleDataGroup:2022pth}
-R.~L. Workman {\em et~al.}, ``{Review of Particle Physics},'' {\em PTEP},
-  vol.~2022, p.~083C01, 2022.
-
-\bibitem{ATLAS_Higgs_Discovery}
-{ATLAS Collaboration}, ``{Observation of a new particle in the search for the
-  Standard Model Higgs boson with the ATLAS detector at the LHC},'' {\em Phys.
-  Lett. B}, vol.~716, pp.~1--29, 2012.
-
-\bibitem{CMS_Higgs_Discovery}
-{CMS Collaboration}, ``{Observation of a New Boson at a Mass of 125 GeV with
-  the CMS Experiment at the LHC},'' {\em Phys. Lett. B}, vol.~716, pp.~30--61,
-  2012.
-
-\bibitem{LHCb:2021trn}
-R.~Aaij {\em et~al.}, ``{Test of lepton universality in beauty-quark decays},''
-  {\em Nature Phys.}, vol.~18, no.~3, pp.~277--282, 2022.
-
-\bibitem{Kowalewski:2013mna}
-B.~Kowalewski, ``{Evidence for an excess of $B \to D^{(*)} \tau \nu$ decays},''
-  {\em J. Phys. Conf. Ser.}, vol.~455, p.~012039, 2013.
-
-\bibitem{BaBar:2013mob}
-J.~P. Lees {\em et~al.}, ``Measurement of an excess of {$\bar{\mathrm{B}} \to
-  \mathrm{D}^{(*)}\tau^- \bar{\nu}_\tau$} decays and implications for charged
-  higgs bosons,'' {\em Phys. Rev. D}, vol.~88, p.~072012, 2013.
-
-\bibitem{Belle:2015qfa}
-M.~Huschle {\em et~al.}, ``{Measurement of the branching ratio of $\bar{B} \to
-  D^{(\ast)} \tau^- \bar{\nu}_\tau$ relative to $\bar{B} \to D^{(\ast)} \ell^-
-  \bar{\nu}_\ell$ decays with hadronic tagging at Belle},'' {\em Phys. Rev. D},
-  vol.~92, no.~7, p.~072014, 2015.
-
-\bibitem{LHCb:2015gmp}
-R.~Aaij {\em et~al.}, ``{Measurement of the ratio of branching fractions
-  $\mathcal{B}(\bar{\mathrm{B}}^0 \to
-  \mathrm{D}^{*+}\tau^{-}\bar{\nu}_{\tau})/\mathcal{B}(\bar{\mathrm{B}}^0 \to
-  \mathrm{D}^{*+}\mu^{-}\bar{\nu}_{\mu})$},'' {\em Phys. Rev. Lett.}, vol.~115,
-  p.~111803, 2015.
-\newblock [Erratum: \DOI{10.1103/PhysRevLett.115.159901}].
-
-\bibitem{Belle:2016dyj}
-S.~Hirose {\em et~al.}, ``Measurement of the $\tau$ lepton polarization and
-  {$R(\mathrm{D}^*)$} in the decay {$\bar{\mathrm{B}} \to \mathrm{D}^* \tau^-
-  \bar{\nu}_\tau$},'' {\em Phys. Rev. Lett.}, vol.~118, p.~211801, 2017.
-
-\bibitem{LHCb:2017rln}
-R.~Aaij {\em et~al.}, ``{Test of Lepton Flavor Universality by the measurement
-  of the $B^0 \to D^{*-} \tau^+ \nu_{\tau}$ branching fraction using
-  three-prong $\tau$ decays},'' {\em Phys. Rev. D}, vol.~97, no.~7, p.~072013,
-  2018.
-
-\bibitem{LHCb:2017smo}
-R.~Aaij {\em et~al.}, ``Measurement of the ratio of the {$\mathrm{B}^0 \to
-  \mathrm{D}^{*-} \tau^+ \nu_{\tau}$ and $\mathrm{B}^0 \to \mathrm{D}^{*-}
-  \mu^+ \nu_{\mu}$} branching fractions using three-prong $\tau$-lepton
-  decays,'' {\em Phys. Rev. Lett.}, vol.~120, p.~171802, 2018.
-
-\bibitem{Muong-2:2021ojo}
-B.~Abi {\em et~al.}, ``{Measurement of the Positive Muon Anomalous Magnetic
-  Moment to 0.46 ppm},'' {\em Phys. Rev. Lett.}, vol.~126, no.~14, p.~141801,
-  2021.
-
-\bibitem{LHCb:2022zom}
-``{Measurement of lepton universality parameters in $B^+\to K^+\ell^+\ell^-$
-  and $B^0\to K^{*0}\ell^+\ell^-$ decays},'' 12 2022.
-
-\bibitem{Gross:1973id}
-D.~J. Gross and F.~Wilczek, ``{Ultraviolet Behavior of Nonabelian Gauge
-  Theories},'' {\em Phys. Rev. Lett.}, vol.~30, pp.~1343--1346, 1973.
-
-\bibitem{Politzer:1973fx}
-H.~D. Politzer, ``{Reliable Perturbative Results for Strong Interactions?},''
-  {\em Phys. Rev. Lett.}, vol.~30, pp.~1346--1349, 1973.
-
-\bibitem{Glashow:1961tr}
-S.~L. Glashow, ``{Partial Symmetries of Weak Interactions},'' {\em Nucl.
-  Phys.}, vol.~22, pp.~579--588, 1961.
-
-\bibitem{Weinberg:1967tq}
-S.~Weinberg, ``{A Model of Leptons},'' {\em Phys. Rev. Lett.}, vol.~19,
-  pp.~1264--1266, 1967.
-
-\bibitem{Salam:1968rm}
-A.~Salam, ``{Weak and Electromagnetic Interactions},'' {\em Conf. Proc. C},
-  vol.~680519, pp.~367--377, 1968.
-
-\bibitem{UA1:1983crd}
-G.~Arnison {\em et~al.}, ``{Experimental Observation of Isolated Large
-  Transverse Energy Electrons with Associated Missing Energy at $\sqrt{s}= 540$
-  GeV},'' {\em Phys. Lett. B}, vol.~122, pp.~103--116, 1983.
-
-\bibitem{UA2:1983tsx}
-M.~Banner {\em et~al.}, ``{Observation of Single Isolated Electrons of High
-  Transverse Momentum in Events with Missing Transverse Energy at the CERN
-  anti-p p Collider},'' {\em Phys. Lett. B}, vol.~122, pp.~476--485, 1983.
-
-\bibitem{Englert:1964et}
-F.~Englert and R.~Brout, ``Broken symmetry and the mass of gauge vector
-  mesons,'' {\em Phys. Rev. Lett.}, p.~321, 1964.
-
-\bibitem{Higgs:1964ia}
-P.~W. Higgs, ``Broken symmetries, massless particles and gauge fields,'' {\em
-  Phys. Lett.}, p.~132, 1964.
-
-\bibitem{Higgs:1964pj}
-P.~W. Higgs, ``Broken symmetries and the masses of gauge bosons,'' {\em Phys.
-  Rev. Lett.}, p.~508, 1964.
-
-\bibitem{Higgs:1966ev}
-P.~W. Higgs, ``Spontaneous symmetry breakdown without massless bosons,'' {\em
-  Phys. Rev.}, p.~1156, 1966.
-
-\bibitem{Guralnik:1964eu}
-G.~S. Guralnik, C.~R. Hagen, and T.~W.~B. Kibble, ``Global conservation laws
-  and massless particles,'' {\em Phys. Rev. Lett.}, p.~585, 1964.
-
-\bibitem{Kibble:1967sv}
-T.~W.~B. Kibble, ``Symmetry breaking in non-{A}belian gauge theories,'' {\em
-  Phys. Rev.}, p.~1554, 1967.
-
-\bibitem{Goldstone:1961eq}
-J.~Goldstone, ``{Field Theories with Superconductor Solutions},'' {\em Nuovo
-  Cim.}, vol.~19, pp.~154--164, 1961.
-
-\bibitem{CMS:2020xrn}
-A.~M. Sirunyan {\em et~al.}, ``{A measurement of the Higgs boson mass in the
-  diphoton decay channel},'' {\em Phys. Lett. B}, vol.~805, p.~135425, 2020.
-
-\bibitem{SUSY_Primer}
-S.~P. Martin, ``{A Supersymmetry Primer},'' {\em Advanced Series on Directions
-  in High Energy Physics}, p.~1–98, Jul 1998.
-
-\bibitem{Diaz:2017lit}
-B.~Diaz, M.~Schmaltz, and Y.-M. Zhong, ``The leptoquark
-  hunter\textquoteright{}s guide: Pair production,'' {\em JHEP}, vol.~10,
-  p.~097, 2017.
-
-\bibitem{Schmaltz:2018nls}
-M.~Schmaltz and Y.-M. Zhong, ``The leptoquark hunter\textquoteright{}s guide:
-  Large coupling,'' {\em JHEP}, vol.~01, p.~132, 2019.
-
-\bibitem{Muong-2:2006rrc}
-G.~W. Bennett {\em et~al.}, ``{Final Report of the Muon E821 Anomalous Magnetic
-  Moment Measurement at BNL},'' {\em Phys. Rev. D}, vol.~73, p.~072003, 2006.
-
-\bibitem{Ilisie:2015tra}
-V.~Ilisie, ``{New Barr-Zee contributions to $\mathbf{(g-2)_\mu}$ in
-  two-Higgs-doublet models},'' {\em JHEP}, vol.~04, p.~077, 2015.
-
-\bibitem{Barr:1990vd}
-S.~M. Barr and A.~Zee, ``{Electric Dipole Moment of the Electron and of the
-  Neutron},'' {\em Phys. Rev. Lett.}, vol.~65, pp.~21--24, 1990.
-\newblock [Erratum: Phys.Rev.Lett. 65, 2920 (1990)].
-
-\bibitem{Evans:2008zzb}
-``{LHC Machine},'' {\em JINST}, vol.~3, p.~S08001, 2008.
-
-\bibitem{203828}
-``{LEP Design Report: Vol.2. The LEP Main Ring},'' 6 1984.
-
-\bibitem{ALICE:2008ngc}
-K.~Aamodt {\em et~al.}, ``{The ALICE experiment at the CERN LHC},'' {\em
-  JINST}, vol.~3, p.~S08002, 2008.
-
-\bibitem{ATLAS:2008xda}
-G.~Aad {\em et~al.}, ``{The ATLAS Experiment at the CERN Large Hadron
-  Collider},'' {\em JINST}, vol.~3, p.~S08003, 2008.
-
-\bibitem{LHCb:2008vvz}
-A.~A. Alves, Jr. {\em et~al.}, ``{The LHCb Detector at the LHC},'' {\em JINST},
-  vol.~3, p.~S08005, 2008.
-
-\bibitem{Malberti:2014pda}
-M.~Malberti, ``{Operation and performance of the CMS tracker},'' {\em PoS},
-  vol.~TIPP2014, p.~347, 2014.
-
-\bibitem{CMS:2012sda}
-``{CMS Technical Design Report for the Pixel Detector Upgrade},'' 9 2012.
-
-\bibitem{CMS:2013lxn}
-S.~Chatrchyan {\em et~al.}, ``{Energy Calibration and Resolution of the CMS
-  Electromagnetic Calorimeter in $pp$ Collisions at $\sqrt{s} = 7$ TeV},'' {\em
-  JINST}, vol.~8, p.~P09009, 2013.
-
-\bibitem{CMS:2014pgm}
-S.~Chatrchyan {\em et~al.}, ``{Description and performance of track and
-  primary-vertex reconstruction with the CMS tracker},'' {\em JINST}, vol.~9,
-  no.~10, p.~P10009, 2014.
-
-\bibitem{Fruhwirth:1987fm}
-R.~Fruhwirth, ``{Application of Kalman filtering to track and vertex
-  fitting},'' {\em Nucl. Instrum. Meth. A}, vol.~262, pp.~444--450, 1987.
-
-\bibitem{CMS:2010mua}
-``{Measurement of Tracking Efficiency},'' 2010.
-
-\bibitem{Rose:1998dzq}
-K.~Rose, ``{Deterministic annealing for clustering, compression,
-  classification, regression, and related optimization problems},'' {\em IEEE
-  Proc.}, vol.~86, no.~11, pp.~2210--2239, 1998.
-
-\bibitem{Fruhwirth:2007hz}
-R.~Fruhwirth, W.~Waltenberger, and P.~Vanlaer, ``{Adaptive vertex fitting},''
-  {\em J. Phys. G}, vol.~34, p.~N343, 2007.
-
-\bibitem{PF_CMS}
-{CMS Collaboration}, ``{Particle-flow reconstruction and global event
-  description with the CMS detector},'' {\em JINST}, vol.~12, no.~10,
-  p.~P10003, 2017.
-
-\bibitem{CMS:2010byl}
-``{Commissioning of the Particle-flow Event Reconstruction with the first LHC
-  collisions recorded in the CMS detector},'' 2010.
-
-\bibitem{CMS:2010eua}
-``{Commissioning of the Particle-Flow reconstruction in Minimum-Bias and Jet
-  Events from pp Collisions at 7 TeV},'' 7 2010.
-
-\bibitem{Adam:934067}
-W.~Adam, B.~Mangano, T.~Speer, and T.~Todorov, ``{Track Reconstruction in the
-  CMS tracker},'' tech. rep., CERN, Geneva, 2006.
-
-\bibitem{CMS:2012nsv}
-S.~Chatrchyan {\em et~al.}, ``{Performance of CMS Muon Reconstruction in $pp$
-  Collision Events at $\sqrt{s}=7$ TeV},'' {\em JINST}, vol.~7, p.~P10002,
-  2012.
-
-\bibitem{CMS:2018rym}
-A.~M. Sirunyan {\em et~al.}, ``{Performance of the CMS muon detector and muon
-  reconstruction with proton-proton collisions at $\sqrt{s}=$ 13 TeV},'' {\em
-  JINST}, vol.~13, no.~06, p.~P06015, 2018.
+\emph{{CMS Technical Design Report for the Level-1 Trigger Upgrade}}, .
 
 \bibitem{CMS:2015xaf}
-V.~Khachatryan {\em et~al.}, ``{Performance of Electron Reconstruction and
+V.~Khachatryan et~al., \emph{{Performance of Electron Reconstruction and
   Selection with the CMS Detector in Proton-Proton Collisions at
-  \ensuremath{\sqrt{}}s = 8 TeV},'' {\em JINST}, vol.~10, no.~06, p.~P06005,
-  2015.
+  \ensuremath{\sqrt{}}s = 8 TeV}},
+  \href{https://doi.org/10.1088/1748-0221/10/06/P06005}{\emph{JINST} {\bfseries
+  10} (2015) P06005} [\href{https://arxiv.org/abs/1502.02701}{{\ttfamily
+  1502.02701}}].
+
+\bibitem{deepjet}
+C.~Collaboration, \emph{Cms public twiki},  May, 2023.
+
+\bibitem{Sirunyan:2018pgf}
+A.~M. Sirunyan et~al., \emph{Performance of reconstruction and identification
+  of {$\tau$} leptons decaying to hadrons and {$\nu_\tau$} in pp collisions at
+  {$\sqrt{s}=$ 13 TeV}},
+  \href{https://doi.org/10.1088/1748-0221/13/10/P10005}{\emph{JINST} {\bfseries
+  13} (2018) P10005} [\href{https://arxiv.org/abs/1809.02816}{{\ttfamily
+  1809.02816}}].
+
+\bibitem{CMS:2022prd}
+A.~Tumasyan et~al., \emph{Identification of hadronic tau lepton decays using a
+  deep neural network},
+  \href{https://doi.org/10.1088/1748-0221/17/07/P07023}{\emph{JINST} {\bfseries
+  17} (2022) P07023} [\href{https://arxiv.org/abs/2201.08458}{{\ttfamily
+  2201.08458}}].
+
+\bibitem{CMS:2018jrd}
+A.~M. Sirunyan et~al., \emph{{Performance of reconstruction and identification
+  of $\tau$ leptons decaying to hadrons and $\nu_\tau$ in pp collisions at
+  $\sqrt{s}=$ 13 TeV}},
+  \href{https://doi.org/10.1088/1748-0221/13/10/P10005}{\emph{JINST} {\bfseries
+  13} (2018) P10005} [\href{https://arxiv.org/abs/1809.02816}{{\ttfamily
+  1809.02816}}].
+
+\bibitem{CMS_embedding}
+{CMS Collaboration}, \emph{{An embedding technique to determine $\tau\tau$
+  backgrounds in proton-proton collision data}},
+  \href{https://doi.org/10.1088/1748-0221/14/06/P06032}{\emph{JINST} {\bfseries
+  14} (2019) P06032} [\href{https://arxiv.org/abs/1903.01216}{{\ttfamily
+  1903.01216}}].
+
+\bibitem{ATLAS:2020zms}
+G.~Aad et~al., \emph{Search for heavy {Higgs} bosons decaying into two tau
+  leptons with the {ATLAS} detector using pp collisions at {$\sqrt{s}=13$
+  TeV}}, \href{https://doi.org/10.1103/PhysRevLett.125.051801}{\emph{Phys. Rev.
+  Lett.} {\bfseries 125} (2020) 051801}
+  [\href{https://arxiv.org/abs/2002.12223}{{\ttfamily 2002.12223}}].
+
+\bibitem{Cornella:2021sby}
+C.~Cornella, D.~A. Faroughy, J.~Fuentes-Martin, G.~Isidori and M.~Neubert,
+  \emph{Reading the footprints of the {B}-meson flavor anomalies},
+  \href{https://doi.org/10.1007/JHEP08(2021)050}{\emph{JHEP} {\bfseries 08}
+  (2021) 050} [\href{https://arxiv.org/abs/2103.16558}{{\ttfamily
+  2103.16558}}].
+
+\bibitem{Jueid:2021avn}
+A.~Jueid, J.~Kim, S.~Lee and J.~Song, \emph{{Type-X two-Higgs-doublet model in
+  light of the muon g-2: Confronting Higgs boson and collider data}},
+  \href{https://doi.org/10.1103/PhysRevD.104.095008}{\emph{Phys. Rev. D}
+  {\bfseries 104} (2021) 095008}
+  [\href{https://arxiv.org/abs/2104.10175}{{\ttfamily 2104.10175}}].
+
+\bibitem{ParticleDataGroup:2022pth}
+R.~L. Workman et~al., \emph{{Review of Particle Physics}},
+  \href{https://doi.org/10.1093/ptep/ptac097}{\emph{PTEP} {\bfseries 2022}
+  (2022) 083C01}.
+
+\bibitem{ATLAS_Higgs_Discovery}
+{ATLAS Collaboration}, \emph{{Observation of a new particle in the search for
+  the Standard Model Higgs boson with the ATLAS detector at the LHC}},
+  \href{https://doi.org/10.1016/j.physletb.2012.08.020}{\emph{Phys. Lett. B}
+  {\bfseries 716} (2012) 1} [\href{https://arxiv.org/abs/1207.7214}{{\ttfamily
+  1207.7214}}].
+
+\bibitem{CMS_Higgs_Discovery}
+{CMS Collaboration}, \emph{{Observation of a New Boson at a Mass of 125 GeV
+  with the CMS Experiment at the LHC}},
+  \href{https://doi.org/10.1016/j.physletb.2012.08.021}{\emph{Phys. Lett. B}
+  {\bfseries 716} (2012) 30} [\href{https://arxiv.org/abs/1207.7235}{{\ttfamily
+  1207.7235}}].
+
+\bibitem{LHCb:2021trn}
+R.~Aaij et~al., \emph{{Test of lepton universality in beauty-quark decays}},
+  \href{https://doi.org/10.1038/s41567-021-01478-8}{\emph{Nature Phys.}
+  {\bfseries 18} (2022) 277}
+  [\href{https://arxiv.org/abs/2103.11769}{{\ttfamily 2103.11769}}].
+
+\bibitem{Kowalewski:2013mna}
+B.~Kowalewski, \emph{{Evidence for an excess of $B \to D^{(*)} \tau \nu$
+  decays}}, \href{https://doi.org/10.1088/1742-6596/455/1/012039}{\emph{J.
+  Phys. Conf. Ser.} {\bfseries 455} (2013) 012039}.
+
+\bibitem{BaBar:2013mob}
+J.~P. Lees et~al., \emph{Measurement of an excess of {$\bar{\mathrm{B}} \to
+  \mathrm{D}^{(*)}\tau^- \bar{\nu}_\tau$} decays and implications for charged
+  higgs bosons}, \href{https://doi.org/10.1103/PhysRevD.88.072012}{\emph{Phys.
+  Rev. D} {\bfseries 88} (2013) 072012}
+  [\href{https://arxiv.org/abs/1303.0571}{{\ttfamily 1303.0571}}].
+
+\bibitem{Belle:2015qfa}
+M.~Huschle et~al., \emph{{Measurement of the branching ratio of $\bar{B} \to
+  D^{(\ast)} \tau^- \bar{\nu}_\tau$ relative to $\bar{B} \to D^{(\ast)} \ell^-
+  \bar{\nu}_\ell$ decays with hadronic tagging at Belle}},
+  \href{https://doi.org/10.1103/PhysRevD.92.072014}{\emph{Phys. Rev. D}
+  {\bfseries 92} (2015) 072014}
+  [\href{https://arxiv.org/abs/1507.03233}{{\ttfamily 1507.03233}}].
+
+\bibitem{LHCb:2015gmp}
+R.~Aaij et~al., \emph{{Measurement of the ratio of branching fractions
+  $\mathcal{B}(\bar{\mathrm{B}}^0 \to
+  \mathrm{D}^{*+}\tau^{-}\bar{\nu}_{\tau})/\mathcal{B}(\bar{\mathrm{B}}^0 \to
+  \mathrm{D}^{*+}\mu^{-}\bar{\nu}_{\mu})$}},
+  \href{https://doi.org/10.1103/PhysRevLett.115.111803}{\emph{Phys. Rev. Lett.}
+  {\bfseries 115} (2015) 111803}
+  [\href{https://arxiv.org/abs/1506.08614}{{\ttfamily 1506.08614}}].
+
+\bibitem{Belle:2016dyj}
+S.~Hirose et~al., \emph{Measurement of the $\tau$ lepton polarization and
+  {$R(\mathrm{D}^*)$} in the decay {$\bar{\mathrm{B}} \to \mathrm{D}^* \tau^-
+  \bar{\nu}_\tau$}},
+  \href{https://doi.org/10.1103/PhysRevLett.118.211801}{\emph{Phys. Rev. Lett.}
+  {\bfseries 118} (2017) 211801}
+  [\href{https://arxiv.org/abs/1612.00529}{{\ttfamily 1612.00529}}].
+
+\bibitem{LHCb:2017rln}
+R.~Aaij et~al., \emph{{Test of Lepton Flavor Universality by the measurement of
+  the $B^0 \to D^{*-} \tau^+ \nu_{\tau}$ branching fraction using three-prong
+  $\tau$ decays}},
+  \href{https://doi.org/10.1103/PhysRevD.97.072013}{\emph{Phys. Rev. D}
+  {\bfseries 97} (2018) 072013}
+  [\href{https://arxiv.org/abs/1711.02505}{{\ttfamily 1711.02505}}].
+
+\bibitem{LHCb:2017smo}
+R.~Aaij et~al., \emph{Measurement of the ratio of the {$\mathrm{B}^0 \to
+  \mathrm{D}^{*-} \tau^+ \nu_{\tau}$ and $\mathrm{B}^0 \to \mathrm{D}^{*-}
+  \mu^+ \nu_{\mu}$} branching fractions using three-prong $\tau$-lepton
+  decays}, \href{https://doi.org/10.1103/PhysRevLett.120.171802}{\emph{Phys.
+  Rev. Lett.} {\bfseries 120} (2018) 171802}
+  [\href{https://arxiv.org/abs/1708.08856}{{\ttfamily 1708.08856}}].
+
+\bibitem{Muong-2:2021ojo}
+B.~Abi et~al., \emph{{Measurement of the Positive Muon Anomalous Magnetic
+  Moment to 0.46 ppm}},
+  \href{https://doi.org/10.1103/PhysRevLett.126.141801}{\emph{Phys. Rev. Lett.}
+  {\bfseries 126} (2021) 141801}
+  [\href{https://arxiv.org/abs/2104.03281}{{\ttfamily 2104.03281}}].
+
+\bibitem{LHCb:2022zom}
+\emph{{Measurement of lepton universality parameters in $B^+\to
+  K^+\ell^+\ell^-$ and $B^0\to K^{*0}\ell^+\ell^-$ decays}},
+  \href{https://arxiv.org/abs/2212.09153}{{\ttfamily 2212.09153}}.
+
+\bibitem{Gross:1973id}
+D.~J. Gross and F.~Wilczek, \emph{{Ultraviolet Behavior of Nonabelian Gauge
+  Theories}}, \href{https://doi.org/10.1103/PhysRevLett.30.1343}{\emph{Phys.
+  Rev. Lett.} {\bfseries 30} (1973) 1343}.
+
+\bibitem{Politzer:1973fx}
+H.~D. Politzer, \emph{{Reliable Perturbative Results for Strong
+  Interactions?}},
+  \href{https://doi.org/10.1103/PhysRevLett.30.1346}{\emph{Phys. Rev. Lett.}
+  {\bfseries 30} (1973) 1346}.
+
+\bibitem{Glashow:1961tr}
+S.~L. Glashow, \emph{{Partial Symmetries of Weak Interactions}},
+  \href{https://doi.org/10.1016/0029-5582(61)90469-2}{\emph{Nucl. Phys.}
+  {\bfseries 22} (1961) 579}.
+
+\bibitem{Weinberg:1967tq}
+S.~Weinberg, \emph{{A Model of Leptons}},
+  \href{https://doi.org/10.1103/PhysRevLett.19.1264}{\emph{Phys. Rev. Lett.}
+  {\bfseries 19} (1967) 1264}.
+
+\bibitem{Salam:1968rm}
+A.~Salam, \emph{{Weak and Electromagnetic Interactions}},
+  \href{https://doi.org/10.1142/9789812795915_0034}{\emph{Conf. Proc. C}
+  {\bfseries 680519} (1968) 367}.
+
+\bibitem{UA1:1983crd}
+G.~Arnison et~al., \emph{{Experimental Observation of Isolated Large Transverse
+  Energy Electrons with Associated Missing Energy at $\sqrt{s}= 540$ GeV}},
+  \href{https://doi.org/10.1016/0370-2693(83)91177-2}{\emph{Phys. Lett. B}
+  {\bfseries 122} (1983) 103}.
+
+\bibitem{UA2:1983tsx}
+M.~Banner et~al., \emph{{Observation of Single Isolated Electrons of High
+  Transverse Momentum in Events with Missing Transverse Energy at the CERN
+  anti-p p Collider}},
+  \href{https://doi.org/10.1016/0370-2693(83)91605-2}{\emph{Phys. Lett. B}
+  {\bfseries 122} (1983) 476}.
+
+\bibitem{Englert:1964et}
+F.~Englert and R.~Brout, \emph{Broken symmetry and the mass of gauge vector
+  mesons}, \href{https://doi.org/10.1103/PhysRevLett.13.321}{\emph{Phys. Rev.
+  Lett.} (1964) 321}.
+
+\bibitem{Higgs:1964ia}
+P.~W. Higgs, \emph{Broken symmetries, massless particles and gauge fields},
+  \href{https://doi.org/10.1016/0031-9163(64)91136-9}{\emph{Phys. Lett.} (1964)
+  132}.
+
+\bibitem{Higgs:1964pj}
+P.~W. Higgs, \emph{Broken symmetries and the masses of gauge bosons},
+  \href{https://doi.org/10.1103/PhysRevLett.13.508}{\emph{Phys. Rev. Lett.}
+  (1964) 508}.
+
+\bibitem{Higgs:1966ev}
+P.~W. Higgs, \emph{Spontaneous symmetry breakdown without massless bosons},
+  \href{https://doi.org/10.1103/PhysRev.145.1156}{\emph{Phys. Rev.} (1966)
+  1156}.
+
+\bibitem{Guralnik:1964eu}
+G.~S. Guralnik, C.~R. Hagen and T.~W.~B. Kibble, \emph{Global conservation laws
+  and massless particles},
+  \href{https://doi.org/10.1103/PhysRevLett.13.585}{\emph{Phys. Rev. Lett.}
+  (1964) 585}.
+
+\bibitem{Kibble:1967sv}
+T.~W.~B. Kibble, \emph{Symmetry breaking in non-{A}belian gauge theories},
+  \href{https://doi.org/10.1103/PhysRev.155.1554}{\emph{Phys. Rev.} (1967)
+  1554}.
+
+\bibitem{Goldstone:1961eq}
+J.~Goldstone, \emph{{Field Theories with Superconductor Solutions}},
+  \href{https://doi.org/10.1007/BF02812722}{\emph{Nuovo Cim.} {\bfseries 19}
+  (1961) 154}.
+
+\bibitem{CMS:2020xrn}
+A.~M. Sirunyan et~al., \emph{{A measurement of the Higgs boson mass in the
+  diphoton decay channel}},
+  \href{https://doi.org/10.1016/j.physletb.2020.135425}{\emph{Phys. Lett. B}
+  {\bfseries 805} (2020) 135425}
+  [\href{https://arxiv.org/abs/2002.06398}{{\ttfamily 2002.06398}}].
+
+\bibitem{SUSY_Primer}
+S.~P. Martin, \emph{{A Supersymmetry Primer}},
+  \href{https://doi.org/10.1142/9789812839657_0001}{\emph{Advanced Series on
+  Directions in High Energy Physics} (1998) 1–98}.
+
+\bibitem{Diaz:2017lit}
+B.~Diaz, M.~Schmaltz and Y.-M. Zhong, \emph{The leptoquark
+  hunter\textquoteright{}s guide: Pair production},
+  \href{https://doi.org/10.1007/JHEP10(2017)097}{\emph{JHEP} {\bfseries 10}
+  (2017) 097} [\href{https://arxiv.org/abs/1706.05033}{{\ttfamily
+  1706.05033}}].
+
+\bibitem{Schmaltz:2018nls}
+M.~Schmaltz and Y.-M. Zhong, \emph{The leptoquark hunter\textquoteright{}s
+  guide: Large coupling},
+  \href{https://doi.org/10.1007/JHEP01(2019)132}{\emph{JHEP} {\bfseries 01}
+  (2019) 132} [\href{https://arxiv.org/abs/1810.10017}{{\ttfamily
+  1810.10017}}].
+
+\bibitem{Muong-2:2006rrc}
+G.~W. Bennett et~al., \emph{{Final Report of the Muon E821 Anomalous Magnetic
+  Moment Measurement at BNL}},
+  \href{https://doi.org/10.1103/PhysRevD.73.072003}{\emph{Phys. Rev. D}
+  {\bfseries 73} (2006) 072003}
+  [\href{https://arxiv.org/abs/hep-ex/0602035}{{\ttfamily hep-ex/0602035}}].
+
+\bibitem{Ilisie:2015tra}
+V.~Ilisie, \emph{{New Barr-Zee contributions to $\mathbf{(g-2)_\mu}$ in
+  two-Higgs-doublet models}},
+  \href{https://doi.org/10.1007/JHEP04(2015)077}{\emph{JHEP} {\bfseries 04}
+  (2015) 077} [\href{https://arxiv.org/abs/1502.04199}{{\ttfamily
+  1502.04199}}].
+
+\bibitem{Barr:1990vd}
+S.~M. Barr and A.~Zee, \emph{{Electric Dipole Moment of the Electron and of the
+  Neutron}}, \href{https://doi.org/10.1103/PhysRevLett.65.21}{\emph{Phys. Rev.
+  Lett.} {\bfseries 65} (1990) 21}.
+
+\bibitem{Evans:2008zzb}
+L.~Evans and P.~Bryant (Eds.), \emph{{LHC Machine}},
+  \href{https://doi.org/10.1088/1748-0221/3/08/S08001}{\emph{JINST} {\bfseries
+  3} (2008) S08001}.
+
+\bibitem{203828}
+\emph{{LEP Design Report: Vol.2. The LEP Main Ring}}, .
+
+\bibitem{ALICE:2008ngc}
+K.~Aamodt et~al., \emph{{The ALICE experiment at the CERN LHC}},
+  \href{https://doi.org/10.1088/1748-0221/3/08/S08002}{\emph{JINST} {\bfseries
+  3} (2008) S08002}.
+
+\bibitem{ATLAS:2008xda}
+G.~Aad et~al., \emph{{The ATLAS Experiment at the CERN Large Hadron Collider}},
+  \href{https://doi.org/10.1088/1748-0221/3/08/S08003}{\emph{JINST} {\bfseries
+  3} (2008) S08003}.
+
+\bibitem{LHCb:2008vvz}
+A.~A. Alves, Jr. et~al., \emph{{The LHCb Detector at the LHC}},
+  \href{https://doi.org/10.1088/1748-0221/3/08/S08005}{\emph{JINST} {\bfseries
+  3} (2008) S08005}.
+
+\bibitem{Malberti:2014pda}
+M.~Malberti, \emph{{Operation and performance of the CMS tracker}},
+  \href{https://doi.org/10.22323/1.213.0347}{\emph{PoS} {\bfseries TIPP2014}
+  (2014) 347}.
+
+\bibitem{CMS:2012sda}
+\emph{{CMS Technical Design Report for the Pixel Detector Upgrade}}, .
+
+\bibitem{CMS:2013lxn}
+S.~Chatrchyan et~al., \emph{{Energy Calibration and Resolution of the CMS
+  Electromagnetic Calorimeter in $pp$ Collisions at $\sqrt{s} = 7$ TeV}},
+  \href{https://doi.org/10.1088/1748-0221/8/09/P09009}{\emph{JINST} {\bfseries
+  8} (2013) P09009} [\href{https://arxiv.org/abs/1306.2016}{{\ttfamily
+  1306.2016}}].
+
+\bibitem{CMS:2014pgm}
+S.~Chatrchyan et~al., \emph{{Description and performance of track and
+  primary-vertex reconstruction with the CMS tracker}},
+  \href{https://doi.org/10.1088/1748-0221/9/10/P10009}{\emph{JINST} {\bfseries
+  9} (2014) P10009} [\href{https://arxiv.org/abs/1405.6569}{{\ttfamily
+  1405.6569}}].
+
+\bibitem{Fruhwirth:1987fm}
+R.~Fruhwirth, \emph{{Application of Kalman filtering to track and vertex
+  fitting}}, \href{https://doi.org/10.1016/0168-9002(87)90887-4}{\emph{Nucl.
+  Instrum. Meth. A} {\bfseries 262} (1987) 444}.
+
+\bibitem{CMS:2010mua}
+\emph{{Measurement of Tracking Efficiency}}, .
+
+\bibitem{Rose:1998dzq}
+K.~Rose, \emph{{Deterministic annealing for clustering, compression,
+  classification, regression, and related optimization problems}},
+  \href{https://doi.org/10.1109/5.726788}{\emph{IEEE Proc.} {\bfseries 86}
+  (1998) 2210}.
+
+\bibitem{Fruhwirth:2007hz}
+R.~Fruhwirth, W.~Waltenberger and P.~Vanlaer, \emph{{Adaptive vertex fitting}},
+  \href{https://doi.org/10.1088/0954-3899/34/12/N01}{\emph{J. Phys. G}
+  {\bfseries 34} (2007) N343}.
+
+\bibitem{PF_CMS}
+{CMS Collaboration}, \emph{{Particle-flow reconstruction and global event
+  description with the CMS detector}},
+  \href{https://doi.org/10.1088/1748-0221/12/10/P10003}{\emph{JINST} {\bfseries
+  12} (2017) P10003} [\href{https://arxiv.org/abs/1706.04965}{{\ttfamily
+  1706.04965}}].
+
+\bibitem{CMS:2010byl}
+\emph{{Commissioning of the Particle-flow Event Reconstruction with the first
+  LHC collisions recorded in the CMS detector}}, .
+
+\bibitem{CMS:2010eua}
+\emph{{Commissioning of the Particle-Flow reconstruction in Minimum-Bias and
+  Jet Events from pp Collisions at 7 TeV}}, .
+
+\bibitem{Adam:934067}
+W.~Adam, B.~Mangano, T.~Speer and T.~Todorov, \emph{{Track Reconstruction in
+  the CMS tracker}},  tech. rep., CERN, Geneva, 2006.
+
+\bibitem{CMS:2012nsv}
+S.~Chatrchyan et~al., \emph{{Performance of CMS Muon Reconstruction in $pp$
+  Collision Events at $\sqrt{s}=7$ TeV}},
+  \href{https://doi.org/10.1088/1748-0221/7/10/P10002}{\emph{JINST} {\bfseries
+  7} (2012) P10002} [\href{https://arxiv.org/abs/1206.4071}{{\ttfamily
+  1206.4071}}].
+
+\bibitem{CMS:2018rym}
+A.~M. Sirunyan et~al., \emph{{Performance of the CMS muon detector and muon
+  reconstruction with proton-proton collisions at $\sqrt{s}=$ 13 TeV}},
+  \href{https://doi.org/10.1088/1748-0221/13/06/P06015}{\emph{JINST} {\bfseries
+  13} (2018) P06015} [\href{https://arxiv.org/abs/1804.04528}{{\ttfamily
+  1804.04528}}].
 
 \bibitem{CMS:2009fdy}
-S.~Chatrchyan {\em et~al.}, ``{Performance of CMS Muon Reconstruction in
-  Cosmic-Ray Events},'' {\em JINST}, vol.~5, p.~T03022, 2010.
+S.~Chatrchyan et~al., \emph{{Performance of CMS Muon Reconstruction in
+  Cosmic-Ray Events}},
+  \href{https://doi.org/10.1088/1748-0221/5/03/T03022}{\emph{JINST} {\bfseries
+  5} (2010) T03022} [\href{https://arxiv.org/abs/0911.4994}{{\ttfamily
+  0911.4994}}].
+
+\bibitem{Salam:2010nqg}
+G.~P. Salam, \emph{{Towards Jetography}},
+  \href{https://doi.org/10.1140/epjc/s10052-010-1314-6}{\emph{Eur. Phys. J. C}
+  {\bfseries 67} (2010) 637} [\href{https://arxiv.org/abs/0906.1833}{{\ttfamily
+  0906.1833}}].
+
+\bibitem{Cacciari:2008gp}
+M.~Cacciari, G.~P. Salam and G.~Soyez, \emph{The anti-$k_t$ jet clustering
+  algorithm}, \href{https://doi.org/10.1088/1126-6708/2008/04/063}{\emph{JHEP}
+  {\bfseries 04} (2008) 063} [\href{https://arxiv.org/abs/0802.1189}{{\ttfamily
+  0802.1189}}].
 
 \bibitem{Cacciari:2011ma}
-M.~Cacciari, G.~P. Salam, and G.~Soyez, ``{FastJet} user manual,'' {\em Eur.
-  Phys. J. C}, vol.~72, p.~1896, 2012.
+M.~Cacciari, G.~P. Salam and G.~Soyez, \emph{{FastJet} user manual},
+  \href{https://doi.org/10.1140/epjc/s10052-012-1896-2}{\emph{Eur. Phys. J. C}
+  {\bfseries 72} (2012) 1896}
+  [\href{https://arxiv.org/abs/1111.6097}{{\ttfamily 1111.6097}}].
+
+\bibitem{CMS:2017wyc}
+\emph{{Jet algorithms performance in 13 TeV data}}, .
+
+\bibitem{CMS:2013wea}
+\emph{{Pileup Jet Identification}}, .
 
 \bibitem{CMS:2017wtu}
-A.~M. Sirunyan {\em et~al.}, ``{Identification of heavy-flavour jets with the
-  CMS detector in pp collisions at 13 TeV},'' {\em JINST}, vol.~13, no.~05,
-  p.~P05011, 2018.
+A.~M. Sirunyan et~al., \emph{{Identification of heavy-flavour jets with the CMS
+  detector in pp collisions at 13 TeV}},
+  \href{https://doi.org/10.1088/1748-0221/13/05/P05011}{\emph{JINST} {\bfseries
+  13} (2018) P05011} [\href{https://arxiv.org/abs/1712.07158}{{\ttfamily
+  1712.07158}}].
 
 \bibitem{Bols:2020bkb}
-E.~Bols, J.~Kieseler, M.~Verzetti, M.~Stoye, and A.~Stakia, ``Jet flavour
-  classification using {DeepJet},'' {\em JINST}, vol.~15, p.~P12012, 2020.
+E.~Bols, J.~Kieseler, M.~Verzetti, M.~Stoye and A.~Stakia, \emph{Jet flavour
+  classification using {DeepJet}},
+  \href{https://doi.org/10.1088/1748-0221/15/12/P12012}{\emph{JINST} {\bfseries
+  15} (2020) P12012} [\href{https://arxiv.org/abs/2008.10519}{{\ttfamily
+  2008.10519}}].
 
 \bibitem{CMS:2016ljj}
-``{Performance of missing energy reconstruction in 13 TeV pp collision data
-  using the CMS detector},'' 2016.
+\emph{{Performance of missing energy reconstruction in 13 TeV pp collision data
+  using the CMS detector}}, .
 
 \bibitem{CMS:2020ebo}
-A.~M. Sirunyan {\em et~al.}, ``{Pileup mitigation at CMS in 13 TeV data},''
-  {\em JINST}, vol.~15, no.~09, p.~P09018, 2020.
+A.~M. Sirunyan et~al., \emph{{Pileup mitigation at CMS in 13 TeV data}},
+  \href{https://doi.org/10.1088/1748-0221/15/09/P09018}{\emph{JINST} {\bfseries
+  15} (2020) P09018} [\href{https://arxiv.org/abs/2003.00503}{{\ttfamily
+  2003.00503}}].
 
 \bibitem{Bahl:2018zmf}
-E.~Bagnaschi, H.~Bahl, E.~Fuchs, T.~Hahn, S.~Heinemeyer, S.~Liebler, S.~Patel,
-  P.~Slavich, T.~Stefaniak, C.~E.~M. Wagner, and G.~Weiglein, ``{MSSM Higgs}
-  boson searches at the {LHC}: Benchmark scenarios for {Run 2} and beyond,''
-  {\em Eur. Phys. J. C}, vol.~79, p.~617, 2019.
+E.~Bagnaschi, H.~Bahl, E.~Fuchs, T.~Hahn, S.~Heinemeyer, S.~Liebler et~al.,
+  \emph{{MSSM Higgs} boson searches at the {LHC}: Benchmark scenarios for {Run
+  2} and beyond},
+  \href{https://doi.org/10.1140/epjc/s10052-019-7114-8}{\emph{Eur. Phys. J. C}
+  {\bfseries 79} (2019) 617}
+  [\href{https://arxiv.org/abs/1808.07542}{{\ttfamily 1808.07542}}].
 
 \bibitem{Bahl:2020kwe}
-H.~Bahl, P.~Bechtle, S.~Heinemeyer, S.~Liebler, T.~Stefaniak, and G.~Weiglein,
-  ``{HL-LHC and ILC} sensitivities in the hunt for heavy {Higgs} bosons,'' {\em
-  Eur. Phys. J. C}, vol.~80, p.~916, 2020.
+H.~Bahl, P.~Bechtle, S.~Heinemeyer, S.~Liebler, T.~Stefaniak and G.~Weiglein,
+  \emph{{HL-LHC and ILC} sensitivities in the hunt for heavy {Higgs} bosons},
+  \href{https://doi.org/10.1140/epjc/s10052-020-08472-z}{\emph{Eur. Phys. J. C}
+  {\bfseries 80} (2020) 916}
+  [\href{https://arxiv.org/abs/2005.14536}{{\ttfamily 2005.14536}}].
 
 \bibitem{Bahl:2019ago}
-H.~Bahl, S.~Liebler, and T.~Stefaniak, ``{MSSM Higgs} benchmark scenarios for
-  {Run 2} and beyond: the low {$\tan\beta$} region,'' {\em Eur. Phys. J. C},
-  vol.~79, p.~279, 2019.
+H.~Bahl, S.~Liebler and T.~Stefaniak, \emph{{MSSM Higgs} benchmark scenarios
+  for {Run 2} and beyond: the low {$\tan\beta$} region},
+  \href{https://doi.org/10.1140/epjc/s10052-019-6770-z}{\emph{Eur. Phys. J. C}
+  {\bfseries 79} (2019) 279}
+  [\href{https://arxiv.org/abs/1901.05933}{{\ttfamily 1901.05933}}].
 
 \bibitem{Bagnaschi:2791954}
-E.~A. Bagnaschi, S.~Heinemeyer, S.~Liebler, P.~Slavich, and M.~Spira,
-  ``Benchmark scenarios for {MSSM Higgs} boson searches at the {LHC},'' Tech.
-  Rep. LHCHWG-2021-001, CERN, 2021.
+E.~A. Bagnaschi, S.~Heinemeyer, S.~Liebler, P.~Slavich and M.~Spira,
+  \emph{Benchmark scenarios for {MSSM Higgs} boson searches at the {LHC}},
+  Tech. Rep. LHCHWG-2021-001, CERN, 2021.
 
-\bibitem{Khachatryan:2015tra}
-V.~Khachatryan {\em et~al.}, ``Search for neutral {MSSM Higgs} bosons decaying
-  into a pair of bottom quarks,'' {\em JHEP}, vol.~11, p.~071, 2015.
+\bibitem{CMS:2018hir}
+A.~M. Sirunyan et~al., \emph{{Search for beyond the standard model Higgs bosons
+  decaying into a $\mathrm{b\overline{b}}$ pair in pp collisions at $\sqrt{s}
+  =$ 13 TeV}}, \href{https://doi.org/10.1007/JHEP08(2018)113}{\emph{JHEP}
+  {\bfseries 08} (2018) 113}
+  [\href{https://arxiv.org/abs/1805.12191}{{\ttfamily 1805.12191}}].
 
 \bibitem{Nason:2004rx}
-P.~Nason, ``A new method for combining {NLO QCD} with shower {Monte} {Carlo}
-  algorithms,'' {\em JHEP}, vol.~11, p.~040, 2004.
+P.~Nason, \emph{A new method for combining {NLO QCD} with shower {Monte}
+  {Carlo} algorithms},
+  \href{https://doi.org/10.1088/1126-6708/2004/11/040}{\emph{JHEP} {\bfseries
+  11} (2004) 040} [\href{https://arxiv.org/abs/hep-ph/0409146}{{\ttfamily
+  hep-ph/0409146}}].
 
 \bibitem{Frixione:2007vw}
-S.~Frixione, P.~Nason, and C.~Oleari, ``Matching {NLO QCD} computations with
-  parton shower simulations: the {POWHEG} method,'' {\em JHEP}, vol.~11,
-  p.~070, 2007.
+S.~Frixione, P.~Nason and C.~Oleari, \emph{Matching {NLO QCD} computations with
+  parton shower simulations: the {POWHEG} method},
+  \href{https://doi.org/10.1088/1126-6708/2007/11/070}{\emph{JHEP} {\bfseries
+  11} (2007) 070} [\href{https://arxiv.org/abs/0709.2092}{{\ttfamily
+  0709.2092}}].
 
 \bibitem{Alioli:2010xd}
-S.~Alioli, P.~Nason, C.~Oleari, and E.~Re, ``A general framework for
+S.~Alioli, P.~Nason, C.~Oleari and E.~Re, \emph{A general framework for
   implementing {NLO} calculations in shower {Monte Carlo} programs: the {POWHEG
-  BOX},'' {\em JHEP}, vol.~06, p.~043, 2010.
+  BOX}}, \href{https://doi.org/10.1007/JHEP06(2010)043}{\emph{JHEP} {\bfseries
+  06} (2010) 043} [\href{https://arxiv.org/abs/1002.2581}{{\ttfamily
+  1002.2581}}].
 
 \bibitem{Jezo:2015aia}
-T.~Je{\v{z}}o and P.~Nason, ``On the treatment of resonances in next-to-leading
-  order calculations matched to a parton shower,'' {\em JHEP}, vol.~12, p.~065,
-  2015.
+T.~Je{\v{z}}o and P.~Nason, \emph{On the treatment of resonances in
+  next-to-leading order calculations matched to a parton shower},
+  \href{https://doi.org/10.1007/JHEP12(2015)065}{\emph{JHEP} {\bfseries 12}
+  (2015) 065} [\href{https://arxiv.org/abs/1509.09071}{{\ttfamily
+  1509.09071}}].
 
 \bibitem{Ball:2014uwa}
-R.~D. Ball {\em et~al.}, ``Parton distributions for the {LHC} {Run} {II},''
-  {\em JHEP}, vol.~04, p.~040, 2015.
+R.~D. Ball et~al., \emph{Parton distributions for the {LHC} {Run} {II}},
+  \href{https://doi.org/10.1007/JHEP04(2015)040}{\emph{JHEP} {\bfseries 04}
+  (2015) 040} [\href{https://arxiv.org/abs/1410.8849}{{\ttfamily 1410.8849}}].
 
 \bibitem{Ball:2017nwa}
-R.~D. Ball {\em et~al.}, ``Parton distributions from high-precision collider
-  data,'' {\em Eur. Phys. J. C}, vol.~77, p.~663, 2017.
+R.~D. Ball et~al., \emph{Parton distributions from high-precision collider
+  data}, \href{https://doi.org/10.1140/epjc/s10052-017-5199-5}{\emph{Eur. Phys.
+  J. C} {\bfseries 77} (2017) 663}
+  [\href{https://arxiv.org/abs/1706.00428}{{\ttfamily 1706.00428}}].
 
 \bibitem{Sirunyan:2019dfx}
-A.~M. Sirunyan {\em et~al.}, ``Extraction and validation of a new set of {CMS
-  PYTHIA8} tunes from underlying-event measurements,'' {\em Eur. Phys. J. C},
-  vol.~80, p.~4, 2020.
+A.~M. Sirunyan et~al., \emph{Extraction and validation of a new set of {CMS
+  PYTHIA8} tunes from underlying-event measurements},
+  \href{https://doi.org/10.1140/epjc/s10052-019-7499-4}{\emph{Eur. Phys. J. C}
+  {\bfseries 80} (2020) 4} [\href{https://arxiv.org/abs/1903.12179}{{\ttfamily
+  1903.12179}}].
 
 \bibitem{Sjostrand:2014zea}
-T.~Sj{\"o}strand, S.~Ask, J.~R. Christiansen, R.~Corke, N.~Desai, P.~Ilten,
-  S.~Mrenna, S.~Prestel, C.~O. Rasmussen, and P.~Z. Skands, ``An introduction
-  to {PYTHIA 8.2},'' {\em Comput. Phys. Commun.}, vol.~191, p.~159, 2015.
+T.~Sj{\"o}strand, S.~Ask, J.~R. Christiansen, R.~Corke, N.~Desai, P.~Ilten
+  et~al., \emph{An introduction to {PYTHIA 8.2}},
+  \href{https://doi.org/10.1016/j.cpc.2015.01.024}{\emph{Comput. Phys. Commun.}
+  {\bfseries 191} (2015) 159}
+  [\href{https://arxiv.org/abs/1410.3012}{{\ttfamily 1410.3012}}].
 
 \bibitem{Agostinelli:2002hh}
-S.~Agostinelli {\em et~al.}, ``{{\textsc{Geant4}}\xspace}---a simulation
-  toolkit,'' {\em Nucl. Instrum. Meth. A}, vol.~506, p.~250, 2003.
+S.~Agostinelli et~al., \emph{{{\textsc{Geant4}}\xspace}---a simulation
+  toolkit}, \href{https://doi.org/10.1016/S0168-9002(03)01368-8}{\emph{Nucl.
+  Instrum. Meth. A} {\bfseries 506} (2003) 250}.
 
 \bibitem{CMS:2022zks}
-{CMS Collaboration}, ``{The search for a third-generation leptoquark coupling
-  to a $\tau$ lepton and a b quark through single, pair and nonresonant
-  production at $\sqrt{s}=13~\mathrm{TeV}$},'' 2022.
+{CMS Collaboration}, \emph{{The search for a third-generation leptoquark
+  coupling to a $\tau$ lepton and a b quark through single, pair and
+  nonresonant production at $\sqrt{s}=13~\mathrm{TeV}$}}, .
 
 \bibitem{Alwall:2011uj}
-J.~Alwall, M.~Herquet, F.~Maltoni, O.~Mattelaer, and T.~Stelzer, ``{MadGraph
-  5}: Going beyond,'' {\em JHEP}, vol.~06, p.~128, 2011.
+J.~Alwall, M.~Herquet, F.~Maltoni, O.~Mattelaer and T.~Stelzer, \emph{{MadGraph
+  5}: Going beyond}, \href{https://doi.org/10.1007/JHEP06(2011)128}{\emph{JHEP}
+  {\bfseries 06} (2011) 128} [\href{https://arxiv.org/abs/1106.0522}{{\ttfamily
+  1106.0522}}].
 
 \bibitem{Frederix:2012ps}
-R.~Frederix and S.~Frixione, ``Merging meets matching in {MC@NLO},'' {\em
-  JHEP}, vol.~12, p.~061, 2012.
+R.~Frederix and S.~Frixione, \emph{Merging meets matching in {MC@NLO}},
+  \href{https://doi.org/10.1007/JHEP12(2012)061}{\emph{JHEP} {\bfseries 12}
+  (2012) 061} [\href{https://arxiv.org/abs/1209.6215}{{\ttfamily 1209.6215}}].
 
 \bibitem{Bianchini:2014vza}
-L.~Bianchini, J.~Conway, E.~K. Friis, and C.~Veelken, ``Reconstruction of the
-  {Higgs} mass in {$H\to\tau\tau$} events by dynamical likelihood techniques,''
-  {\em J. Phys. Conf. Ser.}, vol.~513, p.~022035, 2014.
+L.~Bianchini, J.~Conway, E.~K. Friis and C.~Veelken, \emph{Reconstruction of
+  the {Higgs} mass in {$H\to\tau\tau$} events by dynamical likelihood
+  techniques}, \href{https://doi.org/10.1088/1742-6596/513/2/022035}{\emph{J.
+  Phys. Conf. Ser.} {\bfseries 513} (2014) 022035}.
 
 \bibitem{CMS:2022kdi}
 {CMS Collaboration}, ``Measurements of {Higgs} boson production in the decay
   channel with a pair of $\tau$ leptons in proton-proton collisions at
-  $\sqrt{s}$ = 13 {TeV}.'' Submitted to \textit{Eur. Phys. J. C}, 2022.
+  $\sqrt{s}$ = 13 {TeV}.'' 2022.
+
+\bibitem{Sirunyan:2018zut}
+A.~M. Sirunyan et~al., \emph{Search for additional neutral {MSSM} higgs bosons
+  in the $\tau\tau$ final state in proton-proton collisions at {$\sqrt{s}=$ 13
+  TeV}}, \href{https://doi.org/10.1007/JHEP09(2018)007}{\emph{JHEP} {\bfseries
+  09} (2018) 007} [\href{https://arxiv.org/abs/1803.06553}{{\ttfamily
+  1803.06553}}].
+
+\bibitem{CMS:2018lkr}
+A.~M. Sirunyan et~al., \emph{{Measurement of the $\mathrm{Z}\gamma^{*} \to
+  \tau\tau$ cross section in pp collisions at $\sqrt{s} = $ 13 TeV and
+  validation of $\tau$ lepton analysis techniques}},
+  \href{https://doi.org/10.1140/epjc/s10052-018-6146-9}{\emph{Eur. Phys. J. C}
+  {\bfseries 78} (2018) 708}
+  [\href{https://arxiv.org/abs/1801.03535}{{\ttfamily 1801.03535}}].
 
 \bibitem{Alwall:2007fs}
-J.~Alwall, S.~H{\"o}che, F.~Krauss, N.~Lavesson, L.~L{\"o}nnblad, F.~Maltoni,
-  M.~L. Mangano, M.~Moretti, C.~G. Papadopoulos, F.~Piccinini, S.~Schumann,
-  M.~Treccani, J.~Winter, and M.~Worek, ``Comparative study of various
-  algorithms for the merging of parton showers and matrix elements in hadronic
-  collisions,'' {\em Eur. Phys. J. C}, vol.~53, p.~473, 2008.
+J.~Alwall, S.~H{\"o}che, F.~Krauss, N.~Lavesson, L.~L{\"o}nnblad, F.~Maltoni
+  et~al., \emph{Comparative study of various algorithms for the merging of
+  parton showers and matrix elements in hadronic collisions},
+  \href{https://doi.org/10.1140/epjc/s10052-007-0490-5}{\emph{Eur. Phys. J. C}
+  {\bfseries 53} (2008) 473} [\href{https://arxiv.org/abs/0706.2569}{{\ttfamily
+  0706.2569}}].
 
 \bibitem{Alioli:2011as}
-S.~Alioli, S.-O. Moch, and P.~Uwer, ``Hadronic top-quark pair-production with
-  one jet and parton showering,'' {\em JHEP}, vol.~01, p.~137, 2012.
+S.~Alioli, S.-O. Moch and P.~Uwer, \emph{Hadronic top-quark pair-production
+  with one jet and parton showering},
+  \href{https://doi.org/10.1007/JHEP01(2012)137}{\emph{JHEP} {\bfseries 01}
+  (2012) 137} [\href{https://arxiv.org/abs/1110.5251}{{\ttfamily 1110.5251}}].
 
 \bibitem{Frederix:2012dh}
-R.~Frederix, E.~Re, and P.~Torrielli, ``Single-top $t$-channel hadroproduction
-  in the four-flavour scheme with {POWHEG} and {aMC@NLO},'' {\em JHEP},
-  vol.~09, p.~130, 2012.
+R.~Frederix, E.~Re and P.~Torrielli, \emph{Single-top $t$-channel
+  hadroproduction in the four-flavour scheme with {POWHEG} and {aMC@NLO}},
+  \href{https://doi.org/10.1007/JHEP09(2012)130}{\emph{JHEP} {\bfseries 09}
+  (2012) 130} [\href{https://arxiv.org/abs/1207.5391}{{\ttfamily 1207.5391}}].
 
 \bibitem{Re:2010bp}
-E.~Re, ``Single-top {Wt}-channel production matched with parton showers using
-  the {POWHEG} method,'' {\em Eur. Phys. J. C}, vol.~71, p.~1547, 2011.
+E.~Re, \emph{Single-top {Wt}-channel production matched with parton showers
+  using the {POWHEG} method},
+  \href{https://doi.org/10.1140/epjc/s10052-011-1547-z}{\emph{Eur. Phys. J. C}
+  {\bfseries 71} (2011) 1547}
+  [\href{https://arxiv.org/abs/1009.2450}{{\ttfamily 1009.2450}}].
 
 \bibitem{Melnikov:2006kv}
-K.~Melnikov and F.~Petriello, ``Electroweak gauge boson production at hadron
-  colliders through {$\mathcal{O}(\alpha_\text{s}^{2})$},'' {\em Phys. Rev. D},
-  vol.~74, p.~114017, 2006.
+K.~Melnikov and F.~Petriello, \emph{Electroweak gauge boson production at
+  hadron colliders through {$\mathcal{O}(\alpha_\text{s}^{2})$}},
+  \href{https://doi.org/10.1103/PhysRevD.74.114017}{\emph{Phys. Rev. D}
+  {\bfseries 74} (2006) 114017}
+  [\href{https://arxiv.org/abs/hep-ph/0609070}{{\ttfamily hep-ph/0609070}}].
 
 \bibitem{Czakon:2011xx}
-M.~Czakon and A.~Mitov, ``{Top++: A} program for the calculation of the
-  top-pair cross-section at hadron colliders,'' {\em Comput. Phys. Commun.},
-  vol.~185, p.~2930, 2014.
+M.~Czakon and A.~Mitov, \emph{{Top++: A} program for the calculation of the
+  top-pair cross-section at hadron colliders},
+  \href{https://doi.org/10.1016/j.cpc.2014.06.021}{\emph{Comput. Phys. Commun.}
+  {\bfseries 185} (2014) 2930}
+  [\href{https://arxiv.org/abs/1112.5675}{{\ttfamily 1112.5675}}].
 
 \bibitem{Kidonakis:2013zqa}
-N.~Kidonakis, ``Top quark production,'' in {\em {Helmholtz International Summer
-  School on Physics of Heavy Quarks and Hadrons}}, p.~139, 2014.
+N.~Kidonakis, \emph{Top quark production},  in \emph{{Helmholtz International
+  Summer School on Physics of Heavy Quarks and Hadrons}}, p.~139, 2014,
+  \href{https://arxiv.org/abs/1311.0283}{{\ttfamily 1311.0283}},
+  \href{https://doi.org/10.3204/DESY-PROC-2013-03/Kidonakis}{DOI}.
 
 \bibitem{Campbell:2011bn}
-J.~M. Campbell, R.~K. Ellis, and C.~Williams, ``Vector boson pair production at
-  the {LHC},'' {\em JHEP}, vol.~07, p.~018, 2011.
+J.~M. Campbell, R.~K. Ellis and C.~Williams, \emph{Vector boson pair production
+  at the {LHC}}, \href{https://doi.org/10.1007/JHEP07(2011)018}{\emph{JHEP}
+  {\bfseries 07} (2011) 018} [\href{https://arxiv.org/abs/1105.0020}{{\ttfamily
+  1105.0020}}].
 
 \bibitem{Gehrmann:2014fva}
 T.~Gehrmann, M.~Grazzini, S.~Kallweit, P.~Maierh{\"o}fer, A.~von Manteuffel,
-  S.~Pozzorini, D.~Rathlev, and L.~Tancredi, ``{$W^{+} W^{-}$} production at
-  hadron colliders in next to next to leading order {QCD},'' {\em Phys. Rev.
-  Lett.}, vol.~113, p.~212001, 2014.
+  S.~Pozzorini et~al., \emph{{$W^{+} W^{-}$} production at hadron colliders in
+  next to next to leading order {QCD}},
+  \href{https://doi.org/10.1103/PhysRevLett.113.212001}{\emph{Phys. Rev. Lett.}
+  {\bfseries 113} (2014) 212001}
+  [\href{https://arxiv.org/abs/1408.5243}{{\ttfamily 1408.5243}}].
 
 \bibitem{Barlow:1993dm}
-R.~J. Barlow and C.~Beeston, ``Fitting using finite {Monte Carlo} samples,''
-  {\em Comput. Phys. Commun.}, vol.~77, p.~219, 1993.
+R.~J. Barlow and C.~Beeston, \emph{Fitting using finite {Monte Carlo} samples},
+  \href{https://doi.org/10.1016/0010-4655(93)90005-W}{\emph{Comput. Phys.
+  Commun.} {\bfseries 77} (1993) 219}.
 
 \bibitem{Conway:2011in}
-J.~S. Conway, ``{Incorporating Nuisance Parameters in Likelihoods for
-  Multisource Spectra},'' in {\em {PHYSTAT 2011}}, pp.~115--120, 2011.
+J.~S. Conway, \emph{{Incorporating Nuisance Parameters in Likelihoods for
+  Multisource Spectra}},  in \emph{{PHYSTAT 2011}}, pp.~115--120, 2011,
+  \href{https://arxiv.org/abs/1103.0354}{{\ttfamily 1103.0354}},
+  \href{https://doi.org/10.5170/CERN-2011-006.115}{DOI}.
 
 \bibitem{Sirunyan:2019kia}
-A.~M. Sirunyan {\em et~al.}, ``Performance of missing transverse momentum
+A.~M. Sirunyan et~al., \emph{Performance of missing transverse momentum
   reconstruction in proton-proton collisions at {$\sqrt{s} = 13$\,TeV} using
-  the {CMS} detector,'' {\em JINST}, vol.~14, p.~P07004, 2019.
+  the {CMS} detector},
+  \href{https://doi.org/10.1088/1748-0221/14/07/P07004}{\emph{JINST} {\bfseries
+  14} (2019) P07004} [\href{https://arxiv.org/abs/1903.06078}{{\ttfamily
+  1903.06078}}].
 
 \bibitem{Junk:1999kv}
-T.~Junk, ``Confidence level computation for combining searches with small
-  statistics,'' {\em Nucl. Instrum. Meth. A}, vol.~434, p.~435, 1999.
+T.~Junk, \emph{Confidence level computation for combining searches with small
+  statistics}, \href{https://doi.org/10.1016/S0168-9002(99)00498-2}{\emph{Nucl.
+  Instrum. Meth. A} {\bfseries 434} (1999) 435}
+  [\href{https://arxiv.org/abs/hep-ex/9902006}{{\ttfamily hep-ex/9902006}}].
 
 \bibitem{Read:2002hq}
-A.~L. Read, ``Presentation of search results: {The CL}$_{\text{s}}$
-  technique,'' {\em J. Phys. G}, vol.~28, p.~2693, 2002.
+A.~L. Read, \emph{Presentation of search results: {The CL}$_{\text{s}}$
+  technique}, \href{https://doi.org/10.1088/0954-3899/28/10/313}{\emph{J. Phys.
+  G} {\bfseries 28} (2002) 2693}.
 
 \bibitem{Cowan:2010js}
-G.~Cowan, K.~Cranmer, E.~Gross, and O.~Vitells, ``Asymptotic formulae for
-  likelihood-based tests of new physics,'' {\em Eur. Phys. J. C}, vol.~71,
-  p.~1554, 2011.
-\newblock [Erratum: \DOI{10.1140/epjc/s10052-013-2501-z}].
+G.~Cowan, K.~Cranmer, E.~Gross and O.~Vitells, \emph{Asymptotic formulae for
+  likelihood-based tests of new physics},
+  \href{https://doi.org/10.1140/epjc/s10052-011-1554-0}{\emph{Eur. Phys. J. C}
+  {\bfseries 71} (2011) 1554}
+  [\href{https://arxiv.org/abs/1007.1727}{{\ttfamily 1007.1727}}].
 
 \bibitem{LHCHiggsCrossSectionWorkingGroup:2013rie}
-{LHC Higgs Cross Section Working Group}, ``{Handbook of LHC Higgs} cross
-  sections: 3. {Higgs} properties,'' Tech. Rep. CERN-2013-004, 2013.
+{LHC Higgs Cross Section Working Group}, \emph{{Handbook of LHC Higgs} cross
+  sections: 3. {Higgs} properties},  Tech. Rep. CERN-2013-004, 2013.
+\newblock 10.5170/CERN-2013-004.
 
 \bibitem{deFlorian:2016spz}
-{LHC Higgs Cross Section Working Group}, ``Handbook of {LHC Higgs} cross
-  sections: 4. deciphering the nature of the {Higgs} sector,'' Tech. Rep.
+{LHC Higgs Cross Section Working Group}, \emph{Handbook of {LHC Higgs} cross
+  sections: 4. deciphering the nature of the {Higgs} sector},  Tech. Rep.
   CERN-2017-002-M, 2016.
+\newblock 10.23731/CYRM-2017-002.
 
 \bibitem{Denner:2011mq}
-A.~Denner, S.~Heinemeyer, I.~Puljak, D.~Rebuzzi, and M.~Spira, ``Standard model
-  {Higgs}-boson branching ratios with uncertainties,'' {\em Eur. Phys. J. C},
-  vol.~71, p.~1753, 2011.
+A.~Denner, S.~Heinemeyer, I.~Puljak, D.~Rebuzzi and M.~Spira, \emph{Standard
+  model {Higgs}-boson branching ratios with uncertainties},
+  \href{https://doi.org/10.1140/epjc/s10052-011-1753-8}{\emph{Eur. Phys. J. C}
+  {\bfseries 71} (2011) 1753}
+  [\href{https://arxiv.org/abs/1107.5909}{{\ttfamily 1107.5909}}].
 
 \bibitem{Krause:2018wmo}
-M.~Krause, M.~M\"uhlleitner, and M.~Spira, ``{2HDECAY \textemdash{}A program
+M.~Krause, M.~M\"uhlleitner and M.~Spira, \emph{{2HDECAY \textemdash{}A program
   for the calculation of electroweak one-loop corrections to Higgs decays in
-  the Two-Higgs-Doublet Model including state-of-the-art QCD corrections},''
-  {\em Comput. Phys. Commun.}, vol.~246, p.~106852, 2020.
+  the Two-Higgs-Doublet Model including state-of-the-art QCD corrections}},
+  \href{https://doi.org/10.1016/j.cpc.2019.08.003}{\emph{Comput. Phys. Commun.}
+  {\bfseries 246} (2020) 106852}
+  [\href{https://arxiv.org/abs/1810.00768}{{\ttfamily 1810.00768}}].
 
 \bibitem{PhysRevLett.98.222002}
-S.~Catani and M.~Grazzini, ``Next-to-next-to-leading-order subtraction
+S.~Catani and M.~Grazzini, \emph{Next-to-next-to-leading-order subtraction
   formalism in hadron collisions and its application to higgs-boson production
-  at the large hadron collider,'' {\em Phys. Rev. Lett.}, vol.~98, p.~222002,
-  May 2007.
+  at the large hadron collider},
+  \href{https://doi.org/10.1103/PhysRevLett.98.222002}{\emph{Phys. Rev. Lett.}
+  {\bfseries 98} (2007) 222002}.
 
 \bibitem{Rogozhnikov:2016bdp}
-A.~Rogozhnikov, ``{Reweighting with Boosted Decision Trees},'' {\em J. Phys.
-  Conf. Ser.}, vol.~762, no.~1, p.~012036, 2016.
+A.~Rogozhnikov, \emph{{Reweighting with Boosted Decision Trees}},
+  \href{https://doi.org/10.1088/1742-6596/762/1/012036}{\emph{J. Phys. Conf.
+  Ser.} {\bfseries 762} (2016) 012036}
+  [\href{https://arxiv.org/abs/1608.05806}{{\ttfamily 1608.05806}}].
+
+\bibitem{CMS:2020rpr}
+\emph{{Analysis of the CP structure of the Yukawa coupling between the Higgs
+  boson and $\tau$ leptons in proton-proton collisions at
+  $\sqrt{s}=13~\mathrm{TeV}$}}, .
 
 \bibitem{16e7f618-c06b-3d10-8705-1086b218d827}
-F.~J. Massey, ``The kolmogorov-smirnov test for goodness of fit,'' {\em Journal
-  of the American Statistical Association}, vol.~46, no.~253, pp.~68--78, 1951.
+F.~J. Massey, \emph{The kolmogorov-smirnov test for goodness of fit},
+  {\emph{Journal of the American Statistical Association} {\bfseries 46} (1951)
+  68}.
 
 \bibitem{Bahl:2022igd}
-H.~Bahl, T.~Biek\"otter, S.~Heinemeyer, C.~Li, S.~Paasch, G.~Weiglein, and
-  J.~Wittbrodt, ``{HiggsTools: BSM scalar phenomenology with new versions of
-  HiggsBounds and HiggsSignals},'' 10 2022.
+H.~Bahl, T.~Biek\"otter, S.~Heinemeyer, C.~Li, S.~Paasch, G.~Weiglein et~al.,
+  \emph{{HiggsTools: BSM scalar phenomenology with new versions of HiggsBounds
+  and HiggsSignals}},  \href{https://arxiv.org/abs/2210.09332}{{\ttfamily
+  2210.09332}}.
 
-\end{thebibliography}
+\end{thebibliography}\endgroup

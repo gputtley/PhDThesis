@@ -34,7 +34,7 @@
 
 \hypersetup{
   colorlinks=true,
-  linkcolor=black,
+  linkcolor=blue,
   urlcolor=red,
   citecolor=blue,
 }
@@ -53,6 +53,8 @@
 \fancyhead{} % clear all header fields
 \fancyhead[LE, RO]{\thepage}
 \fancyhead[LO, RE]{\leftmark}
+\fancyhead[LO]{ \nouppercase{\leftmark}}
+\fancyhead[RE]{ \nouppercase{\leftmark}}
 \fancyfoot{}
 \renewcommand{\chaptermark}[1]{%
 \markboth{#1}{}}
@@ -133,8 +135,8 @@ minimum height=4em]
 \newpage
 \input{Sections/conclusion.tex}
 \newpage
-\bibliographystyle{ieeetr}
-\bibliographystyle{ieee}
+%\bibliographystyle{ieeetr}
+\bibliographystyle{JHEP.bst}
 \bibliography{bibs/sample}
 \newpage
 \input{Sections/acronyms.tex}

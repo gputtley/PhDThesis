@@ -1,107 +1,334 @@
 This is BibTeX, Version 0.99d (TeX Live 2020)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
-The style file: ieeetr.bst
-Illegal, another \bibstyle command---line 1142 of file main.aux
- : \bibstyle
- :          {ieee}
-I'm skipping whatever remains of this command
+The style file: JHEP.bst.bst
+authors is an unknown function---line 713 of file JHEP.bst.bst
 Database file #1: bibs/sample.bib
-Repeated entry---line 3949 of file bibs/sample.bib
+Repeated entry---line 3965 of file bibs/sample.bib
  : @article{Englert:1964et
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3960 of file bibs/sample.bib
+Repeated entry---line 3976 of file bibs/sample.bib
  : @article{Higgs:1964ia
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3970 of file bibs/sample.bib
+Repeated entry---line 3986 of file bibs/sample.bib
  : @article{Higgs:1964pj
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3981 of file bibs/sample.bib
+Repeated entry---line 3997 of file bibs/sample.bib
  : @article{Higgs:1966ev
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3991 of file bibs/sample.bib
+Repeated entry---line 4007 of file bibs/sample.bib
  : @article{Guralnik:1964eu
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4002 of file bibs/sample.bib
+Repeated entry---line 4018 of file bibs/sample.bib
  : @article{Kibble:1967sv
  :                       ,
 I'm skipping whatever remains of this entry
 Warning--entry type for "sm_diagram" isn't style-file defined
---line 4137 of file bibs/sample.bib
+--line 4153 of file bibs/sample.bib
 Warning--entry type for "lumi" isn't style-file defined
---line 4233 of file bibs/sample.bib
+--line 4249 of file bibs/sample.bib
 Warning--entry type for "deepjet" isn't style-file defined
---line 4350 of file bibs/sample.bib
-Warning--I didn't find a database entry for "cmsElectron"
-Warning--I didn't find a database entry for "PFJetID"
-Warning--I didn't find a database entry for "JetTwiki"
-Warning--empty journal in CMS:2022rbd
+--line 4366 of file bibs/sample.bib
+Repeated entry---line 4473 of file bibs/sample.bib
+ : @article{Cacciari:2008gp
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4487 of file bibs/sample.bib
+ : @article{Cacciari:2011ma
+ :                         ,
+I'm skipping whatever remains of this entry
+You can't pop an empty literal stack for entry CMS_MSSM_Tau_2018
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry CMS:2022rbd
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Bartosik:2847538
+while executing---line 1140 of file JHEP.bst.bst
 Warning--empty institution in Bartosik:2847538
-Warning--empty author in Tapper:2013yva
-Warning--empty journal in Tapper:2013yva
-Warning--empty author in LHCb:2022zom
-Warning--empty journal in LHCb:2022zom
+You can't pop an empty literal stack for entry CMS_Setup
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Tapper:2013yva
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry CMS:2015xaf
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Sirunyan:2018pgf
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry CMS:2022prd
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry CMS:2018jrd
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry CMS_embedding
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry ATLAS:2020zms
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Cornella:2021sby
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Jueid:2021avn
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry ParticleDataGroup:2022pth
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry ATLAS_Higgs_Discovery
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry CMS_Higgs_Discovery
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry LHCb:2021trn
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Kowalewski:2013mna
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry BaBar:2013mob
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Belle:2015qfa
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry LHCb:2015gmp
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Belle:2016dyj
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry LHCb:2017rln
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry LHCb:2017smo
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Muong-2:2021ojo
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry LHCb:2022zom
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Gross:1973id
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Politzer:1973fx
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Glashow:1961tr
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Weinberg:1967tq
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Salam:1968rm
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry UA1:1983crd
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry UA2:1983tsx
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Englert:1964et
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Higgs:1964ia
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Higgs:1964pj
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Higgs:1966ev
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Guralnik:1964eu
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Kibble:1967sv
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Goldstone:1961eq
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry CMS:2020xrn
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry SUSY_Primer
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Diaz:2017lit
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Schmaltz:2018nls
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Muong-2:2006rrc
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Ilisie:2015tra
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Barr:1990vd
+while executing---line 1140 of file JHEP.bst.bst
 Warning--empty author in Evans:2008zzb
+You can't pop an empty literal stack for entry Evans:2008zzb
+while executing---line 1140 of file JHEP.bst.bst
 Warning--empty author in 203828
-Warning--empty journal in 203828
-Warning--empty author in CMS:2012sda
-Warning--empty journal in CMS:2012sda
-Warning--empty author in CMS:2010mua
-Warning--empty journal in CMS:2010mua
-Warning--empty author in CMS:2010byl
-Warning--empty journal in CMS:2010byl
-Warning--empty author in CMS:2010eua
-Warning--empty journal in CMS:2010eua
-Warning--empty author in CMS:2016ljj
-Warning--empty journal in CMS:2016ljj
-Warning--empty journal in CMS:2022zks
+Warning--empty author in 203828
+You can't pop an empty literal stack for entry 203828
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry ALICE:2008ngc
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry ATLAS:2008xda
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry LHCb:2008vvz
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Malberti:2014pda
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry CMS:2012sda
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry CMS:2013lxn
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry CMS:2014pgm
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Fruhwirth:1987fm
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry CMS:2010mua
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Rose:1998dzq
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Fruhwirth:2007hz
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry PF_CMS
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry CMS:2010byl
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry CMS:2010eua
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Adam:934067
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry CMS:2012nsv
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry CMS:2018rym
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry CMS:2009fdy
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Salam:2010nqg
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Cacciari:2008gp
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Cacciari:2011ma
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry CMS:2017wyc
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry CMS:2013wea
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry CMS:2017wtu
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Bols:2020bkb
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry CMS:2016ljj
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry CMS:2020ebo
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Bahl:2018zmf
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Bahl:2020kwe
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Bahl:2019ago
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Bagnaschi:2791954
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry CMS:2018hir
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Nason:2004rx
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Frixione:2007vw
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Alioli:2010xd
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Jezo:2015aia
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Ball:2014uwa
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Ball:2017nwa
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Sirunyan:2019dfx
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Sjostrand:2014zea
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Agostinelli:2002hh
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry CMS:2022zks
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Alwall:2011uj
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Frederix:2012ps
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Bianchini:2014vza
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry CMS:2022kdi
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Sirunyan:2018zut
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry CMS:2018lkr
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Alwall:2007fs
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Alioli:2011as
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Frederix:2012dh
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Re:2010bp
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Melnikov:2006kv
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Czakon:2011xx
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Kidonakis:2013zqa
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Campbell:2011bn
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Gehrmann:2014fva
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Barlow:1993dm
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Conway:2011in
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Sirunyan:2019kia
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Junk:1999kv
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Read:2002hq
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Cowan:2010js
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry LHCHiggsCrossSectionWorkingGroup:2013rie
+while executing---line 1140 of file JHEP.bst.bst
 Warning--empty institution in LHCHiggsCrossSectionWorkingGroup:2013rie
+You can't pop an empty literal stack for entry deFlorian:2016spz
+while executing---line 1140 of file JHEP.bst.bst
 Warning--empty institution in deFlorian:2016spz
-Warning--empty journal in Bahl:2022igd
-You've used 116 entries,
-            1876 wiz_defined-function locations,
-            1142 strings with 21401 characters,
-and the built_in function-call counts, 28955 in all, are:
-= -- 2991
-> -- 959
+You can't pop an empty literal stack for entry Denner:2011mq
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Krause:2018wmo
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry PhysRevLett.98.222002
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Rogozhnikov:2016bdp
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry CMS:2020rpr
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry 16e7f618-c06b-3d10-8705-1086b218d827
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Bahl:2022igd
+while executing---line 1140 of file JHEP.bst.bst
+You've used 124 entries,
+            2283 wiz_defined-function locations,
+            1433 strings with 26839 characters,
+and the built_in function-call counts, 38329 in all, are:
+= -- 3775
+> -- 1935
 < -- 3
-+ -- 373
-- -- 257
-* -- 1669
-:= -- 3883
-add.period$ -- 120
-call.type$ -- 116
-change.case$ -- 118
++ -- 548
+- -- 424
+* -- 3169
+:= -- 5699
+add.period$ -- 126
+call.type$ -- 124
+change.case$ -- 126
 chr.to.int$ -- 0
-cite$ -- 139
-duplicate$ -- 1866
-empty$ -- 2590
-format.name$ -- 257
-if$ -- 7400
+cite$ -- 130
+duplicate$ -- 1929
+empty$ -- 3173
+format.name$ -- 424
+if$ -- 9981
 int.to.chr$ -- 0
-int.to.str$ -- 116
-missing$ -- 107
-newline$ -- 355
-num.names$ -- 106
-pop$ -- 371
+int.to.str$ -- 124
+missing$ -- 440
+newline$ -- 378
+num.names$ -- 181
+pop$ -- 215
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1476
+skip$ -- 1595
 stack$ -- 0
-substring$ -- 1235
-swap$ -- 953
+substring$ -- 1057
+swap$ -- 996
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 23
-while$ -- 234
-width$ -- 119
-write$ -- 1115
-(There were 7 error messages)
+warning$ -- 6
+while$ -- 299
+width$ -- 127
+write$ -- 1341
+(There were 130 error messages)

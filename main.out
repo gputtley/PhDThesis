@@ -33,45 +33,48 @@
 \BOOKMARK [2][-]{subsection.4.2.1}{Trigger Requirements}{section.4.2}% 33
 \BOOKMARK [2][-]{subsection.4.2.2}{Offline Requirements}{section.4.2}% 34
 \BOOKMARK [1][-]{section.4.3}{Search Optimisation}{chapter.4}% 35
-\BOOKMARK [1][-]{section.4.4}{Background Modelling Overview}{chapter.4}% 36
-\BOOKMARK [1][-]{section.4.5}{QCD Estimation in the e Channel}{chapter.4}% 37
-\BOOKMARK [1][-]{section.4.6}{Embedding Method}{chapter.4}% 38
-\BOOKMARK [1][-]{section.4.7}{Fake Factor Method}{chapter.4}% 39
-\BOOKMARK [2][-]{subsection.4.7.1}{Determination Regions}{section.4.7}% 40
-\BOOKMARK [2][-]{subsection.4.7.2}{Parametrisation}{section.4.7}% 41
-\BOOKMARK [2][-]{subsection.4.7.3}{Corrections}{section.4.7}% 42
-\BOOKMARK [2][-]{subsection.4.7.4}{Applying Fake Factors}{section.4.7}% 43
-\BOOKMARK [1][-]{section.4.8}{MC Corrections}{chapter.4}% 44
-\BOOKMARK [1][-]{section.4.9}{Uncertainty Model}{chapter.4}% 45
-\BOOKMARK [1][-]{section.4.10}{Signal Extraction}{chapter.4}% 46
-\BOOKMARK [1][-]{section.4.11}{Postfit Plots}{chapter.4}% 47
-\BOOKMARK [1][-]{section.4.12}{Model Independent Results}{chapter.4}% 48
-\BOOKMARK [2][-]{subsection.4.12.1}{Limits}{section.4.12}% 49
-\BOOKMARK [2][-]{subsection.4.12.2}{Significance and Compatibility}{section.4.12}% 50
-\BOOKMARK [2][-]{subsection.4.12.3}{2D Likelihood Scans}{section.4.12}% 51
-\BOOKMARK [1][-]{section.4.13}{Model Dependent Limits}{chapter.4}% 52
-\BOOKMARK [0][-]{chapter.5}{Search for new physics in tautautautau final states}{}% 53
-\BOOKMARK [1][-]{section.5.1}{Signal Modelling}{chapter.5}% 54
-\BOOKMARK [1][-]{section.5.2}{Event Selection}{chapter.5}% 55
-\BOOKMARK [2][-]{subsection.5.2.1}{Trigger Requirements}{section.5.2}% 56
-\BOOKMARK [2][-]{subsection.5.2.2}{Offline Requirements}{section.5.2}% 57
-\BOOKMARK [1][-]{section.5.3}{Search Optimisation}{chapter.5}% 58
-\BOOKMARK [1][-]{section.5.4}{Background Modelling Overview}{chapter.5}% 59
-\BOOKMARK [1][-]{section.5.5}{ZZ Modelling}{chapter.5}% 60
-\BOOKMARK [1][-]{section.5.6}{Machine Learning Fake Factor Method}{chapter.5}% 61
-\BOOKMARK [2][-]{subsection.5.6.1}{BDT Reweighter}{section.5.6}% 62
-\BOOKMARK [2][-]{subsection.5.6.2}{Fitting Regions}{section.5.6}% 63
-\BOOKMARK [2][-]{subsection.5.6.3}{Variables Used}{section.5.6}% 64
-\BOOKMARK [2][-]{subsection.5.6.4}{Machine Learning Subtraction Method}{section.5.6}% 65
-\BOOKMARK [2][-]{subsection.5.6.5}{Fitting}{section.5.6}% 66
-\BOOKMARK [2][-]{subsection.5.6.6}{Applying Fake Factors}{section.5.6}% 67
-\BOOKMARK [1][-]{section.5.7}{Uncertainty Model}{chapter.5}% 68
-\BOOKMARK [1][-]{section.5.8}{Signal Extraction}{chapter.5}% 69
-\BOOKMARK [2][-]{subsection.5.8.1}{Postfit Plots}{section.5.8}% 70
-\BOOKMARK [1][-]{section.5.9}{Model Independent Results}{chapter.5}% 71
-\BOOKMARK [2][-]{subsection.5.9.1}{Limits}{section.5.9}% 72
-\BOOKMARK [2][-]{subsection.5.9.2}{Compatibility}{section.5.9}% 73
-\BOOKMARK [1][-]{section.5.10}{Model Dependent Limits}{chapter.5}% 74
-\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 75
-\BOOKMARK [1][-]{section.6.1}{Global Interpretations of Results}{chapter.6}% 76
-\BOOKMARK [1][-]{section.6.2}{Summary}{chapter.6}% 77
+\BOOKMARK [2][-]{subsection.4.3.1}{High Mass Optimisation}{section.4.3}% 36
+\BOOKMARK [2][-]{subsection.4.3.2}{Low Mass Optimisation}{section.4.3}% 37
+\BOOKMARK [2][-]{subsection.4.3.3}{Standard Model Higgs Boson Optimisation}{section.4.3}% 38
+\BOOKMARK [1][-]{section.4.4}{Background Modelling Overview}{chapter.4}% 39
+\BOOKMARK [1][-]{section.4.5}{QCD Estimation in the e Channel}{chapter.4}% 40
+\BOOKMARK [1][-]{section.4.6}{Embedding Method}{chapter.4}% 41
+\BOOKMARK [1][-]{section.4.7}{Fake Factor Method}{chapter.4}% 42
+\BOOKMARK [2][-]{subsection.4.7.1}{Determination Regions}{section.4.7}% 43
+\BOOKMARK [2][-]{subsection.4.7.2}{Parametrisation}{section.4.7}% 44
+\BOOKMARK [2][-]{subsection.4.7.3}{Corrections}{section.4.7}% 45
+\BOOKMARK [2][-]{subsection.4.7.4}{Applying Fake Factors}{section.4.7}% 46
+\BOOKMARK [1][-]{section.4.8}{MC Corrections}{chapter.4}% 47
+\BOOKMARK [1][-]{section.4.9}{Uncertainty Model}{chapter.4}% 48
+\BOOKMARK [1][-]{section.4.10}{Signal Extraction}{chapter.4}% 49
+\BOOKMARK [1][-]{section.4.11}{Postfit Plots}{chapter.4}% 50
+\BOOKMARK [1][-]{section.4.12}{Model Independent Results}{chapter.4}% 51
+\BOOKMARK [2][-]{subsection.4.12.1}{Limits}{section.4.12}% 52
+\BOOKMARK [2][-]{subsection.4.12.2}{Significance and Compatibility}{section.4.12}% 53
+\BOOKMARK [2][-]{subsection.4.12.3}{2D Likelihood Scans}{section.4.12}% 54
+\BOOKMARK [1][-]{section.4.13}{Model Dependent Limits}{chapter.4}% 55
+\BOOKMARK [0][-]{chapter.5}{Search for new physics in tautautautau final states}{}% 56
+\BOOKMARK [1][-]{section.5.1}{Signal Modelling}{chapter.5}% 57
+\BOOKMARK [1][-]{section.5.2}{Event Selection}{chapter.5}% 58
+\BOOKMARK [2][-]{subsection.5.2.1}{Trigger Requirements}{section.5.2}% 59
+\BOOKMARK [2][-]{subsection.5.2.2}{Offline Requirements}{section.5.2}% 60
+\BOOKMARK [1][-]{section.5.3}{Search Optimisation}{chapter.5}% 61
+\BOOKMARK [1][-]{section.5.4}{Background Modelling Overview}{chapter.5}% 62
+\BOOKMARK [1][-]{section.5.5}{ZZ Modelling}{chapter.5}% 63
+\BOOKMARK [1][-]{section.5.6}{Machine Learning Fake Factor Method}{chapter.5}% 64
+\BOOKMARK [2][-]{subsection.5.6.1}{BDT Reweighter}{section.5.6}% 65
+\BOOKMARK [2][-]{subsection.5.6.2}{Fitting Regions}{section.5.6}% 66
+\BOOKMARK [2][-]{subsection.5.6.3}{Variables Used}{section.5.6}% 67
+\BOOKMARK [2][-]{subsection.5.6.4}{Machine Learning Subtraction Method}{section.5.6}% 68
+\BOOKMARK [2][-]{subsection.5.6.5}{Fitting}{section.5.6}% 69
+\BOOKMARK [2][-]{subsection.5.6.6}{Applying Fake Factors}{section.5.6}% 70
+\BOOKMARK [1][-]{section.5.7}{Uncertainty Model}{chapter.5}% 71
+\BOOKMARK [1][-]{section.5.8}{Signal Extraction}{chapter.5}% 72
+\BOOKMARK [2][-]{subsection.5.8.1}{Postfit Plots}{section.5.8}% 73
+\BOOKMARK [1][-]{section.5.9}{Model Independent Results}{chapter.5}% 74
+\BOOKMARK [2][-]{subsection.5.9.1}{Limits}{section.5.9}% 75
+\BOOKMARK [2][-]{subsection.5.9.2}{Compatibility}{section.5.9}% 76
+\BOOKMARK [1][-]{section.5.10}{Model Dependent Limits}{chapter.5}% 77
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 78
+\BOOKMARK [1][-]{section.6.1}{Global Interpretations of Results}{chapter.6}% 79
+\BOOKMARK [1][-]{section.6.2}{Summary}{chapter.6}% 80
