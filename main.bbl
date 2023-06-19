@@ -11,18 +11,23 @@
 \bibitem{CMS:2022rbd}
 {CMS Collaboration}, \emph{{Searches for additional Higgs bosons and vector
   leptoquarks in $\tau\tau$ final states in proton-proton collisions at
-  $\sqrt{s}=13~\mathrm{TeV}$}}, .
+  $\sqrt{s}=13~\mathrm{TeV}$}}, {\emph{CMS Physics Analysis Summary} {\bfseries
+  CMS-PAS-HIG-21-001} (2022) }.
 
 \bibitem{sm_diagram}
-D.~Galbraith and C.~Burgard,
-  \emph{https://texample.net/tikz/examples/model-physics/},  May, 2023.
+D.~Galbraith and C.~Burgard, ``{Example: Standard model of physics}.''
+  \url{https://texample.net/tikz/examples/model-physics/}.
+\newblock [Accessed: 25/05/23].
 
 \bibitem{Bartosik:2847538}
 H.~Bartosik and G.~Rumolo, \emph{{Performance of the LHC injector chain after
-  the upgrade and potential development}},  tech. rep., 2022.
+  the upgrade and potential development}},
+  \href{https://arxiv.org/abs/2203.09202}{{\ttfamily 2203.09202}}.
 
 \bibitem{lumi}
-\emph{{CMS Luminosity Public Results}},  May, 2023.
+{CMS Collaboration}, ``{CMS Luminosity public results}.''
+  \url{https://twiki.cern.ch/twiki/bin/view/CMSPublic/LumiPublicResults}.
+\newblock [Accessed: 25/05/23].
 
 \bibitem{CMS_Setup}
 {CMS Collaboration}, \emph{{The CMS Experiment at the CERN LHC}},
@@ -30,37 +35,40 @@ H.~Bartosik and G.~Rumolo, \emph{{Performance of the LHC injector chain after
   3} (2008) S08004}.
 
 \bibitem{Tapper:2013yva}
-\emph{{CMS Technical Design Report for the Level-1 Trigger Upgrade}}, .
+{CMS Collaboration}, \emph{{CMS Technical Design Report for the Level-1 Trigger
+  Upgrade}}, {\emph{CMS Technical Design Report} {\bfseries CERN-LHCC-2013-011,
+  CMS-TDR-12, CMS-TDR-012} (2013) }.
 
 \bibitem{CMS:2015xaf}
-V.~Khachatryan et~al., \emph{{Performance of Electron Reconstruction and
-  Selection with the CMS Detector in Proton-Proton Collisions at
-  \ensuremath{\sqrt{}}s = 8 TeV}},
-  \href{https://doi.org/10.1088/1748-0221/10/06/P06005}{\emph{JINST} {\bfseries
-  10} (2015) P06005} [\href{https://arxiv.org/abs/1502.02701}{{\ttfamily
-  1502.02701}}].
+{CMS Collaboration}, \emph{{Performance of Electron Reconstruction and
+  Selection with the CMS Detector in Proton-Proton Collisions at $\sqrt{s}$ = 8
+  TeV}}, \href{https://doi.org/10.1088/1748-0221/10/06/P06005}{\emph{JINST}
+  {\bfseries 10} (2015) P06005}
+  [\href{https://arxiv.org/abs/1502.02701}{{\ttfamily 1502.02701}}].
 
 \bibitem{deepjet}
-C.~Collaboration, \emph{Cms public twiki},  May, 2023.
+{CMS Collaboration}, ``{CMS Public Twiki}.''
+  \url{https://twiki.cern.ch/twiki/bin/view/CMSPublic/BTV13TeV2017DeepJet}.
+\newblock [Accessed: 25/05/23].
 
 \bibitem{Sirunyan:2018pgf}
-A.~M. Sirunyan et~al., \emph{Performance of reconstruction and identification
-  of {$\tau$} leptons decaying to hadrons and {$\nu_\tau$} in pp collisions at
+{CMS Collaboration}, \emph{Performance of reconstruction and identification of
+  {$\tau$} leptons decaying to hadrons and {$\nu_\tau$} in pp collisions at
   {$\sqrt{s}=$ 13 TeV}},
   \href{https://doi.org/10.1088/1748-0221/13/10/P10005}{\emph{JINST} {\bfseries
   13} (2018) P10005} [\href{https://arxiv.org/abs/1809.02816}{{\ttfamily
   1809.02816}}].
 
 \bibitem{CMS:2022prd}
-A.~Tumasyan et~al., \emph{Identification of hadronic tau lepton decays using a
+{CMS Collaboration}, \emph{Identification of hadronic tau lepton decays using a
   deep neural network},
   \href{https://doi.org/10.1088/1748-0221/17/07/P07023}{\emph{JINST} {\bfseries
   17} (2022) P07023} [\href{https://arxiv.org/abs/2201.08458}{{\ttfamily
   2201.08458}}].
 
 \bibitem{CMS:2018jrd}
-A.~M. Sirunyan et~al., \emph{{Performance of reconstruction and identification
-  of $\tau$ leptons decaying to hadrons and $\nu_\tau$ in pp collisions at
+{CMS Collaboration}, \emph{{Performance of reconstruction and identification of
+  $\tau$ leptons decaying to hadrons and $\nu_\tau$ in pp collisions at
   $\sqrt{s}=$ 13 TeV}},
   \href{https://doi.org/10.1088/1748-0221/13/10/P10005}{\emph{JINST} {\bfseries
   13} (2018) P10005} [\href{https://arxiv.org/abs/1809.02816}{{\ttfamily
@@ -74,8 +82,8 @@ A.~M. Sirunyan et~al., \emph{{Performance of reconstruction and identification
   1903.01216}}].
 
 \bibitem{ATLAS:2020zms}
-G.~Aad et~al., \emph{Search for heavy {Higgs} bosons decaying into two tau
-  leptons with the {ATLAS} detector using pp collisions at {$\sqrt{s}=13$
+{ATLAS Collaboration}, \emph{Search for heavy {Higgs} bosons decaying into two
+  tau leptons with the {ATLAS} detector using pp collisions at {$\sqrt{s}=13$
   TeV}}, \href{https://doi.org/10.1103/PhysRevLett.125.051801}{\emph{Phys. Rev.
   Lett.} {\bfseries 125} (2020) 051801}
   [\href{https://arxiv.org/abs/2002.12223}{{\ttfamily 2002.12223}}].
@@ -114,33 +122,33 @@ R.~L. Workman et~al., \emph{{Review of Particle Physics}},
   1207.7235}}].
 
 \bibitem{LHCb:2021trn}
-R.~Aaij et~al., \emph{{Test of lepton universality in beauty-quark decays}},
-  \href{https://doi.org/10.1038/s41567-021-01478-8}{\emph{Nature Phys.}
-  {\bfseries 18} (2022) 277}
+{LHCb Collaboration}, \emph{{Test of lepton universality in beauty-quark
+  decays}}, \href{https://doi.org/10.1038/s41567-021-01478-8}{\emph{Nature
+  Phys.} {\bfseries 18} (2022) 277}
   [\href{https://arxiv.org/abs/2103.11769}{{\ttfamily 2103.11769}}].
 
 \bibitem{Kowalewski:2013mna}
-B.~Kowalewski, \emph{{Evidence for an excess of $B \to D^{(*)} \tau \nu$
-  decays}}, \href{https://doi.org/10.1088/1742-6596/455/1/012039}{\emph{J.
+{BaBar Collaboration}, \emph{{Evidence for an excess of $B \to D^{(*)} \tau
+  \nu$ decays}}, \href{https://doi.org/10.1088/1742-6596/455/1/012039}{\emph{J.
   Phys. Conf. Ser.} {\bfseries 455} (2013) 012039}.
 
 \bibitem{BaBar:2013mob}
-J.~P. Lees et~al., \emph{Measurement of an excess of {$\bar{\mathrm{B}} \to
+{BaBar Collaboration}, \emph{Measurement of an excess of {$\bar{\mathrm{B}} \to
   \mathrm{D}^{(*)}\tau^- \bar{\nu}_\tau$} decays and implications for charged
   higgs bosons}, \href{https://doi.org/10.1103/PhysRevD.88.072012}{\emph{Phys.
   Rev. D} {\bfseries 88} (2013) 072012}
   [\href{https://arxiv.org/abs/1303.0571}{{\ttfamily 1303.0571}}].
 
 \bibitem{Belle:2015qfa}
-M.~Huschle et~al., \emph{{Measurement of the branching ratio of $\bar{B} \to
-  D^{(\ast)} \tau^- \bar{\nu}_\tau$ relative to $\bar{B} \to D^{(\ast)} \ell^-
-  \bar{\nu}_\ell$ decays with hadronic tagging at Belle}},
+{Belle Collaboration}, \emph{{Measurement of the branching ratio of $\bar{B}
+  \to D^{(\ast)} \tau^- \bar{\nu}_\tau$ relative to $\bar{B} \to D^{(\ast)}
+  \ell^- \bar{\nu}_\ell$ decays with hadronic tagging at Belle}},
   \href{https://doi.org/10.1103/PhysRevD.92.072014}{\emph{Phys. Rev. D}
   {\bfseries 92} (2015) 072014}
   [\href{https://arxiv.org/abs/1507.03233}{{\ttfamily 1507.03233}}].
 
 \bibitem{LHCb:2015gmp}
-R.~Aaij et~al., \emph{{Measurement of the ratio of branching fractions
+{LHCb Collaboration}, \emph{{Measurement of the ratio of branching fractions
   $\mathcal{B}(\bar{\mathrm{B}}^0 \to
   \mathrm{D}^{*+}\tau^{-}\bar{\nu}_{\tau})/\mathcal{B}(\bar{\mathrm{B}}^0 \to
   \mathrm{D}^{*+}\mu^{-}\bar{\nu}_{\mu})$}},
@@ -149,7 +157,7 @@ R.~Aaij et~al., \emph{{Measurement of the ratio of branching fractions
   [\href{https://arxiv.org/abs/1506.08614}{{\ttfamily 1506.08614}}].
 
 \bibitem{Belle:2016dyj}
-S.~Hirose et~al., \emph{Measurement of the $\tau$ lepton polarization and
+{Belle Collaboration}, \emph{Measurement of the $\tau$ lepton polarization and
   {$R(\mathrm{D}^*)$} in the decay {$\bar{\mathrm{B}} \to \mathrm{D}^* \tau^-
   \bar{\nu}_\tau$}},
   \href{https://doi.org/10.1103/PhysRevLett.118.211801}{\emph{Phys. Rev. Lett.}
@@ -157,15 +165,15 @@ S.~Hirose et~al., \emph{Measurement of the $\tau$ lepton polarization and
   [\href{https://arxiv.org/abs/1612.00529}{{\ttfamily 1612.00529}}].
 
 \bibitem{LHCb:2017rln}
-R.~Aaij et~al., \emph{{Test of Lepton Flavor Universality by the measurement of
-  the $B^0 \to D^{*-} \tau^+ \nu_{\tau}$ branching fraction using three-prong
-  $\tau$ decays}},
+{LHCb Collaboration}, \emph{{Test of Lepton Flavor Universality by the
+  measurement of the $B^0 \to D^{*-} \tau^+ \nu_{\tau}$ branching fraction
+  using three-prong $\tau$ decays}},
   \href{https://doi.org/10.1103/PhysRevD.97.072013}{\emph{Phys. Rev. D}
   {\bfseries 97} (2018) 072013}
   [\href{https://arxiv.org/abs/1711.02505}{{\ttfamily 1711.02505}}].
 
 \bibitem{LHCb:2017smo}
-R.~Aaij et~al., \emph{Measurement of the ratio of the {$\mathrm{B}^0 \to
+{LHCb Collaboration}, \emph{Measurement of the ratio of the {$\mathrm{B}^0 \to
   \mathrm{D}^{*-} \tau^+ \nu_{\tau}$ and $\mathrm{B}^0 \to \mathrm{D}^{*-}
   \mu^+ \nu_{\mu}$} branching fractions using three-prong $\tau$-lepton
   decays}, \href{https://doi.org/10.1103/PhysRevLett.120.171802}{\emph{Phys.
@@ -173,8 +181,8 @@ R.~Aaij et~al., \emph{Measurement of the ratio of the {$\mathrm{B}^0 \to
   [\href{https://arxiv.org/abs/1708.08856}{{\ttfamily 1708.08856}}].
 
 \bibitem{Muong-2:2021ojo}
-B.~Abi et~al., \emph{{Measurement of the Positive Muon Anomalous Magnetic
-  Moment to 0.46 ppm}},
+{Muon g-2 Collaboration}, \emph{{Measurement of the Positive Muon Anomalous
+  Magnetic Moment to 0.46 ppm}},
   \href{https://doi.org/10.1103/PhysRevLett.126.141801}{\emph{Phys. Rev. Lett.}
   {\bfseries 126} (2021) 141801}
   [\href{https://arxiv.org/abs/2104.03281}{{\ttfamily 2104.03281}}].
@@ -260,7 +268,7 @@ J.~Goldstone, \emph{{Field Theories with Superconductor Solutions}},
   (1961) 154}.
 
 \bibitem{CMS:2020xrn}
-A.~M. Sirunyan et~al., \emph{{A measurement of the Higgs boson mass in the
+{CMS Collaboration}, \emph{{A measurement of the Higgs boson mass in the
   diphoton decay channel}},
   \href{https://doi.org/10.1016/j.physletb.2020.135425}{\emph{Phys. Lett. B}
   {\bfseries 805} (2020) 135425}
@@ -286,8 +294,8 @@ M.~Schmaltz and Y.-M. Zhong, \emph{The leptoquark hunter\textquoteright{}s
   1810.10017}}].
 
 \bibitem{Muong-2:2006rrc}
-G.~W. Bennett et~al., \emph{{Final Report of the Muon E821 Anomalous Magnetic
-  Moment Measurement at BNL}},
+{Muon g-2 Collaboration}, \emph{{Final Report of the Muon E821 Anomalous
+  Magnetic Moment Measurement at BNL}},
   \href{https://doi.org/10.1103/PhysRevD.73.072003}{\emph{Phys. Rev. D}
   {\bfseries 73} (2006) 072003}
   [\href{https://arxiv.org/abs/hep-ex/0602035}{{\ttfamily hep-ex/0602035}}].
@@ -310,40 +318,43 @@ L.~Evans and P.~Bryant (Eds.), \emph{{LHC Machine}},
   3} (2008) S08001}.
 
 \bibitem{203828}
-\emph{{LEP Design Report: Vol.2. The LEP Main Ring}}, .
+{LEP Injector Study Group}, \emph{{LEP Design Report: Vol.2. The LEP Main
+  Ring}}, {\emph{Technical Design Report} {\bfseries CERN-LEP-84-01} (1984) }.
 
 \bibitem{ALICE:2008ngc}
-K.~Aamodt et~al., \emph{{The ALICE experiment at the CERN LHC}},
+{ALICE Collaboration}, \emph{{The ALICE experiment at the CERN LHC}},
   \href{https://doi.org/10.1088/1748-0221/3/08/S08002}{\emph{JINST} {\bfseries
   3} (2008) S08002}.
 
 \bibitem{ATLAS:2008xda}
-G.~Aad et~al., \emph{{The ATLAS Experiment at the CERN Large Hadron Collider}},
-  \href{https://doi.org/10.1088/1748-0221/3/08/S08003}{\emph{JINST} {\bfseries
-  3} (2008) S08003}.
+{ATLAS Collaboration}, \emph{{The ATLAS Experiment at the CERN Large Hadron
+  Collider}}, \href{https://doi.org/10.1088/1748-0221/3/08/S08003}{\emph{JINST}
+  {\bfseries 3} (2008) S08003}.
 
 \bibitem{LHCb:2008vvz}
-A.~A. Alves, Jr. et~al., \emph{{The LHCb Detector at the LHC}},
+{LHCb Collaboration}, \emph{{The LHCb Detector at the LHC}},
   \href{https://doi.org/10.1088/1748-0221/3/08/S08005}{\emph{JINST} {\bfseries
   3} (2008) S08005}.
 
 \bibitem{Malberti:2014pda}
-M.~Malberti, \emph{{Operation and performance of the CMS tracker}},
+{CMS Collaboration}, \emph{{Operation and performance of the CMS tracker}},
   \href{https://doi.org/10.22323/1.213.0347}{\emph{PoS} {\bfseries TIPP2014}
   (2014) 347}.
 
 \bibitem{CMS:2012sda}
-\emph{{CMS Technical Design Report for the Pixel Detector Upgrade}}, .
+{CMS Collaboration}, \emph{{CMS Technical Design Report for the Pixel Detector
+  Upgrade}}, \href{https://doi.org/10.2172/1151650}{\emph{Technical Design
+  Report} {\bfseries CERN-LHCC-2012-016, CMS-TDR-011} (2012) }.
 
 \bibitem{CMS:2013lxn}
-S.~Chatrchyan et~al., \emph{{Energy Calibration and Resolution of the CMS
+{CMS Collaboration}, \emph{{Energy Calibration and Resolution of the CMS
   Electromagnetic Calorimeter in $pp$ Collisions at $\sqrt{s} = 7$ TeV}},
   \href{https://doi.org/10.1088/1748-0221/8/09/P09009}{\emph{JINST} {\bfseries
   8} (2013) P09009} [\href{https://arxiv.org/abs/1306.2016}{{\ttfamily
   1306.2016}}].
 
 \bibitem{CMS:2014pgm}
-S.~Chatrchyan et~al., \emph{{Description and performance of track and
+{CMS Collaboration}, \emph{{Description and performance of track and
   primary-vertex reconstruction with the CMS tracker}},
   \href{https://doi.org/10.1088/1748-0221/9/10/P10009}{\emph{JINST} {\bfseries
   9} (2014) P10009} [\href{https://arxiv.org/abs/1405.6569}{{\ttfamily
@@ -355,7 +366,8 @@ R.~Fruhwirth, \emph{{Application of Kalman filtering to track and vertex
   Instrum. Meth. A} {\bfseries 262} (1987) 444}.
 
 \bibitem{CMS:2010mua}
-\emph{{Measurement of Tracking Efficiency}}, .
+{CMS Collaboration}, \emph{{Measurement of Tracking Efficiency}}, {\emph{CMS
+  Physics Analysis Summary} {\bfseries CMS-PAS-TRK-10-002} (2010) }.
 
 \bibitem{Rose:1998dzq}
 K.~Rose, \emph{{Deterministic annealing for clustering, compression,
@@ -376,33 +388,39 @@ R.~Fruhwirth, W.~Waltenberger and P.~Vanlaer, \emph{{Adaptive vertex fitting}},
   1706.04965}}].
 
 \bibitem{CMS:2010byl}
-\emph{{Commissioning of the Particle-flow Event Reconstruction with the first
-  LHC collisions recorded in the CMS detector}}, .
+{CMS Collaboration}, \emph{{Commissioning of the Particle-flow Event
+  Reconstruction with the first LHC collisions recorded in the CMS detector}},
+  {\emph{CMS Physics Analysis Summary} {\bfseries CMS-PAS-PFT-10-001,
+  CMS-PAS-PFT-10-001} (2010) }.
 
 \bibitem{CMS:2010eua}
-\emph{{Commissioning of the Particle-Flow reconstruction in Minimum-Bias and
-  Jet Events from pp Collisions at 7 TeV}}, .
+{CMS Collaboration}, \emph{{Commissioning of the Particle-Flow reconstruction
+  in Minimum-Bias and Jet Events from pp Collisions at 7 TeV}}, {\emph{CMS
+  Physics Analysis Summary} {\bfseries CMS-PAS-PFT-10-002, CMS-PAS-PFT-10-002}
+  (2010) }.
 
 \bibitem{Adam:934067}
-W.~Adam, B.~Mangano, T.~Speer and T.~Todorov, \emph{{Track Reconstruction in
-  the CMS tracker}},  tech. rep., CERN, Geneva, 2006.
+T.~Speer, W.~Adam, R.~Fruhwirth, A.~Strandlie, T.~Todorov and M.~Winkler,
+  \emph{{Track reconstruction in the CMS tracker}},
+  \href{https://doi.org/10.1016/j.nima.2005.11.207}{\emph{Nucl. Instrum. Meth.
+  A} {\bfseries 559} (2006) 143}.
 
 \bibitem{CMS:2012nsv}
-S.~Chatrchyan et~al., \emph{{Performance of CMS Muon Reconstruction in $pp$
+{CMS Collaboration}, \emph{{Performance of CMS Muon Reconstruction in $pp$
   Collision Events at $\sqrt{s}=7$ TeV}},
   \href{https://doi.org/10.1088/1748-0221/7/10/P10002}{\emph{JINST} {\bfseries
   7} (2012) P10002} [\href{https://arxiv.org/abs/1206.4071}{{\ttfamily
   1206.4071}}].
 
 \bibitem{CMS:2018rym}
-A.~M. Sirunyan et~al., \emph{{Performance of the CMS muon detector and muon
+{CMS Collaboration}, \emph{{Performance of the CMS muon detector and muon
   reconstruction with proton-proton collisions at $\sqrt{s}=$ 13 TeV}},
   \href{https://doi.org/10.1088/1748-0221/13/06/P06015}{\emph{JINST} {\bfseries
   13} (2018) P06015} [\href{https://arxiv.org/abs/1804.04528}{{\ttfamily
   1804.04528}}].
 
 \bibitem{CMS:2009fdy}
-S.~Chatrchyan et~al., \emph{{Performance of CMS Muon Reconstruction in
+{CMS Collaboration}, \emph{{Performance of CMS Muon Reconstruction in
   Cosmic-Ray Events}},
   \href{https://doi.org/10.1088/1748-0221/5/03/T03022}{\emph{JINST} {\bfseries
   5} (2010) T03022} [\href{https://arxiv.org/abs/0911.4994}{{\ttfamily
@@ -427,13 +445,15 @@ M.~Cacciari, G.~P. Salam and G.~Soyez, \emph{{FastJet} user manual},
   [\href{https://arxiv.org/abs/1111.6097}{{\ttfamily 1111.6097}}].
 
 \bibitem{CMS:2017wyc}
-\emph{{Jet algorithms performance in 13 TeV data}}, .
+{CMS Collaboration}, \emph{{Jet algorithms performance in 13 TeV data}},
+  {\emph{CMS Physics Analysis Summary} {\bfseries CMS-PAS-JME-16-003} (2017) }.
 
 \bibitem{CMS:2013wea}
-\emph{{Pileup Jet Identification}}, .
+{CMS Collaboration}, \emph{{Pileup Jet Identification}}, {\emph{CMS Physics
+  Analysis Summary} {\bfseries CMS-PAS-JME-13-005} (2013) }.
 
 \bibitem{CMS:2017wtu}
-A.~M. Sirunyan et~al., \emph{{Identification of heavy-flavour jets with the CMS
+{CMS Collaboration}, \emph{{Identification of heavy-flavour jets with the CMS
   detector in pp collisions at 13 TeV}},
   \href{https://doi.org/10.1088/1748-0221/13/05/P05011}{\emph{JINST} {\bfseries
   13} (2018) P05011} [\href{https://arxiv.org/abs/1712.07158}{{\ttfamily
@@ -447,11 +467,12 @@ E.~Bols, J.~Kieseler, M.~Verzetti, M.~Stoye and A.~Stakia, \emph{Jet flavour
   2008.10519}}].
 
 \bibitem{CMS:2016ljj}
-\emph{{Performance of missing energy reconstruction in 13 TeV pp collision data
-  using the CMS detector}}, .
+{CMS Collaboration}, \emph{{Performance of missing energy reconstruction in 13
+  TeV pp collision data using the CMS detector}}, {\emph{CMS Physics Analysis
+  Summary} {\bfseries CMS-PAS-JME-16-004} (2016) }.
 
 \bibitem{CMS:2020ebo}
-A.~M. Sirunyan et~al., \emph{{Pileup mitigation at CMS in 13 TeV data}},
+{CMS Collaboration}, \emph{{Pileup mitigation at CMS in 13 TeV data}},
   \href{https://doi.org/10.1088/1748-0221/15/09/P09018}{\emph{JINST} {\bfseries
   15} (2020) P09018} [\href{https://arxiv.org/abs/2003.00503}{{\ttfamily
   2003.00503}}].
@@ -481,10 +502,11 @@ H.~Bahl, S.~Liebler and T.~Stefaniak, \emph{{MSSM Higgs} benchmark scenarios
 \bibitem{Bagnaschi:2791954}
 E.~A. Bagnaschi, S.~Heinemeyer, S.~Liebler, P.~Slavich and M.~Spira,
   \emph{Benchmark scenarios for {MSSM Higgs} boson searches at the {LHC}},
-  Tech. Rep. LHCHWG-2021-001, CERN, 2021.
+  {\emph{LHC Higgs Cross Section Working Group Public Note} {\bfseries
+  LHCHWG-2021-001} (2021) }.
 
 \bibitem{CMS:2018hir}
-A.~M. Sirunyan et~al., \emph{{Search for beyond the standard model Higgs bosons
+{CMS Collaboration}, \emph{{Search for beyond the standard model Higgs bosons
   decaying into a $\mathrm{b\overline{b}}$ pair in pp collisions at $\sqrt{s}
   =$ 13 TeV}}, \href{https://doi.org/10.1007/JHEP08(2018)113}{\emph{JHEP}
   {\bfseries 08} (2018) 113}
@@ -530,7 +552,7 @@ R.~D. Ball et~al., \emph{Parton distributions from high-precision collider
   [\href{https://arxiv.org/abs/1706.00428}{{\ttfamily 1706.00428}}].
 
 \bibitem{Sirunyan:2019dfx}
-A.~M. Sirunyan et~al., \emph{Extraction and validation of a new set of {CMS
+{CMS Collaboration}, \emph{Extraction and validation of a new set of {CMS
   PYTHIA8} tunes from underlying-event measurements},
   \href{https://doi.org/10.1140/epjc/s10052-019-7499-4}{\emph{Eur. Phys. J. C}
   {\bfseries 80} (2020) 4} [\href{https://arxiv.org/abs/1903.12179}{{\ttfamily
@@ -551,7 +573,8 @@ S.~Agostinelli et~al., \emph{{{\textsc{Geant4}}\xspace}---a simulation
 \bibitem{CMS:2022zks}
 {CMS Collaboration}, \emph{{The search for a third-generation leptoquark
   coupling to a $\tau$ lepton and a b quark through single, pair and
-  nonresonant production at $\sqrt{s}=13~\mathrm{TeV}$}}, .
+  nonresonant production at $\sqrt{s}=13~\mathrm{TeV}$}}, {\emph{CMS Physics
+  Analysis Summary} {\bfseries CMS-PAS-EXO-19-016} (2022) }.
 
 \bibitem{Alwall:2011uj}
 J.~Alwall, M.~Herquet, F.~Maltoni, O.~Mattelaer and T.~Stelzer, \emph{{MadGraph
@@ -571,19 +594,21 @@ L.~Bianchini, J.~Conway, E.~K. Friis and C.~Veelken, \emph{Reconstruction of
   Phys. Conf. Ser.} {\bfseries 513} (2014) 022035}.
 
 \bibitem{CMS:2022kdi}
-{CMS Collaboration}, ``Measurements of {Higgs} boson production in the decay
+{CMS Collaboration}, \emph{{Measurements of Higgs boson production in the decay
   channel with a pair of $\tau$ leptons in proton-proton collisions at
-  $\sqrt{s}$ = 13 {TeV}.'' 2022.
+  $\sqrt{s}$ = 13 TeV}}, {\emph{CMS Physics Analysis Summary} {\bfseries
+  CMS-HIG-19-010, CERN-EP-2022-027} (2022) }
+  [\href{https://arxiv.org/abs/2204.12957}{{\ttfamily 2204.12957}}].
 
 \bibitem{Sirunyan:2018zut}
-A.~M. Sirunyan et~al., \emph{Search for additional neutral {MSSM} higgs bosons
-  in the $\tau\tau$ final state in proton-proton collisions at {$\sqrt{s}=$ 13
+{CMS Collaboration}, \emph{Search for additional neutral {MSSM} higgs bosons in
+  the $\tau\tau$ final state in proton-proton collisions at {$\sqrt{s}=$ 13
   TeV}}, \href{https://doi.org/10.1007/JHEP09(2018)007}{\emph{JHEP} {\bfseries
   09} (2018) 007} [\href{https://arxiv.org/abs/1803.06553}{{\ttfamily
   1803.06553}}].
 
 \bibitem{CMS:2018lkr}
-A.~M. Sirunyan et~al., \emph{{Measurement of the $\mathrm{Z}\gamma^{*} \to
+{CMS Collaboration}, \emph{{Measurement of the $\mathrm{Z}/\gamma^{*} \to
   \tau\tau$ cross section in pp collisions at $\sqrt{s} = $ 13 TeV and
   validation of $\tau$ lepton analysis techniques}},
   \href{https://doi.org/10.1140/epjc/s10052-018-6146-9}{\emph{Eur. Phys. J. C}
@@ -651,6 +676,26 @@ T.~Gehrmann, M.~Grazzini, S.~Kallweit, P.~Maierh{\"o}fer, A.~von Manteuffel,
   {\bfseries 113} (2014) 212001}
   [\href{https://arxiv.org/abs/1408.5243}{{\ttfamily 1408.5243}}].
 
+\bibitem{CMS:2010svw}
+{CMS Collaboration}, \emph{{Measurements of Inclusive $W$ and $Z$ Cross
+  Sections in $pp$ Collisions at $\sqrt{s}=7$ TeV}},
+  \href{https://doi.org/10.1007/JHEP01(2011)080}{\emph{JHEP} {\bfseries 01}
+  (2011) 080} [\href{https://arxiv.org/abs/1012.2466}{{\ttfamily 1012.2466}}].
+
+\bibitem{CMS:2020cmk}
+{CMS Collaboration}, \emph{{Performance of the CMS Level-1 trigger in
+  proton-proton collisions at $\sqrt{s} =$ 13 TeV}},
+  \href{https://doi.org/10.1088/1748-0221/15/10/P10017}{\emph{JINST} {\bfseries
+  15} (2020) P10017} [\href{https://arxiv.org/abs/2006.10165}{{\ttfamily
+  2006.10165}}].
+
+\bibitem{CMS:2015rld}
+{CMS Collaboration}, \emph{{Measurement of the differential cross section for
+  top quark pair production in pp collisions at $\sqrt{s} = 8\,\text {TeV} $}},
+  \href{https://doi.org/10.1140/epjc/s10052-015-3709-x}{\emph{Eur. Phys. J. C}
+  {\bfseries 75} (2015) 542}
+  [\href{https://arxiv.org/abs/1505.04480}{{\ttfamily 1505.04480}}].
+
 \bibitem{Barlow:1993dm}
 R.~J. Barlow and C.~Beeston, \emph{Fitting using finite {Monte Carlo} samples},
   \href{https://doi.org/10.1016/0010-4655(93)90005-W}{\emph{Comput. Phys.
@@ -663,7 +708,7 @@ J.~S. Conway, \emph{{Incorporating Nuisance Parameters in Likelihoods for
   \href{https://doi.org/10.5170/CERN-2011-006.115}{DOI}.
 
 \bibitem{Sirunyan:2019kia}
-A.~M. Sirunyan et~al., \emph{Performance of missing transverse momentum
+{CMS Collaboration}, \emph{Performance of missing transverse momentum
   reconstruction in proton-proton collisions at {$\sqrt{s} = 13$\,TeV} using
   the {CMS} detector},
   \href{https://doi.org/10.1088/1748-0221/14/07/P07004}{\emph{JINST} {\bfseries
@@ -689,15 +734,14 @@ G.~Cowan, K.~Cranmer, E.~Gross and O.~Vitells, \emph{Asymptotic formulae for
   [\href{https://arxiv.org/abs/1007.1727}{{\ttfamily 1007.1727}}].
 
 \bibitem{LHCHiggsCrossSectionWorkingGroup:2013rie}
-{LHC Higgs Cross Section Working Group}, \emph{{Handbook of LHC Higgs} cross
-  sections: 3. {Higgs} properties},  Tech. Rep. CERN-2013-004, 2013.
-\newblock 10.5170/CERN-2013-004.
+{LHC Higgs Cross Section Working Group Collaboration}, \emph{{Handbook of LHC
+  Higgs Cross Sections: 3. Higgs Properties}},
+  \href{https://arxiv.org/abs/1307.1347}{{\ttfamily 1307.1347}}.
 
 \bibitem{deFlorian:2016spz}
-{LHC Higgs Cross Section Working Group}, \emph{Handbook of {LHC Higgs} cross
-  sections: 4. deciphering the nature of the {Higgs} sector},  Tech. Rep.
-  CERN-2017-002-M, 2016.
-\newblock 10.23731/CYRM-2017-002.
+{LHC Higgs Cross Section Working Group Collaboration}, \emph{{Handbook of LHC
+  Higgs Cross Sections: 4. Deciphering the Nature of the Higgs Sector}},
+  \href{https://arxiv.org/abs/1610.07922}{{\ttfamily 1610.07922}}.
 
 \bibitem{Denner:2011mq}
 A.~Denner, S.~Heinemeyer, I.~Puljak, D.~Rebuzzi and M.~Spira, \emph{Standard
@@ -728,9 +772,12 @@ A.~Rogozhnikov, \emph{{Reweighting with Boosted Decision Trees}},
   [\href{https://arxiv.org/abs/1608.05806}{{\ttfamily 1608.05806}}].
 
 \bibitem{CMS:2020rpr}
-\emph{{Analysis of the CP structure of the Yukawa coupling between the Higgs
-  boson and $\tau$ leptons in proton-proton collisions at
-  $\sqrt{s}=13~\mathrm{TeV}$}}, .
+{CMS Collaboration}, \emph{{Analysis of the $CP$ structure of the Yukawa
+  coupling between the Higgs boson and $\tau$ leptons in proton-proton
+  collisions at $ \sqrt{s} $ = 13 TeV}},
+  \href{https://doi.org/10.1007/JHEP06(2022)012}{\emph{JHEP} {\bfseries 06}
+  (2022) 012} [\href{https://arxiv.org/abs/2110.04836}{{\ttfamily
+  2110.04836}}].
 
 \bibitem{16e7f618-c06b-3d10-8705-1086b218d827}
 F.~J. Massey, \emph{The kolmogorov-smirnov test for goodness of fit},

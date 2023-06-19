@@ -4,41 +4,43 @@ The top-level auxiliary file: main.aux
 The style file: JHEP.bst.bst
 authors is an unknown function---line 713 of file JHEP.bst.bst
 Database file #1: bibs/sample.bib
-Repeated entry---line 3965 of file bibs/sample.bib
+I was expecting a `,' or a `}'---line 1524 of file bibs/sample.bib
+ :       volume  = "
+ :                  CMS-DP-2019-033",
+I'm skipping whatever remains of this entry
+Unbalanced braces---line 3600 of file bibs/sample.bib
+ :     howpublished = "{HEPD}ata record for this analysis
+ :                                                       }",
+I'm skipping whatever remains of this entry
+Repeated entry---line 4004 of file bibs/sample.bib
  : @article{Englert:1964et
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3976 of file bibs/sample.bib
+Repeated entry---line 4015 of file bibs/sample.bib
  : @article{Higgs:1964ia
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3986 of file bibs/sample.bib
+Repeated entry---line 4025 of file bibs/sample.bib
  : @article{Higgs:1964pj
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 3997 of file bibs/sample.bib
+Repeated entry---line 4036 of file bibs/sample.bib
  : @article{Higgs:1966ev
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4007 of file bibs/sample.bib
+Repeated entry---line 4046 of file bibs/sample.bib
  : @article{Guralnik:1964eu
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4018 of file bibs/sample.bib
+Repeated entry---line 4057 of file bibs/sample.bib
  : @article{Kibble:1967sv
  :                       ,
 I'm skipping whatever remains of this entry
-Warning--entry type for "sm_diagram" isn't style-file defined
---line 4153 of file bibs/sample.bib
-Warning--entry type for "lumi" isn't style-file defined
---line 4249 of file bibs/sample.bib
-Warning--entry type for "deepjet" isn't style-file defined
---line 4366 of file bibs/sample.bib
-Repeated entry---line 4473 of file bibs/sample.bib
+Repeated entry---line 4523 of file bibs/sample.bib
  : @article{Cacciari:2008gp
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 4487 of file bibs/sample.bib
+Repeated entry---line 4537 of file bibs/sample.bib
  : @article{Cacciari:2011ma
  :                         ,
 I'm skipping whatever remains of this entry
@@ -48,7 +50,6 @@ You can't pop an empty literal stack for entry CMS:2022rbd
 while executing---line 1140 of file JHEP.bst.bst
 You can't pop an empty literal stack for entry Bartosik:2847538
 while executing---line 1140 of file JHEP.bst.bst
-Warning--empty institution in Bartosik:2847538
 You can't pop an empty literal stack for entry CMS_Setup
 while executing---line 1140 of file JHEP.bst.bst
 You can't pop an empty literal stack for entry Tapper:2013yva
@@ -140,8 +141,6 @@ while executing---line 1140 of file JHEP.bst.bst
 Warning--empty author in Evans:2008zzb
 You can't pop an empty literal stack for entry Evans:2008zzb
 while executing---line 1140 of file JHEP.bst.bst
-Warning--empty author in 203828
-Warning--empty author in 203828
 You can't pop an empty literal stack for entry 203828
 while executing---line 1140 of file JHEP.bst.bst
 You can't pop an empty literal stack for entry ALICE:2008ngc
@@ -258,6 +257,12 @@ You can't pop an empty literal stack for entry Campbell:2011bn
 while executing---line 1140 of file JHEP.bst.bst
 You can't pop an empty literal stack for entry Gehrmann:2014fva
 while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry CMS:2010svw
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry CMS:2020cmk
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry CMS:2015rld
+while executing---line 1140 of file JHEP.bst.bst
 You can't pop an empty literal stack for entry Barlow:1993dm
 while executing---line 1140 of file JHEP.bst.bst
 You can't pop an empty literal stack for entry Conway:2011in
@@ -272,10 +277,8 @@ You can't pop an empty literal stack for entry Cowan:2010js
 while executing---line 1140 of file JHEP.bst.bst
 You can't pop an empty literal stack for entry LHCHiggsCrossSectionWorkingGroup:2013rie
 while executing---line 1140 of file JHEP.bst.bst
-Warning--empty institution in LHCHiggsCrossSectionWorkingGroup:2013rie
 You can't pop an empty literal stack for entry deFlorian:2016spz
 while executing---line 1140 of file JHEP.bst.bst
-Warning--empty institution in deFlorian:2016spz
 You can't pop an empty literal stack for entry Denner:2011mq
 while executing---line 1140 of file JHEP.bst.bst
 You can't pop an empty literal stack for entry Krause:2018wmo
@@ -290,45 +293,45 @@ You can't pop an empty literal stack for entry 16e7f618-c06b-3d10-8705-1086b218d
 while executing---line 1140 of file JHEP.bst.bst
 You can't pop an empty literal stack for entry Bahl:2022igd
 while executing---line 1140 of file JHEP.bst.bst
-You've used 124 entries,
+You've used 127 entries,
             2283 wiz_defined-function locations,
-            1433 strings with 26839 characters,
-and the built_in function-call counts, 38329 in all, are:
-= -- 3775
-> -- 1935
-< -- 3
-+ -- 548
-- -- 424
-* -- 3169
-:= -- 5699
-add.period$ -- 126
-call.type$ -- 124
-change.case$ -- 126
+            1464 strings with 27821 characters,
+and the built_in function-call counts, 40235 in all, are:
+= -- 4026
+> -- 1864
+< -- 0
++ -- 540
+- -- 413
+* -- 3428
+:= -- 6059
+add.period$ -- 130
+call.type$ -- 127
+change.case$ -- 127
 chr.to.int$ -- 0
-cite$ -- 130
-duplicate$ -- 1929
-empty$ -- 3173
-format.name$ -- 424
-if$ -- 9981
+cite$ -- 128
+duplicate$ -- 2051
+empty$ -- 3389
+format.name$ -- 413
+if$ -- 10472
 int.to.chr$ -- 0
-int.to.str$ -- 124
-missing$ -- 440
-newline$ -- 378
-num.names$ -- 181
-pop$ -- 215
+int.to.str$ -- 127
+missing$ -- 485
+newline$ -- 388
+num.names$ -- 196
+pop$ -- 199
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1595
+skip$ -- 1626
 stack$ -- 0
-substring$ -- 1057
-swap$ -- 996
-text.length$ -- 3
+substring$ -- 1104
+swap$ -- 1049
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 6
-while$ -- 299
-width$ -- 127
-write$ -- 1341
-(There were 130 error messages)
+warning$ -- 1
+while$ -- 320
+width$ -- 130
+write$ -- 1442
+(There were 135 error messages)
