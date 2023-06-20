@@ -1,7 +1,7 @@
-\chapter{The LHC and CMS Experiment}
+\chapter{The LHC and CMS experiment}
 \label{sec:cms}
 
-This chapter will explain the apparatus used to collect the datasets that are utilised for the physics analysed described in Chapters~\ref{sec:bsm_H_to_tau_tau_analysis} and ~\ref{sec:H_A_to_4_tau_analysis}.
+This chapter will explain the apparatus used to generate and collect the datasets that are utilised for the physics analysed described in Chapters~\ref{sec:bsm_H_to_tau_tau_analysis} and ~\ref{sec:H_A_to_4_tau_analysis}.
 This is split into two parts.
 Firstly, an overview of the \ac{LHC} and a description of how proton-proton collisions at a center-of-mass energy ($\sqrt{s}$) of 13 TeV are achieved.
 Secondly, is an explanation of the \ac{CMS} detector, including a look at the individual sub-detectors, that are crucial to the reconstruction of particles originating from the proton-proton collisions.
@@ -10,18 +10,18 @@ Secondly, is an explanation of the \ac{CMS} detector, including a look at the in
 
 The \ac{LHC}~\cite{Evans:2008zzb}, located at \ac{CERN} just outside Geneva, is a synchrotron measuring 27 km in circumference, installed in the tunnel previously used by the \ac{LEP} accelerator \cite{203828}. 
 Upon design, its primary purpose was to provide collisions between proton beams, generating center-of-mass energies of up to 14 TeV and an instantaneous luminosity of approximately $10^{34}$ cm$^{−2}$s$^{−1}$. 
-Fig~\ref{fig:CERN_Schematic} illustrates the arrangement of the LHC and the \ac{CERN} accelerator complex. 
-Protons are supplied to the LHC through a sequence of accelerators: Linac4 (Linac2 pre-2020), \ac{PSB}, \ac{PS}, and \ac{SPS}, that successively raise the energies of the protons to 50 MeV, 1.4 GeV, 25 GeV, and 450 GeV respectively. 
+Figure~\ref{fig:CERN_Schematic} illustrates the arrangement of the \ac{LHC} and the \ac{CERN} accelerator complex. 
+Protons are supplied to the \ac{LHC} through a sequence of accelerators: Linac4 (Linac2 pre-2020), \ac{PSB}, \ac{PS}, and the \ac{SPS}, that successively raise the energies of the protons to 50 MeV, 1.4 GeV, 25 GeV, and 450 GeV respectively. 
 When the final energy has been achieved, the \ac{SPS} injects bunched protons into the \ac{LHC}'s beam pipes as two counter-rotating beams. 
-Each bunch containing over $10^11$ protons, with each one separated by 25 ns and each beam consists of 2808 bunches. 
-The protons are accelerated to collision energy using eight 400 MHz \ac{RF} cavities and kept in a circular trajectory with 1232 niobium-titanium superconducting dipole magnets. 
+Each bunch contains over $10^{11}$ protons, with each one separated by 25 ns and each beam consists of 2808 bunches. 
+The protons are accelerated to a collision energy using eight 400 MHz \ac{RF} cavities and kept in a circular trajectory with 1232 niobium-titanium superconducting dipole magnets. 
 These magnets must be maintained at their operating temperature of 1.9 K to generate magnetic fields up to 8.4 T, requiring the use of superfluid helium. 
 The bunches are collided at four intersections point surrounded by the ALICE~\cite{ALICE:2008ngc}, ATLAS~\cite{ATLAS:2008xda}, CMS~\cite{CMS_Setup} and LHCb~\cite{LHCb:2008vvz} detectors, at a collision rate of 40 MHz. \\
 
 \begin{figure}[t]
     \centering
     \includegraphics[width=\textwidth]{Figures/cern.png}
-    \caption{A schematic diagram of the CERN  \cite{Bartosik:2847538}.}
+    \caption{A schematic diagram of the CERN accelerator complex~\cite{Bartosik:2847538}.}
     \label{fig:CERN_Schematic}
 \end{figure}
 
@@ -51,22 +51,22 @@ The \ac{LHC} began its first physics collisions in 2010, initially colliding bea
 Following this data-taking period, known as Run 1, the \ac{LHC} underwent a two-year \ac{LS1} to undergo upgrades in preparation for an increase in $\sqrt{s}$. 
 In 2015, the \ac{LHC} was restarted, initiating its Run 2 phase of data collection at $\sqrt{s}$ = 13 TeV, which lasted until the end of 2018. 
 During Run 2, the \ac{LHC} achieved and surpassed its original design luminosity by obtaining a record peak luminosity of $2.1\times10^{34}$ cm$^{−2}$s$^{−1}$ in 2018.
-Subsequently, the \ac{LHC} performed a second update period, the \ac{LS2}, lasting for approximately three years, where-after the data collection for Run 3 began at $\sqrt{s}$ = 13.6 TeV.
-Fig~\ref{fig:int_lumi} illustrates the total integrated luminosity of proton-proton collisions delivered to the \ac{CMS} detector at the time of writing.
+Subsequently, the \ac{LHC} performed a second update period, the \ac{LS2}, lasting for approximately three years, whereafter the data collection for Run 3 began at $\sqrt{s}$ = 13.6 TeV.
+Figure~\ref{fig:int_lumi} illustrates the total integrated luminosity of proton-proton collisions delivered to the \ac{CMS} detector at the time of writing.
 The data used for the analyses described in this thesis correspond to the full Run 2 dataset collected during the 2016--2018 data-taking periods at 13 TeV. 
 Only data recorded by \ac{CMS}, where all sub-detectors were functioning correctly, are certified for use in physics analyses. 
 This equates to 36.3 fb$^{−1}$, 41.5 fb$^{−1}$ and 59.7 fb$^{-1}$ of data collected in 2016, 2017 and 2018 respectively. \\
 
-\section{The CMS Detector}
+\section{The CMS detector}
 
 The \ac{CMS} detector was engineered to fulfil the rigorous demands of the \ac{LHC} physics program. 
 Its primary objective is to achieve sensitivity to the Higgs boson and novel phenomena at the TeV energy scale. 
 Weighing 12,500 tonnes and measuring 21.6 m in length with a diameter of 14.6 m, the \ac{CMS} detector uses an array of sub-detectors encircling the central beam axis. 
 The layout of the \ac{CMS} detector is shown in Figure~\ref{fig:CMS_Schematic}.
-A superconducting solenoid, operating at a magnetic field strength of 3.8 T, which surrounds the inner tracker, electromagnetic calorimeter, and hadronic calorimeter. 
+A superconducting solenoid, operating at a magnetic field strength of 3.8 T, surrounds the inner tracker, electromagnetic calorimeter, and hadronic calorimeter. 
 Situated outside the solenoid within the iron return yoke are gaseous muon detectors, positioned to accurately measure muons. 
 The \ac{CMS} detector adopts a coordinate system centred at the collision point, with the y-axis oriented vertically, the x-axis directed radially inward toward the \ac{LHC} center, and the z-axis aligned with the beam direction. 
-Transverse energy ($E_T$) and transverse momentum ($\pT$) are defined in the x-y plane, and the azimuthal angle ($\phi$) and polar angle ($\theta$) are measured relative to the x-axis and z-axis, respectively. 
+The transverse energy ($E_T$) and transverse momentum ($\pT$) are defined in the x-y plane, and the azimuthal angle ($\phi$) and polar angle ($\theta$) are measured relative to the x-axis and z-axis, respectively. 
 $r$ is used as the radial distance in the x-y plane.
 Pseudorapidity ($\eta$), defined as $\eta = -\ln[\tan(\theta/2)]$, is used due to its gauge invariance, and distances in the $\phi$-$\eta$ plane are characterised by the metric $\Delta R = \sqrt{\Delta\phi^2 + \Delta\eta^2}$. 
 
@@ -79,7 +79,7 @@ Pseudorapidity ($\eta$), defined as $\eta = -\ln[\tan(\theta/2)]$, is used due t
 
 \subsection{Tracker}
 
-Closest to the interaction point in the \ac{CMS} experiment is the tracker~\cite{CMS_Setup,Malberti:2014pda,CMS:2012sda}, which is essential for precise measurements of charged particle trajectories and the determination of primary and secondary vertices. 
+Closest to the interaction point in the \ac{CMS} experiment is the tracker~\cite{CMS_Setup,Malberti:2014pda,CMS:2012sda}, which is essential for precise measurements of charged particle trajectories and the determination of \ac{PV} and \ac{SV}. 
 To meet the requirements of high granularity and fast response for the large number of particles generated in each bunch crossing, as well as being radiation-hard to deal with the particle flux, a silicon tracking detector is utilised. 
 The tracker consists of a pixel detector and a silicon strip detector as shown in Figure~\ref{fig:tracker}. \\
 
@@ -130,7 +130,7 @@ The \ac{ECAL} energy resolution is parametrised as a function of the incident pa
 \end{equation}
 
 The stochastic term captures fluctuations in lateral shower containment and photon yield, the noise term accounts for electronics noise and pileup, and the constant term arises from non-uniformity of the longitudinal response and calibration errors. 
-Measurements using electron beams have determined the values of S = 0.028 GeV$^{1/2}$, N = 0.12 GeV, and C = 0.003 for the ECAL energy resolution.
+Measurements using electron beams have determined the values of S = 0.028 GeV$^{1/2}$, N = 0.12 GeV, and C = 0.003 for the \ac{ECAL} energy resolution.
 
 \begin{figure}[!hbtp]
     \centering
@@ -139,27 +139,27 @@ Measurements using electron beams have determined the values of S = 0.028 GeV$^{
     \label{fig:ecal}
 \end{figure}
 
-\subsection{Hadron calorimeter}
+\subsection{Hadronic calorimeter}
 
-The \ac{CMS} detector includes the \ac{HCAL}, which plays a crucial role in measuring the energies of strongly interacting particles such as hadronic jets and missing energy signals. 
+The \ac{CMS} detector includes the \ac{HCAL}, which plays a crucial role in measuring the energies of strongly interacting particles and being able to reconstruct missing energy signals. 
 The \ac{HCAL} is located outside of the \ac{ECAL} and covers the pseudorapidity region $|\eta| < 5.2$. 
 It consists of four sub-detectors: the \ac{HB}, \ac{HE}, \ac{HO}, and \ac{HF} calorimeters, arranged as shown in Figure~\ref{fig:hcal}.
 
 \begin{figure}[!hbtp]
     \centering
     \includegraphics[width=\textwidth]{Figures/HCAL.png}
-    \caption{A schematic of the CMS HCAL showing the arrangement of the HB, HE, HO, and HF calorimeters~\cite{CMS_Setup}.}
+    \caption{A schematic of the CMS HCAL showing the arrangement of the HB, HE, HO, and HF calorimeters. The numbers represent the $|\eta|$ value in the detector~\cite{CMS_Setup}.}
     \label{fig:hcal}
 \end{figure}
 
 The \ac{HB} and \ac{HE} calorimeters are positioned within the magnet bore, covering the pseudorapidity regions $|\eta| < 1.3$ and $1.3 < |\eta| < 3.0$, respectively. 
 They are constructed using alternating layers of brass absorber plates and plastic scintillator tiles. 
 Brass is chosen as the absorber material due to its short nuclear interaction length and non-magnetic properties. 
-The \ac{HB} provides 5.82 to 10.6 interaction lengths of absorber material, while the HE provides approximately 10 interaction lengths. 
+The \ac{HB} provides 5.82 to 10.6 interaction lengths of absorber material, while the \ac{HE} provides approximately 10 interaction lengths. 
 The plastic scintillator tiles collect scintillation light emitted by charged particles in the hadronic showers, which is then read out using hybrid photodiodes. \\
 
 To extend the \ac{HCAL}'s containment capability in the central detector region ($|\eta| < 1.3$), the \ac{HO} calorimeter is utilised. 
-It is placed outside of the solenoid coil and utilizes plastic scintillator tiles as the active material. 
+It is placed outside of the solenoid coil and utilises plastic scintillator tiles as the active material. 
 The \ac{HO} enhances the thickness of the \ac{HCAL} to a minimum of 11.8 interaction lengths, improving the measurement of late starting or highly penetrating showers. \\
 
 In the forward regions ($|\eta| > 3.0$), the \ac{HF} detector extends the pseudorapidity coverage of the \ac{HCAL} up to $|\eta| < 5.2$. 
@@ -203,13 +203,9 @@ To enhance the system's capabilities in the $|\eta| < 1.6$ region, \ac{RPC}s are
 These parallel-plate detectors feature a double-gap module design with anode and cathode plates separated by a gas gap. 
 The \ac{RPC}s are embedded within the barrel and endcap iron yokes. In the barrel, six layers of \ac{RPC} chambers are present, with two layers in each of the two innermost muon stations and one layer in each of the two outer stations. 
 In the endcap, the \ac{RPC}s consist of four layers positioned at either side of the three iron disks. 
-While the \ac{RPC}s exhibit a lower spatial resolution compared to the \ac{DT}s and \ac{CSC}s (0.78–1.38 cm per chamber), they offer a remarkably fast response time, making them suitable for dedicated muon triggering. \\
+While the \ac{RPC}s exhibit a lower spatial resolution compared to the \ac{DT}s and \ac{CSC}s (0.78–1.38 cm per chamber), they offer a remarkably fast response time, making them suitable for dedicated muon triggering.
 
-To achieve precise muon momentum resolution, information from the tracker hits is combined with the measurements obtained from the muon systems. 
-The standalone muon system alone achieves a momentum resolution of approximately 9\% for muons with transverse momentum ($\pT$) up to 200 GeV. 
-However, for muons with a $\pT$ of 1 TeV, the momentum resolution varies between 15\% and 40\% depending on the muon's pseudorapidity.
-
-\subsection{Triggering and Computing}
+\subsection{Triggering and computing}
 
 The \ac{LHC} collides protons at a rate of 40 MHz during its operation. 
 However, it is impractical to read out and store every event due to the high data volume involved. 
@@ -217,11 +213,11 @@ To address this challenge, the \ac{CMS} detector employs a dedicated trigger sys
 
 The \ac{CMS} trigger system consists of two stages: the \ac{L1} trigger and the \ac{HLT}. 
 The \ac{L1} trigger, implemented with custom built programmable electronics, operates as the first stage and reduces the event rate to approximately 100 kHz. 
-During the upgrade in 2015/2016, the \ac{L1} system was enhanced to accommodate the increased instantaneous luminosity and pileup conditions. 
-Upgrades included improved muon momentum resolution, electron/photon isolation, hadronic tau identification and isolation, jet finding algorithms with pileup subtraction, and enhanced trigger menu capabilities. \\
+During the upgrade in 2015/2016, the \ac{L1} system was enhanced to accommodate the increased instantaneous luminosity and \ac{PU} conditions. 
+Upgrades included improved muon momentum resolution, electron/photon isolation, hadronic tau identification and isolation, jet finding algorithms with \ac{PU} subtraction, and enhanced trigger menu capabilities. \\
 
 The \ac{L1} trigger utilises a time multiplexed architecture, where energy deposits recorded in the calorimeters and hits from the muon detectors are processed. 
-In the calorimeter trigger, energy deposits from the HCAL and ECAL are passed through two layers (Layer 1 and Layer 2), enabling object identification and the selection of the best candidates based on their $\pT$. 
+In the calorimeter trigger, energy deposits from the \ac{HCAL} and \ac{ECAL} are passed through two layers (Layer 1 and Layer 2), enabling object identification and the selection of the best candidates based on their $\pT$. 
 Simultaneously, hits from the muon detectors are combined in the muon trigger's tracking-finder and sorting/merging layers, producing a sorted list of muon candidates for the entire detector. 
 The global trigger then integrates the information from both calorimeter and muon triggers to make a decision on event selection within a maximum storage time of 3.2 $\upmu$s.
 A diagrammatic representation of this is shown in Figure~\ref{fig:trigger}. \\
@@ -240,7 +236,7 @@ From the initial event rate of approximately 100 kHz received from the \ac{L1} t
 
 The events selected by the \ac{HLT} produce a significant amount of data, approximately $\mathcal{O}$(10 pb) per year. 
 To process, store, and facilitate easy access for analysts worldwide, \ac{CMS} collaborates with other \ac{LHC} experiments through the \ac{WLCG}. 
-The \ac{WLCG} combines computing resources from research institutions globally, organized into three tiers. 
-Tier-0, comprising the CERN Data Center and the Wigner Research Centre in Budapest, performs full data reconstruction and stores a copy of the data on tape. 
+The \ac{WLCG} combines computing resources from research institutions globally, organised into three tiers. 
+Tier-0, comprising the \ac{CERN} Data Center and the Wigner Research Centre in Budapest, performs full data reconstruction and stores a copy of the data on tape. 
 The data is then distributed to Tier-1 centers, which handle the storage of raw, reconstructed, and simulated data, as well as the distribution to Tier-2 sites. 
 Tier-2 sites, located at universities and research institutes worldwide, provide computing resources for data production, reconstruction, and analysis by researchers.

@@ -1,8 +1,8 @@
-\chapter{Object Reconstruction}
+\chapter{Object reconstruction}
 \label{sec:object_reconstruction}
 
 This chapter will overview the methods used to reconstruct the objects in each event, that are critical for the searches described in Chapters~\ref{sec:bsm_H_to_tau_tau_analysis} and~\ref{sec:H_A_to_4_tau_analysis}.
-The topics discussed here are the reconstruction of tracks and vertices, the particle flow algorithm, the calculation of the \ac{MET}, the measurements of jets and the tagging of their flavours, and the identification of electrons, muons, and tau leptons.
+The topics discussed here are the reconstruction of tracks and vertices, the particle flow algorithm, the calculation of the \ac{MET}, the measurements of jets and the tagging of their flavours, and the identification of electrons, muons, and $\tau$ leptons.
 
 \section{Tracks and vertices}
 
@@ -10,36 +10,36 @@ The \ac{CTF} algorithm~\cite{CMS:2014pgm} is employed by \ac{CMS} to reconstruct
 This algorithm consists of four steps to estimate trajectory parameters and uncertainties. 
 Initially, track seeds are formed using hits in the first few layers of the tracker. 
 These seeds provide initial estimates of the trajectory. 
-Next, the track seeds are extrapolated using a Kalman filter~\cite{Fruhwirth:1987fm}, searching for additional hits along the expected trajectory in successive detector layers. 
+Next, the track seeds are extrapolated using a \ac{KF}~\cite{Fruhwirth:1987fm}, searching for additional hits along the expected trajectory in successive detector layers. 
 The trajectory parameters are continuously updated as hits are added to the track candidate. 
 The extrapolation process continues until the final detector layer is reached. \\
 
-Afterwards, a Kalman filter and smoother are used to fit the final trajectory iteratively. 
+Afterwards, a \ac{KF} and smoother are used to fit the final trajectory iteratively. 
 Spurious hits are identified and removed after each iteration until no more spurious hits are found. 
 This fitting process provides the most accurate estimates of the trajectory parameters. 
-Subsequently, tracks must pass a set of quality criteria, and any failing tracks are discarded. \\
+Subsequently, tracks must pass a set of quality criteria, and any failing tracks are discarded~\cite{Fruhwirth:1987fm}. \\
 
 The \ac{CTF} algorithm performs six iterations, gradually reconstructing more challenging tracks and recovering missed tracks from previous iterations. 
 Associated hits are removed after each iteration, reducing combinatorial complexity and facilitating the search for complicated tracks in later iterations. 
-Tracking efficiencies for muons and pions with transverse momentum ($\pT$) greater than 500 MeV have been measured to be over 99.3\% and 98.5\%, respectively~\cite{CMS:2010mua}. \\
+Tracking efficiencies for muons and pions with $\pT$ greater than 500 MeV have been measured to be over 99.3\% and 98.5\%, respectively~\cite{CMS:2010mua}. \\
 
-Once all tracks are reconstructed, the positions of interaction vertices, including the primary vertex and additional vertices from \ac{PU}, are determined. 
+Once all tracks are reconstructed, the positions of interaction vertices, including the \ac{PV} and additional vertices from \ac{PU}, are determined. 
 Vertex reconstruction begins by selecting tracks consistent with being promptly produced near the beamspot. 
-Tracks are then clustered based on the z coordinate of their closest approach to the beamspot, using a deterministic annealing algorithm~\cite{Rose:1998dzq}. 
+Tracks are then clustered based on the $z$ coordinate of their closest approach to the beamspot, using a deterministic annealing algorithm~\cite{Rose:1998dzq}. 
 Candidate vertices are retained if at least two of their associated tracks are incompatible with other vertices. 
 The candidate vertices are fitted using an adaptive vertex fitter~\cite{Fruhwirth:2007hz} to determine the best estimate of their three dimensional positions. 
-The primary interaction vertex is determined as the vertex with the highest summed physics-object $\pT$, where physics objects are jets clustered from tracks associated with the candidate vertex using the anti-$k_T$ algorithm~\cite{Fruhwirth:2007hz}.
+The \ac{PV} is determined as the vertex with the highest summed physics-object $\pT$.
 The efficiency of vertex reconstruction has been measured, with values exceeding 98.7\% for vertices containing at least two tracks and exceeding 99.9\% for vertices with four or more tracks~\cite{CMS:2010mua}. 
 
 \section{Particle flow}
 
-The \ac{PF} algorithm~\cite{PF_CMS,CMS:2010byl,CMS:2010eua} is used for the reconstruction of long lived particles in an event, such as electrons, photons, muons, and hadrons. 
+The \ac{PF} algorithm~\cite{PF_CMS,CMS:2010byl,CMS:2010eua} is used for the reconstruction of stable particles in an event, such as electrons, photons, muons, and hadrons. 
 All the sub-detectors of \ac{CMS} are used to achieve accurate identification and measurements of particle energies and directions. 
 The final output of the algorithm is a list of particles and their four vectors, that can then be used to construct more complicated objects such as jets, hadronically decaying taus, and the \ac{MET}.\\
 
 The tracking and calorimeter clustering information are the initial inputs to the \ac{PF} algorithm.
 The tracking information includes the high resolution momentum and direction of charged hadrons calculated by an iterative-tracking strategy~\cite{Adam:934067}, that is not achievable with the calorimeters.
-The calorimeter clustering is used to achieve multiple objectives, including detecting and measuring the energy and direction of neutral particles, separating neutral particles from charged hadrons, reconstructing electrons and Bremsstrahlung photons, and aiding in the energy measurement of charged hadrons with inaccurate track parameters. 
+the calorimeter clustering is used to achieve multiple objectives, including detecting and measuring the energy and direction of neutral particles, separating neutral particles from charged hadrons, reconstructing electrons and bremsstrahlung photons, and aiding in the energy measurement of charged hadrons with inaccurate track parameters. 
 The clustering algorithm involves identifying \say{cluster seeds}, growing \say{topological clusters}, and generating \say{particle flow clusters} based on energy thresholds and cell-cluster distances in each sub-detector, except for the \ac{HF}, where each cell forms a cluster, and it explained in more detail below. \\
 
 The clustering algorithm used in the calorimeters can be split into three stages. 
@@ -58,18 +58,18 @@ A track qualifies as a tracker muon if it is matched to at least one muon segmen
 The global muon reconstruction starts with standalone muon tracks and matches them to tracks in the inner detector. 
 If a match is found, a combined fit using the \ac{KF} is performed with hits from both systems. \\
 
-Electrons reconstruction initially works by finding matching tracks with \ac{ECAL} energy clusters~\cite{CMS:2015xaf}.
+Electrons reconstruction begins by finding matching tracks with \ac{ECAL} energy clusters~\cite{CMS:2015xaf}.
 The path of electrons towards the \ac{ECAL} involves traversing a considerable amount of material, which constitutes the tracker. 
-The thickness of this material varies depending on the $\eta$ region, ranging from approximately 0.4 to 2 radiation lengths~\cite{CMS:2015xaf}. 
+The thickness of this material varies depending on the $\eta$ region, ranging from approximately 0.4 to 2 radiation lengths. 
 Within this material, electrons emit bremsstrahlung photons, resulting in a significant energy loss. 
-At regions with maximal material thickness, electrons lose an average of 86\% of their energy, predominantly spreading out in the $\phi$ direction due to magnetic field induced bending~\cite{CMS:2015xaf}. 
+At regions with maximal material thickness, electrons lose an average of 86\% of their energy, predominantly spreading out in the $\phi$ direction due to magnetic field induced bending. 
 To accurately measure the initial electron energy, the energy from all emitted photons is measured through the \ac{SC} algorithms. 
-These algorithms initiate clustering with seed crystals, expand the clusters based on energy thresholds, and merge them into the \ac{SC}. \\
+These algorithms initiate clustering with seed crystals, expanding the clusters based on energy thresholds and merging them into the \ac{SC}. \\
 
 For reconstructing electron tracks, the standard \ac{CTF} algorithm is not suitable due to the substantial radiative losses in the tracker material. 
 These losses lead to reduced hit collection efficiency and inaccurate trajectory parameter estimation. 
 To address this, a dedicated tracking procedure is employed, which identifies seeds consisting of two or three hits in the tracker using two complementary methods: \ac{ECAL}-based seeding and tracker-based seeding. 
-\ac{ECAL}-based seeding uses SC energy and position to estimate the trajectory, while tracker-based seeding starts with tracks reconstructed using the \ac{CTF} algorithm.
+\ac{ECAL}-based seeding uses \ac{SC} energy and position to estimate the trajectory, while tracker-based seeding starts with tracks reconstructed using the \ac{CTF} algorithm.
 The selected seeds are then extrapolated and smoothed the \ac{GSF} instead of the \ac{KF}. 
 The \ac{GSF}, with a Gaussian mixture to model bremsstrahlung energy loss, provides a more accurate estimation of the trajectory parameters. \\
 
@@ -122,8 +122,8 @@ The \texttt{Medium} muon identification~\cite{CMS:2018rym} is used for the analy
 The requirements for this identification are:
 \begin{enumerate}[i)]
 \item The muon is reconstructed by the tracker or global muon reconstruction algorithm.
-\item The impact parameters, $d_{xy}$ and $d_{z}$, defined as the distance in the x-y and z plane of the closest approach to the \ac{PV}, between the muon track and the primary vertex are restricted as $d_{xy}<0.045$ cm and $d_{z}<0.2$ cm to ensure the muon is associated with the primary vertex.
-\item At least 80\% of the tracker hits have to be valid.
+\item The impact parameters, $d_{xy}$ and $d_{z}$, defined as the distance in the $x$-$y$ and $z$ plane of the closest approach to the \ac{PV}, are restricted to $d_{xy}<0.045$ cm and $d_{z}<0.2$ cm to ensure the muon is associated with the primary vertex.
+\item At least 80\% the tracker traversed must have hits in.
 \end{enumerate}
 
 In addition, either of the following two sets of criteria must be satisfied:
@@ -133,27 +133,27 @@ In addition, either of the following two sets of criteria must be satisfied:
 \item The $\chi^2$ divided by the number of degrees of freedom of the global track fit is smaller than 3.
 \item The $\chi^2$ of the tracker standalone position match~\cite{CMS:2009fdy} is smaller than 12.
 \item The $\chi^2$ of the track kink finder~\cite{CMS:2018rym} is less than 20.
-\item The muon segment compatibility is $>$ 0.303.
+\item The muon segment compatibility is greater than 0.303.
 \end{enumerate}
 
 or,
 
 \begin{enumerate}[i)]
-\item The muon segment compatibility is $>$ 0.451 
+\item The muon segment compatibility is greater than 0.451 
 \end{enumerate}
 
 The efficiency of the \texttt{Medium} muon identification is approximately 90\%, with a misidentification probability of approximately 0.1\%. \\
 
 To reduce the contamination from muons originating from heavy-flavoured quark decays, muons are required to be isolated from hadronic activity in the detector. 
-The isolation is based on the $\pT$ of the photon ($\gamma$), neutral ($\text{h}^0$) and charged hadron ($\text{h}^{\pm}$ if originating from the \ac{PV} and $\text{h}^{\pm}, \text{PU}$ if not originating from \ac{PV}) \ac{PF} candidates within a cone size of $\Delta R<0.4$ of the selected muon ($\mu$). 
+The isolation is based on the $\pT$ of the photon ($\gamma$), neutral ($\text{h}^0$) and charged hadron ($\text{h}^{\pm}$ if originating from the \ac{PV} and $\text{h}^{\pm,\text{PU}}$ if not originating from \ac{PV}) \ac{PF} candidates within a cone size of $\Delta R<0.4$ of the selected muon ($\mu$). 
 A relative combined isolation variable is defined as:
 
 \begin{equation}
 \label{eqn:reliso}
-\Irel = \frac{1}{\pT^{\mu}} \Big( \sum \pT^{\text{h}^{\pm}} + \text{max}\Big( 0, \sum \pT^{\text{h}^0} + \sum \pT^{\gamma} - \Delta \beta \sum \pT^{\text{h}^{\pm}, \text{PU}} \Big) \Big),
+\Irel = \frac{1}{\pT^{\mu}} \Big( \sum \pT^{\text{h}^{\pm}} + \text{max}\Big( 0, \sum \pT^{\text{h}^0} + \sum \pT^{\gamma} - \Delta \beta \sum \pT^{\text{h}^{\pm, \text{PU}}} \Big) \Big),
 \end{equation}
 
-where the sums loop through all objects with the cone and $\Delta \beta$ is the energy estimate of neutral particles due to pileup, which is taken to be 0.5.
+where the sums loop through all objects within the cone and $\Delta \beta$ is the energy estimate of neutral particles due to pileup, which is taken to be 0.5.
 This represents an estimated fraction of transverse momenta between the other contributions within the cone that originate from the interaction at the \ac{PV}, and the muon itself.
 The muon isolation can then be used to separate muons, with a low value of $\Irel$, from other hadronic objects, at higher values of $\Irel$
 
@@ -174,7 +174,7 @@ The following variables are used as input to the \ac{BDT}:
 The \ac{BDT} was trained on a $Z/\gamma^{*}$ \ac{MC} sample generated with \MADGRAPH, in 3 $\eta$ bins for electrons with $\pT>10$ GeV.
 The performance of the \ac{BDT} is shown in Figure~\ref{fig:electron_eff}.
 This thesis uses the version of the identification \ac{BDT} without the isolation included in the training, instead using an additional cut on the electron isolation. 
-This allows for easily accessible sideband regions (orthogonal regions to the signal) used for estimation of background estimation. \\
+This allows for easily accessible sideband regions (orthogonal regions to the signal region) used for estimation of the background, and optimisation opportunities for $\tau$ lepton decays in electrons. \\
 
 \begin{figure}[t]
 \centering
@@ -185,12 +185,12 @@ This allows for easily accessible sideband regions (orthogonal regions to the si
 \end{figure}
 
 The electron are required to pass the 90\% efficiency working point of the \ac{BDT}, which corresponds to a misidentification probability of 2\%~\cite{CMS:2015xaf}. 
-Finally electrons are also subject to the same impact parameter requirements as the muons: the impact parameters $d_{xy}$ and $d_{z}$ between the electron track and the primary vertex are restricted as $d_{xy}<0.045$ cm and $d_{z}<0.2$ cm to ensure the electron is associated with the primary vertex. \\
+Finally electrons are also subject to the same impact parameter requirements as the muons: the impact parameters $d_{xy}$ and $d_{z}$ between the electron track and the primary vertex are restricted to $d_{xy}<0.045$ cm and $d_{z}<0.2$ cm to ensure the electron is associated with the primary vertex. \\
 
 Similarly to muons, an isolation variable is used to further separate electrons from other backgrounds.
-Different to for muons, the isolation used is based on photon, neutral and charged hadron \ac{PF} candidates within a smaller cone size of $\Delta R<0.3$ of the selected electron.
+Different than for muons, the isolation used is based on photon, neutral and charged hadron \ac{PF} candidates within a smaller cone size of $\Delta R<0.3$ of the selected electron.
 A different method to estimate the neutral particles due to \ac{PU} is used, namely the rho-effective-area method. 
-The pileup in this method is estimated as $PU=\rho\cdot A_{\text{eff}}$, where $\rho$ is the event-specific average pile-up energy density per unit area in the $\phi$-$\eta$ plane and the $A_{\text{eff}}$ is the effective area specific to the given type of isolation. 
+The \ac{PU} contribution in this method is estimated as $\text{PU}=\rho A_{\text{eff}}$, where $\rho$ is the event-specific average \ac{PU} energy density per unit area in the $\phi$-$\eta$ plane and the $A_{\text{eff}}$ is the effective area specific to the given type of isolation. 
 The rho-effective-area subtracted relative combined isolation variable is defined as
 
 \begin{equation}
@@ -227,7 +227,7 @@ $\eta$ range & $A_{\text{eff}}$ \\
 
 Quarks and gluons undergo fragmentation and hadronisation, resulting in collimated sprays of hadrons called jets~\cite{Salam:2010nqg}. 
 The process of combining particles into jets is accomplished through the anti-$k_T$ jet clustering algorithm~\cite{Cacciari:2008gp} as implemented in \texttt{FastJet}~\cite{Cacciari:2011ma}. 
-This algorithm relies two distance parameters: $d_{ij}$, representing the distance between objects $i$ and $j$, and $d_{iB}$, representing the distance between object $i$ and the beam. 
+This algorithm relies on two \say{distance} parameters: $d_{ij}$, representing the distance between objects $i$ and $j$, and $d_{iB}$, representing the distance between object $i$ and the beam. 
 These objects can be individual particles or clusters of particles. 
 The distance parameters are defined as,
 
@@ -238,7 +238,7 @@ d_{iB} &= p_{T,i}^{-2},
 \end{split}
 \end{align} 
  
-where $\Delta R_{ij}$ is the separation in $\delta R$ of objects i and j, and $R$ is the radius parameter controlling the typical size of the jets. 
+where $\Delta R_{ij}$ is the separation in $\Delta R$ of objects $i$ and $j$, and $R$ is the radius parameter controlling the typical size of the jets. 
 The clustering process unfolds as follows:
 
 \begin{enumerate}[i)]
@@ -248,13 +248,13 @@ The clustering process unfolds as follows:
 \item Repeat steps (i) to (iii) until no objects remain. 
 \end{enumerate}
 
-Chapters~\ref{sec:bsm_H_to_tau_tau_analysis} and \ref{sec:H_A_to_4_tau_analysis} use jets clustered with a radius parameter of $R = 0.4$, often called AK4 jets.
+Chapters~\ref{sec:bsm_H_to_tau_tau_analysis} and \ref{sec:H_A_to_4_tau_analysis} use jets clustered with a radius parameter of $R = 0.4$, often called \say{AK4 jets}.
 The impact of \ac{PU} on jet energy and substructure is addressed by using the \ac{CHS} technique~\cite{CMS:2017wyc}. 
-\ac{CHS} excludes charged hadrons that are not associated with the primary vertex during jet clustering. 
-To reject misidentified jets a discriminator evaluated on variables like energy fractions carried by different types of \ac{PF} candidates, as well as charged and neutral particle multiplicities is used~\cite{CMS:2017wyc}. 
+\ac{CHS} excludes charged hadrons that are not associated with the \ac{PV} during jet clustering. 
+To reject misidentified jets a discriminator evaluated on variables like energy fractions carried by different types of \ac{PF} candidates, as well as charged and neutral particle multiplicities, is used~\cite{CMS:2017wyc}. 
 For data collected in 2017, the region with $2.65 < |\eta| < 3.139$ experiences substantial \ac{ECAL} noise, leading to a notable increase in the number of jets. 
-To veto this, jets with $\pT < 50$ GeV within this $\eta$ range are removed and a \ac{PU} jet identification discriminant~\cite{CMS:2013wea}.
-For $\tau$ selections in the later chapters, to exclude selected jets from electon, muon or hadronic tau candidates, the jets are required to be separated from the selected $\tau$ candidate by $\Delta R > 0.5$.
+To veto this, jets with $\pT < 50$ GeV within this $\eta$ range are removed and a \ac{PU} jet identification discriminant is utilised to reject noise~\cite{CMS:2013wea}.
+For $\tau$ lepton selections in the later chapters, to exclude selected jets from electon, muon and hadronic tau candidates, the jets are required to be separated from the selected $\tau$ candidate by $\Delta R > 0.5$.
 
 \section{b jets}
 
@@ -263,15 +263,15 @@ This heavy-flavour jet identifier, uses properties of the jet to distinguish jet
 Core to the b tagging in this algorithm is the reconstruction of a \ac{SV} due to the lifetime of b quarks, allowing for displaced tracks.
 The \texttt{DeepJet} \ac{DNN} uses a combination of high-level variables such as the \ac{SV}, as well as utilising low-level variable of jet constituents to separate between initiators.
 The \ac{DNN} uses a mixture of convolutional and dense layers to perform this categorisation.
-The performance of the algorithm is shown in Figure~\ref{fig:deepjet}.
+The performance of the algorithm is shown in Figure~\ref{fig:deepjet}. \\
 
 For b jet selection, jets are required to have $\pT > 20$ GeV and $|\eta| <$ 2.4 (2.5) in 2016 (2017 and 2018), and are considered b tagged if their discriminator value is larger than some threshold that represents a mis-identification rate of 1\%.
-This corresponds to a b tagging efficiency around 80\%.
+This corresponds to a b tagging efficiency of around 80\%.
 
 \begin{figure}[!hbtp]
 \centering
     \subfloat[]{\includegraphics[width=0.8\textwidth]{Figures/deepjet.pdf}}
-\caption{Mis-identification probability 2$\sigma$ bands against efficiency for b tagging using the \texttt{DeepJet} algorithm, for AK4jets with $\pT> 30$ GeV AND $|\eta|$<2.5 utilising MC with parameters from the 2017 era of data taking. Two bands are displayed, one for the identification of a b quark rather than light quarks and gluons (blue) and one for the identification of a b quark rather than a c quark (red)~\cite{deepjet}.}
+\caption{Mis-identification probability 2$\sigma$ bands against efficiency for b tagging using the \texttt{DeepJet} algorithm, for AK4jets with $\pT>30$ GeV and $|\eta|$<2.5, utilising MC with parameters from the 2017 era of data taking. Two bands are displayed, one for the identification of a b quark rather than light quarks and gluons (blue) and one for the identification of a b quark rather than a c quark (red)~\cite{deepjet}.}
 \label{fig:deepjet}
 \end{figure}
 
@@ -286,7 +286,8 @@ The \ac{MET} is nominally calculated as the negative vector sum of all transvers
 \end{equation}
 
 However, this raw \ac{PF}\ac{MET} is inaccurate due to the $\pT$ thresholds of the calorimeters, the non-linearity of the calorimeter response and due to reconstruction inefficiencies~\cite{CMS:2016ljj}.
-This is fixed with jet energy corrections, determined for jets with $\pT$> 15 GeV and less than 90\% for their energies deposited in the \ac{ECAL} for each of the problems mentioned, and then the corrected \ac{MET} is calculated by,
+This is fixed with jet energy corrections, determined for jets with $\pT>$ 15 GeV and less than 90\% for their energies deposited in the \ac{ECAL} for both of the problems mentioned. 
+Then the corrected \ac{MET} is calculated by,
 
 \begin{equation}
 \vec{E}_{T}^{\text{miss,corr}} = \vec{E}_{T}^{\text{miss}} - \sum_{\text{jets}} (\vec{p}_{T,\text{jet}}^{\text{\hspace{4pt}corr}} - \vec{p}_{T,\text{jet}}^{\text{\hspace{4pt}raw}}),
@@ -309,13 +310,13 @@ These per-particle weights are then used to rescale the four-momenta of the part
 \section{Taus}
 \label{sec:taus}
 
-Fundamental to this thesis is the identification of tau particles.
-The tau lepton is measured to have a mean lifetime of \(2.9 \times 10^{-13}\)s. 
-This short lifetimes means that the tau lepton is not directly observable in the \ac{CMS} detector.  
-In order to detect these particles, it is important to understand how the tau decays. 
+Fundamental to this thesis is the identification of $\tau$ particles.
+The $\tau$ lepton is measured to have a mean lifetime of \(2.9 \times 10^{-13}\)s. 
+This short lifetimes means that the $\tau$ lepton is not directly observable in the \ac{CMS} detector.  
+In order to detect these particles, it is important to understand how the $\tau$ decays. 
 Due to the heavy nature of the particle, it does not only decay leptonically, but unlike the muon, it can also decay hadronically.
-A list of prominent decays of the tau lepton are shown in the Table~\ref{tab:tau_decay}.
-These decays can be split into three groups: the 17.8\% of taus that decay to an electron ($e$), the 17.4\% that decay into a muon ($\mu$), and hadronic tau decays ($\tauh$) that make up the final 64.8\% of tau decays. 
+A list of prominent decays of the $\tau$ lepton are shown in the Table~\ref{tab:tau_decay}.
+These decays can be split into three groups: the 17.8\% of $\tau$s that decay to an electron ($e$), the 17.4\% that decay into a muon ($\mu$), and hadronic tau decays ($\tauh$) that make up the final 64.8\% of $\tau$ decays. 
 The leptonic decays of the tau can be accounted for by the identification of electrons and muons as discussed in the previous subsection.  \\
 
 \begin{table}[h]
@@ -338,16 +339,16 @@ The leptonic decays of the tau can be accounted for by the identification of ele
          other & 3.2\% \\
          \hline
     \end{tabular}
-    \caption{Measured branching fractions for the tau lepton. h represents a charged hadron either a pion or a kaon~\cite{ParticleDataGroup:2022pth}.}
+    \caption{Measured branching fractions for the $\tau$ lepton. h represents a charged hadron either a pion or a kaon~\cite{ParticleDataGroup:2022pth}.}
     \label{tab:tau_decay}
 \end{table}
 
 A two step process is used to identify hadronic taus.
 The \ac{HPS} algorithm is used to initially identify hadronic taus based on jets produced by the anti-$k_{\text{T}}$ algorithm with a distance parameter of $\Delta R = 0.4$. 
-To capture the energy deposits left by $\pi^0$ candidates in the ECAL, the photon and electron constituents of the jet responsible for seeding the tau reconstruction are assembled into strips. 
+To capture the energy deposits left by $\pi^0$ candidates in the \ac{ECAL}, the photon and electron constituents of the jet responsible for seeding the $\tauh$ reconstruction are assembled into strips. 
 All electrons or photons used are required to have $p_{\text{T}} > 0.5$ GeV.
 The initial iteration of the \ac{HPS} algorithm used a fixed strip size of $\Delta \eta \times \Delta \phi$ equal to $0.05 \times 0.20$.
-However, this technique was updated to a dynamical strip size to account for the multiple scatterings of $e^+ e^-$ products from a $pi^0$ decay, falling outside of the fixed window.
+However, this technique was updated to a dynamical strip size to account for the multiple scatterings of $e^+ e^-$ products from a $\pi^0$ decay, falling outside of the fixed window.
 A reliance of the hadronic tau $\pT$ spectrum of the required strip size was observed and so the following iterative algorithm was proposed to resolve this issue.
 
 \begin{enumerate}[i)]
@@ -357,18 +358,18 @@ A reliance of the hadronic tau $\pT$ spectrum of the required strip size was obs
   \Delta \eta = f(\pT^{e/\gamma}) + f(\pT^{\text{strip}}), \hspace{1cm} \Delta \phi = g(\pT^{e/\gamma}) + g(\pT^{\text{strip}})
 \end{equation}
 of the strip is then combined with the strip.
-These functions are determined from a fit to hadronic tau MC, so that 95\% of electrons and photons are contained in a single strip.
+These functions are determined from a fit to hadronic tau \ac{MC}, so that 95\% of electrons and photons are contained in a single strip.
 These fits are shown in Figure~\ref{fig:hps} and correspond to,
 \begin{equation}
 f(\pT) = 0.20 \pT^{-0.66}, \hspace{1cm} g(\pT) = 0.35 \pT^{-0.71}
 \end{equation}
 where the $\pT$ is in units of GeV.
 These functions have lower and upper caps of 0.05 to 0.3 for $\Delta\phi$ and 0.05 to 0.15 for $\Delta\eta$.
-\item Recalculate the strip position using a weight average of the average $\pT$ of all the electron and photon strip constituents.
+\item Recalculate the strip position using a weight average of the $\pT$ of all the electron and photon strip constituents.
 \begin{equation}
 \eta_{\text{strip}} = \frac{1}{\pT^{\text{strip}}} \sum \pT^{e/\gamma} \eta_{e/\gamma}, \hspace{1cm} \phi_{\text{strip}} = \frac{1}{\pT^{\text{strip}}} \sum \pT^{e/\gamma} \phi_{e/\gamma}
 \end{equation}
-\item Repeat steps ii and iii until no other electron or photon candidate fulfilling condition ii is found.
+\item Repeat steps (ii) and (iii) until no other electron or photon candidate fulfilling condition (ii) is found.
 \end{enumerate}
 
 \begin{figure}[!hbtp]
@@ -379,7 +380,7 @@ These functions have lower and upper caps of 0.05 to 0.3 for $\Delta\phi$ and 0.
 \label{fig:hps}
 \end{figure}
 
-Charged hadrons (prongs) are also required to have $\pT > 0.5$ GeV and originate from the \ac{PV}, with a loose transverse impact parameter of $d_{xy} < 0.1$ cm
+Charged hadrons (prongs) are also required to have $\pT > 0.5$ GeV and originate from the \ac{PV}, with a loose transverse impact parameter of $d_{xy} < 0.1$ cm.
 Further constraints are placed on the reconstructed masses of the specific resonances produced by a hadronic tau decay, if produced by the decay.
 In particular, the visible mass positions and widths of the grouped charged hadrons and strips are optimised to match the $\rho$ (770 MeV) and $a_1$ (1260 MeV) decays.
 This is performed to maximise the fraction of hadronic tau efficiency to the probability of misidentification from jets.
@@ -393,8 +394,8 @@ The visible decay products of each decay shown in Table~\ref{tab:tau_decay} are 
 \item $\pi^- \pi^- \pi^+ \pi^0$: Three charged hadron candidates and one strip.
 \end{enumerate}
 
-The remaining hadronic decays of the tau leptons are not included in this thesis.
-The \ac{DM} of the hadronic tau that is reconstructed by a \ac{HPS} is quantified by the following formula relating the number of charged hadron candidates $N_C$ and the number of strips $N_N$.
+The remaining hadronic decays of the $\tau$ leptons are not included in this thesis.
+The \ac{DM} of the hadronic tau that is reconstructed by \ac{HPS} is quantified by the following formula relating the number of charged hadron candidates $N_C$, and the number of strips $N_N$.
 
 \begin{equation}
 \text{DM} = 5(N_{C} - 1) + N_{N}
@@ -410,7 +411,7 @@ The architecture of algorithm is shown in Figure~\ref{fig:deeptau}. \\
 \begin{figure}[!hbtp]
 \centering
     \includegraphics[width=\textwidth]{Figures/deeptau.pdf}
-\caption{The architecture of the \texttt{DeepTau} neural network, comprising of three sets of input variables: inner cells, outer cells, and high-level features. These sets are processed separately through subnetworks and their outputs are concatenated. Five fully connected layers process the concatenated output to calculate the probabilities for a candidate to be a hadronic tau, electron, muon, or jet. The high-level input subnetwork consists of three fully connected layers, taking 47 inputs and yielding 57 outputs. Complex subnetworks process the features of inner and outer cells separately, with fully connected layers followed by concatenation and additional fully connected layers. Convolutional layers progressively reduce the grid size for both inner and outer cells. For inner cells, there are 5 convolutional layers, while for outer cells, there are 10 convolutional layers. The number of trainable parameters (TP) for the different subnetworks are also provided~\cite{CMS:2022prd}.}
+\caption{The architecture of the \texttt{DeepTau} neural network, comprising of three sets of input variables: inner cells, outer cells, and high-level features. These sets are processed separately through subnetworks and their outputs are concatenated. Five fully connected layers process the concatenated output to calculate the probabilities for a candidate to be a hadronic tau, electron, muon, or jet. The high-level input subnetwork consists of three fully connected layers, taking 47 inputs and yielding 57 outputs. Complex subnetworks process the features of inner and outer cells separately, with fully connected layers followed by concatenation and additional fully connected layers. Convolutional layers progressively reduce the grid size for both inner and outer cells. For inner cells, there are 5 convolutional layers, while for outer cells, there are 10 convolutional layers. The number of trainable parameters for the different subnetworks are also provided~\cite{CMS:2022prd}.}
 \label{fig:deeptau}
 \end{figure}
 
@@ -423,7 +424,7 @@ These are defined as,
 D_{i}^{\text{score}} = \frac{y_\tau}{y_i + y_{\tau}}, \hspace{1cm} i \in (e,\mu,\text{jet}).
 \end{equation}
 
-From this, \ac{WP}s are defined to match specific efficiencies of hadronic tau identification with respect to each of the other 3 objects, named $D_{e}^{\text{WP}}$, $D_{\mu}^{\text{WP}}$ and $D_{\text{jet}}^{\text{WP}}$.
+From this, \ac{WP} are defined to match specific efficiencies of hadronic tau identification with respect to each of the other 3 objects, named $D_{e}^{\text{WP}}$, $D_{\mu}^{\text{WP}}$ and $D_{\text{jet}}^{\text{WP}}$.
 The target efficiencies for different \ac{WP} are shown in Table~\ref{tab:deeptau_eff}. \\
 
 \begin{table}[!hbtp]
@@ -439,7 +440,7 @@ $D_{\mu}^{\text{WP}}$  & -       & -      & 99.5\% & 99.8\% & 99.9\% & 99.95\% &
 $D_{\tau}^{\text{WP}}$ & 40\%    & 50\%   & 60\%   & 70\%   & 80\%   & 90\%    & 95\%    & 98\%     \\
 \hline
 \end{tabular}
-\caption{Target efficiencies of the \texttt{DeepTau} working points with respect to electrons, muons and jets.}
+\caption{Target efficiencies of the \texttt{DeepTau} working points with respect to electrons, muons and jets~\cite{CMS:2022prd}.}
 \label{tab:deeptau_eff}
 \end{adjustwidth}
 \end{table}
@@ -447,8 +448,8 @@ $D_{\tau}^{\text{WP}}$ & 40\%    & 50\%   & 60\%   & 70\%   & 80\%   & 90\%    &
 Due to the lack of muons misidentified as hadronic taus, high efficiencies can be required for $D_{\mu}^{\text{WP}}$.
 This is also the reason for why the target efficiencies for $D_{e}^{\text{WP}}$ are higher than for $D_{\text{jet}}^{\text{WP}}$, where the large challenge jets misidentified as hadronic taus is present.
 The misidentification probabilities for the different hadronic tau efficiencies are shown in Figure~\ref{fig:deeptau_misid}.
-Also shown in these plots, is the performance comparison to an older \ac{MVA} algorithm for electrons and jets, as well as a cut based algorithm for muons, both described in Reference~\cite{CMS:2018jrd}.
-Significant improvements with respect to the previous algorithm is observed, which has a results in a significant improvement in analyses utilising tau leptons at the CMS experiment.
+Also shown in these plots, is the performance comparison to an older \ac{MVA} algorithm for discrimination against electrons and jets, as well as a cut based algorithm for muons, both described in Reference~\cite{CMS:2018jrd}.
+Significant improvements with respect to the previous algorithm are observed, which results in a significant improvement in analyses utilising $\tau$ leptons at the \ac{CMS} experiment.
 The different $D_{e}^{\text{WP}}$, $D_{\mu}^{\text{WP}}$ and $D_{\text{jet}}^{\text{WP}}$ can be used to optimise the hadronic tau identification for analyses attempting to separate tau enriched signals from backgrounds of misidentified objects.
 Two examples of analyses that utilise this are described in Chapter~\ref{sec:bsm_H_to_tau_tau_analysis} and \ref{sec:H_A_to_4_tau_analysis}.
 
@@ -457,6 +458,6 @@ Two examples of analyses that utilise this are described in Chapter~\ref{sec:bsm
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/deeptau_misid_electron.pdf}}
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/deeptau_misid_muon.pdf}} \\
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/deeptau_misid_jet.pdf}}
-\caption{Efficiency comparisons of electrons (a), muons (b) and jets (c) passing the \texttt{DeepTau} identification discriminators versus hadronic tau efficiency. (a) uses $Z\rightarrow ee$, (b) uses $Z\rightarrow \mu\mu$ and (c) uses W+jets MC, with only objects with $\pT<100$ GeV used. Working points are indicated by full circles and previous algorithms described in Reference~\cite{CMS:2018jrd} are shown in blue triangles and green squares~\cite{CMS:2022prd}.}
+\caption{Comparisons of the \texttt{DeepTau} identification discriminator performance against electrons (a), muons (b) and jets (c) versus the hadronic tau efficiency. (a) uses $Z\rightarrow ee$, (b) uses $Z\rightarrow \mu\mu$ and (c) uses W+jets MC, with only objects with $\pT<100$ GeV used. Working points are indicated by full circles and previous algorithms described in Reference~\cite{CMS:2018jrd} are shown in blue triangles and green squares~\cite{CMS:2022prd}.}
 \label{fig:deeptau_misid}
 \end{figure}

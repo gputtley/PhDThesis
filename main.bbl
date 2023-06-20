@@ -14,6 +14,11 @@
   $\sqrt{s}=13~\mathrm{TeV}$}}, {\emph{CMS Physics Analysis Summary} {\bfseries
   CMS-PAS-HIG-21-001} (2022) }.
 
+\bibitem{ParticleDataGroup:2022pth}
+R.~L. Workman et~al., \emph{{Review of Particle Physics}},
+  \href{https://doi.org/10.1093/ptep/ptac097}{\emph{PTEP} {\bfseries 2022}
+  (2022) 083C01}.
+
 \bibitem{sm_diagram}
 D.~Galbraith and C.~Burgard, ``{Example: Standard model of physics}.''
   \url{https://texample.net/tikz/examples/model-physics/}.
@@ -102,11 +107,6 @@ A.~Jueid, J.~Kim, S.~Lee and J.~Song, \emph{{Type-X two-Higgs-doublet model in
   {\bfseries 104} (2021) 095008}
   [\href{https://arxiv.org/abs/2104.10175}{{\ttfamily 2104.10175}}].
 
-\bibitem{ParticleDataGroup:2022pth}
-R.~L. Workman et~al., \emph{{Review of Particle Physics}},
-  \href{https://doi.org/10.1093/ptep/ptac097}{\emph{PTEP} {\bfseries 2022}
-  (2022) 083C01}.
-
 \bibitem{ATLAS_Higgs_Discovery}
 {ATLAS Collaboration}, \emph{{Observation of a new particle in the search for
   the Standard Model Higgs boson with the ATLAS detector at the LHC}},
@@ -179,6 +179,13 @@ R.~L. Workman et~al., \emph{{Review of Particle Physics}},
   decays}, \href{https://doi.org/10.1103/PhysRevLett.120.171802}{\emph{Phys.
   Rev. Lett.} {\bfseries 120} (2018) 171802}
   [\href{https://arxiv.org/abs/1708.08856}{{\ttfamily 1708.08856}}].
+
+\bibitem{Muong-2:2006rrc}
+{Muon g-2 Collaboration}, \emph{{Final Report of the Muon E821 Anomalous
+  Magnetic Moment Measurement at BNL}},
+  \href{https://doi.org/10.1103/PhysRevD.73.072003}{\emph{Phys. Rev. D}
+  {\bfseries 73} (2006) 072003}
+  [\href{https://arxiv.org/abs/hep-ex/0602035}{{\ttfamily hep-ex/0602035}}].
 
 \bibitem{Muong-2:2021ojo}
 {Muon g-2 Collaboration}, \emph{{Measurement of the Positive Muon Anomalous
@@ -267,6 +274,18 @@ J.~Goldstone, \emph{{Field Theories with Superconductor Solutions}},
   \href{https://doi.org/10.1007/BF02812722}{\emph{Nuovo Cim.} {\bfseries 19}
   (1961) 154}.
 
+\bibitem{PhysRevD.15.1958}
+S.~L. Glashow and S.~Weinberg, \emph{Natural conservation laws for neutral
+  currents}, \href{https://doi.org/10.1103/PhysRevD.15.1958}{\emph{Phys. Rev.
+  D} {\bfseries 15} (1977) 1958}.
+
+\bibitem{Ginzburg:2004vp}
+I.~F. Ginzburg and M.~Krawczyk, \emph{{Symmetries of two Higgs doublet model
+  and CP violation}},
+  \href{https://doi.org/10.1103/PhysRevD.72.115013}{\emph{Phys. Rev. D}
+  {\bfseries 72} (2005) 115013}
+  [\href{https://arxiv.org/abs/hep-ph/0408011}{{\ttfamily hep-ph/0408011}}].
+
 \bibitem{CMS:2020xrn}
 {CMS Collaboration}, \emph{{A measurement of the Higgs boson mass in the
   diphoton decay channel}},
@@ -292,13 +311,6 @@ M.~Schmaltz and Y.-M. Zhong, \emph{The leptoquark hunter\textquoteright{}s
   \href{https://doi.org/10.1007/JHEP01(2019)132}{\emph{JHEP} {\bfseries 01}
   (2019) 132} [\href{https://arxiv.org/abs/1810.10017}{{\ttfamily
   1810.10017}}].
-
-\bibitem{Muong-2:2006rrc}
-{Muon g-2 Collaboration}, \emph{{Final Report of the Muon E821 Anomalous
-  Magnetic Moment Measurement at BNL}},
-  \href{https://doi.org/10.1103/PhysRevD.73.072003}{\emph{Phys. Rev. D}
-  {\bfseries 73} (2006) 072003}
-  [\href{https://arxiv.org/abs/hep-ex/0602035}{{\ttfamily hep-ex/0602035}}].
 
 \bibitem{Ilisie:2015tra}
 V.~Ilisie, \emph{{New Barr-Zee contributions to $\mathbf{(g-2)_\mu}$ in

@@ -82,18 +82,20 @@ For any reuse or redistribution, researchers must make clear to others the licen
 \vspace{0.5cm}
 \end{center}
 
-The Standard Model of particle physics is currently the best model of the fundamental particles and their interactions. However, there are still significant theoretical issues and experimental tensions with the model. 
-The theoretical issues include the hierarchy problem which forecasts the breakdown of the Standard Model when looking at the size of corrections needed to calculate the mass of the newest found member of the theory, the Higgs boson particle. 
-The current experimental tensions include the B-anomalies and the g-2 measurement. 
-These results, although they do not yet sit at the required 5$\sigma$ deviation for a discovery, offer the most prominent leads into where new physics may be hiding. Looking for signatures of theoretical explanations of these anomalies offers excellent search options for new fundamental particles. 
+The Standard Model (SM) of particle physics is currently the best model of the fundamental particles and their interactions. 
+However, there are significant theoretical issues and experimental tensions with the model. 
+The theoretical issues include the hierarchy problem which forecasts the breakdown of the SM when looking at the size of corrections needed to calculate the mass of the newest found member of the theory, the Higgs boson particle. 
+The current experimental tensions include the B anomalies and the measurement of the muon anomalous magnetic moment. 
+These results, although they do not yet sit at the required 5$\sigma$ deviation for a discovery, offer the most prominent leads into where new physics may be hiding. 
+Looking for signatures of theoretical explanations to these anomalies, offers excellent search options for new fundamental particles. 
 This thesis describes the search for new physics that can explain both the theoretical problems and experimental tensions. 
-This is done using tau leptons seen during Run-2 of the Large Hadron Collider (LHC) at the Compact Muon Solenoid experiment. 
-The Beyond Standard Model theories searched for range from Supersymmetry, leptoquarks, to type-X two Higgs doublet models. 
-Each theory is separately studied and an analysis is tailored to find its most sensitive signature. 
+This is done using tau leptons seen during Run 2 of the Large Hadron Collider at the Compact Muon Solenoid (CMS) experiment. 
+The beyond SM theories searched for range from the Minimal Supersymmetric SM (MSSM), leptoquarks, and the type X two Higgs doublet models (2HDM). 
+Each theory is separately studied and an analysis is tailored to find its most sensitive signatures. 
 In the process of optimisation, data-driven background modelling is improved to aid the reliability of the results. 
-Two local excesses of size $\approx 3\sigma$ for a resonance produced via gluon fusion at masses 100 GeV and 1.2 TeV is observed, otherwise good agreement was observed between the Standard Model background prediction and data.
-Leading constraints are placed on scenarios of the Minimal Supersymmetric Standard Model phase space and limits that shrink the allowed explanation to the B anomalies are set.
-The type X two Higgs doublet model as an explanation to the g-2 anomaly is completed excluded by this thesis.
+Two local excesses of a statistical significance $\approx 3\sigma$ for a resonance produced via gluon fusion at masses 100 GeV and 1.2 TeV are observed, otherwise good agreement is observed between the SM background prediction and data.
+Leading constraints are placed on scenarios of the MSSM phase space and limits that shrink the allowed explanation to the B anomalies are set.
+The type X 2HDM as an explanation to the muon anomalous magnetic moment measurement is fully ruled out and many mass hypotheses in the type X 2HDM are completely excluded by this thesis.
 \end{adjustwidth}
 \vspace*{\fill}
 \newpage
@@ -107,16 +109,18 @@ The type X two Higgs doublet model as an explanation to the g-2 anomaly is compl
 
 I declare that the work in this thesis is mine. 
 Figures and results taken from other sources are indicated by a reference in the text or figure caption. 
-Figures labelled "CMS" are sourced from CMS publications. 
-Figures labelled "CMS Supplementary" have been made public as supplementary material accompanying a publication. 
+Figures labelled \say{CMS} are sourced from CMS publications. 
+Figures labelled \say{CMS Supplementary} have been made public as supplementary material accompanying a publication. 
+The \say{CMS Preliminary} label is given to CMS public results that are yet to finalised by the collaboration and the journal.
+The \say{Simulation} tag is added when only simulated data is used to generate a CMS public plot.
 All figures with these labels, including those made by myself, also include the relevant reference in the caption.
 The analyses presented in this document were developed in collaboration with other members of the CMS experiment. 
 Chapters~\ref{sec:theory}--\ref{sec:object_reconstruction} do not contain original work by myself, but are intended to give an description of the theoretical motivation, and apparatus and methods used to generate and collect the data, that are critical to the work presented in following chapters. 
-The high-mass additional Higgs boson search, described in Chapter~\ref{sec:bsm_H_to_tau_tau_analysis}, and the origin of the background modelling methods was pre-established in Ref.~\cite{CMS_MSSM_Tau_2018}.
+The high-mass additional Higgs boson search, described in Chapter~\ref{sec:bsm_H_to_tau_tau_analysis}, and the origin of the background modelling methods was pre-established in Reference~\cite{CMS_MSSM_Tau_2018}.
 The work described in this chapter was done in collaboration with the other members of the CMS $H\rightarrow\tau\tau$ group.
 For the additional Higgs boson component of this chapter, I contributed to the low-mass optimisation, derivation and parametrisation of fake factors, evaluation of uncertainties and the final statistical fits to data.
 The vector leptoquark interpretation of the results was solely my work.
-The results in Chapter~\ref{sec:background_modelling} were made public in Ref.~\cite{CMS:2022rbd}.
+The results in Chapter~\ref{sec:background_modelling} were made public in Reference~\cite{CMS:2022rbd}.
 Chapter~\ref{sec:H_A_to_4_tau_analysis} contains work performed in collaboration with the Imperial College London $H\rightarrow\tau\tau$ group.
 I was responsible for the full work flow of this analysis including signal simulation, background modelling, optimisation, uncertainty modelling, interpretations and the final statistical fits to data.
 This analysis is currently not published, but a publication is planned in the near future.
@@ -138,12 +142,12 @@ George Uttley
 \vspace{0.5cm}
 \end{center}
 
-I would like to thank Imperial College London High Energy Physics group and STFC for giving me the opportunity to conduct this research.
-Thank you to my supervisor, David Colling, for all the support and guidance, in particular the aid I received whilst working through the pandemic.
+I would like to thank the Imperial College London High Energy Physics group and the Science and Technology Facilities Council for giving me the opportunity to conduct this research.
+Thank you to my supervisor, David Colling, for all the assistance and guidance, in particular the aid I received whilst working through the pandemic.
 I also owe a massive thank you to Daniel Winterbottom, for all of the help and advice, as well as the patience he showed with me throughout my PhD.
-I am also grateful to the remaining members of the $H\rightarrow\tau\tau$ group for the all of interesting discussions and the continual motivation whilst writing this thesis.
+I am also grateful to the remaining members of the $H\rightarrow\tau\tau$ group for all of the interesting discussions and the continued motivation whilst writing this thesis.
 Thank you to my friends and family, who have continually supported me throughout my life and are the reason I was able to complete this work.
-In particular, thank you to Emmy for her unwavering care and encouragement throughout this journey.
+In particular, thank you to Emmy for her unwavering support and encouragement throughout this journey.
 
 \begin{FlushRight}
 George Uttley
