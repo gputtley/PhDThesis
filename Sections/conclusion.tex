@@ -5,7 +5,7 @@
 
 The analyses presented in Chapters~\ref{sec:bsm_H_to_tau_tau_analysis} and \ref{sec:H_A_to_4_tau_analysis}, although motivated by different physics, are complementary to one another in context of the type X \ac{2HDM}.
 The limits on this phase space from the analysis discussed in Chapter~\ref{sec:bsm_H_to_tau_tau_analysis}, are studied using the \textsc{HiggsTools-1} framework~\cite{Bahl:2022igd}.
-\textsc{HiggsTools} is a combination of the \textsc{HiggsBounds}, \textsc{HiggsSignals} and \textsc{HiggsPredictions} frameworks and these are used for the following purpose:
+\textsc{HiggsTools} is a combination of the \textsc{HiggsBounds}~\cite{Bechtle:2020pkv}, \textsc{HiggsSignals}~\cite{Bechtle:2020uwn} and \textsc{HiggsPredictions}~\cite{Bahl:2022igd} frameworks and these are used for the following purpose:
 
 \begin{itemize}
 \item \textsc{HiggsPredictions} is used to determine theory production cross sections and decay rates.
@@ -13,11 +13,13 @@ The limits on this phase space from the analysis discussed in Chapter~\ref{sec:b
 \item \textsc{HiggsSignals} is used to find the bounds from shifts to the observed Higgs boson's properties.
 \end{itemize}
 
-\textsc{HiggsBounds} and \textsc{HiggsSignals} contain a database of results from all key measurements from the LHC, LEP and other colliders.
-The result from Chapter~\ref{sec:bsm_H_to_tau_tau_analysis} is included in this database.
-The widths of additional Higgs bosons and branching fractions calculated with \textsc{2HDECAY} for Chapter~\ref{sec:H_A_to_4_tau_analysis} are utilised for the scan of the type X 2HDM parameter space.
-The cross sections used in each analysis scanned over is scaled to that of the model parameters by the \textsc{NeutralEffectiveCouplings} function in \textsc{HiggsPredictions}.
-A 95\% CL limit is then tested on each point in the parameter space. \\
+\textsc{HiggsBounds} and \textsc{HiggsSignals} contain a database of results from all key measurements from the \ac{LHC}, \ac{LEP} and other colliders.
+The result from Chapter~\ref{sec:bsm_H_to_tau_tau_analysis} is included in this database. \\
+
+To begin setting constraints on the type X \ac{2HDM}, other than that in Chapter~\ref{sec:H_A_to_4_tau_analysis}, the properties of the additional Higgs bosons are required.
+The widths and branching fractions calculated with \textsc{2HDECAY} for Chapter~\ref{sec:H_A_to_4_tau_analysis} are utilised for the scan of the type X 2HDM parameter space.
+The cross sections used in each analysis scanned over is scaled to that of the model parameters by the \textsc{NeutralEffectiveCouplings} function~\cite{Bechtle:2020pkv} implemented in \textsc{HiggsPredictions}.
+CL$_s$ is calculated at each point in the parameter space and a 95\% \ac{CL} limit is placed. \\
 
 In the alignment scenario, the strongest bounds on the type X \ac{2HDM} at all mass points tested come from the analysis described in Chapter~\ref{sec:bsm_H_to_tau_tau_analysis}.
 The limits determined for the $m_{\phi}$ equal to 100 and 200 GeV scenarios are overlayed onto the limits shown in Figure~\ref{fig:4tau_md} and shown in Figure~\ref{fig:4tau_md_hb}. \\
@@ -35,14 +37,14 @@ The exclusion limits are at low values of $\tan\beta$ only.
 As $\tan\beta$ increases, the gluon fusion and b associated production modes are suppressed but the branching ratios of the additional Higgs bosons to $\tau$ leptons are enhanced.
 Therefore, the exclusion limit represents a compromise between suppressed cross sections and enhanced branching ratios. 
 The regions where the product is large enough for that parameter point to be excluded, happens at low $\tan\beta$.
-In the type X \ac{2HDM}, the b associated production mode in negligible due to no enhancement of couplings to b quarks.
-The mass hypotheses change the limit due to the non-flat nature of Fig.~\ref{fig:model_independent_limits}(a).
-The limit in Fig.~\ref{fig:4tau_md_hb}(b) is flat as the the strongest constraint comes from the $\phi$(H) boson, and for an additional neutral \ac{CP}-even Higgs boson $\tan\beta \lesssim 10$ is excluded.
+In the type X \ac{2HDM}, the b associated production mode is negligible due to no enhancement of couplings to b quarks.
+The mass hypotheses change the limit due to the non-flat nature of Figure~\ref{fig:model_independent_limits}(a).
+The limit in Figure~\ref{fig:4tau_md_hb}(b) is flat as the strongest constraint comes from the $\phi$(H) boson, and for an additional neutral \ac{CP}-even Higgs boson $\tan\beta \lesssim 10$ is excluded.
 However, this is not the case for Figure~\ref{fig:4tau_md_hb}(a) where $m_{\phi}$ is lighter and the sensitivity is not always driven by the $\phi$(h) boson.
-In particular, the limit on a 100 GeV resonance, from Fig.~\ref{fig:model_independent_limits}, is weakest due to the large Drell-Yan background and the local excess observed on top of this peak, and so effects from both additional neutral Higgs bosons are present.
+In particular, the limit on a 100 GeV resonance, from Figure~\ref{fig:model_independent_limits}, is weakest due to the large background from the Z boson and the local excess observed on top of this peak, and so effects from both additional neutral Higgs bosons are present.
 Together, the exclusion limits from both analyses yield an almost complete coverage of the type X 2HDM alignment scenario within the mass range searched. \\
 
-Next the affect of the \ac{BSM} searches and precision measurements of the \ac{SM} Higgs boson on the type X \ac{2HDM} model, outside of the alignment scenario is studied.
+Next the effect of the \ac{BSM} searches and precision measurements of the \ac{SM} Higgs boson on the type X \ac{2HDM} model, outside of the alignment scenario is studied.
 Bounds are again calculated with \textsc{HiggsTools}, however the constraints now come from \ac{SM} Higgs measurements as well as \ac{BSM} searches such as described in Chapter~\ref{sec:bsm_H_to_tau_tau_analysis}.
 The bounds determined, overlayed with the results shown in Figure~\ref{fig:4tau_cosbma}, are shown in Figure~\ref{fig:4tau_cosbma_hb}. \\
 
@@ -63,8 +65,8 @@ However, the entirety of the phase space for the two mass points is excluded by 
 \section{Summary}
 
 This thesis has presented two analyses utilising the full Run 2 dataset collected by the \ac{CMS} experiment, from the 13 TeV proton proton collisions at the \ac{LHC}, targeting final states enriched in tau leptons.
-The motivation for the searches presented in Chapter~\ref{sec:bsm_H_to_tau_tau_analysis} and \ref{sec:H_A_to_4_tau_analysis} are \ac{BSM} theories that attempt to resolve the theoretical issue of the hierarchy problem and the experiment tensions of the B anomalies and the g-2 anomaly.
-The preceding chapters, act to motivate the new physics models that could potentially resolve these tensions, and the apparatus and methods used for the foundation of data taking and reconstruction required for the searches. \\
+The motivation for the searches presented in Chapter~\ref{sec:bsm_H_to_tau_tau_analysis} and \ref{sec:H_A_to_4_tau_analysis} are \ac{BSM} theories that attempt to resolve the theoretical issue of the hierarchy problem and the experiment tensions of the B anomalies and the muon g-2 anomaly.
+The preceding chapters, act to motivate the new physics models that could potentially resolve these issues, and the apparatus and methods used for the foundation of data taking and reconstruction required for the searches. \\
 
 Chapter~\ref{sec:bsm_H_to_tau_tau_analysis} presents a search for two possible areas of new physics in the di-$\tau$ final states.
 The first of these is a search for additional neutral Higgs bosons, motivated by the type II \ac{2HDM} of the \ac{MSSM}, as a consequence of a solution to the hierarchy problem.
@@ -81,10 +83,10 @@ In the $M_{h}^{125}$ scenario, values of $m_A < 500$ GeV are excluded, and in th
 The second area of new physics that is searched for in Chapter~\ref{sec:bsm_H_to_tau_tau_analysis}, is a potential solution to the B anomalies, in vector leptoquarks.
 The signal model searched for is a non-resonant t-channel interaction producing a di-$\tau$ final state, where the initial state is dominated by b quarks.
 The best fit vector leptoquark is heavily constrained by the b tag categories where no deviation from the \ac{SM} expectation is observed.
-It therefore can not be used to explain the deviations observed in the no b tag categories.
+It therefore cannot be used to explain the deviations observed in the no b tag categories.
 Limits on vector leptoquark phase space are set and constrain the regions allowed for an explanation to the B anomalies. \\
 
-Chapter~\ref{sec:H_A_to_4_tau_analysis} details a search for an extended Higgs sector to explain the g-2 anomaly.
+Chapter~\ref{sec:H_A_to_4_tau_analysis} details a search for an extended Higgs sector to explain the muon g-2 anomaly.
 This can be done with type X \ac{2HDM} at high values of $\tan\beta$.
 A different signal strategy is needed than in Chapter~\ref{sec:bsm_H_to_tau_tau_analysis}, due to the suppressed coupling between the additional neutral Higgs bosons and quarks in this model.
 The preferred signal model here is the production of two additional neutral Higgs bosons via an off-shell Z boson.
@@ -94,6 +96,6 @@ No significant deviation is observed from the background estimation.
 Limits on the cross section multiplied by branching fractions are set and vary from 20 fb at the lowest mass hypothesis, to 1.4 fb at the highest mass hypothesis.
 The results are interpreted in terms on the type X \ac{2HDM}, and it is found that the constraints from the \ac{SM} Higgs boson measurements limit the phase space to be very close to the alignment limit.
 The alignment limit exclusions are found to exclude upwards of $\tan\beta$ approximately equal to 1.5, unless the $\PH \rightarrow Z\PA$ becomes kinematically feasible and the limit is weakened.
-This an exclusion way beyond a possible explanation to the g-2 anomaly.
+This is an exclusion way beyond a possible explanation to the muon g-2 anomaly.
 The results from Chapter~\ref{sec:bsm_H_to_tau_tau_analysis} are complimentary to Chapter~\ref{sec:H_A_to_4_tau_analysis} in the type X \ac{2HDM} alignment limit, as they exclude downwards of $\tan\beta$ approximately equal to 10, and so together exclude the vast majority of the phase space in mass ranges searched.
 

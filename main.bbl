@@ -802,4 +802,19 @@ H.~Bahl, T.~Biek\"otter, S.~Heinemeyer, C.~Li, S.~Paasch, G.~Weiglein et~al.,
   and HiggsSignals}},  \href{https://arxiv.org/abs/2210.09332}{{\ttfamily
   2210.09332}}.
 
+\bibitem{Bechtle:2020pkv}
+P.~Bechtle, D.~Dercks, S.~Heinemeyer, T.~Klingl, T.~Stefaniak, G.~Weiglein
+  et~al., \emph{{HiggsBounds-5: Testing Higgs Sectors in the LHC 13 TeV Era}},
+  \href{https://doi.org/10.1140/epjc/s10052-020-08557-9}{\emph{Eur. Phys. J. C}
+  {\bfseries 80} (2020) 1211}
+  [\href{https://arxiv.org/abs/2006.06007}{{\ttfamily 2006.06007}}].
+
+\bibitem{Bechtle:2020uwn}
+P.~Bechtle, S.~Heinemeyer, T.~Klingl, T.~Stefaniak, G.~Weiglein and
+  J.~Wittbrodt, \emph{{HiggsSignals-2: Probing new physics with precision Higgs
+  measurements in the LHC 13 TeV era}},
+  \href{https://doi.org/10.1140/epjc/s10052-021-08942-y}{\emph{Eur. Phys. J. C}
+  {\bfseries 81} (2021) 145}
+  [\href{https://arxiv.org/abs/2012.09197}{{\ttfamily 2012.09197}}].
+
 \end{thebibliography}\endgroup

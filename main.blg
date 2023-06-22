@@ -297,45 +297,49 @@ You can't pop an empty literal stack for entry 16e7f618-c06b-3d10-8705-1086b218d
 while executing---line 1140 of file JHEP.bst.bst
 You can't pop an empty literal stack for entry Bahl:2022igd
 while executing---line 1140 of file JHEP.bst.bst
-You've used 129 entries,
+You can't pop an empty literal stack for entry Bechtle:2020pkv
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Bechtle:2020uwn
+while executing---line 1140 of file JHEP.bst.bst
+You've used 131 entries,
             2283 wiz_defined-function locations,
-            1481 strings with 28202 characters,
-and the built_in function-call counts, 41027 in all, are:
-= -- 4108
-> -- 1902
+            1496 strings with 28755 characters,
+and the built_in function-call counts, 41979 in all, are:
+= -- 4175
+> -- 2012
 < -- 0
-+ -- 550
-- -- 421
-* -- 3484
-:= -- 6173
-add.period$ -- 132
-call.type$ -- 129
-change.case$ -- 129
++ -- 578
+- -- 447
+* -- 3582
+:= -- 6338
+add.period$ -- 134
+call.type$ -- 131
+change.case$ -- 131
 chr.to.int$ -- 0
-cite$ -- 130
-duplicate$ -- 2091
-empty$ -- 3450
-format.name$ -- 421
-if$ -- 10682
+cite$ -- 132
+duplicate$ -- 2123
+empty$ -- 3505
+format.name$ -- 447
+if$ -- 10912
 int.to.chr$ -- 0
-int.to.str$ -- 129
-missing$ -- 493
-newline$ -- 394
-num.names$ -- 200
-pop$ -- 202
+int.to.str$ -- 131
+missing$ -- 501
+newline$ -- 400
+num.names$ -- 204
+pop$ -- 204
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1670
+skip$ -- 1693
 stack$ -- 0
-substring$ -- 1138
-swap$ -- 1073
+substring$ -- 1152
+swap$ -- 1089
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 327
-width$ -- 132
-write$ -- 1465
-(There were 137 error messages)
+while$ -- 333
+width$ -- 134
+write$ -- 1489
+(There were 139 error messages)
