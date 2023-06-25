@@ -1,10 +1,10 @@
 \chapter{The LHC and CMS experiment}
 \label{sec:cms}
 
-This chapter will explain the apparatus used to generate and collect the datasets that are utilised for the physics analysed described in Chapters~\ref{sec:bsm_H_to_tau_tau_analysis} and ~\ref{sec:H_A_to_4_tau_analysis}.
+This chapter will explain the apparatus used to generate and collect the datasets that are utilised for the physics analysed described in Chapters~\ref{sec:bsm_H_to_tau_tau_analysis} and \ref{sec:H_A_to_4_tau_analysis}.
 This is split into two parts.
 Firstly, an overview of the \ac{LHC} and a description of how proton-proton collisions at a centre-of-mass energy ($\sqrt{s}$) of 13 TeV are achieved.
-Secondly, is an explanation of the \ac{CMS} detector, including a look at the individual sub-detectors, that are crucial to the reconstruction of particles originating from the proton-proton collisions.
+Secondly, an explanation of the \ac{CMS} detector is given, including a look at the individual sub-detectors, that are crucial to the reconstruction of particles originating from the proton-proton collisions.
 
 \section{The LHC}
 
@@ -16,7 +16,7 @@ When the final energy has been achieved, the \ac{SPS} injects bunched protons in
 Each bunch contains over $10^{11}$ protons, with each one separated by 25 ns and each beam consists of 2808 bunches. 
 The protons are accelerated to collision energy using eight 400 MHz \ac{RF} cavities and kept in a circular trajectory with 1232 niobium-titanium superconducting dipole magnets. 
 These magnets must be maintained at their operating temperature of 1.9 K to generate magnetic fields up to 8.4 T, requiring the use of superfluid helium. 
-The bunches are collided at four intersections point surrounded by the ALICE~\cite{ALICE:2008ngc}, ATLAS~\cite{ATLAS:2008xda}, CMS~\cite{CMS_Setup} and LHCb~\cite{LHCb:2008vvz} detectors, at a collision rate of 40 MHz. \\
+The bunches are collided at four intersection points surrounded by the ALICE~\cite{ALICE:2008ngc}, ATLAS~\cite{ATLAS:2008xda}, CMS~\cite{CMS_Setup} and LHCb~\cite{LHCb:2008vvz} detectors, at a collision rate of 40 MHz. \\
 
 \begin{figure}[t]
     \centering
@@ -31,10 +31,10 @@ The rate of events for a process produced in \ac{LHC} collisions can be expresse
 R_{\text{event}} = L_{\text{inst}} \sigma(\sqrt{s}), 
 \end{equation}
 
-where $\sigma$ represents the cross-section of the process and is a function of the center-of-mass energy, and $L_{\text{inst}}$ denotes the \ac{LHC} machine's instantaneous luminosity, that depends only on the beam parameters and can be calculated by,
+where $\sigma$ represents the cross-section of the process and is a function of the centre-of-mass energy, and $L_{\text{inst}}$ denotes the \ac{LHC} machine's instantaneous luminosity, that depends only on the beam parameters and can be calculated by,
 
 \begin{equation}
-L_{\text{inst}} = \frac{n_{b}N_{b}^{2}f_{\text{rev}}\gamma_{r}}{4\pi \epsilon_{n}\beta^{*}}F.
+L_{\text{inst}} = \frac{n_{b}N_{b}^{2}f_{\text{rev}}\gamma_{r}}{4\pi \epsilon_{n}\beta^{*}}F,
 \end{equation}
 
 where $n_b$ is the number of bunches per beam, $N_b$ is the number of particles per bunch, $f_{\text{rev}}$ is the revolution frequency, $\gamma_r$ is the relativistic gamma factor, $\epsilon_n$ is the normalised transverse beam emittance, $\beta^*$ is the beta function at the collision point, and $F$ is a reduction factor which accounts for the crossing angle of the beams at the collision point. 
@@ -65,10 +65,11 @@ Weighing 12,500 tonnes and measuring 21.6 m in length with a diameter of 14.6 m,
 The layout of the \ac{CMS} detector is shown in Figure~\ref{fig:CMS_Schematic}.
 A superconducting solenoid, operating at a magnetic field strength of 3.8 T, surrounds the inner tracker, electromagnetic calorimeter, and hadronic calorimeter. 
 Situated outside the solenoid within the iron return yoke are gaseous muon detectors, positioned to accurately measure muons. 
-The \ac{CMS} detector adopts a coordinate system centred at the collision point, with the y-axis oriented vertically, the x-axis directed radially inward toward the \ac{LHC} centre, and the z-axis aligned with the beam direction. 
-The transverse energy ($E_T$) and transverse momentum ($\pT$) are defined in the x-y plane, and the azimuthal angle ($\phi$) and polar angle ($\theta$) are measured relative to the x-axis and z-axis, respectively. 
-$r$ is used as the radial distance in the x-y plane.
-Pseudorapidity ($\eta$), defined as $\eta = -\ln[\tan(\theta/2)]$, is used due to its gauge invariance, and distances in the $\phi$-$\eta$ plane are characterised by the metric $\Delta R = \sqrt{\Delta\phi^2 + \Delta\eta^2}$. 
+The \ac{CMS} detector adopts a coordinate system centred at the collision point, with the $y$-axis oriented vertically, the $x$-axis directed radially inward toward the \ac{LHC} centre, and the $z$-axis aligned with the beam direction. 
+The transverse energy ($E_T$) and transverse momentum ($\pT$) are defined in the $x$-$y$ plane. 
+The azimuthal angle ($\phi$) and polar angle ($\theta$) are measured relative to the $x$-axis in the $x$-$y$ plane and $z$-axis relative to the $z$-$y$ plane, respectively. 
+$r$ is used as the radial distance in the $x$-$y$ plane.
+Pseudorapidity ($\eta$), defined as $\eta = -\ln[\tan(\theta/2)]$, is used due to its gauge invariance, and distances between objects in the $\phi$-$\eta$ plane are characterised by the metric $\Delta R = \sqrt{\Delta\phi^2 + \Delta\eta^2}$. 
 
 \begin{figure}[h]
     \centering
@@ -79,8 +80,8 @@ Pseudorapidity ($\eta$), defined as $\eta = -\ln[\tan(\theta/2)]$, is used due t
 
 \subsection{Tracker}
 
-Closest to the interaction point in the \ac{CMS} experiment is the tracker~\cite{CMS_Setup,Malberti:2014pda,CMS:2012sda}, which is essential for precise measurements of charged particle trajectories and the determination of the \ac{PV} and \ac{SV}. 
-To meet the requirements of high granularity and fast response for the large number of particles generated in each bunch crossing, as well as being radiation-hard to deal with the particle flux, a silicon tracking detector is utilised. 
+Closest to the interaction point in the \ac{CMS} experiment is the tracker~\cite{CMS_Setup,Malberti:2014pda,CMS:2012sda}, which is essential for precise measurements of charged particle trajectories and the determination of the \ac{PV} and other vertices, as explained in Section~\ref{sec:track_and_vertex}. 
+To meet the requirements of high granularity and fast response for the large number of particles generated in each bunch crossing, as well as being radiation hard to deal with the particle flux, a silicon tracking detector is utilised. 
 The tracker consists of a pixel detector and a silicon strip detector as shown in Figure~\ref{fig:tracker}. \\
 
 \begin{figure}[!hbtp]
@@ -92,7 +93,7 @@ The tracker consists of a pixel detector and a silicon strip detector as shown i
 
 The pixel detector covers the pseudorapidity range $|\eta| < 2.5$ and is composed of three cylindrical pixel modules and two disk pixel modules. 
 It contains 66 million silicon pixels, each with dimensions of $100 \times 150$ $\upmu$m${^2}$. 
-This configuration provides a spatial resolution of 15--20 $\upmu$m in both the $r$-$\phi$ plane and the $z$ direction, enabling 3-dimensional vertex reconstruction.
+This configuration provides a spatial resolution of 15--20 $\upmu$m in both the $r$-$\phi$ plane and the $z$ direction, enabling three-dimensional vertex reconstruction.
 The original tracker was built to handle an instantaneous luminosity of $10^{34}$ cm$^{2}$s$^{-1}$ and an average \ac{PU} of 25.
 To handle higher luminosities and increased event \ac{PU}, the pixel detector was upgraded in 2016/2017 to handle approximately double the instantaneous luminosity and \ac{PU}~\cite{CMS:2012sda}. 
 The upgraded detector consists of four barrel module layers and three endcap disks, resulting in 124 million pixels. \\
@@ -103,7 +104,7 @@ The \ac{TOB} consists of six barrel layers extending up to an outer radius of 11
 The silicon strips have various thicknesses and widths, providing multiple measurements of the $r$-$\phi$ position with resolutions ranging from 23-35 $\upmu$m in the \ac{TIB} to 35-53 $\upmu$m in the \ac{TOB}. \\
 
 In addition to the main components, the tracker includes back-to-back mounted micro-strip detector modules to provide additional measurements of the $z$ coordinate in specific regions. 
-The overall tracker layout ensures the presence of at least three hits in the pixel detector (at least four hits for the upgraded detector) and at least nine hits in the silicon-strip tracker, with a minimum of four 2-dimensional measurements among them.
+The overall tracker layout ensures the presence of at least three hits in the pixel detector (at least four hits for the upgraded detector) and at least nine hits in the silicon-strip tracker, with a minimum of four two-dimensional measurements among them.
 
 \subsection{Electromagnetic calorimeter}
 
@@ -195,7 +196,7 @@ The spatial resolution of the \ac{DT} chambers is measured to be 77–123 $\upmu
 In the region of $0.9 < |\eta| < 2.4$, the \ac{CSC}s are employed. 
 These chambers are trapezoidal-shaped multiwire proportional chambers with six layers of gas. 
 The gas mixture used includes argon, carbon dioxide, and tetrafluoromethane. 
-The \ac{CSC} modules are organized into four stations positioned between the endcap layers of the magnet's return yoke. 
+The \ac{CSC} modules are organised into four stations positioned between the endcap layers of the magnet's return yoke. 
 They consist of layers of cathode strips and anode wires, allowing for measurements of the muon's $\phi$ and $r$ coordinates, respectively. 
 The spatial resolution per chamber of the \ac{CSC}s ranges from 45 $\upmu$m to 143 $\upmu$m. \\
 

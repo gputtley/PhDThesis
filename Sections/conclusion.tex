@@ -8,7 +8,7 @@ The limits on this phase space from the analysis discussed in Chapter~\ref{sec:b
 \textsc{HiggsTools} is a combination of the \textsc{HiggsBounds}~\cite{Bechtle:2020pkv}, \textsc{HiggsSignals}~\cite{Bechtle:2020uwn} and \textsc{HiggsPredictions}~\cite{Bahl:2022igd} frameworks and these are used for the following purpose:
 
 \begin{itemize}
-\item \textsc{HiggsPredictions} is used to determine theory production cross sections and decay rates.
+\item \textsc{HiggsPredictions} is used to determine theory production cross-sections and modify decay rates using model parameters.
 \item \textsc{HiggsBounds} is used to find direct bounds for searches for new particles.
 \item \textsc{HiggsSignals} is used to find the bounds from shifts to the observed Higgs boson's properties.
 \end{itemize}
@@ -19,10 +19,8 @@ The result from Chapter~\ref{sec:bsm_H_to_tau_tau_analysis} is included in this 
 To begin setting constraints on the type X \ac{2HDM}, other than that in Chapter~\ref{sec:H_A_to_4_tau_analysis}, the properties of the additional Higgs bosons are required.
 The widths and branching fractions calculated with \textsc{2HDECAY} for Chapter~\ref{sec:H_A_to_4_tau_analysis} are utilised for the scan of the type X 2HDM parameter space.
 The cross sections used in each analysis scanned over are scaled to that of the model parameters by the \textsc{NeutralEffectiveCouplings} function~\cite{Bechtle:2020pkv} implemented in \textsc{HiggsPredictions}.
-CL$_s$ is calculated at each point in the parameter space and a 95\% \ac{CL} limit is placed. \\
-
-In the alignment scenario, the strongest bounds on the type X \ac{2HDM} at all mass points tested come from the analysis described in Chapter~\ref{sec:bsm_H_to_tau_tau_analysis}.
-The limits determined for the $m_{\phi}$ equal to 100 and 200 GeV scenarios are overlayed onto the limits shown in Figure~\ref{fig:4tau_md} and shown in Figure~\ref{fig:4tau_md_hb}. \\
+CL$_s$ is calculated at each point in the parameter space and a 95\% \ac{CL} limit is placed.
+The limits in the alignment scenario, determined from \textsc{HiggsBounds}, for the $m_{\phi}$ equal to 100 and 200 GeV scenarios are overlayed onto the limits shown in Figure~\ref{fig:4tau_md} and shown in Figure~\ref{fig:4tau_md_hb}. \\
 
 \begin{figure}[!hbtp]
 \centering
@@ -45,7 +43,7 @@ In particular, the limit on a 100 GeV resonance, from Figure~\ref{fig:model_inde
 Together, the exclusion limits from both analyses yield an almost complete coverage of the type X 2HDM alignment scenario within the mass range searched. \\
 
 Next, the effect of the \ac{BSM} searches and precision measurements of the \ac{SM} Higgs boson on the type X \ac{2HDM} model, outside of the alignment scenario is studied.
-Bounds are again calculated with \textsc{HiggsTools}, however, the constraints now come from \ac{SM} Higgs measurements as well as \ac{BSM} searches such as described in Chapter~\ref{sec:bsm_H_to_tau_tau_analysis}.
+Bounds are again calculated with \textsc{HiggsTools}, but the constraints now come from \ac{SM} Higgs measurements as well as \ac{BSM} searches such as described in Chapter~\ref{sec:bsm_H_to_tau_tau_analysis}.
 The bounds determined, overlayed with the results shown in Figure~\ref{fig:4tau_cosbma}, are shown in Figure~\ref{fig:4tau_cosbma_hb}. \\
 
 \begin{figure}[!hbtp]
@@ -70,13 +68,13 @@ The preceding chapters, act to motivate the new physics models that could potent
 
 Chapter~\ref{sec:bsm_H_to_tau_tau_analysis} presents a search for two possible areas of new physics in the di-$\tau$ final states.
 The first of these is a search for additional neutral Higgs bosons, motivated by the type II \ac{2HDM} of the \ac{MSSM}, as a consequence of a solution to the hierarchy problem.
-This targets two production modes: gluon fusion and production in association with a b quark, with the latter dominant to a search for the \ac{MSSM} at higher values of $\tan\beta$.
+This targets two production modes: gluon fusion and production in association with a b quark, with the latter is dominant to a search for the \ac{MSSM} at higher values of $\tan\beta$.
 No deviation is observed for the search for b associated production, which targets event categories that require a minimum of one b jet.
 This makes it very difficult to coincide an \ac{MSSM} benchmark scenario with any gluon fusion signal.
 The gluon fusion results yielded two small deviations from the \ac{SM} expectation, peaking at 100 GeV and 1.2 TeV with a local (global) statistical significance of 3.1$\sigma$ (2.7$\sigma$) and 2.8$\sigma$ (2.2$\sigma$) respectively.
 The two excesses are present in the no b tag categories fit and are compatible across all decay channels and categories fit.
 Good agreement between data and the background hypothesis is observed in the rest of the mass hypotheses.
-Limits are set on the cross-section of both production modes multiplied by the additional scalars decay to $\tau$ leptons and both of these vary from $\mathcal{O}$(10 pb) at 60 GeV to 0.3 fb at 3.5 TeV.
+Limits are set on the cross-section of both production modes multiplied by the branching fraction of the resonance's decay to $\tau$ leptons and both of these vary from $\mathcal{O}$(10 pb) at 60 GeV to 0.3 fb at 3.5 TeV.
 These results are also interpreted as exclusion limits in \ac{MSSM} benchmark scenarios.
 In the $M_{h}^{125}$ scenario, values of $m_A < 500$ GeV are excluded and in the remaining phase space as well as in the $M_{h, EFT}^{125}$ the strongest constraints on the phase space are set. \\
 
