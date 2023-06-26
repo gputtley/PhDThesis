@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.26)  26 JUN 2023 11:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.26)  26 JUN 2023 14:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -901,7 +901,31 @@ Package: dirtytalk 2010/11/21 A package making "quoting" easier
 (/usr/share/texlive/texmf-dist/tex/latex/notoccite/notoccite.sty
 Package: notoccite 2000/07/20
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 41.
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count313
+\lst@gtempboxa=\box65
+\lst@token=\toks47
+\lst@length=\count314
+\lst@currlwidth=\dimen307
+\lst@column=\count315
+\lst@pos=\count316
+\lst@lostspace=\dimen308
+\lst@width=\dimen309
+\lst@newlines=\count317
+\lst@lineno=\count318
+\lst@maxwidth=\dimen310
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count319
+\lst@skipnumbers=\count320
+\lst@framebox=\box66
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+Package hyperref Info: Option `colorlinks' set `true' on input line 42.
 
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
@@ -909,18 +933,18 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count313
-\Gm@cntv=\count314
-\c@Gm@tempcnt=\count315
-\Gm@bindingoffset=\dimen307
-\Gm@wd@mp=\dimen308
-\Gm@odd@mp=\dimen309
-\Gm@even@mp=\dimen310
-\Gm@layoutwidth=\dimen311
-\Gm@layoutheight=\dimen312
-\Gm@layouthoffset=\dimen313
-\Gm@layoutvoffset=\dimen314
-\Gm@dimlist=\toks47
+\Gm@cnth=\count321
+\Gm@cntv=\count322
+\c@Gm@tempcnt=\count323
+\Gm@bindingoffset=\dimen311
+\Gm@wd@mp=\dimen312
+\Gm@odd@mp=\dimen313
+\Gm@even@mp=\dimen314
+\Gm@layoutwidth=\dimen315
+\Gm@layoutheight=\dimen316
+\Gm@layouthoffset=\dimen317
+\Gm@layoutvoffset=\dimen318
+\Gm@dimlist=\toks48
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibraryarrows.code.tex
@@ -929,47 +953,47 @@ File: tikzlibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.
 tex
 File: pgflibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\arrowsize=\dimen315
+\arrowsize=\dimen319
 )) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count316
-\l__pdf_internal_box=\box65
+\l__kernel_color_stack_int=\count324
+\l__pdf_internal_box=\box67
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
  (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count317
-\scratchdimen=\dimen316
-\scratchbox=\box66
-\nofMPsegments=\count318
-\nofMParguments=\count319
-\everyMPshowfont=\toks48
-\MPscratchCnt=\count320
-\MPscratchDim=\dimen317
-\MPnumerator=\count321
-\makeMPintoPDFobject=\count322
-\everyMPtoPDFconversion=\toks49
+\scratchcounter=\count325
+\scratchdimen=\dimen320
+\scratchbox=\box68
+\nofMPsegments=\count326
+\nofMParguments=\count327
+\everyMPshowfont=\toks49
+\MPscratchCnt=\count328
+\MPscratchDim=\dimen321
+\MPnumerator=\count329
+\makeMPintoPDFobject=\count330
+\everyMPtoPDFconversion=\toks50
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -982,28 +1006,29 @@ e
 
 Package tikz-feynman Warning: LuaTeX is required if you wish to have vertices a
 utomatically placed. You can disable this warning by setting /tikzfeynman/warn 
-luatex=false on input line 118.
+luatex=false on input line 119.
 
 
 Package tikz-feynman Warning: Consider loading TikZ-Feynman with \usepackage[co
 mpat=1.1.0]{tikz-feynman} so that you can be warned if TikZ-Feynman changes. on
- input line 118.
+ input line 119.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 118.
+LaTeX Info: Redefining \selectfont on input line 119.
 
 
 Package todonotes Warning: The length marginparwidth is less than 2cm and will 
 most likely cause issues with the appearance of inserted todonotes. The issue c
 an be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to 
-loading the todonotes package. on input line 118.
+loading the todonotes package. on input line 119.
 
-\AtBeginShipoutBox=\box67
-Package hyperref Info: Link coloring ON on input line 118.
+\AtBeginShipoutBox=\box69
+Package hyperref Info: Link coloring ON on input line 119.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -1013,16 +1038,17 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count323
+\c@section@level=\count331
 )
-LaTeX Info: Redefining \ref on input line 118.
-LaTeX Info: Redefining \pageref on input line 118.
-LaTeX Info: Redefining \nameref on input line 118.
+LaTeX Info: Redefining \ref on input line 119.
+LaTeX Info: Redefining \pageref on input line 119.
+LaTeX Info: Redefining \nameref on input line 119.
 
 (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
+\c@lstlisting=\count332
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -3059,27 +3085,27 @@ put line 1264.
 LaTeX Warning: Float too large for page by 19.47096pt on input line 1268.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1270--1277
+Underfull \hbox (badness 10000) in paragraph at lines 1270--1274
 
  []
 
-[106] [107 <./Figures/model-dependent_limit_mh125.pdf, page is rotated 90 degre
-es> <./Figures/model-dependent_limit_mh125EFT.pdf, page is rotated 90 degrees>]
-<Figures/vlq_bm_1.pdf, id=5233, 569.12625pt x 546.04pt>
+<Figures/vlq_bm_1.pdf, id=5134, 569.12625pt x 546.04pt>
 File: Figures/vlq_bm_1.pdf Graphic file (type pdf)
 <use Figures/vlq_bm_1.pdf>
-Package pdftex.def Info: Figures/vlq_bm_1.pdf  used on input line 1283.
+Package pdftex.def Info: Figures/vlq_bm_1.pdf  used on input line 1277.
 (pdftex.def)             Requested size: 277.41176pt x 266.17052pt.
-<Figures/vlq_bm_2.pdf, id=5234, 569.12625pt x 546.04pt>
+<Figures/vlq_bm_2.pdf, id=5135, 569.12625pt x 546.04pt>
 File: Figures/vlq_bm_2.pdf Graphic file (type pdf)
 <use Figures/vlq_bm_2.pdf>
-Package pdftex.def Info: Figures/vlq_bm_2.pdf  used on input line 1284.
+Package pdftex.def Info: Figures/vlq_bm_2.pdf  used on input line 1278.
 (pdftex.def)             Requested size: 277.41176pt x 266.17052pt.
 
-LaTeX Warning: Float too large for page by 38.321pt on input line 1287.
+LaTeX Warning: Float too large for page by 38.321pt on input line 1281.
 
-) [108] [109 <./Figures/vlq_bm_1.pdf, page is rotated 90 degrees> <./Figures/vl
-q_bm_2.pdf, page is rotated 90 degrees>] (./Sections/H_A_to_4_tau_analysis.tex
+[106] [107 <./Figures/model-dependent_limit_mh125.pdf, page is rotated 90 degre
+es> <./Figures/model-dependent_limit_mh125EFT.pdf, page is rotated 90 degrees>]
+[108 <./Figures/vlq_bm_1.pdf, page is rotated 90 degrees> <./Figures/vlq_bm_2.p
+df, page is rotated 90 degrees>]) [109] (./Sections/H_A_to_4_tau_analysis.tex
 Chapter 5.
 [110
 
@@ -3113,13 +3139,11 @@ Package tikz-feynman Warning: The key you tried to use '/graph drawing/sibling
 distance' requires LuaTeX. It will be ignored. on input line 55.
 
 
-Underfull \vbox (badness 4739) has occurred while \output is active []
-
- [111]
 Underfull \hbox (badness 10000) in paragraph at lines 73--79
 
  []
 
+[111]
 <Figures/mA_dist.pdf, id=5382, 569.12625pt x 549.05125pt>
 File: Figures/mA_dist.pdf Graphic file (type pdf)
 <use Figures/mA_dist.pdf>
@@ -3135,13 +3159,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--90
 
  []
 
-[112 <./Figures/mA_dist.pdf, page is rotated 90 degrees> <./Figures/mphi_dist.p
-df, page is rotated 90 degrees>]
-<Figures/cross_sections.png, id=5475, 901.3675pt x 676.5275pt>
+<Figures/cross_sections.png, id=5385, 901.3675pt x 676.5275pt>
 File: Figures/cross_sections.png Graphic file (type png)
 <use Figures/cross_sections.png>
 Package pdftex.def Info: Figures/cross_sections.png  used on input line 93.
 (pdftex.def)             Requested size: 341.43437pt x 256.2676pt.
+[112 <./Figures/mA_dist.pdf, page is rotated 90 degrees> <./Figures/mphi_dist.p
+df, page is rotated 90 degrees>]
 <Figures/A_br_plot_mphi200.pdf, id=5479, 569.12625pt x 549.05125pt>
 File: Figures/A_br_plot_mphi200.pdf Graphic file (type pdf)
 <use Figures/A_br_plot_mphi200.pdf>
@@ -3162,9 +3186,6 @@ File: Figures/phi_branching_fractions_mphi200_mA160.pdf Graphic file (type pdf)
 Package pdftex.def Info: Figures/phi_branching_fractions_mphi200_mA160.pdf  use
 d on input line 116.
 (pdftex.def)             Requested size: 298.75264pt x 224.46594pt.
-
-Underfull \vbox (badness 1540) has occurred while \output is active []
-
  [113 <./Figures/cross_sections.png>] [114 <./Figures/A_br_plot_mphi200.pdf, pa
 ge is rotated 90 degrees> <./Figures/phi_br_plot_mphi200.pdf, page is rotated 9
 0 degrees> <./Figures/phi_branching_fractions_mphi200_mA160.pdf, page is rotate
@@ -3179,9 +3200,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 177--187
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [116]
 Underfull \hbox (badness 10000) in paragraph at lines 205--208
 
  []
@@ -3191,18 +3209,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 211--218
 
  []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [116]
 <Figures/event-categories_4tau.pdf, id=5637, 398.3386pt x 227.62204pt>
 File: Figures/event-categories_4tau.pdf Graphic file (type pdf)
 <use Figures/event-categories_4tau.pdf>
 Package pdftex.def Info: Figures/event-categories_4tau.pdf  used on input line 
 221.
 (pdftex.def)             Requested size: 362.77525pt x 207.31003pt.
-[117]
+
 Underfull \hbox (badness 10000) in paragraph at lines 231--236
 
  []
 
-[118 <./Figures/event-categories_4tau.pdf>]
+[117] [118 <./Figures/event-categories_4tau.pdf>]
 Package acronym Info: Label `acro:ML' newly defined as it shall be overridden
 although it is yet undefined on input line 253.
 
@@ -3215,15 +3237,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 264--273
 
  []
 
-[119]
-<Figures/mt_tot_signal_mmmm_inclusive_all.pdf, id=5705, 569.12625pt x 546.04pt>
+<Figures/mt_tot_signal_mmmm_inclusive_all.pdf, id=5697, 569.12625pt x 546.04pt>
 
 File: Figures/mt_tot_signal_mmmm_inclusive_all.pdf Graphic file (type pdf)
 <use Figures/mt_tot_signal_mmmm_inclusive_all.pdf>
 Package pdftex.def Info: Figures/mt_tot_signal_mmmm_inclusive_all.pdf  used on 
 input line 276.
 (pdftex.def)             Requested size: 209.1301pt x 200.64854pt.
-<Figures/mvis_1234_signal_mmmm_inclusive_all.pdf, id=5706, 569.12625pt x 546.04
+<Figures/mvis_1234_signal_mmmm_inclusive_all.pdf, id=5698, 569.12625pt x 546.04
 pt>
 File: Figures/mvis_1234_signal_mmmm_inclusive_all.pdf Graphic file (type pdf)
 <use Figures/mvis_1234_signal_mmmm_inclusive_all.pdf>
@@ -3235,24 +3256,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 286--295
 
  []
 
-[120 <./Figures/mt_tot_signal_mmmm_inclusive_all.pdf, page is rotated 90 degree
-s> <./Figures/mvis_1234_signal_mmmm_inclusive_all.pdf, page is rotated 90 degre
-es>]
+[119]
 Underfull \hbox (badness 10000) in paragraph at lines 296--300
 
  []
 
-
+[120 <./Figures/mt_tot_signal_mmmm_inclusive_all.pdf, page is rotated 90 degree
+s> <./Figures/mvis_1234_signal_mmmm_inclusive_all.pdf, page is rotated 90 degre
+es>]
 Underfull \hbox (badness 10000) in paragraph at lines 301--303
 
  []
 
-[121]
+
 Underfull \hbox (badness 10000) in paragraph at lines 326--328
 
  []
 
-
+[121]
 Overfull \hbox (5.80324pt too wide) in paragraph at lines 331--335
 \T1/cmr/m/n/12 Unlike the stan-dard $\OML/cmm/m/it/12 F[]$ \T1/cmr/m/n/12 metho
 d, statis-tics are not a prob-lem us-ing the [][] reweighter
@@ -3268,12 +3289,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 349--352
 
  []
 
-[122]
+
 Underfull \hbox (badness 10000) in paragraph at lines 353--360
 
  []
 
-[123]
+[122] [123]
 Underfull \hbox (badness 10000) in paragraph at lines 384--392
 
  []
@@ -3293,13 +3314,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 417--418
 
  []
 
-<Figures/subtraction_plot_pt_1_mttt_pass.pdf, id=5874, 569.12625pt x 546.04pt>
+<Figures/subtraction_plot_pt_1_mttt_pass.pdf, id=5876, 569.12625pt x 546.04pt>
 File: Figures/subtraction_plot_pt_1_mttt_pass.pdf Graphic file (type pdf)
 <use Figures/subtraction_plot_pt_1_mttt_pass.pdf>
 Package pdftex.def Info: Figures/subtraction_plot_pt_1_mttt_pass.pdf  used on i
 nput line 421.
 (pdftex.def)             Requested size: 192.0548pt x 184.26805pt.
-<Figures/subtraction_plot_jet_pt_1_divide_pt_1_mttt_pass.pdf, id=5875, 569.1262
+<Figures/subtraction_plot_jet_pt_1_divide_pt_1_mttt_pass.pdf, id=5877, 569.1262
 5pt x 546.04pt>
 File: Figures/subtraction_plot_jet_pt_1_divide_pt_1_mttt_pass.pdf Graphic file 
 (type pdf)
@@ -3307,7 +3328,7 @@ File: Figures/subtraction_plot_jet_pt_1_divide_pt_1_mttt_pass.pdf Graphic file
 Package pdftex.def Info: Figures/subtraction_plot_jet_pt_1_divide_pt_1_mttt_pas
 s.pdf  used on input line 422.
 (pdftex.def)             Requested size: 192.0548pt x 184.26805pt.
-<Figures/subtraction_plot_tau_decay_mode_1_mttt_pass.pdf, id=5876, 569.12625pt 
+<Figures/subtraction_plot_tau_decay_mode_1_mttt_pass.pdf, id=5878, 569.12625pt 
 x 546.04pt>
 File: Figures/subtraction_plot_tau_decay_mode_1_mttt_pass.pdf Graphic file (typ
 e pdf)
@@ -3315,7 +3336,7 @@ e pdf)
 Package pdftex.def Info: Figures/subtraction_plot_tau_decay_mode_1_mttt_pass.pd
 f  used on input line 423.
 (pdftex.def)             Requested size: 192.0548pt x 184.26805pt.
-<Figures/subtraction_plot_eta_1_mttt_pass.pdf, id=5877, 569.12625pt x 546.04pt>
+<Figures/subtraction_plot_eta_1_mttt_pass.pdf, id=5879, 569.12625pt x 546.04pt>
 
 File: Figures/subtraction_plot_eta_1_mttt_pass.pdf Graphic file (type pdf)
 <use Figures/subtraction_plot_eta_1_mttt_pass.pdf>
@@ -3327,12 +3348,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 431--435
 
  []
 
-[125] [126 <./Figures/subtraction_plot_pt_1_mttt_pass.pdf, page is rotated 90 d
-egrees> <./Figures/subtraction_plot_jet_pt_1_divide_pt_1_mttt_pass.pdf, page is
- rotated 90 degrees> <./Figures/subtraction_plot_tau_decay_mode_1_mttt_pass.pdf
-, page is rotated 90 degrees> <./Figures/subtraction_plot_eta_1_mttt_pass.pdf, 
-page is rotated 90 degrees>]
-<Figures/reweight_ave_plot_pt_1_all_mttt_all_years.pdf, id=6066, 569.12625pt x 
+<Figures/reweight_ave_plot_pt_1_all_mttt_all_years.pdf, id=5883, 569.12625pt x 
 546.04pt>
 File: Figures/reweight_ave_plot_pt_1_all_mttt_all_years.pdf Graphic file (type 
 pdf)
@@ -3340,7 +3356,7 @@ pdf)
 Package pdftex.def Info: Figures/reweight_ave_plot_pt_1_all_mttt_all_years.pdf 
  used on input line 438.
 (pdftex.def)             Requested size: 192.0548pt x 184.26805pt.
-<Figures/reweight_ave_plot_jet_pt_1_divide_pt_1_all_mttt_all_years.pdf, id=6067
+<Figures/reweight_ave_plot_jet_pt_1_divide_pt_1_all_mttt_all_years.pdf, id=5884
 , 569.12625pt x 546.04pt>
 File: Figures/reweight_ave_plot_jet_pt_1_divide_pt_1_all_mttt_all_years.pdf Gra
 phic file (type pdf)
@@ -3348,7 +3364,7 @@ phic file (type pdf)
 Package pdftex.def Info: Figures/reweight_ave_plot_jet_pt_1_divide_pt_1_all_mtt
 t_all_years.pdf  used on input line 439.
 (pdftex.def)             Requested size: 192.0548pt x 184.26805pt.
-<Figures/reweight_ave_plot_tau_decay_mode_1_all_mttt_all_years.pdf, id=6068, 56
+<Figures/reweight_ave_plot_tau_decay_mode_1_all_mttt_all_years.pdf, id=5885, 56
 9.12625pt x 546.04pt>
 File: Figures/reweight_ave_plot_tau_decay_mode_1_all_mttt_all_years.pdf Graphic
  file (type pdf)
@@ -3356,7 +3372,7 @@ File: Figures/reweight_ave_plot_tau_decay_mode_1_all_mttt_all_years.pdf Graphic
 Package pdftex.def Info: Figures/reweight_ave_plot_tau_decay_mode_1_all_mttt_al
 l_years.pdf  used on input line 440.
 (pdftex.def)             Requested size: 192.0548pt x 184.26805pt.
-<Figures/reweight_ave_plot_eta_1_all_mttt_all_years.pdf, id=6069, 569.12625pt x
+<Figures/reweight_ave_plot_eta_1_all_mttt_all_years.pdf, id=5886, 569.12625pt x
  546.04pt>
 File: Figures/reweight_ave_plot_eta_1_all_mttt_all_years.pdf Graphic file (type
  pdf)
@@ -3369,14 +3385,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 446--449
 
  []
 
-
-Underfull \vbox (badness 1983) has occurred while \output is active []
-
- [127 <./Figures/reweight_ave_plot_pt_1_all_mttt_all_years.pdf, page is rotated
- 90 degrees> <./Figures/reweight_ave_plot_jet_pt_1_divide_pt_1_all_mttt_all_yea
-rs.pdf, page is rotated 90 degrees> <./Figures/reweight_ave_plot_tau_decay_mode
-_1_all_mttt_all_years.pdf, page is rotated 90 degrees> <./Figures/reweight_ave_
-plot_eta_1_all_mttt_all_years.pdf, page is rotated 90 degrees>]
+[125] [126 <./Figures/subtraction_plot_pt_1_mttt_pass.pdf, page is rotated 90 d
+egrees> <./Figures/subtraction_plot_jet_pt_1_divide_pt_1_mttt_pass.pdf, page is
+ rotated 90 degrees> <./Figures/subtraction_plot_tau_decay_mode_1_mttt_pass.pdf
+, page is rotated 90 degrees> <./Figures/subtraction_plot_eta_1_mttt_pass.pdf, 
+page is rotated 90 degrees>] [127 <./Figures/reweight_ave_plot_pt_1_all_mttt_al
+l_years.pdf, page is rotated 90 degrees> <./Figures/reweight_ave_plot_jet_pt_1_
+divide_pt_1_all_mttt_all_years.pdf, page is rotated 90 degrees> <./Figures/rewe
+ight_ave_plot_tau_decay_mode_1_all_mttt_all_years.pdf, page is rotated 90 degre
+es> <./Figures/reweight_ave_plot_eta_1_all_mttt_all_years.pdf, page is rotated 
+90 degrees>]
 <Figures/closure_plot_pt_1_all_mttt_all_years_all.pdf, id=6252, 569.12625pt x 5
 46.04pt>
 File: Figures/closure_plot_pt_1_all_mttt_all_years_all.pdf Graphic file (type p
@@ -3635,25 +3653,21 @@ LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 [154] [155] [156] [157]) [158] (./Sections/acronyms.tex [159
 
 ] [160]) [161]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 148.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 148.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 149.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 149.
 
 (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 148.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 148.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 149.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 149.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0D5A0605182E1C443DFC034E1DF8CFD0;5523.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 148.
+(rerunfilecheck)             Checksum: 91F6F3B31299B5A145C65BD4928D3375;5523.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 149.
  ) 
 Here is how much of TeX's memory you used:
- 29582 strings out of 482555
- 577400 string characters out of 5952144
- 851625 words of memory out of 5000000
- 43716 multiletter control sequences out of 15000+600000
+ 30909 strings out of 482555
+ 596302 string characters out of 5952144
+ 872543 words of memory out of 5000000
+ 45031 multiletter control sequences out of 15000+600000
  560094 words of font info for 100 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  67i,18n,103p,1141b,2263s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3692,7 +3706,7 @@ cm-super/sfti0800.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-supe
 r/sfti1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sftt0
 800.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb
 >
-Output written on main.pdf (161 pages, 13267434 bytes).
+Output written on main.pdf (161 pages, 13267196 bytes).
 PDF statistics:
  7954 PDF objects out of 8907 (max. 8388607)
  5117 compressed objects within 52 object streams

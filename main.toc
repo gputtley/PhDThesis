@@ -68,18 +68,18 @@
 \contentsline {section}{\numberline {4.13}Model-dependent limits}{104}{section.4.13}%
 \contentsline {chapter}{\numberline {5}Search for new physics in $\tau ^+\tau ^-\tau ^+\tau ^-$ final states}{110}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Signal modelling}{111}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Event selection}{115}{section.5.2}%
+\contentsline {section}{\numberline {5.2}Event selection}{113}{section.5.2}%
 \contentsline {subsection}{\numberline {5.2.1}Trigger requirements}{115}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}Offline requirements}{116}{subsection.5.2.2}%
 \contentsline {section}{\numberline {5.3}Search optimisation}{117}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Background modelling overview}{119}{section.5.4}%
+\contentsline {section}{\numberline {5.4}Background modelling overview}{118}{section.5.4}%
 \contentsline {section}{\numberline {5.5}ZZ modelling}{119}{section.5.5}%
 \contentsline {section}{\numberline {5.6}Machine learning fake factor method}{120}{section.5.6}%
 \contentsline {subsection}{\numberline {5.6.1}BDT reweighter}{121}{subsection.5.6.1}%
 \contentsline {subsection}{\numberline {5.6.2}Fitting regions}{122}{subsection.5.6.2}%
 \contentsline {subsection}{\numberline {5.6.3}Variables used}{123}{subsection.5.6.3}%
 \contentsline {subsection}{\numberline {5.6.4}Machine learning subtraction method}{124}{subsection.5.6.4}%
-\contentsline {subsection}{\numberline {5.6.5}Fitting}{127}{subsection.5.6.5}%
+\contentsline {subsection}{\numberline {5.6.5}Fitting}{125}{subsection.5.6.5}%
 \contentsline {subsection}{\numberline {5.6.6}Applying fake factors}{128}{subsection.5.6.6}%
 \contentsline {section}{\numberline {5.7}Uncertainty model}{130}{section.5.7}%
 \contentsline {subsubsection}{Hadronic taus}{130}{section*.147}%
@@ -91,7 +91,7 @@
 \contentsline {section}{\numberline {5.9}Model-independent results}{133}{section.5.9}%
 \contentsline {subsection}{\numberline {5.9.1}Limits}{133}{subsection.5.9.1}%
 \contentsline {subsection}{\numberline {5.9.2}Compatibility}{135}{subsection.5.9.2}%
-\contentsline {section}{\numberline {5.10}Model dependent limits}{135}{section.5.10}%
+\contentsline {section}{\numberline {5.10}Model-dependent limits}{135}{section.5.10}%
 \contentsline {chapter}{\numberline {6}Conclusion}{141}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Global interpretations of results}{141}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Summary}{145}{section.6.2}%
