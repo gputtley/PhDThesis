@@ -42,7 +42,7 @@ The final output of the algorithm is a list of particles and their four vectors,
 The tracking and calorimeter clustering information are the initial inputs to the \ac{PF} algorithm.
 The tracking information includes the high-resolution momentum and direction of charged hadrons calculated by an iterative-tracking strategy~\cite{Adam:934067}, which is not achievable with the calorimeters.
 The calorimeter clustering is used to achieve multiple objectives, including detecting and measuring the energy and direction of neutral particles, separating neutral particles from charged hadrons, reconstructing electrons and bremsstrahlung photons, and aiding in the energy measurement of charged hadrons with inaccurate track parameters. 
-The clustering algorithm involves identifying \say{cluster seeds}, growing \say{topological clusters}, and generating \say{particle flow clusters} based on energy thresholds and cell-cluster distances in each sub-detector, except for the \ac{HF}, where each cell forms a cluster, and is explained in more detail below. \\
+The clustering algorithm involves identifying \say{cluster seeds}, growing \say{topological clusters}, and generating \say{particle flow clusters} based on energy thresholds and cell-cluster distances in each sub-detector, except for the \ac{HF}, where each cell forms a cluster and is explained in more detail below. \\
 
 The clustering algorithm used in the calorimeters can be split into three stages. 
 Firstly, \say{cluster seeds} are identified as local maxima of energy in calorimeter cells above a specified threshold. 
@@ -116,7 +116,7 @@ However, the muon system reconstruction enhances momentum resolution for muons w
 \centering
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/muon_res_loweta.png}}
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/muon_res_higheta.png}} \\
-\caption{The $\pT$ resolution for muon identification using the muon system (black), the inner tracker (blue), and the full system (red). This is shown for the pseudorapidity regions $0 < \eta < 0.8$ (a) and  $1.2 < \eta < 2.4$ (b)~\cite{CMS_Setup}.}
+\caption[Plots of the muon identification performance.]{The $\pT$ resolution for muon identification using the muon system (black), the inner tracker (blue), and the full system (red). This is shown for the pseudorapidity regions $0 < \eta < 0.8$ (a) and  $1.2 < \eta < 2.4$ (b)~\cite{CMS_Setup}.}
 \label{fig:muon_eff}
 \end{figure}
 
@@ -183,7 +183,7 @@ This allows for easily accessible sideband regions (orthogonal regions to the si
 \centering
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/electron_id_barrel.png}}
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/electron_id_endcap.png}} \\
-\caption{Performance of the electron BDT using $Z\rightarrow ee$ enriched events from data (dots), background-enriched events from data (triangles), and $Z\rightarrow ee$ MC events (purple solid histogram). This is shown for the performance in the barrel (a) and the endcaps (b) for a BDT that does not utilise trigger information during training~\cite{CMS:2015xaf}.}
+\caption[Plots of the electron identification performance.]{Performance of the electron BDT using $Z\rightarrow ee$ enriched events from data (dots), background-enriched events from data (triangles), and $Z\rightarrow ee$ MC events (purple solid histogram). This is shown for the performance in the barrel (a) and the endcaps (b) for a BDT that does not utilise trigger information during training~\cite{CMS:2015xaf}.}
 \label{fig:electron_eff}
 \end{figure}
 
@@ -191,8 +191,8 @@ The electrons are required to pass the 90\% efficiency working point of the \ac{
 Finally, electrons are also subject to the same impact parameter requirements as the muons: the impact parameters $d_{xy}$ and $d_{z}$ between the electron track and the \ac{PV} are restricted to $d_{xy}<0.045$ cm and $d_{z}<0.2$ cm to ensure the electron is associated with the \ac{PV}. \\
 
 Similarly to muons, an isolation variable is used to further separate electrons from other backgrounds.
-Different than for muons, the isolation used is based on photon, neutral and charged hadron \ac{PF} candidates within a smaller cone size of $\Delta R<0.3$ of the selected electron.
-A different method to estimate the neutral particles due to \ac{PU} is used, namely the rho-effective-area method. 
+Different than for muons, the isolation used is based on the photon, neutral and charged hadron \ac{PF} candidates within a smaller cone size of $\Delta R<0.3$ of the selected electron.
+A different method to estimate the neutral particles due to \ac{PU} is used namely the rho-effective-area method. 
 The \ac{PU} contribution in this method is estimated as $\text{PU}=\rho A_{\text{eff}}$, where $\rho$ is the event-specific average \ac{PU} energy density per unit area in the $\phi$-$\eta$ plane and the $A_{\text{eff}}$ is the effective area specific to the given type of isolation. 
 The rho-effective-area subtracted relative combined isolation variable is defined as,
 
@@ -220,7 +220,7 @@ $\eta$ range & $A_{\text{eff}}$ \\
 \hline
 \end{tabular}
 \end{center}
-\caption{
+\caption[Electron effective areas used for the $\rho$-corrected isolation computation.]{
  Electron effective areas used for the $\rho$-corrected isolation computation~\cite{CMS:2015xaf}.
 }
 \label{tab:EleEA}
@@ -274,14 +274,14 @@ This corresponds to a b tagging efficiency of around 80\%.
 \begin{figure}[!hbtp]
 \centering
     \subfloat[]{\includegraphics[width=0.8\textwidth]{Figures/deepjet.pdf}}
-\caption{Misidentification probability 2$\sigma$ bands against efficiency for b tagging using the \texttt{DeepJet} algorithm, for AK4jets with $\pT>30$ GeV and $|\eta|$<2.5, utilising MC with parameters from the 2017 era of data taking. Two bands are displayed, one for the identification of a b quark rather than light quarks and gluons (blue) and one for the identification of a b quark rather than a c quark (red)~\cite{deepjet}.}
+\caption[Plot of the b tagging performance.]{Misidentification probability 2$\sigma$ bands against efficiency for b tagging using the \texttt{DeepJet} algorithm, for AK4jets with $\pT>30$ GeV and $|\eta|$<2.5, utilising MC with parameters from the 2017 era of data taking. Two bands are displayed, one for the identification of a b quark rather than light quarks and gluons (blue) and one for the identification of a b quark rather than a c quark (red)~\cite{deepjet}.}
 \label{fig:deepjet}
 \end{figure}
 
 \section{Missing transverse energy}
 
 The \ac{MET} is used as a feature to understand particles passing through the \ac{CMS}, such as neutrinos in the \ac{SM} and weakly interacting particles from hypothetical \ac{BSM} extensions.
-This information cannot be pulled from the detector itself but instead the absence of detection can be used to infer the presence of such an object
+This information cannot be pulled from the detector itself but instead, the absence of detection can be used to infer the presence of such an object
 The \ac{MET} is nominally calculated as the negative vector sum of all transverse momenta of the \ac{PF} candidates in the collision event,
 
 \begin{equation}
@@ -342,7 +342,7 @@ The leptonic decay of the $\tau$ can be accounted for by the identification of e
          other & 3.2\% \\
          \hline
     \end{tabular}
-    \caption{Measured branching fractions for the $\tau$ lepton. h represents a charged hadron, typically either a pion or a kaon~\cite{ParticleDataGroup:2022pth}.}
+    \caption[Branching fractions for the $\tau$ lepton.]{Measured branching fractions for the $\tau$ lepton. h represents a charged hadron, typically either a pion or a kaon~\cite{ParticleDataGroup:2022pth}.}
     \label{tab:tau_decay}
 \end{table}
 
@@ -379,12 +379,12 @@ These functions have lower and upper caps of 0.05 to 0.3 for $\Delta\phi$ and 0.
 \centering
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/hps_f.png}}
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/hps_g.png}} \\
-\caption{The distance between the $\tauh$ and electron or photon $\eta$ (a) and $\phi$ (b) with respect the electron or photon $\pT$. The binned values (points) and the fitted functions $f$ and $g$ (red line), which encapsulates 95\% of all electron and photons are shown in both cases~\cite{Sirunyan:2018pgf}.}
+\caption[Plots of the fit performed for dynamical strip sizes for the HPS algorithm.]{The distance between the $\tauh$ and electron or photon $\eta$ (a) and $\phi$ (b) with respect the electron or photon $\pT$. The binned values (points) and the fitted functions $f$ and $g$ (red line), which encapsulates 95\% of all electron and photons are shown in both cases~\cite{Sirunyan:2018pgf}.}
 \label{fig:hps}
 \end{figure}
 
 Charged hadrons (prongs) are also required to have $\pT > 0.5$ GeV and originate from the \ac{PV}, with a loose transverse impact parameter of $d_{xy} < 0.1$ cm.
-Further constraints are placed on the reconstructed masses of the specific resonances, if produced in a $\tauh$ decay.
+Further constraints are placed on the reconstructed masses of the specific resonances if produced in a $\tauh$ decay.
 In particular, the visible mass positions and widths of the grouped charged hadrons and strips are optimised to match the $\rho$ (770 MeV) and $a_1$ (1260 MeV) decays.
 This is performed to maximise the fraction of $\tauh$ identification efficiency to the probability of misidentification from jets.
 The visible decay products of each decay shown in Table~\ref{tab:tau_decay} are reconstructed by:
@@ -405,7 +405,7 @@ The \ac{DM} of the $\tauh$ object that is reconstructed by \ac{HPS} is quantifie
 \end{equation}
 
 The second step of the identification comes from a multiclass \ac{DNN}-based algorithm named \texttt{DeepTau}, which seeks to discriminate $\tauh$ decays from electrons, muons, and most importantly quark or gluon jets, which can be misidentified as $\tau$ decays~\cite{CMS:2022prd}.
-It uses a \ac{DNN} architecture that consists of multiple interconnected layers of nodes, that attempts to learn whether the input object is a $\tauh$ decay, an electron, a muon or a jet. 
+It uses a \ac{DNN} architecture that consists of multiple interconnected layers of nodes, that attempt to learn whether the input object is a $\tauh$ decay, an electron, a muon or a jet. 
 The algorithm takes inputs from reconstructed particles surrounding the \ac{HPS} $\tauh$ candidate, including information about energies, momenta, and spatial positions. 
 Convolutional layers are used to efficiently process these inputs by dividing them into smaller regions in $\eta$-$\phi$ space, which allows the algorithm to extract local patterns and features. 
 It also incorporates high-level features of the $\tauh$ candidate calculated from the \ac{HPS} algorithm, such as the four-momentum, charge, \ac{DM}, isolation variables used in previous \ac{MVA}~\cite{CMS:2018jrd}, impact parameters, $\eta$ and $\phi$ strip information, as well as event level information such as variables related to the $\ac{PU}$.
@@ -414,12 +414,12 @@ The architecture of the algorithm is shown in Figure~\ref{fig:deeptau}. \\
 \begin{figure}[!hbtp]
 \centering
     \includegraphics[width=\textwidth]{Figures/deeptau.pdf}
-\caption{The architecture of the \texttt{DeepTau} neural network, comprising three sets of input variables: inner cells, outer cells, and high-level features. These sets are processed separately through subnetworks and their outputs are concatenated. Five fully connected layers process the concatenated output to calculate the probabilities for a candidate to be a $\tauh$, electron, muon, or jet. The high-level input subnetwork consists of three fully connected layers, taking 47 inputs and yielding 57 outputs. Complex subnetworks process the features of inner and outer cells separately, with fully connected layers followed by concatenation and additional fully connected layers. Convolutional layers progressively reduce the grid size for both inner and outer cells. For inner cells, there are 5 convolutional layers, while for outer cells, there are 10 convolutional layers. The number of trainable parameters for the different subnetworks is also provided~\cite{CMS:2022prd}.}
+\caption[Diagram of the architecture of the \texttt{DeepTau} neural network.]{The architecture of the \texttt{DeepTau} neural network, comprising three sets of input variables: inner cells, outer cells, and high-level features. These sets are processed separately through subnetworks and their outputs are concatenated. Five fully connected layers process the concatenated output to calculate the probabilities for a candidate to be a $\tauh$, electron, muon, or jet. The high-level input subnetwork consists of three fully connected layers, taking 47 inputs and yielding 57 outputs. Complex subnetworks process the features of inner and outer cells separately, with fully connected layers followed by concatenation and additional fully connected layers. Convolutional layers progressively reduce the grid size for both inner and outer cells. For inner cells, there are 5 convolutional layers, while for outer cells, there are 10 convolutional layers. The number of trainable parameters for the different subnetworks is also provided~\cite{CMS:2022prd}.}
 \label{fig:deeptau}
 \end{figure}
 
 The \texttt{DeepTau} \ac{DNN} is trained using a large dataset, incorporating examples of $\tauh$ decays and background processes of electrons, muons and jets. 
-The output of the \ac{DNN} is four scores, that represent the probability that the object is a $\tauh$ ($y_\tau$), an electon ($y_e$), a muon ($y_\mu$) or a jet ($y_{\text{jet}}$).
+The output of the \ac{DNN} is four scores, that represent the probability that the object is a $\tauh$ ($y_\tau$), an electron ($y_e$), a muon ($y_\mu$) or a jet ($y_{\text{jet}}$).
 From these raw scores, additional scores are calculated for the probability that an object is a $\tauh$ rather than an electron, muon or jet.
 These are defined as,
 
@@ -444,7 +444,7 @@ $D_{\text{jet}}^{\text{WP}}$ & 40\%    & 50\%   & 60\%   & 70\%   & 80\%   & 90\
 \hline
 \end{tabular}
 \end{adjustwidth}
-\caption{Target efficiencies of the \texttt{DeepTau} working points with respect to the electrons, muons and jets discriminators~\cite{CMS:2022prd}.}
+\caption[Target efficiencies of the \texttt{DeepTau} working points.]{Target efficiencies of the \texttt{DeepTau} working points with respect to the electrons, muons and jets discriminators~\cite{CMS:2022prd}.}
 \label{tab:deeptau_eff}
 \end{table}
 
@@ -461,6 +461,6 @@ Two examples of analyses that utilise this are described in Chapter~\ref{sec:bsm
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/deeptau_misid_electron.pdf}}
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/deeptau_misid_muon.pdf}} \\
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/deeptau_misid_jet.pdf}}
-\caption{Comparisons of the \texttt{DeepTau} identification discriminator performance against electrons (a), muons (b) and jets (c) versus the $\tauh$ efficiency. (a) uses $Z\rightarrow ee$, (b) uses $Z\rightarrow \mu\mu$ and (c) uses W+jets MC, with only objects with $\pT<100$ GeV used. Working points are indicated by full circles and previous algorithms described in Reference~\cite{CMS:2018jrd} are shown in blue triangles and green squares~\cite{CMS:2022prd}.}
+\caption[Plots of \texttt{DeepTau} identification performance.]{Comparisons of the \texttt{DeepTau} identification discriminator performance against electrons (a), muons (b) and jets (c) versus the $\tauh$ efficiency. (a) uses $Z\rightarrow ee$, (b) uses $Z\rightarrow \mu\mu$ and (c) uses W+jets MC, with only objects with $\pT<100$ GeV used. Working points are indicated by full circles and previous algorithms described in Reference~\cite{CMS:2018jrd} are shown in blue triangles and green squares~\cite{CMS:2022prd}.}
 \label{fig:deeptau_misid}
 \end{figure}
