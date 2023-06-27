@@ -933,8 +933,8 @@ There are different sources of uncertainty related to this method.
 The first uncertainties come from subtracting off other background processes with \ac{MC} to form the determination region. 
 The subtraction is shifted up and down by 10\% to determine new weights.
 Next, statistical uncertainties on all of the fake factor method fits are accounted for, where the binned values are uncorrelated with the rest of the fit.
-An uncertainty is also placed on the choice of fit function, the shifts are estimated by comparing the fits to a first-order polynomial fit set to constant above 100 GeV.
-The final systematic variation is on the extrapolation corrections by applying the corrections twice and not at all.
+An uncertainty is also placed on the choice of fit function, which is calculated by comparing the fits to a first-order polynomial fit set to constant above 100 GeV.
+The final systematic variation is on the \texttt{Determination Region} to \texttt{Application Region} corrections by applying them twice and not at all to get symmetric shifts.
 The size of each systematic uncertainty varies from 0--10\%, whilst the statistical element from the fits can be larger in the tails of the distributions.
 
 \subsubsection{Jets misidentified as light leptons}
@@ -943,11 +943,11 @@ Uncertainties are placed based on the statistical uncertainties in the determina
 
 \subsubsection{Muons misidentified as electrons}
 Backgrounds with muons misidentified as electrons are only considered in the $\emu$ channel.
-These events are modelled from \ac{MC} and any generator-matched muon identified as an electron is given a 15\%--45\% uncertainty, which is derived from the initial corrections.
+These events are modelled from \ac{MC} and any generator-matched muon identified as an electron is given a 15\%--45\% uncertainty, which is derived from the calculation of the correction.
 
 \subsubsection{MET}
 The \ac{MET} uncertainties are different depending on the process.
-For all processes that are not $\ttbar$ and di-boson, the hadronic recoil response and its resolution are varied within the uncertainties determined during the computation of the recoil corrections.
+For all processes that are not $\ttbar$ or di-boson, the hadronic recoil response and its resolution are varied within the uncertainties determined during the computation of the recoil corrections.
 For $\ttbar$ or di-boson an uncertainty is derived from the energy carried by an unclustered particle~\cite{Sirunyan:2019kia}.
 These uncertainties vary between 0--10\%.
 
@@ -959,8 +959,8 @@ Therefore, these non-closures are taken as an additional shape uncertainty as a 
 Uncertainties on the normalisation background processes with sizes 4\% for $Z\rightarrow ll$ and W + jets production~\cite{Melnikov:2006kv}, 6\% for $\ttbar$ production~\cite{Czakon:2011xx,Kidonakis:2013zqa}, and 5\% for diboson and single t quark production~\cite{Kidonakis:2013zqa,Campbell:2011bn,Gehrmann:2014fva}.
 
 \subsubsection{Signal process specific uncertainties}
-For the gg$\phi$ and bb$\phi$ processes, the variation of the \texttt{hdamp} parameter of the \POWHEG \ac{MC} generator as well as the $\mu_{R}$/$\mu_{F}$ scale variations are used to determine the uncertainties on the $\pT$ spectrum of each contribution at NLO QCD to the Higgs boson production via gluon fusion (t-only, b-only, tb-only interference). 
-These are also determined from additional samples produced up to the generator level and applied as event weights dependent on generator level $\pT$ after the parton shower simulation.
+For the gg$\phi$ and bb$\phi$ processes, the variation of the \texttt{hdamp} parameter of the \POWHEG \ac{MC} generator as well as the $\mu_{R}$/$\mu_{F}$ scale variations are used to determine the uncertainties on the $\pT$ spectrum of each contribution at NLO QCD to the Higgs boson production via gluon fusion (t-only, b-only, tb-interference). 
+These are also determined from additional samples produced at generator level and applied as event weights depending on $\pT$ after the parton shower simulation.
 For the vector leptoquark signal samples, the parton distribution functions and $\mu_{R}$/$\mu_{F}$ scale variations are applied on an event-by-event basis.
 These uncertainties are included as shape uncertainties as they may affect the shapes of the $m_{T}^{\text{tot}}$ distribution as well as the predicted signal yields.
 
@@ -968,9 +968,8 @@ These uncertainties are included as shape uncertainties as they may affect the s
 $1.2\%$, $2.3\%$ and $2.5\%$ normalisation uncertainties for the luminosity are applied to the 2016, 2017 and 2018 templates respectively, which originate from MC simulation to data comparisons.
 
 \subsubsection{Prefiring}
-Upper and lower bounds are taken from the efficiency maps and propagated on all \ac{MC} samples as shape uncertainty for 2016 and 2017.
-The size of the uncertainty as the weight itself depends on the event topology. 
-In general, the uncertainty is of the order of 1\%.
+Upper and lower bounds are taken from the efficiency maps and propagated to all \ac{MC} samples as shape uncertainty for 2016 and 2017.
+The size of the uncertainty depends on the event topology but averages to a value of the order of 1\%.
 
 \section{Signal Extraction}
 \label{sec:sig_ext}
@@ -1017,12 +1016,13 @@ Both \ac{PDF}s are dependent on the mean ($\mu$) and standard deviations ($\sigm
 The following subsections discuss the results of many such fits.
 The key fits to understand the results are the background-only fit and the signal-plus-background fits.
 The background-only fit is performed with $N_j$ (number of signal processes) set to 0.
-For all signal-plus-background fits, the fit is done to a single mass hypothesis, however, within this mass hypothesis can be a number of signal processes.
+For all signal-plus-background fits, the fit is done to a single mass hypothesis, however, within this mass hypothesis there can be a number of signal processes.
 The model-independent resonance search has separate gg$\phi$ and bb$\phi$ signal modes and so two rate parameters $\mu_{\text{gg}\phi}$ and $\mu_{\text{bb}\phi}$ are needed.
-When the samples are initially scaled to the cross-section times branching ratio ($\sigma \times B (\phi\rightarrow\tau\tau)$) of 1 pb and $g(\mu)=\mu$ for both processes, $\mu_{\text{gg}\phi}$ and $\mu_{\text{bb}\phi}$ represent the $\sigma \times B (\phi\rightarrow\tau\tau)$ with units of pb.
-To avoid negative signal strengths, $\mu$ will only be taken to be positive.
+The samples are initially scaled to the cross-section times branching ratio ($\sigma \times B (\phi\rightarrow\tau\tau)$) of 1 pb.
+Setting $g(\mu)=\mu$ for both processes, $\mu_{\text{gg}\phi}$ and $\mu_{\text{bb}\phi}$ represent the $\sigma \times B (\phi\rightarrow\tau\tau)$ in units of pb.
+To avoid negative signal strengths, $\mu$ is not allowed to become negative.
 Also used in the following subsections, is a signal-plus-background channel/category compatibility fit.
-In this fit, the signal processes and rate parameters are further split in each channel or category utilising index $i$ in Equation~\ref{eqn:likelihood}.
+In this fit, the signal processes and rate parameters are further split into each channel or category utilising index $i$ in Equation~\ref{eqn:likelihood}.
 This is used to determine the compatibility of the results in different decay channels and analysis categories.
 In this case, $\mu$ is allowed to take negative values to help fully understand the fits to data in each channel or category. \\
 
@@ -1099,7 +1099,7 @@ Similar to the bb$\phi$ signal, the VLQ BM 1 signal is constrained by the result
     \subfloat[]{\includegraphics[width=0.4\textwidth]{Figures/postfit_lowmass_lt_nobtag_highpT.pdf}} \\
     \subfloat[]{\includegraphics[width=0.4\textwidth]{Figures/postfit_lowmass_em_nobtag_mediumpT.pdf}}
     \subfloat[]{\includegraphics[width=0.4\textwidth]{Figures/postfit_lowmass_em_nobtag_highpT.pdf}}
-\caption[Plots of the $m_{\tau\tau}$ distributions in the low-mass optimisation categories.]{Distributions of $m_{\tau\tau}$ in the no b tag second highest (left) and highest (right) $\pT$ category for the $\tauhtauh$ (top), the combined $\etauh$ and $\mutauh$ (middle) and the $\emu$ (bottom) channels. The solid histograms show the stacked background predictions after a signal-plus-background fit to the data. The best-fit gluon fusion signal for $m_{\phi}$ = 100 GeV is shown by the red line. Also shown by a blue dashed line on the bottom pad is the ratio of the background predictions for the background-only fit to the signal-plus-background fit~\cite{CMS:2022rbd}. }
+\caption[Plots of the $m_{\tau\tau}$ distributions in the low-mass optimisation categories.]{Distributions of $m_{\tau\tau}$ in the no b tag second highest (a, c and e) and highest (b, d and e) $\pT$ category for the $\tauhtauh$ (a and b), the combined $\etauh$ and $\mutauh$ (c and d) and the $\emu$ (d and e) channels. The solid histograms show the stacked background predictions after a signal-plus-background fit to the data. The best-fit gluon fusion signal for $m_{\phi}$ = 100 GeV is shown by the red line. Also shown by a blue dashed line on the bottom pad is the ratio of the background predictions for the background-only fit to the signal-plus-background fit~\cite{CMS:2022rbd}. }
 \label{fig:low_mass_postfit}
 \end{figure}
 
@@ -1230,7 +1230,7 @@ Otherwise, signal strengths are completely compatible with the background expect
     \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/2d_lkld_1000.pdf}}
     \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/2d_lkld_1200.pdf}}
     \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/2d_lkld_3500.pdf}}
-\caption[Plots of the maximum likelihood scans for the model-independent search.]{Maximum likelihood scans, including 68\% and 95\% CL contours obtained from the signal likelihood for the model-independent search. The scans are shown for selected values of $m_{\phi}$ between 60 GeV and 3.5 TeV~\cite{CMS:2022rbd}.}
+\caption[Plots of the maximum likelihood scans for the model-independent search.]{Maximum likelihood scans, including 68\% and 95\% CL contours obtained from the signal likelihood for the model-independent search. The scans are shown for$m_{\phi}$ values of 60 (a), 100 (b), 125 (c), 160 (d), 250 (e), 500 (f), 1000 (g), 1200 (h) and 3500 (i) GeV~\cite{CMS:2022rbd}.}
 \label{fig:2d_likelihood_scans}
 \end{figure}
 

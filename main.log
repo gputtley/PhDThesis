@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.26)  26 JUN 2023 14:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.26)  27 JUN 2023 16:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2739,19 +2739,19 @@ Underfull \vbox (badness 1019) has occurred while \output is active []
  [90]
 [91] [92]
 Package acronym Info: Label `acro:PDF' newly defined as it shall be overridden
-although it is yet undefined on input line 994.
+although it is yet undefined on input line 993.
 
-Underfull \hbox (badness 10000) in paragraph at lines 993--995
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 996--1000
+Underfull \hbox (badness 10000) in paragraph at lines 992--994
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1017--1028
+Underfull \hbox (badness 10000) in paragraph at lines 995--999
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1016--1028
 
  []
 
@@ -2783,12 +2783,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1067--1069
 
  []
 
-[95]
+
 Underfull \hbox (badness 10000) in paragraph at lines 1072--1078
 
  []
 
-
+[95]
 Underfull \hbox (badness 10000) in paragraph at lines 1079--1085
 
  []
@@ -2798,15 +2798,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 1086--1093
 
  []
 
-[96]
-<Figures/postfit_lowmass_tt_nobtag_mediumpT.pdf, id=3625, 569.12625pt x 546.04p
+<Figures/postfit_lowmass_tt_nobtag_mediumpT.pdf, id=3621, 569.12625pt x 546.04p
 t>
 File: Figures/postfit_lowmass_tt_nobtag_mediumpT.pdf Graphic file (type pdf)
 <use Figures/postfit_lowmass_tt_nobtag_mediumpT.pdf>
 Package pdftex.def Info: Figures/postfit_lowmass_tt_nobtag_mediumpT.pdf  used o
 n input line 1096.
 (pdftex.def)             Requested size: 170.71393pt x 163.78827pt.
-<Figures/postfit_lowmass_tt_nobtag_highpT-cropped.pdf, id=3626, 540.0175pt x 52
+<Figures/postfit_lowmass_tt_nobtag_highpT-cropped.pdf, id=3622, 540.0175pt x 52
 5.965pt>
 File: Figures/postfit_lowmass_tt_nobtag_highpT-cropped.pdf Graphic file (type p
 df)
@@ -2814,28 +2813,28 @@ df)
 Package pdftex.def Info: Figures/postfit_lowmass_tt_nobtag_highpT-cropped.pdf  
 used on input line 1097.
 (pdftex.def)             Requested size: 170.71393pt x 166.2657pt.
-<Figures/postfit_lowmass_lt_nobtag_mediumpT.pdf, id=3627, 569.12625pt x 546.04p
+<Figures/postfit_lowmass_lt_nobtag_mediumpT.pdf, id=3623, 569.12625pt x 546.04p
 t>
 File: Figures/postfit_lowmass_lt_nobtag_mediumpT.pdf Graphic file (type pdf)
 <use Figures/postfit_lowmass_lt_nobtag_mediumpT.pdf>
 Package pdftex.def Info: Figures/postfit_lowmass_lt_nobtag_mediumpT.pdf  used o
 n input line 1098.
 (pdftex.def)             Requested size: 170.71393pt x 163.78827pt.
-<Figures/postfit_lowmass_lt_nobtag_highpT.pdf, id=3628, 569.12625pt x 546.04pt>
+<Figures/postfit_lowmass_lt_nobtag_highpT.pdf, id=3624, 569.12625pt x 546.04pt>
 
 File: Figures/postfit_lowmass_lt_nobtag_highpT.pdf Graphic file (type pdf)
 <use Figures/postfit_lowmass_lt_nobtag_highpT.pdf>
 Package pdftex.def Info: Figures/postfit_lowmass_lt_nobtag_highpT.pdf  used on 
 input line 1099.
 (pdftex.def)             Requested size: 170.71393pt x 163.78827pt.
-<Figures/postfit_lowmass_em_nobtag_mediumpT.pdf, id=3629, 569.12625pt x 546.04p
+<Figures/postfit_lowmass_em_nobtag_mediumpT.pdf, id=3625, 569.12625pt x 546.04p
 t>
 File: Figures/postfit_lowmass_em_nobtag_mediumpT.pdf Graphic file (type pdf)
 <use Figures/postfit_lowmass_em_nobtag_mediumpT.pdf>
 Package pdftex.def Info: Figures/postfit_lowmass_em_nobtag_mediumpT.pdf  used o
 n input line 1100.
 (pdftex.def)             Requested size: 170.71393pt x 163.78827pt.
-<Figures/postfit_lowmass_em_nobtag_highpT.pdf, id=3630, 569.12625pt x 546.04pt>
+<Figures/postfit_lowmass_em_nobtag_highpT.pdf, id=3626, 569.12625pt x 546.04pt>
 
 File: Figures/postfit_lowmass_em_nobtag_highpT.pdf Graphic file (type pdf)
 <use Figures/postfit_lowmass_em_nobtag_highpT.pdf>
@@ -2843,9 +2842,12 @@ Package pdftex.def Info: Figures/postfit_lowmass_em_nobtag_highpT.pdf  used on
 input line 1101.
 (pdftex.def)             Requested size: 170.71393pt x 163.78827pt.
 
-
 LaTeX Warning: Float too large for page by 24.50223pt on input line 1104.
 
+
+Underfull \vbox (badness 1325) has occurred while \output is active []
+
+ [96]
 <Figures/postfit_highmass_tt_nobtag.pdf, id=3633, 569.12625pt x 546.04pt>
 File: Figures/postfit_highmass_tt_nobtag.pdf Graphic file (type pdf)
 <use Figures/postfit_highmass_tt_nobtag.pdf>
@@ -2887,6 +2889,7 @@ File: Figures/postfit_highmass_em_btag_mediumdzeta.pdf Graphic file (type pdf)
 Package pdftex.def Info: Figures/postfit_highmass_em_btag_mediumdzeta.pdf  used
  on input line 1113.
 (pdftex.def)             Requested size: 179.25157pt x 171.97852pt.
+
 
 LaTeX Warning: Float too large for page by 27.7455pt on input line 1116.
 
@@ -3069,13 +3072,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 1253--1260
 
  []
 
-<Figures/model-dependent_limit_mh125.pdf, id=5128, 569.12625pt x 546.04pt>
+<Figures/model-dependent_limit_mh125.pdf, id=5130, 569.12625pt x 546.04pt>
 File: Figures/model-dependent_limit_mh125.pdf Graphic file (type pdf)
 <use Figures/model-dependent_limit_mh125.pdf>
 Package pdftex.def Info: Figures/model-dependent_limit_mh125.pdf  used on input
  line 1263.
 (pdftex.def)             Requested size: 277.41176pt x 266.17052pt.
-<Figures/model-dependent_limit_mh125EFT.pdf, id=5129, 569.12625pt x 546.04pt>
+<Figures/model-dependent_limit_mh125EFT.pdf, id=5131, 569.12625pt x 546.04pt>
 File: Figures/model-dependent_limit_mh125EFT.pdf Graphic file (type pdf)
 <use Figures/model-dependent_limit_mh125EFT.pdf>
 Package pdftex.def Info: Figures/model-dependent_limit_mh125EFT.pdf  used on in
@@ -3089,12 +3092,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1270--1274
 
  []
 
-<Figures/vlq_bm_1.pdf, id=5134, 569.12625pt x 546.04pt>
+<Figures/vlq_bm_1.pdf, id=5136, 569.12625pt x 546.04pt>
 File: Figures/vlq_bm_1.pdf Graphic file (type pdf)
 <use Figures/vlq_bm_1.pdf>
 Package pdftex.def Info: Figures/vlq_bm_1.pdf  used on input line 1277.
 (pdftex.def)             Requested size: 277.41176pt x 266.17052pt.
-<Figures/vlq_bm_2.pdf, id=5135, 569.12625pt x 546.04pt>
+<Figures/vlq_bm_2.pdf, id=5137, 569.12625pt x 546.04pt>
 File: Figures/vlq_bm_2.pdf Graphic file (type pdf)
 <use Figures/vlq_bm_2.pdf>
 Package pdftex.def Info: Figures/vlq_bm_2.pdf  used on input line 1278.
@@ -3706,7 +3709,7 @@ cm-super/sfti0800.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-supe
 r/sfti1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sftt0
 800.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb
 >
-Output written on main.pdf (161 pages, 13267196 bytes).
+Output written on main.pdf (161 pages, 13267079 bytes).
 PDF statistics:
  7954 PDF objects out of 8907 (max. 8388607)
  5117 compressed objects within 52 object streams
