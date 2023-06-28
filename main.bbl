@@ -14,6 +14,37 @@
   $\sqrt{s}=13~\mathrm{TeV}$}}, {\emph{CMS Physics Analysis Summary} {\bfseries
   CMS-PAS-HIG-21-001} (2022) }.
 
+\bibitem{Englert:1964et}
+F.~Englert and R.~Brout, \emph{Broken symmetry and the mass of gauge vector
+  mesons}, \href{https://doi.org/10.1103/PhysRevLett.13.321}{\emph{Phys. Rev.
+  Lett.} (1964) 321}.
+
+\bibitem{Higgs:1964ia}
+P.~W. Higgs, \emph{Broken symmetries, massless particles and gauge fields},
+  \href{https://doi.org/10.1016/0031-9163(64)91136-9}{\emph{Phys. Lett.} (1964)
+  132}.
+
+\bibitem{Higgs:1964pj}
+P.~W. Higgs, \emph{Broken symmetries and the masses of gauge bosons},
+  \href{https://doi.org/10.1103/PhysRevLett.13.508}{\emph{Phys. Rev. Lett.}
+  (1964) 508}.
+
+\bibitem{Higgs:1966ev}
+P.~W. Higgs, \emph{Spontaneous symmetry breakdown without massless bosons},
+  \href{https://doi.org/10.1103/PhysRev.145.1156}{\emph{Phys. Rev.} (1966)
+  1156}.
+
+\bibitem{Guralnik:1964eu}
+G.~S. Guralnik, C.~R. Hagen and T.~W.~B. Kibble, \emph{Global conservation laws
+  and massless particles},
+  \href{https://doi.org/10.1103/PhysRevLett.13.585}{\emph{Phys. Rev. Lett.}
+  (1964) 585}.
+
+\bibitem{Kibble:1967sv}
+T.~W.~B. Kibble, \emph{Symmetry breaking in non-{A}belian gauge theories},
+  \href{https://doi.org/10.1103/PhysRev.155.1554}{\emph{Phys. Rev.} (1967)
+  1554}.
+
 \bibitem{ATLAS_Higgs_Discovery}
 {ATLAS Collaboration}, \emph{{Observation of a new particle in the search for
   the Standard Model Higgs boson with the ATLAS detector at the LHC}},
@@ -101,15 +132,37 @@
   {\bfseries 126} (2021) 141801}
   [\href{https://arxiv.org/abs/2104.03281}{{\ttfamily 2104.03281}}].
 
-\bibitem{LHCb:2022zom}
-\emph{{Measurement of lepton universality parameters in $B^+\to
-  K^+\ell^+\ell^-$ and $B^0\to K^{*0}\ell^+\ell^-$ decays}},
-  \href{https://arxiv.org/abs/2212.09153}{{\ttfamily 2212.09153}}.
+\bibitem{Clowe:2003tk}
+D.~Clowe, A.~Gonzalez and M.~Markevitch, \emph{{Weak lensing mass
+  reconstruction of the interacting cluster 1E0657-558: Direct evidence for the
+  existence of dark matter}},
+  \href{https://doi.org/10.1086/381970}{\emph{Astrophys. J.} {\bfseries 604}
+  (2004) 596} [\href{https://arxiv.org/abs/astro-ph/0312273}{{\ttfamily
+  astro-ph/0312273}}].
+
+\bibitem{WMAP:2008lyn}
+E.~Komatsu et~al., \emph{{Five-Year Wilkinson Microwave Anisotropy Probe (WMAP)
+  Observations: Cosmological Interpretation}},
+  \href{https://doi.org/10.1088/0067-0049/180/2/330}{\emph{Astrophys. J.
+  Suppl.} {\bfseries 180} (2009) 330}
+  [\href{https://arxiv.org/abs/0803.0547}{{\ttfamily 0803.0547}}].
+
+\bibitem{Planck:2015fie}
+P.~A.~R. Ade et~al., \emph{{Planck 2015 results. XIII. Cosmological
+  parameters}},
+  \href{https://doi.org/10.1051/0004-6361/201525830}{\emph{Astron. Astrophys.}
+  {\bfseries 594} (2016) A13}
+  [\href{https://arxiv.org/abs/1502.01589}{{\ttfamily 1502.01589}}].
 
 \bibitem{ParticleDataGroup:2022pth}
 R.~L. Workman et~al., \emph{{Review of Particle Physics}},
   \href{https://doi.org/10.1093/ptep/ptac097}{\emph{PTEP} {\bfseries 2022}
   (2022) 083C01}.
+
+\bibitem{LHCb:2022zom}
+\emph{{Measurement of lepton universality parameters in $B^+\to
+  K^+\ell^+\ell^-$ and $B^0\to K^{*0}\ell^+\ell^-$ decays}},
+  \href{https://arxiv.org/abs/2212.09153}{{\ttfamily 2212.09153}}.
 
 \bibitem{sm_diagram}
 D.~Galbraith and C.~Burgard, ``{Example: Standard model of physics}.''
@@ -160,37 +213,6 @@ M.~Banner et~al., \emph{{Observation of Single Isolated Electrons of High
   \href{https://doi.org/10.1016/0370-2693(83)91605-2}{\emph{Phys. Lett. B}
   {\bfseries 122} (1983) 476}.
 
-\bibitem{Englert:1964et}
-F.~Englert and R.~Brout, \emph{Broken symmetry and the mass of gauge vector
-  mesons}, \href{https://doi.org/10.1103/PhysRevLett.13.321}{\emph{Phys. Rev.
-  Lett.} (1964) 321}.
-
-\bibitem{Higgs:1964ia}
-P.~W. Higgs, \emph{Broken symmetries, massless particles and gauge fields},
-  \href{https://doi.org/10.1016/0031-9163(64)91136-9}{\emph{Phys. Lett.} (1964)
-  132}.
-
-\bibitem{Higgs:1964pj}
-P.~W. Higgs, \emph{Broken symmetries and the masses of gauge bosons},
-  \href{https://doi.org/10.1103/PhysRevLett.13.508}{\emph{Phys. Rev. Lett.}
-  (1964) 508}.
-
-\bibitem{Higgs:1966ev}
-P.~W. Higgs, \emph{Spontaneous symmetry breakdown without massless bosons},
-  \href{https://doi.org/10.1103/PhysRev.145.1156}{\emph{Phys. Rev.} (1966)
-  1156}.
-
-\bibitem{Guralnik:1964eu}
-G.~S. Guralnik, C.~R. Hagen and T.~W.~B. Kibble, \emph{Global conservation laws
-  and massless particles},
-  \href{https://doi.org/10.1103/PhysRevLett.13.585}{\emph{Phys. Rev. Lett.}
-  (1964) 585}.
-
-\bibitem{Kibble:1967sv}
-T.~W.~B. Kibble, \emph{Symmetry breaking in non-{A}belian gauge theories},
-  \href{https://doi.org/10.1103/PhysRev.155.1554}{\emph{Phys. Rev.} (1967)
-  1554}.
-
 \bibitem{Goldstone:1961eq}
 J.~Goldstone, \emph{{Field Theories with Superconductor Solutions}},
   \href{https://doi.org/10.1007/BF02812722}{\emph{Nuovo Cim.} {\bfseries 19}
@@ -208,17 +230,17 @@ I.~F. Ginzburg and M.~Krawczyk, \emph{{Symmetries of two Higgs doublet model
   {\bfseries 72} (2005) 115013}
   [\href{https://arxiv.org/abs/hep-ph/0408011}{{\ttfamily hep-ph/0408011}}].
 
+\bibitem{SUSY_Primer}
+S.~P. Martin, \emph{{A Supersymmetry Primer}},
+  \href{https://doi.org/10.1142/9789812839657_0001}{\emph{Advanced Series on
+  Directions in High Energy Physics} (1998) 1–98}.
+
 \bibitem{CMS:2020xrn}
 {CMS Collaboration}, \emph{{A measurement of the Higgs boson mass in the
   diphoton decay channel}},
   \href{https://doi.org/10.1016/j.physletb.2020.135425}{\emph{Phys. Lett. B}
   {\bfseries 805} (2020) 135425}
   [\href{https://arxiv.org/abs/2002.06398}{{\ttfamily 2002.06398}}].
-
-\bibitem{SUSY_Primer}
-S.~P. Martin, \emph{{A Supersymmetry Primer}},
-  \href{https://doi.org/10.1142/9789812839657_0001}{\emph{Advanced Series on
-  Directions in High Energy Physics} (1998) 1–98}.
 
 \bibitem{Diaz:2017lit}
 B.~Diaz, M.~Schmaltz and Y.-M. Zhong, \emph{The leptoquark
@@ -269,6 +291,10 @@ L.~Evans and P.~Bryant (Eds.), \emph{{LHC Machine}},
 {LEP Injector Study Group}, \emph{{LEP Design Report: Vol.2. The LEP Main
   Ring}}, {\emph{Technical Design Report} {\bfseries CERN-LEP-84-01} (1984) }.
 
+\bibitem{Benedikt:2004wm}
+M.~Benedikt, P.~Collier, V.~Mertens, J.~Poole and K.~Schindl (Eds.), \emph{{LHC
+  Design Report. 3. The LHC injector chain}}, .
+
 \bibitem{ALICE:2008ngc}
 {ALICE Collaboration}, \emph{{The ALICE experiment at the CERN LHC}},
   \href{https://doi.org/10.1088/1748-0221/3/08/S08002}{\emph{JINST} {\bfseries
@@ -316,10 +342,49 @@ H.~Bartosik and G.~Rumolo, \emph{{Performance of the LHC injector chain after
   8} (2013) P09009} [\href{https://arxiv.org/abs/1306.2016}{{\ttfamily
   1306.2016}}].
 
+\bibitem{USCMS:2009fxn}
+{CMS Collaboration}, \emph{{The CMS barrel calorimeter response to particle
+  beams from 2-GeV/c to 350-GeV/c}},
+  \href{https://doi.org/10.1140/epjc/s10052-009-0959-5}{\emph{Eur. Phys. J. C}
+  {\bfseries 60} (2009) 359}.
+
+\bibitem{CMS:2012tda}
+\emph{{CMS Technical Design Report for the Phase 1 Upgrade of the Hadron
+  Calorimeter}}, .
+
+\bibitem{Abbiendi:2015txa}
+{CMS Collaboration}, \emph{{The CMS muon system in Run2: preparation, status
+  and first results}}, \href{https://doi.org/10.22323/1.234.0237}{\emph{PoS}
+  {\bfseries EPS-HEP2015} (2015) 237}
+  [\href{https://arxiv.org/abs/1510.05424}{{\ttfamily 1510.05424}}].
+
+\bibitem{CMS:2018rym}
+{CMS Collaboration}, \emph{{Performance of the CMS muon detector and muon
+  reconstruction with proton-proton collisions at $\sqrt{s}=$ 13 TeV}},
+  \href{https://doi.org/10.1088/1748-0221/13/06/P06015}{\emph{JINST} {\bfseries
+  13} (2018) P06015} [\href{https://arxiv.org/abs/1804.04528}{{\ttfamily
+  1804.04528}}].
+
+\bibitem{CMS_trigger}
+{CMS Collaboration}, \emph{{The CMS trigger system}},
+  \href{https://doi.org/10.1088/1748-0221/12/01/P01020}{\emph{JINST} {\bfseries
+  12} (2017) P01020} [\href{https://arxiv.org/abs/1609.02366}{{\ttfamily
+  1609.02366}}].
+
 \bibitem{Tapper:2013yva}
 {CMS Collaboration}, \emph{{CMS Technical Design Report for the Level-1 Trigger
   Upgrade}}, {\emph{CMS Technical Design Report} {\bfseries CERN-LHCC-2013-011,
   CMS-TDR-12, CMS-TDR-012} (2013) }.
+
+\bibitem{CMSTrigger:2005yhe}
+W.~Adam et~al., \emph{{The CMS high level trigger}},
+  \href{https://doi.org/10.1140/epjc/s2006-02495-8}{\emph{Eur. Phys. J. C}
+  {\bfseries 46} (2006) 605}
+  [\href{https://arxiv.org/abs/hep-ex/0512077}{{\ttfamily hep-ex/0512077}}].
+
+\bibitem{wlcg}
+``{Worldwide LHC Computing Grid}.'' https://wlcg-public.web.cern.ch/.
+\newblock [Accessed: 28/06/23].
 
 \bibitem{CMS:2014pgm}
 {CMS Collaboration}, \emph{{Description and performance of track and
@@ -379,13 +444,6 @@ T.~Speer, W.~Adam, R.~Fruhwirth, A.~Strandlie, T.~Todorov and M.~Winkler,
   \href{https://doi.org/10.1088/1748-0221/7/10/P10002}{\emph{JINST} {\bfseries
   7} (2012) P10002} [\href{https://arxiv.org/abs/1206.4071}{{\ttfamily
   1206.4071}}].
-
-\bibitem{CMS:2018rym}
-{CMS Collaboration}, \emph{{Performance of the CMS muon detector and muon
-  reconstruction with proton-proton collisions at $\sqrt{s}=$ 13 TeV}},
-  \href{https://doi.org/10.1088/1748-0221/13/06/P06015}{\emph{JINST} {\bfseries
-  13} (2018) P06015} [\href{https://arxiv.org/abs/1804.04528}{{\ttfamily
-  1804.04528}}].
 
 \bibitem{CMS:2015xaf}
 {CMS Collaboration}, \emph{{Performance of Electron Reconstruction and
