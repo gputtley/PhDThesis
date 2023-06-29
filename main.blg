@@ -61,6 +61,12 @@ You can't pop an empty literal stack for entry ATLAS_Higgs_Discovery
 while executing---line 1140 of file JHEP.bst.bst
 You can't pop an empty literal stack for entry CMS_Higgs_Discovery
 while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry LHCb:2015gmp
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry LHCb:2017rln
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry LHCb:2017smo
+while executing---line 1140 of file JHEP.bst.bst
 You can't pop an empty literal stack for entry LHCb:2021trn
 while executing---line 1140 of file JHEP.bst.bst
 You can't pop an empty literal stack for entry Kowalewski:2013mna
@@ -69,13 +75,7 @@ You can't pop an empty literal stack for entry BaBar:2013mob
 while executing---line 1140 of file JHEP.bst.bst
 You can't pop an empty literal stack for entry Belle:2015qfa
 while executing---line 1140 of file JHEP.bst.bst
-You can't pop an empty literal stack for entry LHCb:2015gmp
-while executing---line 1140 of file JHEP.bst.bst
 You can't pop an empty literal stack for entry Belle:2016dyj
-while executing---line 1140 of file JHEP.bst.bst
-You can't pop an empty literal stack for entry LHCb:2017rln
-while executing---line 1140 of file JHEP.bst.bst
-You can't pop an empty literal stack for entry LHCb:2017smo
 while executing---line 1140 of file JHEP.bst.bst
 You can't pop an empty literal stack for entry Muong-2:2006rrc
 while executing---line 1140 of file JHEP.bst.bst
@@ -88,6 +88,8 @@ while executing---line 1140 of file JHEP.bst.bst
 You can't pop an empty literal stack for entry Planck:2015fie
 while executing---line 1140 of file JHEP.bst.bst
 You can't pop an empty literal stack for entry ParticleDataGroup:2022pth
+while executing---line 1140 of file JHEP.bst.bst
+You can't pop an empty literal stack for entry Fan:2022eto
 while executing---line 1140 of file JHEP.bst.bst
 You can't pop an empty literal stack for entry LHCb:2022zom
 while executing---line 1140 of file JHEP.bst.bst
@@ -319,45 +321,45 @@ You can't pop an empty literal stack for entry Bechtle:2020pkv
 while executing---line 1140 of file JHEP.bst.bst
 You can't pop an empty literal stack for entry Bechtle:2020uwn
 while executing---line 1140 of file JHEP.bst.bst
-You've used 142 entries,
+You've used 143 entries,
             2283 wiz_defined-function locations,
-            1576 strings with 30571 characters,
-and the built_in function-call counts, 45241 in all, are:
-= -- 4509
-> -- 2132
+            1584 strings with 30750 characters,
+and the built_in function-call counts, 45691 in all, are:
+= -- 4550
+> -- 2167
 < -- 0
-+ -- 614
-- -- 472
-* -- 3871
-:= -- 6803
-add.period$ -- 146
-call.type$ -- 142
-change.case$ -- 142
++ -- 623
+- -- 480
+* -- 3911
+:= -- 6871
+add.period$ -- 147
+call.type$ -- 143
+change.case$ -- 143
 chr.to.int$ -- 0
-cite$ -- 144
-duplicate$ -- 2283
-empty$ -- 3804
-format.name$ -- 472
-if$ -- 11777
+cite$ -- 145
+duplicate$ -- 2304
+empty$ -- 3834
+format.name$ -- 480
+if$ -- 11892
 int.to.chr$ -- 0
-int.to.str$ -- 142
-missing$ -- 541
-newline$ -- 434
-num.names$ -- 217
-pop$ -- 229
+int.to.str$ -- 143
+missing$ -- 545
+newline$ -- 437
+num.names$ -- 219
+pop$ -- 230
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1827
+skip$ -- 1846
 stack$ -- 0
-substring$ -- 1261
-swap$ -- 1163
+substring$ -- 1273
+swap$ -- 1176
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 2
-while$ -- 358
-width$ -- 145
-write$ -- 1610
-(There were 148 error messages)
+while$ -- 361
+width$ -- 146
+write$ -- 1622
+(There were 149 error messages)

@@ -59,6 +59,31 @@ T.~W.~B. Kibble, \emph{Symmetry breaking in non-{A}belian gauge theories},
   {\bfseries 716} (2012) 30} [\href{https://arxiv.org/abs/1207.7235}{{\ttfamily
   1207.7235}}].
 
+\bibitem{LHCb:2015gmp}
+{LHCb Collaboration}, \emph{{Measurement of the ratio of branching fractions
+  $\mathcal{B}(\bar{\mathrm{B}}^0 \to
+  \mathrm{D}^{*+}\tau^{-}\bar{\nu}_{\tau})/\mathcal{B}(\bar{\mathrm{B}}^0 \to
+  \mathrm{D}^{*+}\mu^{-}\bar{\nu}_{\mu})$}},
+  \href{https://doi.org/10.1103/PhysRevLett.115.111803}{\emph{Phys. Rev. Lett.}
+  {\bfseries 115} (2015) 111803}
+  [\href{https://arxiv.org/abs/1506.08614}{{\ttfamily 1506.08614}}].
+
+\bibitem{LHCb:2017rln}
+{LHCb Collaboration}, \emph{{Test of Lepton Flavor Universality by the
+  measurement of the $B^0 \to D^{*-} \tau^+ \nu_{\tau}$ branching fraction
+  using three-prong $\tau$ decays}},
+  \href{https://doi.org/10.1103/PhysRevD.97.072013}{\emph{Phys. Rev. D}
+  {\bfseries 97} (2018) 072013}
+  [\href{https://arxiv.org/abs/1711.02505}{{\ttfamily 1711.02505}}].
+
+\bibitem{LHCb:2017smo}
+{LHCb Collaboration}, \emph{Measurement of the ratio of the {$\mathrm{B}^0 \to
+  \mathrm{D}^{*-} \tau^+ \nu_{\tau}$ and $\mathrm{B}^0 \to \mathrm{D}^{*-}
+  \mu^+ \nu_{\mu}$} branching fractions using three-prong $\tau$-lepton
+  decays}, \href{https://doi.org/10.1103/PhysRevLett.120.171802}{\emph{Phys.
+  Rev. Lett.} {\bfseries 120} (2018) 171802}
+  [\href{https://arxiv.org/abs/1708.08856}{{\ttfamily 1708.08856}}].
+
 \bibitem{LHCb:2021trn}
 {LHCb Collaboration}, \emph{{Test of lepton universality in beauty-quark
   decays}}, \href{https://doi.org/10.1038/s41567-021-01478-8}{\emph{Nature
@@ -85,15 +110,6 @@ T.~W.~B. Kibble, \emph{Symmetry breaking in non-{A}belian gauge theories},
   {\bfseries 92} (2015) 072014}
   [\href{https://arxiv.org/abs/1507.03233}{{\ttfamily 1507.03233}}].
 
-\bibitem{LHCb:2015gmp}
-{LHCb Collaboration}, \emph{{Measurement of the ratio of branching fractions
-  $\mathcal{B}(\bar{\mathrm{B}}^0 \to
-  \mathrm{D}^{*+}\tau^{-}\bar{\nu}_{\tau})/\mathcal{B}(\bar{\mathrm{B}}^0 \to
-  \mathrm{D}^{*+}\mu^{-}\bar{\nu}_{\mu})$}},
-  \href{https://doi.org/10.1103/PhysRevLett.115.111803}{\emph{Phys. Rev. Lett.}
-  {\bfseries 115} (2015) 111803}
-  [\href{https://arxiv.org/abs/1506.08614}{{\ttfamily 1506.08614}}].
-
 \bibitem{Belle:2016dyj}
 {Belle Collaboration}, \emph{Measurement of the $\tau$ lepton polarization and
   {$R(\mathrm{D}^*)$} in the decay {$\bar{\mathrm{B}} \to \mathrm{D}^* \tau^-
@@ -101,22 +117,6 @@ T.~W.~B. Kibble, \emph{Symmetry breaking in non-{A}belian gauge theories},
   \href{https://doi.org/10.1103/PhysRevLett.118.211801}{\emph{Phys. Rev. Lett.}
   {\bfseries 118} (2017) 211801}
   [\href{https://arxiv.org/abs/1612.00529}{{\ttfamily 1612.00529}}].
-
-\bibitem{LHCb:2017rln}
-{LHCb Collaboration}, \emph{{Test of Lepton Flavor Universality by the
-  measurement of the $B^0 \to D^{*-} \tau^+ \nu_{\tau}$ branching fraction
-  using three-prong $\tau$ decays}},
-  \href{https://doi.org/10.1103/PhysRevD.97.072013}{\emph{Phys. Rev. D}
-  {\bfseries 97} (2018) 072013}
-  [\href{https://arxiv.org/abs/1711.02505}{{\ttfamily 1711.02505}}].
-
-\bibitem{LHCb:2017smo}
-{LHCb Collaboration}, \emph{Measurement of the ratio of the {$\mathrm{B}^0 \to
-  \mathrm{D}^{*-} \tau^+ \nu_{\tau}$ and $\mathrm{B}^0 \to \mathrm{D}^{*-}
-  \mu^+ \nu_{\mu}$} branching fractions using three-prong $\tau$-lepton
-  decays}, \href{https://doi.org/10.1103/PhysRevLett.120.171802}{\emph{Phys.
-  Rev. Lett.} {\bfseries 120} (2018) 171802}
-  [\href{https://arxiv.org/abs/1708.08856}{{\ttfamily 1708.08856}}].
 
 \bibitem{Muong-2:2006rrc}
 {Muon g-2 Collaboration}, \emph{{Final Report of the Muon E821 Anomalous
@@ -158,6 +158,13 @@ P.~A.~R. Ade et~al., \emph{{Planck 2015 results. XIII. Cosmological
 R.~L. Workman et~al., \emph{{Review of Particle Physics}},
   \href{https://doi.org/10.1093/ptep/ptac097}{\emph{PTEP} {\bfseries 2022}
   (2022) 083C01}.
+
+\bibitem{Fan:2022eto}
+X.~Fan, T.~G. Myers, B.~A.~D. Sukra and G.~Gabrielse, \emph{{Measurement of the
+  Electron Magnetic Moment}},
+  \href{https://doi.org/10.1103/PhysRevLett.130.071801}{\emph{Phys. Rev. Lett.}
+  {\bfseries 130} (2023) 071801}
+  [\href{https://arxiv.org/abs/2209.13084}{{\ttfamily 2209.13084}}].
 
 \bibitem{LHCb:2022zom}
 \emph{{Measurement of lepton universality parameters in $B^+\to

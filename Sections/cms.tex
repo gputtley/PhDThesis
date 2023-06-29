@@ -69,7 +69,8 @@ The \ac{CMS} detector adopts a coordinate system centred at the collision point,
 The transverse energy ($E_T$) and transverse momentum ($\pT$) are defined in the $x$-$y$ plane. 
 The azimuthal angle ($\phi$) and polar angle ($\theta$) are measured relative to the $x$-axis in the $x$-$y$ plane and $z$-axis relative to the $z$-$y$ plane, respectively. 
 $r$ is used as the radial distance in the $x$-$y$ plane.
-Pseudorapidity ($\eta$), defined as $\eta = -\ln[\tan(\theta/2)]$, is used due to its gauge invariance, and distances between objects in the $\phi$-$\eta$ plane are characterised by the metric $\Delta R = \sqrt{\Delta\phi^2 + \Delta\eta^2}$. 
+Pseudorapidity ($\eta$), defined as $\eta = -\ln[\tan(\theta/2)]$, is used due to its gauge invariance. 
+Distances between objects in the $\phi$-$\eta$ plane are characterised by the metric $\Delta R = \sqrt{\Delta\phi^2 + \Delta\eta^2}$. 
 
 \begin{figure}[!hbtp]
     \centering
@@ -191,10 +192,9 @@ It consists of three types of gaseous detectors: \ac{DT} chambers, \ac{CSC}, and
 In the region of $|\eta| < 1.2$, the muon system employs \ac{DT} chambers, which are organised into four stations. 
 These include inner and outer stations positioned inside and outside the magnet return yoke, as well as two stations inter-spaced between the iron layers of the yoke. 
 The \ac{DT} chambers are composed of rectangular drift cells, with an anode wire running through each cell and then are filled with a mixture of argon and carbon dioxide gas. 
-Each cell features an anode wire running along its length. 
 The cells are arranged into superlayers, each containing four layers of cells. 
 The \ac{DT} chambers in the three innermost muon stations consist of three superlayers, whereas the outer station contains only two superlayers. 
-The spatial resolution of the \ac{DT} chambers is measured to be 77–123 $\upmu$m for the $\phi$ coordinate measurement and 133–393 $\upmu$m for the $z$ coordinate measurement~\cite{CMS:2018rym}. \\
+The spatial resolution of the \ac{DT} chambers is measured to be 77–123 $\upmu$m for the $\phi$ coordinate and 133–393 $\upmu$m for the $z$ coordinate~\cite{CMS:2018rym}. \\
 
 The \ac{CSC}s are used in the region $0.9 < |\eta| < 2.4$. 
 These chambers are trapezoidal-shaped multiwire proportional chambers with six layers of gas. 
@@ -213,7 +213,7 @@ While the \ac{RPC}s exhibit a lower spatial resolution compared to the \ac{DT}s 
 \subsection{Triggering and computing}
 
 The \ac{LHC} collides protons at a rate of 40 MHz during its operation~\cite{Evans:2008zzb}. 
-However, it is impractical to read out and store every event due to the high data volume involved. 
+However, it is not possible to read out and store every event due to the high data volume involved. 
 To address this challenge, the \ac{CMS} detector employs a dedicated trigger system that selectively chooses the most interesting events, reducing the recorded rate to around 1 kHz. \\
 
 The \ac{CMS} trigger system consists of two stages: the \ac{L1} trigger and the \ac{HLT}~\cite{CMS_Setup,CMS_trigger,Tapper:2013yva}. 
@@ -240,7 +240,7 @@ By closely following the algorithms and selections used offline, the \ac{HLT} en
 From the initial event rate of approximately 100 kHz received from the \ac{L1} trigger, the \ac{HLT} further reduces the output rate to about 1 kHz. \\
 
 The events selected by the \ac{HLT} produce a significant amount of data, approximately $\mathcal{O}$(10 pb) per year. 
-To process, store, and facilitate easy access for analysts worldwide, \ac{CMS} collaborates with other \ac{LHC} experiments through the \ac{WLCG}~\cite{wlcg}. 
+To process, store and facilitate easy access for analysts worldwide, \ac{CMS} collaborates with other \ac{LHC} experiments through the \ac{WLCG}~\cite{wlcg}. 
 The \ac{WLCG} combines computing resources from research institutions globally, organised into three tiers. 
 Tier-0 sites, comprising the \ac{CERN} Data Center and the Wigner Research Centre in Budapest, perform full data reconstruction and store a copy of the data on tape. 
 The data is then distributed to Tier-1 centres, which handle the storage of raw, reconstructed, and simulated data, as well as the distribution to Tier-2 sites. 

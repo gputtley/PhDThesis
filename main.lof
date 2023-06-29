@@ -2,70 +2,70 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Diagram of the fundamental particles in the SM.}}{16}{figure.caption.9}%
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Feynman diagrams for the corrections to the Higgs boson's mass.}}{23}{figure.caption.17}%
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Feynman diagrams for one-loop contributions to $a_{\mu }$ from 2HDMs.}}{26}{figure.caption.20}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Feynman diagrams for one-loop contributions to $a_{\mu }$ from 2HDMs.}}{27}{figure.caption.20}%
 \contentsline {figure}{\numberline {1.4}{\ignorespaces Feynman diagrams for two-loop contributions to $a_{\mu }$ from 2HDMs.}}{27}{figure.caption.21}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Diagram of the CERN accelerator complex.}}{29}{figure.caption.29}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Plot of the total integrated luminosity collected by the CMS experiment.}}{30}{figure.caption.31}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Diagram of the CMS detector.}}{32}{figure.caption.34}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Diagram of the CMS tracker.}}{33}{figure.caption.36}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Diagram of the CMS ECAL.}}{35}{figure.caption.44}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Diagram of the CMS HCAL.}}{36}{figure.caption.50}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Diagram of the CMS L1 trigger workflow.}}{39}{figure.caption.56}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Diagram of the CERN accelerator complex.}}{30}{figure.caption.29}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Plot of the total integrated luminosity collected by the CMS experiment.}}{31}{figure.caption.31}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Diagram of the CMS detector.}}{33}{figure.caption.34}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Diagram of the CMS tracker.}}{34}{figure.caption.36}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Diagram of the CMS ECAL.}}{36}{figure.caption.44}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Diagram of the CMS HCAL.}}{37}{figure.caption.50}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Diagram of the CMS L1 trigger workflow.}}{40}{figure.caption.56}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Plots of the muon identification performance.}}{46}{figure.caption.64}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Plots of the electron identification performance.}}{49}{figure.caption.67}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Plot of the b tagging performance.}}{52}{figure.caption.72}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Plots of the fit performed for dynamical strip sizes for the HPS algorithm.}}{55}{figure.caption.75}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Diagram of the architecture of the \texttt {DeepTau} neural network.}}{57}{figure.caption.78}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Plots of \texttt {DeepTau} identification performance.}}{59}{figure.caption.81}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Plots of the muon identification performance.}}{47}{figure.caption.64}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Plots of the electron identification performance.}}{50}{figure.caption.67}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Plot of the b tagging performance.}}{53}{figure.caption.72}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Plots of the fit performed for dynamical strip sizes for the HPS algorithm.}}{56}{figure.caption.75}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Diagram of the architecture of the \texttt {DeepTau} neural network.}}{58}{figure.caption.78}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Plots of \texttt {DeepTau} identification performance.}}{60}{figure.caption.81}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Feynman diagrams for gluon fusion and production in association with b quarks.}}{61}{figure.caption.82}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Plots of the gluon fusion generator level $p_{T}$ distributions, when changing the MSSM parameters.}}{63}{figure.caption.84}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Feynman diagrams for the production of a di-$\tau $ final state from vector leptoquarks.}}{65}{figure.caption.86}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Plots of the vector leptoquark generator level $m_{\tau \tau }$ distributions, when changing $g_{U}$.}}{66}{figure.caption.88}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Diagram of the inputs to the $D_\zeta $ variable.}}{69}{figure.caption.91}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Diagram of the categories in the high-mass optimisation procedure.}}{71}{figure.caption.92}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Diagram of the categories in the low-mass optimisation procedure.}}{73}{figure.caption.94}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Diagram of the embedding method.}}{77}{figure.caption.96}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Plot of the validation of the embedding method.}}{78}{figure.caption.97}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Diagram of the regions used for fake factor derivation.}}{80}{figure.caption.98}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Plot of the reliance of the fake factors on the ratio of the $\tau _{h}$ and jet $p_{T}$.}}{82}{figure.caption.99}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Diagram of the algorithm used to choose the binned values taken at high $p_{T}$ during the fake factor fitting.}}{83}{figure.caption.100}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Plots of the fake factor fits in the $\tau _{h}\tau _{h}$ channel.}}{84}{figure.caption.101}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Plots of the fake factor fits in the $\mu \tau _{h}$ channel.}}{84}{figure.caption.102}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Diagram of the fake MET alignment with the $\tau _{h}$ candidate.}}{85}{figure.caption.103}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Plots of fake factor \texttt {Determination Region} closure correction fits.}}{86}{figure.caption.104}%
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Plots of fake factor \texttt {Determination Region} to \texttt {Application Region} closure correction fits.}}{87}{figure.caption.105}%
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Plots of the expected fake factor \texttt {Application Region} fractions of the processes in the $\mu _{}\tau _{h}$ channel.}}{88}{figure.caption.106}%
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Plots of the $m_{\tau \tau }$ distributions in the low-mass optimisation categories.}}{99}{figure.caption.122}%
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Plots of the $m_{T}^\text {tot}$ distributions in the high-mass optimisation categories.}}{100}{figure.caption.123}%
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Plots of the model-independent limits on the cross-sections of gluon fusion and b-associated production multiplied by the $\tau \tau $ branching fraction.}}{101}{figure.caption.124}%
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Plots of the expected model-independent limits split by the $\tau \tau $ decay channels.}}{102}{figure.caption.125}%
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Plots of the comparison of the model-independent limits between CMS and ATLAS.}}{103}{figure.caption.126}%
-\contentsline {figure}{\numberline {4.24}{\ignorespaces Plots of the local $p$-value and significance for gluon fusion and b-associated production.}}{103}{figure.caption.127}%
-\contentsline {figure}{\numberline {4.25}{\ignorespaces Plots of the compatibility of the 100 GeV excess across the di-$\tau $ decay channels and categories.}}{104}{figure.caption.128}%
-\contentsline {figure}{\numberline {4.26}{\ignorespaces Plots of the compatibility of the 1.2 TeV excess across the di-$\tau $ decay channels.}}{105}{figure.caption.129}%
-\contentsline {figure}{\numberline {4.27}{\ignorespaces Plots of the maximum likelihood scans for the model-independent search.}}{106}{figure.caption.130}%
-\contentsline {figure}{\numberline {4.28}{\ignorespaces Plots of the model-dependent limits in MSSM benchmark scenarios.}}{108}{figure.caption.131}%
-\contentsline {figure}{\numberline {4.29}{\ignorespaces Plots of the model-dependent limits in the vector leptoquark phase space.}}{109}{figure.caption.132}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Feynman diagrams for gluon fusion and production in association with b quarks.}}{62}{figure.caption.82}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Plots of the gluon fusion generator level $p_{T}$ distributions, when changing the MSSM parameters.}}{64}{figure.caption.84}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Feynman diagrams for the production of a di-$\tau $ final state from vector leptoquarks.}}{66}{figure.caption.86}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Plots of the vector leptoquark generator level $m_{\tau \tau }$ distributions, when changing $g_{U}$.}}{67}{figure.caption.88}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Diagram of the inputs to the $D_\zeta $ variable.}}{70}{figure.caption.91}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Diagram of the categories in the high-mass optimisation procedure.}}{72}{figure.caption.92}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Diagram of the categories in the low-mass optimisation procedure.}}{74}{figure.caption.94}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Diagram of the embedding method.}}{78}{figure.caption.96}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Plot of the validation of the embedding method.}}{79}{figure.caption.97}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Diagram of the regions used for fake factor derivation.}}{81}{figure.caption.98}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Plot of the reliance of the fake factors on the ratio of the $\tau _{h}$ and jet $p_{T}$.}}{83}{figure.caption.99}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Diagram of the algorithm used to choose the binned values taken at high $p_{T}$ during the fake factor fitting.}}{84}{figure.caption.100}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Plots of the fake factor fits in the $\tau _{h}\tau _{h}$ channel.}}{85}{figure.caption.101}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Plots of the fake factor fits in the $\mu \tau _{h}$ channel.}}{85}{figure.caption.102}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Diagram of the fake MET alignment with the $\tau _{h}$ candidate.}}{86}{figure.caption.103}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Plots of fake factor \texttt {Determination Region} closure correction fits.}}{87}{figure.caption.104}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Plots of fake factor \texttt {Determination Region} to \texttt {Application Region} closure correction fits.}}{88}{figure.caption.105}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Plots of the expected fake factor \texttt {Application Region} fractions of the processes in the $\mu _{}\tau _{h}$ channel.}}{89}{figure.caption.106}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Plots of the $m_{\tau \tau }$ distributions in the low-mass optimisation categories.}}{100}{figure.caption.122}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Plots of the $m_{T}^\text {tot}$ distributions in the high-mass optimisation categories.}}{101}{figure.caption.123}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Plots of the model-independent limits on the cross-sections of gluon fusion and b-associated production multiplied by the $\tau \tau $ branching fraction.}}{102}{figure.caption.124}%
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Plots of the expected model-independent limits split by the $\tau \tau $ decay channels.}}{103}{figure.caption.125}%
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Plots of the comparison of the model-independent limits between CMS and ATLAS.}}{104}{figure.caption.126}%
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Plots of the local $p$-value and significance for gluon fusion and b-associated production.}}{104}{figure.caption.127}%
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Plots of the compatibility of the 100 GeV excess across the di-$\tau $ decay channels and categories.}}{105}{figure.caption.128}%
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Plots of the compatibility of the 1.2 TeV excess across the di-$\tau $ decay channels.}}{106}{figure.caption.129}%
+\contentsline {figure}{\numberline {4.27}{\ignorespaces Plots of the maximum likelihood scans for the model-independent search.}}{107}{figure.caption.130}%
+\contentsline {figure}{\numberline {4.28}{\ignorespaces Plots of the model-dependent limits in MSSM benchmark scenarios.}}{109}{figure.caption.131}%
+\contentsline {figure}{\numberline {4.29}{\ignorespaces Plots of the model-dependent limits in the vector leptoquark phase space.}}{110}{figure.caption.132}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Diagram of the production of two additional neutral Higgs bosons from an off-shell Z boson and their decay to $\tau $ leptons.}}{113}{figure.caption.133}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Plots of the $Z\rightarrow \phi {\ensuremath {\text {A}}}\xspace $ generator level distributions of the visible masses $m^{A}_{\text {vis}}$ and $m^{\phi }_{\text {vis}}$.}}{113}{figure.caption.134}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Plot of the production cross-sections for the $Z^{*} \rightarrow \phi A$ process.}}{114}{figure.caption.135}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Plots of the branching fractions $\phi $ and A to pairs of $\tau $ leptons in the alignment scenario.}}{115}{figure.caption.136}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Plot of the branching fractions of $\phi $ to pairs of $\tau $ leptons out of the alignment scenario.}}{115}{figure.caption.137}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Diagram of the categories used to extract $Z^{*}\rightarrow \phi A \rightarrow 4\tau $.}}{119}{figure.caption.140}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Plots of the distributions in the $\mu \mu \mu \mu $ channel.}}{121}{figure.caption.142}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Plots of the validation of the BDT subtraction method.}}{127}{figure.caption.143}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Plots of the average fake factors calculated by the BDT reweighter.}}{128}{figure.caption.144}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Plots of the validation of the ML fake factor fits.}}{130}{figure.caption.145}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Plots of the $m_{T}^\text {tot}$ distributions in the $\tau \tau \tau \tau $ channels and categories.}}{135}{figure.caption.151}%
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Plot of the model-independent limits on the cross-section of the production from an off-shell Z boson multiplied by the branching fractions of $\phi $ and A to $\tau $ pairs.}}{137}{figure.caption.152}%
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Plot of the expected model-independent limits split by the $\tau \tau \tau \tau $ decay channels.}}{138}{figure.caption.153}%
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Plot of the compatibility of the model-independent results across $\tau \tau \tau \tau $ decay channels.}}{138}{figure.caption.154}%
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Plots of the model-dependent limits in the type X 2HDM alignment scenario.}}{140}{figure.caption.155}%
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Plots of the model-dependent limits in the type X 2HDM, out of the alignment scenario.}}{141}{figure.caption.156}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Diagram of the production of two additional neutral Higgs bosons from an off-shell Z boson and their decay to $\tau $ leptons.}}{114}{figure.caption.133}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Plots of the $Z\rightarrow \phi {\ensuremath {\text {A}}}\xspace $ generator level distributions of the visible masses $m^{A}_{\text {vis}}$ and $m^{\phi }_{\text {vis}}$.}}{114}{figure.caption.134}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Plot of the production cross-sections for the $Z^{*} \rightarrow \phi A$ process.}}{115}{figure.caption.135}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Plots of the branching fractions $\phi $ and A to pairs of $\tau $ leptons in the alignment scenario.}}{116}{figure.caption.136}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Plot of the branching fractions of $\phi $ to pairs of $\tau $ leptons out of the alignment scenario.}}{116}{figure.caption.137}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Diagram of the categories used to extract $Z^{*}\rightarrow \phi A \rightarrow 4\tau $.}}{120}{figure.caption.140}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Plots of the distributions in the $\mu \mu \mu \mu $ channel.}}{122}{figure.caption.142}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Plots of the validation of the BDT subtraction method.}}{128}{figure.caption.143}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Plots of the average fake factors calculated by the BDT reweighter.}}{129}{figure.caption.144}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Plots of the validation of the ML fake factor fits.}}{131}{figure.caption.145}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Plots of the $m_{T}^\text {tot}$ distributions in the $\tau \tau \tau \tau $ channels and categories.}}{136}{figure.caption.151}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Plot of the model-independent limits on the cross-section of the production from an off-shell Z boson multiplied by the branching fractions of $\phi $ and A to $\tau $ pairs.}}{138}{figure.caption.152}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Plot of the expected model-independent limits split by the $\tau \tau \tau \tau $ decay channels.}}{139}{figure.caption.153}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Plot of the compatibility of the model-independent results across $\tau \tau \tau \tau $ decay channels.}}{139}{figure.caption.154}%
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Plots of the model-dependent limits in the type X 2HDM alignment scenario.}}{141}{figure.caption.155}%
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Plots of the model-dependent limits in the type X 2HDM, out of the alignment scenario.}}{142}{figure.caption.156}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Plots of the model-dependent limits in the type X 2HDM alignment scenario, with overlayed \textsc {HiggsTools} limits.}}{144}{figure.caption.157}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Plots of the model-dependent limits in the type X 2HDM, out of the alignment scenario, with overlayed \textsc {HiggsTools} limits.}}{145}{figure.caption.158}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Plots of the model-dependent limits in the type X 2HDM alignment scenario, with overlayed \textsc {HiggsTools} limits.}}{145}{figure.caption.157}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Plots of the model-dependent limits in the type X 2HDM, out of the alignment scenario, with overlayed \textsc {HiggsTools} limits.}}{146}{figure.caption.158}%
