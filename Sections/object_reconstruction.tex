@@ -1,8 +1,8 @@
 \chapter{Object reconstruction}
 \label{sec:object_reconstruction}
 
-This chapter will overview the methods used to reconstruct the objects in each event, that are critical for the searches described in Chapters~\ref{sec:bsm_H_to_tau_tau_analysis} and~\ref{sec:H_A_to_4_tau_analysis}.
-The topics discussed here are the reconstruction of tracks and vertices, the particle flow algorithm, the calculation of the \ac{MET}, the measurements of jets and the tagging of their flavours, and the identification of electrons, muons, and tau ($\tau$) leptons.
+This chapter provides an overview of the methods used to reconstruct the objects in each event, that are critical for the searches described in Chapters~\ref{sec:bsm_H_to_tau_tau_analysis} and~\ref{sec:H_A_to_4_tau_analysis}.
+The topics discussed here are the reconstruction of tracks and vertices, the \ac{PF} algorithm, the calculation of the \ac{MET}, the measurements of jets and the tagging of their flavours, and the identification of electrons, muons, and tau ($\tau$) leptons.
 
 \section{Tracks and vertices}
 \label{sec:track_and_vertex}
@@ -30,7 +30,6 @@ Tracks are then clustered based on the $z$ coordinate of their closest approach 
 Candidate vertices are retained if at least two of their associated tracks are incompatible with other vertices. 
 The candidate vertices are fitted using an adaptive vertex fitter~\cite{Fruhwirth:2007hz} to determine the best estimate of their three-dimensional positions. 
 The \ac{PV} is determined as the vertex with the highest summed physics-object $\pT$.
-
 The efficiency of vertex reconstruction has been measured, with values exceeding 98.7\% for vertices containing at least two tracks and exceeding 99.9\% for vertices with four or more tracks~\cite{CMS:2010mua}. 
 
 \section{Particle flow}
@@ -41,13 +40,14 @@ The final output of the algorithm is a list of particles and their four vectors,
 
 The tracking and calorimeter clustering information are the initial inputs to the \ac{PF} algorithm.
 The tracking information includes the high-resolution momentum and direction of charged hadrons calculated by an iterative-tracking strategy~\cite{Adam:934067}, which is not achievable with the calorimeters.
-The calorimeter clustering is used to achieve multiple objectives, including detecting and measuring the energy and direction of neutral particles, separating neutral particles from charged hadrons, reconstructing electrons and bremsstrahlung photons, and aiding in the energy measurement of charged hadrons with inaccurate track parameters. 
-The clustering algorithm involves identifying \say{cluster seeds}, growing \say{topological clusters}, and generating \say{particle flow clusters} based on energy thresholds and cell-cluster distances in each sub-detector, except for the \ac{HF}, where each cell forms a cluster and is explained in more detail below. \\
+The calorimeter clustering has multiple objectives, including detecting and measuring the energy and direction of neutral particles, separating neutral particles from charged hadrons, reconstructing electrons and bremsstrahlung photons, and aiding in the energy measurement of charged hadrons with inaccurate track parameters. 
+The clustering algorithm involves identifying \say{cluster seeds}, growing \say{topological clusters}, and generating \say{\ac{PF} clusters} based on energy thresholds and cell-cluster distances in each sub-detector, except for the \ac{HF}, where each cell forms a cluster.
+This is explained in more detail below. \\
 
 The clustering algorithm used in the calorimeters can be split into three stages. 
 Firstly, \say{cluster seeds} are identified as local maxima of energy in calorimeter cells above a specified threshold. 
 Secondly, \say{topological clusters} are formed by combining cells that have at least one side in common with an existing cluster cell and exceed a given energy threshold. 
-These thresholds corresponding to the electronics' noise are 80 MeV in the \ac{ECAL} barrel, 300 MeV in the \ac{ECAL} end caps and 800 MeV in the \ac{HCAL}. 
+These thresholds correspond to the electronics' noise and are 80 MeV in the \ac{ECAL} barrel, 300 MeV in the \ac{ECAL} end caps and 800 MeV in the \ac{HCAL}. 
 The number of seeds dictates how many \say{particle flow clusters} are formed from a topological cluster.
 Utilising the granularity of the calorimeter, an iterative process is employed to determine cluster energies and positions by distributing the energy of each cell among all particle flow clusters based on the distance between the cell and the cluster. \\
 
@@ -61,9 +61,9 @@ The global muon reconstruction starts with standalone muon tracks and matches th
 If a match is found, a combined fit using the \ac{KF} is performed with hits from both systems. \\
 
 Electron reconstruction begins by finding matching tracks with \ac{ECAL} energy clusters~\cite{CMS:2015xaf}.
-The path of electrons towards the \ac{ECAL} involves traversing a considerable amount of material, which constitutes the tracker. 
+The path of electrons towards the \ac{ECAL} involves traversing a considerable amount of material in the tracker. 
 The thickness of this material varies depending on the $\eta$ region, ranging from approximately 0.4 to 2 radiation lengths. 
-Within this material, electrons emit bremsstrahlung photons, resulting in a significant energy loss. 
+Within this material, electrons can emit bremsstrahlung photons, resulting in a significant energy loss. 
 At regions with maximal material thickness, electrons lose an average of 86\% of their energy, predominantly spreading out in the $\phi$ direction due to magnetic field-induced bending. 
 To accurately measure the initial electron energy, the energy from all emitted photons is measured through the \ac{SC} algorithms. 
 These algorithms initiate clustering with seed crystals, expanding the clusters based on energy thresholds and merging them into the \ac{SC}. \\
@@ -191,8 +191,8 @@ The electrons are required to pass the 90\% efficiency working point of the \ac{
 Finally, electrons are also subject to the same impact parameter requirements as the muons: the impact parameters $d_{xy}$ and $d_{z}$ between the electron track and the \ac{PV} are restricted to $d_{xy}<0.045$ cm and $d_{z}<0.2$ cm to ensure the electron is associated with the \ac{PV}. \\
 
 Similarly to muons, an isolation variable is used to further separate electrons from other backgrounds.
-Different than for muons, the isolation used is based on the photon, neutral and charged hadron \ac{PF} candidates within a smaller cone size of $\Delta R<0.3$ of the selected electron.
-A different method to estimate the neutral particles due to \ac{PU} is used namely the rho-effective-area method. 
+Unlike for muons, the isolation used is based on the photon, neutral and charged hadron \ac{PF} candidates within a smaller cone size of $\Delta R<0.3$ of the selected electron.
+A different method to estimate the neutral particles due to \ac{PU} is used, called the $\rho$-effective-area method. 
 The \ac{PU} contribution in this method is estimated as $\text{PU}=\rho A_{\text{eff}}$, where $\rho$ is the event-specific average \ac{PU} energy density per unit area in the $\phi$-$\eta$ plane and the $A_{\text{eff}}$ is the effective area specific to the given type of isolation. 
 The rho-effective-area subtracted relative combined isolation variable is defined as,
 
@@ -255,20 +255,20 @@ Chapters~\ref{sec:bsm_H_to_tau_tau_analysis} and \ref{sec:H_A_to_4_tau_analysis}
 The impact of \ac{PU} on jet energy and substructure is addressed by using the \ac{CHS} technique~\cite{CMS:2017wyc}. 
 \ac{CHS} excludes charged hadrons that are not associated with the \ac{PV} during jet clustering. 
 To reject misidentified jets a discriminator evaluated on variables like energy fractions carried by different types of \ac{PF} candidates, as well as charged and neutral particle multiplicities, is used~\cite{CMS:2017wyc}. 
-For data collected in 2017, the region with $2.65 < |\eta| < 3.139$ experiences substantial \ac{ECAL} noise, leading to a notable increase in the number of jets. 
+For data collected in 2017, the region with $2.65 < |\eta| < 3.139$ experienced substantial \ac{ECAL} noise, leading to a notable increase in the number of jets. 
 To veto this, jets with $\pT < 50$ GeV within this $\eta$ range are removed and a \ac{PU} jet identification discriminant is utilised to reject noise~\cite{CMS:2013wea}.
 For $\tau$ lepton selections in the later chapters, to exclude selected jets from electron, muon and hadronic $\tau$ decays, the jets are required to be separated from the selected $\tau$ candidate by $\Delta R > 0.5$.
 
 \section{b jets}
 
 For determining whether a jet is initiated by a b quark, the \texttt{DeepJet} algorithm~\cite{CMS:2017wtu,Bols:2020bkb} is used.  
-This heavy-flavour jet identifier uses properties of the jet to distinguish jets originating from b quarks, c quarks, the remainder of the lighter quarks grouped, and gluons.
+This heavy-flavour jet identifier uses properties of the jet to distinguish jets originating from b quarks, c quarks, lighter quarks and gluons.
 Core to the b tagging in this algorithm is the reconstruction of a \ac{SV} due to the lifetime of b quarks, allowing for displaced tracks.
 The \texttt{DeepJet} \ac{DNN} uses a combination of high-level variables such as the \ac{SV}, as well as utilising low-level variables of jet constituents to separate between initiators.
 The \ac{DNN} uses a mixture of convolutional and dense layers to perform this categorisation.
 The performance of the algorithm is shown in Figure~\ref{fig:deepjet}. \\
 
-For b jet selection, jets are required to have $\pT > 20$ GeV and $|\eta| <$ 2.4 (2.5) in 2016 (2017 and 2018), and are considered b tagged if their discriminator value is larger than some threshold that represents a misidentification rate of 1\%.
+Selected b jets are required to have $\pT > 20$ GeV and $|\eta| <$ 2.4 (2.5) in 2016 (2017 and 2018), and are considered b tagged if their discriminator value is larger than some threshold that represents a misidentification rate of 1\%.
 This corresponds to a b tagging efficiency of around 80\%.
 
 \begin{figure}[!hbtp]
@@ -313,7 +313,7 @@ These per-particle weights are then used to rescale the four-momenta of the part
 \section{Taus}
 \label{sec:taus}
 
-Fundamental to this thesis is the identification of $\tau$ particles.
+Fundamental to this thesis is the identification of $\tau$ leptons.
 The $\tau$ lepton is measured to have a mean lifetime of \(2.9 \times 10^{-13}\)s. 
 This short lifetime means that the $\tau$ lepton is not directly observable in the \ac{CMS} detector.  
 To detect these particles, it is important to understand how the $\tau$ decays. 
@@ -347,7 +347,7 @@ The leptonic decay of the $\tau$ can be accounted for by the identification of e
 \end{table}
 
 A two-step process is used to identify a $\tauh$.
-The \ac{HPS} algorithm is used to initially identify $\tauh$ objects based on jets produced by the anti-$k_{\text{T}}$ algorithm with a distance parameter of $R = 0.4$. 
+The \ac{HPS} algorithm~\cite{Sirunyan:2018pgf} is used to initially identify $\tauh$ objects based on jets produced by the anti-$k_{\text{T}}$ algorithm with a distance parameter of $R = 0.4$. 
 To capture the energy deposits left by $\pi^0$ candidates in the \ac{ECAL}, the photon and electron constituents of the jet responsible for seeding the $\tauh$ reconstruction are assembled into strips. 
 All electrons or photons used are required to have $p_{\text{T}} > 0.5$ GeV.
 The initial iteration of the \ac{HPS} algorithm used a fixed strip size of $\Delta \eta \times \Delta \phi$ equal to $0.05 \times 0.20$.
@@ -386,7 +386,7 @@ These functions have lower and upper caps of 0.05 to 0.3 for $\Delta\phi$ and 0.
 Charged hadrons (prongs) are also required to have $\pT > 0.5$ GeV and originate from the \ac{PV}, with a loose transverse impact parameter of $d_{xy} < 0.1$ cm.
 Further constraints are placed on the reconstructed masses of the specific resonances if produced in a $\tauh$ decay.
 In particular, the visible mass positions and widths of the grouped charged hadrons and strips are optimised to match the $\rho$ (770 MeV) and $a_1$ (1260 MeV) decays.
-This is performed to maximise the fraction of $\tauh$ identification efficiency to the probability of misidentification from jets.
+This is performed to minimise the probability of misidentification from jets.
 The visible decay products of each decay shown in Table~\ref{tab:tau_decay} are reconstructed by:
 
 \begin{enumerate}[i)]
@@ -404,7 +404,7 @@ The \ac{DM} of the $\tauh$ object that is reconstructed by \ac{HPS} is quantifie
 \text{DM} = 5(N_{C} - 1) + N_{N}
 \end{equation}
 
-The second step of the identification comes from a multiclass \ac{DNN}-based algorithm named \texttt{DeepTau}, which seeks to discriminate $\tauh$ decays from electrons, muons, and most importantly quark or gluon jets, which can be misidentified as $\tau$ decays~\cite{CMS:2022prd}.
+The second step of the identification comes from a multiclass \ac{DNN}-based algorithm named \texttt{DeepTau}, which seeks to discriminate $\tauh$ decays from electrons, muons, and most importantly quark or gluon jets, which can be misidentified as $\tau$ decays~\cite{CMS:2022prd}, trained on \ac{MC} simulated events.
 It uses a \ac{DNN} architecture that consists of multiple interconnected layers of nodes, that attempt to learn whether the input object is a $\tauh$ decay, an electron, a muon or a jet. 
 The algorithm takes inputs from reconstructed particles surrounding the \ac{HPS} $\tauh$ candidate, including information about energies, momenta, and spatial positions. 
 Convolutional layers are used to efficiently process these inputs by dividing them into smaller regions in $\eta$-$\phi$ space, which allows the algorithm to extract local patterns and features. 
