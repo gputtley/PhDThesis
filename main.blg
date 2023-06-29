@@ -36,6 +36,11 @@ Repeated entry---line 4536 of file bibs/sample.bib
  : @article{Cacciari:2011ma
  :                         ,
 I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 4796 of file bibs/sample.bib
+ :     
+ :     volume = "CERN-2004-003-V-3, CERN-2004-003"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 You can't pop an empty literal stack for entry CMS_MSSM_Tau_2018
 while executing---line 1140 of file JHEP.bst.bst
 You can't pop an empty literal stack for entry CMS:2022rbd
@@ -316,37 +321,37 @@ You can't pop an empty literal stack for entry Bechtle:2020uwn
 while executing---line 1140 of file JHEP.bst.bst
 You've used 142 entries,
             2283 wiz_defined-function locations,
-            1574 strings with 30509 characters,
-and the built_in function-call counts, 45092 in all, are:
-= -- 4491
+            1576 strings with 30571 characters,
+and the built_in function-call counts, 45241 in all, are:
+= -- 4509
 > -- 2132
 < -- 0
 + -- 614
 - -- 472
-* -- 3846
-:= -- 6775
+* -- 3871
+:= -- 6803
 add.period$ -- 146
 call.type$ -- 142
 change.case$ -- 142
 chr.to.int$ -- 0
 cite$ -- 144
-duplicate$ -- 2273
-empty$ -- 3786
+duplicate$ -- 2283
+empty$ -- 3804
 format.name$ -- 472
-if$ -- 11739
+if$ -- 11777
 int.to.chr$ -- 0
 int.to.str$ -- 142
-missing$ -- 539
+missing$ -- 541
 newline$ -- 434
 num.names$ -- 217
-pop$ -- 228
+pop$ -- 229
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
 skip$ -- 1827
 stack$ -- 0
 substring$ -- 1261
-swap$ -- 1161
+swap$ -- 1163
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
@@ -354,5 +359,5 @@ type$ -- 0
 warning$ -- 2
 while$ -- 358
 width$ -- 145
-write$ -- 1603
-(There were 147 error messages)
+write$ -- 1610
+(There were 148 error messages)

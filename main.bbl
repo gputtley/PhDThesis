@@ -293,7 +293,9 @@ L.~Evans and P.~Bryant (Eds.), \emph{{LHC Machine}},
 
 \bibitem{Benedikt:2004wm}
 M.~Benedikt, P.~Collier, V.~Mertens, J.~Poole and K.~Schindl (Eds.), \emph{{LHC
-  Design Report. 3. The LHC injector chain}}, .
+  Design Report. 3. The LHC injector chain}},
+  \href{https://doi.org/10.5170/CERN-2004-003-V-3}{\emph{CERN Yellow Reports:
+  Monographs} (2004) }.
 
 \bibitem{ALICE:2008ngc}
 {ALICE Collaboration}, \emph{{The ALICE experiment at the CERN LHC}},
@@ -350,7 +352,8 @@ H.~Bartosik and G.~Rumolo, \emph{{Performance of the LHC injector chain after
 
 \bibitem{CMS:2012tda}
 \emph{{CMS Technical Design Report for the Phase 1 Upgrade of the Hadron
-  Calorimeter}}, .
+  Calorimeter}}, \href{https://doi.org/10.2172/1151651}{\emph{CMS Technical
+  Design Report} {\bfseries CERN-LHCC-2012-015, CMS-TDR-010} (2012) }.
 
 \bibitem{Abbiendi:2015txa}
 {CMS Collaboration}, \emph{{The CMS muon system in Run2: preparation, status

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.26)  28 JUN 2023 17:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.26)  29 JUN 2023 09:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1197,7 +1197,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--40
 
  []
 
-<Figures/SM_diagram.pdf, id=764, 251.59396pt x 195.7162pt>
+<Figures/SM_diagram.pdf, id=767, 251.59396pt x 195.7162pt>
 File: Figures/SM_diagram.pdf Graphic file (type pdf)
 <use Figures/SM_diagram.pdf>
 Package pdftex.def Info: Figures/SM_diagram.pdf  used on input line 43.
@@ -1465,7 +1465,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--20
 [28
 
 ]
-<Figures/cern.png, id=1083, 346.896pt x 308.352pt>
+<Figures/cern.png, id=1087, 346.896pt x 308.352pt>
 File: Figures/cern.png Graphic file (type png)
 <use Figures/cern.png>
 Package pdftex.def Info: Figures/cern.png  used on input line 23.
@@ -1481,7 +1481,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--42
 
  []
 
-<Figures/int_lumi_cumulative_pp_2.pdf, id=1100, 578.16pt x 433.62pt>
+<Figures/int_lumi_cumulative_pp_2.pdf, id=1103, 578.16pt x 433.62pt>
 File: Figures/int_lumi_cumulative_pp_2.pdf Graphic file (type pdf)
 <use Figures/int_lumi_cumulative_pp_2.pdf>
 Package pdftex.def Info: Figures/int_lumi_cumulative_pp_2.pdf  used on input li
@@ -1497,7 +1497,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--59
  []
 
 [30 <./Figures/int_lumi_cumulative_pp_2.pdf>]
-<Figures/CMS_Detector.png, id=1171, 773.13844pt x 557.83406pt>
+<Figures/CMS_Detector.png, id=1174, 773.13844pt x 557.83406pt>
 File: Figures/CMS_Detector.png Graphic file (type png)
 <use Figures/CMS_Detector.png>
 Package pdftex.def Info: Figures/CMS_Detector.png  used on input line 76.
@@ -1510,7 +1510,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--86
  []
 
 [31]
-<Figures/tracker.png, id=1192, 1159.33125pt x 551.81157pt>
+<Figures/tracker.png, id=1195, 1159.33125pt x 551.81157pt>
 File: Figures/tracker.png Graphic file (type png)
 <use Figures/tracker.png>
 Package pdftex.def Info: Figures/tracker.png  used on input line 89.
@@ -1560,7 +1560,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--126
 
  []
 
-<Figures/ECAL.png, id=1250, 946.28531pt x 620.3175pt>
+<Figures/ECAL.png, id=1253, 946.28531pt x 620.3175pt>
 File: Figures/ECAL.png Graphic file (type png)
 <use Figures/ECAL.png>
 Package pdftex.def Info: Figures/ECAL.png  used on input line 138.
@@ -1585,7 +1585,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 145--148
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [34]
-<Figures/HCAL.png, id=1273, 970.3753pt x 583.42969pt>
+<Figures/HCAL.png, id=1276, 970.3753pt x 583.42969pt>
 File: Figures/HCAL.png Graphic file (type png)
 <use Figures/HCAL.png>
 Package pdftex.def Info: Figures/HCAL.png  used on input line 151.
@@ -1657,7 +1657,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 224--229
 
  []
 
-<Figures/trigger.png, id=1370, 802.49812pt x 570.63188pt>
+<Figures/trigger.png, id=1373, 802.49812pt x 570.63188pt>
 File: Figures/trigger.png Graphic file (type png)
 <use Figures/trigger.png>
 Package pdftex.def Info: Figures/trigger.png  used on input line 232.
@@ -1765,12 +1765,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 109--114
  []
 
 [45]
-<Figures/muon_res_loweta.png, id=1532, 372.64218pt x 528.47438pt>
+<Figures/muon_res_loweta.png, id=1535, 372.64218pt x 528.47438pt>
 File: Figures/muon_res_loweta.png Graphic file (type png)
 <use Figures/muon_res_loweta.png>
 Package pdftex.def Info: Figures/muon_res_loweta.png  used on input line 117.
 (pdftex.def)             Requested size: 213.39568pt x 302.62857pt.
-<Figures/muon_res_higheta.png, id=1533, 372.64218pt x 528.47438pt>
+<Figures/muon_res_higheta.png, id=1536, 372.64218pt x 528.47438pt>
 File: Figures/muon_res_higheta.png Graphic file (type png)
 <use Figures/muon_res_higheta.png>
 Package pdftex.def Info: Figures/muon_res_higheta.png  used on input line 118.
@@ -1791,13 +1791,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 177--181
 
  []
 
-<Figures/electron_id_barrel.png, id=1580, 398.99063pt x 447.92343pt>
+<Figures/electron_id_barrel.png, id=1583, 398.99063pt x 447.92343pt>
 File: Figures/electron_id_barrel.png Graphic file (type png)
 <use Figures/electron_id_barrel.png>
 Package pdftex.def Info: Figures/electron_id_barrel.png  used on input line 184
 .
 (pdftex.def)             Requested size: 213.39568pt x 239.5649pt.
-<Figures/electron_id_endcap.png, id=1581, 395.22656pt x 447.92343pt>
+<Figures/electron_id_endcap.png, id=1584, 395.22656pt x 447.92343pt>
 File: Figures/electron_id_endcap.png Graphic file (type png)
 <use Figures/electron_id_endcap.png>
 Package pdftex.def Info: Figures/electron_id_endcap.png  used on input line 185
@@ -1822,7 +1822,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 264--270
 
  []
 
-<Figures/deepjet.pdf, id=1653, 569.12625pt x 413.545pt>
+<Figures/deepjet.pdf, id=1656, 569.12625pt x 413.545pt>
 File: Figures/deepjet.pdf Graphic file (type pdf)
 <use Figures/deepjet.pdf>
 Package pdftex.def Info: Figures/deepjet.pdf  used on input line 276.
@@ -1841,12 +1841,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 316--324
 Package acronym Info: Label `acro:HPS' newly defined as it shall be overridden
 although it is yet undefined on input line 350.
  [54]
-<Figures/hps_f.png, id=1761, 634.62094pt x 563.85657pt>
+<Figures/hps_f.png, id=1764, 634.62094pt x 563.85657pt>
 File: Figures/hps_f.png Graphic file (type png)
 <use Figures/hps_f.png>
 Package pdftex.def Info: Figures/hps_f.png  used on input line 380.
 (pdftex.def)             Requested size: 213.39568pt x 189.60077pt.
-<Figures/hps_g.png, id=1762, 634.62094pt x 563.85657pt>
+<Figures/hps_g.png, id=1765, 634.62094pt x 563.85657pt>
 File: Figures/hps_g.png Graphic file (type png)
 <use Figures/hps_g.png>
 Package pdftex.def Info: Figures/hps_g.png  used on input line 381.
@@ -1862,7 +1862,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 407--413
  []
 
 [56]
-<Figures/deeptau.pdf, id=1805, 867.24pt x 578.16pt>
+<Figures/deeptau.pdf, id=1808, 867.24pt x 578.16pt>
 File: Figures/deeptau.pdf Graphic file (type pdf)
 <use Figures/deeptau.pdf>
 Package pdftex.def Info: Figures/deeptau.pdf  used on input line 416.
@@ -1875,19 +1875,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 430--432
 
  []
 
-<Figures/deeptau_misid_electron.pdf, id=1831, 569.12625pt x 549.05125pt>
+<Figures/deeptau_misid_electron.pdf, id=1834, 569.12625pt x 549.05125pt>
 File: Figures/deeptau_misid_electron.pdf Graphic file (type pdf)
 <use Figures/deeptau_misid_electron.pdf>
 Package pdftex.def Info: Figures/deeptau_misid_electron.pdf  used on input line
  461.
 (pdftex.def)             Requested size: 213.39568pt x 205.86858pt.
-<Figures/deeptau_misid_muon.pdf, id=1832, 569.12625pt x 549.05125pt>
+<Figures/deeptau_misid_muon.pdf, id=1835, 569.12625pt x 549.05125pt>
 File: Figures/deeptau_misid_muon.pdf Graphic file (type pdf)
 <use Figures/deeptau_misid_muon.pdf>
 Package pdftex.def Info: Figures/deeptau_misid_muon.pdf  used on input line 462
 .
 (pdftex.def)             Requested size: 213.39568pt x 205.86858pt.
-<Figures/deeptau_misid_jet.pdf, id=1833, 569.12625pt x 549.05125pt>
+<Figures/deeptau_misid_jet.pdf, id=1836, 569.12625pt x 549.05125pt>
 File: Figures/deeptau_misid_jet.pdf Graphic file (type pdf)
 <use Figures/deeptau_misid_jet.pdf>
 Package pdftex.def Info: Figures/deeptau_misid_jet.pdf  used on input line 463.
@@ -2005,25 +2005,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 123--129
 
  []
 
-<Figures/pT_reweighting_plot_A10.pdf, id=2025, 569.12625pt x 549.05125pt>
+<Figures/pT_reweighting_plot_A10.pdf, id=2028, 569.12625pt x 549.05125pt>
 File: Figures/pT_reweighting_plot_A10.pdf Graphic file (type pdf)
 <use Figures/pT_reweighting_plot_A10.pdf>
 Package pdftex.def Info: Figures/pT_reweighting_plot_A10.pdf  used on input lin
 e 132.
 (pdftex.def)             Requested size: 213.39568pt x 205.86858pt.
-<Figures/pT_reweighting_plot_A30.pdf, id=2026, 569.12625pt x 549.05125pt>
+<Figures/pT_reweighting_plot_A30.pdf, id=2029, 569.12625pt x 549.05125pt>
 File: Figures/pT_reweighting_plot_A30.pdf Graphic file (type pdf)
 <use Figures/pT_reweighting_plot_A30.pdf>
 Package pdftex.def Info: Figures/pT_reweighting_plot_A30.pdf  used on input lin
 e 133.
 (pdftex.def)             Requested size: 213.39568pt x 205.86858pt.
-<Figures/pT_reweighting_plot_H10.pdf, id=2027, 569.12625pt x 549.05125pt>
+<Figures/pT_reweighting_plot_H10.pdf, id=2030, 569.12625pt x 549.05125pt>
 File: Figures/pT_reweighting_plot_H10.pdf Graphic file (type pdf)
 <use Figures/pT_reweighting_plot_H10.pdf>
 Package pdftex.def Info: Figures/pT_reweighting_plot_H10.pdf  used on input lin
 e 134.
 (pdftex.def)             Requested size: 213.39568pt x 205.86858pt.
-<Figures/pT_reweighting_plot_H30.pdf, id=2028, 569.12625pt x 549.05125pt>
+<Figures/pT_reweighting_plot_H30.pdf, id=2031, 569.12625pt x 549.05125pt>
 File: Figures/pT_reweighting_plot_H30.pdf Graphic file (type pdf)
 <use Figures/pT_reweighting_plot_H30.pdf>
 Package pdftex.def Info: Figures/pT_reweighting_plot_H30.pdf  used on input lin
@@ -2163,13 +2163,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 269--274
 
  []
 
-<Figures/vlq_signal_plot_gU3.pdf, id=2265, 569.12625pt x 549.05125pt>
+<Figures/vlq_signal_plot_gU3.pdf, id=2268, 569.12625pt x 549.05125pt>
 File: Figures/vlq_signal_plot_gU3.pdf Graphic file (type pdf)
 <use Figures/vlq_signal_plot_gU3.pdf>
 Package pdftex.def Info: Figures/vlq_signal_plot_gU3.pdf  used on input line 27
 7.
 (pdftex.def)             Requested size: 213.39568pt x 205.86858pt.
-<Figures/vlq_signal_plot_gU5.pdf, id=2266, 569.12625pt x 549.05125pt>
+<Figures/vlq_signal_plot_gU5.pdf, id=2269, 569.12625pt x 549.05125pt>
 File: Figures/vlq_signal_plot_gU5.pdf Graphic file (type pdf)
 <use Figures/vlq_signal_plot_gU5.pdf>
 Package pdftex.def Info: Figures/vlq_signal_plot_gU5.pdf  used on input line 27
@@ -2206,7 +2206,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 369--373
 
  []
 
-<Figures/dzeta_diagram.pdf, id=2373, 483.69685pt x 156.49016pt>
+<Figures/dzeta_diagram.pdf, id=2376, 483.69685pt x 156.49016pt>
 File: Figures/dzeta_diagram.pdf Graphic file (type pdf)
 <use Figures/dzeta_diagram.pdf>
 Package pdftex.def Info: Figures/dzeta_diagram.pdf  used on input line 385.
@@ -2231,7 +2231,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 434--437
 
  []
 
-<Figures/high_mass_categories.pdf, id=2399, 398.48875pt x 213.79875pt>
+<Figures/high_mass_categories.pdf, id=2402, 398.48875pt x 213.79875pt>
 File: Figures/high_mass_categories.pdf Graphic file (type pdf)
 <use Figures/high_mass_categories.pdf>
 Package pdftex.def Info: Figures/high_mass_categories.pdf  used on input line 4
@@ -2254,7 +2254,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 459--468
 
 Package acronym Info: Label `acro:NN' newly defined as it shall be overridden
 although it is yet undefined on input line 473.
-<Figures/low_mass_categories.pdf, id=2441, 398.48875pt x 398.48875pt>
+<Figures/low_mass_categories.pdf, id=2444, 398.48875pt x 398.48875pt>
 File: Figures/low_mass_categories.pdf Graphic file (type pdf)
 <use Figures/low_mass_categories.pdf>
 Package pdftex.def Info: Figures/low_mass_categories.pdf  used on input line 47
@@ -2327,13 +2327,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 561--569
  []
 
 [76]
-<Figures/Embedding_Diagram.pdf, id=2553, 398.48875pt x 313.17pt>
+<Figures/Embedding_Diagram.pdf, id=2556, 398.48875pt x 313.17pt>
 File: Figures/Embedding_Diagram.pdf Graphic file (type pdf)
 <use Figures/Embedding_Diagram.pdf>
 Package pdftex.def Info: Figures/Embedding_Diagram.pdf  used on input line 572.
 
 (pdftex.def)             Requested size: 384.1096pt x 301.8822pt.
-<Figures/embedding_validation.pdf, id=2557, 569.12625pt x 546.04pt>
+<Figures/embedding_validation.pdf, id=2560, 569.12625pt x 546.04pt>
 File: Figures/embedding_validation.pdf Graphic file (type pdf)
 <use Figures/embedding_validation.pdf>
 Package pdftex.def Info: Figures/embedding_validation.pdf  used on input line 5
@@ -2365,7 +2365,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 624--626
 
  []
 
-<Figures/ff_diagram_v2.pdf, id=2656, 796.67719pt x 469.47046pt>
+<Figures/ff_diagram_v2.pdf, id=2659, 796.67719pt x 469.47046pt>
 File: Figures/ff_diagram_v2.pdf Graphic file (type pdf)
 <use Figures/ff_diagram_v2.pdf>
 Package pdftex.def Info: Figures/ff_diagram_v2.pdf  used on input line 629.
@@ -2394,7 +2394,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 679--688
 
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/ff_colz_ttbar_lt_v2.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Figures/ff_colz_ttbar_lt_v2.pdf, id=2693, 569.12625pt x 549.05125pt>
+<Figures/ff_colz_ttbar_lt_v2.pdf, id=2697, 569.12625pt x 549.05125pt>
 File: Figures/ff_colz_ttbar_lt_v2.pdf Graphic file (type pdf)
 <use Figures/ff_colz_ttbar_lt_v2.pdf>
 Package pdftex.def Info: Figures/ff_colz_ttbar_lt_v2.pdf  used on input line 69
@@ -2413,7 +2413,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/ff_fit_jet_pt_low_0jet_pt_1_f
 f_qcd_tt_2018-EK.pdf): PDF inclusion: found PDF version <1.6>, but at most vers
 ion <1.5> allowed
-<Figures/ff_fit_jet_pt_low_0jet_pt_1_ff_qcd_tt_2018-EK.pdf, id=2758, 597.50829p
+<Figures/ff_fit_jet_pt_low_0jet_pt_1_ff_qcd_tt_2018-EK.pdf, id=2761, 597.50829p
 t x 597.50829pt>
 File: Figures/ff_fit_jet_pt_low_0jet_pt_1_ff_qcd_tt_2018-EK.pdf Graphic file (t
 ype pdf)
@@ -2426,7 +2426,7 @@ pdf  used on input line 740.
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/ff_fit_jet_pt_med_0jet_pt_1_f
 f_qcd_tt_2018-EK.pdf): PDF inclusion: found PDF version <1.6>, but at most vers
 ion <1.5> allowed
-<Figures/ff_fit_jet_pt_med_0jet_pt_1_ff_qcd_tt_2018-EK.pdf, id=2759, 597.50829p
+<Figures/ff_fit_jet_pt_med_0jet_pt_1_ff_qcd_tt_2018-EK.pdf, id=2762, 597.50829p
 t x 597.50829pt>
 File: Figures/ff_fit_jet_pt_med_0jet_pt_1_ff_qcd_tt_2018-EK.pdf Graphic file (t
 ype pdf)
@@ -2439,7 +2439,7 @@ pdf  used on input line 741.
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/ff_fit_jet_pt_high_0jet_pt_1_
 ff_qcd_tt_2018-EK.pdf): PDF inclusion: found PDF version <1.6>, but at most ver
 sion <1.5> allowed
-<Figures/ff_fit_jet_pt_high_0jet_pt_1_ff_qcd_tt_2018-EK.pdf, id=2760, 597.50829
+<Figures/ff_fit_jet_pt_high_0jet_pt_1_ff_qcd_tt_2018-EK.pdf, id=2763, 597.50829
 pt x 597.50829pt>
 File: Figures/ff_fit_jet_pt_high_0jet_pt_1_ff_qcd_tt_2018-EK.pdf Graphic file (
 type pdf)
@@ -2452,7 +2452,7 @@ Package pdftex.def Info: Figures/ff_fit_jet_pt_high_0jet_pt_1_ff_qcd_tt_2018-EK
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/ff_fit_jet_pt_low_0jet_pt_2_f
 f_qcd_mt_2018-EK.pdf): PDF inclusion: found PDF version <1.6>, but at most vers
 ion <1.5> allowed
-<Figures/ff_fit_jet_pt_low_0jet_pt_2_ff_qcd_mt_2018-EK.pdf, id=2761, 597.50829p
+<Figures/ff_fit_jet_pt_low_0jet_pt_2_ff_qcd_mt_2018-EK.pdf, id=2764, 597.50829p
 t x 597.50829pt>
 File: Figures/ff_fit_jet_pt_low_0jet_pt_2_ff_qcd_mt_2018-EK.pdf Graphic file (t
 ype pdf)
@@ -2465,7 +2465,7 @@ pdf  used on input line 749.
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/ff_fit_jet_pt_med_0jet_pt_2_f
 f_qcd_mt_2018-EK.pdf): PDF inclusion: found PDF version <1.6>, but at most vers
 ion <1.5> allowed
-<Figures/ff_fit_jet_pt_med_0jet_pt_2_ff_qcd_mt_2018-EK.pdf, id=2762, 597.50829p
+<Figures/ff_fit_jet_pt_med_0jet_pt_2_ff_qcd_mt_2018-EK.pdf, id=2765, 597.50829p
 t x 597.50829pt>
 File: Figures/ff_fit_jet_pt_med_0jet_pt_2_ff_qcd_mt_2018-EK.pdf Graphic file (t
 ype pdf)
@@ -2478,7 +2478,7 @@ pdf  used on input line 750.
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/ff_fit_jet_pt_high_0jet_pt_2_
 ff_qcd_mt_2018-EK.pdf): PDF inclusion: found PDF version <1.6>, but at most ver
 sion <1.5> allowed
-<Figures/ff_fit_jet_pt_high_0jet_pt_2_ff_qcd_mt_2018-EK.pdf, id=2763, 597.50829
+<Figures/ff_fit_jet_pt_high_0jet_pt_2_ff_qcd_mt_2018-EK.pdf, id=2766, 597.50829
 pt x 597.50829pt>
 File: Figures/ff_fit_jet_pt_high_0jet_pt_2_ff_qcd_mt_2018-EK.pdf Graphic file (
 type pdf)
@@ -2491,7 +2491,7 @@ Package pdftex.def Info: Figures/ff_fit_jet_pt_high_0jet_pt_2_ff_qcd_mt_2018-EK
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/ff_fit_jet_pt_low_0jet_pt_2_f
 f_wjets_mt_2018-EK.pdf): PDF inclusion: found PDF version <1.6>, but at most ve
 rsion <1.5> allowed
-<Figures/ff_fit_jet_pt_low_0jet_pt_2_ff_wjets_mt_2018-EK.pdf, id=2764, 597.5082
+<Figures/ff_fit_jet_pt_low_0jet_pt_2_ff_wjets_mt_2018-EK.pdf, id=2767, 597.5082
 9pt x 597.50829pt>
 File: Figures/ff_fit_jet_pt_low_0jet_pt_2_ff_wjets_mt_2018-EK.pdf Graphic file 
 (type pdf)
@@ -2504,7 +2504,7 @@ K.pdf  used on input line 752.
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/ff_fit_jet_pt_med_0jet_pt_2_f
 f_wjets_mt_2018-EK.pdf): PDF inclusion: found PDF version <1.6>, but at most ve
 rsion <1.5> allowed
-<Figures/ff_fit_jet_pt_med_0jet_pt_2_ff_wjets_mt_2018-EK.pdf, id=2765, 597.5082
+<Figures/ff_fit_jet_pt_med_0jet_pt_2_ff_wjets_mt_2018-EK.pdf, id=2768, 597.5082
 9pt x 597.50829pt>
 File: Figures/ff_fit_jet_pt_med_0jet_pt_2_ff_wjets_mt_2018-EK.pdf Graphic file 
 (type pdf)
@@ -2517,7 +2517,7 @@ K.pdf  used on input line 753.
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/ff_fit_jet_pt_high_0jet_pt_2_
 ff_wjets_mt_2018-EK.pdf): PDF inclusion: found PDF version <1.6>, but at most v
 ersion <1.5> allowed
-<Figures/ff_fit_jet_pt_high_0jet_pt_2_ff_wjets_mt_2018-EK.pdf, id=2766, 597.508
+<Figures/ff_fit_jet_pt_high_0jet_pt_2_ff_wjets_mt_2018-EK.pdf, id=2769, 597.508
 29pt x 597.50829pt>
 File: Figures/ff_fit_jet_pt_high_0jet_pt_2_ff_wjets_mt_2018-EK.pdf Graphic file
  (type pdf)
@@ -2572,7 +2572,7 @@ pdfTeX warning: /usr/bin/pdflatex (file ./Figures/ff_fit_jet_pt_high_0jet_pt_2_
 ff_wjets_mt_2018-EK.pdf): PDF inclusion: multiple pdfs with page group included
  in a single page
 >]
-<Figures/fakemet_plot.pdf, id=3083, 238.77306pt x 86.44696pt>
+<Figures/fakemet_plot.pdf, id=3086, 238.77306pt x 86.44696pt>
 File: Figures/fakemet_plot.pdf Graphic file (type pdf)
 <use Figures/fakemet_plot.pdf>
 Package pdftex.def Info: Figures/fakemet_plot.pdf  used on input line 772.
@@ -2587,7 +2587,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 792--796
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/ff_closure_ss_closure_nbjet0_
 qcd_tt_2018_v2-EK.pdf): PDF inclusion: found PDF version <1.6>, but at most ver
 sion <1.5> allowed
-<Figures/ff_closure_ss_closure_nbjet0_qcd_tt_2018_v2-EK.pdf, id=3119, 597.50829
+<Figures/ff_closure_ss_closure_nbjet0_qcd_tt_2018_v2-EK.pdf, id=3122, 597.50829
 pt x 597.50829pt>
 File: Figures/ff_closure_ss_closure_nbjet0_qcd_tt_2018_v2-EK.pdf Graphic file (
 type pdf)
@@ -2600,7 +2600,7 @@ Package pdftex.def Info: Figures/ff_closure_ss_closure_nbjet0_qcd_tt_2018_v2-EK
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/ff_closure_met_0jet_closure_q
 cd_mt_2018-EK.pdf): PDF inclusion: found PDF version <1.6>, but at most version
  <1.5> allowed
-<Figures/ff_closure_met_0jet_closure_qcd_mt_2018-EK.pdf, id=3120, 597.50829pt x
+<Figures/ff_closure_met_0jet_closure_qcd_mt_2018-EK.pdf, id=3123, 597.50829pt x
  597.50829pt>
 File: Figures/ff_closure_met_0jet_closure_qcd_mt_2018-EK.pdf Graphic file (type
  pdf)
@@ -2613,7 +2613,7 @@ Package pdftex.def Info: Figures/ff_closure_met_0jet_closure_qcd_mt_2018-EK.pdf
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/ff_closure_met_0jet_closure_w
 jets_mt_2018-EK.pdf): PDF inclusion: found PDF version <1.6>, but at most versi
 on <1.5> allowed
-<Figures/ff_closure_met_0jet_closure_wjets_mt_2018-EK.pdf, id=3121, 597.50829pt
+<Figures/ff_closure_met_0jet_closure_wjets_mt_2018-EK.pdf, id=3124, 597.50829pt
  x 597.50829pt>
 File: Figures/ff_closure_met_0jet_closure_wjets_mt_2018-EK.pdf Graphic file (ty
 pe pdf)
@@ -2626,7 +2626,7 @@ df  used on input line 806.
 pdfTeX warning: /usr/bin/pdflatex (file ./Figures/ff_closure_os_closure_nbjet0_
 alt_qcd_tt_2018_v2-EK.pdf): PDF inclusion: found PDF version <1.6>, but at most
  version <1.5> allowed
-<Figures/ff_closure_os_closure_nbjet0_alt_qcd_tt_2018_v2-EK.pdf, id=3126, 597.5
+<Figures/ff_closure_os_closure_nbjet0_alt_qcd_tt_2018_v2-EK.pdf, id=3129, 597.5
 0829pt x 597.50829pt>
 File: Figures/ff_closure_os_closure_nbjet0_alt_qcd_tt_2018_v2-EK.pdf Graphic fi
 le (type pdf)
@@ -2640,7 +2640,7 @@ pdfTeX warning: /usr/bin/pdflatex (file ./Figures/ff_closure_pt_1_nbjets0_dr_to
 _ar_aiso_closure_qcd_mt_2018-EK.pdf): PDF inclusion: found PDF version <1.6>, b
 ut at most version <1.5> allowed
 <Figures/ff_closure_pt_1_nbjets0_dr_to_ar_aiso_closure_qcd_mt_2018-EK.pdf, id=3
-127, 597.50829pt x 597.50829pt>
+130, 597.50829pt x 597.50829pt>
 File: Figures/ff_closure_pt_1_nbjets0_dr_to_ar_aiso_closure_qcd_mt_2018-EK.pdf 
 Graphic file (type pdf)
 <use Figures/ff_closure_pt_1_nbjets0_dr_to_ar_aiso_closure_qcd_mt_2018-EK.pdf>
@@ -2653,7 +2653,7 @@ pdfTeX warning: /usr/bin/pdflatex (file ./Figures/ff_closure_pt_1_nbjets0_tight
 mt_dr_to_ar_closure_wjets_mc_mt_2018-EK.pdf): PDF inclusion: found PDF version 
 <1.6>, but at most version <1.5> allowed
 <Figures/ff_closure_pt_1_nbjets0_tightmt_dr_to_ar_closure_wjets_mc_mt_2018-EK.p
-df, id=3128, 597.50829pt x 597.50829pt>
+df, id=3131, 597.50829pt x 597.50829pt>
 File: Figures/ff_closure_pt_1_nbjets0_tightmt_dr_to_ar_closure_wjets_mc_mt_2018
 -EK.pdf Graphic file (type pdf)
 <use Figures/ff_closure_pt_1_nbjets0_tightmt_dr_to_ar_closure_wjets_mc_mt_2018-
@@ -2677,7 +2677,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 830--835
 
  []
 
-<Figures/ff_fraction_tightmt_nbjets0_mt_2018_os_rebinning.pdf, id=3248, 569.126
+<Figures/ff_fraction_tightmt_nbjets0_mt_2018_os_rebinning.pdf, id=3251, 569.126
 25pt x 549.05125pt>
 File: Figures/ff_fraction_tightmt_nbjets0_mt_2018_os_rebinning.pdf Graphic file
  (type pdf)
@@ -2685,7 +2685,7 @@ File: Figures/ff_fraction_tightmt_nbjets0_mt_2018_os_rebinning.pdf Graphic file
 Package pdftex.def Info: Figures/ff_fraction_tightmt_nbjets0_mt_2018_os_rebinni
 ng.pdf  used on input line 838.
 (pdftex.def)             Requested size: 192.0548pt x 185.28423pt.
-<Figures/ff_fraction_loosemt_nbjets0_mt_2018_os_rebinning.pdf, id=3249, 569.126
+<Figures/ff_fraction_loosemt_nbjets0_mt_2018_os_rebinning.pdf, id=3252, 569.126
 25pt x 549.05125pt>
 File: Figures/ff_fraction_loosemt_nbjets0_mt_2018_os_rebinning.pdf Graphic file
  (type pdf)
@@ -2693,7 +2693,7 @@ File: Figures/ff_fraction_loosemt_nbjets0_mt_2018_os_rebinning.pdf Graphic file
 Package pdftex.def Info: Figures/ff_fraction_loosemt_nbjets0_mt_2018_os_rebinni
 ng.pdf  used on input line 839.
 (pdftex.def)             Requested size: 192.0548pt x 185.28423pt.
-<Figures/ff_fraction_tightmt_nbjets1_mt_2018_os_rebinning.pdf, id=3250, 569.126
+<Figures/ff_fraction_tightmt_nbjets1_mt_2018_os_rebinning.pdf, id=3253, 569.126
 25pt x 549.05125pt>
 File: Figures/ff_fraction_tightmt_nbjets1_mt_2018_os_rebinning.pdf Graphic file
  (type pdf)
@@ -2701,7 +2701,7 @@ File: Figures/ff_fraction_tightmt_nbjets1_mt_2018_os_rebinning.pdf Graphic file
 Package pdftex.def Info: Figures/ff_fraction_tightmt_nbjets1_mt_2018_os_rebinni
 ng.pdf  used on input line 840.
 (pdftex.def)             Requested size: 192.0548pt x 185.28423pt.
-<Figures/ff_fraction_loosemt_nbjets1_mt_2018_os_rebinning.pdf, id=3251, 569.126
+<Figures/ff_fraction_loosemt_nbjets1_mt_2018_os_rebinning.pdf, id=3254, 569.126
 25pt x 549.05125pt>
 File: Figures/ff_fraction_loosemt_nbjets1_mt_2018_os_rebinning.pdf Graphic file
  (type pdf)
@@ -2823,14 +2823,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 1086--1093
 
  []
 
-<Figures/postfit_lowmass_tt_nobtag_mediumpT.pdf, id=3665, 569.12625pt x 546.04p
+<Figures/postfit_lowmass_tt_nobtag_mediumpT.pdf, id=3668, 569.12625pt x 546.04p
 t>
 File: Figures/postfit_lowmass_tt_nobtag_mediumpT.pdf Graphic file (type pdf)
 <use Figures/postfit_lowmass_tt_nobtag_mediumpT.pdf>
 Package pdftex.def Info: Figures/postfit_lowmass_tt_nobtag_mediumpT.pdf  used o
 n input line 1096.
 (pdftex.def)             Requested size: 170.71393pt x 163.78827pt.
-<Figures/postfit_lowmass_tt_nobtag_highpT-cropped.pdf, id=3666, 540.0175pt x 52
+<Figures/postfit_lowmass_tt_nobtag_highpT-cropped.pdf, id=3669, 540.0175pt x 52
 5.965pt>
 File: Figures/postfit_lowmass_tt_nobtag_highpT-cropped.pdf Graphic file (type p
 df)
@@ -2838,28 +2838,28 @@ df)
 Package pdftex.def Info: Figures/postfit_lowmass_tt_nobtag_highpT-cropped.pdf  
 used on input line 1097.
 (pdftex.def)             Requested size: 170.71393pt x 166.2657pt.
-<Figures/postfit_lowmass_lt_nobtag_mediumpT.pdf, id=3667, 569.12625pt x 546.04p
+<Figures/postfit_lowmass_lt_nobtag_mediumpT.pdf, id=3670, 569.12625pt x 546.04p
 t>
 File: Figures/postfit_lowmass_lt_nobtag_mediumpT.pdf Graphic file (type pdf)
 <use Figures/postfit_lowmass_lt_nobtag_mediumpT.pdf>
 Package pdftex.def Info: Figures/postfit_lowmass_lt_nobtag_mediumpT.pdf  used o
 n input line 1098.
 (pdftex.def)             Requested size: 170.71393pt x 163.78827pt.
-<Figures/postfit_lowmass_lt_nobtag_highpT.pdf, id=3668, 569.12625pt x 546.04pt>
+<Figures/postfit_lowmass_lt_nobtag_highpT.pdf, id=3671, 569.12625pt x 546.04pt>
 
 File: Figures/postfit_lowmass_lt_nobtag_highpT.pdf Graphic file (type pdf)
 <use Figures/postfit_lowmass_lt_nobtag_highpT.pdf>
 Package pdftex.def Info: Figures/postfit_lowmass_lt_nobtag_highpT.pdf  used on 
 input line 1099.
 (pdftex.def)             Requested size: 170.71393pt x 163.78827pt.
-<Figures/postfit_lowmass_em_nobtag_mediumpT.pdf, id=3669, 569.12625pt x 546.04p
+<Figures/postfit_lowmass_em_nobtag_mediumpT.pdf, id=3672, 569.12625pt x 546.04p
 t>
 File: Figures/postfit_lowmass_em_nobtag_mediumpT.pdf Graphic file (type pdf)
 <use Figures/postfit_lowmass_em_nobtag_mediumpT.pdf>
 Package pdftex.def Info: Figures/postfit_lowmass_em_nobtag_mediumpT.pdf  used o
 n input line 1100.
 (pdftex.def)             Requested size: 170.71393pt x 163.78827pt.
-<Figures/postfit_lowmass_em_nobtag_highpT.pdf, id=3670, 569.12625pt x 546.04pt>
+<Figures/postfit_lowmass_em_nobtag_highpT.pdf, id=3673, 569.12625pt x 546.04pt>
 
 File: Figures/postfit_lowmass_em_nobtag_highpT.pdf Graphic file (type pdf)
 <use Figures/postfit_lowmass_em_nobtag_highpT.pdf>
@@ -2873,33 +2873,33 @@ LaTeX Warning: Float too large for page by 24.50223pt on input line 1104.
 Underfull \vbox (badness 1325) has occurred while \output is active []
 
  [97]
-<Figures/postfit_highmass_tt_nobtag.pdf, id=3678, 569.12625pt x 546.04pt>
+<Figures/postfit_highmass_tt_nobtag.pdf, id=3681, 569.12625pt x 546.04pt>
 File: Figures/postfit_highmass_tt_nobtag.pdf Graphic file (type pdf)
 <use Figures/postfit_highmass_tt_nobtag.pdf>
 Package pdftex.def Info: Figures/postfit_highmass_tt_nobtag.pdf  used on input 
 line 1108.
 (pdftex.def)             Requested size: 179.25157pt x 171.97852pt.
-<Figures/postfit_highmass_tt_btag.pdf, id=3679, 569.12625pt x 546.04pt>
+<Figures/postfit_highmass_tt_btag.pdf, id=3682, 569.12625pt x 546.04pt>
 File: Figures/postfit_highmass_tt_btag.pdf Graphic file (type pdf)
 <use Figures/postfit_highmass_tt_btag.pdf>
 Package pdftex.def Info: Figures/postfit_highmass_tt_btag.pdf  used on input li
 ne 1109.
 (pdftex.def)             Requested size: 179.25157pt x 171.97852pt.
-<Figures/postfit_highmass_lt_nobtag_tightmT.pdf, id=3680, 569.12625pt x 546.04p
+<Figures/postfit_highmass_lt_nobtag_tightmT.pdf, id=3683, 569.12625pt x 546.04p
 t>
 File: Figures/postfit_highmass_lt_nobtag_tightmT.pdf Graphic file (type pdf)
 <use Figures/postfit_highmass_lt_nobtag_tightmT.pdf>
 Package pdftex.def Info: Figures/postfit_highmass_lt_nobtag_tightmT.pdf  used o
 n input line 1110.
 (pdftex.def)             Requested size: 179.25157pt x 171.97852pt.
-<Figures/postfit_highmass_lt_btag_tightmT.pdf, id=3681, 569.12625pt x 546.04pt>
+<Figures/postfit_highmass_lt_btag_tightmT.pdf, id=3684, 569.12625pt x 546.04pt>
 
 File: Figures/postfit_highmass_lt_btag_tightmT.pdf Graphic file (type pdf)
 <use Figures/postfit_highmass_lt_btag_tightmT.pdf>
 Package pdftex.def Info: Figures/postfit_highmass_lt_btag_tightmT.pdf  used on 
 input line 1111.
 (pdftex.def)             Requested size: 179.25157pt x 171.97852pt.
-<Figures/postfit_highmass_em_nobtag_mediumdzeta.pdf, id=3682, 569.12625pt x 546
+<Figures/postfit_highmass_em_nobtag_mediumdzeta.pdf, id=3685, 569.12625pt x 546
 .04pt>
 File: Figures/postfit_highmass_em_nobtag_mediumdzeta.pdf Graphic file (type pdf
 )
@@ -2907,7 +2907,7 @@ File: Figures/postfit_highmass_em_nobtag_mediumdzeta.pdf Graphic file (type pdf
 Package pdftex.def Info: Figures/postfit_highmass_em_nobtag_mediumdzeta.pdf  us
 ed on input line 1112.
 (pdftex.def)             Requested size: 179.25157pt x 171.97852pt.
-<Figures/postfit_highmass_em_btag_mediumdzeta.pdf, id=3683, 569.12625pt x 546.0
+<Figures/postfit_highmass_em_btag_mediumdzeta.pdf, id=3686, 569.12625pt x 546.0
 4pt>
 File: Figures/postfit_highmass_em_btag_mediumdzeta.pdf Graphic file (type pdf)
 <use Figures/postfit_highmass_em_btag_mediumdzeta.pdf>
@@ -2923,13 +2923,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 1122--1127
 
  []
 
-<Figures/model_independent_limit_ggH.pdf, id=3688, 569.12625pt x 546.04pt>
+<Figures/model_independent_limit_ggH.pdf, id=3691, 569.12625pt x 546.04pt>
 File: Figures/model_independent_limit_ggH.pdf Graphic file (type pdf)
 <use Figures/model_independent_limit_ggH.pdf>
 Package pdftex.def Info: Figures/model_independent_limit_ggH.pdf  used on input
  line 1130.
 (pdftex.def)             Requested size: 277.41176pt x 266.17052pt.
-<Figures/model_independent_limit_bbH.pdf, id=3689, 569.12625pt x 546.04pt>
+<Figures/model_independent_limit_bbH.pdf, id=3692, 569.12625pt x 546.04pt>
 File: Figures/model_independent_limit_bbH.pdf Graphic file (type pdf)
 <use Figures/model_independent_limit_bbH.pdf>
 Package pdftex.def Info: Figures/model_independent_limit_bbH.pdf  used on input
@@ -2943,13 +2943,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 1136--1143
 
  []
 
-<Figures/limit_comparison_mssm_ggphi.pdf, id=3696, 569.12625pt x 546.04pt>
+<Figures/limit_comparison_mssm_ggphi.pdf, id=3699, 569.12625pt x 546.04pt>
 File: Figures/limit_comparison_mssm_ggphi.pdf Graphic file (type pdf)
 <use Figures/limit_comparison_mssm_ggphi.pdf>
 Package pdftex.def Info: Figures/limit_comparison_mssm_ggphi.pdf  used on input
  line 1146.
 (pdftex.def)             Requested size: 213.39568pt x 204.7395pt.
-<Figures/limit_comparison_mssm_bbphi.pdf, id=3697, 569.12625pt x 546.04pt>
+<Figures/limit_comparison_mssm_bbphi.pdf, id=3700, 569.12625pt x 546.04pt>
 File: Figures/limit_comparison_mssm_bbphi.pdf Graphic file (type pdf)
 <use Figures/limit_comparison_mssm_bbphi.pdf>
 Package pdftex.def Info: Figures/limit_comparison_mssm_bbphi.pdf  used on input
@@ -2969,13 +2969,13 @@ nobtag_mediumdzeta.pdf, page is rotated 90 degrees> <./Figures/postfit_highmass
 _em_btag_mediumdzeta.pdf, page is rotated 90 degrees>] [101 <./Figures/model_in
 dependent_limit_ggH.pdf, page is rotated 90 degrees> <./Figures/model_independe
 nt_limit_bbH.pdf, page is rotated 90 degrees>]
-<Figures/limit_comparison_gg_ATLAS.pdf, id=4328, 569.12625pt x 546.04pt>
+<Figures/limit_comparison_gg_ATLAS.pdf, id=4331, 569.12625pt x 546.04pt>
 File: Figures/limit_comparison_gg_ATLAS.pdf Graphic file (type pdf)
 <use Figures/limit_comparison_gg_ATLAS.pdf>
 Package pdftex.def Info: Figures/limit_comparison_gg_ATLAS.pdf  used on input l
 ine 1163.
 (pdftex.def)             Requested size: 213.39568pt x 204.7395pt.
-<Figures/limit_comparison_bb_ATLAS.pdf, id=4329, 569.12625pt x 546.04pt>
+<Figures/limit_comparison_bb_ATLAS.pdf, id=4332, 569.12625pt x 546.04pt>
 File: Figures/limit_comparison_bb_ATLAS.pdf Graphic file (type pdf)
 <use Figures/limit_comparison_bb_ATLAS.pdf>
 Package pdftex.def Info: Figures/limit_comparison_bb_ATLAS.pdf  used on input l
@@ -2986,13 +2986,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 1172--1177
 
  []
 
-<Figures/significance_plot_ggH.pdf, id=4334, 569.12625pt x 549.05125pt>
+<Figures/significance_plot_ggH.pdf, id=4337, 569.12625pt x 549.05125pt>
 File: Figures/significance_plot_ggH.pdf Graphic file (type pdf)
 <use Figures/significance_plot_ggH.pdf>
 Package pdftex.def Info: Figures/significance_plot_ggH.pdf  used on input line 
 1180.
 (pdftex.def)             Requested size: 213.39568pt x 205.86858pt.
-<Figures/significance_plot_bbH.pdf, id=4335, 569.12625pt x 549.05125pt>
+<Figures/significance_plot_bbH.pdf, id=4338, 569.12625pt x 549.05125pt>
 File: Figures/significance_plot_bbH.pdf Graphic file (type pdf)
 <use Figures/significance_plot_bbH.pdf>
 Package pdftex.def Info: Figures/significance_plot_bbH.pdf  used on input line 
@@ -3004,7 +3004,7 @@ Figures/limit_comparison_gg_ATLAS.pdf, page is rotated 90 degrees> <./Figures/l
 imit_comparison_bb_ATLAS.pdf, page is rotated 90 degrees> <./Figures/significan
 ce_plot_ggH.pdf, page is rotated 90 degrees> <./Figures/significance_plot_bbH.p
 df, page is rotated 90 degrees>]
-<Figures/ChannelCompatibilityCheck_FitResults_mH100_channel.pdf, id=4609, 569.1
+<Figures/ChannelCompatibilityCheck_FitResults_mH100_channel.pdf, id=4613, 569.1
 2625pt x 546.04pt>
 File: Figures/ChannelCompatibilityCheck_FitResults_mH100_channel.pdf Graphic fi
 le (type pdf)
@@ -3012,7 +3012,7 @@ le (type pdf)
 Package pdftex.def Info: Figures/ChannelCompatibilityCheck_FitResults_mH100_cha
 nnel.pdf  used on input line 1198.
 (pdftex.def)             Requested size: 213.39568pt x 204.7395pt.
-<Figures/ChannelCompatibilityCheck_FitResults_mH100_cat.pdf, id=4610, 569.12625
+<Figures/ChannelCompatibilityCheck_FitResults_mH100_cat.pdf, id=4614, 569.12625
 pt x 546.04pt>
 File: Figures/ChannelCompatibilityCheck_FitResults_mH100_cat.pdf Graphic file (
 type pdf)
@@ -3020,7 +3020,7 @@ type pdf)
 Package pdftex.def Info: Figures/ChannelCompatibilityCheck_FitResults_mH100_cat
 .pdf  used on input line 1199.
 (pdftex.def)             Requested size: 213.39568pt x 204.7395pt.
-<Figures/ccc_fit_result_mH1200_per-channel.pdf, id=4613, 569.12625pt x 546.04pt
+<Figures/ccc_fit_result_mH1200_per-channel.pdf, id=4617, 569.12625pt x 546.04pt
 >
 File: Figures/ccc_fit_result_mH1200_per-channel.pdf Graphic file (type pdf)
 <use Figures/ccc_fit_result_mH1200_per-channel.pdf>
@@ -3030,47 +3030,47 @@ Package pdftex.def Info: Figures/ccc_fit_result_mH1200_per-channel.pdf  used on
  [104 <./Figures/ChannelCompatibilityCheck_FitResults_mH100_channel.pdf, page i
 s rotated 90 degrees> <./Figures/ChannelCompatibilityCheck_FitResults_mH100_cat
 .pdf, page is rotated 90 degrees>]
-<Figures/2d_lkld_60.pdf, id=4709, 569.12625pt x 546.04pt>
+<Figures/2d_lkld_60.pdf, id=4712, 569.12625pt x 546.04pt>
 File: Figures/2d_lkld_60.pdf Graphic file (type pdf)
 <use Figures/2d_lkld_60.pdf>
 Package pdftex.def Info: Figures/2d_lkld_60.pdf  used on input line 1224.
 (pdftex.def)             Requested size: 140.84192pt x 135.12657pt.
-<Figures/2d_lkld_100.pdf, id=4710, 569.12625pt x 546.04pt>
+<Figures/2d_lkld_100.pdf, id=4713, 569.12625pt x 546.04pt>
 File: Figures/2d_lkld_100.pdf Graphic file (type pdf)
 <use Figures/2d_lkld_100.pdf>
 Package pdftex.def Info: Figures/2d_lkld_100.pdf  used on input line 1225.
 (pdftex.def)             Requested size: 140.84192pt x 135.12657pt.
-<Figures/2d_lkld_125.pdf, id=4711, 569.12625pt x 546.04pt>
+<Figures/2d_lkld_125.pdf, id=4714, 569.12625pt x 546.04pt>
 File: Figures/2d_lkld_125.pdf Graphic file (type pdf)
 <use Figures/2d_lkld_125.pdf>
 Package pdftex.def Info: Figures/2d_lkld_125.pdf  used on input line 1226.
 (pdftex.def)             Requested size: 140.84192pt x 135.12657pt.
-<Figures/2d_lkld_160.pdf, id=4712, 569.12625pt x 546.04pt>
+<Figures/2d_lkld_160.pdf, id=4715, 569.12625pt x 546.04pt>
 File: Figures/2d_lkld_160.pdf Graphic file (type pdf)
 <use Figures/2d_lkld_160.pdf>
 Package pdftex.def Info: Figures/2d_lkld_160.pdf  used on input line 1227.
 (pdftex.def)             Requested size: 140.84192pt x 135.12657pt.
-<Figures/2d_lkld_250.pdf, id=4713, 569.12625pt x 546.04pt>
+<Figures/2d_lkld_250.pdf, id=4716, 569.12625pt x 546.04pt>
 File: Figures/2d_lkld_250.pdf Graphic file (type pdf)
 <use Figures/2d_lkld_250.pdf>
 Package pdftex.def Info: Figures/2d_lkld_250.pdf  used on input line 1228.
 (pdftex.def)             Requested size: 140.84192pt x 135.12657pt.
-<Figures/2d_lkld_500.pdf, id=4714, 569.12625pt x 546.04pt>
+<Figures/2d_lkld_500.pdf, id=4717, 569.12625pt x 546.04pt>
 File: Figures/2d_lkld_500.pdf Graphic file (type pdf)
 <use Figures/2d_lkld_500.pdf>
 Package pdftex.def Info: Figures/2d_lkld_500.pdf  used on input line 1229.
 (pdftex.def)             Requested size: 140.84192pt x 135.12657pt.
-<Figures/2d_lkld_1000.pdf, id=4715, 569.12625pt x 546.04pt>
+<Figures/2d_lkld_1000.pdf, id=4718, 569.12625pt x 546.04pt>
 File: Figures/2d_lkld_1000.pdf Graphic file (type pdf)
 <use Figures/2d_lkld_1000.pdf>
 Package pdftex.def Info: Figures/2d_lkld_1000.pdf  used on input line 1230.
 (pdftex.def)             Requested size: 140.84192pt x 135.12657pt.
-<Figures/2d_lkld_1200.pdf, id=4716, 569.12625pt x 546.04pt>
+<Figures/2d_lkld_1200.pdf, id=4719, 569.12625pt x 546.04pt>
 File: Figures/2d_lkld_1200.pdf Graphic file (type pdf)
 <use Figures/2d_lkld_1200.pdf>
 Package pdftex.def Info: Figures/2d_lkld_1200.pdf  used on input line 1231.
 (pdftex.def)             Requested size: 140.84192pt x 135.12657pt.
-<Figures/2d_lkld_3500.pdf, id=4717, 569.12625pt x 546.04pt>
+<Figures/2d_lkld_3500.pdf, id=4720, 569.12625pt x 546.04pt>
 File: Figures/2d_lkld_3500.pdf Graphic file (type pdf)
 <use Figures/2d_lkld_3500.pdf>
 Package pdftex.def Info: Figures/2d_lkld_3500.pdf  used on input line 1232.
@@ -3097,13 +3097,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 1253--1260
 
  []
 
-<Figures/model-dependent_limit_mh125.pdf, id=5174, 569.12625pt x 546.04pt>
+<Figures/model-dependent_limit_mh125.pdf, id=5177, 569.12625pt x 546.04pt>
 File: Figures/model-dependent_limit_mh125.pdf Graphic file (type pdf)
 <use Figures/model-dependent_limit_mh125.pdf>
 Package pdftex.def Info: Figures/model-dependent_limit_mh125.pdf  used on input
  line 1263.
 (pdftex.def)             Requested size: 277.41176pt x 266.17052pt.
-<Figures/model-dependent_limit_mh125EFT.pdf, id=5175, 569.12625pt x 546.04pt>
+<Figures/model-dependent_limit_mh125EFT.pdf, id=5178, 569.12625pt x 546.04pt>
 File: Figures/model-dependent_limit_mh125EFT.pdf Graphic file (type pdf)
 <use Figures/model-dependent_limit_mh125EFT.pdf>
 Package pdftex.def Info: Figures/model-dependent_limit_mh125EFT.pdf  used on in
@@ -3117,12 +3117,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1270--1274
 
  []
 
-<Figures/vlq_bm_1.pdf, id=5180, 569.12625pt x 546.04pt>
+<Figures/vlq_bm_1.pdf, id=5183, 569.12625pt x 546.04pt>
 File: Figures/vlq_bm_1.pdf Graphic file (type pdf)
 <use Figures/vlq_bm_1.pdf>
 Package pdftex.def Info: Figures/vlq_bm_1.pdf  used on input line 1277.
 (pdftex.def)             Requested size: 277.41176pt x 266.17052pt.
-<Figures/vlq_bm_2.pdf, id=5181, 569.12625pt x 546.04pt>
+<Figures/vlq_bm_2.pdf, id=5184, 569.12625pt x 546.04pt>
 File: Figures/vlq_bm_2.pdf Graphic file (type pdf)
 <use Figures/vlq_bm_2.pdf>
 Package pdftex.def Info: Figures/vlq_bm_2.pdf  used on input line 1278.
@@ -3172,12 +3172,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 73--79
  []
 
 [112]
-<Figures/mA_dist.pdf, id=5426, 569.12625pt x 549.05125pt>
+<Figures/mA_dist.pdf, id=5429, 569.12625pt x 549.05125pt>
 File: Figures/mA_dist.pdf Graphic file (type pdf)
 <use Figures/mA_dist.pdf>
 Package pdftex.def Info: Figures/mA_dist.pdf  used on input line 82.
 (pdftex.def)             Requested size: 209.1301pt x 201.75505pt.
-<Figures/mphi_dist.pdf, id=5427, 569.12625pt x 549.05125pt>
+<Figures/mphi_dist.pdf, id=5430, 569.12625pt x 549.05125pt>
 File: Figures/mphi_dist.pdf Graphic file (type pdf)
 <use Figures/mphi_dist.pdf>
 Package pdftex.def Info: Figures/mphi_dist.pdf  used on input line 83.
@@ -3187,26 +3187,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--90
 
  []
 
-<Figures/cross_sections.png, id=5429, 901.3675pt x 676.5275pt>
+<Figures/cross_sections.png, id=5432, 901.3675pt x 676.5275pt>
 File: Figures/cross_sections.png Graphic file (type png)
 <use Figures/cross_sections.png>
 Package pdftex.def Info: Figures/cross_sections.png  used on input line 93.
 (pdftex.def)             Requested size: 341.43437pt x 256.2676pt.
 [113 <./Figures/mA_dist.pdf, page is rotated 90 degrees> <./Figures/mphi_dist.p
 df, page is rotated 90 degrees>]
-<Figures/A_br_plot_mphi200.pdf, id=5524, 569.12625pt x 549.05125pt>
+<Figures/A_br_plot_mphi200.pdf, id=5527, 569.12625pt x 549.05125pt>
 File: Figures/A_br_plot_mphi200.pdf Graphic file (type pdf)
 <use Figures/A_br_plot_mphi200.pdf>
 Package pdftex.def Info: Figures/A_br_plot_mphi200.pdf  used on input line 108.
 
 (pdftex.def)             Requested size: 209.1301pt x 201.75505pt.
-<Figures/phi_br_plot_mphi200.pdf, id=5525, 569.12625pt x 549.05125pt>
+<Figures/phi_br_plot_mphi200.pdf, id=5528, 569.12625pt x 549.05125pt>
 File: Figures/phi_br_plot_mphi200.pdf Graphic file (type pdf)
 <use Figures/phi_br_plot_mphi200.pdf>
 Package pdftex.def Info: Figures/phi_br_plot_mphi200.pdf  used on input line 10
 9.
 (pdftex.def)             Requested size: 209.1301pt x 201.75505pt.
-<Figures/phi_branching_fractions_mphi200_mA160.pdf, id=5526, 569.12625pt x 427.
+<Figures/phi_branching_fractions_mphi200_mA160.pdf, id=5529, 569.12625pt x 427.
 5975pt>
 File: Figures/phi_branching_fractions_mphi200_mA160.pdf Graphic file (type pdf)
 
@@ -3241,7 +3241,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 211--218
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [117]
-<Figures/event-categories_4tau.pdf, id=5682, 398.3386pt x 227.62204pt>
+<Figures/event-categories_4tau.pdf, id=5685, 398.3386pt x 227.62204pt>
 File: Figures/event-categories_4tau.pdf Graphic file (type pdf)
 <use Figures/event-categories_4tau.pdf>
 Package pdftex.def Info: Figures/event-categories_4tau.pdf  used on input line 
@@ -3265,14 +3265,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 264--273
 
  []
 
-<Figures/mt_tot_signal_mmmm_inclusive_all.pdf, id=5741, 569.12625pt x 546.04pt>
+<Figures/mt_tot_signal_mmmm_inclusive_all.pdf, id=5744, 569.12625pt x 546.04pt>
 
 File: Figures/mt_tot_signal_mmmm_inclusive_all.pdf Graphic file (type pdf)
 <use Figures/mt_tot_signal_mmmm_inclusive_all.pdf>
 Package pdftex.def Info: Figures/mt_tot_signal_mmmm_inclusive_all.pdf  used on 
 input line 276.
 (pdftex.def)             Requested size: 209.1301pt x 200.64854pt.
-<Figures/mvis_1234_signal_mmmm_inclusive_all.pdf, id=5742, 569.12625pt x 546.04
+<Figures/mvis_1234_signal_mmmm_inclusive_all.pdf, id=5745, 569.12625pt x 546.04
 pt>
 File: Figures/mvis_1234_signal_mmmm_inclusive_all.pdf Graphic file (type pdf)
 <use Figures/mvis_1234_signal_mmmm_inclusive_all.pdf>
@@ -3342,13 +3342,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 417--418
 
  []
 
-<Figures/subtraction_plot_pt_1_mttt_pass.pdf, id=5920, 569.12625pt x 546.04pt>
+<Figures/subtraction_plot_pt_1_mttt_pass.pdf, id=5923, 569.12625pt x 546.04pt>
 File: Figures/subtraction_plot_pt_1_mttt_pass.pdf Graphic file (type pdf)
 <use Figures/subtraction_plot_pt_1_mttt_pass.pdf>
 Package pdftex.def Info: Figures/subtraction_plot_pt_1_mttt_pass.pdf  used on i
 nput line 421.
 (pdftex.def)             Requested size: 192.0548pt x 184.26805pt.
-<Figures/subtraction_plot_jet_pt_1_divide_pt_1_mttt_pass.pdf, id=5921, 569.1262
+<Figures/subtraction_plot_jet_pt_1_divide_pt_1_mttt_pass.pdf, id=5924, 569.1262
 5pt x 546.04pt>
 File: Figures/subtraction_plot_jet_pt_1_divide_pt_1_mttt_pass.pdf Graphic file 
 (type pdf)
@@ -3356,7 +3356,7 @@ File: Figures/subtraction_plot_jet_pt_1_divide_pt_1_mttt_pass.pdf Graphic file
 Package pdftex.def Info: Figures/subtraction_plot_jet_pt_1_divide_pt_1_mttt_pas
 s.pdf  used on input line 422.
 (pdftex.def)             Requested size: 192.0548pt x 184.26805pt.
-<Figures/subtraction_plot_tau_decay_mode_1_mttt_pass.pdf, id=5922, 569.12625pt 
+<Figures/subtraction_plot_tau_decay_mode_1_mttt_pass.pdf, id=5925, 569.12625pt 
 x 546.04pt>
 File: Figures/subtraction_plot_tau_decay_mode_1_mttt_pass.pdf Graphic file (typ
 e pdf)
@@ -3364,7 +3364,7 @@ e pdf)
 Package pdftex.def Info: Figures/subtraction_plot_tau_decay_mode_1_mttt_pass.pd
 f  used on input line 423.
 (pdftex.def)             Requested size: 192.0548pt x 184.26805pt.
-<Figures/subtraction_plot_eta_1_mttt_pass.pdf, id=5923, 569.12625pt x 546.04pt>
+<Figures/subtraction_plot_eta_1_mttt_pass.pdf, id=5926, 569.12625pt x 546.04pt>
 
 File: Figures/subtraction_plot_eta_1_mttt_pass.pdf Graphic file (type pdf)
 <use Figures/subtraction_plot_eta_1_mttt_pass.pdf>
@@ -3376,7 +3376,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 431--435
 
  []
 
-<Figures/reweight_ave_plot_pt_1_all_mttt_all_years.pdf, id=5927, 569.12625pt x 
+<Figures/reweight_ave_plot_pt_1_all_mttt_all_years.pdf, id=5930, 569.12625pt x 
 546.04pt>
 File: Figures/reweight_ave_plot_pt_1_all_mttt_all_years.pdf Graphic file (type 
 pdf)
@@ -3384,7 +3384,7 @@ pdf)
 Package pdftex.def Info: Figures/reweight_ave_plot_pt_1_all_mttt_all_years.pdf 
  used on input line 438.
 (pdftex.def)             Requested size: 192.0548pt x 184.26805pt.
-<Figures/reweight_ave_plot_jet_pt_1_divide_pt_1_all_mttt_all_years.pdf, id=5928
+<Figures/reweight_ave_plot_jet_pt_1_divide_pt_1_all_mttt_all_years.pdf, id=5931
 , 569.12625pt x 546.04pt>
 File: Figures/reweight_ave_plot_jet_pt_1_divide_pt_1_all_mttt_all_years.pdf Gra
 phic file (type pdf)
@@ -3392,7 +3392,7 @@ phic file (type pdf)
 Package pdftex.def Info: Figures/reweight_ave_plot_jet_pt_1_divide_pt_1_all_mtt
 t_all_years.pdf  used on input line 439.
 (pdftex.def)             Requested size: 192.0548pt x 184.26805pt.
-<Figures/reweight_ave_plot_tau_decay_mode_1_all_mttt_all_years.pdf, id=5929, 56
+<Figures/reweight_ave_plot_tau_decay_mode_1_all_mttt_all_years.pdf, id=5932, 56
 9.12625pt x 546.04pt>
 File: Figures/reweight_ave_plot_tau_decay_mode_1_all_mttt_all_years.pdf Graphic
  file (type pdf)
@@ -3400,7 +3400,7 @@ File: Figures/reweight_ave_plot_tau_decay_mode_1_all_mttt_all_years.pdf Graphic
 Package pdftex.def Info: Figures/reweight_ave_plot_tau_decay_mode_1_all_mttt_al
 l_years.pdf  used on input line 440.
 (pdftex.def)             Requested size: 192.0548pt x 184.26805pt.
-<Figures/reweight_ave_plot_eta_1_all_mttt_all_years.pdf, id=5930, 569.12625pt x
+<Figures/reweight_ave_plot_eta_1_all_mttt_all_years.pdf, id=5933, 569.12625pt x
  546.04pt>
 File: Figures/reweight_ave_plot_eta_1_all_mttt_all_years.pdf Graphic file (type
  pdf)
@@ -3423,7 +3423,7 @@ divide_pt_1_all_mttt_all_years.pdf, page is rotated 90 degrees> <./Figures/rewe
 ight_ave_plot_tau_decay_mode_1_all_mttt_all_years.pdf, page is rotated 90 degre
 es> <./Figures/reweight_ave_plot_eta_1_all_mttt_all_years.pdf, page is rotated 
 90 degrees>]
-<Figures/closure_plot_pt_1_all_mttt_all_years_all.pdf, id=6296, 569.12625pt x 5
+<Figures/closure_plot_pt_1_all_mttt_all_years_all.pdf, id=6299, 569.12625pt x 5
 46.04pt>
 File: Figures/closure_plot_pt_1_all_mttt_all_years_all.pdf Graphic file (type p
 df)
@@ -3431,7 +3431,7 @@ df)
 Package pdftex.def Info: Figures/closure_plot_pt_1_all_mttt_all_years_all.pdf  
 used on input line 452.
 (pdftex.def)             Requested size: 192.0548pt x 184.26805pt.
-<Figures/closure_plot_jet_pt_1_divide_pt_1_all_mttt_all_years_all.pdf, id=6297,
+<Figures/closure_plot_jet_pt_1_divide_pt_1_all_mttt_all_years_all.pdf, id=6300,
  569.12625pt x 546.04pt>
 File: Figures/closure_plot_jet_pt_1_divide_pt_1_all_mttt_all_years_all.pdf Grap
 hic file (type pdf)
@@ -3439,7 +3439,7 @@ hic file (type pdf)
 Package pdftex.def Info: Figures/closure_plot_jet_pt_1_divide_pt_1_all_mttt_all
 _years_all.pdf  used on input line 453.
 (pdftex.def)             Requested size: 192.0548pt x 184.26805pt.
-<Figures/closure_plot_tau_decay_mode_1_all_mttt_all_years_all.pdf, id=6298, 569
+<Figures/closure_plot_tau_decay_mode_1_all_mttt_all_years_all.pdf, id=6301, 569
 .12625pt x 546.04pt>
 File: Figures/closure_plot_tau_decay_mode_1_all_mttt_all_years_all.pdf Graphic 
 file (type pdf)
@@ -3447,7 +3447,7 @@ file (type pdf)
 Package pdftex.def Info: Figures/closure_plot_tau_decay_mode_1_all_mttt_all_yea
 rs_all.pdf  used on input line 454.
 (pdftex.def)             Requested size: 192.0548pt x 184.26805pt.
-<Figures/closure_plot_eta_1_all_mttt_all_years_all.pdf, id=6299, 569.12625pt x 
+<Figures/closure_plot_eta_1_all_mttt_all_years_all.pdf, id=6302, 569.12625pt x 
 546.04pt>
 File: Figures/closure_plot_eta_1_all_mttt_all_years_all.pdf Graphic file (type 
 pdf)
@@ -3500,7 +3500,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 565--569
  []
 
 [133]
-<Figures/postfit_plots_combined_postfit_high_stat.pdf, id=6525, 569.12625pt x 5
+<Figures/postfit_plots_combined_postfit_high_stat.pdf, id=6528, 569.12625pt x 5
 46.04pt>
 File: Figures/postfit_plots_combined_postfit_high_stat.pdf Graphic file (type p
 df)
@@ -3508,7 +3508,7 @@ df)
 Package pdftex.def Info: Figures/postfit_plots_combined_postfit_high_stat.pdf  
 used on input line 579.
 (pdftex.def)             Requested size: 213.39568pt x 204.7395pt.
-<Figures/postfit_plots_combined_postfit_med_stat.pdf, id=6526, 569.12625pt x 54
+<Figures/postfit_plots_combined_postfit_med_stat.pdf, id=6529, 569.12625pt x 54
 6.04pt>
 File: Figures/postfit_plots_combined_postfit_med_stat.pdf Graphic file (type pd
 f)
@@ -3516,7 +3516,7 @@ f)
 Package pdftex.def Info: Figures/postfit_plots_combined_postfit_med_stat.pdf  u
 sed on input line 580.
 (pdftex.def)             Requested size: 213.39568pt x 204.7395pt.
-<Figures/postfit_plots_combined_postfit_low_stat.pdf, id=6527, 569.12625pt x 54
+<Figures/postfit_plots_combined_postfit_low_stat.pdf, id=6530, 569.12625pt x 54
 6.04pt>
 File: Figures/postfit_plots_combined_postfit_low_stat.pdf Graphic file (type pd
 f)
@@ -3533,7 +3533,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 591--600
 ated 90 degrees> <./Figures/postfit_plots_combined_postfit_med_stat.pdf, page i
 s rotated 90 degrees> <./Figures/postfit_plots_combined_postfit_low_stat.pdf, p
 age is rotated 90 degrees>]
-<Figures/model_independent_limit_all.pdf, id=6673, 454.69875pt x 569.12625pt>
+<Figures/model_independent_limit_all.pdf, id=6676, 454.69875pt x 569.12625pt>
 File: Figures/model_independent_limit_all.pdf Graphic file (type pdf)
 <use Figures/model_independent_limit_all.pdf>
 Package pdftex.def Info: Figures/model_independent_limit_all.pdf  used on input
@@ -3544,13 +3544,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 625--629
 
  []
 
-<Figures/limit_comparison_4tau.pdf, id=6680, 569.12625pt x 546.04pt>
+<Figures/limit_comparison_4tau.pdf, id=6683, 569.12625pt x 546.04pt>
 File: Figures/limit_comparison_4tau.pdf Graphic file (type pdf)
 <use Figures/limit_comparison_4tau.pdf>
 Package pdftex.def Info: Figures/limit_comparison_4tau.pdf  used on input line 
 633.
 (pdftex.def)             Requested size: 256.07741pt x 245.69907pt.
-<Figures/ChannelCompatibilityCheck_FitResults_mphi100mA100_channel.pdf, id=6681
+<Figures/ChannelCompatibilityCheck_FitResults_mphi100mA100_channel.pdf, id=6684
 , 569.12625pt x 546.04pt>
 File: Figures/ChannelCompatibilityCheck_FitResults_mphi100mA100_channel.pdf Gra
 phic file (type pdf)
@@ -3570,12 +3570,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 653--657
 
  []
 
-<Figures/md_mphi100.pdf, id=6826, 569.12625pt x 546.04pt>
+<Figures/md_mphi100.pdf, id=6829, 569.12625pt x 546.04pt>
 File: Figures/md_mphi100.pdf Graphic file (type pdf)
 <use Figures/md_mphi100.pdf>
 Package pdftex.def Info: Figures/md_mphi100.pdf  used on input line 660.
 (pdftex.def)             Requested size: 277.41176pt x 266.17052pt.
-<Figures/md_mphi200.pdf, id=6827, 569.12625pt x 546.04pt>
+<Figures/md_mphi200.pdf, id=6830, 569.12625pt x 546.04pt>
 File: Figures/md_mphi200.pdf Graphic file (type pdf)
 <use Figures/md_mphi200.pdf>
 Package pdftex.def Info: Figures/md_mphi200.pdf  used on input line 661.
@@ -3583,12 +3583,12 @@ Package pdftex.def Info: Figures/md_mphi200.pdf  used on input line 661.
 
 LaTeX Warning: Float too large for page by 19.47096pt on input line 664.
 
-<Figures/csbma_phi200A100.pdf, id=6831, 569.12625pt x 546.04pt>
+<Figures/csbma_phi200A100.pdf, id=6834, 569.12625pt x 546.04pt>
 File: Figures/csbma_phi200A100.pdf Graphic file (type pdf)
 <use Figures/csbma_phi200A100.pdf>
 Package pdftex.def Info: Figures/csbma_phi200A100.pdf  used on input line 678.
 (pdftex.def)             Requested size: 277.41176pt x 266.17052pt.
-<Figures/csbma_phi200A160.pdf, id=6832, 569.12625pt x 546.04pt>
+<Figures/csbma_phi200A160.pdf, id=6835, 569.12625pt x 546.04pt>
 File: Figures/csbma_phi200A160.pdf Graphic file (type pdf)
 <use Figures/csbma_phi200A160.pdf>
 Package pdftex.def Info: Figures/csbma_phi200A160.pdf  used on input line 679.
@@ -3614,12 +3614,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--24
 [142
 
 ]
-<Figures/md_mphi100_hb.pdf, id=7044, 569.12625pt x 546.04pt>
+<Figures/md_mphi100_hb.pdf, id=7047, 569.12625pt x 546.04pt>
 File: Figures/md_mphi100_hb.pdf Graphic file (type pdf)
 <use Figures/md_mphi100_hb.pdf>
 Package pdftex.def Info: Figures/md_mphi100_hb.pdf  used on input line 27.
 (pdftex.def)             Requested size: 298.75264pt x 286.64197pt.
-<Figures/md_mphi200_hb.pdf, id=7045, 569.12625pt x 546.04pt>
+<Figures/md_mphi200_hb.pdf, id=7048, 569.12625pt x 546.04pt>
 File: Figures/md_mphi200_hb.pdf Graphic file (type pdf)
 <use Figures/md_mphi200_hb.pdf>
 Package pdftex.def Info: Figures/md_mphi200_hb.pdf  used on input line 28.
@@ -3638,13 +3638,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--48
 
  []
 
-<Figures/csbma_phi200A100_hb.pdf, id=7062, 569.12625pt x 546.04pt>
+<Figures/csbma_phi200A100_hb.pdf, id=7065, 569.12625pt x 546.04pt>
 File: Figures/csbma_phi200A100_hb.pdf Graphic file (type pdf)
 <use Figures/csbma_phi200A100_hb.pdf>
 Package pdftex.def Info: Figures/csbma_phi200A100_hb.pdf  used on input line 51
 .
 (pdftex.def)             Requested size: 277.41176pt x 266.17052pt.
-<Figures/csbma_phi200A160_hb.pdf, id=7063, 569.12625pt x 546.04pt>
+<Figures/csbma_phi200A160_hb.pdf, id=7066, 569.12625pt x 546.04pt>
 File: Figures/csbma_phi200A160_hb.pdf Graphic file (type pdf)
 <use Figures/csbma_phi200A160_hb.pdf>
 Package pdftex.def Info: Figures/csbma_phi200A160_hb.pdf  used on input line 52
@@ -3676,7 +3676,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 81--86
 ] [149] [150] [151] [152] [153] [154] [155]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/sc' instead on input line 631.
+(Font)              using `T1/cmr/m/sc' instead on input line 634.
 
 [156] [157] [158] [159]) [160] (./Sections/acronyms.tex [161
 
@@ -3694,7 +3694,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 149.
 Here is how much of TeX's memory you used:
  30932 strings out of 482555
  596644 string characters out of 5952144
- 875916 words of memory out of 5000000
+ 876245 words of memory out of 5000000
  45041 multiletter control sequences out of 15000+600000
  560094 words of font info for 100 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -3734,10 +3734,10 @@ cm-super/sfti0800.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-supe
 r/sfti1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sftt0
 800.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb
 >
-Output written on main.pdf (163 pages, 13273134 bytes).
+Output written on main.pdf (163 pages, 13273731 bytes).
 PDF statistics:
- 8020 PDF objects out of 8907 (max. 8388607)
- 5181 compressed objects within 52 object streams
+ 8027 PDF objects out of 8907 (max. 8388607)
+ 5188 compressed objects within 52 object streams
  746 named destinations out of 1000 (max. 500000)
  1369 words of extra memory for PDF output out of 10000 (max. 10000000)
 
