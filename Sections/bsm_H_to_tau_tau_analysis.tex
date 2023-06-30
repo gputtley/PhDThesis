@@ -127,7 +127,7 @@ The benchmark scenarios provide the relative Yukawa couplings (to calculate the 
 An example of the distributions for gluon fusion production, in the \ac{MSSM} $M_{h}^{125}$ scenario with $m_{A} = 500$ GeV whilst varying $\tan\beta$, is shown in Figure~\ref{fig:mssm_sig}.
 The distributions peak at a higher $\pT$ for the t quark loop, therefore at smaller $\tan\beta$, where the t quark contribution is dominant, an additional Higgs boson would be more boosted. \\
 
-\begin{figure}[!hbtp]
+\begin{figure}[p!]
 \centering
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/pT_reweighting_plot_A10.pdf}}
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/pT_reweighting_plot_A30.pdf}} \\
@@ -272,7 +272,7 @@ The interference samples are generated with extra statistics at large di-$\tau$ 
 The cross-section of these interference samples scales with $g_{U}^2$. 
 Examples of the generator level di-$\tau$ mass distributions are shown in Figure~\ref{fig:vlq_signal}. \\
 
-\begin{figure}[!hbtp]
+\begin{figure}[t]
 \centering
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/vlq_signal_plot_gU3.pdf}}
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/vlq_signal_plot_gU5.pdf}}
@@ -388,8 +388,8 @@ A diagram of the inputs is shown in Figure~\ref{fig:dzeta_diagram}. \\
 \end{figure}
 
 The linear combination is optimised for genuine di-$\tau$ events to peak around $D_{\zeta} = 0$ GeV. 
-It is motivated by the expectation that in di-$\tau$ decays from a resonance, the visible and missing (from $\tau$ neutrinos) momenta are roughly aligned and of similar magnitudes.
-In W + jets and $\ttbar$ events, the directions of the visible and missing products are expected to be more randomly distributed and lead to a non-peaking $D_{\zeta}$.
+It is motivated by the expectation that in di-$\tau$ decays from a resonance, the visible $\tauh$ and missing (from $\tau$ neutrinos) momenta are roughly aligned and of similar magnitudes.
+In W + jets and $\ttbar$ events, the directions of the visible $\tauh$ and missing products are expected to be more randomly distributed and lead to a non-peaking $D_{\zeta}$.
 Therefore, only events with $D_\zeta >$ -35 GeV are considered for signal events.
 No b tag events failing this cut are vetoed, and events with a b tag also failing this cut are used for a $\ttbar$ control region.
 
@@ -435,15 +435,15 @@ By design, the majority of signal events are located in the \texttt{Medium-$D_\z
 The \texttt{Low-} and \texttt{High-$D_\zeta$} categories are used to catch the tail of the signal distributions.
 A schematic of all high-mass optimisation categories is shown in Figure~\ref{fig:high_mass_categories}. \\
 
-\begin{figure}[!hbtp]
+\begin{figure}[t]
 \centering
-    \includegraphics[width=0.85\textwidth]{Figures/high_mass_categories.pdf}
+    \includegraphics[width=\textwidth]{Figures/high_mass_categories.pdf}
 \caption[Diagram of the categories in the high-mass optimisation procedure.]{Overview of the categories used for the extraction of the signal in the high-mass optimisation procedure~\cite{CMS:2022rbd}.}
 \label{fig:high_mass_categories}
 \end{figure}
 
 Once all category divisions have been applied, events are drawn in histograms based on a discriminating variable.
-The discriminating variable used in this analysis is $m_{T}^{\text{tot}}$ and is defined below. \\
+The discriminating variable used in this analysis is $m_{T}^{\text{tot}}$ and is defined below, \\
 \begin{equation}
 m_{T}^\text{tot} = \sqrt{m_{T}(\pTvec^{\hspace{2pt}\tau_1},\pTvec^{\hspace{2pt}\text{miss}})^2 +  m_{T}(\pTvec^{\hspace{2pt}\tau_2},\pTvec^{\hspace{2pt}\text{miss}})^2 + m_{T}(\pTvec^{\hspace{2pt}\tau_1},\pTvec^{\hspace{2pt}\tau_2})^2},
 \label{eqn:mt_tot}
@@ -466,6 +466,13 @@ The final difference with the high-mass optimisation procedure is the discrimina
 In the low-mass optimisation procedure the reconstructed di-$\tau$ mass is used.
 This helps to separate signal events from the Z boson peak in this region. \\
 
+\begin{figure}[!hbtp]
+\centering
+    \includegraphics[width=\textwidth]{Figures/low_mass_categories.pdf}
+\caption[Diagram of the categories in the low-mass optimisation procedure.]{Overview of the categories used for the extraction of the signal in the low mass optimisation procedure~\cite{CMS:2022rbd}.}
+\label{fig:low_mass_categories}
+\end{figure}
+
 \subsection{Standard Model Higgs boson optimisation}
 
 Finally, the \ac{SM} Higgs optimisation procedure is taken from the \ac{CMS} \ac{SM} $H \rightarrow \tau\tau$ analysis and is detailed in Reference~\cite{CMS:2022kdi}.
@@ -473,13 +480,6 @@ This was previously used for simplified template cross-section measurements.
 This uses a \ac{NN}-based categorisation to obtain the most precise estimates from data of the \ac{SM} Higgs produced via gluon fusion, vector boson fusion or vector boson-associated production.
 The \ac{NN} based analysis introduces 26 categories, 8 of which are optimised to pull out the Higgs boson signal.
 Although the \ac{NN} is trained specifically to target events with an \ac{SM}-like Higgs boson, signal events with differing masses can also enter the \ac{NN} categories.
-
-\begin{figure}[!hbtp]
-\centering
-    \includegraphics[width=0.85\textwidth]{Figures/low_mass_categories.pdf}
-\caption[Diagram of the categories in the low-mass optimisation procedure.]{Overview of the categories used for the extraction of the signal in the low mass optimisation procedure~\cite{CMS:2022rbd}.}
-\label{fig:low_mass_categories}
-\end{figure}
 
 \section{Background modelling overview}
 \label{sec:background_modelling}
@@ -522,7 +522,7 @@ When compared with data, W + jets, $Z\rightarrow \ell\ell$, $\ttbar$, and single
 
 The \ac{QCD} model in the $\emu$ channel, which attempts to model events where two jets are misidentified as an electron-muon pair, is taken from data where the electron and muon have the same sign, with a transfer factor ($F_{T}$).
 The transfer factor determines differences from the same sign to opposite sign region and is calculated from a sideband region with an anti-isolated muon ($0.2 < \Irel < 0.5$).
-$F_{T}$ is initially parametrised by the $\Delta R$ between the electron and muon, and the number of jets in the event 
+$F_{T}$ is initially parametrised by the $\Delta R$ between the electron and muon, and the number of jets in the event.
 However, additional dependencies on the electron and muon $\pT$ enter via a correction. \\
 
 Good agreement is observed in events with no b jets when applying $F_{T}$ onto same sign events compared to opposite sign events where both regions have an anti-isolated muon. 
@@ -544,7 +544,7 @@ As $F_{T}$ is originally fit inclusively in numbers of b jets and the 0 bin is d
 The background for genuine di-$\tau$ lepton pairs is modelled via the embedding method~\cite{CMS_embedding}. 
 This is a hybrid method that utilises both data and \ac{MC} techniques to produce high-statistic samples, where the bulk of the event comes from data.
 This minimises both the chance of \ac{MC} fluctuations and the size of the uncertainties.
-The genuine di-$\tau$ background is dominated by the $Z \rightarrow \tau \tau$ process, but there will be smaller contributions from $t\bar{t}$ and di-boson processes.  \\
+The genuine di-$\tau$ background is dominated by the $Z/\gamma^{*} \rightarrow \tau \tau$ process, but there will be smaller contributions from $t\bar{t}$ and di-boson processes.  \\
 
 The algorithm first selects $\mu\mu$ events from data.
 The selection is chosen to naturally target the pure $Z \rightarrow \mu\mu$ region but still be loose enough to catch events from other processes, so as not to introduce a bias on the Z boson mass.
@@ -567,7 +567,7 @@ The $\tau$ lepton decay is then simulated with \PYTHIA~\cite{Sirunyan:2019dfx,Sj
 Only the decay of the $\tau$ leptons is then processed through the detector simulation and the remainder of the $\mu\mu$ event is added back.
 A schematic of the process is shown in Figure~\ref{fig:embedding}. \\
 
-\begin{figure}[!hbtp]
+\begin{figure}[t]
 \centering
     \includegraphics[width=0.9\textwidth]{Figures/Embedding_Diagram.pdf}
 \caption[Diagram of the embedding method.]{Schematic of the embedding method to model genuine di-$\tau$ backgrounds from di-muon events in data~\cite{CMS_embedding}.}
@@ -619,7 +619,7 @@ The $\FF$ are measured separately in each year of data taking period (2016, 2017
 In the $\etauh$ and $\mutauh$ channels $\FF$ are measured for three processes: \ac{QCD}, W + jets and $\ttbar$.
 In the $\tauhtauh$ channel $\FF$ are measured only for the dominant \ac{QCD} process.
 The \ac{QCD} process is assumed to produce two jets misidentified as $\tauh$ candidates, and so the $\FF$ is chosen to be calculated from leading $\pT$ $\tau_h$ candidate only.
-Section~\ref{sec:ff_applying} discusses how a single \jtth events in the $\tauhtauh$ channel are modelled. \\
+Section~\ref{sec:ff_applying} discusses how single \jtth events in the $\tauhtauh$ channel are modelled. \\
 
 Each separate measurement region is split into three sideband regions based on two cuts that surround the signal region.
 These regions are named the \texttt{Determination Region} (A), \texttt{Alternative Determination Region} (B) and \texttt{Correction Region} (D) and are schematically shown in Figure~\ref{fig:ff_schematic}. \\
@@ -680,11 +680,10 @@ The raw $\FF$ take into account dependencies on $N_{\text{jets}}$ via an analysi
 $N_{\text{pre b jets}}$ is the number of jets in the event with $|\eta|<2.4$ and $\pT>20$ GeV, which is the $\eta$ and $\pT$ selection for a b-tagged jet. 
 It is defined to map the dependence of $\FF$ on the number of jets and describe the categorising variable $N_{\text{b jets}}$ well.
 Although not local to the $\tauh$, it helps control other dependencies on the constituents of the event.
-It is the number of jets in the event with $|\eta|<2.4$ and $\pT>20$ GeV. 
 These are the same $\eta$ and $\pT$ thresholds required for a b jet.
 The data is split into two bins of $N_{\text{pre b jets}}$, equal to 0 and greater than 0.
-It is then further split by the ratio of $\pT^{\text{jet}}$ to $\pT^{\tauh}$.
-An example of the dependence of these two transverse momentums on the fake factor is shown in Figure~\ref{fig:ff_colz}. \\
+It is then further split by the ratio of $\pT^{\text{jet}}$ to $\pT^{\tauh}$ into three bins with divisions at 1.25 and 1.5.
+An example of the dependence of these two transverse momentums on the $\FF$ is shown in Figure~\ref{fig:ff_colz}. \\
 
 \begin{figure}[!hbtp]
 \centering
@@ -694,15 +693,15 @@ An example of the dependence of these two transverse momentums on the fake facto
 \end{figure}
 
 It is motivated by the observation that the $\FF$ are largest when the $\pT^{\text{jet}}$ and $\pT^{\tauh}$ are closest.
-The physical motivation for this is when they are close, the $\tauh$ candidate is likely to be isolated from any other hadronic activity and so more likely to be identified as a $\tau$.
-However, when $\pT^{\text{jet}}$ is larger than $\pT^{\tauh}$, the candidate is likely surrounded by other hadronic activity and so more likely to be a jet fake.
+The physical motivation for this is when they are close, the $\tauh$ candidate is likely to be isolated from any other hadronic activity and so more likely to be identified as a $\tauh$.
+However, when $\pT^{\text{jet}}$ is larger than $\pT^{\tauh}$, the candidate is likely surrounded by other hadronic activity and so more likely to be a misidentified Sjet.
 When $\pT^{\text{jet}}$ is less than $\pT^{\tauh}$, charged pions are likely not close enough to the \ac{PV} to be clustered into the jet and so the event is less likely to be classified as a $\tauh$. 
 This leads to the $\FF$ dependence as seen in Figure~\ref{fig:ff_colz}.\\
 
 For all divisions of the phase space, dependence on the $\pT^{\tauh}$ is fit using the superposition of a Landau function and a constant in the low-$\pT$ region.
 The $\FF$ are seen to rise sharply at high $\pT$.
 This increase happens in either the bin 140 $<$ $\pT^{\tauh}$ $<$ 200 GeV or $\pT^{\tauh}$ $>$ 200 GeV.
-To map this effect, binned values are taken based on the algorithm shown in Figure~\ref{fig:ff_binning} and the fit is used below the minimum bin.
+To map this effect, binned values are taken based on the algorithm shown in Figure~\ref{fig:ff_binning} and the fit is used below the minimum bin. \\
 
 \begin{figure}[!hbtp]
   \centering
@@ -730,11 +729,6 @@ To map this effect, binned values are taken based on the algorithm shown in Figu
   \label{fig:ff_binning}
 \end{figure}
 
-The fits are flattened at $\pT^{\tau_h}$ values where there is no significant downward shift or at the final bin to avoid extrapolating past the fitted range. 
-$\FF$ fits with respect to $\pT^{\tau_h}$ are shown in Figures~\ref{fig:tt_ff_fit}-\ref{fig:mt_ff_fit}. 
-The $\FF$ are highest in the lowest $\pT^{\text{jet}}/\pT^{\tau_h}$ bin and lowest in the highest $\pT^{\text{jet}}/\pT^{\tau_h}$ bin, as expected. 
-Otherwise, the $\FF$ fall with $\pT$ in each category until the thresholds used for the high $\pT$ binning algorithm.
-
 \begin{figure}[!hbtp]
 \centering
     \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/ff_fit_jet_pt_low_0jet_pt_1_ff_qcd_tt_2018-EK.pdf}}
@@ -756,6 +750,11 @@ Otherwise, the $\FF$ fall with $\pT$ in each category until the thresholds used 
 \label{fig:mt_ff_fit}
 \end{figure}
 
+The fits are flattened at $\pT^{\tau_h}$ values where there is no significant downward shift or at the final bin to avoid extrapolating past the fitted range. 
+$\FF$ fits with respect to $\pT^{\tau_h}$ are shown in Figures~\ref{fig:tt_ff_fit}-\ref{fig:mt_ff_fit}. 
+The $\FF$ are highest in the lowest $\pT^{\text{jet}}/\pT^{\tau_h}$ bin and lowest in the highest $\pT^{\text{jet}}/\pT^{\tau_h}$ bin, as expected. 
+Otherwise, the $\FF$ fall with $\pT$ in each category until the thresholds used for the high $\pT$ binning algorithm.
+
 \subsection{Corrections}
 
 In the $\tauhtauh$ channel, the measured $\FF$ are then corrected to account for non-closures in other variables in the \texttt{Determination Region}. 
@@ -776,7 +775,7 @@ A diagram of this effect is shown in Figure~\ref{fig:fakemet}. \\
 
 To correct for this effect, the QCD $\FF$ are corrected as a function of $C_{\text{QCD}}$, where $C_{\text{QCD}}$ is defined as,
 \begin{equation}
-C_{\text{QCD}} = \frac{\MET \cos\Delta\phi(\pTvec^{\text{\hspace{2pt}miss}},\pTvec^{\hspace{2pt}\tauh})}{\pT^{\tauh}}.
+C_{\text{QCD}} = \frac{\MET \cos\Delta\phi(\pTvec^{\text{\hspace{2pt}miss}},\pTvec^{\hspace{2pt}\tauh})}{\pT^{\tauh}},
 \label{eqn:c_qcd}
 \end{equation}
 where $\Delta\phi(\pTvec^{\hspace{2pt}\text{miss}},\pTvec^{\hspace{2pt}\tauh})$ is the separation in the azimuthal angle between the missing transverse momentum vector $\pTvec^{\hspace{2pt}\text{miss}}$ and $\pTvec^{\hspace{2pt}\tauh}$.
@@ -833,7 +832,7 @@ These fractions of events are estimated with \ac{MC}, with a \ac{QCD} model extr
 It is observed that W + jets is the dominating process in this region, however, there are effects from \ac{QCD} at low $\mT$ and from $\ttbar$ in the b-tagged categories. 
 These fractions are then multiplied by the relevant corrected $\FF$ and applied to the fail $\tauh$ identification region in C, where this region is purified by subtracting any non \jtth events with \ac{MC}. \\
 
-\begin{figure}[!hbtp]
+\begin{figure}[p!]
 \centering
     \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/ff_fraction_tightmt_nbjets0_mt_2018_os_rebinning.pdf}}
     \subfloat[]{\includegraphics[width=0.45\textwidth]{Figures/ff_fraction_loosemt_nbjets0_mt_2018_os_rebinning.pdf}} \\
@@ -860,7 +859,7 @@ The energy scale of the electron is adjusted to the scale measured in data using
 This effect is negligible in muons. \\
 
 Similarly, corrections are derived for the efficiencies of triggering and identification of $\tauh$ candidates. 
-In the $\etauh$ and $\mutauh$ channels, trigger efficiency corrections are obtained from the ratio of fits to data versus simulated samples, for the trigger efficiency as a function of $p_{T}$. 
+In the $\etauh$ and $\mutauh$ channels, trigger efficiency corrections are obtained from the ratio of fits to data versus simulated samples as a function of $\pT$. 
 For the $\tauhtauh$ channel, this is instead done using the binned values of the $\tauh$ decay modes.
 The identification efficiency corrections are derived as a function of the $\pT$ of the $\tauh$ candidate. 
 Corrections to the energy scale of the $\tauh$ candidates and of electrons misidentified as $\tauh$ candidates are obtained from likelihood scans of discriminating observables, such as the reconstructed $\tauh$ candidate mass. 
@@ -899,9 +898,9 @@ The embedded samples use the same uncertainty scheme as \ac{MC} but 50\% are cor
 
 \subsubsection{Hadronic taus}
 Uncertainties on the $\tau_h$ triggers are obtained from the fitted scale factors used to derive the corrections for the $\tauh$ trigger efficiencies.
-The legs of the double-$\tau_h$ and e/$\mu$-$\tauh$ cross triggers in different decay mode bins are treated as uncorrelated.
+The legs of the double-$\tau_h$ and e/$\mu$-$\tauh$ cross-triggers in different decay mode bins are treated as uncorrelated.
 For the single-$\tau_h$ trigger leg, due to limited statistics, it is not possible to determine scale factors and uncertainties split by decay mode and therefore a single uncertainty common to all decay modes is applied.
-The double-$\tau_h$ trigger uncertainties are further split into the $\pT$ regions $<$ 100 GeV and $>$ 100 GeV to allow the fit more freedom to adjust the high $\pT$ regions relative to the low $\pT$ regions.
+The double-$\tau_h$ trigger uncertainties are further split into the $\pT<$ 100 GeV and $\pT>$ 100 GeV regions to allow the fit more freedom to adjust the high $\pT$ regions relative to the low $\pT$ regions.
 Uncertainties are also applied on the energy scale of the $\tau_h$ candidates. 
 These uncertainties range between 0.2-1.1\%. 
 Finally, an uncertainty on the identification efficiency is placed as a function of $\pT$ in the $\etauh$ and $\mutauh$ channels, and of the $\tauh$ decay mode in the $\tauhtauh$ channels. 
@@ -910,7 +909,7 @@ To account for the different anti-lepton discriminator working points, an uncert
 
 \subsubsection{Light leptons}
 The uncertainty on the trigger efficiencies amounts to 2\% per lepton in the $\etauh$, $\mutauh$ and $\emu$ channels.
-They are normalisation uncertainties but implemented as shape uncertainties as they only touch the events triggered by the corresponding cross-trigger or single lepton triggers.
+They are normalisation uncertainties but implemented as shape uncertainties as they only touch the events triggered by the corresponding cross-trigger or single lepton trigger.
 Uncertainties are also placed on the electron energy scale based on the calibration of \ac{ECAL} crystals.
 This information is not reliable for embedding samples and so uncertainties of 0.5-1.25\% are placed here. 
 The energy scale variations are negligible and so are not included.
@@ -928,7 +927,7 @@ The magnitude is 1.0\% for muons in all eras.
 For electrons the uncertainties vary between 0.5 and 6.6 \%.
 
 \subsubsection{Jets misidentified as hadronic taus}
-The backgrounds with jets misidentified as $\tauh$ are estimated from data with the fake factor method. 
+The backgrounds with jets misidentified as $\tauh$ candidate are estimated from data with the fake factor method. 
 There are different sources of uncertainty related to this method.
 The first uncertainties come from subtracting off other background processes with \ac{MC} to form the determination region. 
 The subtraction is shifted up and down by 10\% to determine new weights.
@@ -948,7 +947,7 @@ These events are modelled from \ac{MC} and any generator-matched muon identified
 \subsubsection{MET}
 The \ac{MET} uncertainties are different depending on the process.
 For all processes that are not $\ttbar$ or di-boson, the hadronic recoil response and its resolution are varied within the uncertainties determined during the computation of the recoil corrections.
-For $\ttbar$ or di-boson an uncertainty is derived from the energy carried by an unclustered particle~\cite{Sirunyan:2019kia}.
+For $\ttbar$ and di-boson an uncertainty is derived from the energy carried by an unclustered particle~\cite{Sirunyan:2019kia}.
 These uncertainties vary between 0--10\%.
 
 \subsubsection{Background process-specific uncertainties}
@@ -956,13 +955,13 @@ Uncertainties on the $\ttbar$ $\pT$ and Z boson $m_{\ell\ell}$-$\pT$ reweighting
 An additional uncertainty is placed to cover the $\ttbar$ contamination in embedding, where the removed $t\bar{t}$ genuine $\tau$ pair is shifted up and down by 10\%.
 Some non-closures are observed in embedded $Z\to\mu\mu$ control samples. 
 Therefore, these non-closures are taken as an additional shape uncertainty as a function of the Z $\pT$ and $m_{\tau\tau}$.
-Uncertainties on the normalisation background processes with sizes 4\% for $Z\rightarrow ll$ and W + jets production~\cite{Melnikov:2006kv}, 6\% for $\ttbar$ production~\cite{Czakon:2011xx,Kidonakis:2013zqa}, and 5\% for diboson and single t quark production~\cite{Kidonakis:2013zqa,Campbell:2011bn,Gehrmann:2014fva}.
+Uncertainties on the normalisation background processes with sizes 4\% for $Z\rightarrow \ell\ell$ and W + jets production~\cite{Melnikov:2006kv}, 6\% for $\ttbar$ production~\cite{Czakon:2011xx,Kidonakis:2013zqa}, and 5\% for diboson and single t quark production~\cite{Kidonakis:2013zqa,Campbell:2011bn,Gehrmann:2014fva}.
 
 \subsubsection{Signal process specific uncertainties}
 For the gg$\phi$ and bb$\phi$ processes, the variation of the \texttt{hdamp} parameter of the \POWHEG \ac{MC} generator as well as the $\mu_{R}$/$\mu_{F}$ scale variations are used to determine the uncertainties on the $\pT$ spectrum of each contribution at NLO QCD to the Higgs boson production via gluon fusion (t-only, b-only, tb-interference). 
 These are also determined from additional samples produced at generator level and applied as event weights depending on $\pT$ after the parton shower simulation.
 For the vector leptoquark signal samples, the parton distribution functions and $\mu_{R}$/$\mu_{F}$ scale variations are applied on an event-by-event basis.
-These uncertainties are included as shape uncertainties as they may affect the shapes of the $m_{T}^{\text{tot}}$ distribution as well as the predicted signal yields.
+These uncertainties are included as shape uncertainties as they may affect the shapes of the $m_{T}^{\text{tot}}$ distribution as well as the predicted signal yields in the model-dependent interpretations.
 
 \subsubsection{Luminosity}
 $1.2\%$, $2.3\%$ and $2.5\%$ normalisation uncertainties for the luminosity are applied to the 2016, 2017 and 2018 templates respectively, which originate from MC simulation to data comparisons.
@@ -1069,29 +1068,14 @@ $p_{0}$ is uniformly distributed between 0 and 1 for the background-only hypothe
 
 \section{Postfit plots}
 
-Figures~\ref{fig:low_mass_postfit} and \ref{fig:high_mass_postfit} show the unblinded distributions in the most sensitive analysis categories.
+Figures~\ref{fig:low_mass_postfit} and \ref{fig:high_mass_postfit} show the distributions in the most sensitive analysis categories.
 For simplicity, the $\etauh$ and $\mutauh$ channels have been combined.
 Figure~\ref{fig:low_mass_postfit} shows the distributions of the $m_{\tau\tau}$ discriminator in the no b tag low-mass optimisation categories. 
 A signal-plus-background fit for a model-independent gluon fusion resonant mass hypothesis of 100 GeV is shown and the changes in the background modelling when using a background-only fit are displayed in the ratio.
 Figure~\ref{fig:high_mass_postfit} shows the distributions of the $m_{T}^{\text{tot}}$ discriminator in the high-mass optimisation categories.
 A background-only fit is shown for the stacked background and example signal hypotheses for the model-independent 1.2 TeV gg$\phi$ and bb$\phi$ resonances and 1 TeV VLQ BM 1 mass points are displayed. \\
 
-In the low-mass optimisation categories, a small excess of events is observed on the Z boson peak in the no b tag categories and reasonable agreement is observed in the b tag categories.
-The excess of events are distributed in $m_{\tau\tau}$ between 80 and 120 GeV.
-A signal-plus-background hypothesis is best fit with a 100 GeV gg$\phi$ signal with a cross-section times branching ratio of 5.8 pb. 
-In this same fit, the bb$\phi$ process is constrained by the b tag categories to give a signal yield of 0.
-A background-only fit is also performed on the data, it is observed that this can only partly explain the differences observed between background and data.
-Even after a background-only fit, there is still a small excess of data events over the Z boson peak. \\
-
-In the high-mass optimisation categories, another small excess is observed in the high $m_{T}^{\text{tot}}$ bins, particularly in the most sensitive no b tag categories.
-This excess is best fit by a model-independent gluon fusion resonant mass at 1.2 TeV with a cross-section times branching ratio of 3.1 fb.
-There are no considerable differences observed in background modelling between signal-plus-background and background-only fits.
-This is because the uncertainties in these bins are more statistically dominated and the majority of the systematic uncertainties are constrained in the bulk of the distribution.
-Good agreement is observed in the rest of the distribution.
-There is a very small deviation in the b tag categories, but as this can also be explained by a gg$\phi$ signal, the bb$\phi$ signal is heavily constrained and so largely does not contribute to the signal-plus-background fit of the excess.
-Similar to the bb$\phi$ signal, the VLQ BM 1 signal is constrained by the results in the b tag categories, leading to a small non-zero best-fit signal strength, but cannot explain the excess in the no b tag categories. \\
-
-\begin{figure}[!hbtp]
+\begin{figure}[p!]
 \centering
     \subfloat[]{\includegraphics[width=0.4\textwidth]{Figures/postfit_lowmass_tt_nobtag_mediumpT.pdf}}
     \subfloat[]{\includegraphics[width=0.4\textwidth]{Figures/postfit_lowmass_tt_nobtag_highpT-cropped.pdf}} \\
@@ -1103,7 +1087,7 @@ Similar to the bb$\phi$ signal, the VLQ BM 1 signal is constrained by the result
 \label{fig:low_mass_postfit}
 \end{figure}
 
-\begin{figure}[!hbtp]
+\begin{figure}[p!]
 \centering
     \subfloat[]{\includegraphics[width=0.42\textwidth]{Figures/postfit_highmass_tt_nobtag.pdf}}
     \subfloat[]{\includegraphics[width=0.42\textwidth]{Figures/postfit_highmass_tt_btag.pdf}} \\
@@ -1114,6 +1098,21 @@ Similar to the bb$\phi$ signal, the VLQ BM 1 signal is constrained by the result
 \caption[Plots of the $m_{T}^\text{tot}$ distributions in the high-mass optimisation categories.]{Distributions of $m_{T}^\text{tot}$ in the $\tauhtauh$ no b tag (a) and b tag (b) categories, the combined $\etauh$ and $\mutauh$ no b tag (c) and b tag (d) \texttt{Tight-$m_{T}$} categories and the $\emu$ no b tag (e) and b tag (f) \texttt{Medium-$D_{\zeta}$} categories. The solid histograms show the stacked background predictions after a background-only fit to the data. The best-fit gluon fusion signal for $m_{\phi}$ = 1.2 TeV is shown by the red line, b-associated production and $U_{1}$ signals are also shown for illustrative purposes~\cite{CMS:2022rbd}.}
 \label{fig:high_mass_postfit}
 \end{figure}
+
+In the low-mass optimisation categories, a small excess of events is observed on the Z boson peak in the no b tag categories and reasonable agreement is observed in the b tag categories.
+The excess of events are distributed in $m_{\tau\tau}$ between 80 and 120 GeV.
+A signal-plus-background hypothesis is best fit with a 100 GeV gg$\phi$ signal with a cross-section times branching ratio of 5.8 pb. 
+In this same fit, the bb$\phi$ process is constrained by the b tag categories to give a signal yield of 0.
+A background-only fit is also performed to the data, it is observed that this can only partly explain the differences observed between background and data.
+Even after a background-only fit, there is still a small excess of data events over the Z boson peak. \\
+
+In the high-mass optimisation categories, another small excess is observed in the high $m_{T}^{\text{tot}}$ bins, particularly in the no b tag categories.
+This excess is best fit by a gluon fusion resonant mass at 1.2 TeV with a cross-section times branching ratio of 3.1 fb.
+There are no considerable differences observed in background modelling between signal-plus-background and background-only fits.
+This is because the uncertainties in these bins are more statistically dominated and the majority of the systematic uncertainties are constrained in the bulk of the distribution.
+Good agreement is observed in the rest of the distribution.
+There is a very small deviation in the b tag categories, but as this can also be explained by a gg$\phi$ signal, the bb$\phi$ signal is heavily constrained and so largely does not contribute to the signal-plus-background fit of the excess.
+Similar to the bb$\phi$ signal, the VLQ BM 1 signal is constrained by the results in the b tag categories, leading to a small non-zero best-fit signal strength, but cannot explain the excess in the no b tag categories.
 
 \section{Model-independent results}
 
@@ -1136,9 +1135,9 @@ Both sets of limits vary from $\mathcal{O}(10\text{ pb})$ at 60 GeV to $0.3$ fb 
 95\% \ac{CL} expected limits are drawn on the fit to each di-$\tau$ decay channel individually and are shown in Figure~\ref{fig:model_independent_limits_by_channel}.
 This gives a measure of the sensitivity of each channel.
 In the high-mass optimisation categories, the combined limit is heavily dominated by the $\tauhtauh$ channel.
-This is mostly driven by the branching fractions, as all channels in this mass range have similar signal separation ability.
-In the high-mass optimisation categories, the combined limit is more a contribution of all channels. 
-In the $\tauhtauh$ channel in this region, the \ac{QCD} multijet background is the largest fraction of any non $Z\rightarrow\tau\tau$ backgrounds in all channels and so the limit for this channel is weakened and the other channels contribute to the combined limit more.
+This is driven by the branching fractions, as all channels in this mass range have similar signal separation ability.
+In the low-mass optimisation categories, the combined limit is more a contribution of all channels. 
+In the $\tauhtauh$ channel in this region, the \ac{QCD} multijet background is the large and so the limit for this channel is weakened.
 The high double-$\tau_h$ trigger $\pT$ thresholds (chosen because of the \ac{QCD} multijet background) also lowers the signal acceptance in the $\tauhtauh$ channel. \\
 
 \begin{figure}[!hbtp]
@@ -1147,6 +1146,14 @@ The high double-$\tau_h$ trigger $\pT$ thresholds (chosen because of the \ac{QCD
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/limit_comparison_mssm_bbphi.pdf}}
 \caption[Plots of the expected model-independent limits split by the $\tau\tau$ decay channels.]{Comparison of the expected 95\% CL upper limits on the product of the cross-sections and branching fraction for the decay into $\tau$ leptons for gg$\phi$ (a) and bb$\phi$ (b) production, split by the $\tau\tau$ decay products fit individually.}
 \label{fig:model_independent_limits_by_channel}
+\end{figure}
+
+\begin{figure}[!hbtp]
+\centering
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/limit_comparison_gg_ATLAS.pdf}}
+    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/limit_comparison_bb_ATLAS.pdf}}
+\caption[Plots of the comparison of the model-independent limits between CMS and ATLAS.]{Comparison of the expected 95\% CL upper limits on the product of the cross-sections and branching fraction for the decay into $\tau$ leptons for gg$\phi$ (a) and bb$\phi$ (b) production, split by the CMS result detailed in this thesis and the ATLAS result from Reference~\cite{ATLAS:2020zms}.}
+\label{fig:model_independent_limits_ATLAS}
 \end{figure}
 
 A comparison of the limits is also made with the ATLAS experiment and in particular the results presented in Reference~\cite{ATLAS:2020zms}.
@@ -1158,40 +1165,31 @@ Also, ATLAS observed local excesses at 400 GeV of 2.2$\sigma$ for gg$\phi$ and 2
 None of these excesses are consistent between the ATLAS and \ac{CMS} results.
 The ATLAS search does not stretch to the mass of the low mass \ac{CMS} excess and so cannot be used as a cross-check for this.
 
-\begin{figure}[!hbtp]
-\centering
-    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/limit_comparison_gg_ATLAS.pdf}}
-    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/limit_comparison_bb_ATLAS.pdf}}
-\caption[Plots of the comparison of the model-independent limits between CMS and ATLAS.]{Comparison of the expected 95\% CL upper limits on the product of the cross-sections and branching fraction for the decay into $\tau$ leptons for gg$\phi$ (a) and bb$\phi$ (b) production, split by the CMS result detailed in this thesis and the ATLAS result from Reference~\cite{ATLAS:2020zms}.}
-\label{fig:model_independent_limits_ATLAS}
-\end{figure}
-
 \subsection{Significance and compatibility}
 \label{sec:sig_and_compat}
 
 The $p$-values and significances at each model-independent signal hypothesis are calculated as described in Section~\ref{sec:sig_ext} and shown in Figure~\ref{fig:significance}.
 Identical to the model-independent limits, the gg$\phi$ or bb$\phi$ process is allowed to float freely if not the parameter of interest.
 The excesses for the gg$\phi$ process peak at 100 GeV and 1.2 TeV and quantify to a local (global) significance of 3.1$\sigma$ (2.7$\sigma$) and 2.8$\sigma$ (2.2$\sigma$) respectively.
-There are also excesses at neighbouring mass points (particularly at high mass), however, this is consistent with the mass resolution of the fitted templates for the central values.
+There are also excesses at neighbouring mass points, however, this is consistent with the mass resolution of the fitted templates for the central values.
 No deviations beyond 2$\sigma$ are observed for bb$\phi$ production. \\
 
-\begin{figure}[!hbtp]
+\begin{figure}[p!]
 \centering
-    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/significance_plot_ggH.pdf}}
-    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/significance_plot_bbH.pdf}}
+    \subfloat[]{\includegraphics[width=0.65\textwidth]{Figures/significance_plot_ggH.pdf}} \\
+    \subfloat[]{\includegraphics[width=0.65\textwidth]{Figures/significance_plot_bbH.pdf}}
 \caption[Plots of the local $p$-value and significance for gluon fusion and b-associated production.]{Local $p$-value and significance of a gg$\phi$ (a) and bb$\phi$ (b) signal as a function of $m_{\phi}$~\cite{CMS:2022rbd}.}
 \label{fig:significance}
 \end{figure}
 
 As many different decay channels and categories are used to extract these significances, the signal strength is studied in each channel and category.
 This is done via compatibility fits as described in Section~\ref{sec:sig_ext}, where the signal strength parameter in each channel/category is decoupled.
-No statistically significant differences are observed in the best-fit signal strength in any decay channel or category fit and $p$-values between each channel or category fit are always above 0.05.
+No statistically significant differences are observed in the best-fit signal strength in any decay channel or category and $p$-values between each channel or category fit are always above 0.05.
 Figure~\ref{fig:low_mass_compatibility} shows the results of the compatibility fits in the low-mass optimisation categories split by di-$\tau$ decay channels and the $\pT$ bins fit. 
 Figure~\ref{fig:high_mass_compatibility} shows the compatibility fits in the high-mass optimisation categories split by di-$\tau$ decay channels.
 The low-mass signal strengths are no more dominant in any $\pT$ region than another.
 In both low- and high-mass cases, the signal strengths are consistent across di-$\tau$ decay channels.
-There is a small shift in the high mass $\emu$ categories to a negative signal strength, these categories have little to no sensitivity to this signal in comparison to others and a small deficit is observed in data, resulting in fits for a negative signal strength with a large uncertainty. 
-
+There is a small downwards shift in the high mass $\emu$ categories, these have little to no sensitivity to this signal in comparison to others and a small deficit is observed in data, resulting in fits for a negative signal strength with a large uncertainty. 
 
 \begin{figure}[!hbtp]
 \centering
@@ -1219,7 +1217,7 @@ In the 60 GeV example, there are smaller deviations in both gg$\phi$ and bb$\phi
 Otherwise, signal strengths are completely compatible with the background expectation.
 
 
-\begin{figure}[!hbtp]
+\begin{figure}[p!]
 \centering
     \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/2d_lkld_60.pdf}}
     \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/2d_lkld_100.pdf}}
@@ -1230,7 +1228,7 @@ Otherwise, signal strengths are completely compatible with the background expect
     \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/2d_lkld_1000.pdf}}
     \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/2d_lkld_1200.pdf}}
     \subfloat[]{\includegraphics[width=0.33\textwidth]{Figures/2d_lkld_3500.pdf}}
-\caption[Plots of the maximum likelihood scans for the model-independent search.]{Maximum likelihood scans, including 68\% and 95\% CL contours obtained from the signal likelihood for the model-independent search. The scans are shown for$m_{\phi}$ values of 60 (a), 100 (b), 125 (c), 160 (d), 250 (e), 500 (f), 1000 (g), 1200 (h) and 3500 (i) GeV~\cite{CMS:2022rbd}.}
+\caption[Plots of the maximum likelihood scans for the model-independent search.]{Maximum likelihood scans, including 68\% and 95\% CL contours obtained from the signal likelihood for the model-independent search. The scans are shown for $m_{\phi}$ values of 60 (a), 100 (b), 125 (c), 160 (d), 250 (e), 500 (f), 1000 (g), 1200 (h) and 3500 (i) GeV~\cite{CMS:2022rbd}.}
 \label{fig:2d_likelihood_scans}
 \end{figure}
 
@@ -1241,7 +1239,7 @@ The red hatched regions denote areas where $m_{h}$ is inconsistent with the obse
 For low values of $\tan\beta$, higher values of the additional SUSY particle masses, denoted as $m_{\text{SUSY}}$, are needed to explain a mass of approximately $125$ GeV for the Higgs boson. 
 In the $M_{h}^{125}$ scenario, $m_{\text{SUSY}}$ is fixed, and the predicted value of $m_{h}$ is below $122$ GeV. 
 In contrast, the $M_{h,EFT}^{125}$ scenario adjusts $m_{\text{SUSY}}$ to satisfy the required value of $m_{h}$ for each point in $m_{A}$ and $\tan\beta$ individually, accounting for the logarithmic corrections associated with the large values of $m_{\text{SUSY}}$ using an effective field theory approach. 
-The red hatched region in Figure~\ref{fig:mssm_limits}b indicates that the required values of $m_{\text{SUSY}}$ exceed the GUT scale at very low values of $m_{A}$ in this scenario. 
+The red hatched region in Figure~\ref{fig:mssm_limits}b indicates the region where the required values of $m_{\text{SUSY}}$ exceeds the energy scale for the Grand Unified Theory~\cite{Bahl:2019ago}. 
 The Higgs boson masses, mixing angle $\alpha$, and effective Yukawa couplings were calculated using \textsc{FeynHiggs}, and branching fractions for the decay into $\tau$ leptons and other final states were obtained from a combination of the \textsc{FeynHiggs} and \textsc{HDECAY}, following the prescriptions in References~\cite{LHCHiggsCrossSectionWorkingGroup:2013rie,deFlorian:2016spz,Denner:2011mq}, for the scenarios described in Reference~\cite{Bagnaschi:2791954}. \\
 
 For the $M_{h,EFT}^{125}$ scenario, the sensitivity sharply drops at $m_{A}=2m_{t}$ due to a drop in the branching fractions for the decay of A and H into $\tau$ leptons, when the A and H decay into two on-shell t quarks becomes kinematically accessible. 
@@ -1269,7 +1267,7 @@ It is not possible within these scenarios to predict the excess of gluon fusion 
 
 Upper limits of 95\% \ac{CL} for VLQ BM 1 and 2 are shown in Figure~\ref{fig:vlq_limits}. 
 These are drawn with respect to the leptoquark mass ($m_{U}$) and coupling ($g_{U}$).
-The limit on $g_{U}$ decreases as $m_{U}$ increases, with values of $g_U$ ranging from 1.3 to 5.2 in VLQ BM 1 and 0.8 to 3.2 in VLQ BM 2. 
+The limit on $g_{U}$ decreases as $m_{U}$ increases, with values of $g_U$ ranging from 1.3 to 5.2 in VLQ BM 1 and 0.8 to 3.2 in VLQ BM 2 for $m_U$ between 1 and 5 TeV. 
 VLQ BM 2 has stronger exclusion limits than VLQ BM 1 due to additional right-handed couplings of the leptoquark with a b quark and a $\tau$ lepton. \\
 
 \begin{figure}[!hbtp]

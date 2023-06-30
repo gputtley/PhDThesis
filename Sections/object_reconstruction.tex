@@ -48,8 +48,8 @@ The clustering algorithm used in the calorimeters can be split into three stages
 Firstly, \say{cluster seeds} are identified as local maxima of energy in calorimeter cells above a specified threshold. 
 Secondly, \say{topological clusters} are formed by combining cells that have at least one side in common with an existing cluster cell and exceed a given energy threshold. 
 These thresholds correspond to the electronics' noise and are 80 MeV in the \ac{ECAL} barrel, 300 MeV in the \ac{ECAL} end caps and 800 MeV in the \ac{HCAL}. 
-The number of seeds dictates how many \say{particle flow clusters} are formed from a topological cluster.
-Utilising the granularity of the calorimeter, an iterative process is employed to determine cluster energies and positions by distributing the energy of each cell among all particle flow clusters based on the distance between the cell and the cluster. \\
+The number of seeds dictates how many \say{\ac{PF} clusters} are formed from a topological cluster.
+Utilising the granularity of the calorimeter, an iterative process is employed to determine cluster energies and positions by distributing the energy of each cell among all \ac{PF} clusters based on the distance between the cell and the cluster. \\
 
 Muon reconstruction involves the matching of tracks from the inner tracker to tracks in the muon system~\cite{CMS:2012nsv,CMS:2018rym}.
 Initially, tracks are independently reconstructed in each system. 
@@ -65,14 +65,14 @@ The path of electrons towards the \ac{ECAL} involves traversing a considerable a
 The thickness of this material varies depending on the $\eta$ region, ranging from approximately 0.4 to 2 radiation lengths. 
 Within this material, electrons can emit bremsstrahlung photons, resulting in a significant energy loss. 
 At regions with maximal material thickness, electrons lose an average of 86\% of their energy, predominantly spreading out in the $\phi$ direction due to magnetic field-induced bending. 
-To accurately measure the initial electron energy, the energy from all emitted photons is measured through the \ac{SC} algorithms. 
+To accurately measure the initial electron energy, the energy from all emitted photons is measured through the \ac{SC} algorithms~\cite{PF_CMS}. 
 These algorithms initiate clustering with seed crystals, expanding the clusters based on energy thresholds and merging them into the \ac{SC}. \\
 
 For reconstructing electron tracks, the standard \ac{CTF} algorithm is not suitable due to the substantial radiative losses in the tracker material. 
 These losses lead to reduced hit collection efficiency and inaccurate trajectory parameter estimation. 
 To address this, a dedicated tracking procedure is employed~\cite{CMS:2015xaf}, which identifies seeds consisting of two or three hits in the tracker using two complementary methods: \ac{ECAL}-based seeding and tracker-based seeding. 
 \ac{ECAL}-based seeding uses \ac{SC} energy and position to estimate the trajectory, while tracker-based seeding starts with tracks reconstructed using the \ac{CTF} algorithm.
-The selected seeds are then extrapolated and smoothed with the \ac{GSF} instead of the \ac{KF}. 
+The selected seeds are then extrapolated and smoothed with the \ac{GSF}~\cite{Adam:2003kg} instead of the \ac{KF}. 
 The \ac{GSF}, with a Gaussian mixture to model bremsstrahlung energy loss, provides a more accurate estimation of the trajectory parameters. \\
 
 \ac{PF} elements are connected by a link algorithm that evaluates the quality of the connection between each pair of elements by defining a distance~\cite{PF_CMS}.
@@ -83,7 +83,7 @@ Similarly, links between calorimeter clusters are established based on their pos
 A link between a charged particle track in the tracker and a muon track in the muon system is established through a global fit, with the link distance determined by the $\chi^2$ value of the fit. \\
 
 The \ac{PF} algorithm operates on each block by following a specific set of steps. 
-Initially, global muons within the block are converted into \say{\ac{PF} muons} if their combined momentum aligns with that determined solely from the tracker. 
+Initially, global muons within the block are converted into \say{\ac{PF} muons} if their energy deposits in the \ac{ECAL} and \ac{HCAL} align with the track. 
 Afterwards, electron reconstruction and identification take place, where tracks are pre-identified as potential electrons based on their characteristics. 
 Identified electrons become \say{\ac{PF} electrons}, and their corresponding tracks and \ac{ECAL} clusters are removed. \\
 
@@ -194,7 +194,7 @@ Similarly to muons, an isolation variable is used to further separate electrons 
 Unlike for muons, the isolation used is based on the photon, neutral and charged hadron \ac{PF} candidates within a smaller cone size of $\Delta R<0.3$ of the selected electron.
 A different method to estimate the neutral particles due to \ac{PU} is used, called the $\rho$-effective-area method. 
 The \ac{PU} contribution in this method is estimated as $\text{PU}=\rho A_{\text{eff}}$, where $\rho$ is the event-specific average \ac{PU} energy density per unit area in the $\phi$-$\eta$ plane and the $A_{\text{eff}}$ is the effective area specific to the given type of isolation. 
-The rho-effective-area subtracted relative combined isolation variable is defined as,
+The $\rho$-effective-area subtracted relative combined isolation variable is defined as,
 
 \begin{equation}
 \label{eqn:electron_reliso_rho}
@@ -281,7 +281,7 @@ This corresponds to a b tagging efficiency of around 80\%.
 \section{Missing transverse energy}
 
 The \ac{MET} is used as a feature to understand particles passing through the \ac{CMS}, such as neutrinos in the \ac{SM} and weakly interacting particles from hypothetical \ac{BSM} extensions.
-This information cannot be pulled from the detector itself but instead, the absence of detection can be used to infer the presence of such an object
+This information cannot be pulled from the detector itself but instead, the absence of detection can be used to infer the presence of such an object.
 The \ac{MET} is nominally calculated as the negative vector sum of all transverse momenta of the \ac{PF} candidates in the collision event,
 
 \begin{equation}
@@ -375,7 +375,7 @@ These functions have lower and upper caps of 0.05 to 0.3 for $\Delta\phi$ and 0.
 \item Repeat steps (ii) and (iii) until no other electron or photon candidate fulfilling condition (ii) is found.
 \end{enumerate}
 
-\begin{figure}[!hbtp]
+\begin{figure}[t]
 \centering
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/hps_f.png}}
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/hps_g.png}} \\
@@ -406,17 +406,18 @@ The \ac{DM} of the $\tauh$ object that is reconstructed by \ac{HPS} is quantifie
 
 The second step of the identification comes from a multiclass \ac{DNN}-based algorithm named \texttt{DeepTau}, which seeks to discriminate $\tauh$ decays from electrons, muons, and most importantly quark or gluon jets, which can be misidentified as $\tau$ decays~\cite{CMS:2022prd}, trained on \ac{MC} simulated events.
 It uses a \ac{DNN} architecture that consists of multiple interconnected layers of nodes, that attempt to learn whether the input object is a $\tauh$ decay, an electron, a muon or a jet. 
-The algorithm takes inputs from reconstructed particles surrounding the \ac{HPS} $\tauh$ candidate, including information about energies, momenta, and spatial positions. 
+The algorithm takes inputs from reconstructed particles surrounding the \ac{HPS} $\tauh$ candidate, including information about energies, momenta and spatial positions. 
 Convolutional layers are used to efficiently process these inputs by dividing them into smaller regions in $\eta$-$\phi$ space, which allows the algorithm to extract local patterns and features. 
 It also incorporates high-level features of the $\tauh$ candidate calculated from the \ac{HPS} algorithm, such as the four-momentum, charge, \ac{DM}, isolation variables used in previous \ac{MVA}~\cite{CMS:2018jrd}, impact parameters, $\eta$ and $\phi$ strip information, as well as event level information such as variables related to the $\ac{PU}$.
 The architecture of the algorithm is shown in Figure~\ref{fig:deeptau}. \\
 
-\begin{figure}[!hbtp]
+\begin{figure}[p!]
 \centering
     \includegraphics[width=\textwidth]{Figures/deeptau.pdf}
 \caption[Diagram of the architecture of the \texttt{DeepTau} neural network.]{The architecture of the \texttt{DeepTau} neural network, comprising three sets of input variables: inner cells, outer cells, and high-level features. These sets are processed separately through subnetworks and their outputs are concatenated. Five fully connected layers process the concatenated output to calculate the probabilities for a candidate to be a $\tauh$, electron, muon, or jet. The high-level input subnetwork consists of three fully connected layers, taking 47 inputs and yielding 57 outputs. Complex subnetworks process the features of inner and outer cells separately, with fully connected layers followed by concatenation and additional fully connected layers. Convolutional layers progressively reduce the grid size for both inner and outer cells. For inner cells, there are 5 convolutional layers, while for outer cells, there are 10 convolutional layers. The number of trainable parameters for the different subnetworks is also provided~\cite{CMS:2022prd}.}
 \label{fig:deeptau}
 \end{figure}
+
 
 The \texttt{DeepTau} \ac{DNN} is trained using a large dataset, incorporating examples of $\tauh$ decays and background processes of electrons, muons and jets. 
 The output of the \ac{DNN} is four scores, that represent the probability that the object is a $\tauh$ ($y_\tau$), an electron ($y_e$), a muon ($y_\mu$) or a jet ($y_{\text{jet}}$).
@@ -444,19 +445,19 @@ $D_{\text{jet}}^{\text{WP}}$ & 40\%    & 50\%   & 60\%   & 70\%   & 80\%   & 90\
 \hline
 \end{tabular}
 \end{adjustwidth}
-\caption[Target efficiencies of the \texttt{DeepTau} working points.]{Target efficiencies of the \texttt{DeepTau} working points with respect to the electrons, muons and jets discriminators~\cite{CMS:2022prd}.}
+\caption[Target efficiencies of the \texttt{DeepTau} working points.]{Target efficiencies of the \texttt{DeepTau} working points with respect to the electron, muon and jet discriminators~\cite{CMS:2022prd}.}
 \label{tab:deeptau_eff}
 \end{table}
 
 Due to the lack of muons misidentified as $\tauh$ candidates, high efficiencies can be required for $D_{\mu}^{\text{WP}}$.
-This is also the reason why the target efficiencies for $D_{e}^{\text{WP}}$ are higher than for $D_{\text{jet}}^{\text{WP}}$, where the large challenge of jets misidentified as $\tauh$ candidates are present.
+This is also why the target efficiencies for $D_{e}^{\text{WP}}$ are higher than for $D_{\text{jet}}^{\text{WP}}$, where the large challenge of jets misidentified as $\tauh$ candidates are present.
 The misidentification probabilities for the different $\tauh$ efficiencies are shown in Figure~\ref{fig:deeptau_misid}.
 Also shown in these plots, is the performance comparison to an older \ac{MVA} algorithm for discrimination against electrons and jets, as well as a cut-based algorithm for muons, both described in Reference~\cite{CMS:2018jrd}.
 Significant improvements compared to the previous algorithm are observed, which results in a significant improvement in analyses utilising $\tau$ leptons at the \ac{CMS} experiment.
 The different $D_{e}^{\text{WP}}$, $D_{\mu}^{\text{WP}}$ and $D_{\text{jet}}^{\text{WP}}$ can be used to optimise the $\tauh$ identification for analyses attempting to separate $\tau$-enriched signals from backgrounds of misidentified objects.
 Two examples of analyses that utilise this are described in Chapter~\ref{sec:bsm_H_to_tau_tau_analysis} and \ref{sec:H_A_to_4_tau_analysis}.
 
-\begin{figure}[!hbtp]
+\begin{figure}[p!]
 \centering
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/deeptau_misid_electron.pdf}}
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/deeptau_misid_muon.pdf}} \\

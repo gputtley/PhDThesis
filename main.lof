@@ -17,7 +17,7 @@
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Plots of the electron identification performance.}}{50}{figure.caption.67}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Plot of the b tagging performance.}}{53}{figure.caption.72}%
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Plots of the fit performed for dynamical strip sizes for the HPS algorithm.}}{56}{figure.caption.75}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Diagram of the architecture of the \texttt {DeepTau} neural network.}}{58}{figure.caption.78}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Diagram of the architecture of the \texttt {DeepTau} neural network.}}{59}{figure.caption.78}%
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Plots of \texttt {DeepTau} identification performance.}}{60}{figure.caption.81}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Feynman diagrams for gluon fusion and production in association with b quarks.}}{62}{figure.caption.82}%
@@ -26,7 +26,7 @@
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Plots of the vector leptoquark generator level $m_{\tau \tau }$ distributions, when changing $g_{U}$.}}{67}{figure.caption.88}%
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Diagram of the inputs to the $D_\zeta $ variable.}}{70}{figure.caption.91}%
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Diagram of the categories in the high-mass optimisation procedure.}}{72}{figure.caption.92}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Diagram of the categories in the low-mass optimisation procedure.}}{74}{figure.caption.94}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Diagram of the categories in the low-mass optimisation procedure.}}{74}{figure.caption.93}%
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Diagram of the embedding method.}}{78}{figure.caption.96}%
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Plot of the validation of the embedding method.}}{79}{figure.caption.97}%
 \contentsline {figure}{\numberline {4.10}{\ignorespaces Diagram of the regions used for fake factor derivation.}}{81}{figure.caption.98}%
@@ -35,20 +35,20 @@
 \contentsline {figure}{\numberline {4.13}{\ignorespaces Plots of the fake factor fits in the $\tau _{h}\tau _{h}$ channel.}}{85}{figure.caption.101}%
 \contentsline {figure}{\numberline {4.14}{\ignorespaces Plots of the fake factor fits in the $\mu \tau _{h}$ channel.}}{85}{figure.caption.102}%
 \contentsline {figure}{\numberline {4.15}{\ignorespaces Diagram of the fake MET alignment with the $\tau _{h}$ candidate.}}{86}{figure.caption.103}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Plots of fake factor \texttt {Determination Region} closure correction fits.}}{87}{figure.caption.104}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Plots of fake factor \texttt {Determination Region} closure correction fits.}}{88}{figure.caption.104}%
 \contentsline {figure}{\numberline {4.17}{\ignorespaces Plots of fake factor \texttt {Determination Region} to \texttt {Application Region} closure correction fits.}}{88}{figure.caption.105}%
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Plots of the expected fake factor \texttt {Application Region} fractions of the processes in the $\mu _{}\tau _{h}$ channel.}}{89}{figure.caption.106}%
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Plots of the $m_{\tau \tau }$ distributions in the low-mass optimisation categories.}}{100}{figure.caption.122}%
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Plots of the $m_{T}^\text {tot}$ distributions in the high-mass optimisation categories.}}{101}{figure.caption.123}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Plots of the expected fake factor \texttt {Application Region} fractions of the processes in the $\mu _{}\tau _{h}$ channel.}}{90}{figure.caption.106}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Plots of the $m_{\tau \tau }$ distributions in the low-mass optimisation categories.}}{99}{figure.caption.122}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Plots of the $m_{T}^\text {tot}$ distributions in the high-mass optimisation categories.}}{100}{figure.caption.123}%
 \contentsline {figure}{\numberline {4.21}{\ignorespaces Plots of the model-independent limits on the cross-sections of gluon fusion and b-associated production multiplied by the $\tau \tau $ branching fraction.}}{102}{figure.caption.124}%
 \contentsline {figure}{\numberline {4.22}{\ignorespaces Plots of the expected model-independent limits split by the $\tau \tau $ decay channels.}}{103}{figure.caption.125}%
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Plots of the comparison of the model-independent limits between CMS and ATLAS.}}{104}{figure.caption.126}%
-\contentsline {figure}{\numberline {4.24}{\ignorespaces Plots of the local $p$-value and significance for gluon fusion and b-associated production.}}{104}{figure.caption.127}%
-\contentsline {figure}{\numberline {4.25}{\ignorespaces Plots of the compatibility of the 100 GeV excess across the di-$\tau $ decay channels and categories.}}{105}{figure.caption.128}%
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Plots of the comparison of the model-independent limits between CMS and ATLAS.}}{103}{figure.caption.126}%
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Plots of the local $p$-value and significance for gluon fusion and b-associated production.}}{105}{figure.caption.127}%
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Plots of the compatibility of the 100 GeV excess across the di-$\tau $ decay channels and categories.}}{106}{figure.caption.128}%
 \contentsline {figure}{\numberline {4.26}{\ignorespaces Plots of the compatibility of the 1.2 TeV excess across the di-$\tau $ decay channels.}}{106}{figure.caption.129}%
-\contentsline {figure}{\numberline {4.27}{\ignorespaces Plots of the maximum likelihood scans for the model-independent search.}}{107}{figure.caption.130}%
-\contentsline {figure}{\numberline {4.28}{\ignorespaces Plots of the model-dependent limits in MSSM benchmark scenarios.}}{109}{figure.caption.131}%
-\contentsline {figure}{\numberline {4.29}{\ignorespaces Plots of the model-dependent limits in the vector leptoquark phase space.}}{110}{figure.caption.132}%
+\contentsline {figure}{\numberline {4.27}{\ignorespaces Plots of the maximum likelihood scans for the model-independent search.}}{108}{figure.caption.130}%
+\contentsline {figure}{\numberline {4.28}{\ignorespaces Plots of the model-dependent limits in MSSM benchmark scenarios.}}{110}{figure.caption.131}%
+\contentsline {figure}{\numberline {4.29}{\ignorespaces Plots of the model-dependent limits in the vector leptoquark phase space.}}{111}{figure.caption.132}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Diagram of the production of two additional neutral Higgs bosons from an off-shell Z boson and their decay to $\tau $ leptons.}}{114}{figure.caption.133}%
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Plots of the $Z\rightarrow \phi {\ensuremath {\text {A}}}\xspace $ generator level distributions of the visible masses $m^{A}_{\text {vis}}$ and $m^{\phi }_{\text {vis}}$.}}{114}{figure.caption.134}%

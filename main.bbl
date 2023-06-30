@@ -462,6 +462,13 @@ T.~Speer, W.~Adam, R.~Fruhwirth, A.~Strandlie, T.~Todorov and M.~Winkler,
   {\bfseries 10} (2015) P06005}
   [\href{https://arxiv.org/abs/1502.02701}{{\ttfamily 1502.02701}}].
 
+\bibitem{Adam:2003kg}
+W.~Adam, R.~Fruhwirth, A.~Strandlie and T.~Todorov, \emph{{Reconstruction of
+  electrons with the Gaussian sum filter in the CMS tracker at LHC}},
+  \href{https://doi.org/10.1088/0954-3899/31/9/N01}{\emph{eConf} {\bfseries
+  C0303241} (2003) TULT009}
+  [\href{https://arxiv.org/abs/physics/0306087}{{\ttfamily physics/0306087}}].
+
 \bibitem{CMS:2009fdy}
 {CMS Collaboration}, \emph{{Performance of CMS Muon Reconstruction in
   Cosmic-Ray Events}},

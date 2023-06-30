@@ -44,8 +44,8 @@
 \contentsline {subsection}{\numberline {4.7.1}Determination regions}{80}{subsection.4.7.1}%
 \contentsline {subsection}{\numberline {4.7.2}Parametrisation}{82}{subsection.4.7.2}%
 \contentsline {subsection}{\numberline {4.7.3}Corrections}{86}{subsection.4.7.3}%
-\contentsline {subsection}{\numberline {4.7.4}Applying fake factors}{88}{subsection.4.7.4}%
-\contentsline {section}{\numberline {4.8}MC corrections}{90}{section.4.8}%
+\contentsline {subsection}{\numberline {4.7.4}Applying fake factors}{87}{subsection.4.7.4}%
+\contentsline {section}{\numberline {4.8}MC corrections}{89}{section.4.8}%
 \contentsline {section}{\numberline {4.9}Uncertainty model}{91}{section.4.9}%
 \contentsline {subsubsection}{Hadronic taus}{92}{section*.107}%
 \contentsline {subsubsection}{Light leptons}{92}{section*.108}%
@@ -54,18 +54,18 @@
 \contentsline {subsubsection}{Jets misidentified as hadronic taus}{93}{section*.111}%
 \contentsline {subsubsection}{Jets misidentified as light leptons}{93}{section*.112}%
 \contentsline {subsubsection}{Muons misidentified as electrons}{93}{section*.113}%
-\contentsline {subsubsection}{MET}{93}{section*.114}%
+\contentsline {subsubsection}{MET}{94}{section*.114}%
 \contentsline {subsubsection}{Background process-specific uncertainties}{94}{section*.115}%
 \contentsline {subsubsection}{Signal process specific uncertainties}{94}{section*.116}%
 \contentsline {subsubsection}{Luminosity}{94}{section*.117}%
-\contentsline {subsubsection}{Prefiring}{94}{section*.118}%
+\contentsline {subsubsection}{Prefiring}{95}{section*.118}%
 \contentsline {section}{\numberline {4.10}Signal extraction}{95}{section.4.10}%
 \contentsline {section}{\numberline {4.11}Postfit plots}{98}{section.4.11}%
-\contentsline {section}{\numberline {4.12}Model-independent results}{99}{section.4.12}%
-\contentsline {subsection}{\numberline {4.12.1}Limits}{99}{subsection.4.12.1}%
-\contentsline {subsection}{\numberline {4.12.2}Significance and compatibility}{103}{subsection.4.12.2}%
-\contentsline {subsection}{\numberline {4.12.3}2D likelihood scans}{105}{subsection.4.12.3}%
-\contentsline {section}{\numberline {4.13}Model-dependent limits}{106}{section.4.13}%
+\contentsline {section}{\numberline {4.12}Model-independent results}{101}{section.4.12}%
+\contentsline {subsection}{\numberline {4.12.1}Limits}{101}{subsection.4.12.1}%
+\contentsline {subsection}{\numberline {4.12.2}Significance and compatibility}{104}{subsection.4.12.2}%
+\contentsline {subsection}{\numberline {4.12.3}2D likelihood scans}{107}{subsection.4.12.3}%
+\contentsline {section}{\numberline {4.13}Model-dependent limits}{107}{section.4.13}%
 \contentsline {chapter}{\numberline {5}Search for new physics in $\tau ^+\tau ^-\tau ^+\tau ^-$ final states}{112}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Signal modelling}{113}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Event selection}{115}{section.5.2}%
