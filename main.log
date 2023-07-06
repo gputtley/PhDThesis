@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.26)  1 JUL 2023 10:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.26)  6 JUL 2023 15:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3251,17 +3251,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 215--223
 
  []
 
-<Figures/event-categories_4tau.pdf, id=5723, 398.3386pt x 227.62204pt>
-File: Figures/event-categories_4tau.pdf Graphic file (type pdf)
-<use Figures/event-categories_4tau.pdf>
-Package pdftex.def Info: Figures/event-categories_4tau.pdf  used on input line 
-226.
-(pdftex.def)             Requested size: 362.77525pt x 207.31003pt.
-[124 <./Figures/event-categories_4tau.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 236--241
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--234
 
  []
 
+<Figures/event-categories_4tau.pdf, id=5725, 398.3386pt x 227.62204pt>
+File: Figures/event-categories_4tau.pdf Graphic file (type pdf)
+<use Figures/event-categories_4tau.pdf>
+Package pdftex.def Info: Figures/event-categories_4tau.pdf  used on input line 
+237.
+(pdftex.def)             Requested size: 362.77525pt x 207.31003pt.
+[124]
 Package acronym Info: Label `acro:ML' newly defined as it shall be overridden
 although it is yet undefined on input line 258.
 
@@ -3269,7 +3270,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 254--261
 
  []
 
-[125]
+[125 <./Figures/event-categories_4tau.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 269--278
 
  []
@@ -3331,11 +3332,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 358--363
 
  []
 
-
-Underfull \vbox (badness 2809) has occurred while \output is active []
-
- [129]
-[130]
+[129] [130]
 Underfull \hbox (badness 10000) in paragraph at lines 410--414
 
  []
@@ -3345,41 +3342,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 415--418
 
  []
 
-[131]
+
 Underfull \hbox (badness 10000) in paragraph at lines 419--420
 
  []
 
-<Figures/subtraction_plot_pt_1_mttt_pass.pdf, id=5961, 569.12625pt x 546.04pt>
+<Figures/subtraction_plot_pt_1_mttt_pass.pdf, id=5950, 569.12625pt x 546.04pt>
 File: Figures/subtraction_plot_pt_1_mttt_pass.pdf Graphic file (type pdf)
 <use Figures/subtraction_plot_pt_1_mttt_pass.pdf>
 Package pdftex.def Info: Figures/subtraction_plot_pt_1_mttt_pass.pdf  used on i
 nput line 423.
-(pdftex.def)             Requested size: 192.0548pt x 184.26805pt.
-<Figures/subtraction_plot_jet_pt_1_divide_pt_1_mttt_pass.pdf, id=5962, 569.1262
+(pdftex.def)             Requested size: 213.39568pt x 204.7395pt.
+<Figures/subtraction_plot_jet_pt_1_divide_pt_1_mttt_pass.pdf, id=5951, 569.1262
 5pt x 546.04pt>
 File: Figures/subtraction_plot_jet_pt_1_divide_pt_1_mttt_pass.pdf Graphic file 
 (type pdf)
 <use Figures/subtraction_plot_jet_pt_1_divide_pt_1_mttt_pass.pdf>
 Package pdftex.def Info: Figures/subtraction_plot_jet_pt_1_divide_pt_1_mttt_pas
 s.pdf  used on input line 424.
-(pdftex.def)             Requested size: 192.0548pt x 184.26805pt.
-<Figures/subtraction_plot_tau_decay_mode_1_mttt_pass.pdf, id=5963, 569.12625pt 
+(pdftex.def)             Requested size: 213.39568pt x 204.7395pt.
+<Figures/subtraction_plot_tau_decay_mode_1_mttt_pass.pdf, id=5952, 569.12625pt 
 x 546.04pt>
 File: Figures/subtraction_plot_tau_decay_mode_1_mttt_pass.pdf Graphic file (typ
 e pdf)
 <use Figures/subtraction_plot_tau_decay_mode_1_mttt_pass.pdf>
 Package pdftex.def Info: Figures/subtraction_plot_tau_decay_mode_1_mttt_pass.pd
 f  used on input line 425.
-(pdftex.def)             Requested size: 192.0548pt x 184.26805pt.
-<Figures/subtraction_plot_eta_1_mttt_pass.pdf, id=5964, 569.12625pt x 546.04pt>
+(pdftex.def)             Requested size: 213.39568pt x 204.7395pt.
+<Figures/subtraction_plot_eta_1_mttt_pass.pdf, id=5953, 569.12625pt x 546.04pt>
 
 File: Figures/subtraction_plot_eta_1_mttt_pass.pdf Graphic file (type pdf)
 <use Figures/subtraction_plot_eta_1_mttt_pass.pdf>
 Package pdftex.def Info: Figures/subtraction_plot_eta_1_mttt_pass.pdf  used on 
 input line 426.
-(pdftex.def)             Requested size: 192.0548pt x 184.26805pt.
-
+(pdftex.def)             Requested size: 213.39568pt x 204.7395pt.
+[131]
 Underfull \hbox (badness 10000) in paragraph at lines 433--437
 
  []
@@ -3391,7 +3388,7 @@ pdf)
 <use Figures/reweight_ave_plot_pt_1_all_mttt_all_years.pdf>
 Package pdftex.def Info: Figures/reweight_ave_plot_pt_1_all_mttt_all_years.pdf 
  used on input line 440.
-(pdftex.def)             Requested size: 192.0548pt x 184.26805pt.
+(pdftex.def)             Requested size: 213.39568pt x 204.7395pt.
 <Figures/reweight_ave_plot_jet_pt_1_divide_pt_1_all_mttt_all_years.pdf, id=5969
 , 569.12625pt x 546.04pt>
 File: Figures/reweight_ave_plot_jet_pt_1_divide_pt_1_all_mttt_all_years.pdf Gra
@@ -3399,7 +3396,7 @@ phic file (type pdf)
 <use Figures/reweight_ave_plot_jet_pt_1_divide_pt_1_all_mttt_all_years.pdf>
 Package pdftex.def Info: Figures/reweight_ave_plot_jet_pt_1_divide_pt_1_all_mtt
 t_all_years.pdf  used on input line 441.
-(pdftex.def)             Requested size: 192.0548pt x 184.26805pt.
+(pdftex.def)             Requested size: 213.39568pt x 204.7395pt.
 <Figures/reweight_ave_plot_tau_decay_mode_1_all_mttt_all_years.pdf, id=5970, 56
 9.12625pt x 546.04pt>
 File: Figures/reweight_ave_plot_tau_decay_mode_1_all_mttt_all_years.pdf Graphic
@@ -3407,7 +3404,7 @@ File: Figures/reweight_ave_plot_tau_decay_mode_1_all_mttt_all_years.pdf Graphic
 <use Figures/reweight_ave_plot_tau_decay_mode_1_all_mttt_all_years.pdf>
 Package pdftex.def Info: Figures/reweight_ave_plot_tau_decay_mode_1_all_mttt_al
 l_years.pdf  used on input line 442.
-(pdftex.def)             Requested size: 192.0548pt x 184.26805pt.
+(pdftex.def)             Requested size: 213.39568pt x 204.7395pt.
 <Figures/reweight_ave_plot_eta_1_all_mttt_all_years.pdf, id=5971, 569.12625pt x
  546.04pt>
 File: Figures/reweight_ave_plot_eta_1_all_mttt_all_years.pdf Graphic file (type
@@ -3415,7 +3412,7 @@ File: Figures/reweight_ave_plot_eta_1_all_mttt_all_years.pdf Graphic file (type
 <use Figures/reweight_ave_plot_eta_1_all_mttt_all_years.pdf>
 Package pdftex.def Info: Figures/reweight_ave_plot_eta_1_all_mttt_all_years.pdf
   used on input line 443.
-(pdftex.def)             Requested size: 192.0548pt x 184.26805pt.
+(pdftex.def)             Requested size: 213.39568pt x 204.7395pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 448--451
 
@@ -3428,7 +3425,7 @@ df)
 <use Figures/closure_plot_pt_1_all_mttt_all_years_all.pdf>
 Package pdftex.def Info: Figures/closure_plot_pt_1_all_mttt_all_years_all.pdf  
 used on input line 454.
-(pdftex.def)             Requested size: 192.0548pt x 184.26805pt.
+(pdftex.def)             Requested size: 213.39568pt x 204.7395pt.
 <Figures/closure_plot_jet_pt_1_divide_pt_1_all_mttt_all_years_all.pdf, id=5976,
  569.12625pt x 546.04pt>
 File: Figures/closure_plot_jet_pt_1_divide_pt_1_all_mttt_all_years_all.pdf Grap
@@ -3436,7 +3433,7 @@ hic file (type pdf)
 <use Figures/closure_plot_jet_pt_1_divide_pt_1_all_mttt_all_years_all.pdf>
 Package pdftex.def Info: Figures/closure_plot_jet_pt_1_divide_pt_1_all_mttt_all
 _years_all.pdf  used on input line 455.
-(pdftex.def)             Requested size: 192.0548pt x 184.26805pt.
+(pdftex.def)             Requested size: 213.39568pt x 204.7395pt.
 <Figures/closure_plot_tau_decay_mode_1_all_mttt_all_years_all.pdf, id=5977, 569
 .12625pt x 546.04pt>
 File: Figures/closure_plot_tau_decay_mode_1_all_mttt_all_years_all.pdf Graphic 
@@ -3444,7 +3441,7 @@ file (type pdf)
 <use Figures/closure_plot_tau_decay_mode_1_all_mttt_all_years_all.pdf>
 Package pdftex.def Info: Figures/closure_plot_tau_decay_mode_1_all_mttt_all_yea
 rs_all.pdf  used on input line 456.
-(pdftex.def)             Requested size: 192.0548pt x 184.26805pt.
+(pdftex.def)             Requested size: 213.39568pt x 204.7395pt.
 <Figures/closure_plot_eta_1_all_mttt_all_years_all.pdf, id=5978, 569.12625pt x 
 546.04pt>
 File: Figures/closure_plot_eta_1_all_mttt_all_years_all.pdf Graphic file (type 
@@ -3452,7 +3449,7 @@ pdf)
 <use Figures/closure_plot_eta_1_all_mttt_all_years_all.pdf>
 Package pdftex.def Info: Figures/closure_plot_eta_1_all_mttt_all_years_all.pdf 
  used on input line 457.
-(pdftex.def)             Requested size: 192.0548pt x 184.26805pt.
+(pdftex.def)             Requested size: 213.39568pt x 204.7395pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 464--471
 
@@ -3497,42 +3494,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 533--539
  []
 
 [137]
-Underfull \hbox (badness 10000) in paragraph at lines 557--559
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 566--570
+Underfull \hbox (badness 10000) in paragraph at lines 565--569
 
  []
 
 [138]
-<Figures/postfit_plots_combined_postfit_high_stat.pdf, id=6557, 569.12625pt x 5
+<Figures/postfit_plots_combined_postfit_high_stat.pdf, id=6556, 569.12625pt x 5
 46.04pt>
 File: Figures/postfit_plots_combined_postfit_high_stat.pdf Graphic file (type p
 df)
 <use Figures/postfit_plots_combined_postfit_high_stat.pdf>
 Package pdftex.def Info: Figures/postfit_plots_combined_postfit_high_stat.pdf  
-used on input line 580.
+used on input line 579.
 (pdftex.def)             Requested size: 213.39568pt x 204.7395pt.
-<Figures/postfit_plots_combined_postfit_med_stat.pdf, id=6558, 569.12625pt x 54
+<Figures/postfit_plots_combined_postfit_med_stat.pdf, id=6557, 569.12625pt x 54
 6.04pt>
 File: Figures/postfit_plots_combined_postfit_med_stat.pdf Graphic file (type pd
 f)
 <use Figures/postfit_plots_combined_postfit_med_stat.pdf>
 Package pdftex.def Info: Figures/postfit_plots_combined_postfit_med_stat.pdf  u
-sed on input line 581.
+sed on input line 580.
 (pdftex.def)             Requested size: 213.39568pt x 204.7395pt.
-<Figures/postfit_plots_combined_postfit_low_stat.pdf, id=6559, 569.12625pt x 54
+<Figures/postfit_plots_combined_postfit_low_stat.pdf, id=6558, 569.12625pt x 54
 6.04pt>
 File: Figures/postfit_plots_combined_postfit_low_stat.pdf Graphic file (type pd
 f)
 <use Figures/postfit_plots_combined_postfit_low_stat.pdf>
 Package pdftex.def Info: Figures/postfit_plots_combined_postfit_low_stat.pdf  u
-sed on input line 582.
+sed on input line 581.
 (pdftex.def)             Requested size: 213.39568pt x 204.7395pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 592--601
+Underfull \hbox (badness 10000) in paragraph at lines 591--600
 
  []
 
@@ -3540,77 +3532,73 @@ Underfull \hbox (badness 10000) in paragraph at lines 592--601
 ated 90 degrees> <./Figures/postfit_plots_combined_postfit_med_stat.pdf, page i
 s rotated 90 degrees> <./Figures/postfit_plots_combined_postfit_low_stat.pdf, p
 age is rotated 90 degrees>]
-<Figures/model_independent_limit_all.pdf, id=6706, 454.69875pt x 569.12625pt>
+<Figures/model_independent_limit_all.pdf, id=6705, 454.69875pt x 569.12625pt>
 File: Figures/model_independent_limit_all.pdf Graphic file (type pdf)
 <use Figures/model_independent_limit_all.pdf>
 Package pdftex.def Info: Figures/model_independent_limit_all.pdf  used on input
- line 610.
+ line 609.
 (pdftex.def)             Requested size: 341.43437pt x 427.36469pt.
-<Figures/limit_comparison_4tau.pdf, id=6707, 569.12625pt x 546.04pt>
+<Figures/limit_comparison_4tau.pdf, id=6706, 569.12625pt x 546.04pt>
 File: Figures/limit_comparison_4tau.pdf Graphic file (type pdf)
 <use Figures/limit_comparison_4tau.pdf>
 Package pdftex.def Info: Figures/limit_comparison_4tau.pdf  used on input line 
-617.
+616.
 (pdftex.def)             Requested size: 256.07741pt x 245.69907pt.
-<Figures/ChannelCompatibilityCheck_FitResults_mphi100mA100_channel.pdf, id=6710
+<Figures/ChannelCompatibilityCheck_FitResults_mphi100mA100_channel.pdf, id=6709
 , 569.12625pt x 546.04pt>
 File: Figures/ChannelCompatibilityCheck_FitResults_mphi100mA100_channel.pdf Gra
 phic file (type pdf)
 <use Figures/ChannelCompatibilityCheck_FitResults_mphi100mA100_channel.pdf>
 Package pdftex.def Info: Figures/ChannelCompatibilityCheck_FitResults_mphi100mA
-100_channel.pdf  used on input line 633.
+100_channel.pdf  used on input line 632.
 (pdftex.def)             Requested size: 256.07741pt x 245.69907pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 640--644
+Underfull \hbox (badness 10000) in paragraph at lines 639--643
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 644--651
 
  []
 
 [141] [142 <./Figures/model_independent_limit_all.pdf>] [143 <./Figures/limit_c
 omparison_4tau.pdf, page is rotated 90 degrees> <./Figures/ChannelCompatibility
 Check_FitResults_mphi100mA100_channel.pdf, page is rotated 90 degrees>]
-Underfull \hbox (badness 10000) in paragraph at lines 645--652
+Underfull \hbox (badness 10000) in paragraph at lines 652--656
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 653--657
-
- []
-
-<Figures/md_mphi100.pdf, id=6859, 569.12625pt x 546.04pt>
+<Figures/md_mphi100.pdf, id=6858, 569.12625pt x 546.04pt>
 File: Figures/md_mphi100.pdf Graphic file (type pdf)
 <use Figures/md_mphi100.pdf>
-Package pdftex.def Info: Figures/md_mphi100.pdf  used on input line 660.
+Package pdftex.def Info: Figures/md_mphi100.pdf  used on input line 659.
 (pdftex.def)             Requested size: 277.41176pt x 266.17052pt.
-<Figures/md_mphi200.pdf, id=6860, 569.12625pt x 546.04pt>
+<Figures/md_mphi200.pdf, id=6859, 569.12625pt x 546.04pt>
 File: Figures/md_mphi200.pdf Graphic file (type pdf)
 <use Figures/md_mphi200.pdf>
-Package pdftex.def Info: Figures/md_mphi200.pdf  used on input line 661.
+Package pdftex.def Info: Figures/md_mphi200.pdf  used on input line 660.
 (pdftex.def)             Requested size: 277.41176pt x 266.17052pt.
 
-LaTeX Warning: Float too large for page by 19.47096pt on input line 664.
+LaTeX Warning: Float too large for page by 19.47096pt on input line 663.
 
-[144] [145 <./Figures/md_mphi100.pdf, page is rotated 90 degrees> <./Figures/md
-_mphi200.pdf, page is rotated 90 degrees>]
-<Figures/csbma_phi200A100.pdf, id=6959, 569.12625pt x 546.04pt>
+<Figures/csbma_phi200A100.pdf, id=6863, 569.12625pt x 546.04pt>
 File: Figures/csbma_phi200A100.pdf Graphic file (type pdf)
 <use Figures/csbma_phi200A100.pdf>
-Package pdftex.def Info: Figures/csbma_phi200A100.pdf  used on input line 678.
+Package pdftex.def Info: Figures/csbma_phi200A100.pdf  used on input line 677.
 (pdftex.def)             Requested size: 277.41176pt x 266.17052pt.
-<Figures/csbma_phi200A160.pdf, id=6960, 569.12625pt x 546.04pt>
+<Figures/csbma_phi200A160.pdf, id=6864, 569.12625pt x 546.04pt>
 File: Figures/csbma_phi200A160.pdf Graphic file (type pdf)
 <use Figures/csbma_phi200A160.pdf>
-Package pdftex.def Info: Figures/csbma_phi200A160.pdf  used on input line 679.
+Package pdftex.def Info: Figures/csbma_phi200A160.pdf  used on input line 678.
 (pdftex.def)             Requested size: 277.41176pt x 266.17052pt.
 
+LaTeX Warning: Float too large for page by 19.47096pt on input line 681.
 
-LaTeX Warning: Float too large for page by 19.47096pt on input line 682.
-
-) [146] [147 <./Figures/csbma_phi200A100.pdf, page is rotated 90 degrees> <./Fi
-gures/csbma_phi200A160.pdf, page is rotated 90 degrees>]
-(./Sections/conclusion.tex [148
-
-]
+) [144] [145 <./Figures/md_mphi100.pdf, page is rotated 90 degrees> <./Figures/
+md_mphi200.pdf, page is rotated 90 degrees>] [146 <./Figures/csbma_phi200A100.p
+df, page is rotated 90 degrees> <./Figures/csbma_phi200A160.pdf, page is rotate
+d 90 degrees>] (./Sections/conclusion.tex
 Chapter 6.
 
 Underfull \hbox (badness 10000) in paragraph at lines 16--18
@@ -3622,13 +3610,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--24
 
  []
 
-[149]
-<Figures/md_mphi100_hb.pdf, id=7085, 569.12625pt x 546.04pt>
+[147
+
+]
+<Figures/md_mphi100_hb.pdf, id=7076, 569.12625pt x 546.04pt>
 File: Figures/md_mphi100_hb.pdf Graphic file (type pdf)
 <use Figures/md_mphi100_hb.pdf>
 Package pdftex.def Info: Figures/md_mphi100_hb.pdf  used on input line 27.
 (pdftex.def)             Requested size: 298.75264pt x 286.64197pt.
-<Figures/md_mphi200_hb.pdf, id=7086, 569.12625pt x 546.04pt>
+<Figures/md_mphi200_hb.pdf, id=7077, 569.12625pt x 546.04pt>
 File: Figures/md_mphi200_hb.pdf Graphic file (type pdf)
 <use Figures/md_mphi200_hb.pdf>
 Package pdftex.def Info: Figures/md_mphi200_hb.pdf  used on input line 28.
@@ -3647,13 +3637,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--48
 
  []
 
-<Figures/csbma_phi200A100_hb.pdf, id=7103, 569.12625pt x 546.04pt>
+<Figures/csbma_phi200A100_hb.pdf, id=7094, 569.12625pt x 546.04pt>
 File: Figures/csbma_phi200A100_hb.pdf Graphic file (type pdf)
 <use Figures/csbma_phi200A100_hb.pdf>
 Package pdftex.def Info: Figures/csbma_phi200A100_hb.pdf  used on input line 51
 .
 (pdftex.def)             Requested size: 277.41176pt x 266.17052pt.
-<Figures/csbma_phi200A160_hb.pdf, id=7104, 569.12625pt x 546.04pt>
+<Figures/csbma_phi200A160_hb.pdf, id=7095, 569.12625pt x 546.04pt>
 File: Figures/csbma_phi200A160_hb.pdf Graphic file (type pdf)
 <use Figures/csbma_phi200A160_hb.pdf>
 Package pdftex.def Info: Figures/csbma_phi200A160_hb.pdf  used on input line 52
@@ -3662,8 +3652,8 @@ Package pdftex.def Info: Figures/csbma_phi200A160_hb.pdf  used on input line 52
 
 LaTeX Warning: Float too large for page by 38.321pt on input line 55.
 
-[150] [151 <./Figures/md_mphi100_hb.pdf, page is rotated 90 degrees> <./Figures
-/md_mphi200_hb.pdf, page is rotated 90 degrees>] [152 <./Figures/csbma_phi200A1
+[148] [149 <./Figures/md_mphi100_hb.pdf, page is rotated 90 degrees> <./Figures
+/md_mphi200_hb.pdf, page is rotated 90 degrees>] [150 <./Figures/csbma_phi200A1
 00_hb.pdf, page is rotated 90 degrees> <./Figures/csbma_phi200A160_hb.pdf, page
  is rotated 90 degrees>]
 Underfull \hbox (badness 10000) in paragraph at lines 65--68
@@ -3675,22 +3665,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--80
 
  []
 
-[153]
+[151]
 Underfull \hbox (badness 10000) in paragraph at lines 81--86
 
  []
 
-) [154] (./main.bbl [155
+) [152] (./main.bbl [153
 
-] [156] [157] [158] [159] [160] [161] [162]
+] [154] [155] [156] [157] [158] [159] [160]
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
 (Font)              using `T1/cmr/m/sc' instead on input line 648.
 
-[163] [164] [165] [166]) [167] (./Sections/acronyms.tex [168
+[161] [162] [163] [164]) [165] (./Sections/acronyms.tex [166
 
-] [169] [170])
-[171]
+] [167] [168])
+[169]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 151.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 151.
  (./main.aux)
@@ -3701,8 +3691,8 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 151.
  ) 
 Here is how much of TeX's memory you used:
- 30974 strings out of 482555
- 597352 string characters out of 5952144
+ 30972 strings out of 482555
+ 597336 string characters out of 5952144
  879950 words of memory out of 5000000
  45067 multiletter control sequences out of 15000+600000
  560094 words of font info for 100 fonts, out of 8000000 for 9000
@@ -3743,10 +3733,10 @@ cm-super/sfti0800.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-supe
 r/sfti1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sftt0
 800.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb
 >
-Output written on main.pdf (171 pages, 13274477 bytes).
+Output written on main.pdf (169 pages, 13273951 bytes).
 PDF statistics:
- 8078 PDF objects out of 8907 (max. 8388607)
- 5230 compressed objects within 53 object streams
- 754 named destinations out of 1000 (max. 500000)
+ 8069 PDF objects out of 8907 (max. 8388607)
+ 5223 compressed objects within 53 object streams
+ 752 named destinations out of 1000 (max. 500000)
  1369 words of extra memory for PDF output out of 10000 (max. 10000000)
 
