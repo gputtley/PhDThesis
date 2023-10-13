@@ -16,7 +16,7 @@ The trajectory parameters are continuously updated as hits are added to the trac
 The extrapolation process continues until the final detector layer is reached. \\
 
 Afterwards, a \ac{KF} and smoother are used to fit the final trajectory iteratively. 
-Spurious hits are identified and removed after each iteration until no more spurious hits are found. 
+Spurious hits are identified, based on their compatibility with the track, and removed after each iteration until no more spurious hits are found. 
 This fitting process provides the most accurate estimates of the trajectory parameters. 
 Subsequently, tracks must pass a set of quality criteria, and any failing tracks are discarded~\cite{Fruhwirth:1987fm}. \\
 
@@ -39,7 +39,7 @@ All the sub-detectors of \ac{CMS} are used to achieve accurate identification an
 The final output of the algorithm is a list of particles and their four vectors, that can then be used to construct more complicated objects such as jets, hadronically decaying taus, and the \ac{MET}.\\
 
 The tracking and calorimeter clustering information are the initial inputs to the \ac{PF} algorithm.
-The tracking information includes the high-resolution momentum and direction of charged hadrons calculated by an iterative-tracking strategy~\cite{Adam:934067}, which is not achievable with the calorimeters.
+The tracking information, determined using the algorithms described in Section~\ref{sec:track_and_vertex}, includes the high-resolution momentum and direction of charged hadrons calculated by an iterative-tracking strategy~\cite{Adam:934067}, which is not achievable with the calorimeters.
 The calorimeter clustering has multiple objectives, including detecting and measuring the energy and direction of neutral particles, separating neutral particles from charged hadrons, reconstructing electrons and bremsstrahlung photons, and aiding in the energy measurement of charged hadrons with inaccurate track parameters. 
 The clustering algorithm involves identifying \say{cluster seeds}, growing \say{topological clusters}, and generating \say{\ac{PF} clusters} based on energy thresholds and cell-cluster distances in each sub-detector, except for the \ac{HF}, where each cell forms a cluster.
 This is explained in more detail below. \\
@@ -47,7 +47,7 @@ This is explained in more detail below. \\
 The clustering algorithm used in the calorimeters can be split into three stages. 
 Firstly, \say{cluster seeds} are identified as local maxima of energy in calorimeter cells above a specified threshold. 
 Secondly, \say{topological clusters} are formed by combining cells that have at least one side in common with an existing cluster cell and exceed a given energy threshold. 
-These thresholds correspond to the electronics' noise and are 80 MeV in the \ac{ECAL} barrel, 300 MeV in the \ac{ECAL} end caps and 800 MeV in the \ac{HCAL}. 
+These thresholds correspond to the electronics' noise and are 80 MeV in the \ac{ECAL} barrel, 300 MeV in the \ac{ECAL} endcaps and 800 MeV in the \ac{HCAL}. 
 The number of seeds dictates how many \say{\ac{PF} clusters} are formed from a topological cluster.
 Utilising the granularity of the calorimeter, an iterative process is employed to determine cluster energies and positions by distributing the energy of each cell among all \ac{PF} clusters based on the distance between the cell and the cluster. \\
 
@@ -102,7 +102,7 @@ The impact of this procedure on the overall track selection is minimal. \\
 Finally, the remaining tracks in the block are identified as \say{\ac{PF} charged hadrons}, with momentum derived directly from the track measurements. 
 If the calibrated energy of linked \ac{ECAL} and \ac{HCAL} clusters exceeds the associated charged particle momentum significantly, \say{\ac{PF} photons} and possibly \say{\ac{PF} neutral hadrons} are created. 
 The precedence is given to photons over neutral hadrons due to their higher contribution to the jet energy. 
-Unclassified \ac{ECAL} and \ac{HCAL} clusters give rise to \say{\ac{PF} photons} and \say{\ac{PF} neutral hadrons} using the calibration procedure applied to \ac{HCAL} clusters.
+Unclassified \ac{ECAL} and \ac{HCAL} clusters give rise to \say{\ac{PF} photons} and \say{\ac{PF} neutral hadrons} respectively, using the calibration procedure applied to \ac{HCAL} clusters.
 
 \section{Muons}
 
@@ -135,7 +135,7 @@ In addition, either of the following two sets of criteria must be satisfied:
 \item The $\chi^2$ divided by the number of degrees of freedom of the global track fit is smaller than 3.
 \item The $\chi^2$ of the tracker standalone position match~\cite{CMS:2009fdy} is smaller than 12.
 \item The $\chi^2$ of the track kink finder~\cite{CMS:2018rym} is less than 20.
-\item The muon segment compatibility is greater than 0.303.
+\item The muon segment compatibility, defined in Reference~\cite{CMS:2009fdy}, is greater than 0.303.
 \end{enumerate}
 
 or,
@@ -145,7 +145,7 @@ or,
 \item The muon segment compatibility is greater than 0.451 
 \end{enumerate}
 
-The efficiency of the \texttt{Medium} muon identification is approximately 99.5\%, with a misidentification probability of approximately 0.1\%. \\
+The efficiency of the \texttt{Medium} muon identification is approximately 99.5\%, with a misidentification probability of approximately 0.1\% for hadrons. \\
 
 To reduce the contamination from muons originating from heavy-flavoured quark decays, muons are required to be isolated from hadronic activity in the detector. 
 The isolation is based on the $\pT$ of the photon ($\gamma$), neutral ($\text{h}^0$) and charged ($\text{h}^{\pm}$ if originating from the \ac{PV} and $\text{h}^{\pm,\text{PU}}$ if not originating from \ac{PV}) hadron \ac{PF} candidates within a cone size of $\Delta R<0.4$ of the selected muon ($\mu$). 
@@ -156,7 +156,7 @@ A relative combined isolation variable is defined as,
 \Irel = \frac{1}{\pT^{\mu}} \Big( \sum \pT^{\text{h}^{\pm}} + \text{max}\Big( 0, \sum \pT^{\text{h}^0} + \sum \pT^{\gamma} - \Delta \beta \sum \pT^{\text{h}^{\pm, \text{PU}}} \Big) \Big),
 \end{equation}
 
-where the sums loop through all objects within the cone and $\Delta \beta$ is the energy estimate of neutral particles due to pileup, which is taken to be 0.5.
+where the sums loop through all objects within the cone and $\Delta \beta$ is the energy estimate of neutral particles due to pileup, which is taken to be 0.5, as derived in Reference~\cite{CMS:2010eua}.
 This represents an estimated fraction of transverse momenta between the other contributions within the cone that originate from the interaction at the \ac{PV}, and the muon itself.
 The muon isolation can then be used to separate muons, with a low value of $\Irel$, from other hadronic objects, at higher values of $\Irel$.
 
@@ -172,6 +172,7 @@ The following variables are used as input to the \ac{BDT}:
 \item Track quality variables.
 \item The variable $1/E_{\text{SC}} - 1/p$, where $E_{SC}$ is the \ac{SC} energy and $p$ is the momentum of the track at the point of closest approach to the vertex.
 \item Variables comparing the geometrical matching between the track and the \ac{SC}.
+\item Electron isolation.
 \end{enumerate}
 
 The \ac{BDT} was trained on a $Z/\gamma^{*}$ \ac{MC} sample generated with \MADGRAPH, in three $\eta$ bins for electrons with $\pT>10$ GeV.
@@ -187,7 +188,7 @@ This allows for easily accessible sideband regions (orthogonal regions to the si
 \label{fig:electron_eff}
 \end{figure}
 
-The electrons are required to pass the 90\% efficiency working point of the \ac{BDT}, which corresponds to a misidentification probability of 2\%~\cite{CMS:2015xaf}. 
+The electrons are required to pass the 90\% efficiency working point of the \ac{BDT}, which corresponds to a misidentification probability of 2\% for hadrons~\cite{CMS:2015xaf}. 
 Finally, electrons are also subject to the same impact parameter requirements as the muons: the impact parameters $d_{xy}$ and $d_{z}$ between the electron track and the \ac{PV} are restricted to $d_{xy}<0.045$ cm and $d_{z}<0.2$ cm to ensure the electron is associated with the \ac{PV}. \\
 
 Similarly to muons, an isolation variable is used to further separate electrons from other backgrounds.
@@ -195,7 +196,6 @@ Unlike for muons, the isolation used is based on the photon, neutral and charged
 A different method to estimate the neutral particles due to \ac{PU} is used, called the $\rho$-effective-area method. 
 The \ac{PU} contribution in this method is estimated as $\text{PU}=\rho A_{\text{eff}}$, where $\rho$ is the event-specific average \ac{PU} energy density per unit area in the $\phi$-$\eta$ plane and the $A_{\text{eff}}$ is the effective area specific to the given type of isolation. 
 The $\rho$-effective-area subtracted relative combined isolation variable is defined as,
-
 \begin{equation}
 \label{eqn:electron_reliso_rho}
 \Irel = \frac{1}{\pT^{e}} \Big( \sum \pT^{\text{h}^{\pm}} + \text{max}\Big( 0, \sum \pT^{\text{h}^0} + \sum \pT^{\gamma} - \rho A_{\text{eff}} \Big) \Big),
@@ -231,9 +231,8 @@ $\eta$ range & $A_{\text{eff}}$ \\
 Quarks and gluons undergo fragmentation and hadronisation, resulting in collimated sprays of hadrons called jets~\cite{Salam:2010nqg}. 
 The process of combining particles into jets is accomplished through the anti-$k_T$ jet clustering algorithm~\cite{Cacciari:2008gp} as implemented in \texttt{FastJet}~\cite{Cacciari:2011ma}. 
 This algorithm relies on two \say{distance} parameters: $d_{ij}$, representing the distance between objects $i$ and $j$, and $d_{iB}$, representing the distance between object $i$ and the beam. 
-These objects can be individual particles or clusters of particles. 
+These objects can be individual \ac{PF} objects or clusters of \ac{PF} objects. 
 The distance parameters are defined as,
-
 \begin{align}
 \begin{split}
 d_{ij} &= \text{min}(p_{T,i}^{-2}, p_{T,j}^{-2})  \frac{\Delta R_{ij}^{2}}{R^{2}}, \\ 
@@ -268,7 +267,7 @@ The \texttt{DeepJet} \ac{DNN} uses a combination of high-level variables such as
 The \ac{DNN} uses a mixture of convolutional and dense layers to perform this categorisation.
 The performance of the algorithm is shown in Figure~\ref{fig:deepjet}. \\
 
-Selected b jets are required to have $\pT > 20$ GeV and $|\eta| <$ 2.4 (2.5) in 2016 (2017 and 2018), and are considered b tagged if their discriminator value is larger than some threshold that represents a misidentification rate of 1\%.
+Selected b jets are required to have $\pT > 20$ GeV and $|\eta| <$ 2.4 (2.5) in 2016 (2017 and 2018), and are considered b tagged if their discriminator value is larger than some threshold that represents a misidentification rate of 1\% in $t\bar{t}$ events.
 This corresponds to a b tagging efficiency of around 80\%.
 
 \begin{figure}[!hbtp]
@@ -280,10 +279,9 @@ This corresponds to a b tagging efficiency of around 80\%.
 
 \section{Missing transverse energy}
 
-The \ac{MET} is used as a feature to understand particles passing through the \ac{CMS}, such as neutrinos in the \ac{SM} and weakly interacting particles from hypothetical \ac{BSM} extensions.
+The \ac{MET} is used as a feature to understand particles not interacting with the \ac{CMS} detector, such as neutrinos in the \ac{SM} and weakly interacting particles from hypothetical \ac{BSM} extensions.
 This information cannot be pulled from the detector itself but instead, the absence of detection can be used to infer the presence of such an object.
 The \ac{MET} is nominally calculated as the negative vector sum of all transverse momenta of the \ac{PF} candidates in the collision event,
-
 \begin{equation}
 \vec{E}_{T}^{\text{miss}} = - \sum_{i} \vec{p}_{T}^{\hspace{4pt}i}.
 \end{equation}
@@ -291,11 +289,9 @@ The \ac{MET} is nominally calculated as the negative vector sum of all transvers
 However, this raw \ac{PF}\ac{MET} is inaccurate due to the $\pT$ thresholds of the calorimeters, the non-linearity of the calorimeter response and the reconstruction inefficiencies~\cite{CMS:2016ljj}.
 This is fixed with jet energy corrections, determined for jets with $\pT>$ 15 GeV and less than 90\% for their energies deposited in the \ac{ECAL} for both of the problems mentioned. 
 Then the corrected \ac{MET} is calculated by,
-
 \begin{equation}
 \vec{E}_{T}^{\text{miss,corr}} = \vec{E}_{T}^{\text{miss}} - \sum_{\text{jets}} (\vec{p}_{T,\text{jet}}^{\text{\hspace{4pt}corr}} - \vec{p}_{T,\text{jet}}^{\text{\hspace{4pt}raw}}),
 \end{equation}
-
 where \say{corr} and \say{raw} are the corrected and uncorrected values of the jet momenta, respectively. \\
 
 Further corrections are required to account for \ac{PU} effects, and the \texttt{PUPPI} algorithm is used for this purpose~\cite{CMS:2020ebo}.
@@ -305,7 +301,6 @@ It achieves this by combining information about the local particle distribution,
 It assigns a weight to each particle, ranging from 0 to 1, based on the information from surrounding particles. 
 A weight of 1 is given to particles believed to originate from the \ac{PV}. 
 These per-particle weights are then used to rescale the four-momenta of the particles, effectively correcting for the impact of \ac{PU} and so altering the raw calculation of the \ac{MET} to,
-
 \begin{equation}
 \vec{E}_{T}^{\text{miss}} = - \sum_{i} w_{i} \cdot \vec{p}_{T}^{\hspace{4pt}i}.
 \end{equation}
@@ -317,12 +312,12 @@ Fundamental to this thesis is the identification of $\tau$ leptons.
 The $\tau$ lepton is measured to have a mean lifetime of \(2.9 \times 10^{-13}\)s. 
 This short lifetime means that the $\tau$ lepton is not directly observable in the \ac{CMS} detector.  
 To detect these particles, it is important to understand how the $\tau$ decays. 
-Due to the heavy nature of the particle, it does not only decay leptonically, but unlike the muon, it can also decay hadronically.
+Due to the mass of the particle, it does not only decay leptonically, but unlike the muon, it can also decay hadronically.
 A list of prominent decays of the $\tau$ lepton is shown in Table~\ref{tab:tau_decay}.
 These decays can be split into three groups: the 17.8\% of $\tau$ leptons that decay to an electron ($e$), the 17.4\% that decay into a muon ($\mu$), and hadronic tau decays ($\tauh$) that make up the final 64.8\% of $\tau$ decays. 
 The leptonic decay of the $\tau$ can be accounted for by the identification of electrons and muons as discussed in the previous subsection.  \\
 
-\begin{table}[h]
+\begin{table}[t]
     \centering
     \begin{tabular}{|c|c|}
          \hline
@@ -377,9 +372,9 @@ These functions have lower and upper caps of 0.05 to 0.3 for $\Delta\phi$ and 0.
 
 \begin{figure}[t]
 \centering
-    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/hps_f.png}}
-    \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/hps_g.png}} \\
-\caption[Plots of the fit performed for dynamical strip sizes for the HPS algorithm.]{The distance between the $\tauh$ and electron or photon $\eta$ (a) and $\phi$ (b) with respect the electron or photon $\pT$. The binned values (points) and the fitted functions $f$ and $g$ (red line), which encapsulates 95\% of all electron and photons are shown in both cases~\cite{Sirunyan:2018pgf}.}
+    \subfloat[]{\includegraphics[width=0.48\textwidth]{Figures/hps_f.png}}
+    \subfloat[]{\includegraphics[width=0.48\textwidth]{Figures/hps_g.png}} \\
+\caption[Plots of the fit performed for dynamical strip sizes for the HPS algorithm.]{The distance between the $\tauh$ and electron or photon $\eta$ (a) and $\phi$ (b) with respect to the electron or photon $\pT$. The binned values (points) and the fitted functions $f$ and $g$ (red line), which encapsulates 95\% of all electron and photons are shown in both cases~\cite{Sirunyan:2018pgf}.}
 \label{fig:hps}
 \end{figure}
 
@@ -397,9 +392,9 @@ The visible decay products of each decay shown in Table~\ref{tab:tau_decay} are 
 \item $\pi^- \pi^- \pi^+ \pi^0$: Three charged hadron candidates and one strip.
 \end{enumerate}
 
+80\% of (ii) decays are correctly identified as (ii) decays, whilst the efficiencies of correctly identifying the other decays is lower, as the algorithm struggles to separate events with numerous charged hadrons and neutral pions.
 The remaining hadronic decays of the $\tau$ leptons are not included in this thesis.
 The \ac{DM} of the $\tauh$ object that is reconstructed by \ac{HPS} is quantified by the following formula relating the number of charged hadron candidates $N_C$, and the number of strips $N_N$.
-
 \begin{equation}
 \text{DM} = 5(N_{C} - 1) + N_{N}
 \end{equation}
@@ -408,7 +403,7 @@ The second step of the identification comes from a multiclass \ac{DNN}-based alg
 It uses a \ac{DNN} architecture that consists of multiple interconnected layers of nodes, that attempt to learn whether the input object is a $\tauh$ decay, an electron, a muon or a jet. 
 The algorithm takes inputs from reconstructed particles surrounding the \ac{HPS} $\tauh$ candidate, including information about energies, momenta and spatial positions. 
 Convolutional layers are used to efficiently process these inputs by dividing them into smaller regions in $\eta$-$\phi$ space, which allows the algorithm to extract local patterns and features. 
-It also incorporates high-level features of the $\tauh$ candidate calculated from the \ac{HPS} algorithm, such as the four-momentum, charge, \ac{DM}, isolation variables used in previous \ac{MVA}~\cite{CMS:2018jrd}, impact parameters, $\eta$ and $\phi$ strip information, as well as event level information such as variables related to the $\ac{PU}$.
+It also incorporates high-level features of the $\tauh$ candidate calculated from the \ac{HPS} algorithm, such as the four-momentum, charge, \ac{DM}, isolation variables used in previous \ac{MVA}~\cite{CMS:2018jrd} (excellent at separating hadronic taus from charm mesons), impact parameters, $\eta$ and $\phi$ strip information, as well as event level information such as variables related to the $\ac{PU}$.
 The architecture of the algorithm is shown in Figure~\ref{fig:deeptau}. \\
 
 \begin{figure}[p!]
@@ -418,20 +413,17 @@ The architecture of the algorithm is shown in Figure~\ref{fig:deeptau}. \\
 \label{fig:deeptau}
 \end{figure}
 
-
 The \texttt{DeepTau} \ac{DNN} is trained using a large dataset, incorporating examples of $\tauh$ decays and background processes of electrons, muons and jets. 
 The output of the \ac{DNN} is four scores, that represent the probability that the object is a $\tauh$ ($y_\tau$), an electron ($y_e$), a muon ($y_\mu$) or a jet ($y_{\text{jet}}$).
 From these raw scores, additional scores are calculated for the probability that an object is a $\tauh$ rather than an electron, muon or jet.
 These are defined as,
-
 \begin{equation}
 D_{i}^{\text{score}} = \frac{y_\tau}{y_i + y_{\tau}}, \hspace{1cm} i \in (e,\mu,\text{jet}).
 \end{equation}
-
 From this, \ac{WP} are defined to match specific efficiencies of $\tauh$ identification to each of the other three objects, named $D_{e}^{\text{WP}}$, $D_{\mu}^{\text{WP}}$ and $D_{\text{jet}}^{\text{WP}}$.
 The target efficiencies for different \ac{WP} are shown in Table~\ref{tab:deeptau_eff}. \\
 
-\begin{table}[!hbtp]
+\begin{table}[t]
 \begin{adjustwidth}{-1cm}{-1cm}
 \centering
 \begin{tabular}{|c|cccccccc|}

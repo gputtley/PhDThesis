@@ -1,7 +1,7 @@
 \chapter{\texorpdfstring{Search for new physics in $\tau^+\tau^-\tau^+\tau^-$ final states}{Search for new physics in tautautautau final states}}
 \label{sec:H_A_to_4_tau_analysis}
 
-Enhancements from $\tan\beta$ to up or down-like quark couplings to additional neutral Higgs bosons are essential for the majority of searches for extended Higgs sectors, including in the analysis detailed in Chapter~\ref{sec:bsm_H_to_tau_tau_analysis}.
+Enhancements from $\tan\beta$ to up or down-like quark couplings to additional neutral Higgs bosons are essential for the typical searches for extended Higgs sectors, including in the analysis detailed in Chapter~\ref{sec:bsm_H_to_tau_tau_analysis}.
 However, in some \ac{2HDM}s both up and down-like couplings to additional Higgs bosons are suppressed.
 This parameter space is left relatively untouched by \say{\ac{MSSM}-like} searches.
 One example of this is the type X \ac{2HDM}, where only lepton couplings are enhanced by $\tan\beta$.
@@ -11,7 +11,7 @@ In this chapter $\phi$ is defined as the additional \ac{CP}-even Higgs boson ($\
 This search is split up into two sections:
 
 \begin{enumerate}[i)]
-  \item A model-independent search for the $Z^{*}\rightarrow \phi A \rightarrow 4\tau$ process. Both additional particles are required to have narrow widths. No assumptions are made on the production cross-section or the branching fractions.
+  \item A model-independent search for the $Z^{*}\rightarrow \phi A \rightarrow 4\tau$ process. Both additional particles are required to have narrow width. No assumptions are made on the production cross-section or the branching fractions.
    \item A search for the type X \ac{2HDM}, motivated by possible explanations for the muon g-2 anomaly. The $m_{A}$-$\tan\beta$ phase space for scenarios of $m_\phi$ in the alignment limit is scanned, as well as outside of this limit on the $\cos(\beta-\alpha)$-$\tan\beta$ phase space for specific scenarios of both $m_\phi$ and $m_A$.
 \end{enumerate}
 
@@ -76,7 +76,7 @@ A Feynman diagram for this process is shown in Figure~\ref{fig:4tau_feynamn}. \\
 
 Signal templates for the production of this process with a mass grid for $\phi$ and A between 100 to 300 and 60 to 160 GeV respectively are generated.
 These mass ranges are motivated by the results in Table~\ref{tab:gm2region}.
-The samples are simulated in the five \ac{FS} at \ac{NLO} precision using the \MGvATNLO v2.6.5 event generator~\cite{Alwall:2011uj}.
+The samples are simulated in the five \ac{FS} at \ac{NLO} precision in QCD using the \MGvATNLO v2.6.5 event generator~\cite{Alwall:2011uj}.
 Generation is performed using the parton distribution function NNPDF3.1~\cite{Ball:2014uwa,Ball:2017nwa}, where the $\tau$ lepton decay, parton showering and hadronisation are all modelled with the \PYTHIA event generator with the \ac{PU} profile matched to data~\cite{Sirunyan:2019dfx,Sjostrand:2014zea}.
 The events are then passed through the \texttt{GEANT4}-based \cite{Agostinelli:2002hh} simulation of the \ac{CMS} detector and reconstructed in the same way as data.
 Generator level di-$\tau$ mass distributions from the decay of $\phi$ and A are shown in Figure~\ref{fig:4tau_gen_dist}.\\
@@ -95,7 +95,7 @@ These are independent of $\tan\beta$, however, out of the alignment scenarios th
 \begin{figure}[!hbtp]
 \centering
     \includegraphics[width=0.8\textwidth]{Figures/cross_sections.png}
-\caption[Plot of the production cross-sections for the $Z^{*} \rightarrow \phi A$ process.]{Calculated productions cross-sections for the $Z^{*} \rightarrow \phi A$ process, varying the masses of $\phi$ and A.}
+\caption[Plot of the production cross-sections for the $Z^{*} \rightarrow \phi A$ process in the alignment limit.]{Calculated productions cross-sections for the $Z^{*} \rightarrow \phi A$ process in the alignment limit, varying the masses of $\phi$ and A.}
 \label{fig:4tau_xs}
 \end{figure}
 
@@ -131,10 +131,10 @@ All variations of $e$, $\mu$ and $\tau_h$ final state combinations and their bra
 Just under 90\% of the branching ratio goes to decay products containing two or more hadronic taus.
 These are the main final states that are explored in this analysis. 
 In addition to this, an orthogonal $\tau_h \tau_h \tau_h$ channel is added to target events where the reconstruction of the $\tau_h \tau_h \tau_h \tau_h$ channel loses a single $\tau_h$ object.
-This can be due to low triggering and identification efficiencies of $\tauh$ candidates, as well as the high $\pT$ thresholds required for both. \\
-In total, the analysis consists of seven channels.
+This can be due to low triggering and identification efficiencies of $\tauh$ candidates, as well as the high $\pT$ thresholds required for both.
+In total, the analysis consists of seven channels. \\
 
-\begin{table}[!hbtp]
+\begin{table}[t]
     \centering
     \begin{tabular}{|c|c|}
          \hline
@@ -189,7 +189,7 @@ The kinematic, identification and isolation requirements on these extra leptons 
 Secondly, an extra $\tauh$ veto is applied to the $\tau_h \tau_h \tau_h$ channel, to keep it orthogonal to the $\tau_h \tau_h \tau_h \tau_h$ channel.
 The constraints set on the number of leptons and $\tau_h$ candidates for each channel are shown in Table~\ref{tab:leptonvetoes}. \\
 
-\begin{table}[!hbtp]
+\begin{table}[t]
    \centering
    \begin{tabular}{|l|c|c|c|}
    \hline
@@ -239,7 +239,7 @@ As $m_{T}^{\text{tot}}$ uses information about the whole event, in particular, t
 \label{fig:4tau_categories}
 \end{figure}
 
-In this analysis, many of the histograms contain very few background events and to minimise statistical fluctuations in the background templates, histogram bins are merged based on the fractional statistical uncertainty of each bin.
+In this analysis, many of the histograms contain very few background events and to minimise statistical fluctuations in the background templates, histogram bins are merged based on the statistical uncertainty in each bin.
 This leads to many single and minimally binned channels/categories where background statistics are low but signal sensitivity is high, and a few finely binned and high statistic channels/categories able to better classify the signal if one is observed.
  
 \section{Background modelling overview}
@@ -251,7 +251,7 @@ The backgrounds are split into three categories:
   \item Events with one or more light leptons misidentified as $\tauh$ candidates and no \jtth objects. 
 \end{enumerate}
 
-Background contributions from (i) are mostly from gluon and quark-initiated di-Z production and are modelled using \ac{MC}.
+Background contributions from (i) are mostly from gluon and quark-initiated di-Z production and are modelled using \ac{MC} corrected by data.
 The details and validation of this modelling are described in Section~\ref{sec:zz_modelling}.
 Background (ii) accounts for a number of different processes with \jtth candidates.
 Examples of this are single-Z, single-W and $\ttbar$ productions with additional jets in the events being misidentified.
@@ -260,14 +260,14 @@ Contribution (iii) is small in comparison to the others and modelled with \ac{MC
 Events with jets misidentified as light leptons and no jets misidentified as $\tauh$ candidates have been checked with \ac{MC} and deemed negligible in all channels. \\
 
 All \ac{MC} background samples described in Section~\ref{sec:background_modelling} are modelled in the same manner.  
-In addition, tri-boson samples are used that are generated with \MGvATNLO at \ac{NLO} precision~\cite{Alwall:2011uj}.
+In addition, tri-boson samples are used that are generated with \MGvATNLO at \ac{NLO} precision in QCD~\cite{Alwall:2011uj}.
 All corrections described in Section~\ref{sec:ditau_corrections} are applied to \ac{MC}, with extra corrections applied to the ZZ process, which is detailed in Section~\ref{sec:zz_modelling}.
 
 \section{ZZ modelling}
 \label{sec:zz_modelling}
 
 The di-Z background shapes, where there are no \jtth candidates are modelled using \ac{MC}.
-The cross-sections for this analysis are scaled to higher-order precisions than generated using K factors~\cite{}.
+The cross-sections for this analysis are scaled to higher-order precisions than generated using K factors~\cite{CMS:2021ugl}.
 For quark-initiated di-Z production, \POWHEG~2.0~\cite{Nason:2004rx,Frixione:2007vw,Alioli:2010xd,Jezo:2015aia} is used to determine \ac{NNLO}/\ac{NLO} \ac{QCD} and electroweak corrections as a function of $m_{ZZ}$, which takes an average value of $\approx 1.2$.
 Gluon-initiated di-Z production corrections from \ac{LO} to \ac{NNLO} are derived with HNNLO v2~\cite{PhysRevLett.98.222002}, again as a function of $m_{ZZ}$.
 This gives a much larger correction than quark-initiated production, equal to $\approx 2$.
@@ -288,7 +288,7 @@ Plots of this are shown in Figure~\ref{fig:4tau_mmmm}. \\
 \section{Machine learning fake factor method}
 \label{sec:ml_ff}
 
-The $\FF$ method, as described in Section~\ref{sec:ff}, is an algorithm used to model the \jtth backgrounds.
+The $\FF$ method, as described in Section~\ref{sec:ff}, is a technique used to model the \jtth backgrounds.
 It uses classical reweighting techniques, such as binning the two regions and applying a fit to the ratio in a chosen parametrisation.
 This method faces difficulties when approached with high dimensional dependence on parametrisation, as for every new parameter included the statistics of each fit is reduced.
 A compromise must then be reached between variable dependence and fit statistics, and this is the case for the $\pT^{\text{jet}}/\pT^{\tauh}$ binning described in Section~\ref{sec:ff_params}.
@@ -335,18 +335,19 @@ The major difference is how the bins used for reweighting are found, and this st
 
 Unlike the standard $\FF$ method, statistics are not a problem using the \ac{BDT} reweighter when choosing which variables you can use to parametrise the $\FF$. 
 Therefore, rather than fitting two fake factor regions separately and then a correction from the sideband to signal region to account for missing parametrisation, regions A, B and D from Figure~\ref{fig:ff_schematic} are fit simultaneously to improve statistics. 
-Also, all $\tauh$ candidates are fit simultaneously as separate entries in the dataset and for each $\tauh$ in the event, the remaining $\tauh$ candidates are named the alternative $\tauh$ candidates. 
-The sideband variable definitions and cuts, with respect to Figure~\ref{fig:ff_schematic}, are shown below. \\
+Also, all $\tauh$ candidates are fit simultaneously as separate entries in the dataset. 
+For each entry, the unused $\tauh$ candidates are named the alternative $\tauh$ candidates. 
+The sideband variable definitions and cuts, with respect to Figure~\ref{fig:ff_schematic}, are shown below. 
 
 \begin{enumerate}[i)]
    \item $ee\tauh\tauh$, $e\mu\tauh\tauh$, $\mu\mu\tauh\tauh$, $e\tauh\tauh\tauh$ and $\mu\tauh\tauh\tauh$  \\
-     \indent $y_C$: The sum of $\tauh$ candidates is required to be 0. \\
-     \indent $y_A$: The sum of $\tauh$ candidates is required to not be 0. \\
+     \indent $y_C$: The sum of $\tauh$ charges is required to be 0. \\
+     \indent $y_A$: The sum of $\tauh$ charges is required to not be 0. \\
      \indent $x_C$: All alternative $\tau_h$ candidates pass the \texttt{Loose} $D_{\text{jet}}^{\text{WP}}$. \\
      \indent $x_D$: At least one alternative $\tau_h$ candidate fails the \texttt{Loose} $D_{\text{jet}}^{\text{WP}}$ but has $D_{\text{jet}}^{\text{score}} > 0.1$.
   \item $\tauh\tauh\tauh$ \\
-     \indent $y_C$: The absolute value of the sum of $\tauh$ candidates is required to be 1. \\
-     \indent $y_A$: The absolute value of the sum of $\tauh$ candidates is required to not be 1. \\
+     \indent $y_C$: The absolute value of the sum of $\tauh$ charges is required to be 1. \\
+     \indent $y_A$: The absolute value of the sum of $\tauh$ charges is required to not be 1. \\
      \indent $x_C$: All alternative $\tau_h$ candidates pass the \texttt{Loose} $D_{\text{jet}}^{\text{WP}}$. \\
      \indent $x_D$: At least one alternative $\tau_h$ candidate fails the \texttt{Loose} $D_{\text{jet}}^{\text{WP}}$ but has $D_{\text{jet}}^{\text{score}} > 0.1$.
 \end{enumerate}
@@ -380,7 +381,7 @@ All the variables used are shown below.
 \item $\tauh$ $\pT$ ordered event rank.
 \end{enumerate}
 
-\subsection{Machine learning subtraction method}
+\subsection{Machine learning background subtraction method}
 
 In the standard $\FF$ method, histograms are used to fit the $\FF$ rather than datasets. 
 Using histograms, the small fraction of events which are not \jtth objects can easily be subtracted off. 
@@ -412,7 +413,7 @@ It gives near identical results when drawing out histograms in all variables com
 It allows for non \jtth like candidates to be sampled and removed to the correct yield through all variables.
 Events throughout the \ac{MC} non jet $\rightarrow\tauh$ \ac{BDT} score histogram are removed, as if only the highest scoring events were removed, only the tails of distributions would be affected. \\
 
-An uncertainty is placed on the performance of this algorithm with respect to histogram subtraction.
+An uncertainty is placed on the closure of this algorithm with respect to histogram subtraction.
 This is calculated by drawing each variable used for the method into a histogram with binning chosen to ensure a sensible number of events in each bin.
 An uncertainty is then derived from the difference in prediction between the histogram and \ac{BDT} subtraction. \\
 
@@ -441,7 +442,7 @@ Examples of the $\FF$ derived in the $\mu\tauh\tauh\tauh$ channel are shown in F
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/reweight_ave_plot_jet_pt_1_divide_pt_1_all_mttt_all_years.pdf}} \\
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/reweight_ave_plot_tau_decay_mode_1_all_mttt_all_years.pdf}}
     \subfloat[]{\includegraphics[width=0.5\textwidth]{Figures/reweight_ave_plot_eta_1_all_mttt_all_years.pdf}}
-\caption[Plots of the average fake factors calculated by the BDT reweighter.]{Average fake factors (reweights) calculated by the BDT reweighting method shown individually in regions A, B and D as defined in Figure~\ref{fig:ff_schematic}. The is shown for four of the fitted variable: $\tauh$-$\pT$, the ratio of $\tauh$-$\pT$ to jet-$\pT$, the $\tauh$ HPS decay mode and the $\tauh$-$\eta$.}
+\caption[Plots of the average fake factors calculated by the BDT reweighter.]{Average fake factors (reweights) calculated by the BDT reweighting method and the statistical uncertainty shown individually in regions A, B and D as defined in Figure~\ref{fig:ff_schematic}. The is shown for four of the fitted variable: $\tauh$-$\pT$, the ratio of $\tauh$-$\pT$ to jet-$\pT$, the $\tauh$ HPS decay mode and the $\tauh$-$\eta$.}
 \label{fig:4tau_ff_reweights}
 \end{figure}
 
@@ -535,7 +536,7 @@ Firstly, an uncertainty is placed on the non-closure of the \ac{BDT} subtraction
 This is done by comparing the distributions in each variable fit using standard histogram subtraction with the \ac{BDT} subtraction method, and the largest shift is taken for each event. 
 This is performed separately in the pass and fail $\tauh$ identification regions.
 The second uncertainty to do with purifying the fitting region is motivated by any \ac{MC} mismodelling of the non \jtth objects predicted.
-The MC is shifted up and down by 10\% and the \ac{BDT} subtraction method and the reweighting are repeated with the differing datasets. \\
+The MC is shifted up and down by 10\%, to represent an estimation of the MC uncertainties, and the \ac{BDT} subtraction method and the reweighting are repeated with the differing datasets. \\
 
 The second source of uncertainties comes from the \ac{BDT} reweighter fit.
 In a similar way to the subtraction method, an uncertainty is placed on the non-closure of the fit, comparing reweighted events in the fail $\tauh$ identification region to the pass $\tauh$ identification region.
@@ -567,7 +568,7 @@ For visualisation, categories with similar event numbers in each bin are display
 A stacked background of events is shown, separated into three groups: events with 1 or more \jtth objects, events where all $\tauh$ candidates are reconstructed correctly, and the remaining events where only light leptons are misidentified as $\tauh$ and not jets.
 An example signal hypothesis is also shown for a mass hypothesis of $m_A = 160$ GeV and $m_{\phi} = 200$ GeV scaled to 0.01 pb, which is approximately three times smaller than the predicted cross-section for this process. \\
 
-There are no upward deviations of the number of events observed, that are with any mass hypotheses for the signal model searched for.
+There are no excesses of events observed.
 The combined results are consistent with a background-only fit to data.
 Within this combined fit, individual bins and categories such as the $\emu\tauhtauh$ \texttt{SS Leptons}, have small deficits of events observed in comparison to events expected.
 The background prediction yield in this category from the $\FF$ method is checked with a comparison to \ac{MC} for the non-\ac{QCD} prediction.
@@ -637,20 +638,20 @@ These conclusions are consistent across any mass hypotheses, again due to the de
 \section{Model-dependent limits}
 
 The 95\% \ac{CL} exclusion contours, for the type X \ac{2HDM} alignment scenario in the $m_A$-$\tan\beta$ phase space, are shown in Figure~\ref{fig:4tau_md} for two $m_{\phi}$ scenarios of 100 and 200 GeV.
-These exclusion limits are \say{top-down} as the cross-sections are unchanged in $\tan\beta$ and the branching fractions to $\tau$ leptons are enhanced as $\tan\beta$ increases.
+For given a $m_{A}$ and $m_{\phi}$, the excluded area reflects the branching fractions' dependence on $\tan\beta$.
 The cross-section and branching ratios are calculated as described in Section~\ref{sec:4tau_signal_modelling}.
 In all cases, as previously observed for the model-independent interpretation, the observed limit lies between the downwards 1 and 2$\sigma$ expected bands. \\
 
-The $m_{\phi} = 100$ GeV scenario has a moderately flat observed $\tan\beta$ limit between 1.2-1.5, across the $m_{A}$ range.
+The $m_{\phi} = 100$ GeV inverted alignment scenario has a moderately flat observed $\tan\beta$ limit between 1.2-1.5, across the $m_{A}$ range.
 The very slight weakening of the limit at high values of $m_{A}$ values is because the $A\rightarrow Z\Ph$ decay becomes more kinematically feasible and so the $A\rightarrow\tau\tau$ branching fraction has to compete with this process.
 The $\PA\rightarrow Z\Ph$ decay will become dominant if $m_{A}$ is raised much beyond the 160 GeV threshold set in this analysis.
-The $m_{\phi} = 200$ GeV scenario's observed limit is weaker at lower values of $m_{A}$, with $\tan\beta$ values ranging from 10 to 1.6 between $m_{A} = 60$ and 125 GeV.
+The $m_{\phi} = 200$ GeV normal alignment scenario's observed limit is weaker at lower values of $m_{A}$, with $\tan\beta$ values ranging from 10 to 1.6 between $m_{A} = 60$ and 125 GeV.
 This weakening at lower values of $m_{A}$ happens as the $\PH\rightarrow Z\PA$ decay becomes more kinematically feasible and so competes with $\PH\rightarrow\tau\tau$ for the branching fraction.
-This is not present in the $m_{\phi}=100$ GeV scenario as the $\phi$ boson is not heavy enough.
-The limit then flattens for the remainder of the $m_{A}$ phase space shown, as the $\PH\rightarrow Z\PA$ and $\PA\rightarrow Z\Ph$ decays only minimally hinder the $\tau\tau$ branching fractions of $\phi$ and $\PA$. \\
+This decay of $\phi$ is not present in the $m_{\phi}=100$ GeV scenario as the $\phi$ boson is not heavy enough.
+The limit then flattens for the remainder of the $m_{A}$ phase space shown, as the $\PH\rightarrow Z\PA$ decays only minimally hinder the $\tau\tau$ branching fractions of $\phi$. \\
 
 Although not shown here, the limits for intermediate $\phi$ masses see similar trends at low $m_{A}$, where the further the $\phi$ and $\PA$ masses are separated the weaker the limit.
-At higher values of $m_\phi$ than 200 GeV, it becomes difficult to find stable theories across the $m_{A}$ range. 
+At higher values of $m_\phi$ than 200 GeV, it becomes difficult to find a parameter space where perturbativity constraints are satisfied across the $m_{A}$ range. 
 This is because if $m_\phi$ and $m_{A}$ are too separated, the values of $\lambda_i$ as shown in Equation~\ref{eqn:lag_2hdm}, can become non-perturbative~\cite{Jueid:2021avn}.
 Within the $m_{A}$ allowed regions, the limits follow the same trend as seen at lower values of $m_{\phi}$. \\
 
@@ -663,8 +664,8 @@ Within the $m_{A}$ allowed regions, the limits follow the same trend as seen at 
 \end{figure}
 
 95\% \ac{CL} limits are also set outside of the alignment scenario.
-This is done by varying relevant alignment parameter, $\cos(\beta-\alpha)$ or $\sin(\beta-\alpha)$ depending on $m_\phi$, with respect to $\tan\beta$ for the individual mass hypothesis.
-Two of these are shown in Figure~\ref{fig:4tau_cosbma} for the mass scenario of $m_{\phi} = 200$ GeV and $m_{A} = 100$ GeV, as well as $m_{\phi} = 200$ GeV and $m_{A} = 160$.
+This is done by varying from the relevant alignment limit, $\cos(\beta-\alpha)=0$ (normal scenario) or $\sin(\beta-\alpha)=0$ (inverted scenario) depending on $m_\phi$, with respect to $\tan\beta$ for the individual mass hypothesis.
+Two of these are shown in Figure~\ref{fig:4tau_cosbma} for the mass scenario of $m_{\phi} = 200$ GeV and $m_{A} = 100$ GeV, as well as $m_{\phi} = 200$ GeV and $m_{A} = 160$ GeV.
 The observed limit lies in the equivalent place compared to the expected as seen in all limit setting for this analysis.
 The alignment limit at these mass points is equivalent to the limit set at $\cos(\beta-\alpha) = 0$.
 The shapes of the limits represent the region where the loss of cross-section and branching ratio for $\phi$, out of the alignment scenario and at lower $\tan\beta$, is too large that the theory cannot be excluded.

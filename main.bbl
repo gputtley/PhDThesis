@@ -9,10 +9,12 @@
   1803.06553}}].
 
 \bibitem{CMS:2022rbd}
-{CMS Collaboration}, \emph{{Searches for additional Higgs bosons and vector
+{CMS Collaboration}, \emph{{Searches for additional Higgs bosons and for vector
   leptoquarks in $\tau\tau$ final states in proton-proton collisions at
-  $\sqrt{s}=13~\mathrm{TeV}$}}, {\emph{CMS Physics Analysis Summary} {\bfseries
-  CMS-PAS-HIG-21-001} (2022) }.
+  $\sqrt{s}$ = 13 TeV}},
+  \href{https://doi.org/10.1007/JHEP07(2023)073}{\emph{JHEP} {\bfseries 07}
+  (2023) 073} [\href{https://arxiv.org/abs/2208.02717}{{\ttfamily
+  2208.02717}}].
 
 \bibitem{Englert:1964et}
 F.~Englert and R.~Brout, \emph{Broken symmetry and the mass of gauge vector
@@ -225,6 +227,13 @@ J.~Goldstone, \emph{{Field Theories with Superconductor Solutions}},
   \href{https://doi.org/10.1007/BF02812722}{\emph{Nuovo Cim.} {\bfseries 19}
   (1961) 154}.
 
+\bibitem{Branco:2011iw}
+G.~C. Branco, P.~M. Ferreira, L.~Lavoura, M.~N. Rebelo, M.~Sher and J.~P.
+  Silva, \emph{Theory and phenomenology of two-{H}iggs-doublet models},
+  \href{https://doi.org/10.1016/j.physrep.2012.02.002}{\emph{Phys. Rept.}
+  {\bfseries 516} (2012) 1} [\href{https://arxiv.org/abs/1106.0034}{{\ttfamily
+  1106.0034}}].
+
 \bibitem{PhysRevD.15.1958}
 S.~L. Glashow and S.~Weinberg, \emph{Natural conservation laws for neutral
   currents}, \href{https://doi.org/10.1103/PhysRevD.15.1958}{\emph{Phys. Rev.
@@ -328,6 +337,11 @@ M.~Benedikt, P.~Collier, V.~Mertens, J.~Poole and K.~Schindl (Eds.), \emph{{LHC
 H.~Bartosik and G.~Rumolo, \emph{{Performance of the LHC injector chain after
   the upgrade and potential development}},
   \href{https://arxiv.org/abs/2203.09202}{{\ttfamily 2203.09202}}.
+
+\bibitem{ParticleDataGroup:2020ssz}
+{Particle Data Group}, P.~A. Zyla et~al., \emph{Review of particle physics},
+  \href{https://doi.org/10.1093/ptep/ptaa104}{\emph{Prog. Theor. Exp. Phys.}
+  {\bfseries 2020} (2020) 083C01}.
 
 \bibitem{lumi}
 {CMS Collaboration}, ``{CMS Luminosity public results}.''
@@ -849,6 +863,14 @@ M.~Krause, M.~M\"uhlleitner and M.~Spira, \emph{{2HDECAY \textemdash{}A program
   \href{https://doi.org/10.1016/j.cpc.2019.08.003}{\emph{Comput. Phys. Commun.}
   {\bfseries 246} (2020) 106852}
   [\href{https://arxiv.org/abs/1810.00768}{{\ttfamily 1810.00768}}].
+
+\bibitem{CMS:2021ugl}
+{CMS Collaboration}, \emph{{Measurements of production cross sections of the
+  Higgs boson in the four-lepton final state in proton\textendash{}proton
+  collisions at $\sqrt{s} = 13\,\text {Te}\text {V} $}},
+  \href{https://doi.org/10.1140/epjc/s10052-021-09200-x}{\emph{Eur. Phys. J. C}
+  {\bfseries 81} (2021) 488}
+  [\href{https://arxiv.org/abs/2103.04956}{{\ttfamily 2103.04956}}].
 
 \bibitem{PhysRevLett.98.222002}
 S.~Catani and M.~Grazzini, \emph{Next-to-next-to-leading-order subtraction
